@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Bound\\isometric-game.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -2746,64 +2746,64 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Squares/red_0.png",
+        "file": "Assets/Squares/red_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Squares\\red_0.png",
+        "name": "Assets\\Squares\\red_0.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Clum/clum_0.png",
+        "file": "Assets/Clum/clum_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Clum\\clum_0.png",
+        "name": "Assets\\Clum\\clum_0.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Clum/clum_1.png",
+        "file": "Assets/Clum/clum_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Clum\\clum_1.png",
+        "name": "Assets\\Clum\\clum_1.png",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "Clum/clum_2.png",
+        "file": "Assets/Clum/clum_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Clum\\clum_2.png",
+        "name": "Assets\\Clum\\clum_2.png",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "Clum/clum_3.png",
+        "file": "Assets/Clum/clum_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "Clum\\clum_3.png",
+        "name": "Assets\\Clum\\clum_3.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Squares/red_1.png",
+        "file": "Assets/Squares/red_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Squares\\red_1.png",
+        "name": "Assets\\Squares\\red_1.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Squares/path_0.png",
+        "file": "Assets/Squares/path_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Squares\\path_0.png",
+        "name": "Assets\\Squares\\path_0.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -2818,46 +2818,46 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Squares/path_1.png",
+        "file": "Assets/Squares/path_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Squares\\path_1.png",
+        "name": "Assets\\Squares\\path_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Binder/binder_up_0.png",
+        "file": "Assets/Binder/binder_up_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Binder\\binder_up_0.png",
+        "name": "Assets\\Binder\\binder_up_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Binder/binder_down_0.png",
+        "file": "Assets/Binder/binder_down_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Binder\\binder_down_0.png",
+        "name": "Assets\\Binder\\binder_down_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Binder/binder_right_0.png",
+        "file": "Assets/Binder/binder_right_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Binder\\binder_right_0.png",
+        "name": "Assets\\Binder\\binder_right_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Binder/binder_left_0.png",
+        "file": "Assets/Binder/binder_left_0.png",
         "kind": "image",
         "metadata": "",
-        "name": "Binder\\binder_left_0.png",
+        "name": "Assets\\Binder\\binder_left_0.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -14440,7 +14440,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14457,7 +14457,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14486,7 +14486,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14503,7 +14503,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_1.png",
+                      "image": "Assets\\Clum\\clum_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14520,7 +14520,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_2.png",
+                      "image": "Assets\\Clum\\clum_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14537,7 +14537,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14589,7 +14589,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14606,7 +14606,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14635,7 +14635,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14652,7 +14652,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_1.png",
+                      "image": "Assets\\Clum\\clum_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14669,7 +14669,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_2.png",
+                      "image": "Assets\\Clum\\clum_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14686,7 +14686,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14711,7 +14711,7 @@
           "height": 100,
           "name": "TileRed0",
           "tags": "",
-          "texture": "Squares\\red_0.png",
+          "texture": "Assets\\Squares\\red_0.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 100,
           "variables": [],
@@ -14721,7 +14721,7 @@
           "height": 100,
           "name": "TileRed1",
           "tags": "",
-          "texture": "Squares\\red_1.png",
+          "texture": "Assets\\Squares\\red_1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 100,
           "variables": [],
@@ -14745,7 +14745,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Squares\\path_0.png",
+                      "image": "Assets\\Squares\\path_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14774,7 +14774,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Squares\\path_1.png",
+                      "image": "Assets\\Squares\\path_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14900,7 +14900,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Binder\\binder_up_0.png",
+                      "image": "Assets\\Binder\\binder_up_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14929,7 +14929,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Binder\\binder_down_0.png",
+                      "image": "Assets\\Binder\\binder_down_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14958,7 +14958,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Binder\\binder_right_0.png",
+                      "image": "Assets\\Binder\\binder_right_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -14987,7 +14987,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Binder\\binder_left_0.png",
+                      "image": "Assets\\Binder\\binder_left_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -15974,7 +15974,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -15991,7 +15991,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16020,7 +16020,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_0.png",
+                      "image": "Assets\\Clum\\clum_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16037,7 +16037,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_1.png",
+                      "image": "Assets\\Clum\\clum_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16054,7 +16054,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_2.png",
+                      "image": "Assets\\Clum\\clum_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16071,7 +16071,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Clum\\clum_3.png",
+                      "image": "Assets\\Clum\\clum_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16096,7 +16096,7 @@
           "height": 100,
           "name": "TileRed0",
           "tags": "",
-          "texture": "Squares\\red_0.png",
+          "texture": "Assets\\Squares\\red_0.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 100,
           "variables": [],
@@ -16106,7 +16106,7 @@
           "height": 100,
           "name": "TileRed1",
           "tags": "",
-          "texture": "Squares\\red_1.png",
+          "texture": "Assets\\Squares\\red_1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 100,
           "variables": [],
@@ -16130,7 +16130,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Squares\\path_0.png",
+                      "image": "Assets\\Squares\\path_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16159,7 +16159,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Squares\\path_1.png",
+                      "image": "Assets\\Squares\\path_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16266,7 +16266,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Binder\\binder_up_0.png",
+                      "image": "Assets\\Binder\\binder_up_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16314,7 +16314,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Binder\\binder_down_0.png",
+                      "image": "Assets\\Binder\\binder_down_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16362,7 +16362,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Binder\\binder_right_0.png",
+                      "image": "Assets\\Binder\\binder_right_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16410,7 +16410,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Binder\\binder_left_0.png",
+                      "image": "Assets\\Binder\\binder_left_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
