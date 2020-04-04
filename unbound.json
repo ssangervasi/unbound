@@ -268,6 +268,36 @@
         "name": "Assets\\Squares\\red_2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Squares/red_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Squares\\red_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Fonts/fipps-font/FippsRegular-enqx.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\fipps-font\\FippsRegular-enqx.otf",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Fonts/pixel-font/Pixel-y14Y.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Fonts/static-age-font/StaticAgeHorizontalHold-yLWq.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -13054,7 +13084,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.282
+        "zoomFactor": 1.426
       },
       "objectsGroups": [],
       "variables": [
@@ -13064,21 +13094,6 @@
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 600,
-          "layer": "",
-          "locked": true,
-          "name": "TileRed",
-          "width": 798,
-          "x": 0,
-          "y": 0,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -13378,6 +13393,71 @@
           ],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 72,
+          "layer": "",
+          "locked": false,
+          "name": "Titles",
+          "width": 411,
+          "x": 346,
+          "y": 28,
+          "zOrder": 5014,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 601,
+          "layer": "",
+          "locked": true,
+          "name": "Tile",
+          "width": 799,
+          "x": 0,
+          "y": 0,
+          "zOrder": 4000,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 53,
+          "layer": "",
+          "locked": false,
+          "name": "Friend",
+          "width": 121,
+          "x": 508,
+          "y": 174,
+          "zOrder": 5015,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Meany",
+          "width": 0,
+          "x": 554,
+          "y": 125,
+          "zOrder": 5016,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -13629,12 +13709,12 @@
           "variables": [],
           "behaviors": [
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 1000,
               "allowDiagonals": false,
               "deceleration": 1000,
               "maxSpeed": 300,
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "angleOffset": 0,
               "angularMaxSpeed": 180,
               "ignoreDefaultControls": true,
@@ -13889,7 +13969,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Assets\\Squares\\red_1.png",
+                      "image": "Assets\\Squares\\red_0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -13918,7 +13998,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Assets\\Squares\\red_0.png",
+                      "image": "Assets\\Squares\\red_4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -13940,16 +14020,6 @@
           ]
         },
         {
-          "height": 100,
-          "name": "TileRed",
-          "tags": "",
-          "texture": "Assets\\Squares\\red_0.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 100,
-          "variables": [],
-          "behaviors": []
-        },
-        {
           "bold": false,
           "italic": true,
           "name": "DebugText",
@@ -13966,6 +14036,63 @@
             "b": 3,
             "g": 255,
             "r": 32
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Titles",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "This is a Title",
+          "font": "Assets\\Fonts\\fipps-font\\FippsRegular-enqx.otf",
+          "characterSize": 25,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Friend",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Friendly text",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Meany",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Mean text",
+          "font": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         }
       ],
@@ -14940,22 +15067,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "TileRed",
-                    "",
-                    "",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
