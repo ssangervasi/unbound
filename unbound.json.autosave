@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
+    "projectFile": "/home/sebastian/workspace/unbound/unbound.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -13465,66 +13465,6 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "First",
-          "width": 0,
-          "x": 170,
-          "y": 37,
-          "zOrder": 5017,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Second",
-          "width": 0,
-          "x": 312,
-          "y": 40,
-          "zOrder": 5018,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SMDebug",
-          "width": 0,
-          "x": -220,
-          "y": 138,
-          "zOrder": 5020,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "Third",
-          "width": 274,
-          "x": 492,
-          "y": 38,
-          "zOrder": 5021,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
           "name": "SMCharacters",
           "width": 0,
           "x": -222,
@@ -14339,162 +14279,89 @@
             "g": 71,
             "r": 196
           }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "SMDebug",
-          "smoothed": true,
-          "tags": "StateMachine",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "StateMachine",
-              "type": "ssangervasi::StateMachine"
-            }
-          ],
-          "string": "SMDebug",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "First",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "ssangervasi::State",
-              "Name": "State0",
-              "Status": "initialized"
-            },
-            {
-              "name": "StateText",
-              "type": "ssangervasi::StateText",
-              "FullTime": 2
-            }
-          ],
-          "string": "I am first",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 28,
-            "g": 231,
-            "r": 248
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Second",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "ssangervasi::State",
-              "Name": "State1",
-              "Status": "initialized"
-            },
-            {
-              "name": "StateText",
-              "type": "ssangervasi::StateText",
-              "FullTime": 2
-            }
-          ],
-          "string": "And I am second",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 238,
-            "g": 245,
-            "r": 214
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Third",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "ssangervasi::State",
-              "Name": "State2",
-              "Status": "initialized"
-            },
-            {
-              "name": "StateText",
-              "type": "ssangervasi::StateText",
-              "FullTime": 10
-            }
-          ],
-          "string": "And I am soooo sloowwww",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 128,
-            "r": 195
-          }
         }
       ],
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "name": "Scene setup",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "ssangervasi::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SMScene",
-                "StateMachine",
-                "SOpening",
-                "State",
-                ""
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Obstacle"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
-              "type": {
-                "inverted": false,
-                "value": "ssangervasi::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SMScene",
-                "StateMachine",
-                "SRunning",
-                "State",
-                ""
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ssangervasi::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SMScene",
+                    "StateMachine",
+                    "SOpening",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ssangervasi::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SMScene",
+                    "StateMachine",
+                    "SRunning",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "events": []
             }
           ],
-          "events": []
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -14527,99 +14394,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
-                      },
-                      "parameters": [
-                        "SMDebug",
-                        "StateMachine",
-                        "First",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
-                      },
-                      "parameters": [
-                        "SMDebug",
-                        "StateMachine",
-                        "Second",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
-                      },
-                      "parameters": [
-                        "SMDebug",
-                        "StateMachine",
-                        "Third",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
-                      },
-                      "parameters": [
-                        "First",
-                        "StateText",
-                        "First",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
-                      },
-                      "parameters": [
-                        "Second",
-                        "StateText",
-                        "Second",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
-                      },
-                      "parameters": [
-                        "Third",
-                        "StateText",
-                        "Third",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -14693,22 +14467,29 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::IsFinished"
+                        "value": "AnyKeyPressed"
                       },
                       "parameters": [
-                        "SMCharacters",
-                        "StateMachine",
                         ""
                       ],
                       "subInstructions": []
-                    },
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
                         "value": "ssangervasi::StateMachine::IsFinished"
                       },
                       "parameters": [
-                        "SMDebug",
+                        "SMCharacters",
                         "StateMachine",
                         ""
                       ],
@@ -15175,36 +14956,6 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "DepartScene"
-                          },
-                          "parameters": [
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Cache"
-                          },
-                          "parameters": [
-                            "Obstacle"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
                         {
@@ -15531,6 +15282,26 @@
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::bindableKeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
                   "events": []
                 }
               ],
@@ -16467,7 +16238,47 @@
       "shortDescription": "",
       "tags": "",
       "version": "",
-      "eventsFunctions": [],
+      "eventsFunctions": [
+        {
+          "description": "Was a bindable key pressed?",
+          "fullName": "Was a bindable key pressed?",
+          "functionType": "Condition",
+          "name": "bindableKeyPressed",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": "\nconst game = runtimeScene.getGame()\nconst inputManager = game.getInputManager()\nconst lastKey = inputManager.getLastPressedKey();\nconst lastKeyStr = String.fromCodePoint(lastKey)\nconsole.log('Last key', lastKey)\nconsole.log('Last key str', lastKeyStr)\n",
+                  "parameterObjects": "",
+                  "useStrict": true
+                }
+              ]
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        }
+      ],
       "eventsBasedBehaviors": [
         {
           "description": "Manages a series of states",
