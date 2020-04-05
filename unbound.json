@@ -16616,11 +16616,117 @@
             },
             {
               "description": "",
-              "fullName": "",
+              "fullName": "Attach a state",
               "functionType": "Action",
               "name": "attachState",
-              "sentence": "",
-              "events": [],
+              "sentence": "Horse _PARAM0_ cow _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BehaviorActivated"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "StateBehavior"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "StateBehvaior",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Object",
+                        "StateObject"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "Object",
+                        "StateObject"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "states[StateObject.StateBehavior::ParameterName()]",
+                            "=",
+                            "State.State::ParameterName()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
               "parameters": [
                 {
                   "codeOnly": false,
@@ -16647,7 +16753,7 @@
                   "defaultValue": "",
                   "description": "",
                   "longDescription": "",
-                  "name": "s",
+                  "name": "StateObject",
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "objectList"
@@ -16657,7 +16763,7 @@
                   "defaultValue": "",
                   "description": "",
                   "longDescription": "",
-                  "name": "sd",
+                  "name": "StateBehavior",
                   "optional": false,
                   "supplementaryInformation": "ssangervasi::State",
                   "type": "behavior"
@@ -16683,16 +16789,68 @@
           "fullName": "",
           "name": "State",
           "objectType": "",
-          "eventsFunctions": [],
+          "eventsFunctions": [
+            {
+              "description": "GetName",
+              "fullName": "GetName",
+              "functionType": "StringExpression",
+              "name": "GetName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(Behavior::ParameterStateName())"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ssangervasi::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
           "propertyDescriptors": [
             {
-              "value": "",
-              "type": "Number",
-              "label": "",
+              "value": "State0",
+              "type": "String",
+              "label": "StateName",
               "description": "",
               "extraInformation": [],
               "hidden": false,
-              "name": "Property"
+              "name": "StateName"
             }
           ]
         }
