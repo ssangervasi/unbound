@@ -13084,7 +13084,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.426
+        "zoomFactor": 1.354
       },
       "objectsGroups": [],
       "variables": [
@@ -13192,8 +13192,8 @@
           "locked": false,
           "name": "ControlScheme",
           "width": 0,
-          "x": -36,
-          "y": 105,
+          "x": 19,
+          "y": 127,
           "zOrder": 5010,
           "numberProperties": [],
           "stringProperties": [],
@@ -14070,7 +14070,8 @@
             {
               "name": "TypedText",
               "type": "ssangervasi::TypedText",
-              "fullTime": 5
+              "fullTime": 5,
+              "FullTime": 5
             }
           ],
           "string": "oh\nsorry about him\njust... try to ignore it",
@@ -14090,21 +14091,12 @@
           "tags": "text",
           "type": "TextObject::Text",
           "underlined": false,
-          "variables": [
-            {
-              "name": "full",
-              "value": "Have you forgotten already?"
-            },
-            {
-              "name": "",
-              "value": ""
-            }
-          ],
+          "variables": [],
           "behaviors": [
             {
               "name": "TypedText",
               "type": "ssangervasi::TypedText",
-              "FullTime": 10
+              "FullTime": 5
             }
           ],
           "string": "WOW.\nHAVE YOU\nFORGOTTEN\nALREADY?",
@@ -14146,7 +14138,41 @@
                 }
               ],
               "actions": [],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Friend",
+                        "TypedText",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Meany",
+                        "TypedText",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -14181,6 +14207,17 @@
                       "parameters": [
                         "Meany",
                         "TypedText",
+                        "TypedText"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "BehaviorActivated"
+                      },
+                      "parameters": [
+                        "Friend",
                         "TypedText"
                       ],
                       "subInstructions": []
@@ -14234,35 +14271,6 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarSceneTxt"
-                      },
-                      "parameters": [
-                        "state",
-                        "=",
-                        "\"running\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
                   "events": []
                 }
               ]
@@ -16085,27 +16093,6 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
                   "inlineCode": "console.log('Created TypedText!', objects)\nconsole.log('Created TypedText!', objects[0].getBehavior(\"TypedText\"))",
                   "parameterObjects": "Object",
@@ -16151,18 +16138,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "Object",
-                        "!=",
-                        "Object.VariableString(full)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "VarObjetTxt"
                       },
                       "parameters": [
@@ -16174,28 +16149,98 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "state",
-                        "=",
-                        "\"typing\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TextObject::String"
+                          },
+                          "parameters": [
+                            "Object",
+                            "!=",
+                            "Object.VariableString(full)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "state",
+                            "=",
+                            "\"typing\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TextObject::String"
+                              },
+                              "parameters": [
+                                "Object",
+                                "=",
+                                "SubStr(Object.VariableString(full), 0, Object.Variable(index))"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "index",
+                                "=",
+                                "clamp(\n  0,\n  ( Object.Variable(fullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(fullLength)\n)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "This should probably actually work by modifying the behavior instead of dirtying the object",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
@@ -16204,85 +16249,65 @@
                           "parameters": [
                             "Object",
                             "=",
-                            "SubStr(Object.VariableString(full), 0, Object.Variable(index))"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "Object",
-                            "index",
-                            "=",
-                            "clamp(\n  0,\n  ( Object.Variable(fullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(fullLength)\n)"
+                            "Object.VariableString(full)"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "debugFinish",
+                            "=",
+                            "\"yep\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "state",
+                                "=",
+                                "\"finished\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "debugFinishOnce",
+                                "=",
+                                "\"yep\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "This should probably actually work by modifying the behavior instead of dirtying the object",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "Object.VariableString(full)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "state",
-                        "=",
-                        "\"finished\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 }
               ],
               "parameters": [
@@ -16317,7 +16342,7 @@
               "sentence": "",
               "events": [
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -16505,54 +16530,6 @@
               "description": "",
               "fullName": "",
               "functionType": "Action",
-              "name": "onActivate",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "console.log(\"Activated\", objects)\nconsole.log(\"Behavior\", objects[0].getBehavior(\"BehaviorChain\"))",
-                  "parameterObjects": "Object",
-                  "useStrict": true
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateMachine",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
               "name": "onCreated",
               "sentence": "",
               "events": [
@@ -16560,110 +16537,6 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateMachine::PropertyTransitionVariableName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ">",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::StateMachine::PropertyTransitionVariableName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "BehaviorChain[Object.Behavior::PropertyChainName()].linkNumber",
-                        "!=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "BehaviorChain[Object.Behavior::PropertyChainName()].linkNumber",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [],
                   "events": []
@@ -16672,81 +16545,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "console.log(\"Created\", objects)\nconsole.log(\"Behavior\", objects[0].getBehavior(\"BehaviorChain\"))",
-                  "parameterObjects": "Object",
-                  "useStrict": true
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateMachine",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "name": "onDeActivate",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "BehaviorChain[Object.Behavior::PropertyChainName()].linkNumber",
-                        "<=",
-                        "Object.Behavior::PropertyTransitionVariableName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "BehaviorChain[Object.Behavior::PropertyChainName()].linkNumber",
-                        "=",
-                        "Object.Behavior::PropertyTransitionVariableName() + 1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "console.log(\"Deactivated\", objects)\nconsole.log(\"Behavior\", objects[0].getBehavior(\"BehaviorChain\"))",
+                  "inlineCode": "console.log(\"Created\", objects)",
                   "parameterObjects": "Object",
                   "useStrict": true
                 }
@@ -16814,6 +16613,57 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "attachState",
+              "sentence": "",
+              "events": [],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "ssangervasi::StateMachine",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "",
+                  "longDescription": "",
+                  "name": "s",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "",
+                  "longDescription": "",
+                  "name": "sd",
+                  "optional": false,
+                  "supplementaryInformation": "ssangervasi::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -16834,7 +16684,17 @@
           "name": "State",
           "objectType": "",
           "eventsFunctions": [],
-          "propertyDescriptors": []
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "Property"
+            }
+          ]
         }
       ]
     }
