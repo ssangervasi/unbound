@@ -14603,32 +14603,13 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
+                                "value": "ssangervasi::bindableKeyPressed"
                               },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "AnyKeyPressed"
-                                  },
-                                  "parameters": [
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "KeyFromTextPressed"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"b\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
+                              "parameters": [
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "actions": [],
@@ -14681,7 +14662,7 @@
                               },
                               "parameters": [
                                 "",
-                                "\"b\""
+                                "\"Escape\""
                               ],
                               "subInstructions": []
                             }
@@ -15288,30 +15269,9 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::bindableKeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::JsCode",
-                      "inlineCode": "console.log(\"Bindable\")\nconsole.log(runtimeScene)",
-                      "parameterObjects": "",
-                      "useStrict": true
-                    }
-                  ]
+                  "events": []
                 }
               ],
               "parameters": []
@@ -16253,7 +16213,7 @@
           "fullName": "Was a bindable key pressed?",
           "functionType": "Condition",
           "name": "bindableKeyPressed",
-          "sentence": "When a bindable key is pressed",
+          "sentence": "A bindable key was pressed",
           "events": [
             {
               "disabled": false,
@@ -16277,7 +16237,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "const game = runtimeScene.getGame()\nconst inputManager = game.getInputManager()\n\n/* This gives the the string representation that would match the UI\n * expression `LastPressedKey()`. But it's not really helpful for the\n * tests below, so I'm not using it yet.\n * (Also it's marked as private, so it might contain nudes.)\nconst from_evtTools = gdjs.evtTools.input.lastPressedKey(runtimeScene)\n*/\n\nconst lastKeyCode = inputManager.getLastPressedKey()\nconst lastKeyStr = String.fromCharCode(lastKeyCode)\n\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\n// stupdily fancy :D\nconst charWithin = (chars, charCode) => {\n    const min = chars[0]\n    const max = chars[1]\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\n}\n\nconst isBindable = (\n    // yr normy alnums\n    charWithin`A ${lastKeyCode} Z` ||\n    // them wacky arrows\n    charWithin`% ${lastKeyCode} (` ||\n    // just any dang fancy character \n    within(161, lastKeyCode, 255)\n)\n\n// const isBindable = (\n//     // yr normy alnums\n//     /[A-Z0-9]/.test(lastKeyStr) ||\n//     // them wacky arrows\n//     \"%&'(\".includes(lastKeyStr) ||\n//     // that stuff to the right of alnums \n//     `_+{}:\"<>?`.includes(lastKeyStr)\n// )\nconsole.log('lastKeyCode', lastKeyCode, 'lastKeyStr', lastKeyStr, 'isBindable', isBindable)\neventsFunctionContext.returnValue = isBindable\nreturn\n",
+                  "inlineCode": "const game = runtimeScene.getGame()\nconst inputManager = game.getInputManager()\nconst lastKeyCode = inputManager.getLastPressedKey()\n\n/* This gives the the string representation that would match the UI\n * expression `LastPressedKey()`. But it's not really helpful for the\n * tests below, so I'm not using it yet.\n * (Also it's marked as private, so it might contain nudes.)\nconst from_evtTools = gdjs.evtTools.input.lastPressedKey(runtimeScene)\n*/\n\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\n// stupdily fancy :D\nconst charWithin = (chars, charCode) => {\n    const min = chars[0]\n    const max = chars[1]\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\n}\n\nconst isBindable = (\n    // yr normy alnums\n    charWithin`A ${lastKeyCode} Z` ||\n    // them wacky arrows\n    charWithin`% ${lastKeyCode} (` ||\n    // just any dang fancy character \n    within(161, lastKeyCode, 255)\n)\n\n// This is how you return a value.\neventsFunctionContext.returnValue = isBindable\n",
                   "parameterObjects": "",
                   "useStrict": true
                 }
