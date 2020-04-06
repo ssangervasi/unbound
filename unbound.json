@@ -13207,8 +13207,8 @@
           "locked": false,
           "name": "Binder",
           "width": 20,
-          "x": 368,
-          "y": 127,
+          "x": 271,
+          "y": 126,
           "zOrder": 5011,
           "numberProperties": [
             {
@@ -13227,8 +13227,8 @@
           "locked": false,
           "name": "Binder",
           "width": 20,
-          "x": 368,
-          "y": 428,
+          "x": 375,
+          "y": 426,
           "zOrder": 5012,
           "numberProperties": [
             {
@@ -13432,12 +13432,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 177,
+          "height": 285,
           "layer": "",
           "locked": false,
           "name": "Friend",
-          "width": 240,
-          "x": 96,
+          "width": 237,
+          "x": 103,
           "y": 190,
           "zOrder": 5015,
           "numberProperties": [],
@@ -13452,7 +13452,7 @@
           "locked": false,
           "name": "Meany",
           "width": 348,
-          "x": 430,
+          "x": 424,
           "y": 106,
           "zOrder": 5016,
           "numberProperties": [],
@@ -13515,6 +13515,21 @@
           "x": -274,
           "y": 184,
           "zOrder": 5025,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SPause",
+          "width": 0,
+          "x": -182,
+          "y": 132,
+          "zOrder": 5026,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14228,37 +14243,6 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Friend",
-          "smoothed": true,
-          "tags": "text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "ssangervasi::State",
-              "Name": "State1",
-              "Status": "initialized"
-            },
-            {
-              "name": "StateText",
-              "type": "ssangervasi::StateText",
-              "FullTime": 5
-            }
-          ],
-          "string": "oh\nsorry about him\njust... try to ignore it",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
           "name": "Meany",
           "smoothed": true,
           "tags": "text",
@@ -14275,7 +14259,7 @@
             {
               "name": "StateText",
               "type": "ssangervasi::StateText",
-              "FullTime": 5
+              "FullTime": 10
             }
           ],
           "string": "WOW.\nHAVE YOU\nFORGOTTEN\nALREADY?",
@@ -14285,6 +14269,68 @@
             "b": 0,
             "g": 71,
             "r": 196
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SPause",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            },
+            {
+              "name": "StatePause",
+              "type": "ssangervasi::StatePause",
+              "Time": 2
+            }
+          ],
+          "string": "SPause",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Friend",
+          "smoothed": true,
+          "tags": "text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "State1",
+              "Status": "initialized"
+            },
+            {
+              "name": "StateText",
+              "type": "ssangervasi::StateText",
+              "FullTime": 10
+            }
+          ],
+          "string": "oh\nsorry about him\njust... try to ignore it",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
           }
         }
       ],
@@ -14556,6 +14602,36 @@
               "actions": [],
               "events": [
                 {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::State::Run"
+                      },
+                      "parameters": [
+                        "ControlScheme",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
@@ -14589,13 +14665,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjetTxt"
+                            "value": "ssangervasi::State::IsInitialized"
                           },
                           "parameters": [
                             "ControlScheme",
-                            "capture.state",
-                            "=",
-                            "\"inactive\""
+                            "State",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -14653,7 +14728,29 @@
                                   "subInstructions": []
                                 }
                               ],
-                              "events": []
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ssangervasi::consoleLog"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Simulating \" + ControlScheme.VariableString(keyToDir[LastPressedKey()])",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ]
                         },
@@ -14675,19 +14772,6 @@
                             }
                           ],
                           "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControlScheme",
-                                "capture.state",
-                                "=",
-                                "\"triggered\""
-                              ],
-                              "subInstructions": []
-                            },
                             {
                               "type": {
                                 "inverted": false,
@@ -14717,7 +14801,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "When it's time to capture a key for binding\nCapture states:\n - inactive\n - triggered\n - capturing",
+                      "comment": "Check that any bindable key is released before taking the next one. Without this if the user continues holding down a movement key as they enter a bind area we would immediately take that key and overwrite it.",
                       "comment2": ""
                     },
                     {
@@ -14728,13 +14812,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjetTxt"
+                            "value": "ssangervasi::State::IsRunning"
                           },
                           "parameters": [
                             "ControlScheme",
-                            "capture.state",
-                            "=",
-                            "\"triggered\""
+                            "State",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -14749,28 +14832,16 @@
                             {
                               "type": {
                                 "inverted": true,
-                                "value": "AnyKeyPressed"
+                                "value": "ssangervasi::bindableKeyPressed"
                               },
                               "parameters": [
+                                "",
                                 ""
                               ],
                               "subInstructions": []
                             }
                           ],
                           "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControlScheme",
-                                "capture.state",
-                                "=",
-                                "\"capturing\""
-                              ],
-                              "subInstructions": []
-                            },
                             {
                               "type": {
                                 "inverted": false,
@@ -14796,13 +14867,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjetTxt"
+                            "value": "ssangervasi::State::HasReturned"
                           },
                           "parameters": [
                             "ControlScheme",
-                            "capture.state",
-                            "=",
-                            "\"capturing\""
+                            "State",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -14817,48 +14887,16 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "BuiltinCommonInstructions::And"
+                                "value": "ssangervasi::bindableKeyPressed"
                               },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "AnyKeyPressed"
-                                  },
-                                  "parameters": [
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "KeyFromTextPressed"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"b\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ]
+                              "parameters": [
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "ControlScheme",
-                                "capture.state",
-                                "=",
-                                "\"inactive\""
-                              ],
-                              "subInstructions": []
-                            },
                             {
                               "type": {
                                 "inverted": false,
@@ -14913,6 +14951,55 @@
                           "events": []
                         }
                       ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Re-initialize for future bindings",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::State::IsFinished"
+                          },
+                          "parameters": [
+                            "ControlScheme",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::State::Initialize"
+                          },
+                          "parameters": [
+                            "ControlScheme",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ],
                   "parameters": []
@@ -15048,21 +15135,7 @@
                                   "subInstructions": []
                                 }
                               ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Binder",
-                                    "state",
-                                    "=",
-                                    "\"triggered\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
+                              "actions": [],
                               "events": [
                                 {
                                   "disabled": false,
@@ -15073,16 +15146,91 @@
                                     {
                                       "type": {
                                         "inverted": false,
+                                        "value": "ssangervasi::consoleLog"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Collision with inactive binder\"",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "MettreAutourPos"
+                                      },
+                                      "parameters": [
+                                        "Clum",
+                                        "Binder.PointX(\"Center\")",
+                                        "Binder.PointY(\"Center\")",
+                                        "0",
+                                        "0"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "Arreter"
+                                      },
+                                      "parameters": [
+                                        "Clum"
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
                                         "value": "ModVarObjetTxt"
                                       },
                                       "parameters": [
-                                        "ControlScheme",
-                                        "capture.state",
+                                        "Binder",
+                                        "state",
                                         "=",
                                         "\"triggered\""
                                       ],
                                       "subInstructions": []
-                                    },
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ssangervasi::consoleLog"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Clum stopped\"",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
                                     {
                                       "type": {
                                         "inverted": false,
@@ -15112,39 +15260,6 @@
                                   "events": []
                                 },
                                 {
-                                  "disabled": true,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "MettreAutourPos"
-                                      },
-                                      "parameters": [
-                                        "Clum",
-                                        "Binder.PointX(\"Center\")",
-                                        "Binder.PointY(\"Center\")",
-                                        "0",
-                                        "0"
-                                      ],
-                                      "subInstructions": []
-                                    },
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "Arreter"
-                                      },
-                                      "parameters": [
-                                        "Clum"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                },
-                                {
                                   "disabled": false,
                                   "folded": false,
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -15153,12 +15268,11 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "AddForceVers"
+                                        "value": "ssangervasi::consoleLog"
                                       },
                                       "parameters": [
-                                        "Clum",
-                                        "Binder",
-                                        "100",
+                                        "",
+                                        "\"Control scheme going\"",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -15216,8 +15330,32 @@
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
             }
           ],
           "parameters": []
@@ -15551,6 +15689,10 @@
         {
           "name": "StateMachine",
           "type": "ssangervasi::StateMachine"
+        },
+        {
+          "name": "StatePause",
+          "type": "ssangervasi::StatePause"
         },
         {
           "name": "StateText",
@@ -16342,6 +16484,36 @@
           ],
           "parameters": [],
           "objectGroups": []
+        },
+        {
+          "description": "Log a message to the debug console",
+          "fullName": "Console Log",
+          "functionType": "Action",
+          "name": "consoleLog",
+          "sentence": "Log _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const t = (new Date()).toISOString()\nconsole.log(t, 'Message', eventsFunctionContext.getArgument('Message'))",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Message",
+              "longDescription": "",
+              "name": "Message",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsBasedBehaviors": [
@@ -16801,8 +16973,8 @@
           ]
         },
         {
-          "description": "",
-          "fullName": "",
+          "description": "State of a StateMachine",
+          "fullName": "State",
           "name": "State",
           "objectType": "",
           "eventsFunctions": [
@@ -16815,6 +16987,25 @@
               "events": [
                 {
                   "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.ObjectName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": true,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -16861,7 +17052,7 @@
               "description": "",
               "fullName": "",
               "functionType": "Action",
-              "name": "doStepPreEvents",
+              "name": "onCreated",
               "sentence": "",
               "events": [
                 {
@@ -16898,11 +17089,11 @@
               "objectGroups": []
             },
             {
-              "description": "",
-              "fullName": "",
+              "description": "Initialize (or re-initialize) the satte",
+              "fullName": "Initialize the state",
               "functionType": "Action",
-              "name": "onCreated",
-              "sentence": "",
+              "name": "Initialize",
+              "sentence": "Initialize_PARAM0_",
               "events": [
                 {
                   "disabled": false,
@@ -16913,11 +17104,11 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarObjetTxt"
+                        "value": "ssangervasi::State::SetPropertyStatus"
                       },
                       "parameters": [
                         "Object",
-                        "state",
+                        "Behavior",
                         "=",
                         "\"initialized\""
                       ],
@@ -16952,7 +17143,7 @@
               "objectGroups": []
             },
             {
-              "description": "Is initialized?",
+              "description": "Is the state initialized (ready to run)",
               "fullName": "Is initialized?",
               "functionType": "Condition",
               "name": "IsInitialized",
@@ -17105,7 +17296,7 @@
               "objectGroups": []
             },
             {
-              "description": "Is the state running?",
+              "description": "Is the state running",
               "fullName": "Running?",
               "functionType": "Condition",
               "name": "IsRunning",
@@ -17190,7 +17381,7 @@
             },
             {
               "description": "Make the state return control to the machine",
-              "fullName": "Return",
+              "fullName": "Return from the state",
               "functionType": "Action",
               "name": "Return",
               "sentence": "Return from _PARAM0_",
@@ -17259,7 +17450,7 @@
             },
             {
               "description": "Has the state returned control to the machine",
-              "fullName": "Has returned",
+              "fullName": "Has returned?",
               "functionType": "Condition",
               "name": "HasReturned",
               "sentence": "If _PARAM0_ returned",
@@ -17502,13 +17693,13 @@
               "label": "Name of the state",
               "description": "",
               "extraInformation": [],
-              "hidden": false,
+              "hidden": true,
               "name": "Name"
             },
             {
               "value": "initialized",
               "type": "String",
-              "label": "initialized, triggered, finished",
+              "label": "",
               "description": "",
               "extraInformation": [],
               "hidden": true,
@@ -17722,21 +17913,7 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "state",
-                            "=",
-                            "\"typing\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
+                      "actions": [],
                       "events": [
                         {
                           "disabled": false,
@@ -17816,6 +17993,40 @@
                           "events": []
                         }
                       ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::bindableKeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::StateText::SetPropertyFullTime"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "*",
+                            "0.75"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 }
@@ -17878,10 +18089,10 @@
           ]
         },
         {
-          "description": "",
-          "fullName": "",
-          "name": "TypedText",
-          "objectType": "TextObject::Text",
+          "description": "Pause for an amount of time in a state machine",
+          "fullName": "State Pause",
+          "name": "StatePause",
+          "objectType": "",
           "eventsFunctions": [
             {
               "description": "",
@@ -17890,68 +18101,6 @@
               "name": "onCreated",
               "sentence": "",
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Store the initial text in a variable, then reset the displayed text to be empty",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "full",
-                        "=",
-                        "Object.String()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "Object",
-                        "fullLength",
-                        "=",
-                        "StrLength(Object.VariableString(full))"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -17971,14 +18120,6 @@
                     }
                   ],
                   "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "console.log('Created TypedText!', objects)\nconsole.log('Created TypedText!', objects[0].getBehavior(\"TypedText\"))",
-                  "parameterObjects": "Object",
-                  "useStrict": true
                 }
               ],
               "parameters": [
@@ -17989,7 +18130,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "TextObject::Text",
+                  "supplementaryInformation": "",
                   "type": "object"
                 },
                 {
@@ -17999,18 +18140,18 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::TypedText",
+                  "supplementaryInformation": "ssangervasi::StatePause",
                   "type": "behavior"
                 }
               ],
               "objectGroups": []
             },
             {
-              "description": "",
-              "fullName": "",
+              "description": "Subscribe to state",
+              "fullName": "Subscribe to state",
               "functionType": "Action",
-              "name": "doStepPreEvents",
-              "sentence": "",
+              "name": "SubscribeToState",
+              "sentence": "Subscribe _PARAM0_ to _PARAM2_",
               "events": [
                 {
                   "disabled": false,
@@ -18020,13 +18161,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "VarObjetTxt"
+                        "value": "ssangervasi::State::IsRunning"
                       },
                       "parameters": [
-                        "Object",
-                        "state",
-                        "!=",
-                        "\"finished\""
+                        "StateObject",
+                        "StateBehavior",
+                        "!="
                       ],
                       "subInstructions": []
                     }
@@ -18041,13 +18181,9 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "BuiltinCommonInstructions::Once"
                           },
-                          "parameters": [
-                            "Object",
-                            "!=",
-                            "Object.VariableString(full)"
-                          ],
+                          "parameters": [],
                           "subInstructions": []
                         }
                       ],
@@ -18055,68 +18191,16 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ModVarObjetTxt"
+                            "value": "ResetObjectTimer"
                           },
                           "parameters": [
                             "Object",
-                            "state",
-                            "=",
-                            "\"typing\""
+                            "\"progress\"\n"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TextObject::String"
-                              },
-                              "parameters": [
-                                "Object",
-                                "=",
-                                "SubStr(Object.VariableString(full), 0, Object.Variable(index))"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "Object",
-                                "index",
-                                "=",
-                                "clamp(\n  0,\n  ( Object.Variable(fullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(fullLength)\n)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "This should probably actually work by modifying the behavior instead of dirtying the object",
-                      "comment2": ""
+                      "events": []
                     },
                     {
                       "disabled": false,
@@ -18126,41 +18210,32 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TextObject::String"
+                            "value": "ssangervasi::StatePause::PropertyTime"
                           },
                           "parameters": [
                             "Object",
-                            "=",
-                            "Object.VariableString(full)"
+                            "Behavior",
+                            ">=",
+                            "Object.ObjectTimerElapsedTime(\"progress\")"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "actions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "state",
-                                "=",
-                                "\"finished\""
-                              ],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::State::Return"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "StateBehavior",
+                            ""
                           ],
-                          "events": []
+                          "subInstructions": []
                         }
-                      ]
+                      ],
+                      "events": []
                     }
                   ]
                 }
@@ -18173,7 +18248,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "TextObject::Text",
+                  "supplementaryInformation": "",
                   "type": "object"
                 },
                 {
@@ -18183,180 +18258,27 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::TypedText",
+                  "supplementaryInformation": "ssangervasi::StatePause",
                   "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "name": "onActivate",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"progress\"\n"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "console.log('Activated TypedText!', objects)",
-                  "parameterObjects": "Object",
-                  "useStrict": true
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "TextObject::Text",
-                  "type": "object"
                 },
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Behavior",
+                  "description": "",
                   "longDescription": "",
-                  "name": "Behavior",
+                  "name": "StateObject",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::TypedText",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "Is finished?",
-              "functionType": "Condition",
-              "name": "IsFinished",
-              "sentence": "_PARAM0_'s _PARAM1_ is finished",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "state",
-                        "=",
-                        "\"finished\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "True"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "state",
-                        "!=",
-                        "\"finished\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "False"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "TextObject::Text",
-                  "type": "object"
+                  "supplementaryInformation": "",
+                  "type": "objectList"
                 },
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Behavior",
+                  "description": "",
                   "longDescription": "",
-                  "name": "Behavior",
+                  "name": "StateBehavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::TypedText",
+                  "supplementaryInformation": "ssangervasi::State",
                   "type": "behavior"
                 }
               ],
@@ -18365,13 +18287,13 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "10",
+              "value": "1",
               "type": "Number",
-              "label": "FullTime: The time it takes for the full text of the object to display. (seconds)",
+              "label": "Time to pause (seconds).",
               "description": "",
               "extraInformation": [],
               "hidden": false,
-              "name": "FullTime"
+              "name": "Time"
             }
           ]
         }
