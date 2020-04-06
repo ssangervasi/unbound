@@ -13196,7 +13196,7 @@
           "name": "DebugText",
           "width": 221,
           "x": 7,
-          "y": 384,
+          "y": 618,
           "zOrder": 5008,
           "numberProperties": [],
           "stringProperties": [],
@@ -13210,8 +13210,8 @@
           "locked": false,
           "name": "ControlScheme",
           "width": 0,
-          "x": 19,
-          "y": 127,
+          "x": 59,
+          "y": -62,
           "zOrder": 5010,
           "numberProperties": [],
           "stringProperties": [],
@@ -13415,21 +13415,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
-          "layer": "",
-          "locked": false,
-          "name": "Titles",
-          "width": 414,
-          "x": 278,
-          "y": -115,
-          "zOrder": 5014,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 601,
           "layer": "",
           "locked": true,
@@ -13450,10 +13435,10 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 285,
+          "height": 86,
           "layer": "",
           "locked": false,
-          "name": "Friend",
+          "name": "Friend1",
           "width": 237,
           "x": 103,
           "y": 190,
@@ -13578,11 +13563,26 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SPause",
+          "name": "Friend2",
           "width": 0,
-          "x": -178,
-          "y": 193,
-          "zOrder": 5026,
+          "x": 104,
+          "y": 284,
+          "zOrder": 5028,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Friend3",
+          "width": 0,
+          "x": 106,
+          "y": 328,
+          "zOrder": 5029,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14312,7 +14312,7 @@
             {
               "name": "StateFade",
               "type": "ssangervasi::StateFade",
-              "Time": 10
+              "Time": 4
             },
             {
               "name": "StateText",
@@ -14363,7 +14363,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Friend",
+          "name": "Friend1",
           "smoothed": true,
           "tags": "text, opening",
           "type": "TextObject::Text",
@@ -14420,6 +14420,68 @@
             "b": 0,
             "g": 0,
             "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Friend2",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "State1",
+              "Status": "initialized"
+            },
+            {
+              "name": "StateText",
+              "type": "ssangervasi::StateText",
+              "FullTime": 2
+            }
+          ],
+          "string": "that's better",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Friend3",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "State1",
+              "Status": "initialized"
+            },
+            {
+              "name": "StateText",
+              "type": "ssangervasi::StateText",
+              "FullTime": 2
+            }
+          ],
+          "string": "now,\ntry any key you like",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
           }
         }
       ],
@@ -14615,7 +14677,7 @@
                       "parameters": [
                         "SMCharacters",
                         "StateMachine",
-                        "Friend",
+                        "Friend1",
                         "State",
                         ""
                       ],
@@ -14630,6 +14692,34 @@
                         "SMCharacters",
                         "StateMachine",
                         "HideMeany",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SMCharacters",
+                        "StateMachine",
+                        "Friend2",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SMCharacters",
+                        "StateMachine",
+                        "Friend3",
                         "State",
                         ""
                       ],
@@ -14669,9 +14759,9 @@
                         "value": "ssangervasi::StateText::SubscribeToState"
                       },
                       "parameters": [
-                        "Friend",
+                        "Friend1",
                         "StateText",
-                        "Friend",
+                        "Friend1",
                         "State",
                         ""
                       ],
@@ -14686,6 +14776,34 @@
                         "Meany",
                         "StateFade",
                         "HideMeany",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "Friend2",
+                        "StateText",
+                        "Friend2",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ssangervasi::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "Friend3",
+                        "StateText",
+                        "Friend3",
                         "State",
                         ""
                       ],
@@ -15766,30 +15884,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         }
       ],
       "layers": [
@@ -16603,7 +16697,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const charCode = eventsFunctionContext.getArgument('KeyCode') \nconst within = (min, mid, max) => ( min <= mid && mid <= max)\n// stupdily fancy :D\nconst charWithin = (chars, charCode) => {\n    const min = chars[0]\n    const max = chars[1]\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\n}\n\nconst isBindable = (\n    // yr normy alnums\n    charWithin`A ${lastKeyCode} Z` ||\n    // them wacky arrows\n    charWithin`% ${lastKeyCode} (` ||\n    // just any dang fancy character \n    within(161, lastKeyCode, 255)\n)\n\n// This is how you return a value.\neventsFunctionContext.returnValue = isBindable\n",
+              "inlineCode": "const keyCode = eventsFunctionContext.getArgument('KeyCode') \neventsFunctionContext.returnValue = ssangervasi.isBindable(keyCode)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -16651,7 +16745,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "const game = runtimeScene.getGame()\nconst inputManager = game.getInputManager()\nconst lastKeyCode = inputManager.getLastPressedKey()\n\n/* This gives the the string representation that would match the UI\n * expression `LastPressedKey()`. But it's not really helpful for the\n * tests below, so I'm not using it yet.\n * (Also it's marked as private, so it might contain nudes.)\nconst from_evtTools = gdjs.evtTools.input.lastPressedKey(runtimeScene)\n*/\n\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\n// stupdily fancy :D\nconst charWithin = (chars, charCode) => {\n    const min = chars[0]\n    const max = chars[1]\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\n}\n\nconst isBindable = (\n    // yr normy alnums\n    charWithin`A ${lastKeyCode} Z` ||\n    // them wacky arrows\n    charWithin`% ${lastKeyCode} (` ||\n    // just any dang fancy character \n    within(161, lastKeyCode, 255)\n)\n\n// This is how you return a value.\neventsFunctionContext.returnValue = isBindable\n",
+                  "inlineCode": "const lastKeyCode = global.ssangervasi.lastKeyCode(runtimeScene)\neventsFunctionContext.returnValue = global.ssangervasi.isBindable(lastKeyCode)\n",
                   "parameterObjects": "",
                   "useStrict": true
                 },
@@ -16697,6 +16791,60 @@
               "type": "string"
             }
           ],
+          "objectGroups": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onFirstSceneLoaded",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "if (global.ssangervasi) { return }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nglobal.ssangervasi = {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n}\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Last Key Code",
+          "fullName": "Last Key Code",
+          "functionType": "Expression",
+          "name": "lastKeyCode",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "\r\neventsFunctionContext.returnValue = global.ssangervasi.lastKeyCode(runtimeScene)\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
           "objectGroups": []
         }
       ],
@@ -18170,46 +18318,36 @@
                           },
                           "parameters": [
                             "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyFromTextReleased"
-                          },
-                          "parameters": [
-                            "",
                             "LastPressedKey()"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ssangervasi::StateText::SetPropertyFullTime"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            "*",
-                            "0.75"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
                       "actions": [],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ssangervasi::StateText::SetPropertyFullTime"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "*",
+                                "0.75"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
                 }
@@ -18505,6 +18643,18 @@
                             "Object",
                             "*",
                             "1 - Object.ObjectTimerElapsedTime(\"progress\")/Object.Behavior::PropertyTime()\n"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ssangervasi::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "ToString(1 - Object.ObjectTimerElapsedTime(\"progress\")/Object.Behavior::PropertyTime())",
+                            ""
                           ],
                           "subInstructions": []
                         }
