@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\2unbound.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -869,218 +869,6 @@
           ]
         }
       ]
-    },
-    {
-      "height": 32,
-      "name": "Obstacle",
-      "tags": "",
-      "texture": "Assets\\obstacle-1-1.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "behaviors": []
-    },
-    {
-      "name": "ControlScheme",
-      "tags": "",
-      "type": "TextEntryObject::TextEntry",
-      "variables": [
-        {
-          "name": "capture",
-          "children": [
-            {
-              "name": "direction",
-              "value": "Right"
-            },
-            {
-              "name": "state",
-              "value": "inactive"
-            }
-          ]
-        },
-        {
-          "name": "keyToDir",
-          "children": []
-        },
-        {
-          "name": "dirToKey",
-          "children": []
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "State",
-          "type": "ssangervasi::State",
-          "Name": "ControlScheme",
-          "Status": "initialized"
-        }
-      ]
-    },
-    {
-      "name": "Tile",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Squares\\red_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Squares\\red_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Squares\\red_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Exit",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "State",
-          "type": "ssangervasi::State",
-          "Name": "State0",
-          "Status": "initialized"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Exit\\finish_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 58.1818,
-                        "y": 44.5455
-                      },
-                      {
-                        "x": 63.6364,
-                        "y": 59.0909
-                      },
-                      {
-                        "x": 51.8182,
-                        "y": 71.8182
-                      },
-                      {
-                        "x": 36.3636,
-                        "y": 60.2273
-                      },
-                      {
-                        "x": 42.7273,
-                        "y": 45
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsGroups": [],
@@ -1612,6 +1400,218 @@
         }
       ],
       "objects": [
+        {
+          "name": "ControlScheme",
+          "tags": "",
+          "type": "TextEntryObject::TextEntry",
+          "variables": [
+            {
+              "name": "capture",
+              "children": [
+                {
+                  "name": "direction",
+                  "value": "Right"
+                },
+                {
+                  "name": "state",
+                  "value": "inactive"
+                }
+              ]
+            },
+            {
+              "name": "keyToDir",
+              "children": []
+            },
+            {
+              "name": "dirToKey",
+              "children": []
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "ControlScheme",
+              "Status": "initialized"
+            }
+          ]
+        },
+        {
+          "name": "Exit",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "ssangervasi::State",
+              "Name": "State0",
+              "Status": "initialized"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Exit\\finish_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 58.1818,
+                            "y": 44.5455
+                          },
+                          {
+                            "x": 63.6364,
+                            "y": 59.0909
+                          },
+                          {
+                            "x": 51.8182,
+                            "y": 71.8182
+                          },
+                          {
+                            "x": 36.3636,
+                            "y": 60.2273
+                          },
+                          {
+                            "x": 42.7273,
+                            "y": 45
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "height": 32,
+          "name": "Obstacle",
+          "tags": "",
+          "texture": "Assets\\obstacle-1-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "name": "Tile",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Squares\\red_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Squares\\red_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Squares\\red_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "bold": false,
           "italic": true,
@@ -3572,16 +3572,7 @@
           "animations": []
         }
       ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        }
-      ],
+      "events": [],
       "layers": [
         {
           "name": "",
