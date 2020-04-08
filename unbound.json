@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\2unbound.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -891,10 +891,6 @@
             {
               "name": "direction",
               "value": "Right"
-            },
-            {
-              "name": "state",
-              "value": "inactive"
             }
           ]
         },
@@ -909,8 +905,12 @@
       ],
       "behaviors": [
         {
+          "name": "BindableControls",
+          "type": "srs_controls::BindableControls"
+        },
+        {
           "name": "State",
-          "type": "ssangervasi::State",
+          "type": "srs_states::State",
           "Name": "ControlScheme",
           "Status": "initialized"
         }
@@ -1022,7 +1022,7 @@
       "behaviors": [
         {
           "name": "State",
-          "type": "ssangervasi::State",
+          "type": "srs_states::State",
           "Name": "State0",
           "Status": "initialized"
         }
@@ -1218,24 +1218,9 @@
           "locked": false,
           "name": "DebugText",
           "width": 221,
-          "x": 7,
-          "y": 618,
+          "x": 19,
+          "y": 382,
           "zOrder": 5008,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "ControlScheme",
-          "width": 0,
-          "x": -206,
-          "y": 270,
-          "zOrder": 5010,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1609,6 +1594,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "BindableControls",
+          "width": 0,
+          "x": -276,
+          "y": 292,
+          "zOrder": 6001,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1662,7 +1662,7 @@
           "behaviors": [
             {
               "name": "StateMachine",
-              "type": "ssangervasi::StateMachine",
+              "type": "srs_states::StateMachine",
               "Property": 0
             }
           ],
@@ -1687,7 +1687,7 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "SOpening",
               "Status": "initialized"
             }
@@ -1713,7 +1713,7 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "SRunning",
               "Status": "initialized"
             }
@@ -1739,7 +1739,7 @@
           "behaviors": [
             {
               "name": "StateMachine",
-              "type": "ssangervasi::StateMachine"
+              "type": "srs_states::StateMachine"
             }
           ],
           "string": "SMCharacters",
@@ -1763,13 +1763,13 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "State0",
               "Status": "initialized"
             },
             {
               "name": "StateText",
-              "type": "ssangervasi::StateText",
+              "type": "srs_states::StateText",
               "FullTime": 8
             },
             {
@@ -1798,13 +1798,13 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "SPause",
               "Status": "initialized"
             },
             {
               "name": "StatePause",
-              "type": "ssangervasi::StatePause",
+              "type": "srs_states::StatePause",
               "Time": 1
             }
           ],
@@ -1829,13 +1829,13 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "State1",
               "Status": "initialized"
             },
             {
               "name": "StateText",
-              "type": "ssangervasi::StateText",
+              "type": "srs_states::StateText",
               "FullTime": 8
             },
             {
@@ -1869,7 +1869,7 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "State1",
               "Status": "initialized"
             }
@@ -1895,13 +1895,13 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "State1",
               "Status": "initialized"
             },
             {
               "name": "StateText",
-              "type": "ssangervasi::StateText",
+              "type": "srs_states::StateText",
               "FullTime": 2
             },
             {
@@ -1930,13 +1930,13 @@
           "behaviors": [
             {
               "name": "State",
-              "type": "ssangervasi::State",
+              "type": "srs_states::State",
               "Name": "State1",
               "Status": "initialized"
             },
             {
               "name": "StateText",
-              "type": "ssangervasi::StateText",
+              "type": "srs_states::StateText",
               "FullTime": 2
             },
             {
@@ -1951,6 +1951,36 @@
             "b": 0,
             "g": 170,
             "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "BindableControls",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "BindableControls",
+              "type": "srs_controls::BindableControls"
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "State0",
+              "Status": "initialized"
+            }
+          ],
+          "string": "BindableControls",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         }
       ],
@@ -2005,7 +2035,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ssangervasi::StateMachine::ManageState"
+                    "value": "srs_states::StateMachine::ManageState"
                   },
                   "parameters": [
                     "SMScene",
@@ -2019,7 +2049,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ssangervasi::StateMachine::ManageState"
+                    "value": "srs_states::StateMachine::ManageState"
                   },
                   "parameters": [
                     "SMScene",
@@ -2048,7 +2078,7 @@
                   "comment2": ""
                 },
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -2056,7 +2086,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::Return"
+                        "value": "srs_states::State::Return"
                       },
                       "parameters": [
                         "SOpening",
@@ -2079,7 +2109,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Scene opening",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2092,7 +2122,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ssangervasi::State::IsRunning"
+                    "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
                     "SOpening",
@@ -2130,19 +2160,7 @@
                         "\"HideMeany\"",
                         "0",
                         "\"easeOutExpo\"",
-                        "ssangervasi::ms(5)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "ToString(ssangervasi::ms(5))",
+                        "srs_utils::ms(5)",
                         ""
                       ],
                       "subInstructions": []
@@ -2159,7 +2177,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2173,7 +2191,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2187,7 +2205,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2201,7 +2219,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2215,7 +2233,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2229,7 +2247,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::ManageState"
+                        "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2243,7 +2261,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
+                        "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
                         "Meany",
@@ -2257,7 +2275,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StatePause::SubscribeToState"
+                        "value": "srs_states::StatePause::SubscribeToState"
                       },
                       "parameters": [
                         "SPause",
@@ -2271,7 +2289,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
+                        "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
                         "Friend1",
@@ -2285,7 +2303,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::manageTween"
+                        "value": "srs_states::manageTween"
                       },
                       "parameters": [
                         "",
@@ -2301,7 +2319,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
+                        "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
                         "Friend2",
@@ -2315,7 +2333,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateText::SubscribeToState"
+                        "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
                         "Friend3",
@@ -2337,7 +2355,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::StateMachine::IsFinished"
+                        "value": "srs_states::StateMachine::IsFinished"
                       },
                       "parameters": [
                         "SMCharacters",
@@ -2351,7 +2369,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::Return"
+                        "value": "srs_states::State::Return"
                       },
                       "parameters": [
                         "SOpening",
@@ -2388,7 +2406,7 @@
                             "ToString(RandomFloat(1))",
                             "0",
                             "\"swingTo\"",
-                            "ssangervasi::ms(5)",
+                            "srs_utils::ms(5)",
                             "\"bounce\""
                           ],
                           "subInstructions": []
@@ -2422,7 +2440,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ssangervasi::State::IsRunning"
+                    "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
                     "SRunning",
@@ -2435,46 +2453,115 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ssangervasi::State::Run"
-                      },
-                      "parameters": [
-                        "ControlScheme",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
                   "folded": false,
+                  "name": "PC controls with new behavior",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "BindableControls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_controls::BindableControls::ManageBinding"
+                          },
+                          "parameters": [
+                            "BindableControls",
+                            "BindableControls",
+                            "BindableControls",
+                            "State",
+                            "Binder",
+                            "Clum",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": true,
+                  "folded": false,
                   "name": "Player controls",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "ControlScheme",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
                     {
                       "disabled": false,
                       "folded": false,
@@ -2498,7 +2585,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::IsInitialized"
+                            "value": "srs_states::State::IsInitialized"
                           },
                           "parameters": [
                             "ControlScheme",
@@ -2518,7 +2605,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::bindableKeyPressed"
+                                "value": "srs_controls::bindableKeyPressed"
                               },
                               "parameters": [
                                 "",
@@ -2586,7 +2673,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::State::Run"
+                                "value": "srs_states::State::Run"
                               },
                               "parameters": [
                                 "ControlScheme",
@@ -2623,7 +2710,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::IsRunning"
+                            "value": "srs_states::State::IsRunning"
                           },
                           "parameters": [
                             "ControlScheme",
@@ -2678,7 +2765,7 @@
                             {
                               "type": {
                                 "inverted": true,
-                                "value": "ssangervasi::bindableKeyPressed"
+                                "value": "srs_controls::bindableKeyPressed"
                               },
                               "parameters": [
                                 "",
@@ -2691,7 +2778,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::State::Return"
+                                "value": "srs_states::State::Return"
                               },
                               "parameters": [
                                 "ControlScheme",
@@ -2713,7 +2800,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::HasReturned"
+                            "value": "srs_states::State::HasReturned"
                           },
                           "parameters": [
                             "ControlScheme",
@@ -2733,7 +2820,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::bindableKeyPressed"
+                                "value": "srs_controls::bindableKeyPressed"
                               },
                               "parameters": [
                                 "",
@@ -2746,7 +2833,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::State::Finish"
+                                "value": "srs_states::State::Finish"
                               },
                               "parameters": [
                                 "ControlScheme",
@@ -2841,7 +2928,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::IsFinished"
+                            "value": "srs_states::State::IsFinished"
                           },
                           "parameters": [
                             "ControlScheme",
@@ -2855,7 +2942,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Initialize"
+                            "value": "srs_states::State::Initialize"
                           },
                           "parameters": [
                             "ControlScheme",
@@ -3026,28 +3113,7 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "ssangervasi::consoleLog"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "\"Collision with inactive binder\"",
-                                        ""
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                },
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "ssangervasi::State::Run"
+                                        "value": "srs_states::State::Run"
                                       },
                                       "parameters": [
                                         "ControlScheme",
@@ -3284,7 +3350,7 @@
                       "parameters": [
                         "DebugText",
                         "+",
-                        "\n\"capture.state: \" + ControlScheme.VariableString(capture.state)"
+                        "\n\"Ctrls State: \" + BindableControls.State::GetStatus()\n"
                       ],
                       "subInstructions": []
                     },
@@ -3507,20 +3573,24 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "BindableControls",
+          "type": "srs_controls::BindableControls"
+        },
+        {
           "name": "State",
-          "type": "ssangervasi::State"
+          "type": "srs_states::State"
         },
         {
           "name": "StateMachine",
-          "type": "ssangervasi::StateMachine"
+          "type": "srs_states::StateMachine"
         },
         {
           "name": "StatePause",
-          "type": "ssangervasi::StatePause"
+          "type": "srs_states::StatePause"
         },
         {
           "name": "StateText",
-          "type": "ssangervasi::StateText"
+          "type": "srs_states::StateText"
         },
         {
           "name": "TopDownMovement",
@@ -4292,173 +4362,12 @@
       "author": "ssangervasi",
       "description": "",
       "extensionNamespace": "",
-      "fullName": "",
-      "name": "ssangervasi",
+      "fullName": "SRS States",
+      "name": "srs_states",
       "shortDescription": "",
       "tags": "",
       "version": "",
       "eventsFunctions": [
-        {
-          "description": "Is key bindable?",
-          "fullName": "Is key bindable?",
-          "functionType": "Condition",
-          "name": "isKeyBindable",
-          "sentence": "If _PARAM1_ is bindable",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const keyCode = eventsFunctionContext.getArgument('KeyCode') \neventsFunctionContext.returnValue = ssangervasi.isBindable(keyCode)\n",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "Key Code",
-              "longDescription": "",
-              "name": "KeyCode",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "expression"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "Was a bindable key pressed?",
-          "fullName": "Was a bindable key pressed?",
-          "functionType": "Condition",
-          "name": "bindableKeyPressed",
-          "sentence": "A bindable key was pressed",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "AnyKeyPressed"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "const lastKeyCode = global.ssangervasi.lastKeyCode(runtimeScene)\neventsFunctionContext.returnValue = global.ssangervasi.isBindable(lastKeyCode)\n",
-                  "parameterObjects": "",
-                  "useStrict": true
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                }
-              ]
-            }
-          ],
-          "parameters": [],
-          "objectGroups": []
-        },
-        {
-          "description": "Log a message to the debug console",
-          "fullName": "Console Log",
-          "functionType": "Action",
-          "name": "consoleLog",
-          "sentence": "Log _PARAM1_",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const t = (new Date()).toISOString()\nconsole.log(t, 'Message', eventsFunctionContext.getArgument('Message'))",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "Message",
-              "longDescription": "",
-              "name": "Message",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "",
-          "fullName": "",
-          "functionType": "Action",
-          "name": "onFirstSceneLoaded",
-          "sentence": "",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (global.ssangervasi) { return }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nglobal.ssangervasi = {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n}\r\n",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [],
-          "objectGroups": []
-        },
-        {
-          "description": "Last Key Code",
-          "fullName": "Last Key Code",
-          "functionType": "Expression",
-          "name": "lastKeyCode",
-          "sentence": "",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "\r\neventsFunctionContext.returnValue = global.ssangervasi.lastKeyCode(runtimeScene)\r\n",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [],
-          "objectGroups": []
-        },
         {
           "description": "Make state manage tween",
           "fullName": "State manage tween",
@@ -4494,7 +4403,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsInitialized"
+                        "value": "srs_states::State::IsInitialized"
                       },
                       "parameters": [
                         "State",
@@ -4540,7 +4449,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsRunning"
+                        "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
                         "State",
@@ -4608,7 +4517,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Return"
+                            "value": "srs_states::State::Return"
                           },
                           "parameters": [
                             "State",
@@ -4630,7 +4539,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsFinished"
+                        "value": "srs_states::State::IsFinished"
                       },
                       "parameters": [
                         "State",
@@ -4677,7 +4586,7 @@
               "longDescription": "",
               "name": "StateBehavior",
               "optional": false,
-              "supplementaryInformation": "ssangervasi::State",
+              "supplementaryInformation": "srs_states::State",
               "type": "behavior"
             },
             {
@@ -4709,47 +4618,6 @@
               "optional": false,
               "supplementaryInformation": "",
               "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "Get milliseconds from seconds",
-          "fullName": "ms",
-          "functionType": "Expression",
-          "name": "ms",
-          "sentence": "",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetReturnNumber"
-                  },
-                  "parameters": [
-                    "GetArgumentAsNumber(\"Seconds\") * 1000"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "Seconds",
-              "longDescription": "",
-              "name": "Seconds",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "expression"
             }
           ],
           "objectGroups": []
@@ -4823,7 +4691,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateMachine",
+                  "supplementaryInformation": "srs_states::StateMachine",
                   "type": "behavior"
                 }
               ],
@@ -4961,7 +4829,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::IsInitialized"
+                            "value": "srs_states::State::IsInitialized"
                           },
                           "parameters": [
                             "StateObject",
@@ -4996,7 +4864,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::State::Run"
+                                "value": "srs_states::State::Run"
                               },
                               "parameters": [
                                 "StateObject",
@@ -5018,7 +4886,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::HasReturned"
+                            "value": "srs_states::State::HasReturned"
                           },
                           "parameters": [
                             "StateObject",
@@ -5032,7 +4900,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Finish"
+                            "value": "srs_states::State::Finish"
                           },
                           "parameters": [
                             "StateObject",
@@ -5088,7 +4956,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateMachine",
+                  "supplementaryInformation": "srs_states::StateMachine",
                   "type": "behavior"
                 },
                 {
@@ -5108,7 +4976,7 @@
                   "longDescription": "",
                   "name": "StateBehavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5192,7 +5060,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateMachine",
+                  "supplementaryInformation": "srs_states::StateMachine",
                   "type": "behavior"
                 }
               ],
@@ -5281,7 +5149,58 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "State status value",
+              "fullName": "Get Status",
+              "functionType": "StringExpression",
+              "name": "GetStatus",
+              "sentence": "String form of _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyStatus()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5321,7 +5240,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5343,7 +5262,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::SetPropertyStatus"
+                        "value": "srs_states::State::SetPropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5375,7 +5294,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5415,7 +5334,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::PropertyStatus"
+                        "value": "srs_states::State::PropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5459,7 +5378,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5496,7 +5415,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::SetPropertyStatus"
+                        "value": "srs_states::State::SetPropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5528,7 +5447,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5568,7 +5487,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::PropertyStatus"
+                        "value": "srs_states::State::PropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5612,7 +5531,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5649,7 +5568,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::SetPropertyStatus"
+                        "value": "srs_states::State::SetPropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5681,7 +5600,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5721,7 +5640,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::PropertyStatus"
+                        "value": "srs_states::State::PropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5765,7 +5684,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5802,7 +5721,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::SetPropertyStatus"
+                        "value": "srs_states::State::SetPropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5834,7 +5753,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -5874,7 +5793,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::PropertyStatus"
+                        "value": "srs_states::State::PropertyStatus"
                       },
                       "parameters": [
                         "Object",
@@ -5918,7 +5837,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -6040,7 +5959,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateText",
+                  "supplementaryInformation": "srs_states::StateText",
                   "type": "behavior"
                 }
               ],
@@ -6061,7 +5980,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsRunning"
+                        "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
                         "StateObject",
@@ -6199,7 +6118,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::State::Return"
+                                "value": "srs_states::State::Return"
                               },
                               "parameters": [
                                 "StateObject",
@@ -6221,11 +6140,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::bindableKeyPressed"
+                            "value": "srs_controls::bindableKeyPressed"
                           },
                           "parameters": [
                             "",
-                            "LastPressedKey()"
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -6241,7 +6160,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ssangervasi::StateText::SetPropertyFullTime"
+                                "value": "srs_states::StateText::SetPropertyFullTime"
                               },
                               "parameters": [
                                 "Object",
@@ -6277,7 +6196,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateText",
+                  "supplementaryInformation": "srs_states::StateText",
                   "type": "behavior"
                 },
                 {
@@ -6297,7 +6216,7 @@
                   "longDescription": "",
                   "name": "StateBehavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -6337,7 +6256,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsRunning"
+                        "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
                         "StateObject",
@@ -6386,7 +6305,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::StatePause::PropertyTime"
+                            "value": "srs_states::StatePause::PropertyTime"
                           },
                           "parameters": [
                             "Object",
@@ -6401,7 +6320,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Return"
+                            "value": "srs_states::State::Return"
                           },
                           "parameters": [
                             "StateObject",
@@ -6434,7 +6353,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StatePause",
+                  "supplementaryInformation": "srs_states::StatePause",
                   "type": "behavior"
                 },
                 {
@@ -6454,7 +6373,7 @@
                   "longDescription": "",
                   "name": "StateBehavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -6494,7 +6413,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsRunning"
+                        "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
                         "StateObject",
@@ -6556,7 +6475,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::consoleLog"
+                            "value": "srs_states::consoleLog"
                           },
                           "parameters": [
                             "",
@@ -6576,7 +6495,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::StateFade::PropertyTime"
+                            "value": "srs_states::StateFade::PropertyTime"
                           },
                           "parameters": [
                             "Object",
@@ -6591,7 +6510,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Return"
+                            "value": "srs_states::State::Return"
                           },
                           "parameters": [
                             "StateObject",
@@ -6613,7 +6532,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ssangervasi::State::IsRunning"
+                        "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
                         "StateObject",
@@ -6671,7 +6590,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::StateFade::PropertyTime"
+                            "value": "srs_states::StateFade::PropertyTime"
                           },
                           "parameters": [
                             "Object",
@@ -6686,7 +6605,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ssangervasi::State::Return"
+                            "value": "srs_states::State::Return"
                           },
                           "parameters": [
                             "StateObject",
@@ -6719,7 +6638,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::StateFade",
+                  "supplementaryInformation": "srs_states::StateFade",
                   "type": "behavior"
                 },
                 {
@@ -6739,7 +6658,7 @@
                   "longDescription": "",
                   "name": "StateBehavior",
                   "optional": false,
-                  "supplementaryInformation": "ssangervasi::State",
+                  "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
                 }
               ],
@@ -6761,11 +6680,925 @@
       ]
     },
     {
+      "author": "ssangervasi",
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "SRS Utils",
+      "name": "srs_utils",
+      "shortDescription": "",
+      "tags": "",
+      "version": "",
+      "eventsFunctions": [
+        {
+          "description": "Log a message to the debug console",
+          "fullName": "Console Log",
+          "functionType": "Action",
+          "name": "consoleLog",
+          "sentence": "Log _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const t = (new Date()).toISOString()\nconsole.log(t, 'Message', eventsFunctionContext.getArgument('Message'))",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Message",
+              "longDescription": "",
+              "name": "Message",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Get milliseconds from seconds",
+          "fullName": "ms",
+          "functionType": "Expression",
+          "name": "ms",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "GetArgumentAsNumber(\"Seconds\") * 1000"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Seconds",
+              "longDescription": "",
+              "name": "Seconds",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": []
+    },
+    {
+      "author": "ssangervasi",
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "SRS Controls",
+      "name": "srs_controls",
+      "shortDescription": "SRS Controls",
+      "tags": "",
+      "version": "",
+      "eventsFunctions": [
+        {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onFirstSceneLoaded",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "if (global.ssangervasi) { return }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nglobal.ssangervasi = {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n}\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Was a bindable key pressed?",
+          "fullName": "Was a bindable key pressed?",
+          "functionType": "Condition",
+          "name": "bindableKeyPressed",
+          "sentence": "A bindable key was pressed",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": "const lastKeyCode = global.ssangervasi.lastKeyCode(runtimeScene)\neventsFunctionContext.returnValue = global.ssangervasi.isBindable(lastKeyCode)\n",
+                  "parameterObjects": "",
+                  "useStrict": true
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Last Key Code",
+          "fullName": "Last Key Code",
+          "functionType": "Expression",
+          "name": "lastKeyCode",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "\r\neventsFunctionContext.returnValue = global.ssangervasi.lastKeyCode(runtimeScene)\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Is key bindable?",
+          "fullName": "Is key bindable?",
+          "functionType": "Condition",
+          "name": "isKeyBindable",
+          "sentence": "If _PARAM1_ is bindable",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const keyCode = eventsFunctionContext.getArgument('KeyCode') \neventsFunctionContext.returnValue = ssangervasi.isBindable(keyCode)\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Key Code",
+              "longDescription": "",
+              "name": "KeyCode",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "name": "Function",
+          "sentence": "",
+          "events": [],
+          "parameters": [],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "",
+          "fullName": "Bindable Controls",
+          "name": "BindableControls",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "Manage Binding",
+              "fullName": "Manage Binding",
+              "functionType": "Action",
+              "name": "ManageBinding",
+              "sentence": "When _PARAM5_ hits _PARAM4_ trigger state _PARAM2_ to rebind _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "The standard loop of sending controls to Clum",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsInitialized"
+                      },
+                      "parameters": [
+                        "BindableControls",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_controls::bindableKeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ObjectVariableChildExists"
+                              },
+                              "parameters": [
+                                "BindableControls",
+                                "BindableControls.KeyToDir",
+                                "LastPressedKey()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TopDownMovementBehavior::SimulateControl"
+                              },
+                              "parameters": [
+                                "PC",
+                                "TopDownMovement",
+                                "Object.VariableString(BindableControls.KeyToDir[LastPressedKey()])"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "TODO: Some kind of debug override",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Escape\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "BindableControls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Check that any bindable key is released before taking the next one. Without this if the user continues holding down a movement key as they enter a bind area we would immediately take that key and overwrite it.",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsRunning"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "Binder",
+                            "PC"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "PC",
+                            "Binder",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "srs_controls::bindableKeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Return"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Binder",
+                                "PC"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "LinkedObjects::RemoveLinkBetween"
+                              },
+                              "parameters": [
+                                "",
+                                "PC",
+                                "Binder"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Anything held was released, so take the next key as the binding.",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::HasReturned"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_controls::bindableKeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Finish"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectVariableRemoveChild"
+                          },
+                          "parameters": [
+                            "Object",
+                            "BindableControls.KeyToDir",
+                            "Object.VariableString(\n  BindableControls.DirToKey[\n    Object.VariableString(\n      BindableControls.direction\n    )\n  ]\n)\n"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "BindableControls.KeyToDir[LastPressedKey()]",
+                            "=",
+                            "Object.VariableString(BindableControls.direction)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "BindableControls.DirToKey[Object.VariableString(BindableControls.direction)]",
+                            "=",
+                            "LastPressedKey()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::RemoveAllLinksOf"
+                          },
+                          "parameters": [
+                            "",
+                            "PC"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Re-initialize for future bindings",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsFinished"
+                      },
+                      "parameters": [
+                        "BindableControls",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "BindableControls",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_controls::BindableControls",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateObject",
+                  "longDescription": "",
+                  "name": "StateObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateBehavior",
+                  "longDescription": "",
+                  "name": "StateBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_states::State",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Binder",
+                  "longDescription": "",
+                  "name": "Binder",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "PC",
+                  "longDescription": "",
+                  "name": "PC",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectVariableChildExists"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls",
+                        "\"direction\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls.direction",
+                        "=",
+                        "\"Right\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectVariableChildExists"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls",
+                        "KeyToDir"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls.KeyToDir.None",
+                        "=",
+                        "\"None\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectVariableChildExists"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls",
+                        "\"DirToKey\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindableControls.DirToKey",
+                        "=",
+                        "\"None\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_controls::BindableControls",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
+        }
+      ]
+    },
+    {
       "author": "",
       "description": "",
       "extensionNamespace": "",
       "fullName": "",
-      "name": "NewExtension",
+      "name": "NewExtension2",
       "shortDescription": "",
       "tags": "",
       "version": "",
