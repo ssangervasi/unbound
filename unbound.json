@@ -1074,7 +1074,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.994
+        "zoomFactor": 0.85
       },
       "objectsGroups": [
         {
@@ -1107,8 +1107,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 106,
-          "y": 120,
+          "x": 109,
+          "y": 119,
           "zOrder": 6000,
           "numberProperties": [],
           "stringProperties": [],
@@ -1946,6 +1946,58 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "name": "Clum2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "deceleration": 800,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 200,
+              "name": "TopDownMovement",
+              "rotateObject": true,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Clum\\clum_0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2417,6 +2469,32 @@
               "actions": [],
               "events": [
                 {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_controls::BindableControls::ManageBinding"
+                      },
+                      "parameters": [
+                        "BindableControls",
+                        "BindableControls",
+                        "BindableControls",
+                        "State",
+                        "Binder",
+                        "Clum",
+                        "TopDownMovement",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
@@ -2450,32 +2528,6 @@
                           "parameters": [
                             "BindableControls",
                             "State",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_controls::BindableControls::ManageBinding"
-                          },
-                          "parameters": [
-                            "BindableControls",
-                            "BindableControls",
-                            "BindableControls",
-                            "State",
-                            "Binder",
-                            "Clum",
-                            "TopDownMovement",
                             ""
                           ],
                           "subInstructions": []
@@ -6504,7 +6556,7 @@
       "extensionNamespace": "",
       "fullName": "SRS Controls",
       "name": "srs_controls",
-      "shortDescription": "SRS Controls",
+      "shortDescription": "",
       "tags": "",
       "version": "",
       "eventsFunctions": [
@@ -6655,6 +6707,62 @@
               "sentence": "When _PARAM5_ hits _PARAM4_ trigger state _PARAM2_ to rebind _PARAM0_",
               "events": [
                 {
+                  "disabled": true,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AnyKeyPressed"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "LastPressedKey()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"k: \" + Object.VariableString(BindableControls.KeyToDir[\"k\"])",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"right: \" + Object.VariableString(BindableControls.DirToKey[\"Right\"])",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Comment",
@@ -6691,6 +6799,62 @@
                   "events": [
                     {
                       "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnyKeyPressed"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "LastPressedKey()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "\"k: \" + Object.VariableString(BindableControls.KeyToDir[\"k\"])",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "\"right: \" + Object.VariableString(BindableControls.DirToKey[\"Right\"])",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": true,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -6766,6 +6930,52 @@
                       "events": [
                         {
                           "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ObjectVariableChildExists"
+                              },
+                              "parameters": [
+                                "BindableControls",
+                                "BindableControls.KeyToDir",
+                                "LastPressedKey()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TopDownMovementBehavior::SimulateControl"
+                              },
+                              "parameters": [
+                                "PC",
+                                "PCMovement",
+                                "\"Right\""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::consoleLog"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Pressed\"",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": true,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
@@ -7187,7 +7397,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_states::State::Finish"
+                                "value": "srs_states::State::Initialize"
                               },
                               "parameters": [
                                 "StateObject",
@@ -7277,7 +7487,7 @@
                   "comment2": ""
                 },
                 {
-                  "disabled": false,
+                  "disabled": true,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -7553,12 +7763,185 @@
       "description": "",
       "extensionNamespace": "",
       "fullName": "",
-      "name": "NewExtension2",
+      "name": "srs_ctrl",
       "shortDescription": "",
       "tags": "",
       "version": "",
       "eventsFunctions": [],
-      "eventsBasedBehaviors": []
+      "eventsBasedBehaviors": [
+        {
+          "description": "",
+          "fullName": "",
+          "name": "Bindable",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyToDir.None",
+                        "=",
+                        "\"None\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "DirToKey.None",
+                        "=",
+                        "\"None\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Direction",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Direction",
+                        "=",
+                        "\"Right\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Subscribe to state",
+              "fullName": "Subscribe to state",
+              "functionType": "Action",
+              "name": "SubscribeToState",
+              "sentence": "Subscribe to state",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateObject",
+                  "longDescription": "",
+                  "name": "StateObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateBehavior",
+                  "longDescription": "",
+                  "name": "StateBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_states::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
+        }
+      ]
     }
   ],
   "externalLayouts": [],
