@@ -3474,8 +3474,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 500,
-          "y": 142,
+          "x": 497,
+          "y": 150,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -3621,6 +3621,25 @@
                 "TopDownMovement",
                 "Controls",
                 "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Bindable::HandleBinderCollision"
+              },
+              "parameters": [
+                "Controls",
+                "Bindable",
+                "Clum",
+                "Controls",
+                "State",
+                "Binder",
+                "State",
+                "Binder",
+                "Binder",
                 ""
               ],
               "subInstructions": []
@@ -6998,20 +7017,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"is init\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
@@ -7191,20 +7197,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"is running\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
@@ -7258,20 +7251,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"is returned\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
@@ -7289,20 +7269,7 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"is returned key pressed\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
+                      "actions": [],
                       "events": [
                         {
                           "disabled": false,
@@ -7524,18 +7491,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"is finished\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
