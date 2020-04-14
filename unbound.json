@@ -505,6 +505,15 @@
         "name": "Icons\\ios-icon-29.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Binder/binder_neutral.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Binder\\binder_neutral.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -870,6 +879,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Binder\\binder_neutral.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1077,7 +1115,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.09
+        "zoomFactor": 1.066
       },
       "objectsGroups": [
         {
@@ -1180,21 +1218,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 213,
-          "layer": "UI",
-          "locked": false,
-          "name": "DebugText",
-          "width": 221,
-          "x": 19,
-          "y": 382,
-          "zOrder": 5008,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 30,
           "layer": "Objects",
           "locked": false,
@@ -1210,7 +1233,12 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Down"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -1232,7 +1260,7 @@
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "direction",
+              "name": "Direction",
               "value": "Right"
             }
           ]
@@ -1564,14 +1592,39 @@
         },
         {
           "angle": 0,
+          "customSize": true,
+          "height": 47,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 53,
+          "x": 103,
+          "y": 117,
+          "zOrder": 5012,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 4
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Right"
+            }
+          ]
+        },
+        {
+          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "BindableControls",
+          "name": "Controls",
           "width": 0,
-          "x": -276,
-          "y": 292,
+          "x": -242,
+          "y": 262,
           "zOrder": 6001,
           "numberProperties": [],
           "stringProperties": [],
@@ -1923,7 +1976,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "BindableControls",
+          "name": "Controls",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -1931,17 +1984,15 @@
           "variables": [],
           "behaviors": [
             {
-              "name": "BindableControls",
-              "type": "srs_controls::BindableControls"
+              "name": "Bindable",
+              "type": "srs_ctrl::Bindable"
             },
             {
               "name": "State",
-              "type": "srs_states::State",
-              "Name": "State0",
-              "Status": "initialized"
+              "type": "srs_states::State"
             }
           ],
-          "string": "BindableControls",
+          "string": "Controls",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -1949,58 +2000,6 @@
             "g": 0,
             "r": 0
           }
-        },
-        {
-          "name": "Clum2",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "acceleration": 400,
-              "allowDiagonals": true,
-              "angleOffset": 0,
-              "angularMaxSpeed": 180,
-              "deceleration": 800,
-              "ignoreDefaultControls": false,
-              "maxSpeed": 200,
-              "rotateObject": true
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Clum\\clum_0.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -2010,7 +2009,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Scene setup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2080,44 +2079,43 @@
                   "subInstructions": []
                 }
               ],
-              "events": [
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Enable to skip opening narration",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::Return"
                   },
-                  "comment": "Enable to skip opening narration",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Return"
-                      },
-                      "parameters": [
-                        "SOpening",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "parameters": [
+                    "SOpening",
+                    "State",
+                    ""
                   ],
-                  "events": []
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -2446,7 +2444,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Scene running",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2471,331 +2469,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_controls::BindableControls::ManageBinding"
-                      },
-                      "parameters": [
-                        "BindableControls",
-                        "BindableControls",
-                        "BindableControls",
-                        "State",
-                        "Binder",
-                        "Clum",
-                        "TopDownMovement",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": false,
-                  "name": "PC controls with new behavior",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_states::State::Run"
-                          },
-                          "parameters": [
-                            "BindableControls",
-                            "State",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ],
-                  "parameters": []
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": true,
-                  "folded": false,
-                  "name": "Player controls",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "The standard loop of sending controls to Clum",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_controls::bindableKeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "KeyFromTextPressed"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Escape\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Check that any bindable key is released before taking the next one. Without this if the user continues holding down a movement key as they enter a bind area we would immediately take that key and overwrite it.",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "LinkedObjects::PickObjectsLinkedTo"
-                              },
-                              "parameters": [
-                                "",
-                                "Binder",
-                                "Clum"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreAutour"
-                              },
-                              "parameters": [
-                                "Clum",
-                                "Binder",
-                                "0",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "srs_controls::bindableKeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_controls::bindableKeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "LinkedObjects::RemoveAllLinksOf"
-                              },
-                              "parameters": [
-                                "",
-                                "Clum"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Re-initialize for future bindings",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
-                      "events": []
-                    }
-                  ],
-                  "parameters": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -2851,6 +2524,88 @@
                   "creationTime": 0,
                   "disabled": false,
                   "folded": false,
+                  "name": "PC controls with new behavior",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::SubscribeToState"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "Bindable",
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::ControlPC"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "Bindable",
+                            "Clum",
+                            "TopDownMovement",
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Binder",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::HandleBinderCollision"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "Bindable",
+                            "Clum",
+                            "Controls",
+                            "State",
+                            "Binder",
+                            "State",
+                            "Binder",
+                            "Binder",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
                   "name": "Collision handling",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -2874,138 +2629,6 @@
                         }
                       ],
                       "events": []
-                    },
-                    {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
-                      "creationTime": 0,
-                      "disabled": false,
-                      "folded": false,
-                      "name": "Binder",
-                      "source": "",
-                      "type": "BuiltinCommonInstructions::Group",
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CollisionNP"
-                              },
-                              "parameters": [
-                                "Clum",
-                                "Binder",
-                                "",
-                                "",
-                                "no"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Binder",
-                                    "state",
-                                    "=",
-                                    "\"inactive\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Binder",
-                                    "state",
-                                    "=",
-                                    "\"triggered\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "LinkedObjects::LinkObjects"
-                                      },
-                                      "parameters": [
-                                        "Clum",
-                                        "Clum",
-                                        "Binder"
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CollisionNP"
-                              },
-                              "parameters": [
-                                "Clum",
-                                "Exit",
-                                "",
-                                "",
-                                "no"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Scene"
-                              },
-                              "parameters": [
-                                "",
-                                "\"L03\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ],
-                      "parameters": []
                     }
                   ],
                   "parameters": []
@@ -3062,142 +2685,11 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Always running",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "Debugging",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "=",
-                        "\"_Debugger_\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "NewLine()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "ObjectVarToJSON(BindableControls, BindableControls)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "NewLine()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "BindableControls.VariableString(BindableControls)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "NewLine()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "\n\"Ctrls State: \" + BindableControls.State::GetStatus()\n"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "NewLine()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "DebugText",
-                        "+",
-                        "\n\"Clum coords: \" + ToString(ceil(Clum.X())) + \", \" +  ToString(ceil(Clum.Y()))"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
-            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -3295,39 +2787,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": true,
-          "folded": false,
-          "name": "Disabled",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Arreter"
-                  },
-                  "parameters": [
-                    "Clum"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
         }
       ],
       "layers": [
@@ -3363,8 +2822,12 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindableControls",
-          "type": "srs_controls::BindableControls"
+          "name": "Bindable",
+          "type": "srs_ctrl::Bindable"
+        },
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
         },
         {
           "name": "State",
@@ -3443,24 +2906,20 @@
           "layer": "",
           "locked": false,
           "name": "Binder",
-          "width": 25,
-          "x": 150,
-          "y": 140,
+          "width": 52,
+          "x": 138,
+          "y": 139,
           "zOrder": 3,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 4
             }
           ],
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "InstanceName",
-              "value": "left"
-            },
-            {
-              "name": "XDirection",
+              "name": "Direction",
               "value": "Right"
             }
           ]
@@ -3546,8 +3005,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 152,
-          "y": 344,
+          "x": 147,
+          "y": 342,
           "zOrder": 3,
           "numberProperties": [
             {
@@ -3678,14 +3137,6 @@
               "subInstructions": []
             }
           ],
-          "events": []
-        },
-        {
-          "disabled": true,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
           "events": []
         },
         {
@@ -7067,94 +6518,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_states::State::IsInitialized"
-                      },
-                      "parameters": [
-                        "StateObject",
-                        "StateBehavior",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::bindableKeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "KeyFromTextReleased"
-                              },
-                              "parameters": [
-                                "",
-                                "LastPressedKey()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Relased\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Released\" + LastPressedKey()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "srs_states::State::IsRunning"
                       },
                       "parameters": [
@@ -7295,27 +6658,6 @@
                             }
                           ],
                           "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"RET\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
                         }
                       ]
                     }
@@ -7391,7 +6733,20 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "Binder.VariableString(Direction)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "events": [
                     {
                       "disabled": false,
@@ -7422,30 +6777,21 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "actions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateControl"
-                              },
-                              "parameters": [
-                                "PC",
-                                "PCBehavior",
-                                "Object.VariableString(KeyToDir[LastPressedKey()])"
-                              ],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateControl"
+                          },
+                          "parameters": [
+                            "PC",
+                            "PCBehavior",
+                            "Object.VariableString(KeyToDir[LastPressedKey()])"
                           ],
-                          "events": []
+                          "subInstructions": []
                         }
-                      ]
+                      ],
+                      "events": []
                     }
                   ]
                 }
