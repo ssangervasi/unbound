@@ -549,7 +549,7 @@
               "timeBetweenFrames": 1,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_0.png",
                   "points": [],
                   "originPoint": {
@@ -563,10 +563,45 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 },
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_3.png",
                   "points": [],
                   "originPoint": {
@@ -580,7 +615,42 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -595,7 +665,7 @@
               "timeBetweenFrames": 0.25,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_0.png",
                   "points": [],
                   "originPoint": {
@@ -609,10 +679,45 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 },
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_1.png",
                   "points": [],
                   "originPoint": {
@@ -626,10 +731,45 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 },
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_2.png",
                   "points": [],
                   "originPoint": {
@@ -643,10 +783,45 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 },
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "Assets\\Clum\\clum_3.png",
                   "points": [],
                   "originPoint": {
@@ -660,7 +835,42 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 25,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 22,
+                        "y": 20
+                      },
+                      {
+                        "x": 12.5,
+                        "y": 25
+                      },
+                      {
+                        "x": 3,
+                        "y": 20
+                      },
+                      {
+                        "x": 0,
+                        "y": 12.5
+                      },
+                      {
+                        "x": 3,
+                        "y": 5
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -1091,6 +1301,76 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "TemplateFriendly",
+      "smoothed": true,
+      "tags": "text, opening",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "State",
+          "type": "srs_states::State",
+          "Name": "State1",
+          "Status": "initialized"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText",
+          "FullTime": 8
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "example friendly text",
+      "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 170,
+        "r": 55
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "TemplateMeany",
+      "smoothed": true,
+      "tags": "text, opening",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "State",
+          "type": "srs_states::State",
+          "Name": "State0",
+          "Status": "initialized"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText",
+          "FullTime": 8
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "EXAMPLE MEANY TEXT",
+      "font": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 71,
+        "r": 196
+      }
     }
   ],
   "objectsGroups": [],
@@ -1120,7 +1400,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.066
+        "zoomFactor": 1.642
       },
       "objectsGroups": [
         {
@@ -1153,8 +1433,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 109,
-          "y": 119,
+          "x": 110,
+          "y": 120,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -1223,13 +1503,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 30,
+          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
-          "width": 20,
-          "x": 366,
-          "y": 128,
+          "width": 25,
+          "x": 365,
+          "y": 120,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -1248,13 +1528,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 30,
+          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
-          "width": 20,
-          "x": 371,
-          "y": 426,
+          "width": 25,
+          "x": 365,
+          "y": 420,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -1278,7 +1558,7 @@
           "locked": false,
           "name": "Exit",
           "width": 30,
-          "x": 709,
+          "x": 710,
           "y": 425,
           "zOrder": 100,
           "numberProperties": [],
@@ -1353,13 +1633,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 49,
+          "height": 50,
           "layer": "",
           "locked": false,
           "name": "Tile",
           "width": 350,
           "x": 400,
-          "y": 416,
+          "y": 415,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -1408,8 +1688,8 @@
           "locked": false,
           "name": "Tile",
           "width": 40,
-          "x": 703,
-          "y": 421,
+          "x": 705,
+          "y": 420,
           "zOrder": 2,
           "numberProperties": [
             {
@@ -1598,13 +1878,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 47,
+          "height": 50,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
-          "width": 53,
-          "x": 103,
-          "y": 117,
+          "width": 50,
+          "x": 105,
+          "y": 115,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -2896,7 +3176,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.936
+        "zoomFactor": 2.608
       },
       "objectsGroups": [],
       "variables": [],
@@ -2909,8 +3189,8 @@
           "locked": false,
           "name": "Clum",
           "width": 39,
-          "x": 113,
-          "y": 103,
+          "x": 105,
+          "y": 105,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -2923,8 +3203,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
-          "width": 52,
-          "x": 106,
+          "width": 40,
+          "x": 105,
           "y": 105,
           "zOrder": 100,
           "numberProperties": [
@@ -3007,8 +3287,8 @@
           "locked": false,
           "name": "Controls",
           "width": 0,
-          "x": -103,
-          "y": 72,
+          "x": -113,
+          "y": 71,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -3044,7 +3324,7 @@
           "width": 250,
           "x": 100,
           "y": 400,
-          "zOrder": 201,
+          "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
@@ -3064,7 +3344,7 @@
           "width": 50,
           "x": 300,
           "y": 300,
-          "zOrder": 201,
+          "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
@@ -3084,7 +3364,7 @@
           "width": 250,
           "x": 300,
           "y": 250,
-          "zOrder": 201,
+          "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
@@ -3104,7 +3384,7 @@
           "width": 50,
           "x": 300,
           "y": 150,
-          "zOrder": 201,
+          "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
@@ -3124,7 +3404,7 @@
           "width": 250,
           "x": 100,
           "y": 100,
-          "zOrder": 201,
+          "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
@@ -3142,8 +3422,8 @@
           "locked": false,
           "name": "Exit",
           "width": 30,
-          "x": 109,
-          "y": 408,
+          "x": 110,
+          "y": 410,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -3157,9 +3437,9 @@
           "locked": false,
           "name": "Tile",
           "width": 40,
-          "x": 104,
+          "x": 105,
           "y": 405,
-          "zOrder": 202,
+          "zOrder": 201,
           "numberProperties": [
             {
               "name": "animation",
@@ -3172,13 +3452,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 10,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 294,
-          "x": 92,
-          "y": 70,
+          "width": 270,
+          "x": 90,
+          "y": 90,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -3187,12 +3467,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 388,
+          "height": 50,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 47,
-          "x": 53,
+          "width": 10,
+          "x": 90,
           "y": 100,
           "zOrder": 203,
           "numberProperties": [],
@@ -3202,13 +3482,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 10,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 294,
+          "width": 270,
           "x": 90,
-          "y": 448,
+          "y": 450,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -3217,12 +3497,42 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 249,
+          "height": 240,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 47,
-          "x": 254,
+          "width": 10,
+          "x": 290,
+          "y": 160,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 200,
+          "x": 90,
+          "y": 390,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 210,
+          "x": 90,
           "y": 150,
           "zOrder": 203,
           "numberProperties": [],
@@ -3232,13 +3542,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 150,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 159,
-          "x": 97,
-          "y": 369,
+          "width": 10,
+          "x": 350,
+          "y": 100,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -3247,57 +3557,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 150,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 159,
-          "x": 99,
-          "y": 150,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 249,
-          "layer": "",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 47,
-          "x": 254,
-          "y": 150,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 154,
-          "layer": "",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 47,
-          "x": 349,
-          "y": 96,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 151,
-          "layer": "",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 47,
-          "x": 349,
+          "width": 10,
+          "x": 350,
           "y": 300,
           "zOrder": 203,
           "numberProperties": [],
@@ -3307,13 +3572,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 10,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 159,
-          "x": 389,
-          "y": 218,
+          "width": 200,
+          "x": 360,
+          "y": 241,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -3322,12 +3587,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 10,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 159,
-          "x": 392,
+          "width": 200,
+          "x": 360,
           "y": 300,
           "zOrder": 203,
           "numberProperties": [],
@@ -3337,14 +3602,104 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 154,
+          "height": 50,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 47,
-          "x": 547,
-          "y": 202,
+          "width": 10,
+          "x": 90,
+          "y": 400,
           "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 550,
+          "y": 250,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 36,
+          "layer": "",
+          "locked": false,
+          "name": "Bound_Desc",
+          "width": 157,
+          "x": 429,
+          "y": 30,
+          "zOrder": 204,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 37,
+          "layer": "",
+          "locked": false,
+          "name": "Curve",
+          "width": 29,
+          "x": 222,
+          "y": 105,
+          "zOrder": 206,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 30,
+          "layer": "",
+          "locked": false,
+          "name": "Bound_Val",
+          "width": 30,
+          "x": 538,
+          "y": 28,
+          "zOrder": 205,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Unbound_Desc",
+          "width": 0,
+          "x": 429,
+          "y": 70,
+          "zOrder": 207,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Unbound_Val",
+          "width": 0,
+          "x": 574,
+          "y": 72,
+          "zOrder": 208,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3363,7 +3718,8 @@
           "behaviors": [
             {
               "name": "Bindable",
-              "type": "srs_ctrl::Bindable"
+              "type": "srs_ctrl::Bindable",
+              "BindLimit": 2
             },
             {
               "name": "State",
@@ -3377,6 +3733,82 @@
             "b": 0,
             "g": 0,
             "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Desc",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bound:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Val",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Unbound_Desc",
+          "smoothed": true,
+          "tags": "ui",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Unbound:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Unbound_Val",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
           }
         }
       ],
@@ -3554,6 +3986,53 @@
             }
           ],
           "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "UI",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Bound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::BoundCount())"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Unbound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -3597,12 +4076,24 @@
           "type": "srs_ctrl::Binder"
         },
         {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
           "name": "State",
           "type": "srs_states::State"
         },
         {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -4157,6 +4648,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     }
@@ -7192,7 +7687,70 @@
           "objectGroups": []
         }
       ],
-      "eventsBasedBehaviors": []
+      "eventsBasedBehaviors": [
+        {
+          "description": "Text that updates from instance variables",
+          "fullName": "Text instance",
+          "name": "TextInstance",
+          "objectType": "TextObject::Text",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.VariableString(Text)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_utils::TextInstance",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
+        }
+      ]
     },
     {
       "author": "",
@@ -7361,7 +7919,7 @@
               "sentence": "",
               "events": [
                 {
-                  "disabled": false,
+                  "disabled": true,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -7520,6 +8078,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If there are bindings available",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -7533,6 +8106,29 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::bindableKeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "0",
+                        "<",
+                        "Object.Behavior::UnboundCount()"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [],
@@ -7541,15 +8137,147 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "KeyToDir[LastPressedKey()]",
+                            "=",
+                            "Object.VariableString(Direction)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "DirToKey[Object.VariableString(Direction)]",
+                            "=",
+                            "LastPressedKey()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Finish"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "StateBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If all bindings have been used",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::HasReturned"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "StateBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::bindableKeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "Object.Behavior::UnboundCount()",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Have to wait for a previously bound key to be pressed",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_ctrl::bindableKeyPressed"
+                            "value": "ObjectVariableChildExists"
                           },
                           "parameters": [
-                            "",
-                            ""
+                            "Object",
+                            "KeyToDir",
+                            "LastPressedKey()"
                           ],
                           "subInstructions": []
                         }
@@ -7565,12 +8293,24 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_states::State::Finish"
+                                "value": "ObjectVariableRemoveChild"
                               },
                               "parameters": [
-                                "StateObject",
-                                "StateBehavior",
-                                ""
+                                "Object",
+                                "DirToKey",
+                                "Object.VariableString(KeyToDir[LastPressedKey()])"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ObjectVariableRemoveChild"
+                              },
+                              "parameters": [
+                                "Object",
+                                "KeyToDir",
+                                "LastPressedKey()"
                               ],
                               "subInstructions": []
                             }
@@ -7606,6 +8346,27 @@
                                 "DirToKey[Object.VariableString(Direction)]",
                                 "=",
                                 "LastPressedKey()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::Finish"
+                              },
+                              "parameters": [
+                                "StateObject",
+                                "StateBehavior",
+                                ""
                               ],
                               "subInstructions": []
                             }
@@ -7870,63 +8631,6 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"binder collision: \" + BinderObject.VariableString(InstanceName)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"binder state: \" + BinderState.BinderStateBehavior::GetStatus()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"ctrl state: \" + StateObject.StateBehavior::GetStatus()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"binder dir: \" + BinderObject.BinderBehavior::GetDirection()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
                                 "value": "ModVarObjetTxt"
                               },
                               "parameters": [
@@ -8062,51 +8766,6 @@
                               "parameters": [
                                 "StateObject",
                                 "StateBehavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"binder collision: \" + BinderObject.VariableString(InstanceName)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"binder state: \" + BinderState.BinderStateBehavior::GetStatus()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"ctrl state: \" + StateObject.StateBehavior::GetStatus()",
                                 ""
                               ],
                               "subInstructions": []
@@ -8281,9 +8940,229 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "Number of keys that have been bound to a direction",
+              "fullName": "Bound count",
+              "functionType": "Expression",
+              "name": "BoundCount",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.VariableChildCount(KeyToDir)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Number of keys that are free to be bound.",
+              "fullName": "Unbound count",
+              "functionType": "Expression",
+              "name": "UnboundCount",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::BindLimit() - Object.Behavior::BoundCount()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Max number of keys that can be bound.",
+              "fullName": "Bind limit",
+              "functionType": "Expression",
+              "name": "BindLimit",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyBindLimit()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
             }
           ],
-          "propertyDescriptors": []
+          "propertyDescriptors": [
+            {
+              "value": "1",
+              "type": "Number",
+              "label": "The max number of keys that can be bound at once.",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "BindLimit"
+            }
+          ]
         },
         {
           "description": "Bump into this and start binding controls",
@@ -8311,18 +9190,6 @@
                       },
                       "parameters": [
                         "Object.Behavior::PropertyDirection()"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"get dir: \" + Object.VariableString(Direction)",
-                        ""
                       ],
                       "subInstructions": []
                     }
@@ -8369,18 +9236,6 @@
                       },
                       "parameters": [
                         "Object.VariableString(Direction)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"using dir: \" + Object.VariableString(Direction)",
-                        ""
                       ],
                       "subInstructions": []
                     }
