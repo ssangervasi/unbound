@@ -7886,7 +7886,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.336
+        "zoomFactor": 2.104
       },
       "objectsGroups": [],
       "variables": [],
@@ -7933,6 +7933,10 @@
             {
               "name": "Direction",
               "value": "Right"
+            },
+            {
+              "name": "InstanceName",
+              "value": "Right1"
             }
           ]
         },
@@ -7956,12 +7960,12 @@
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "InstanceName",
-              "value": "middle"
-            },
-            {
               "name": "Direction",
               "value": "Down"
+            },
+            {
+              "name": "InstanceName",
+              "value": "Down1"
             }
           ]
         },
@@ -7984,10 +7988,6 @@
           ],
           "stringProperties": [],
           "initialVariables": [
-            {
-              "name": "InstanceName",
-              "value": "right"
-            },
             {
               "name": "Direction",
               "value": "Left"
@@ -8397,8 +8397,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 357,
-          "y": 77,
+          "x": 358,
+          "y": 96,
           "zOrder": 209,
           "numberProperties": [
             {
@@ -8407,7 +8407,57 @@
             }
           ],
           "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "InstanceName",
+              "value": "Down1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 550,
+          "y": 247,
+          "zOrder": 209,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 155,
+          "y": 95,
+          "zOrder": 209,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "InstanceName",
+              "value": "Right1"
+            }
+          ]
         }
       ],
       "objects": [
@@ -8539,7 +8589,12 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "BindIndicator",
+              "type": "srs_ctrl::BindIndicator"
+            }
+          ],
           "animations": [
             {
               "name": "Right",
@@ -9271,21 +9326,15 @@
                 ""
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "srs_states::State::IsRunning"
+                "value": "srs_ctrl::BindIndicator::SubscribeToState"
               },
               "parameters": [
+                "BindIndicator",
+                "BindIndicator",
                 "Binder",
                 "State",
                 ""
@@ -9293,7 +9342,6 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
           "events": []
         },
         {
@@ -9434,6 +9482,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
+        },
         {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
@@ -15495,7 +15547,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const t = (new Date()).toISOString()\nconsole.log(t, 'Message', eventsFunctionContext.getArgument('Message'))",
+              "inlineCode": "const t = (new Date()).toISOString()\n\nlet ctx = '(Unknown)'\ntry {\n    const stack = (new Error().stack)\n    const match = stack.match(/([a-zA-Z.]+Context)/)\n    ctx = (match && match.length && match[0]) || ctx\n} catch (e) {\n    console.error('Context failure', e)\n}\n\nconsole.log(t, ctx, eventsFunctionContext.getArgument('Message'))\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -17229,6 +17281,218 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "HandleIndicator",
+              "functionType": "Action",
+              "name": "HandleIndicator",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PickNearest"
+                      },
+                      "parameters": [
+                        "BindIndicator",
+                        "Binder.X()",
+                        "Binder.Y()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "BindIndicator",
+                        "Object",
+                        "50",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "Binder",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "BindIndicator"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Montre"
+                              },
+                              "parameters": [
+                                "BindIndicator",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::IsInitialized"
+                              },
+                              "parameters": [
+                                "Binder",
+                                "State",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::IsFinished"
+                              },
+                              "parameters": [
+                                "Binder",
+                                "State",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "BindIndicator"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "BindIndicator"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "BindIndicator",
+                  "longDescription": "",
+                  "name": "BindIndicator",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -17242,6 +17506,229 @@
               "name": "Direction"
             }
           ]
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "BindIndicator",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "SubscribeToState",
+              "fullName": "SubscribeToState",
+              "functionType": "Action",
+              "name": "SubscribeToState",
+              "sentence": "SubscribeToState _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PickNearest"
+                      },
+                      "parameters": [
+                        "Object",
+                        "StateObject.X()",
+                        "StateObject.Y()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Object",
+                        "StateObject",
+                        "50",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "StateBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Montre"
+                              },
+                              "parameters": [
+                                "Object",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::IsInitialized"
+                              },
+                              "parameters": [
+                                "StateObject",
+                                "StateBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::IsFinished"
+                              },
+                              "parameters": [
+                                "StateObject",
+                                "StateBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::BindIndicator",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateObject",
+                  "longDescription": "",
+                  "name": "StateObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "StateBehavior",
+                  "longDescription": "",
+                  "name": "StateBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_states::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
         }
       ]
     },
@@ -17819,20 +18306,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "ToString(TDMObject.TDMBehavior::Angle())",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
