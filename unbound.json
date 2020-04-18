@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.unbound",
-    "projectFile": "/home/sebastian/workspace/unbound/unbound.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -1241,6 +1241,294 @@
         "kind": "image",
         "metadata": "",
         "name": "Assets\\Sprites\\Binder\\Binder-Up.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Right/BindIndicator-Right8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Down/BindIndicator-Down8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Left/BindIndicator-Left8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator-Up/BindIndicator-Up8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up8.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -8058,21 +8346,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 36,
-          "layer": "",
-          "locked": false,
-          "name": "Bound_Desc",
-          "width": 157,
-          "x": 479,
-          "y": 60,
-          "zOrder": 204,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 37,
           "layer": "",
@@ -8082,21 +8355,6 @@
           "x": 272,
           "y": 135,
           "zOrder": 206,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 30,
-          "layer": "",
-          "locked": false,
-          "name": "Bound_Val",
-          "width": 30,
-          "x": 588,
-          "y": 58,
-          "zOrder": 205,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8128,6 +8386,26 @@
           "y": 102,
           "zOrder": 208,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 357,
+          "y": 77,
+          "zOrder": 209,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -8254,6 +8532,608 @@
             "align": "left",
             "wordWrap": true
           }
+        },
+        {
+          "name": "BindIndicator",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Right",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Down",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Left",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Up",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -8377,8 +9257,43 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Binder::SubscribeToState"
+              },
+              "parameters": [
+                "Binder",
+                "Binder",
+                "Binder",
+                "State",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::State::IsRunning"
+              },
+              "parameters": [
+                "Binder",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
           "events": []
         },
         {
@@ -10025,7 +10940,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.917
+        "zoomFactor": 1.933
       },
       "objectsGroups": [],
       "variables": [],
@@ -16260,6 +17175,14 @@
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
                   "events": []
                 }
               ],
