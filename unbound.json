@@ -5916,6 +5916,613 @@
       ]
     },
     {
+      "name": "BindIndicator",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "height": 10,
       "name": "Obstacle",
       "tags": "",
@@ -6194,7 +6801,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.026
+        "zoomFactor": 1.378
       },
       "objectsGroups": [
         {
@@ -6244,7 +6851,7 @@
           "width": 260,
           "x": 90,
           "y": 165,
-          "zOrder": 5003,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6259,7 +6866,7 @@
           "width": 310,
           "x": 90,
           "y": 106,
-          "zOrder": 5003,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6274,7 +6881,7 @@
           "width": 10,
           "x": 340,
           "y": 175,
-          "zOrder": 5005,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6289,7 +6896,7 @@
           "width": 10,
           "x": 90,
           "y": 115,
-          "zOrder": 5004,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6308,7 +6915,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 3
+              "value": 1
             }
           ],
           "stringProperties": [],
@@ -6404,7 +7011,7 @@
           "width": 10,
           "x": 400,
           "y": 106,
-          "zOrder": 5005,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6419,7 +7026,7 @@
           "width": 410,
           "x": 340,
           "y": 465,
-          "zOrder": 5003,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6454,7 +7061,7 @@
           "width": 340,
           "x": 410,
           "y": 406,
-          "zOrder": 5003,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6469,7 +7076,7 @@
           "width": 10,
           "x": 750,
           "y": 406,
-          "zOrder": 5004,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6706,6 +7313,61 @@
           "y": 262,
           "zOrder": 6001,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 105,
+          "y": 83,
+          "zOrder": 300,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 358,
+          "y": 82,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 360,
+          "y": 381,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -7641,6 +8303,20 @@
                             ""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::BindIndicator::SubscribeToState"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "BindIndicator",
+                            "Binder",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -7825,12 +8501,20 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
+        },
+        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
         {
           "name": "Binder",
           "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
         },
         {
           "name": "Obstacle",
@@ -7886,7 +8570,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.104
+        "zoomFactor": 1.792
       },
       "objectsGroups": [],
       "variables": [],
@@ -8168,7 +8852,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 270,
@@ -8183,7 +8867,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -8198,7 +8882,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 270,
@@ -8213,7 +8897,7 @@
           "angle": 0,
           "customSize": true,
           "height": 240,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -8228,7 +8912,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 200,
@@ -8243,7 +8927,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 210,
@@ -8258,7 +8942,7 @@
           "angle": 0,
           "customSize": true,
           "height": 150,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -8273,7 +8957,7 @@
           "angle": 0,
           "customSize": true,
           "height": 150,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -8288,7 +8972,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 200,
@@ -8303,7 +8987,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 200,
@@ -8318,7 +9002,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -8393,7 +9077,7 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
@@ -8418,7 +9102,7 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
@@ -8438,7 +9122,7 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
@@ -8582,613 +9266,6 @@
             "align": "left",
             "wordWrap": true
           }
-        },
-        {
-          "name": "BindIndicator",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "BindIndicator",
-              "type": "srs_ctrl::BindIndicator"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Right",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Right\\BindIndicator-Right8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Down",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Down\\BindIndicator-Down8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Left",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Left\\BindIndicator-Left8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Up",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Up\\BindIndicator-Up8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -9544,7 +9621,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.464
+        "zoomFactor": 1.504
       },
       "objectsGroups": [],
       "variables": [],
@@ -9558,7 +9635,7 @@
           "name": "Clum",
           "width": 40,
           "x": 165,
-          "y": 276,
+          "y": 275,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -9683,7 +9760,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Tile",
           "width": 50,
@@ -9707,8 +9784,8 @@
           "locked": false,
           "name": "Exit",
           "width": 30,
-          "x": 671,
-          "y": 378,
+          "x": 673,
+          "y": 381,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -9738,7 +9815,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 300,
@@ -9753,7 +9830,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9768,7 +9845,7 @@
           "angle": 0,
           "customSize": true,
           "height": 150,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9783,7 +9860,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 160,
@@ -9843,7 +9920,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 70,
@@ -9858,7 +9935,7 @@
           "angle": 0,
           "customSize": true,
           "height": 150,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9873,7 +9950,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 100,
@@ -9918,7 +9995,7 @@
           "name": "Binder",
           "width": 25,
           "x": 473,
-          "y": 279,
+          "y": 275,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -9938,7 +10015,7 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9953,7 +10030,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 270,
@@ -9968,7 +10045,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9983,7 +10060,7 @@
           "angle": 0,
           "customSize": true,
           "height": 150,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -9998,7 +10075,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 70,
@@ -10293,7 +10370,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -10308,7 +10385,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -10383,7 +10460,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 33,
@@ -10398,7 +10475,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -10413,7 +10490,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 157,
@@ -10428,7 +10505,7 @@
           "angle": 0,
           "customSize": true,
           "height": 116,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
@@ -10443,7 +10520,7 @@
           "angle": 0,
           "customSize": true,
           "height": 10,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 50,
@@ -10498,13 +10575,118 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
           "x": 650,
           "y": 370,
           "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 314,
+          "y": 235,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "TODO",
+          "width": 0,
+          "x": 22,
+          "y": 613,
+          "zOrder": 211,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 315,
+          "y": 382,
+          "zOrder": 210,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 466,
+          "y": 235,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 463,
+          "y": 337,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "UI",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 167,
+          "y": 235,
+          "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10631,6 +10813,25 @@
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
             "align": "left",
             "wordWrap": true
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "TODO",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "TODO: Add a secret here ^^",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         }
       ],
@@ -10764,6 +10965,20 @@
               "parameters": [
                 "Binder",
                 "Binder",
+                "Binder",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::BindIndicator::SubscribeToState"
+              },
+              "parameters": [
+                "BindIndicator",
+                "BindIndicator",
                 "Binder",
                 "State",
                 ""
@@ -10934,6 +11149,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
+        },
         {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
@@ -15945,6 +16164,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Ensure a key is released before grabbing the next key for binding",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -16416,6 +16650,75 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsFinished"
+                      },
+                      "parameters": [
+                        "StateObject",
+                        "StateBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Reinitialize controls to be ready to bind again",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "AnyKeyPressed"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Initialize"
+                          },
+                          "parameters": [
+                            "StateObject",
+                            "StateBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ],
               "parameters": [
@@ -16628,6 +16931,21 @@
                     {
                       "disabled": false,
                       "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "idfk",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -16657,44 +16975,7 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "Reinitialize controls to be ready to bind again",
-                          "comment2": ""
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_states::State::Initialize"
-                              },
-                              "parameters": [
-                                "StateObject",
-                                "StateBehavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
+                      "events": []
                     },
                     {
                       "disabled": false,
@@ -17722,6 +18003,57 @@
                   "name": "StateBehavior",
                   "optional": false,
                   "supplementaryInformation": "srs_states::State",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Object"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::BindIndicator",
                   "type": "behavior"
                 }
               ],
