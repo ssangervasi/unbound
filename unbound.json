@@ -1576,6 +1576,15 @@
         "name": "Assets\\Sprites\\TilePattern.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BastyFontSheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BastyFontSheet.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6988,20 +6997,17 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.786
+        "zoomFactor": 1.258
       },
       "objectsGroups": [
         {
-          "name": "FriendMessages",
+          "name": "FriendMessages1",
           "objects": [
             {
               "name": "Friend1"
             },
             {
               "name": "Friend2"
-            },
-            {
-              "name": "Friend3"
             }
           ]
         }
@@ -7329,7 +7335,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SMCharacters",
+          "name": "SM_Intro",
           "width": 0,
           "x": -222,
           "y": 103,
@@ -7344,10 +7350,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SMScene",
+          "name": "SM_Scene",
           "width": 0,
-          "x": -314,
-          "y": 36,
+          "x": -249,
+          "y": 43,
           "zOrder": 5023,
           "numberProperties": [],
           "stringProperties": [],
@@ -7359,10 +7365,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SOpening",
+          "name": "S_Opening",
           "width": 0,
-          "x": -265,
-          "y": 72,
+          "x": -236,
+          "y": 73,
           "zOrder": 5024,
           "numberProperties": [],
           "stringProperties": [],
@@ -7374,10 +7380,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SRunning",
+          "name": "S_Running",
           "width": 0,
-          "x": -277,
-          "y": 228,
+          "x": -262,
+          "y": 387,
           "zOrder": 5025,
           "numberProperties": [],
           "stringProperties": [],
@@ -7389,25 +7395,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "SPause",
+          "name": "S_HideMeany",
           "width": 0,
-          "x": -182,
-          "y": 132,
-          "zOrder": 5026,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "HideMeany",
-          "width": 0,
-          "x": -181,
-          "y": 163,
+          "x": -200,
+          "y": 233,
           "zOrder": 5027,
           "numberProperties": [],
           "stringProperties": [],
@@ -7481,8 +7472,8 @@
           "locked": false,
           "name": "Controls",
           "width": 0,
-          "x": -242,
-          "y": 262,
+          "x": -227,
+          "y": 421,
           "zOrder": 6001,
           "numberProperties": [],
           "stringProperties": [],
@@ -7862,6 +7853,96 @@
           ],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Pause",
+          "width": 0,
+          "x": -200,
+          "y": 166,
+          "zOrder": 5026,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Friend1",
+          "width": 0,
+          "x": -200,
+          "y": 199,
+          "zOrder": 6003,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Meany",
+          "width": 0,
+          "x": -200,
+          "y": 135,
+          "zOrder": 6004,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Friend2",
+          "width": 0,
+          "x": -200,
+          "y": 263,
+          "zOrder": 6005,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Friend3",
+          "width": 0,
+          "x": -200,
+          "y": 324,
+          "zOrder": 6006,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_HideFM1",
+          "width": 0,
+          "x": -200,
+          "y": 293,
+          "zOrder": 6007,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7906,7 +7987,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "SMScene",
+          "name": "SM_Scene",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -7919,7 +8000,7 @@
               "Property": 0
             }
           ],
-          "string": "SMScene",
+          "string": "SM_Scene",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -7931,7 +8012,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "SOpening",
+          "name": "S_Opening",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -7945,7 +8026,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "SOpening",
+          "string": "S_Opening",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -7957,7 +8038,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "SRunning",
+          "name": "S_Running",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -7971,7 +8052,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "SRunning",
+          "string": "S_Running",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -7983,7 +8064,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "SMCharacters",
+          "name": "SM_Intro",
           "smoothed": true,
           "tags": "StateMachine",
           "type": "TextObject::Text",
@@ -7995,7 +8076,204 @@
               "type": "srs_states::StateMachine"
             }
           ],
-          "string": "SMCharacters",
+          "string": "SM_Intro",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Meany",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_Meany",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Pause",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            },
+            {
+              "name": "StatePause",
+              "type": "srs_states::StatePause",
+              "Time": 1
+            }
+          ],
+          "string": "S_Pause",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Friend1",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_Friend1",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Friend2",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_Friend2",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Friend3",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_Friend3",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_HideMeany",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "time",
+              "value": "2"
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "State1",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_HideMeany",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_HideFM1",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "time",
+              "value": "2"
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "State1",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_HideFM1",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -8014,12 +8292,6 @@
           "underlined": false,
           "variables": [],
           "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "State0",
-              "Status": "initialized"
-            },
             {
               "name": "StateText",
               "type": "srs_states::StateText",
@@ -8042,37 +8314,6 @@
         {
           "bold": false,
           "italic": false,
-          "name": "SPause",
-          "smoothed": true,
-          "tags": "opening",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
-            },
-            {
-              "name": "StatePause",
-              "type": "srs_states::StatePause",
-              "Time": 1
-            }
-          ],
-          "string": "SPause",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
           "name": "Friend1",
           "smoothed": true,
           "tags": "text, opening",
@@ -8080,12 +8321,6 @@
           "underlined": false,
           "variables": [],
           "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "State1",
-              "Status": "initialized"
-            },
             {
               "name": "StateText",
               "type": "srs_states::StateText",
@@ -8103,37 +8338,6 @@
             "b": 0,
             "g": 170,
             "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "HideMeany",
-          "smoothed": true,
-          "tags": "text, opening",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [
-            {
-              "name": "time",
-              "value": "2"
-            }
-          ],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "State1",
-              "Status": "initialized"
-            }
-          ],
-          "string": "HideMeany",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
           }
         },
         {
@@ -8182,15 +8386,9 @@
           "variables": [],
           "behaviors": [
             {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "State1",
-              "Status": "initialized"
-            },
-            {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 2
+              "FullTime": 1
             },
             {
               "name": "Tween",
@@ -8233,6 +8431,45 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "name": "Basty",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\BastyFontSheet.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -8259,9 +8496,9 @@
                     "value": "srs_states::StateMachine::ManageState"
                   },
                   "parameters": [
-                    "SMScene",
+                    "SM_Scene",
                     "StateMachine",
-                    "SOpening",
+                    "S_Opening",
                     "State",
                     ""
                   ],
@@ -8273,9 +8510,9 @@
                     "value": "srs_states::StateMachine::ManageState"
                   },
                   "parameters": [
-                    "SMScene",
+                    "SM_Scene",
                     "StateMachine",
-                    "SRunning",
+                    "S_Running",
                     "State",
                     ""
                   ],
@@ -8311,7 +8548,7 @@
                     "value": "srs_states::State::Return"
                   },
                   "parameters": [
-                    "SOpening",
+                    "S_Opening",
                     "State",
                     ""
                   ],
@@ -8345,7 +8582,7 @@
                     "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
-                    "SOpening",
+                    "S_Opening",
                     "State",
                     ""
                   ],
@@ -8379,9 +8616,25 @@
                         "Tween",
                         "\"HideMeany\"",
                         "0",
-                        "\"easeOutExpo\"",
+                        "\"easeInOutExpo\"",
                         "srs_utils::ms(5)",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectOpacityTween"
+                      },
+                      "parameters": [
+                        "FriendMessages1",
+                        "Tween",
+                        "\"HideFriendMessages1\"",
+                        "0",
+                        "\"easeInOutExpo\"",
+                        "srs_utils::ms(2)",
+                        "\"bounce\""
                       ],
                       "subInstructions": []
                     }
@@ -8400,9 +8653,9 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "Meany",
+                        "S_Meany",
                         "State",
                         ""
                       ],
@@ -8414,9 +8667,9 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "SPause",
+                        "S_Pause",
                         "State",
                         ""
                       ],
@@ -8428,9 +8681,9 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "Friend1",
+                        "S_Friend1",
                         "State",
                         ""
                       ],
@@ -8442,9 +8695,9 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "HideMeany",
+                        "S_HideMeany",
                         "State",
                         ""
                       ],
@@ -8456,9 +8709,9 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "Friend2",
+                        "S_Friend2",
                         "State",
                         ""
                       ],
@@ -8470,9 +8723,23 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
-                        "Friend3",
+                        "S_Friend3",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Intro",
+                        "StateMachine",
+                        "S_HideFM1",
                         "State",
                         ""
                       ],
@@ -8486,7 +8753,7 @@
                       "parameters": [
                         "Meany",
                         "StateText",
-                        "Meany",
+                        "S_Meany",
                         "State",
                         ""
                       ],
@@ -8498,9 +8765,9 @@
                         "value": "srs_states::StatePause::SubscribeToState"
                       },
                       "parameters": [
-                        "SPause",
+                        "S_Pause",
                         "StatePause",
-                        "SPause",
+                        "S_Pause",
                         "State",
                         ""
                       ],
@@ -8514,7 +8781,7 @@
                       "parameters": [
                         "Friend1",
                         "StateText",
-                        "Friend1",
+                        "S_Friend1",
                         "State",
                         ""
                       ],
@@ -8527,7 +8794,7 @@
                       },
                       "parameters": [
                         "",
-                        "HideMeany",
+                        "S_HideMeany",
                         "State",
                         "Meany",
                         "Tween",
@@ -8544,8 +8811,24 @@
                       "parameters": [
                         "Friend2",
                         "StateText",
-                        "Friend2",
+                        "S_Friend2",
                         "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::manageTween"
+                      },
+                      "parameters": [
+                        "",
+                        "S_HideFM1",
+                        "State",
+                        "FriendMessages1",
+                        "Tween",
+                        "\"HideFriendMessages1\"",
                         ""
                       ],
                       "subInstructions": []
@@ -8558,7 +8841,7 @@
                       "parameters": [
                         "Friend3",
                         "StateText",
-                        "Friend3",
+                        "S_Friend3",
                         "State",
                         ""
                       ],
@@ -8578,7 +8861,7 @@
                         "value": "srs_states::StateMachine::IsFinished"
                       },
                       "parameters": [
-                        "SMCharacters",
+                        "SM_Intro",
                         "StateMachine",
                         ""
                       ],
@@ -8592,7 +8875,7 @@
                         "value": "srs_states::State::Return"
                       },
                       "parameters": [
-                        "SOpening",
+                        "S_Opening",
                         "State",
                         ""
                       ],
@@ -8601,7 +8884,7 @@
                   ],
                   "events": [
                     {
-                      "disabled": false,
+                      "disabled": true,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -8621,7 +8904,7 @@
                             "value": "Tween::AddObjectOpacityTween"
                           },
                           "parameters": [
-                            "FriendMessages",
+                            "FriendMessages1",
                             "Tween",
                             "ToString(RandomFloat(1))",
                             "0",
@@ -8663,7 +8946,7 @@
                     "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
-                    "SRunning",
+                    "S_Running",
                     "State",
                     ""
                   ],
@@ -21328,6 +21611,27 @@
                                 "index",
                                 "=",
                                 "clamp(\n  0,\n  ( Object.Variable(fullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(fullLength)\n)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": true,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::consoleLog"
+                              },
+                              "parameters": [
+                                "",
+                                "Object.String()",
+                                ""
                               ],
                               "subInstructions": []
                             }
