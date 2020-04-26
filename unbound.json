@@ -6942,6 +6942,44 @@
         "g": 71,
         "r": 196
       }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Unbound_Desc",
+      "smoothed": true,
+      "tags": "ui",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Unbound:",
+      "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 252,
+        "g": 198,
+        "r": 227
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Unbound_Val",
+      "smoothed": true,
+      "tags": "ui, text",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "1",
+      "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 252,
+        "g": 198,
+        "r": 227
+      }
     }
   ],
   "objectsGroups": [],
@@ -9071,21 +9109,9 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.21
+        "zoomFactor": 1.498
       },
-      "objectsGroups": [
-        {
-          "name": "FriendMessages1",
-          "objects": [
-            {
-              "name": "Friend1"
-            },
-            {
-              "name": "Friend2"
-            }
-          ]
-        }
-      ],
+      "objectsGroups": [],
       "variables": [
         {
           "name": "state",
@@ -9379,11 +9405,11 @@
           "height": 86,
           "layer": "UI",
           "locked": false,
-          "name": "Friend1",
+          "name": "T_Sorry",
           "width": 237,
           "x": 100,
           "y": 190,
-          "zOrder": 500,
+          "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9391,13 +9417,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 294,
+          "height": 262,
           "layer": "UI",
           "locked": false,
-          "name": "Meany",
+          "name": "T_Meany",
           "width": 324,
-          "x": 426,
-          "y": 100,
+          "x": 420,
+          "y": 107,
           "zOrder": 500,
           "numberProperties": [],
           "stringProperties": [],
@@ -9439,9 +9465,9 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_Opening",
+          "name": "S_Intro",
           "width": 0,
-          "x": -236,
+          "x": -240,
           "y": 73,
           "zOrder": 5024,
           "numberProperties": [],
@@ -9454,10 +9480,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_Running",
+          "name": "S_Play",
           "width": 0,
-          "x": -262,
-          "y": 387,
+          "x": -240,
+          "y": 469,
           "zOrder": 5025,
           "numberProperties": [],
           "stringProperties": [],
@@ -9489,11 +9515,11 @@
           "height": 34,
           "layer": "UI",
           "locked": false,
-          "name": "Friend2",
-          "width": 125,
+          "name": "T_Better",
+          "width": 199,
           "x": 100,
           "y": 285,
-          "zOrder": 500,
+          "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9504,11 +9530,11 @@
           "height": 0,
           "layer": "UI",
           "locked": false,
-          "name": "Friend3",
+          "name": "T_PickAKey",
           "width": 0,
           "x": 100,
           "y": 331,
-          "zOrder": 500,
+          "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9546,8 +9572,8 @@
           "locked": false,
           "name": "Controls",
           "width": 0,
-          "x": -227,
-          "y": 421,
+          "x": -212,
+          "y": 513,
           "zOrder": 6001,
           "numberProperties": [],
           "stringProperties": [],
@@ -9994,11 +10020,26 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_Friend3",
+          "name": "S_PickAKey",
           "width": 0,
-          "x": -200,
-          "y": 324,
+          "x": -222,
+          "y": 338,
           "zOrder": 6006,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_GoodChoice",
+          "width": 0,
+          "x": 420,
+          "y": 116,
+          "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10009,11 +10050,41 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_HideFM1",
+          "name": "S_Learn",
           "width": 0,
-          "x": -200,
-          "y": 293,
-          "zOrder": 6007,
+          "x": -240,
+          "y": 308,
+          "zOrder": 6008,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Unbound_Desc",
+          "width": 0,
+          "x": 575,
+          "y": 20,
+          "zOrder": 510,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Unbound_Val",
+          "width": 0,
+          "x": 718,
+          "y": 20,
+          "zOrder": 510,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10086,7 +10157,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_Opening",
+          "name": "S_Intro",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -10100,7 +10171,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "S_Opening",
+          "string": "S_Intro",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10112,7 +10183,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_Running",
+          "name": "S_Play",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -10126,7 +10197,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "S_Running",
+          "string": "S_Play",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10245,58 +10316,6 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_Friend2",
-          "smoothed": true,
-          "tags": "opening",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
-            }
-          ],
-          "string": "S_Friend2",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "S_Friend3",
-          "smoothed": true,
-          "tags": "opening",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
-            }
-          ],
-          "string": "S_Friend3",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
           "name": "S_HideMeany",
           "smoothed": true,
           "tags": "text, opening",
@@ -10328,26 +10347,21 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_HideFM1",
+          "name": "S_Friend2",
           "smoothed": true,
-          "tags": "text, opening",
+          "tags": "opening",
           "type": "TextObject::Text",
           "underlined": false,
-          "variables": [
-            {
-              "name": "time",
-              "value": "2"
-            }
-          ],
+          "variables": [],
           "behaviors": [
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "State1",
+              "Name": "SPause",
               "Status": "initialized"
             }
           ],
-          "string": "S_HideFM1",
+          "string": "S_Friend2",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10359,7 +10373,59 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Meany",
+          "name": "S_Learn",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SOpening",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_Learn",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_PickAKey",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SPause",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_PickAKey",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Meany",
           "smoothed": true,
           "tags": "text, opening",
           "type": "TextObject::Text",
@@ -10388,7 +10454,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Friend1",
+          "name": "T_Sorry",
           "smoothed": true,
           "tags": "text, opening",
           "type": "TextObject::Text",
@@ -10398,7 +10464,7 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 8
+              "FullTime": 5
             },
             {
               "name": "Tween",
@@ -10417,7 +10483,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Friend2",
+          "name": "T_Better",
           "smoothed": true,
           "tags": "text, opening",
           "type": "TextObject::Text",
@@ -10440,7 +10506,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "that's better",
+          "string": "that's better...",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10452,7 +10518,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Friend3",
+          "name": "T_PickAKey",
           "smoothed": true,
           "tags": "text, opening",
           "type": "TextObject::Text",
@@ -10469,7 +10535,36 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "now,\ntry any key you like",
+          "string": "now,\npick a key to go right",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_GoodChoice",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "FullTime": 1
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "ah,\ngood choice",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10572,7 +10667,7 @@
                   "parameters": [
                     "SM_Scene",
                     "StateMachine",
-                    "S_Opening",
+                    "S_Intro",
                     "State",
                     ""
                   ],
@@ -10586,7 +10681,21 @@
                   "parameters": [
                     "SM_Scene",
                     "StateMachine",
-                    "S_Running",
+                    "S_Learn",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Scene",
+                    "StateMachine",
+                    "S_Play",
                     "State",
                     ""
                   ],
@@ -10622,7 +10731,7 @@
                     "value": "srs_states::State::Return"
                   },
                   "parameters": [
-                    "S_Opening",
+                    "S_Intro",
                     "State",
                     ""
                   ],
@@ -10641,7 +10750,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Scene opening",
+          "name": "Intro",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -10656,7 +10765,7 @@
                     "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
-                    "S_Opening",
+                    "S_Intro",
                     "State",
                     ""
                   ],
@@ -10665,56 +10774,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Tween::AddObjectOpacityTween"
-                      },
-                      "parameters": [
-                        "Meany",
-                        "Tween",
-                        "\"HideMeany\"",
-                        "0",
-                        "\"easeInOutExpo\"",
-                        "srs_utils::ms(5)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Tween::AddObjectOpacityTween"
-                      },
-                      "parameters": [
-                        "FriendMessages1",
-                        "Tween",
-                        "\"HideFriendMessages1\"",
-                        "0",
-                        "\"easeInOutExpo\"",
-                        "srs_utils::ms(2)",
-                        "\"bounce\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -10790,42 +10849,23 @@
                         ""
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::StateMachine::ManageState"
-                      },
-                      "parameters": [
-                        "SM_Intro",
-                        "StateMachine",
-                        "S_Friend3",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::StateMachine::ManageState"
-                      },
-                      "parameters": [
-                        "SM_Intro",
-                        "StateMachine",
-                        "S_HideFM1",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
                       "type": {
                         "inverted": false,
                         "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
-                        "Meany",
+                        "T_Meany",
                         "StateText",
                         "S_Meany",
                         "State",
@@ -10853,7 +10893,7 @@
                         "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
-                        "Friend1",
+                        "T_Sorry",
                         "StateText",
                         "S_Friend1",
                         "State",
@@ -10864,26 +10904,10 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_states::manageTween"
-                      },
-                      "parameters": [
-                        "",
-                        "S_HideMeany",
-                        "State",
-                        "Meany",
-                        "Tween",
-                        "\"HideMeany\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
-                        "Friend2",
+                        "T_Better",
                         "StateText",
                         "S_Friend2",
                         "State",
@@ -10898,11 +10922,69 @@
                       },
                       "parameters": [
                         "",
-                        "S_HideFM1",
+                        "S_HideMeany",
                         "State",
-                        "FriendMessages1",
+                        "T_Meany",
                         "Tween",
-                        "\"HideFriendMessages1\"",
+                        "\"HideMeany\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectOpacityTween"
+                      },
+                      "parameters": [
+                        "T_Meany",
+                        "Tween",
+                        "\"HideMeany\"",
+                        "0",
+                        "\"linear\"",
+                        "srs_utils::ms(3)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_Sorry",
+                        "Tween",
+                        "S_Friend2",
+                        "State",
                         ""
                       ],
                       "subInstructions": []
@@ -10910,12 +10992,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_states::StateText::SubscribeToState"
+                        "value": "srs_states::fadeWhenFinished"
                       },
                       "parameters": [
-                        "Friend3",
-                        "StateText",
-                        "S_Friend3",
+                        "",
+                        "T_Better",
+                        "Tween",
+                        "S_Friend2",
                         "State",
                         ""
                       ],
@@ -10949,49 +11032,14 @@
                         "value": "srs_states::State::Return"
                       },
                       "parameters": [
-                        "S_Opening",
+                        "S_Intro",
                         "State",
                         ""
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": [
-                    {
-                      "disabled": true,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Tween::AddObjectOpacityTween"
-                          },
-                          "parameters": [
-                            "FriendMessages1",
-                            "Tween",
-                            "ToString(RandomFloat(1))",
-                            "0",
-                            "\"swingTo\"",
-                            "srs_utils::ms(5)",
-                            "\"bounce\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
+                  "events": []
                 }
               ]
             }
@@ -11005,7 +11053,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Scene running",
+          "name": "Learn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -11020,7 +11068,80 @@
                     "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
-                    "S_Running",
+                    "S_Learn",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Intro",
+                        "StateMachine",
+                        "S_PickAKey",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_PickAKey",
+                        "StateText",
+                        "S_PickAKey",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Play",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsRunning"
+                  },
+                  "parameters": [
+                    "S_Play",
                     "State",
                     ""
                   ],
@@ -11058,7 +11179,7 @@
                   "creationTime": 0,
                   "disabled": false,
                   "folded": false,
-                  "name": "PC controls with new behavior",
+                  "name": "PC controls",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
@@ -11261,6 +11382,27 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Unbound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -15760,44 +15902,6 @@
           "variables": [],
           "behaviors": [],
           "string": "0",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 30,
           "color": {
@@ -23743,6 +23847,104 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "Fade with a tween when a stat is finished",
+          "fullName": "Fade When Finished",
+          "functionType": "Action",
+          "name": "fadeWhenFinished",
+          "sentence": "Fade _PARAM1_ with opacity tween when _PARAM3_ is finished",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsFinished"
+                  },
+                  "parameters": [
+                    "State",
+                    "StateBehavior",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Tween::AddObjectOpacityTween"
+                  },
+                  "parameters": [
+                    "Object",
+                    "TweenBehavior",
+                    "\"fadeWhenFinished:\" + Object.ObjectName() + \":\" + State.ObjectName()",
+                    "0",
+                    "\"linear\"",
+                    "srs_utils::ms(1)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "ToFade",
+              "longDescription": "",
+              "name": "Object",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "objectList"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "TweenBehavior",
+              "longDescription": "",
+              "name": "TweenBehavior",
+              "optional": false,
+              "supplementaryInformation": "Tween::TweenBehavior",
+              "type": "behavior"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "State",
+              "longDescription": "",
+              "name": "State",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "objectList"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "StateBehavior",
+              "longDescription": "",
+              "name": "StateBehavior",
+              "optional": false,
+              "supplementaryInformation": "srs_states::State",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsBasedBehaviors": [
@@ -26816,7 +27018,7 @@
               "fullName": "HandleBinderCollision",
               "functionType": "Action",
               "name": "HandleBinderCollision",
-              "sentence": "_PARAM0_ _PARAM2_ _PARAM3_ _PARAM4_  _PARAM5_  _PARAM7_",
+              "sentence": "Bindable _PARAM0_ runs when _PARAM2_ collides with _PARAM7_",
               "events": [
                 {
                   "disabled": false,
