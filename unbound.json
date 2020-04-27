@@ -6952,7 +6952,12 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "string": "Unbound:",
       "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
       "characterSize": 30,
@@ -6971,7 +6976,12 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "string": "1",
       "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
       "characterSize": 30,
@@ -9109,7 +9119,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.498
+        "zoomFactor": 1.354
       },
       "objectsGroups": [],
       "variables": [
@@ -9482,8 +9492,8 @@
           "locked": false,
           "name": "S_Play",
           "width": 0,
-          "x": -240,
-          "y": 469,
+          "x": -244,
+          "y": 504,
           "zOrder": 5025,
           "numberProperties": [],
           "stringProperties": [],
@@ -9572,8 +9582,8 @@
           "locked": false,
           "name": "Controls",
           "width": 0,
-          "x": -212,
-          "y": 513,
+          "x": 606,
+          "y": -39,
           "zOrder": 6001,
           "numberProperties": [],
           "stringProperties": [],
@@ -9975,7 +9985,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_Friend1",
+          "name": "S_Sorry",
           "width": 0,
           "x": -200,
           "y": 199,
@@ -10005,7 +10015,7 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "S_Friend2",
+          "name": "S_Better",
           "width": 0,
           "x": -200,
           "y": 263,
@@ -10016,29 +10026,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "S_PickAKey",
-          "width": 0,
-          "x": -222,
-          "y": 338,
-          "zOrder": 6006,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 42,
           "layer": "UI",
           "locked": false,
           "name": "T_GoodChoice",
-          "width": 0,
-          "x": 420,
-          "y": 116,
+          "width": 117,
+          "x": 101,
+          "y": 51,
           "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
@@ -10052,8 +10047,8 @@
           "locked": false,
           "name": "S_Learn",
           "width": 0,
-          "x": -240,
-          "y": 308,
+          "x": -239,
+          "y": 320,
           "zOrder": 6008,
           "numberProperties": [],
           "stringProperties": [],
@@ -10085,6 +10080,126 @@
           "x": 718,
           "y": 20,
           "zOrder": 510,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_GoodChoice",
+          "width": 0,
+          "x": -209,
+          "y": 414,
+          "zOrder": 6009,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_Huh",
+          "width": 0,
+          "x": 420,
+          "y": 113,
+          "zOrder": 501,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_Here",
+          "width": 0,
+          "x": 349,
+          "y": 26,
+          "zOrder": 502,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM_Learn",
+          "width": 0,
+          "x": -223,
+          "y": 354,
+          "zOrder": 6010,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_C_PickAKey",
+          "width": 0,
+          "x": -209,
+          "y": 380,
+          "zOrder": 6011,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_FirstBind",
+          "width": 0,
+          "x": -200,
+          "y": 386,
+          "zOrder": 6012,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_SecondBind",
+          "width": 0,
+          "x": -200,
+          "y": 421,
+          "zOrder": 6013,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_RevealUnbound",
+          "width": 0,
+          "x": -199,
+          "y": 453,
+          "zOrder": 6014,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10290,7 +10405,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_Friend1",
+          "name": "S_Sorry",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -10304,7 +10419,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "S_Friend1",
+          "string": "S_Sorry",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10347,7 +10462,7 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_Friend2",
+          "name": "S_Better",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -10361,7 +10476,7 @@
               "Status": "initialized"
             }
           ],
-          "string": "S_Friend2",
+          "string": "S_Better",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10399,7 +10514,31 @@
         {
           "bold": false,
           "italic": false,
-          "name": "S_PickAKey",
+          "name": "SM_Learn",
+          "smoothed": true,
+          "tags": "StateMachine",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine"
+            }
+          ],
+          "string": "SM_Learn",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_FirstBind",
           "smoothed": true,
           "tags": "opening",
           "type": "TextObject::Text",
@@ -10409,11 +10548,63 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SPause",
+              "Name": "SOpening",
               "Status": "initialized"
             }
           ],
-          "string": "S_PickAKey",
+          "string": "S_FirstBind",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_SecondBind",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SOpening",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_SecondBind",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_RevealUnbound",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SOpening",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_RevealUnbound",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -10526,6 +10717,10 @@
           "variables": [],
           "behaviors": [
             {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
               "name": "StateText",
               "type": "srs_states::StateText",
               "FullTime": 1
@@ -10555,6 +10750,10 @@
           "variables": [],
           "behaviors": [
             {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
               "name": "StateText",
               "type": "srs_states::StateText",
               "FullTime": 1
@@ -10564,7 +10763,73 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "ah,\ngood choice",
+          "string": "ah, “_key_”\ngood choice",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Huh",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "FullTime": 1
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "huh,\nlooks like your\nmemory is a bit...\n\nlimited  ",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Here",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "FullTime": 1
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "here, this should help:",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10585,7 +10850,8 @@
           "behaviors": [
             {
               "name": "Bindable",
-              "type": "srs_ctrl::Bindable"
+              "type": "srs_ctrl::Bindable",
+              "BindLimit": 2
             },
             {
               "name": "State",
@@ -10654,7 +10920,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -10707,6 +10973,76 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": true,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Intro",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Unbound_Desc"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Unbound_Val"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -10720,7 +11056,7 @@
               "comment2": ""
             },
             {
-              "disabled": true,
+              "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -10732,6 +11068,18 @@
                   },
                   "parameters": [
                     "S_Intro",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::Run"
+                  },
+                  "parameters": [
+                    "S_Learn",
                     "State",
                     ""
                   ],
@@ -10816,7 +11164,7 @@
                       "parameters": [
                         "SM_Intro",
                         "StateMachine",
-                        "S_Friend1",
+                        "S_Sorry",
                         "State",
                         ""
                       ],
@@ -10844,7 +11192,7 @@
                       "parameters": [
                         "SM_Intro",
                         "StateMachine",
-                        "S_Friend2",
+                        "S_Better",
                         "State",
                         ""
                       ],
@@ -10895,7 +11243,7 @@
                       "parameters": [
                         "T_Sorry",
                         "StateText",
-                        "S_Friend1",
+                        "S_Sorry",
                         "State",
                         ""
                       ],
@@ -10909,7 +11257,7 @@
                       "parameters": [
                         "T_Better",
                         "StateText",
-                        "S_Friend2",
+                        "S_Better",
                         "State",
                         ""
                       ],
@@ -10983,7 +11331,7 @@
                         "",
                         "T_Sorry",
                         "Tween",
-                        "S_Friend2",
+                        "S_Better",
                         "State",
                         ""
                       ],
@@ -10998,7 +11346,7 @@
                         "",
                         "T_Better",
                         "Tween",
-                        "S_Friend2",
+                        "S_Better",
                         "State",
                         ""
                       ],
@@ -11029,10 +11377,22 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_states::State::Return"
+                        "value": "srs_states::State::Finish"
                       },
                       "parameters": [
                         "S_Intro",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Learn",
                         "State",
                         ""
                       ],
@@ -11089,9 +11449,116 @@
                         "value": "srs_states::StateMachine::ManageState"
                       },
                       "parameters": [
-                        "SM_Intro",
+                        "SM_Learn",
                         "StateMachine",
-                        "S_PickAKey",
+                        "T_PickAKey",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "S_FirstBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "T_GoodChoice",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "S_SecondBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "T_Huh",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "T_Here",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "S_RevealUnbound",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_PickAKey",
+                        "StateText",
+                        "T_PickAKey",
                         "State",
                         ""
                       ],
@@ -11103,9 +11570,337 @@
                         "value": "srs_states::StateText::SubscribeToState"
                       },
                       "parameters": [
-                        "T_PickAKey",
+                        "T_GoodChoice",
                         "StateText",
-                        "S_PickAKey",
+                        "T_GoodChoice",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_Huh",
+                        "StateText",
+                        "T_Huh",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_Here",
+                        "StateText",
+                        "T_Here",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_PickAKey",
+                        "Tween",
+                        "T_PickAKey",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_GoodChoice",
+                        "Tween",
+                        "S_SecondBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_Huh",
+                        "Tween",
+                        "S_RevealUnbound",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_Here",
+                        "Tween",
+                        "S_RevealUnbound",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::fadeWhenFinished"
+                      },
+                      "parameters": [
+                        "",
+                        "T_Here",
+                        "Tween",
+                        "S_RevealUnbound",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsRunning"
+                      },
+                      "parameters": [
+                        "S_FirstBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Play",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "S_Learn",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsRunning"
+                      },
+                      "parameters": [
+                        "S_SecondBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Play",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "S_Learn",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsRunning"
+                      },
+                      "parameters": [
+                        "S_RevealUnbound",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Play",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "S_Learn",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Unbound_Desc",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Unbound_Val",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::IsFinished"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Play",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "S_Learn",
                         "State",
                         ""
                       ],
@@ -11150,28 +11945,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::Obstacle::HandleCollision"
-                      },
-                      "parameters": [
-                        "Obstacle",
-                        "Obstacle",
-                        "Clum",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "colorB": 228,
                   "colorG": 176,
@@ -11257,6 +12030,268 @@
                             "BindIndicator",
                             "BindIndicator",
                             "Binder",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Tutorial transitions",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "S_FirstBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsFinished"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "S_Learn",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Initialize"
+                          },
+                          "parameters": [
+                            "S_Play",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Return"
+                          },
+                          "parameters": [
+                            "S_FirstBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "It's pretty hacky that the variable \"full\" gets swapped b/c of the interaction with StateText",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "T_GoodChoice",
+                                "full",
+                                "=",
+                                "srs_utils::strReplace(T_GoodChoice.VariableString(full),  \"/_key_/\", Controls.Bindable::LastKeyBound())"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "S_SecondBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "S_Learn",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Initialize"
+                          },
+                          "parameters": [
+                            "S_Play",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Return"
+                          },
+                          "parameters": [
+                            "S_SecondBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "S_RevealUnbound",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsFinished"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "S_Learn",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Initialize"
+                          },
+                          "parameters": [
+                            "S_Play",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Return"
+                          },
+                          "parameters": [
+                            "S_RevealUnbound",
                             "State",
                             ""
                           ],
@@ -11382,6 +12417,28 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Obstacle::HandleCollision"
+                  },
+                  "parameters": [
+                    "Obstacle",
+                    "Obstacle",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "disabled": false,
               "folded": false,
@@ -23871,35 +24928,63 @@
                     ""
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
                 }
               ],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Tween::AddObjectOpacityTween"
+                    "value": "ModVarObjetTxt"
                   },
                   "parameters": [
                     "Object",
-                    "TweenBehavior",
-                    "\"fadeWhenFinished:\" + Object.ObjectName() + \":\" + State.ObjectName()",
-                    "0",
-                    "\"linear\"",
-                    "srs_utils::ms(1)",
-                    ""
+                    "fadeWhenFinished",
+                    "=",
+                    "\"fadeWhenFinished:\" + Object.ObjectName() + \":\" + State.ObjectName()"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Tween::Exists"
+                      },
+                      "parameters": [
+                        "Object",
+                        "TweenBehavior",
+                        "Object.VariableString(fadeWhenFinished)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectOpacityTween"
+                      },
+                      "parameters": [
+                        "Object",
+                        "TweenBehavior",
+                        "Object.VariableString(fadeWhenFinished)",
+                        "0",
+                        "\"linear\"",
+                        "srs_utils::ms(1)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": [
@@ -26053,6 +27138,64 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "",
+          "fullName": "String replace",
+          "functionType": "StringExpression",
+          "name": "strReplace",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const patternArg = eventsFunctionContext.getArgument('Pattern')\nlet pattern = patternArg\nconst reMatch = patternArg.match(new RegExp('^/(.*)/.*$'))\n\nconsole.log({patternArg, pattern, reMatch})\n\nif (reMatch) {\n    pattern = new RegExp(reMatch[1], reMatch[2])\n}\n\nconst strToRepl = eventsFunctionContext.getArgument('StrToRepl')\nconst replacement = eventsFunctionContext.getArgument('Replacement')\nconst result = strToRepl.replace(pattern, replacement)\n\nconsole.log({patternArg, pattern, reMatch, strToRepl, replacement, result})\n\neventsFunctionContext.returnValue = result\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "String to replace",
+              "longDescription": "",
+              "name": "StrToRepl",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "String or RegExp",
+              "longDescription": "",
+              "name": "Pattern",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Replacement string",
+              "longDescription": "",
+              "name": "Replacement",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsBasedBehaviors": [
@@ -26525,26 +27668,14 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ModVarObjetTxt"
+                            "value": "srs_ctrl::Bindable::Bind"
                           },
                           "parameters": [
                             "Object",
-                            "KeyToDir[LastPressedKey()]",
-                            "=",
-                            "Object.VariableString(Direction)"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "DirToKey[Object.VariableString(Direction)]",
-                            "=",
-                            "LastPressedKey()"
+                            "Behavior",
+                            "LastPressedKey()",
+                            "Object.VariableString(Direction)",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -26676,59 +27807,14 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ObjectVariableRemoveChild"
+                                "value": "srs_ctrl::Bindable::Bind"
                               },
                               "parameters": [
                                 "Object",
-                                "DirToKey",
-                                "Object.VariableString(KeyToDir[LastPressedKey()])"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ObjectVariableRemoveChild"
-                              },
-                              "parameters": [
-                                "Object",
-                                "KeyToDir",
-                                "LastPressedKey()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "KeyToDir[LastPressedKey()]",
-                                "=",
-                                "Object.VariableString(Direction)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "DirToKey[Object.VariableString(Direction)]",
-                                "=",
-                                "LastPressedKey()"
+                                "Behavior",
+                                "LastPressedKey()",
+                                "Object.VariableString(Direction)",
+                                ""
                               ],
                               "subInstructions": []
                             }
@@ -27577,6 +28663,199 @@
                   "optional": false,
                   "supplementaryInformation": "srs_ctrl::Bindable",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "LastKeyBound",
+              "fullName": "LastKeyBound",
+              "functionType": "StringExpression",
+              "name": "LastKeyBound",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(LastKeyBound)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Bind",
+              "fullName": "Bind",
+              "functionType": "Action",
+              "name": "Bind",
+              "sentence": "_PARAM0_ binds _PARAM2_ to _PARAM3_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableRemoveChild"
+                      },
+                      "parameters": [
+                        "Object",
+                        "DirToKey",
+                        "GetArgumentAsString(\"Direction\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableRemoveChild"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyToDir",
+                        "GetArgumentAsString(\"Key\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyToDir[GetArgumentAsString(\"Key\")]",
+                        "=",
+                        "GetArgumentAsString(\"Direction\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "DirToKey[GetArgumentAsString(\"Direction\")]",
+                        "=",
+                        "GetArgumentAsString(\"Key\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "LastKeyBound",
+                        "=",
+                        "GetArgumentAsString(\"Key\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Key",
+                  "longDescription": "",
+                  "name": "Key",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Direction",
+                  "longDescription": "",
+                  "name": "Direction",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
                 }
               ],
               "objectGroups": []
