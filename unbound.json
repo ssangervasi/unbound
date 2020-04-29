@@ -6812,6 +6812,11 @@
       "variables": [],
       "behaviors": [
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit",
+          "SceneName": ""
+        },
+        {
           "name": "State",
           "type": "srs_states::State",
           "Name": "State0",
@@ -6998,24 +7003,24 @@
       "name": "SceneMap",
       "children": [
         {
-          "name": "L_C1_MeetClum",
-          "value": "L_C2_LearningToForget"
+          "name": "L_C1_01_MeetClum",
+          "value": "L_C2_01_LearningToForget"
         },
         {
-          "name": "L_C2_BackAndForth",
-          "value": "L_C2_LearningToForget"
+          "name": "L_C2_01_LearningToForget",
+          "value": "L_C2_02_BackAndForth"
         },
         {
-          "name": "L_C2_CrowdedSquare",
-          "value": "L06"
+          "name": "L_C2_02_BackAndForth",
+          "value": "L_C2_03_CrowdedSquare"
         },
         {
-          "name": "L_C2_LearningToForget",
-          "value": "L_C3_RedHerring"
+          "name": "L_C2_03_CrowdedSquare",
+          "value": "L_C3_01_Threedom"
         },
         {
-          "name": "L_C3_RedHerring",
-          "value": "L_Cw_CrowdedSquare"
+          "name": "L_C3_01_Threedom",
+          "value": "L_C3_02_RedHerring"
         }
       ]
     }
@@ -7045,7 +7050,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.312
+        "zoomFactor": 1.72
       },
       "objectsGroups": [],
       "variables": [],
@@ -7188,7 +7193,12 @@
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "SceneName",
+              "value": "L_C1_01_MeetClum"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -8139,7 +8149,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
@@ -8404,20 +8414,25 @@
           "name": "Exit",
           "width": 30,
           "x": 492,
-          "y": 250,
+          "y": 202,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "SceneName",
+              "value": "L_C2_01_LearningToForget"
+            }
+          ]
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 23,
           "layer": "",
           "locked": false,
           "name": "LevelName",
-          "width": 0,
+          "width": 248,
           "x": 540,
           "y": 154,
           "zOrder": 213,
@@ -8436,14 +8451,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "",
           "locked": false,
           "name": "LevelName",
-          "width": 0,
-          "x": 531,
-          "y": 255,
+          "width": 251,
+          "x": 539,
+          "y": 207,
           "zOrder": 214,
           "numberProperties": [],
           "stringProperties": [],
@@ -8457,6 +8472,66 @@
               "value": "Learning To Forget"
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 801,
+          "x": 0,
+          "y": -10,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 801,
+          "x": 0,
+          "y": 599,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 611,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": -7,
+          "y": 0,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 611,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 797,
+          "y": -5,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8750,65 +8825,18 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_utils::consoleLog"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "ToString(Exit.X()) +\", \"+ ToString(Exit.Y())",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PickNearest"
-                      },
-                      "parameters": [
-                        "LevelName",
-                        "Exit.X()",
-                        "Exit.Y()",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "LevelName.VariableString(LevelName)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "LevelName.VariableString(LevelName)",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
+              "events": []
             }
           ],
           "parameters": []
@@ -9074,6 +9102,10 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
@@ -9119,7 +9151,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.354
+        "zoomFactor": 1.186
       },
       "objectsGroups": [],
       "variables": [
@@ -9493,7 +9525,7 @@
           "name": "S_Play",
           "width": 0,
           "x": -244,
-          "y": 504,
+          "y": 515,
           "zOrder": 5025,
           "numberProperties": [],
           "stringProperties": [],
@@ -10183,7 +10215,7 @@
           "name": "S_SecondBind",
           "width": 0,
           "x": -200,
-          "y": 421,
+          "y": 419,
           "zOrder": 6013,
           "numberProperties": [],
           "stringProperties": [],
@@ -10197,9 +10229,39 @@
           "locked": false,
           "name": "S_RevealUnbound",
           "width": 0,
-          "x": -199,
-          "y": 453,
+          "x": -200,
+          "y": 451,
           "zOrder": 6014,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_LooksLike",
+          "width": 0,
+          "x": 350,
+          "y": 487,
+          "zOrder": 6015,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_ThirdBind",
+          "width": 0,
+          "x": -200,
+          "y": 483,
+          "zOrder": 6016,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10616,6 +10678,32 @@
         {
           "bold": false,
           "italic": false,
+          "name": "S_ThirdBind",
+          "smoothed": true,
+          "tags": "opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State",
+              "Name": "SOpening",
+              "Status": "initialized"
+            }
+          ],
+          "string": "S_ThirdBind",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
           "name": "T_Meany",
           "smoothed": true,
           "tags": "text, opening",
@@ -10626,7 +10714,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 8
+              "FullTime": 0,
+              "CharactersPerSecond": 0,
+              "WordsPerMinute": 50
             },
             {
               "name": "Tween",
@@ -10655,7 +10745,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 5
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
             },
             {
               "name": "Tween",
@@ -10690,7 +10782,8 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 2
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -10723,14 +10816,15 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 1
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "now,\npick a key to go right",
+          "string": "now,\npick a key to go right...",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10756,7 +10850,8 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 1
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -10789,14 +10884,15 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 1
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "huh,\nlooks like your\nmemory is a bit...\n\nlimited  ",
+          "string": "huh,\nlooks like your\nmemory is a bit...\nlimited...",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10822,7 +10918,7 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 1
+              "FullTime": 0
             },
             {
               "name": "Tween",
@@ -10830,6 +10926,39 @@
             }
           ],
           "string": "here, this should help:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_LooksLike",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "FullTime": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "loks like you'll have to forget something...",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -10989,7 +11118,7 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -11056,7 +11185,7 @@
               "comment2": ""
             },
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -11097,14 +11226,14 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Intro",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -11412,7 +11541,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Learn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11540,6 +11669,34 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "S_ThirdBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::ManageState"
+                      },
+                      "parameters": [
+                        "SM_Learn",
+                        "StateMachine",
+                        "T_LooksLike",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -11605,6 +11762,20 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_LooksLike",
+                        "StateText",
+                        "T_LooksLike",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -11624,22 +11795,7 @@
                         "",
                         "T_PickAKey",
                         "Tween",
-                        "T_PickAKey",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::fadeWhenFinished"
-                      },
-                      "parameters": [
-                        "",
-                        "T_GoodChoice",
-                        "Tween",
-                        "S_SecondBind",
+                        "S_FirstBind",
                         "State",
                         ""
                       ],
@@ -11787,7 +11943,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -11862,6 +12018,52 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::IsRunning"
+                      },
+                      "parameters": [
+                        "S_ThirdBind",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "S_Play",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Initialize"
+                      },
+                      "parameters": [
+                        "S_Learn",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 },
                 {
                   "disabled": false,
@@ -11951,7 +12153,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "PC controls",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -12047,7 +12249,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Tutorial transitions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -12133,7 +12335,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "It's pretty hacky that the variable \"full\" gets swapped b/c of the interaction with StateText",
+                          "comment": "It's pretty hacky that the variable \"FullText\" gets swapped b/c of the interaction with StateText",
                           "comment2": ""
                         },
                         {
@@ -12149,9 +12351,9 @@
                               },
                               "parameters": [
                                 "T_GoodChoice",
-                                "full",
+                                "FullText",
                                 "=",
-                                "srs_utils::strReplace(T_GoodChoice.VariableString(full),  \"/_key_/\", Controls.Bindable::LastKeyBound())"
+                                "srs_utils::strReplace(T_GoodChoice.VariableString(FullText),  \"/_key_/\", Controls.Bindable::LastKeyBound())"
                               ],
                               "subInstructions": []
                             }
@@ -12299,6 +12501,169 @@
                         }
                       ],
                       "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "S_ThirdBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::IsRunning"
+                          },
+                          "parameters": [
+                            "Controls",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Run"
+                          },
+                          "parameters": [
+                            "S_Learn",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Initialize"
+                          },
+                          "parameters": [
+                            "S_Play",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::State::Return"
+                          },
+                          "parameters": [
+                            "S_ThirdBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Wait for PC to move a bit before fading helpful messages",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Clum",
+                            "Binder",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::fadeWhenFinished"
+                          },
+                          "parameters": [
+                            "",
+                            "T_GoodChoice",
+                            "Tween",
+                            "S_FirstBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Clum",
+                            "Binder",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::fadeWhenFinished"
+                          },
+                          "parameters": [
+                            "",
+                            "T_LooksLike",
+                            "Tween",
+                            "S_ThirdBind",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ],
                   "parameters": []
@@ -12386,11 +12751,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Scene"
+                            "value": "srs_objs::Exit::HandleCollision"
                           },
                           "parameters": [
-                            "",
-                            "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                            "Exit",
+                            "Exit",
+                            "Clum",
                             ""
                           ],
                           "subInstructions": []
@@ -12563,6 +12929,10 @@
         {
           "name": "Clum",
           "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
         },
         {
           "name": "Obstacle",
@@ -13645,11 +14015,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -15352,11 +15723,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -17073,11 +17445,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -18536,11 +18909,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -20139,11 +20513,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "srs_objs::Exit::HandleCollision"
                   },
                   "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                    "Exit",
+                    "Exit",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -23972,676 +24347,6 @@
   ],
   "eventsFunctionsExtensions": [
     {
-      "author": "@4ian",
-      "description": "Add actions and conditions to manage the life of the object. Object can get damages, lose some health and you can check with a condition if it's dead.",
-      "extensionNamespace": "",
-      "fullName": "Health (life points and damages for objects)",
-      "name": "Health",
-      "shortDescription": "Add actions and conditions to manage the life of the object. Object can get damages, lose some health and you can check with a condition if it's dead.",
-      "tags": "health, life, damage, hit, heal",
-      "version": "0.0.1",
-      "eventsFunctions": [],
-      "eventsBasedBehaviors": [
-        {
-          "description": "Add actions and conditions to manage the life of the object. Object can get damages, lose some health and you can check with a condition if it's dead.",
-          "fullName": "Health",
-          "name": "Health",
-          "objectType": "",
-          "eventsFunctions": [
-            {
-              "description": "Add some damage to the object, decreasing its life.",
-              "fullName": "Damage the object",
-              "functionType": "Action",
-              "name": "Hit",
-              "sentence": "Damage _PARAM0_, removing _PARAM2_ from its health",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectTimer"
-                          },
-                          "parameters": [
-                            "Object",
-                            "\"DamageCooldown\"",
-                            "Object.Behavior::PropertyDamageCooldown()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Health::Health::PropertyCooldownActive"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior"
-                          ],
-                          "subInstructions": []
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "-",
-                        "GetArgumentAsNumber(\"DamageValue\")"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"DamageCooldown\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyCooldownActive"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyIsJustDamaged"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Value of the damage to do (will be removed from object health)",
-                  "longDescription": "",
-                  "name": "DamageValue",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "expression"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Check if the object is considered dead (no more health)",
-              "fullName": "Is dead",
-              "functionType": "Condition",
-              "name": "IsDead",
-              "sentence": "_PARAM0_ is dead",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "False"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::PropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "<=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "True"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "name": "doStepPreEvents",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyIsJustDamaged"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Check if the object was just damaged previously in the events.",
-              "fullName": "Is just damaged",
-              "functionType": "Condition",
-              "name": "IsJustDamaged",
-              "sentence": "_PARAM0_ has just been damaged",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "False"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::PropertyIsJustDamaged"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnBoolean"
-                      },
-                      "parameters": [
-                        "True"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Heal the object, incrasing its life.",
-              "fullName": "Heal the object",
-              "functionType": "Action",
-              "name": "Heal",
-              "sentence": "Heal _PARAM0_, adding _PARAM2_ to its health",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "+",
-                        "GetArgumentAsNumber(\"HealValue\")"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::PropertyMaxHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ">",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "min(Object.Behavior::PropertyHealth(), Object.Behavior::PropertyMaxHealth())"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "How much to heal (will be added to object health)",
-                  "longDescription": "",
-                  "name": "HealValue",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "expression"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "Change the object health to set it to a specific value (check if the actions to damage or heal the object are not better suited to your use case before using this one).",
-              "fullName": "Change object health",
-              "functionType": "Action",
-              "name": "SetHealth",
-              "sentence": "Set health of _PARAM0_ to _PARAM2_",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "GetArgumentAsNumber(\"Value\")"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::PropertyMaxHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ">",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Health::Health::SetPropertyHealth"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "min(Object.Behavior::PropertyHealth(), Object.Behavior::PropertyMaxHealth())"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "New health value",
-                  "longDescription": "",
-                  "name": "Value",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "expression"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "The health of the object",
-              "fullName": "Health",
-              "functionType": "Expression",
-              "name": "Health",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnNumber"
-                      },
-                      "parameters": [
-                        "Object.Behavior::PropertyHealth()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Health::Health",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            }
-          ],
-          "propertyDescriptors": [
-            {
-              "value": "100",
-              "type": "Number",
-              "label": "Health",
-              "description": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "Health"
-            },
-            {
-              "value": "0",
-              "type": "Number",
-              "label": "Damage cooldown (in seconds) (0 for no cooldown)",
-              "description": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "DamageCooldown"
-            },
-            {
-              "value": "100",
-              "type": "Number",
-              "label": "Maximum health (0 for no maximum)",
-              "description": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "MaxHealth"
-            },
-            {
-              "value": "",
-              "type": "Boolean",
-              "label": "",
-              "description": "",
-              "extraInformation": [],
-              "hidden": true,
-              "name": "IsJustDamaged"
-            },
-            {
-              "value": "",
-              "type": "Boolean",
-              "label": "",
-              "description": "",
-              "extraInformation": [],
-              "hidden": true,
-              "name": "CooldownActive"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "author": "ssangervasi",
       "description": "",
       "extensionNamespace": "",
@@ -26264,7 +25969,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "full",
+                        "FullText",
                         "=",
                         "Object.String()"
                       ],
@@ -26277,9 +25982,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "fullLength",
+                        "FullLength",
                         "=",
-                        "StrLength(Object.VariableString(full))"
+                        "StrLength(Object.VariableString(FullText))"
                       ],
                       "subInstructions": []
                     },
@@ -26292,6 +25997,91 @@
                         "Object",
                         "=",
                         "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Compute the FullTime if using characters per second",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyFullTime()",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SetPropertyFullTime"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "60 * srs_utils::wordCount(Object.VariableString(FullText)) / Object.Behavior::PropertyWordsPerMinute()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyFullTime()",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SetPropertyFullTime"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Variable(FullLength) / Object.Behavior::PropertyCharactersPerSecond()"
                       ],
                       "subInstructions": []
                     }
@@ -26404,7 +26194,7 @@
                           "parameters": [
                             "Object",
                             "!=",
-                            "Object.VariableString(full)"
+                            "Object.VariableString(FullText)"
                           ],
                           "subInstructions": []
                         }
@@ -26425,7 +26215,7 @@
                               "parameters": [
                                 "Object",
                                 "=",
-                                "SubStr(Object.VariableString(full), 0, Object.Variable(index))"
+                                "SubStr(Object.VariableString(FullText), 0, Object.Variable(TextIndex))"
                               ],
                               "subInstructions": []
                             },
@@ -26436,30 +26226,9 @@
                               },
                               "parameters": [
                                 "Object",
-                                "index",
+                                "TextIndex",
                                 "=",
-                                "clamp(\n  0,\n  ( Object.Variable(fullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(fullLength)\n)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": true,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "Object.String()",
-                                ""
+                                "clamp(\n  0,\n  ( Object.Variable(FullLength) * \n    Object.ObjectTimerElapsedTime(\"progress\") / \n    Object.Behavior::PropertyFullTime()\n  ),\n  Object.Variable(FullLength)\n)"
                               ],
                               "subInstructions": []
                             }
@@ -26481,7 +26250,7 @@
                           "parameters": [
                             "Object",
                             "=",
-                            "Object.VariableString(full)"
+                            "Object.VariableString(FullText)"
                           ],
                           "subInstructions": []
                         }
@@ -26604,9 +26373,27 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "10",
+              "value": "130",
               "type": "Number",
-              "label": "FullTime: The time it takes for the full text of the object to display. (seconds)",
+              "label": "WordsPerMinute: The rate words are typed per minute.",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "WordsPerMinute"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "CharactersPerSecond: The rate characters fill. If > 0, overrides WordsPerMinute.",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "CharactersPerSecond"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "FullTime: Optional. The total seconds for the full text of to display. If > 0, overrides WordsPerMinute.",
               "description": "",
               "extraInformation": [],
               "hidden": false,
@@ -27190,6 +26977,36 @@
               "description": "Replacement string",
               "longDescription": "",
               "name": "Replacement",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Counts the number of words in a string.",
+          "fullName": "Word Count",
+          "functionType": "Expression",
+          "name": "wordCount",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const stringToCount = eventsFunctionContext.getArgument('StringToCount')\r\nif (!stringToCount) {\r\n    return 0\r\n}\r\n\r\nconst words = stringToCount.match(/\\w+|\\.{3}/g)\r\n// console.log({\r\n//     stringToCount,\r\n//     words,\r\n// })\r\neventsFunctionContext.returnValue = words.length",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "StringToCount",
+              "longDescription": "",
+              "name": "StringToCount",
               "optional": false,
               "supplementaryInformation": "",
               "type": "string"
@@ -30657,6 +30474,267 @@
             }
           ],
           "propertyDescriptors": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "Exit",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SceneName",
+                        "=",
+                        "Object.Behavior::PropertySceneName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Exit",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "HandleCollision transitions scene on collision with SceneMap",
+              "fullName": "HandleCollision",
+              "functionType": "Action",
+              "name": "HandleCollision",
+              "sentence": "_PARAM0_ HandleCollision _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "PC",
+                        "Object",
+                        "",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "StrLength(Object.VariableString(SceneName))",
+                            "<=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "GlobalVariableChildExists"
+                              },
+                              "parameters": [
+                                "SceneMap",
+                                "CurrentSceneName()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "GlobalVariableString(SceneMap[CurrentSceneName()])",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "GlobalVariableChildExists"
+                              },
+                              "parameters": [
+                                "SceneMap",
+                                "CurrentSceneName()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"M_LevelSelect\"",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "0",
+                            "<",
+                            "StrLength(Object.VariableString(SceneName))"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "Object.VariableString(SceneName)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Exit",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "PC",
+                  "longDescription": "",
+                  "name": "PC",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "String",
+              "label": "SceneName: Leave blank to use global scene map",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "SceneName"
+            }
+          ]
         }
       ]
     }
