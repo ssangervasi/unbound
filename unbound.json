@@ -1774,6 +1774,15 @@
         "name": "Assets\\Sprites\\ResetReminder\\ResetReminder21.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/obstacle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\obstacle.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -7176,7 +7185,7 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "1",
+      "string": "2",
       "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
       "characterSize": 30,
       "color": {
@@ -7184,6 +7193,390 @@
         "g": 198,
         "r": 227
       }
+    },
+    {
+      "name": "ResetReminder",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        }
+      ],
+      "animations": [
+        {
+          "name": "PressSpace",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder15.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder16.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder17.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder19.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\ResetReminder\\ResetReminder21.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -8721,6 +9114,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 324,
+          "y": 462,
+          "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8951,39 +9359,6 @@
                     "LevelName",
                     "=",
                     "LevelName.VariableString(DisplayName)"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Space"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
                   ],
                   "subInstructions": []
                 }
@@ -9340,7 +9715,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.186
+        "zoomFactor": 1.258
       },
       "objectsGroups": [],
       "variables": [
@@ -9358,7 +9733,7 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 106,
+          "x": 112,
           "y": 122,
           "zOrder": 200,
           "numberProperties": [],
@@ -9372,8 +9747,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 260,
-          "x": 90,
+          "width": 310,
+          "x": 96,
           "y": 165,
           "zOrder": 200,
           "numberProperties": [],
@@ -9387,8 +9762,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 310,
-          "x": 90,
+          "width": 360,
+          "x": 96,
           "y": 106,
           "zOrder": 200,
           "numberProperties": [],
@@ -9398,12 +9773,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 290,
+          "height": 240,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 340,
+          "x": 396,
           "y": 175,
           "zOrder": 200,
           "numberProperties": [],
@@ -9418,7 +9793,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 90,
+          "x": 96,
           "y": 115,
           "zOrder": 200,
           "numberProperties": [],
@@ -9433,8 +9808,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 365,
-          "y": 120,
+          "x": 420,
+          "y": 121,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -9458,20 +9833,20 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 365,
+          "x": 421,
           "y": 420,
           "zOrder": 100,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Direction",
-              "value": "Right"
+              "value": "Left"
             }
           ]
         },
@@ -9483,7 +9858,7 @@
           "locked": false,
           "name": "Exit",
           "width": 30,
-          "x": 710,
+          "x": 115,
           "y": 425,
           "zOrder": 100,
           "numberProperties": [],
@@ -9498,7 +9873,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 106,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9518,7 +9893,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 165,
           "zOrder": 1,
           "numberProperties": [
@@ -9533,13 +9908,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 310,
+          "height": 370,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 400,
-          "y": 106,
+          "x": 456,
+          "y": 105,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -9552,8 +9927,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 410,
-          "x": 340,
+          "width": 370,
+          "x": 96,
           "y": 465,
           "zOrder": 200,
           "numberProperties": [],
@@ -9568,7 +9943,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 156,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -9587,9 +9962,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 340,
-          "x": 410,
-          "y": 406,
+          "width": 310,
+          "x": 96,
+          "y": 405,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -9598,28 +9973,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 69,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 750,
-          "y": 406,
-          "zOrder": 200,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 601,
+          "height": 610,
           "layer": "",
           "locked": true,
           "name": "Tile",
-          "width": 799,
-          "x": 0,
-          "y": 0,
+          "width": 810,
+          "x": -5,
+          "y": -5,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -9638,7 +9998,7 @@
           "locked": false,
           "name": "T_Sorry",
           "width": 237,
-          "x": 100,
+          "x": 106,
           "y": 190,
           "zOrder": 501,
           "numberProperties": [],
@@ -9652,9 +10012,9 @@
           "layer": "UI",
           "locked": false,
           "name": "T_Meany",
-          "width": 324,
-          "x": 420,
-          "y": 107,
+          "width": 286,
+          "x": 494,
+          "y": 109,
           "zOrder": 500,
           "numberProperties": [],
           "stringProperties": [],
@@ -9748,7 +10108,7 @@
           "locked": false,
           "name": "T_Better",
           "width": 199,
-          "x": 100,
+          "x": 106,
           "y": 285,
           "zOrder": 501,
           "numberProperties": [],
@@ -9763,7 +10123,7 @@
           "locked": false,
           "name": "T_PickAKey",
           "width": 0,
-          "x": 100,
+          "x": 106,
           "y": 331,
           "zOrder": 501,
           "numberProperties": [],
@@ -9778,7 +10138,7 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 105,
+          "x": 111,
           "y": 119,
           "zOrder": 100,
           "numberProperties": [
@@ -9818,7 +10178,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 105,
+          "x": 111,
           "y": 83,
           "zOrder": 300,
           "numberProperties": [],
@@ -9833,8 +10193,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 360,
-          "y": 82,
+          "x": 415,
+          "y": 81,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -9853,13 +10213,13 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 360,
+          "x": 416,
           "y": 381,
           "zOrder": 300,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
@@ -9873,7 +10233,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 156,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9893,7 +10253,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 206,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9913,7 +10273,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 256,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9933,7 +10293,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 306,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9953,7 +10313,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 115,
           "zOrder": 1,
           "numberProperties": [
@@ -9973,7 +10333,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 215,
           "zOrder": 1,
           "numberProperties": [
@@ -9993,7 +10353,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 206,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10013,7 +10373,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 256,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10033,7 +10393,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 550,
+          "x": 306,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10053,7 +10413,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 600,
+          "x": 356,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10073,7 +10433,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 650,
+          "x": 406,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10093,7 +10453,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 700,
+          "x": 107,
           "y": 415,
           "zOrder": 1,
           "numberProperties": [
@@ -10113,7 +10473,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 265,
           "zOrder": 1,
           "numberProperties": [
@@ -10133,7 +10493,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 315,
           "zOrder": 1,
           "numberProperties": [
@@ -10153,28 +10513,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 406,
           "y": 365,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 350,
-          "y": 415,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -10253,7 +10593,7 @@
           "locked": false,
           "name": "T_GoodChoice",
           "width": 117,
-          "x": 101,
+          "x": 107,
           "y": 51,
           "zOrder": 501,
           "numberProperties": [],
@@ -10328,8 +10668,8 @@
           "locked": false,
           "name": "T_Huh",
           "width": 0,
-          "x": 420,
-          "y": 113,
+          "x": 494,
+          "y": 115,
           "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
@@ -10433,8 +10773,8 @@
           "locked": false,
           "name": "T_LooksLike",
           "width": 0,
-          "x": 350,
-          "y": 487,
+          "x": 496,
+          "y": 422,
           "zOrder": 6015,
           "numberProperties": [],
           "stringProperties": [],
@@ -10451,6 +10791,41 @@
           "x": -200,
           "y": 483,
           "zOrder": 6016,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 356,
+          "y": 115,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 96,
+          "y": 415,
+          "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11147,7 +11522,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "loks like you'll have to forget something...",
+          "string": "you'll have to\nforget something...",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -13128,6 +13503,10 @@
           "type": "srs_objs::Obstacle"
         },
         {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
           "name": "State",
           "type": "srs_states::State"
         },
@@ -13177,7 +13556,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.264
+        "zoomFactor": 1.528
       },
       "objectsGroups": [],
       "variables": [],
@@ -13190,7 +13569,7 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 155,
+          "x": 160,
           "y": 136,
           "zOrder": 200,
           "numberProperties": [
@@ -13210,7 +13589,7 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 155,
+          "x": 160,
           "y": 133,
           "zOrder": 100,
           "numberProperties": [
@@ -13239,7 +13618,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 363,
+          "x": 368,
           "y": 135,
           "zOrder": 100,
           "numberProperties": [
@@ -13268,7 +13647,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 561,
+          "x": 566,
           "y": 285,
           "zOrder": 100,
           "numberProperties": [
@@ -13303,13 +13682,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 600,
+          "height": 610,
           "layer": "",
           "locked": true,
           "name": "Tile",
-          "width": 800,
-          "x": 1,
-          "y": -1,
+          "width": 810,
+          "x": -5,
+          "y": -5,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -13328,7 +13707,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 180,
           "zOrder": 1,
           "numberProperties": [
@@ -13348,7 +13727,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 155,
           "y": 130,
           "zOrder": 1,
           "numberProperties": [
@@ -13368,7 +13747,7 @@
           "locked": false,
           "name": "Exit",
           "width": 30,
-          "x": 160,
+          "x": 165,
           "y": 440,
           "zOrder": 100,
           "numberProperties": [],
@@ -13383,7 +13762,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 270,
-          "x": 140,
+          "x": 145,
           "y": 120,
           "zOrder": 203,
           "numberProperties": [],
@@ -13398,7 +13777,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 140,
+          "x": 145,
           "y": 130,
           "zOrder": 203,
           "numberProperties": [],
@@ -13413,7 +13792,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 270,
-          "x": 140,
+          "x": 145,
           "y": 480,
           "zOrder": 203,
           "numberProperties": [],
@@ -13428,7 +13807,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 340,
+          "x": 345,
           "y": 190,
           "zOrder": 203,
           "numberProperties": [],
@@ -13443,7 +13822,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 200,
-          "x": 140,
+          "x": 145,
           "y": 420,
           "zOrder": 203,
           "numberProperties": [],
@@ -13458,7 +13837,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 210,
-          "x": 140,
+          "x": 145,
           "y": 180,
           "zOrder": 203,
           "numberProperties": [],
@@ -13473,7 +13852,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 400,
+          "x": 405,
           "y": 130,
           "zOrder": 203,
           "numberProperties": [],
@@ -13488,7 +13867,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 400,
+          "x": 405,
           "y": 330,
           "zOrder": 203,
           "numberProperties": [],
@@ -13503,7 +13882,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 200,
-          "x": 410,
+          "x": 415,
           "y": 270,
           "zOrder": 203,
           "numberProperties": [],
@@ -13518,7 +13897,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 200,
-          "x": 410,
+          "x": 415,
           "y": 330,
           "zOrder": 203,
           "numberProperties": [],
@@ -13533,7 +13912,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 140,
+          "x": 145,
           "y": 430,
           "zOrder": 203,
           "numberProperties": [],
@@ -13548,7 +13927,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 600,
+          "x": 605,
           "y": 280,
           "zOrder": 203,
           "numberProperties": [],
@@ -13563,7 +13942,7 @@
           "locked": false,
           "name": "Curve",
           "width": 29,
-          "x": 272,
+          "x": 277,
           "y": 135,
           "zOrder": 206,
           "numberProperties": [],
@@ -13608,7 +13987,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 358,
+          "x": 363,
           "y": 96,
           "zOrder": 209,
           "numberProperties": [
@@ -13633,7 +14012,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 554,
+          "x": 559,
           "y": 246,
           "zOrder": 209,
           "numberProperties": [
@@ -13653,7 +14032,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 155,
+          "x": 160,
           "y": 95,
           "zOrder": 209,
           "numberProperties": [
@@ -13678,7 +14057,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 205,
           "y": 130,
           "zOrder": 1,
           "numberProperties": [
@@ -13698,7 +14077,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 255,
           "y": 130,
           "zOrder": 1,
           "numberProperties": [
@@ -13718,7 +14097,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 305,
           "y": 130,
           "zOrder": 1,
           "numberProperties": [
@@ -13738,7 +14117,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 130,
           "zOrder": 1,
           "numberProperties": [
@@ -13758,7 +14137,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 205,
           "y": 430,
           "zOrder": 1,
           "numberProperties": [
@@ -13778,7 +14157,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 255,
           "y": 430,
           "zOrder": 1,
           "numberProperties": [
@@ -13798,7 +14177,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 305,
           "y": 430,
           "zOrder": 1,
           "numberProperties": [
@@ -13818,7 +14197,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 430,
           "zOrder": 1,
           "numberProperties": [
@@ -13838,7 +14217,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 380,
           "zOrder": 1,
           "numberProperties": [
@@ -13858,7 +14237,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 155,
           "y": 430,
           "zOrder": 1,
           "numberProperties": [
@@ -13878,7 +14257,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 230,
           "zOrder": 1,
           "numberProperties": [
@@ -13898,7 +14277,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 280,
           "zOrder": 1,
           "numberProperties": [
@@ -13918,7 +14297,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 355,
           "y": 330,
           "zOrder": 1,
           "numberProperties": [
@@ -13938,7 +14317,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 405,
           "y": 280,
           "zOrder": 1,
           "numberProperties": [
@@ -13958,7 +14337,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 455,
           "y": 280,
           "zOrder": 1,
           "numberProperties": [
@@ -13978,7 +14357,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 505,
           "y": 280,
           "zOrder": 1,
           "numberProperties": [
@@ -13998,7 +14377,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 550,
+          "x": 555,
           "y": 280,
           "zOrder": 1,
           "numberProperties": [
@@ -14021,6 +14400,96 @@
           "x": 332,
           "y": 513,
           "zOrder": 210,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 15,
+          "layer": "Objects",
+          "locked": false,
+          "name": "TutorialZone",
+          "width": 83,
+          "x": 338,
+          "y": 181,
+          "zOrder": 212,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_FriendlyHoldSpace",
+          "width": 0,
+          "x": 435,
+          "y": 225,
+          "zOrder": 213,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_MeanyReminder",
+          "width": 0,
+          "x": 435,
+          "y": 350,
+          "zOrder": 214,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "MeanyZone",
+          "width": 22,
+          "x": 329,
+          "y": 426,
+          "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_FriendlyIfYou",
+          "width": 0,
+          "x": 435,
+          "y": 191,
+          "zOrder": 216,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM_FriendlyTutorial",
+          "width": 0,
+          "x": 817,
+          "y": 206,
+          "zOrder": 217,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -14150,388 +14619,156 @@
           }
         },
         {
-          "name": "ResetReminder",
+          "height": 32,
+          "name": "TutorialZone",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "texture": "Assets\\Sprites\\CameraTransition.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
           "variables": [],
           "behaviors": [
             {
-              "name": "ResetReminder",
-              "type": "srs_objs::ResetReminder"
-            }
-          ],
-          "animations": [
-            {
-              "name": "PressSpace",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.05,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder10.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder11.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder12.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder13.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder14.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder15.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder16.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder17.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder18.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder19.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder20.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\ResetReminder\\ResetReminder21.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+              "name": "State",
+              "type": "srs_states::State"
             }
           ]
+        },
+        {
+          "height": 32,
+          "name": "MeanyZone",
+          "tags": "",
+          "texture": "Assets\\Sprites\\CameraTransition.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_FriendlyIfYou",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "if you get stuck, don't worry...",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_FriendlyHoldSpace",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "just try holding the spacebar\n",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_MeanyReminder",
+          "smoothed": true,
+          "tags": "text, opening",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "FullTime": 0,
+              "CharactersPerSecond": 0,
+              "WordsPerMinute": 130
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "YOU HAD TO\nUSE SPACE,\nDIDN'T YOU?",
+          "font": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 71,
+            "r": 196
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SM_FriendlyTutorial",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine",
+              "Property": 0
+            }
+          ],
+          "string": "SM_FriendlyTutorial",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -14542,23 +14779,219 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Scene transitions",
+          "name": "Game",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "disabled": true,
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Clum::AnimateMovement"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Clum",
+                    "Clum",
+                    "TopDownMovement",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::SubscribeToState"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::ControlPC"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "TopDownMovement",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Binder",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::HandleBinderCollision"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "Controls",
+                    "State",
+                    "Binder",
+                    "State",
+                    "Binder",
+                    "Binder",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::SubscribeToState"
+                  },
+                  "parameters": [
+                    "Binder",
+                    "Binder",
+                    "Binder",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::BindIndicator::SubscribeToState"
+                  },
+                  "parameters": [
+                    "BindIndicator",
+                    "BindIndicator",
+                    "Binder",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Obstacle::HandleCollision"
+                  },
+                  "parameters": [
+                    "Obstacle",
+                    "Obstacle",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Tutorial: Reset button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "",
-                    "Space"
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "TutorialZone"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "MeanyZone"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsInitialized"
+                  },
+                  "parameters": [
+                    "TutorialZone",
+                    "State",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -14566,19 +14999,34 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Clum",
+                        "TutorialZone",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Scene"
+                        "value": "srs_states::State::Run"
                       },
                       "parameters": [
-                        "",
-                        "CurrentSceneName()",
+                        "TutorialZone",
+                        "State",
                         ""
                       ],
                       "subInstructions": []
@@ -14596,178 +15044,288 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "srs_states::State::IsRunning"
                   },
                   "parameters": [
-                    "Clum",
-                    "Exit",
-                    "",
-                    "",
+                    "TutorialZone",
+                    "State",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::peekScene(1, \"\")",
+                        "=",
+                        "CurrentSceneName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::StateMachine::ManageState"
+                          },
+                          "parameters": [
+                            "SM_FriendlyTutorial",
+                            "StateMachine",
+                            "T_FriendlyIfYou",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::StateMachine::ManageState"
+                          },
+                          "parameters": [
+                            "SM_FriendlyTutorial",
+                            "StateMachine",
+                            "T_FriendlyHoldSpace",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::StateText::SubscribeToState"
+                          },
+                          "parameters": [
+                            "T_FriendlyIfYou",
+                            "StateText",
+                            "T_FriendlyIfYou",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_states::StateText::SubscribeToState"
+                          },
+                          "parameters": [
+                            "T_FriendlyHoldSpace",
+                            "StateText",
+                            "T_FriendlyHoldSpace",
+                            "State",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::peekScene(1, \"\")",
+                        "!=",
+                        "CurrentSceneName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Exit::HandleCollision"
+                    "value": "srs_states::State::IsInitialized"
                   },
                   "parameters": [
-                    "Exit",
-                    "Exit",
-                    "Clum",
+                    "MeanyZone",
+                    "State",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Clum",
+                        "MeanyZone",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "MeanyZone",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsRunning"
+                  },
+                  "parameters": [
+                    "MeanyZone",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::peekScene(1, \"\")",
+                        "=",
+                        "CurrentSceneName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::State::Run"
+                      },
+                      "parameters": [
+                        "T_MeanyReminder",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::SubscribeToState"
+                      },
+                      "parameters": [
+                        "T_MeanyReminder",
+                        "StateText",
+                        "T_MeanyReminder",
+                        "State",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::peekScene(1, \"\")",
+                        "!=",
+                        "CurrentSceneName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Clum::AnimateMovement"
-              },
-              "parameters": [
-                "Clum",
-                "Clum",
-                "Clum",
-                "TopDownMovement",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::SubscribeToState"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::ControlPC"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "TopDownMovement",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Binder",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::HandleBinderCollision"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "Controls",
-                "State",
-                "Binder",
-                "State",
-                "Binder",
-                "Binder",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Binder::SubscribeToState"
-              },
-              "parameters": [
-                "Binder",
-                "Binder",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::BindIndicator::SubscribeToState"
-              },
-              "parameters": [
-                "BindIndicator",
-                "BindIndicator",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Obstacle::HandleCollision"
-              },
-              "parameters": [
-                "Obstacle",
-                "Obstacle",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         },
         {
           "colorB": 228,
@@ -14807,6 +15365,65 @@
                     "Unbound_Val",
                     "=",
                     "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Scene transitions",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Exit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Exit::HandleCollision"
+                  },
+                  "parameters": [
+                    "Exit",
+                    "Exit",
+                    "Clum",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -14882,6 +15499,10 @@
           "type": "srs_states::State"
         },
         {
+          "name": "StateMachine",
+          "type": "srs_states::StateMachine"
+        },
+        {
           "name": "StateText",
           "type": "srs_states::StateText"
         },
@@ -14919,7 +15540,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.285
+        "zoomFactor": 1.501
       },
       "objectsGroups": [],
       "variables": [],
@@ -16133,6 +16754,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 365,
+          "y": 527,
+          "zOrder": 211,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -16271,39 +16907,6 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Space"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -17874,6 +18477,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 354,
+          "y": 514,
+          "zOrder": 213,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -17993,39 +18611,6 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Space"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -19281,6 +19866,21 @@
           ],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 368,
+          "y": 526,
+          "zOrder": 212,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -19457,39 +20057,6 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Space"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -20885,6 +21452,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 360,
+          "y": 515,
+          "zOrder": 212,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -21061,39 +21643,6 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Space"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -27461,6 +28010,33 @@
       "version": "",
       "eventsFunctions": [
         {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onFirstSceneLoaded",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nglobalThis.ssangervasi.log = (...msgs) => {\n    const t = (new Date()).toISOString()\n\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n\n    console.log(t, ctx, ...msgs)\n}",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
           "description": "Log a message to the debug console",
           "fullName": "Console Log",
           "functionType": "Action",
@@ -27471,7 +28047,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const t = (new Date()).toISOString()\n\nlet ctx = '(Unknown)'\ntry {\n    const stack = (new Error().stack)\n    const match = stack.match(/([a-zA-Z.]+Context)/)\n    ctx = (match && match.length && match[0]) || ctx\n} catch (e) {\n    console.error('Context failure', e)\n}\n\nconsole.log(t, ctx, eventsFunctionContext.getArgument('Message'))\n",
+              "inlineCode": "globalThis.ssangervasi.log(\n    eventsFunctionContext.getArgument('Message')\n)\n// const t = (new Date()).toISOString()\n\n// let ctx = '(Unknown)'\n// try {\n//     const stack = (new Error().stack)\n//     const match = stack.match(/([a-zA-Z.]+Context)/)\n//     ctx = (match && match.length && match[0]) || ctx\n// } catch (e) {\n//     console.error('Context failure', e)\n// }\n\n// console.log(t, ctx, eventsFunctionContext.getArgument('Message'))\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -27618,6 +28194,105 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "Change scene and record the history",
+          "fullName": "Push Scene",
+          "functionType": "Action",
+          "name": "pushScene",
+          "sentence": "Change to scene _PARAM1_ and push the previous scene to the history",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const sceneName = eventsFunctionContext.getArgument(\"SceneName\")\n// const sceneName = runtimeScene.getName()\nif (!sceneName) {\n    return\n}\nglobalThis.ssangervasi.sceneHistory.push(sceneName)\nglobalThis.ssangervasi.log(\"Push scene to history\", sceneName, globalThis.ssangervasi.sceneHistory)",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "GetArgumentAsString(\"SceneName\")",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "SceneName",
+              "longDescription": "",
+              "name": "SceneName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "sceneName"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "See what the _PARAM1_ ago scene was",
+          "fullName": "Peek scene",
+          "functionType": "StringExpression",
+          "name": "peekScene",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    const defaultVal = eventsFunctionContext.getArgument(\"Default\") || \"\"\n    const depth = eventsFunctionContext.getArgument(\"Depth\") || 0\n    const hist = globalThis.ssangervasi.sceneHistory\n    const index = hist.length - 1 - depth\n    if (index < 0) {\n        return d\n    }\n    return hist[index]\n})()",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Depth",
+              "longDescription": "",
+              "name": "Depth",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Default to return if nothing found at Depth (Default is empty string)",
+              "longDescription": "",
+              "name": "Default",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsBasedBehaviors": [
@@ -27714,7 +28389,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (globalThis.ssangervasi) { return }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nglobalThis.ssangervasi = {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n}\r\n",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nObject.assign(globalThis.ssangervasi, {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n})\r\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -31210,7 +31885,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Scene"
+                                "value": "srs_utils::pushScene"
                               },
                               "parameters": [
                                 "",
@@ -31243,7 +31918,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Scene"
+                                "value": "srs_utils::pushScene"
                               },
                               "parameters": [
                                 "",
@@ -31279,7 +31954,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Scene"
+                            "value": "srs_utils::pushScene"
                           },
                           "parameters": [
                             "",
