@@ -15753,6 +15753,1719 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
+      "mangledName": "L_95C2_9502_95PingPong",
+      "name": "L_C2_02_PingPong",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 4,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 4,
+        "snap": false,
+        "windowMask": false,
+        "zoomFactor": 1.501
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Clum",
+          "width": 40,
+          "x": 155,
+          "y": 246,
+          "zOrder": 200,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 40,
+          "x": 155,
+          "y": 243,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Right"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 360,
+          "y": 245,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Down"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 410,
+          "y": 345,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Right"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Controls",
+          "width": 0,
+          "x": 611,
+          "y": -46,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 610,
+          "layer": "",
+          "locked": true,
+          "name": "Tile",
+          "width": 810,
+          "x": -5,
+          "y": -5,
+          "zOrder": 0,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Exit",
+          "width": 30,
+          "x": 261,
+          "y": 246,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 300,
+          "x": 140,
+          "y": 230,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 140,
+          "y": 240,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 201,
+          "x": 140,
+          "y": 290,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 37,
+          "layer": "",
+          "locked": false,
+          "name": "Curve",
+          "width": 29,
+          "x": 272,
+          "y": 245,
+          "zOrder": 206,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Unbound_Desc",
+          "width": 0,
+          "x": 571,
+          "y": 18,
+          "zOrder": 207,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Unbound_Val",
+          "width": 0,
+          "x": 716,
+          "y": 20,
+          "zOrder": 208,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 462,
+          "y": 245,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Up"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 560,
+          "y": 345,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Left"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 440,
+          "y": 300,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 440,
+          "y": 190,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 500,
+          "y": 190,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 70,
+          "x": 440,
+          "y": 180,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 200,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 300,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 190,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 390,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 300,
+          "y": 390,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 500,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 390,
+          "y": 340,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 540,
+          "y": 280,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 550,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 550,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 90,
+          "x": 610,
+          "y": 340,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 600,
+          "y": 340,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 157,
+          "x": 550,
+          "y": 280,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 700,
+          "y": 280,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 50,
+          "x": 500,
+          "y": 330,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 600,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 650,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 100,
+          "x": 340,
+          "y": 330,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 220,
+          "x": 240,
+          "y": 440,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 390,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 390,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 450,
+          "y": 390,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 80,
+          "x": 310,
+          "y": 380,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 40,
+          "x": 410,
+          "y": 290,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 340,
+          "y": 290,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 400,
+          "y": 290,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 240,
+          "y": 340,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 70,
+          "x": 240,
+          "y": 330,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 300,
+          "y": 340,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 650,
+          "y": 295,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Down"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 150,
+          "x": 460,
+          "y": 390,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 354,
+          "y": 205,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 457,
+          "y": 205,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 405,
+          "y": 309,
+          "zOrder": 210,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 554,
+          "y": 307,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 647,
+          "y": 255,
+          "zOrder": 210,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "BindIndicator",
+          "width": 40,
+          "x": 156,
+          "y": 205,
+          "zOrder": 210,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 365,
+          "y": 520,
+          "zOrder": 211,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Controls",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Bindable",
+              "type": "srs_ctrl::Bindable",
+              "BindLimit": 3
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ],
+          "string": "Controls",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Desc",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bound:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Val",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Unbound_Desc",
+          "smoothed": true,
+          "tags": "ui",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Unbound:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Unbound_Val",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "3",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "name": "FontTest",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "behaviors": [],
+          "content": {
+            "text": "Sometext",
+            "opacity": 255,
+            "fontSize": "10",
+            "visible": true,
+            "color": "#000000",
+            "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "align": "left",
+            "wordWrap": true
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Scene transition",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Exit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Exit::HandleCollision"
+                  },
+                  "parameters": [
+                    "Exit",
+                    "Exit",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Clum::AnimateMovement"
+              },
+              "parameters": [
+                "Clum",
+                "Clum",
+                "Clum",
+                "TopDownMovement",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Bindable::SubscribeToState"
+              },
+              "parameters": [
+                "Controls",
+                "Bindable",
+                "Controls",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Bindable::ControlPC"
+              },
+              "parameters": [
+                "Controls",
+                "Bindable",
+                "Clum",
+                "TopDownMovement",
+                "Controls",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Binder",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Bindable::HandleBinderCollision"
+              },
+              "parameters": [
+                "Controls",
+                "Bindable",
+                "Clum",
+                "Controls",
+                "State",
+                "Binder",
+                "State",
+                "Binder",
+                "Binder",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Binder::SubscribeToState"
+              },
+              "parameters": [
+                "Binder",
+                "Binder",
+                "Binder",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::BindIndicator::SubscribeToState"
+              },
+              "parameters": [
+                "BindIndicator",
+                "BindIndicator",
+                "Binder",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Clum",
+                "Obstacle",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Obstacle::HandleCollision"
+              },
+              "parameters": [
+                "Obstacle",
+                "Obstacle",
+                "Clum",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "UI",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Bound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::BoundCount())"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Unbound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Objects",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
+        },
+        {
+          "name": "Bindable",
+          "type": "srs_ctrl::Bindable"
+        },
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
       "mangledName": "L_95C2_9502_95BackAndForth",
       "name": "L_C2_02_BackAndForth",
       "oglFOV": 90,
@@ -22231,7 +23944,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.168
+        "zoomFactor": 1.312
       },
       "objectsGroups": [],
       "variables": [],
@@ -22244,8 +23957,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 138,
-          "y": 105,
+          "x": 137,
+          "y": 154,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -22265,7 +23978,7 @@
           "name": "Binder",
           "width": 40,
           "x": 136,
-          "y": 103,
+          "y": 152,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -22289,8 +24002,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 193,
-          "y": 107,
+          "x": 192,
+          "y": 155,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -22303,31 +24016,6 @@
             {
               "name": "Direction",
               "value": "Down"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Binder",
-          "width": 25,
-          "x": 876,
-          "y": 448,
-          "zOrder": 100,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Direction",
-              "value": "Right"
             }
           ]
         },
@@ -22380,24 +24068,9 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 2
+              "value": 0
             }
           ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 30,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Exit",
-          "width": 30,
-          "x": 741,
-          "y": 679,
-          "zOrder": 100,
-          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -22408,9 +24081,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 202,
+          "width": 200,
           "x": 280,
-          "y": 139,
+          "y": 140,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -22425,22 +24098,7 @@
           "name": "Obstacle",
           "width": 10,
           "x": 280,
-          "y": 95,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 150,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 4,
-          "y": -117,
+          "y": 90,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -22494,58 +24152,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 70,
-          "x": -125,
-          "y": 247,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 150,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": -87,
-          "y": 33,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 100,
-          "x": -152,
-          "y": 220,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 189,
-          "y": 356,
+          "x": 194,
+          "y": 354,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -22589,21 +24202,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": -129,
-          "y": 124,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 10,
           "layer": "Objects",
           "locked": false,
@@ -22624,8 +24222,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 169,
-          "y": 249,
+          "x": 170,
+          "y": 250,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -22639,8 +24237,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 119,
-          "y": 339,
+          "x": 120,
+          "y": 340,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -22700,7 +24298,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
@@ -22834,46 +24432,6 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": -57,
-          "y": 487,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": -57,
-          "y": 437,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
           "x": 180,
           "y": 300,
           "zOrder": 1,
@@ -22890,143 +24448,13 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": -57,
-          "y": 487,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 551,
-          "y": 614,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 471,
-          "y": 91,
+          "x": 470,
+          "y": 90,
           "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 73,
-          "y": -45,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 630,
-          "y": 669,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 630,
-          "y": 619,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 730,
-          "y": 669,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 33,
-          "x": 696,
-          "y": -104,
-          "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23040,23 +24468,8 @@
           "name": "Obstacle",
           "width": 10,
           "x": 280,
-          "y": 199,
+          "y": 200,
           "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 157,
-          "x": 582,
-          "y": 49,
-          "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23072,91 +24485,6 @@
           "x": 120,
           "y": 350,
           "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 50,
-          "x": -181,
-          "y": 52,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 680,
-          "y": 619,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 730,
-          "y": 619,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 852,
-          "y": -66,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 871,
-          "y": 410,
-          "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23189,7 +24517,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 183,
+          "x": 188,
           "y": 313,
           "zOrder": 210,
           "numberProperties": [
@@ -23209,8 +24537,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 139,
-          "y": 69,
+          "x": 138,
+          "y": 112,
           "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
@@ -23239,8 +24567,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 186,
-          "y": 69,
+          "x": 187,
+          "y": 117,
           "zOrder": 210,
           "numberProperties": [
             {
@@ -23339,8 +24667,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 234,
-          "y": 401,
+          "x": 230,
+          "y": 400,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -23359,8 +24687,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 231,
-          "y": 451,
+          "x": 230,
+          "y": 450,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -23889,58 +25217,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 663.796,
-          "y": 97.7829,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Binder",
-          "width": 25,
-          "x": 674,
-          "y": 190,
-          "zOrder": 100,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Direction",
-              "value": "Down"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 10,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 150,
-          "x": 479,
-          "y": 88,
+          "x": 480,
+          "y": 90,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -23953,9 +25236,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 150,
-          "x": 129,
-          "y": 501,
+          "width": 170,
+          "x": 120,
+          "y": 500,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -23968,9 +25251,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 150,
-          "x": 478,
-          "y": 503,
+          "width": 170,
+          "x": 470,
+          "y": 500,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -23979,13 +25262,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 150,
+          "height": 160,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 119,
-          "y": 100,
+          "x": 120,
+          "y": 90,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -23999,8 +25282,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 471,
-          "y": 352,
+          "x": 470,
+          "y": 350,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24015,7 +25298,7 @@
           "name": "Obstacle",
           "width": 10,
           "x": 280,
-          "y": 348,
+          "y": 350,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24029,8 +25312,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 631,
-          "y": 352,
+          "x": 630,
+          "y": 350,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24059,82 +25342,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 116,
-          "y": 249,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 60,
-          "x": 471,
-          "y": 342,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 100,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 521,
-          "y": 252,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 60,
-          "x": 468,
-          "y": 252,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 100,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 578,
-          "y": 248,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 60,
-          "x": 587,
+          "x": 120,
           "y": 250,
           "zOrder": 203,
           "numberProperties": [],
@@ -24149,8 +25357,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 584,
-          "y": 341,
+          "x": 470,
+          "y": 340,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -24164,8 +25372,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 231,
-          "y": 248,
+          "x": 520,
+          "y": 250,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24179,7 +25387,82 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 236,
+          "x": 470,
+          "y": 250,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 580,
+          "y": 250,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 50,
+          "x": 590,
+          "y": 250,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 50,
+          "x": 590,
+          "y": 340,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 230,
+          "y": 250,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 230,
           "y": 250,
           "zOrder": 203,
           "numberProperties": [],
@@ -24194,8 +25477,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 233,
-          "y": 339,
+          "x": 230,
+          "y": 340,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -24208,8 +25491,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 202,
-          "x": 281,
+          "width": 200,
+          "x": 280,
           "y": 200,
           "zOrder": 203,
           "numberProperties": [],
@@ -24224,8 +25507,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 469,
-          "y": 205,
+          "x": 470,
+          "y": 210,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24285,7 +25568,7 @@
           "name": "Obstacle",
           "width": 10,
           "x": 180,
-          "y": 401,
+          "y": 400,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -24299,8 +25582,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 50,
-          "x": 182,
-          "y": 399,
+          "x": 180,
+          "y": 400,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -24313,9 +25596,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 54,
+          "width": 50,
           "x": 180,
-          "y": 442,
+          "y": 440,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -24329,8 +25612,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 181,
-          "y": 453,
+          "x": 180,
+          "y": 450,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -24349,8 +25632,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 224,
-          "y": 398,
+          "x": 220,
+          "y": 400,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -24359,13 +25642,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
+          "height": 30,
           "layer": "Objects",
           "locked": false,
           "name": "Exit",
-          "width": 40,
-          "x": 189,
-          "y": 457,
+          "width": 30,
+          "x": 187,
+          "y": 459,
           "zOrder": 213,
           "numberProperties": [],
           "stringProperties": [],
@@ -28412,14 +29695,7 @@
       ]
     }
   ],
-  "externalEvents": [
-    {
-      "associatedLayout": "",
-      "lastChangeTimeStamp": 0,
-      "name": "NewExternalEvents",
-      "events": []
-    }
-  ],
+  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "author": "ssangervasi",
@@ -30949,7 +32225,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nglobalThis.ssangervasi.log = (...msgs) => {\n    const t = (new Date()).toISOString()\n\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n\n    console.log(t, ctx, ...msgs)\n}",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nconst getLogTime = () => (new Date()).toISOString()\n\nconst getLogCtx = () => {\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n    return ctx\n}\n\nconst log = (...msgs) => console.log(getLogTime(), getLogCtx(), ...msgs)\nconst info = (...msgs) => console.info(getLogTime(), getLogCtx(), ...msgs)\nconst error = (...msgs) => console.error(getLogTime(), getLogCtx(), ...msgs)\n\nObject.assign(\n    globalThis.ssangervasi,\n    {\n        log,\n        info,\n        error,\n    }\n)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -30968,7 +32244,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "globalThis.ssangervasi.log(\n    eventsFunctionContext.getArgument('Message')\n)\n// const t = (new Date()).toISOString()\n\n// let ctx = '(Unknown)'\n// try {\n//     const stack = (new Error().stack)\n//     const match = stack.match(/([a-zA-Z.]+Context)/)\n//     ctx = (match && match.length && match[0]) || ctx\n// } catch (e) {\n//     console.error('Context failure', e)\n// }\n\n// console.log(t, ctx, eventsFunctionContext.getArgument('Message'))\n",
+              "inlineCode": "globalThis.ssangervasi.log(\n    eventsFunctionContext.getArgument('Message')\n)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -33593,9 +34869,9 @@
       "author": "",
       "description": "",
       "extensionNamespace": "",
-      "fullName": "",
+      "fullName": "Objs",
       "name": "srs_objs",
-      "shortDescription": "",
+      "shortDescription": "Unbound specific functionality",
       "tags": "",
       "version": "",
       "eventsFunctions": [
@@ -33822,6 +35098,357 @@
               "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Next Level",
+          "fullName": "nextLevel",
+          "functionType": "Action",
+          "name": "nextLevel",
+          "sentence": "Go to the next level",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "This function replaces the global level map object. This will let me do more interesting things with the transitions between levels.\nFor example, this would control switching to a cutscene between chapters.",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": true,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::pushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"L_C2_02_BackAndForth\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": true,
+              "folded": false,
+              "name": "",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_01_LearningToForget\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_02_PingPong\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C1_01_MeetClum\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_01_LearningToForget\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_02_BackAndForth\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_03_CrowdedSquare\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_03_CrowdedSquare\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C3_01_Threedom\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C3_01_Threedom\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C3_02_RedHerring\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C3_02_RedHerring\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C3_03_Cells\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"M_LevelSelect\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Is current scene?",
+          "fullName": "Is current scene?",
+          "functionType": "Condition",
+          "name": "isScene",
+          "sentence": "Is current scene _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    let i = 0; \n    const game = runtimeScene.getGame()\n    const sceneName = eventsFunctionContext.getArgument('SceneName')\n    if (!sceneName) {\n        globalThis.ssangervasi.error('Attempted to check isScene but no SceneName was passed.')\n        return false\n    }\n    if (!game.hasScene(sceneName)) {\n        globalThis.ssangervasi.error(`Attempted to check isScene but \"${sceneName}\" is not the name of a scene.`)\n        return false\n    }\n    return runtimeScene.getName() === sceneName\n})()",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "SceneName",
+              "longDescription": "",
+              "name": "SceneName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "sceneName"
             }
           ],
           "objectGroups": []
@@ -34744,6 +36371,26 @@
               "sentence": "_PARAM0_ HandleCollision _PARAM2_",
               "events": [
                 {
+                  "disabled": true,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                },
+                {
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
@@ -34783,75 +36430,20 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "actions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "GlobalVariableChildExists"
-                              },
-                              "parameters": [
-                                "SceneMap",
-                                "CurrentSceneName()"
-                              ],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::nextLevel"
+                          },
+                          "parameters": [
+                            "",
+                            ""
                           ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::pushScene"
-                              },
-                              "parameters": [
-                                "",
-                                "GlobalVariableString(SceneMap[CurrentSceneName()])",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "GlobalVariableChildExists"
-                              },
-                              "parameters": [
-                                "SceneMap",
-                                "CurrentSceneName()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::pushScene"
-                              },
-                              "parameters": [
-                                "",
-                                "\"M_LevelSelect\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
+                          "subInstructions": []
                         }
-                      ]
+                      ],
+                      "events": []
                     },
                     {
                       "disabled": false,
@@ -34920,6 +36512,58 @@
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "__effin_workaround__",
+              "fullName": "__effin_workaround__",
+              "functionType": "Action",
+              "name": "__effin_workaround__",
+              "sentence": "__effin_workaround__ _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::isScene"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Exit",
+                  "type": "behavior"
                 }
               ],
               "objectGroups": []
