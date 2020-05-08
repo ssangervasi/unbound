@@ -1783,6 +1783,20 @@
         "name": "Assets\\obstacle.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "Assets/Fonts/bast/BastyPixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\bast\\BastyPixel.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Fonts/basty/BastyPixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -15778,7 +15792,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.381
+        "zoomFactor": 1.597
       },
       "objectsGroups": [],
       "variables": [],
@@ -17182,6 +17196,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "BoundText",
+          "width": 0,
+          "x": 212,
+          "y": 137,
+          "zOrder": 212,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -17305,6 +17334,25 @@
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
             "align": "left",
             "wordWrap": true
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "BoundText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "JUST SOME WORDS",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 71,
+            "r": 196
           }
         }
       ],
