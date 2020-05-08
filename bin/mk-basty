@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+ROOT_DIR=$(dirname "$BASH_SOURCE")/..
+BASTY_DIR="Assets/Fonts/basty"
+LETTERS_DIR="letters"
+LETTERS_BACKUP_DIR="letters_backup"
+
+main() {
+	verify 
+	backup
+	generate
+}
+
+verify() {
+	echo "Seeing if you got stuff..."
+	pushd "$ROOT_DIR" || exit
+
+	which Aseprite.exe || exit
+
+	pushd "$BASTY_DIR" || exit
+	echo "Yep, you got stuff."	
+}
+
+backup() {
+	if [[ -d "$LETTERS_DIR" ]]; then
+		echo "Backing up originals"
+		mv "$LETTERS_DIR" "$LETTERS_BACKUP_DIR"
+	fi	
+}
+
+generate() {
+	echo "Exporting BastyFont layers as SVG files."
+	Aseprite.exe \
+		-b --split-layers \
+		./BastyFont.aseprite \
+		--save-as "$LETTERS_DIR"/BastyFont.svg
+
+	echo "That should have worked"
+	ls "$LETTERS_DIR"
+}
+
+main
