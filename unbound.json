@@ -9788,6 +9788,10 @@
           "type": "srs_objs::Obstacle"
         },
         {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
           "name": "State",
           "type": "srs_states::State"
         },
@@ -17312,7 +17316,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "L_C2_02_PingPong"
+          "target": "CursorHiding"
         },
         {
           "colorB": 228,
@@ -19338,8 +19342,16 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
         },
         {
           "name": "State",
@@ -22505,8 +22517,16 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
         },
         {
           "name": "State",
@@ -24091,8 +24111,16 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
         },
         {
           "name": "State",
@@ -29865,8 +29893,16 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
         },
         {
           "name": "State",
@@ -29888,6 +29924,343 @@
     }
   ],
   "externalEvents": [
+    {
+      "associatedLayout": "L_C2_02_PingPong",
+      "lastChangeTimeStamp": 0,
+      "name": "CursorHiding",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Cursor hiding",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"should_hide\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"should_hide\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"hidden\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CacheSouris"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"hidden\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisBouton"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"should_show\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"should_show\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"shown\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"cursor_active\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MontreSouris"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"shown\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisX"
+                      },
+                      "parameters": [
+                        "",
+                        "!=",
+                        "Variable(CursorLastX)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisY"
+                      },
+                      "parameters": [
+                        "",
+                        "!=",
+                        "Variable(CursorLastY)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"cursor_active\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CursorLastX",
+                    "=",
+                    "MouseX()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CursorLastY",
+                    "=",
+                    "MouseY()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"shown\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Egal"
+                  },
+                  "parameters": [
+                    "1",
+                    "<=",
+                    "TimerElapsedTime(\"cursor_active\")"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CursorState",
+                    "=",
+                    "\"should_hide\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    }
   ],
   "eventsFunctionsExtensions": [
     {
