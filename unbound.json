@@ -6903,6 +6903,30 @@
       ]
     },
     {
+      "bold": false,
+      "italic": false,
+      "name": "BindText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "B",
+      "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 71,
+        "r": 196
+      }
+    },
+    {
       "height": 10,
       "name": "Obstacle",
       "tags": "",
@@ -17320,30 +17344,6 @@
             "align": "left",
             "wordWrap": true
           }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "BindText",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "string": "B",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 71,
-            "r": 196
-          }
         }
       ],
       "events": [
@@ -17354,292 +17354,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "CursorHiding"
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Scene transition",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "Exit",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Exit::HandleCollision"
-                  },
-                  "parameters": [
-                    "Exit",
-                    "Exit",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Clum::AnimateMovement"
-              },
-              "parameters": [
-                "Clum",
-                "Clum",
-                "Clum",
-                "TopDownMovement",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::SubscribeToState"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::ControlPC"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "TopDownMovement",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Binder",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::HandleBinderCollision"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "Controls",
-                "State",
-                "Binder",
-                "State",
-                "Binder",
-                "Binder",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Binder::SubscribeToState"
-              },
-              "parameters": [
-                "Binder",
-                "Binder",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::BindIndicator::SubscribeToState"
-              },
-              "parameters": [
-                "BindIndicator",
-                "BindIndicator",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Binder::CreateBindText"
-              },
-              "parameters": [
-                "Binder",
-                "Binder",
-                "BindText",
-                "Tween",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            }
-          ]
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Clum",
-                "Obstacle",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Obstacle::HandleCollision"
-              },
-              "parameters": [
-                "Obstacle",
-                "Obstacle",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "UI",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Bound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::BoundCount())"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Unbound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::UnboundCount())"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
+          "target": "BasicLevel"
         }
       ],
       "layers": [
@@ -19092,266 +18807,13 @@
       ],
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Scene transition",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "Exit",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Exit::HandleCollision"
-                  },
-                  "parameters": [
-                    "Exit",
-                    "Exit",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Clum::AnimateMovement"
-              },
-              "parameters": [
-                "Clum",
-                "Clum",
-                "Clum",
-                "TopDownMovement",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::SubscribeToState"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::ControlPC"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "TopDownMovement",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Binder",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::HandleBinderCollision"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "Controls",
-                "State",
-                "Binder",
-                "State",
-                "Binder",
-                "Binder",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Binder::SubscribeToState"
-              },
-              "parameters": [
-                "Binder",
-                "Binder",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::BindIndicator::SubscribeToState"
-              },
-              "parameters": [
-                "BindIndicator",
-                "BindIndicator",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Clum",
-                "Obstacle",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Obstacle::HandleCollision"
-              },
-              "parameters": [
-                "Obstacle",
-                "Obstacle",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "UI",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Bound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::BoundCount())"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Unbound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::UnboundCount())"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            }
-          ],
-          "parameters": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "BasicLevel"
         }
       ],
       "layers": [
@@ -30311,6 +29773,318 @@
                     "CursorState",
                     "=",
                     "\"should_hide\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "L_C2_02_PingPong",
+      "lastChangeTimeStamp": 0,
+      "name": "BasicLevel",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CursorHiding"
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Animation",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Clum::AnimateMovement"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Clum",
+                    "Clum",
+                    "TopDownMovement",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Collision",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Exit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Exit::HandleCollision"
+                  },
+                  "parameters": [
+                    "Exit",
+                    "Exit",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Obstacle",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Obstacle::HandleCollision"
+                  },
+                  "parameters": [
+                    "Obstacle",
+                    "Obstacle",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "UI",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Bound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::BoundCount())"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Unbound_Val",
+                    "=",
+                    "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Controls",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::SubscribeToState"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::ControlPC"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "TopDownMovement",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Binder",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::HandleBinderCollision"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "Controls",
+                    "State",
+                    "Binder",
+                    "State",
+                    "Binder",
+                    "Binder",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::SubscribeToState"
+                  },
+                  "parameters": [
+                    "Binder",
+                    "Binder",
+                    "Binder",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::BindIndicator::SubscribeToState"
+                  },
+                  "parameters": [
+                    "BindIndicator",
+                    "BindIndicator",
+                    "Binder",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::CreateBindText"
+                  },
+                  "parameters": [
+                    "Binder",
+                    "Binder",
+                    "BindText",
+                    "Tween",
+                    ""
                   ],
                   "subInstructions": []
                 }
