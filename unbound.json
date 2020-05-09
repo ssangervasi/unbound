@@ -17196,21 +17196,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "BoundText",
-          "width": 0,
-          "x": 212,
-          "y": 137,
-          "zOrder": 212,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -17339,14 +17324,19 @@
         {
           "bold": false,
           "italic": false,
-          "name": "BoundText",
+          "name": "BindText",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "behaviors": [],
-          "string": "JUST SOME WORDS",
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "B",
           "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 20,
           "color": {
@@ -17532,9 +17522,32 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_ctrl::Binder::CreateBindText"
+              },
+              "parameters": [
+                "Binder",
+                "Binder",
+                "BindText",
+                "Tween",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -33576,12 +33589,34 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "LastBoundKey",
+                            "=",
+                            "LastPressedKey()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "srs_ctrl::Bindable::Bind"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
-                            "LastPressedKey()",
+                            "Object.VariableString(LastBoundKey)",
                             "Object.VariableString(Direction)",
                             ""
                           ],
@@ -33715,12 +33750,34 @@
                             {
                               "type": {
                                 "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "LastBoundKey",
+                                "=",
+                                "LastPressedKey()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
                                 "value": "srs_ctrl::Bindable::Bind"
                               },
                               "parameters": [
                                 "Object",
                                 "Behavior",
-                                "LastPressedKey()",
+                                "Object.VariableString(LastBoundKey)",
                                 "Object.VariableString(Direction)",
                                 ""
                               ],
@@ -34197,7 +34254,30 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "BinderObject",
+                                "BoundKey",
+                                "=",
+                                "Object.VariableString(LastBoundKey)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     },
                     {
                       "disabled": false,
@@ -34789,6 +34869,73 @@
           "eventsFunctions": [
             {
               "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BoundKey",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindTextStatus",
+                        "=",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
               "fullName": "GetDirection",
               "functionType": "StringExpression",
               "name": "GetDirection",
@@ -34923,15 +35070,16 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [],
+                      "events": []
+                    }
+                  ]
                 }
               ],
               "parameters": [
@@ -34979,12 +35127,27 @@
               "objectGroups": []
             },
             {
-              "description": "",
-              "fullName": "HandleIndicator",
+              "description": "CreateBindText",
+              "fullName": "CreateBindText",
               "functionType": "Action",
-              "name": "HandleIndicator",
-              "sentence": "",
+              "name": "CreateBindText",
+              "sentence": "CreateBindText _PARAM0_ _PARAM2_",
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "I'm trying a method that's different from BindIndicator. BI has to be put into the scene in the right place and linked up with events.\nBindText gets created when necessary and is fully managed within this behavior.",
+                  "comment2": ""
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -34993,157 +35156,130 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PickNearest"
+                        "value": "VarObjetTxt"
                       },
                       "parameters": [
-                        "BindIndicator",
-                        "Binder.X()",
-                        "Binder.Y()",
-                        ""
+                        "Object",
+                        "BoundKey",
+                        "!=",
+                        "\"\""
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Distance"
+                        "value": "VarObjetTxt"
                       },
                       "parameters": [
-                        "BindIndicator",
                         "Object",
-                        "50",
-                        ""
+                        "BindTextStatus",
+                        "=",
+                        "\"\""
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindTextStatus",
+                        "=",
+                        "\"created\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BindText",
+                        "(Object.X() + Object.Width()/2)",
+                        "Object.Y()",
+                        "\"UI\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "=",
+                        "ToUpperCase(Object.VariableString(BoundKey))"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "-",
+                        "BindText.Width() * .5",
+                        "-",
+                        "BindText.Height() * 1.25"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::Opacity"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "events": [
                     {
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
+                      "conditions": [],
+                      "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_states::State::IsRunning"
+                            "value": "srs_utils::consoleLog"
                           },
                           "parameters": [
-                            "Binder",
-                            "State",
+                            "",
+                            "BindText.ObjectName()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "ToString(BindText.X()) + \",\" + ToString(BindText.Y())",
                             ""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "Visible"
-                              },
-                              "parameters": [
-                                "BindIndicator"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Montre"
-                              },
-                              "parameters": [
-                                "BindIndicator",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Or"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_states::State::IsInitialized"
-                              },
-                              "parameters": [
-                                "Binder",
-                                "State",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_states::State::IsFinished"
-                              },
-                              "parameters": [
-                                "Binder",
-                                "State",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Visible"
-                              },
-                              "parameters": [
-                                "BindIndicator"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Cache"
-                              },
-                              "parameters": [
-                                "BindIndicator"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
+                      "events": []
                     }
                   ]
                 },
@@ -35151,8 +35287,182 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindTextStatus",
+                        "=",
+                        "\"created\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Tween::Exists"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-show\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectOpacityTween"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-show\"",
+                        "255",
+                        "\"easeOutSine\"",
+                        "srs_utils::ms(1)",
+                        "srs_utils::ms(1)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::Exists"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-show\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::HasFinished"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-show\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Tween::Exists"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-hide\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectOpacityTween"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-hide\"",
+                        "0",
+                        "\"easeInSine\"",
+                        "srs_utils::ms(.5)",
+                        "srs_utils::ms(1)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::Exists"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-hide\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::HasFinished"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-hide\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::RemoveTween"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-show\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::RemoveTween"
+                      },
+                      "parameters": [
+                        "BindText",
+                        "TextTween",
+                        "\"BindText-hide\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "BindText",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "events": []
                 }
               ],
@@ -35180,12 +35490,22 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "BindIndicator",
+                  "description": "BindText",
                   "longDescription": "",
-                  "name": "BindIndicator",
+                  "name": "BindText",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "TextObject::Text",
                   "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "TextTween",
+                  "longDescription": "",
+                  "name": "TextTween",
+                  "optional": false,
+                  "supplementaryInformation": "Tween::TweenBehavior",
+                  "type": "behavior"
                 }
               ],
               "objectGroups": []
@@ -35475,6 +35795,14 @@
               "objectGroups": []
             }
           ],
+          "propertyDescriptors": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "BindText",
+          "objectType": "",
+          "eventsFunctions": [],
           "propertyDescriptors": []
         }
       ]
