@@ -26572,7 +26572,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.645
+        "zoomFactor": 1.837
       },
       "objectsGroups": [],
       "variables": [],
@@ -26766,7 +26766,7 @@
           "angle": 0,
           "customSize": true,
           "height": 28,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 25,
@@ -26926,7 +26926,7 @@
           "angle": 0,
           "customSize": true,
           "height": 60,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
@@ -27425,8 +27425,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 260,
-          "y": 279,
+          "x": 258,
+          "y": 275,
           "zOrder": 212,
           "numberProperties": [],
           "stringProperties": [],
@@ -28141,11 +28141,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "T_NewMemory",
           "width": 0,
-          "x": 576,
+          "x": 580,
           "y": 123,
           "zOrder": 215,
           "numberProperties": [],
@@ -28186,13 +28186,28 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "T_MeanyDoubt",
           "width": 0,
           "x": 19,
-          "y": 239,
+          "y": 240,
           "zOrder": 218,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_WellProud",
+          "width": 0,
+          "x": 580,
+          "y": 365,
+          "zOrder": 221,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -28205,24 +28220,9 @@
           "locked": false,
           "name": "T_WellDone",
           "width": 0,
-          "x": 582,
-          "y": 249,
-          "zOrder": 219,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "T_WellProud",
-          "width": 0,
-          "x": 577,
-          "y": 365,
-          "zOrder": 221,
+          "x": 580,
+          "y": 251,
+          "zOrder": 222,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29067,6 +29067,48 @@
                     "T_NewMemory",
                     "StateText",
                     "T_NewMemory",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_WellDone",
+                    "StateText",
+                    "T_WellDone",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_MeanyDoubt",
+                    "StateText",
+                    "T_MeanyDoubt",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_WellProud",
+                    "StateText",
+                    "T_WellProud",
                     "State",
                     ""
                   ],
@@ -43405,7 +43447,7 @@
             {
               "description": "CurrentStateName",
               "fullName": "CurrentStateName",
-              "functionType": "Action",
+              "functionType": "StringExpression",
               "name": "CurrentStateName",
               "sentence": "CurrentStateName _PARAM0_",
               "events": [
