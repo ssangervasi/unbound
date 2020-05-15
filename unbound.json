@@ -1995,6 +1995,42 @@
         "name": "Assets\\Sprites\\Exit.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Chooseanewimage-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chooseanewimage-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hidey-debug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hidey-debug.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/HiddenRegion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\HiddenRegion.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/HiddenRegion-debug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\HiddenRegion-debug.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -29865,7 +29901,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.501
+        "zoomFactor": 1.357
       },
       "objectsGroups": [],
       "variables": [],
@@ -31333,7 +31369,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.312
+        "zoomFactor": 2.968
       },
       "objectsGroups": [],
       "variables": [],
@@ -31472,7 +31508,7 @@
           "name": "Exit",
           "width": 32,
           "x": 334,
-          "y": 399,
+          "y": 395,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -31481,7 +31517,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
+          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
@@ -31960,8 +31996,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 150,
-          "x": 326,
+          "width": 170,
+          "x": 315,
           "y": 130,
           "zOrder": 203,
           "numberProperties": [],
@@ -32145,7 +32181,7 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 50,
+          "width": 60,
           "x": 325,
           "y": 240,
           "zOrder": 203,
@@ -32257,6 +32293,166 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 48,
+          "layer": "Objects",
+          "locked": false,
+          "name": "PanelSpriteTest",
+          "width": 121,
+          "x": 390,
+          "y": -102,
+          "zOrder": 213,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "HiddenRegion",
+          "width": 100,
+          "x": 225,
+          "y": 190,
+          "zOrder": 214,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 215,
+          "y": 240,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 215,
+          "y": 180,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 215,
+          "y": 190,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 275,
+          "y": 190,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 225,
+          "y": 190,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Exit",
+          "width": 32,
+          "x": 232,
+          "y": 197,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 387,
+          "y": 144,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Left"
+            }
+          ]
         }
       ],
       "objects": [
@@ -32419,6 +32615,94 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "bottomMargin": 1,
+          "height": 32,
+          "leftMargin": 1,
+          "name": "PanelSpriteTest",
+          "rightMargin": 1,
+          "tags": "",
+          "texture": "Chooseanewimage-1.png",
+          "tiled": false,
+          "topMargin": 1,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "name": "HiddenRegion",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "HiddenRegion",
+              "type": "srs_objs::HiddenRegion"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Hidden",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\HiddenRegion.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Debug",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\HiddenRegion-debug.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -32430,6 +32714,28 @@
             "includeConfig": 0
           },
           "target": "BasicLevel"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::HiddenRegion::HandleCollision"
+              },
+              "parameters": [
+                "HiddenRegion",
+                "HiddenRegion",
+                "Clum",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
@@ -32483,6 +32789,10 @@
         {
           "name": "Exit",
           "type": "srs_objs::Exit"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
         },
         {
           "name": "Obstacle",
@@ -50584,6 +50894,474 @@
                   "optional": false,
                   "supplementaryInformation": "srs_objs::ResetReminder",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "HiddenRegion",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HiddenRegion",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"hidden\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"Hidden\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"collided\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"revealing\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"revealing\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"revealing\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "RevealFraction",
+                            "=",
+                            "min(1, Object.ObjectTimerElapsedTime(\"revealing\") / 2)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "ToString(Object.ObjectTimerElapsedTime(\"revealing\"))",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "ToString(255 / Object.Variable(RevealFraction))",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "RevealFraction",
+                            "<",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Opacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "255 * (1 - Object.Variable(RevealFraction))"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "RevealFraction",
+                            ">=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"revealed\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HiddenRegion",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "HandleCollision",
+              "sentence": "_PARAM0_ handles collision with _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"hidden\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PC",
+                            "",
+                            "",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"collided\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HiddenRegion",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "PC",
+                  "longDescription": "",
+                  "name": "PC",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
                 }
               ],
               "objectGroups": []
