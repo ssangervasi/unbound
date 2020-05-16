@@ -7992,6 +7992,79 @@
           ]
         }
       ]
+    },
+    {
+      "name": "HiddenRegion",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Hidden",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\HiddenRegion.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Debug",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\HiddenRegion-debug.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -10071,6 +10144,99 @@
         {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
+        },
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "M_95Pause",
+      "name": "M_Pause",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "BindIndicator",
+          "type": "srs_ctrl::BindIndicator"
         },
         {
           "name": "Binder",
@@ -26608,7 +26774,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.765
+        "zoomFactor": 1.405
       },
       "objectsGroups": [],
       "variables": [],
@@ -29901,7 +30067,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.357
+        "zoomFactor": 1.309
       },
       "objectsGroups": [],
       "variables": [],
@@ -31369,7 +31535,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.536
+        "zoomFactor": 2.464
       },
       "objectsGroups": [],
       "variables": [],
@@ -32297,21 +32463,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 48,
-          "layer": "Objects",
-          "locked": false,
-          "name": "PanelSpriteTest",
-          "width": 121,
-          "x": 390,
-          "y": -102,
-          "zOrder": 213,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
           "layer": "Objects",
           "locked": false,
@@ -32590,94 +32741,6 @@
             "g": 0,
             "r": 0
           }
-        },
-        {
-          "bottomMargin": 1,
-          "height": 32,
-          "leftMargin": 1,
-          "name": "PanelSpriteTest",
-          "rightMargin": 1,
-          "tags": "",
-          "texture": "Chooseanewimage-1.png",
-          "tiled": false,
-          "topMargin": 1,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "name": "HiddenRegion",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "HiddenRegion",
-              "type": "srs_objs::HiddenRegion"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Hidden",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\HiddenRegion.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Debug",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\HiddenRegion-debug.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -32797,7 +32860,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.312
+        "zoomFactor": 1.6
       },
       "objectsGroups": [],
       "variables": [],
@@ -32810,7 +32873,7 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 155,
+          "x": 150,
           "y": 240,
           "zOrder": 200,
           "numberProperties": [
@@ -32830,7 +32893,7 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 155,
+          "x": 150,
           "y": 238,
           "zOrder": 100,
           "numberProperties": [
@@ -32855,7 +32918,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 310,
+          "x": 305,
           "y": 240,
           "zOrder": 100,
           "numberProperties": [
@@ -32880,8 +32943,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 310,
-          "y": 385,
+          "x": 156,
+          "y": 391,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -32940,7 +33003,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 145,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -32960,8 +33023,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 661,
-          "y": 345,
+          "x": 656,
+          "y": 339,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -32975,7 +33038,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 300,
-          "x": 140,
+          "x": 135,
           "y": 225,
           "zOrder": 203,
           "numberProperties": [],
@@ -32990,7 +33053,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 140,
+          "x": 135,
           "y": 235,
           "zOrder": 203,
           "numberProperties": [],
@@ -33000,12 +33063,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 150,
+          "height": 80,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 290,
+          "x": 285,
           "y": 295,
           "zOrder": 203,
           "numberProperties": [],
@@ -33020,7 +33083,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 160,
-          "x": 140,
+          "x": 135,
           "y": 285,
           "zOrder": 203,
           "numberProperties": [],
@@ -33035,7 +33098,7 @@
           "locked": false,
           "name": "Curve",
           "width": 29,
-          "x": 272,
+          "x": 267,
           "y": 240,
           "zOrder": 206,
           "numberProperties": [],
@@ -33075,27 +33138,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 70,
-          "x": 290,
-          "y": 435,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 150,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 350,
+          "x": 345,
           "y": 295,
           "zOrder": 203,
           "numberProperties": [],
@@ -33110,7 +33158,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 100,
-          "x": 350,
+          "x": 345,
           "y": 285,
           "zOrder": 203,
           "numberProperties": [],
@@ -33125,7 +33173,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 458,
+          "x": 453,
           "y": 340,
           "zOrder": 100,
           "numberProperties": [
@@ -33150,7 +33198,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 463,
+          "x": 458,
           "y": 240,
           "zOrder": 100,
           "numberProperties": [
@@ -33175,7 +33223,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 440,
+          "x": 435,
           "y": 295,
           "zOrder": 203,
           "numberProperties": [],
@@ -33190,7 +33238,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 270,
-          "x": 440,
+          "x": 435,
           "y": 385,
           "zOrder": 203,
           "numberProperties": [],
@@ -33205,7 +33253,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 440,
+          "x": 435,
           "y": 185,
           "zOrder": 209,
           "numberProperties": [],
@@ -33220,7 +33268,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 500,
+          "x": 495,
           "y": 185,
           "zOrder": 209,
           "numberProperties": [],
@@ -33235,7 +33283,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 70,
-          "x": 440,
+          "x": 435,
           "y": 175,
           "zOrder": 203,
           "numberProperties": [],
@@ -33250,7 +33298,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 195,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33270,7 +33318,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 245,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33290,7 +33338,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 295,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33310,7 +33358,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 345,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33330,7 +33378,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 395,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33350,7 +33398,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 445,
           "y": 185,
           "zOrder": 1,
           "numberProperties": [
@@ -33370,7 +33418,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 295,
           "y": 285,
           "zOrder": 1,
           "numberProperties": [
@@ -33390,7 +33438,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 295,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33410,7 +33458,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 295,
           "y": 385,
           "zOrder": 1,
           "numberProperties": [
@@ -33430,7 +33478,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 445,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33450,7 +33498,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 445,
           "y": 285,
           "zOrder": 1,
           "numberProperties": [
@@ -33470,7 +33518,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 445,
           "y": 235,
           "zOrder": 1,
           "numberProperties": [
@@ -33490,7 +33538,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 445,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33510,7 +33558,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 495,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33530,7 +33578,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 440,
+          "x": 435,
           "y": 335,
           "zOrder": 209,
           "numberProperties": [],
@@ -33545,7 +33593,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 540,
+          "x": 535,
           "y": 275,
           "zOrder": 209,
           "numberProperties": [],
@@ -33560,7 +33608,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 550,
+          "x": 545,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33580,7 +33628,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 550,
+          "x": 545,
           "y": 285,
           "zOrder": 1,
           "numberProperties": [
@@ -33600,7 +33648,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 650,
+          "x": 645,
           "y": 335,
           "zOrder": 1,
           "numberProperties": [
@@ -33620,7 +33668,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 33,
-          "x": 610,
+          "x": 605,
           "y": 335,
           "zOrder": 203,
           "numberProperties": [],
@@ -33635,7 +33683,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 600,
+          "x": 595,
           "y": 335,
           "zOrder": 209,
           "numberProperties": [],
@@ -33650,7 +33698,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 157,
-          "x": 550,
+          "x": 545,
           "y": 275,
           "zOrder": 203,
           "numberProperties": [],
@@ -33665,7 +33713,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 700,
+          "x": 695,
           "y": 275,
           "zOrder": 209,
           "numberProperties": [],
@@ -33680,7 +33728,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 50,
-          "x": 500,
+          "x": 495,
           "y": 325,
           "zOrder": 203,
           "numberProperties": [],
@@ -33695,7 +33743,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 600,
+          "x": 595,
           "y": 285,
           "zOrder": 1,
           "numberProperties": [
@@ -33715,7 +33763,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 650,
+          "x": 645,
           "y": 285,
           "zOrder": 1,
           "numberProperties": [
@@ -33735,7 +33783,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 640,
+          "x": 635,
           "y": 335,
           "zOrder": 209,
           "numberProperties": [],
@@ -33750,7 +33798,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 304,
+          "x": 299,
           "y": 200,
           "zOrder": 210,
           "numberProperties": [
@@ -33785,8 +33833,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 305,
-          "y": 347,
+          "x": 151,
+          "y": 353,
           "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
@@ -33800,7 +33848,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 456,
+          "x": 451,
           "y": 200,
           "zOrder": 210,
           "numberProperties": [
@@ -33820,7 +33868,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 453,
+          "x": 448,
           "y": 302,
           "zOrder": 210,
           "numberProperties": [
@@ -33840,7 +33888,7 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 157,
+          "x": 152,
           "y": 200,
           "zOrder": 210,
           "numberProperties": [],
@@ -33859,6 +33907,151 @@
           "y": 520,
           "zOrder": 212,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 220,
+          "x": 135,
+          "y": 435,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 160,
+          "x": 135,
+          "y": 375,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "HiddenRegion",
+          "width": 150,
+          "x": 145,
+          "y": 385,
+          "zOrder": 213,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 135,
+          "y": 385,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 245,
+          "y": 385,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 195,
+          "y": 385,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 195,
+          "y": 385,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 145,
+          "y": 385,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -42088,99 +42281,6 @@
         {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
-        },
-        {
-          "name": "Binder",
-          "type": "srs_ctrl::Binder"
-        },
-        {
-          "name": "Clum",
-          "type": "srs_objs::Clum"
-        },
-        {
-          "name": "Exit",
-          "type": "srs_objs::Exit"
-        },
-        {
-          "name": "Obstacle",
-          "type": "srs_objs::Obstacle"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
-        },
-        {
-          "name": "State",
-          "type": "srs_states::State"
-        },
-        {
-          "name": "StateText",
-          "type": "srs_states::StateText"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "New_32scene",
-      "name": "New scene",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": true,
-        "windowMask": false,
-        "zoomFactor": 1
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
         },
         {
           "name": "Binder",
