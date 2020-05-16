@@ -26608,7 +26608,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.837
+        "zoomFactor": 1.765
       },
       "objectsGroups": [],
       "variables": [],
@@ -31369,7 +31369,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.968
+        "zoomFactor": 2.536
       },
       "objectsGroups": [],
       "variables": [],
@@ -32428,31 +32428,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Binder",
-          "width": 25,
-          "x": 387,
-          "y": 144,
-          "zOrder": 100,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Direction",
-              "value": "Left"
-            }
-          ]
         }
       ],
       "objects": [
@@ -32714,28 +32689,6 @@
             "includeConfig": 0
           },
           "target": "BasicLevel"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::HiddenRegion::HandleCollision"
-              },
-              "parameters": [
-                "HiddenRegion",
-                "HiddenRegion",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "layers": [
@@ -42672,22 +42625,29 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "conditions": [],
+              "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "srs_objs::HiddenRegion::HandleCollision"
                   },
                   "parameters": [
+                    "HiddenRegion",
+                    "HiddenRegion",
                     "Clum",
-                    "Exit",
-                    "",
-                    "",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -42709,22 +42669,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "Obstacle",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -48784,6 +48729,41 @@
               "creationTime": 0,
               "disabled": false,
               "folded": false,
+              "name": "Meta",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"M_LevelSelect\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
               "name": "Tutorial",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -49284,7 +49264,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"M_LevelSelect\"",
+                        "\"L_C4\"",
                         ""
                       ],
                       "subInstructions": []
@@ -49302,7 +49282,7 @@
               "creationTime": 0,
               "disabled": false,
               "folded": false,
-              "name": "Meta",
+              "name": "Controls: 4",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -49311,36 +49291,10 @@
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::pushScene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"M_LevelSelect\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": []
                 }
               ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [],
               "parameters": []
             }
           ],
