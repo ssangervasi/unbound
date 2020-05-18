@@ -1889,6 +1889,24 @@
         "name": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Menu/MenuPill-inactive.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Menu/MenuPill-active.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -9953,7 +9971,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.984
+        "zoomFactor": 1.96
       },
       "objectsGroups": [],
       "variables": [],
@@ -9963,7 +9981,7 @@
           "customSize": true,
           "height": 610,
           "layer": "",
-          "locked": false,
+          "locked": true,
           "name": "PuaseBg",
           "width": 810,
           "x": -5,
@@ -9990,15 +10008,60 @@
         },
         {
           "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 250,
+          "y": 250,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "MenuPill_Active",
+          "width": 300,
+          "x": 250,
+          "y": 350,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
           "locked": false,
           "name": "T_Opt_Continue",
           "width": 0,
-          "x": 274,
-          "y": 232,
-          "zOrder": 3,
+          "x": 275,
+          "y": 265,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_Opt_Settings",
+          "width": 0,
+          "x": 275,
+          "y": 365,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10028,25 +10091,6 @@
         {
           "bold": false,
           "italic": false,
-          "name": "T_Opt_Continue",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Continue\nWombat\nXyoaphone\nDom Quode",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 90,
-            "g": 90,
-            "r": 230
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
           "name": "T_Title",
           "smoothed": true,
           "tags": "",
@@ -10062,6 +10106,74 @@
             "g": 3,
             "r": 180
           }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Continue",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Continue",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 90,
+            "g": 90,
+            "r": 230
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Settings",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Settings",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 90,
+            "g": 90,
+            "r": 230
+          }
+        },
+        {
+          "bottomMargin": 20,
+          "height": 64,
+          "leftMargin": 24,
+          "name": "MenuPill_Active",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 96,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bottomMargin": 20,
+          "height": 64,
+          "leftMargin": 24,
+          "name": "MenuPill_Inactive",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 96,
+          "variables": [],
+          "behaviors": []
         }
       ],
       "events": [],
