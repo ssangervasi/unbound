@@ -1862,6 +1862,33 @@
         "name": "Assets\\Sprites\\Obstacle.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Menu/Menu-pause.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Menu\\Menu-pause.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/HiddenRegion/HiddenRegion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\HiddenRegion\\HiddenRegion.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/HiddenRegion/HiddenRegion-debug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -7731,7 +7758,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\HiddenRegion.png",
+                  "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7760,7 +7787,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\HiddenRegion-debug.png",
+                  "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7835,7 +7862,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.384
+        "zoomFactor": 1.768
       },
       "objectsGroups": [],
       "variables": [],
@@ -7973,8 +8000,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 490,
-          "y": 150,
+          "x": 488,
+          "y": 145,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -9198,8 +9225,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 492,
-          "y": 202,
+          "x": 489,
+          "y": 194,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -9926,11 +9953,57 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.336
+        "zoomFactor": 1.984
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 610,
+          "layer": "",
+          "locked": false,
+          "name": "PuaseBg",
+          "width": 810,
+          "x": -5,
+          "y": -5,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "T_Title",
+          "width": 360,
+          "x": 220,
+          "y": 90,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_Opt_Continue",
+          "width": 0,
+          "x": 274,
+          "y": 232,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [
         {
           "height": 600,
@@ -9941,6 +10014,54 @@
           "width": 800,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "height": 32,
+          "name": "PuaseBg",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\Menu-pause.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Continue",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Continue\nWombat\nXyoaphone\nDom Quode",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 90,
+            "g": 90,
+            "r": 230
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Unbound",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 69,
+          "color": {
+            "b": 3,
+            "g": 3,
+            "r": 180
+          }
         }
       ],
       "events": [],
