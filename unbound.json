@@ -1811,24 +1811,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/HiddenRegion.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\HiddenRegion.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/HiddenRegion-debug.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\HiddenRegion-debug.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Assets/Sprites/TilePatterns/Tile-background.png",
         "kind": "image",
         "metadata": "",
@@ -9971,9 +9953,21 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.96
+        "zoomFactor": 2.032
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Options",
+          "objects": [
+            {
+              "name": "T_Opt_Continue"
+            },
+            {
+              "name": "T_Opt_Settings"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -10121,9 +10115,9 @@
           "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 42,
           "color": {
-            "b": 90,
-            "g": 90,
-            "r": 230
+            "b": 0,
+            "g": 170,
+            "r": 55
           }
         },
         {
@@ -10140,14 +10134,14 @@
           "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 42,
           "color": {
-            "b": 90,
-            "g": 90,
-            "r": 230
+            "b": 0,
+            "g": 170,
+            "r": 55
           }
         },
         {
           "bottomMargin": 20,
-          "height": 64,
+          "height": 70,
           "leftMargin": 24,
           "name": "MenuPill_Active",
           "rightMargin": 24,
@@ -10156,13 +10150,13 @@
           "tiled": false,
           "topMargin": 20,
           "type": "PanelSpriteObject::PanelSprite",
-          "width": 96,
+          "width": 300,
           "variables": [],
           "behaviors": []
         },
         {
           "bottomMargin": 20,
-          "height": 64,
+          "height": 70,
           "leftMargin": 24,
           "name": "MenuPill_Inactive",
           "rightMargin": 24,
@@ -10171,12 +10165,543 @@
           "tiled": false,
           "topMargin": 20,
           "type": "PanelSpriteObject::PanelSprite",
-          "width": 96,
+          "width": 300,
           "variables": [],
           "behaviors": []
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "Variable Defaults",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "INACTIVE_PILL_Z",
+                        "=",
+                        "5"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "ACTIVE_PILL_Z",
+                        "=",
+                        "Variable(INACTIVE_PILL_Z) + 1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "Menu pill setup",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Cleanup the demo ones just used for templating",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "MenuPill_Active",
+                        "MenuPill_Active"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "MenuPill_Inactive",
+                        "MenuPill_Active"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Give each option its own in/active pills",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Options",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Creating pills for: \" + Options.ObjectName()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::playlistAdd"
+                          },
+                          "parameters": [
+                            "",
+                            "\"MenuOptions\"",
+                            "Options.ObjectName()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "MenuPill_Active",
+                            "0",
+                            "0",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "MenuPill_Active",
+                            "Options",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "MenuPill_Active",
+                            "=",
+                            "Variable(ACTIVE_PILL_Z)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Options",
+                            "MenuPill_Active"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "MenuPill_Inactive",
+                            "0",
+                            "0",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "MenuPill_Inactive",
+                            "Options",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "MenuPill_Inactive",
+                            "=",
+                            "Variable(INACTIVE_PILL_Z)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Options",
+                            "MenuPill_Inactive"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Manage options",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Options",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "MenuPill_Active",
+                    "Options"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "MenuPill_Inactive",
+                    "Options"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "=",
+                        "Options.ObjectName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "MenuPill_Active",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "MenuPill_Inctive"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "!=",
+                        "Options.ObjectName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "MenuPill_Active"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "MenuPill_Inctive",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Respond to keys",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    ".1",
+                    "\"key_throttle\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Down\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::playlistNext"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MenuOptions\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"key_throttle\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
       "layers": [
         {
           "name": "",
@@ -45511,7 +46036,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nconst getLogTime = () => (new Date()).toISOString()\n\nconst getLogCtx = () => {\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n    return ctx\n}\n\nconst log = (...msgs) => console.log(getLogTime(), getLogCtx(), ...msgs)\nconst info = (...msgs) => console.info(getLogTime(), getLogCtx(), ...msgs)\nconst error = (...msgs) => console.error(getLogTime(), getLogCtx(), ...msgs)\n\nObject.assign(\n    globalThis.ssangervasi,\n    {\n        log,\n        info,\n        error,\n    }\n)\n",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nconst getLogTime = () => (new Date()).toISOString()\n\nconst getLogCtx = () => {\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n    return ctx\n}\n\nconst log = (...msgs) => console.log(getLogTime(), getLogCtx(), ...msgs)\nconst info = (...msgs) => console.info(getLogTime(), getLogCtx(), ...msgs)\nconst error = (...msgs) => console.error(getLogTime(), getLogCtx(), ...msgs)\n\n/**\n * @param {gdjs.RuntimeScene} aRuntimeScene \n * @return {Map<string, ssangervasi.Playlist>} Name to list mapping\n */\nconst setupPlaylists = (aRuntimeScene) => {\n    if (!runtimeScene._srs_utils) {\n        runtimeScene._srs_utils = {};\n    }\n    if (!runtimeScene._srs_utils.nameToPlaylist) {\n        runtimeScene._srs_utils.nameToPlaylist = new Map();\n    }\n\n    return runtimeScene._srs_utils.nameToPlaylist;\n}\n\nclass Playlist {\n    items = []\n    current = null\n\n    getCurrent() {\n        if (this.current === null) {\n            return null\n        }\n        return this.items[this.current]\n    }\n\n    add(item) {\n        this.items.push(item)\n        if (this.current === null) {\n            this.current = 0\n        }\n    }\n\n    next() {\n        if (this.current === null) {\n            return null;\n        }\n        this.current = (this.current + 1) % this.items.length\n        return this.items[this.current]\n    }\n\n    previous() {\n        if (this.current === null) {\n            return null;\n        }\n        this.current = this.current - 1\n        if (this.current < 0) {\n            this.current = this.items.length + this.current\n        }\n        return this.items[this.current]\n    }\n}\n\n/**\n * @memberOf window ssangervasi Horse horse\n * @property {string} [name] horse horse horse\n */\n\nObject.assign(\n    globalThis.ssangervasi,\n    {\n        log,\n        info,\n        error,\n        setupPlaylists,\n        Playlist\n    }\n)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -45770,6 +46295,130 @@
               "description": "Default to return if nothing found at Depth (Default is empty string)",
               "longDescription": "",
               "name": "Default",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Current playlist item",
+          "fullName": "Current playlist item",
+          "functionType": "StringExpression",
+          "name": "playlistCurrent",
+          "sentence": "Current item  in playlist _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\n    if (!(playlistName)) {\r\n        globalThis.ssangervasi.error('Cannot get current item in playlist', { playlistName })\r\n        return \"\"\r\n    }\r\n\r\n    const nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\n    if (!nameToPlaylist.has(playlistName)) {\r\n        return \"\"\r\n    }\r\n    const playlist = nameToPlaylist.get(playlistName)\r\n    return playlist.getCurrent() || \"\"\r\n})()",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "PlaylistName",
+              "longDescription": "",
+              "name": "PlaylistName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Add to playlist",
+          "fullName": "Add to playlist",
+          "functionType": "Action",
+          "name": "playlistAdd",
+          "sentence": "Add _PARAM2_ to playlist _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    globalThis.ssangervasi.error('Cannot add item to playlist', { playlistName, item })\r\n    return\r\n}\r\n\r\n/**\r\n * @type {Map<string, ssangervasi.Playlist>}\r\n */\r\nconst nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\nif (!nameToPlaylist.has(playlistName)) {\r\n    nameToPlaylist.set(playlistName, new globalThis.ssangervasi.Playlist())\r\n}\r\nconst playlist = nameToPlaylist.get(playlistName)\r\nplaylist.add(item)",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "PlaylistName",
+              "longDescription": "",
+              "name": "PlaylistName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Item",
+              "longDescription": "",
+              "name": "Item",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Next playlist item",
+          "fullName": "Next playlist item",
+          "functionType": "Action",
+          "name": "playlistNext",
+          "sentence": "Skip to next item in playlist _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!(playlistName)) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\n\r\nconst nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\nif (!nameToPlaylist.has(playlistName)) {\r\n    return\r\n}\r\nconst playlist = nameToPlaylist.get(playlistName)\r\nplaylist.next()",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "PlaylistName",
+              "longDescription": "",
+              "name": "PlaylistName",
               "optional": false,
               "supplementaryInformation": "",
               "type": "string"
