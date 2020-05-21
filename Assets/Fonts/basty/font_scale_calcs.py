@@ -21,5 +21,9 @@ def cap_to_lower():
 	 "scale_perc": scale_perc,	
 	})
 
+def normal_to_tiny():
+	print(
+		100 * 1.0/133
+	)
 
-cap_to_lower()
+normal_to_tiny()
