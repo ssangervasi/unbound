@@ -1948,6 +1948,96 @@
         "name": "Assets\\Sprites\\Toggle\\Toggle5.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Darkness/full-fade/Darkness-full-fade10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade10.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -37392,8 +37482,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 137,
-          "y": 154,
+          "x": 138,
+          "y": 104,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -37412,8 +37502,8 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 136,
-          "y": 152,
+          "x": 137,
+          "y": 102,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -37437,8 +37527,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 237,
-          "y": 156,
+          "x": 244,
+          "y": 105,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -37602,8 +37692,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 242,
-          "y": 400,
+          "x": 245,
+          "y": 355,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -37718,7 +37808,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 2
+              "value": 0
             }
           ],
           "stringProperties": [],
@@ -37917,8 +38007,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 235,
-          "y": 362,
+          "x": 238,
+          "y": 317,
           "zOrder": 210,
           "numberProperties": [
             {
@@ -37957,8 +38047,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 138,
-          "y": 112,
+          "x": 139,
+          "y": 62,
           "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
@@ -37987,8 +38077,8 @@
           "locked": false,
           "name": "BindIndicator",
           "width": 40,
-          "x": 232,
-          "y": 118,
+          "x": 239,
+          "y": 67,
           "zOrder": 210,
           "numberProperties": [
             {
@@ -38887,9 +38977,84 @@
           "locked": false,
           "name": "Toggle",
           "width": 40,
-          "x": 135,
-          "y": 408,
+          "x": 134,
+          "y": 453,
           "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 688,
+          "y": 292,
+          "zOrder": 214,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 280,
+          "y": 350,
+          "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 330,
+          "y": 350,
+          "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 430,
+          "y": 350,
+          "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 380,
+          "y": 350,
+          "zOrder": 215,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -39262,6 +39427,256 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Darkness",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Full",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Fade",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blank",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Darkness\\full-fade\\Darkness-full-fade10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -39295,6 +39710,76 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Toggle::IsOn"
+              },
+              "parameters": [
+                "Toggle",
+                "Toggle",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Darkness",
+                    "\"Fade\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "layers": [
@@ -53760,39 +54245,21 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "actions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": [],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Toggle::TurnOn"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
                           ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_objs::Toggle::TurnOn"
-                              },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
+                          "subInstructions": []
                         }
-                      ]
+                      ],
+                      "events": []
                     }
                   ]
                 },
@@ -53950,6 +54417,90 @@
               "objectGroups": []
             },
             {
+              "description": "Toggle is turning on?",
+              "fullName": "Toggle is turning on?",
+              "functionType": "Condition",
+              "name": "IsTurningOn",
+              "sentence": "_PARAM0_ is turning on?",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ToggleState",
+                        "=",
+                        "\"turning_on\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Toggle",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "Toggle is off?",
               "fullName": "Toggle is off?",
               "functionType": "Condition",
@@ -54062,16 +54613,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PlayAnimation"
-                      },
-                      "parameters": [
-                        "Object"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -54083,30 +54624,40 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"turning on\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
                 },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Toggle",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
                 {
                   "disabled": false,
                   "folded": false,
@@ -54115,45 +54666,75 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "AnimationEnded"
-                      },
-                      "parameters": [
-                        "Object"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
+                        "value": "srs_objs::Toggle::IsTurningOn"
                       },
                       "parameters": [
                         "Object",
-                        "ToggleState",
-                        "=",
-                        "\"on\""
+                        "Behavior",
+                        ""
                       ],
                       "subInstructions": []
                     }
                   ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnimStopped"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::consoleLog"
+                            "value": "PlayAnimation"
                           },
                           "parameters": [
-                            "",
-                            "\"on\"",
-                            ""
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "ToggleState",
+                            "=",
+                            "\"on\""
                           ],
                           "subInstructions": []
                         }
