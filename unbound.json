@@ -37523,7 +37523,7 @@
         "gridWidth": 50,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.648
+        "zoomFactor": 1.576
       },
       "objectsGroups": [],
       "variables": [],
@@ -37981,21 +37981,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 67,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 490,
-          "y": 90,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 240,
           "layer": "Objects",
           "locked": false,
@@ -38282,7 +38267,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
@@ -38635,8 +38620,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 150,
-          "x": 500,
+          "width": 70,
+          "x": 590,
           "y": 90,
           "zOrder": 203,
           "numberProperties": [],
@@ -38691,28 +38676,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 150,
+          "height": 400,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
           "x": 650,
-          "y": 350,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 160,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 650,
-          "y": 90,
+          "y": 100,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -38751,43 +38721,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 180,
+          "height": 240,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
           "x": 590,
-          "y": 160,
-          "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 110,
-          "x": 490,
-          "y": 150,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 100,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 650,
-          "y": 250,
+          "y": 100,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -38881,7 +38821,7 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 612,
+          "x": 609,
           "y": 105,
           "zOrder": 213,
           "numberProperties": [],
@@ -38957,7 +38897,7 @@
           "angle": 0,
           "customSize": true,
           "height": 500,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 100,
@@ -38969,70 +38909,10 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 350,
-          "y": 350,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "ToggleName",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 450,
-          "y": 350,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "ToggleName",
-              "value": ""
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 400,
-          "y": 350,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "ToggleName",
-              "value": ""
-            }
-          ]
-        },
-        {
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39052,7 +38932,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39072,7 +38952,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39092,7 +38972,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39112,7 +38992,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39132,7 +39012,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39152,7 +39032,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39172,7 +39052,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39192,7 +39072,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39212,10 +39092,10 @@
           "angle": 0,
           "customSize": true,
           "height": 250,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 150,
+          "width": 250,
           "x": 300,
           "y": 50,
           "zOrder": 300,
@@ -39232,7 +39112,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39246,12 +39126,7 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "ToggleName",
-              "value": "\"toggle\""
-            }
-          ]
+          "initialVariables": []
         },
         {
           "angle": 0,
@@ -39417,7 +39292,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39437,7 +39312,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39457,7 +39332,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39477,7 +39352,7 @@
           "angle": 270,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39497,7 +39372,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39517,7 +39392,7 @@
           "angle": 0,
           "customSize": true,
           "height": 500,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39537,7 +39412,7 @@
           "angle": -90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39557,7 +39432,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39577,7 +39452,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39597,7 +39472,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39617,7 +39492,7 @@
           "angle": 270,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39637,7 +39512,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39657,7 +39532,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39677,7 +39552,7 @@
           "angle": 270,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39697,7 +39572,7 @@
           "angle": 270,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39717,7 +39592,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 800,
@@ -39737,7 +39612,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 800,
@@ -39757,7 +39632,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39774,30 +39649,10 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 300,
-          "y": 350,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "ToggleName",
-              "value": "toggle"
-            }
-          ]
-        },
-        {
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39816,23 +39671,8 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 200,
-          "x": 300,
-          "y": 400,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 100,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 200,
@@ -39847,7 +39687,7 @@
           "angle": 0,
           "customSize": true,
           "height": 250,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39866,23 +39706,33 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
+          "height": 150,
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 200,
           "x": 300,
           "y": 300,
           "zOrder": 300,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
         },
         {
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39902,7 +39752,7 @@
           "angle": 270,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39922,7 +39772,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39942,7 +39792,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39962,7 +39812,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -39982,7 +39832,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40002,7 +39852,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40022,7 +39872,7 @@
           "angle": 90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40042,7 +39892,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40056,13 +39906,22 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            },
+            {
+              "name": "ToggleMatch",
+              "value": "on"
+            }
+          ]
         },
         {
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40082,7 +39941,7 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40101,48 +39960,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 100,
-          "x": 450,
-          "y": 200,
-          "zOrder": 300,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingToggleOff",
           "locked": false,
           "name": "Darkness",
           "width": 50,
           "x": 500,
           "y": 400,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Lighting",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 500,
-          "y": 350,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -40159,10 +39983,30 @@
           ]
         },
         {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
           "angle": -90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40182,7 +40026,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40202,7 +40046,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40222,7 +40066,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40242,7 +40086,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40262,7 +40106,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40282,7 +40126,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40302,7 +40146,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40322,7 +40166,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40342,7 +40186,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40362,7 +40206,7 @@
           "angle": -90,
           "customSize": true,
           "height": 50,
-          "layer": "Lighting",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -40373,6 +40217,295 @@
             {
               "name": "animation",
               "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            },
+            {
+              "name": "ToggleMatch",
+              "value": "on"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "\"toggle\""
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "\"toggle\""
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "\"toggle\""
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "\"toggle\""
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
             }
           ],
           "stringProperties": [],
@@ -40559,7 +40692,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.25,
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -41110,6 +41243,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Debug",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -41142,48 +41304,34 @@
                 ""
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "DepartScene"
+                "value": "srs_objs::Toggle::HandleLayers"
               },
               "parameters": [
+                "Toggle",
+                "Toggle",
+                "\"LightingToggleOff\"",
+                "\"LightingToggleOn\"",
                 ""
               ],
               "subInstructions": []
             }
           ],
-          "actions": [],
           "events": []
         },
         {
-          "disabled": false,
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": true,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Toggle::IsOn"
-              },
-              "parameters": [
-                "Toggle",
-                "Toggle",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
+          "name": "",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
@@ -41193,9 +41341,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "DepartScene"
                   },
-                  "parameters": [],
+                  "parameters": [
+                    ""
+                  ],
                   "subInstructions": []
                 }
               ],
@@ -41204,33 +41354,28 @@
                 {
                   "disabled": false,
                   "folded": false,
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Darkness",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Darkness",
-                        "ToggleName",
-                        "=",
-                        "\"toggle\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Opacity"
+                        "value": "ShowLayer"
                       },
                       "parameters": [
-                        "Darkness",
-                        "=",
-                        "0"
+                        "",
+                        "\"LightingToggleOff\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LightingToggleOn\""
                       ],
                       "subInstructions": []
                     }
@@ -41238,8 +41383,116 @@
                   "events": []
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Toggle::IsOn"
+                  },
+                  "parameters": [
+                    "Toggle",
+                    "Toggle",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"LightingToggleOff\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"LightingToggleOn\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": true,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "Darkness",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Darkness",
+                            "ToggleName",
+                            "=",
+                            "\"toggle\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Opacity"
+                          },
+                          "parameters": [
+                            "Darkness",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
             }
-          ]
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -41267,7 +41520,19 @@
           "effects": []
         },
         {
-          "name": "Lighting",
+          "name": "LightingStatic",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "LightingToggleOn",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "LightingToggleOff",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -56230,6 +56495,260 @@
                   "optional": false,
                   "supplementaryInformation": "srs_objs::Toggle",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Handle visibility of two layers using on/off state",
+              "fullName": "HandleLayers",
+              "functionType": "Action",
+              "name": "HandleLayers",
+              "sentence": "_PARAM0_ shows _PARAM2_ when off, _PARAM3_ when on.",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DepartScene"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::consoleLog"
+                              },
+                              "parameters": [
+                                "",
+                                "\"LayerWhenOff: \" + GetArgumentAsString(\"LayerWhenOff\")",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::consoleLog"
+                              },
+                              "parameters": [
+                                "",
+                                "\"LayerWhenOn: \" + GetArgumentAsString(\"LayerWhenOn\")",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ShowLayer"
+                              },
+                              "parameters": [
+                                "",
+                                "GetArgumentAsString(\"LayerWhenOff\")"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "HideLayer"
+                              },
+                              "parameters": [
+                                "",
+                                "GetArgumentAsString(\"LayerWhenOn\")"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Toggle::IsOn"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_utils::consoleLog"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LayerWhenOff: \" + GetArgumentAsString(\"LayerWhenOff\")",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_utils::consoleLog"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"LayerWhenOn: \" + GetArgumentAsString(\"LayerWhenOn\")",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "HideLayer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GetArgumentAsString(\"LayerWhenOff\")"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ShowLayer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GetArgumentAsString(\"LayerWhenOn\")"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Toggle",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "LayerWhenOff",
+                  "longDescription": "",
+                  "name": "LayerWhenOff",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "layer"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "LayerWhenOn",
+                  "longDescription": "",
+                  "name": "LayerWhenOn",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "layer"
                 }
               ],
               "objectGroups": []
