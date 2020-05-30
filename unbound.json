@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.ssangervasi.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\refactor-unbound.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -16240,76 +16240,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 363,
-          "y": 96,
-          "zOrder": 209,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "InstanceName",
-              "value": "Down1"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 559,
-          "y": 246,
-          "zOrder": 209,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 160,
-          "y": 95,
-          "zOrder": 209,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "InstanceName",
-              "value": "Right1"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
           "layer": "",
           "locked": false,
@@ -18169,96 +18099,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 351,
-          "y": 637,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 639,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 584,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 466,
-          "y": 84,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -18295,46 +18135,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 568,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -18500,26 +18300,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 267,
-          "y": 87,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -19556,96 +19336,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 351,
-          "y": 637,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 639,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 584,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 466,
-          "y": 84,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -19682,46 +19372,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 568,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -19887,26 +19537,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 267,
-          "y": 87,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -20909,96 +20539,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 351,
-          "y": 637,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 639,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 584,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 466,
-          "y": 84,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -21035,46 +20575,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 568,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -21240,26 +20740,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 267,
-          "y": 87,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -22347,116 +21827,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 351,
-          "y": 637,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 639,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 487,
-          "y": 218,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 584,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 386,
-          "y": 215,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -22498,26 +21868,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -22543,26 +21893,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 535,
-          "y": 219,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -22583,21 +21913,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 217,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -22848,26 +22163,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 637,
-          "y": 217,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -22893,21 +22188,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 137,
-          "y": 212,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -22928,26 +22208,6 @@
               "value": "Up"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 137,
-          "y": 365,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -23720,21 +22980,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 279,
-          "y": 135,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
           "layer": "",
           "locked": false,
@@ -24141,26 +23386,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 380,
-          "y": 135,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -24181,26 +23406,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 481,
-          "y": 335,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -24231,26 +23436,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 380,
-          "y": 294,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -24271,26 +23456,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 380,
-          "y": 335,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -24321,46 +23486,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 329,
-          "y": 235,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 282,
-          "y": 235,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -24381,26 +23506,6 @@
               "value": "Up"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 282,
-          "y": 335,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -24431,26 +23536,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 481,
-          "y": 135,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -24471,21 +23556,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 432,
-          "y": 235,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -24541,26 +23611,6 @@
               "value": "Up"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 481,
-          "y": 235,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -25299,96 +24349,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 351,
-          "y": 637,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 285,
-          "y": 639,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 584,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 384,
-          "y": 83,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -25425,46 +24385,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 538,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -25590,26 +24510,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 237,
-          "y": 87,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -26817,76 +25717,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 705,
-          "y": 627,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 634,
-          "y": 641,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 582,
-          "y": 635,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 319,
-          "y": 217,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -26923,46 +25753,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 634,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 518,
-          "y": 267,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -27843,26 +26633,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 516,
-          "y": 164,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -27883,26 +26653,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 268,
-          "y": 220,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -27933,46 +26683,6 @@
           "angle": 0,
           "customSize": true,
           "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 267.966,
-          "y": 418.914,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 467,
-          "y": 218,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
           "layer": "Objects",
           "locked": false,
           "name": "Binder",
@@ -27993,21 +26703,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 267,
-          "y": 21,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -28716,81 +27411,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 459,
-          "y": 388,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 459,
-          "y": 236,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 459,
-          "y": 88,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 56,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -32843,116 +31463,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 354,
-          "y": 205,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 457,
-          "y": 205,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 405,
-          "y": 309,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 554,
-          "y": 307,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 647,
-          "y": 255,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 156,
-          "y": 205,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "",
           "locked": false,
@@ -33735,26 +32245,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 437,
-          "y": 105,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -33764,61 +32254,6 @@
           "x": 30,
           "y": -35,
           "zOrder": 211,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 431,
-          "y": 260,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 333,
-          "y": 258,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 332,
-          "y": 105,
-          "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -34092,26 +32527,6 @@
               "value": "Left"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 435,
-          "y": 412,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -35460,26 +33875,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 299,
-          "y": 200,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -35489,76 +33884,6 @@
           "x": 22,
           "y": 613,
           "zOrder": 211,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 151,
-          "y": 353,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 451,
-          "y": 200,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 448,
-          "y": 302,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 152,
-          "y": 200,
-          "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -36547,61 +34872,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 540,
-          "y": 357,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 188,
-          "y": 313,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 138,
-          "y": 112,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -36611,26 +34881,6 @@
           "y": 520,
           "zOrder": 212,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 187,
-          "y": 117,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -37597,26 +35847,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 537,
-          "y": 117,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
           "layer": "Objects",
           "locked": false,
@@ -38387,61 +36617,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 300,
-          "y": 650,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 607,
-          "y": 419,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 106,
-          "y": 64,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -38451,26 +36626,6 @@
           "y": 520,
           "zOrder": 400,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 207,
-          "y": 64,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -38928,26 +37083,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 268,
-          "y": 617,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -41626,61 +39761,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 656,
-          "y": 264,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 360,
-          "y": 313,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 59,
-          "y": 110,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -41690,26 +39770,6 @@
           "y": 520,
           "zOrder": 400,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 108,
-          "y": 110,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -42122,26 +40182,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 268,
-          "y": 617,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -45784,61 +43824,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 554,
-          "y": 411,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 255,
-          "y": 415,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 156,
-          "y": 63,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -45848,26 +43833,6 @@
           "y": 520,
           "zOrder": 400,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 558,
-          "y": 62,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -46250,26 +44215,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 268,
-          "y": 617,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -49544,26 +47489,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 257,
-          "y": 214,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 50,
           "layer": "LightingToggleOn",
           "locked": false,
@@ -50626,61 +48551,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 700,
-          "y": 650,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 400,
-          "y": 700,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 100,
-          "y": 600,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -50690,26 +48560,6 @@
           "y": 520,
           "zOrder": 400,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 150,
-          "y": 600,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -51122,26 +48972,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 268,
-          "y": 617,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -54939,61 +52769,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": -100,
-          "y": 250,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 607,
-          "y": 365,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 106,
-          "y": 111,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 60,
           "layer": "UI",
           "locked": false,
@@ -55003,26 +52778,6 @@
           "y": 520,
           "zOrder": 400,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 208,
-          "y": 111,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -55700,26 +53455,6 @@
               "value": "Right"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "UI",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": -59,
-          "y": 156,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -58087,81 +55822,6 @@
               "value": "Down"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 453,
-          "y": 383,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 259,
-          "y": 86,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 161,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 40,
-          "layer": "",
-          "locked": false,
-          "name": "BindIndicator",
-          "width": 40,
-          "x": 56,
-          "y": 85,
-          "zOrder": 210,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
