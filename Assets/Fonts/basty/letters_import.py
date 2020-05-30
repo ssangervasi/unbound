@@ -9,7 +9,7 @@ def main():
     font = fontforge.open(filename)
 
     for letter in string.ascii_uppercase:
-        print(f"~~ letter: {letter}")
+        print(f"~~ letter: {letter} ~~")
         glyph = font.createMappedChar(letter)
         glyph.importOutlines(f"letters/BastyFont ({letter}).svg")
 
