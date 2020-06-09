@@ -48208,7 +48208,7 @@
         "gridWidth": 50,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.216
+        "zoomFactor": 1.72
       },
       "objectsGroups": [],
       "variables": [],
@@ -48266,7 +48266,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 261,
+          "x": 263,
           "y": 104,
           "zOrder": 100,
           "numberProperties": [
@@ -48361,8 +48361,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 359,
-          "y": 252,
+          "x": 363,
+          "y": 254,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -48386,8 +48386,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 412,
-          "y": 102,
+          "x": 413,
+          "y": 103,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -48901,8 +48901,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 112,
-          "y": 253,
+          "x": 113,
+          "y": 254,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -48961,8 +48961,8 @@
           "locked": false,
           "name": "Toggle",
           "width": 40,
-          "x": 300,
-          "y": 150,
+          "x": 103,
+          "y": 304,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -49690,7 +49690,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 350,
+          "height": 300,
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
@@ -50100,8 +50100,8 @@
           "locked": false,
           "name": "Toggle",
           "width": 40,
-          "x": 400,
-          "y": 150,
+          "x": 653,
+          "y": 204,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -50283,8 +50283,8 @@
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 100,
-          "x": 450,
+          "width": 150,
+          "x": 400,
           "y": 300,
           "zOrder": 300,
           "numberProperties": [
@@ -50503,8 +50503,8 @@
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 250,
-          "x": 500,
+          "width": 350,
+          "x": 450,
           "y": 350,
           "zOrder": 300,
           "numberProperties": [
@@ -50823,7 +50823,7 @@
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 150,
+          "width": 100,
           "x": 0,
           "y": 400,
           "zOrder": 300,
@@ -50843,7 +50843,7 @@
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 150,
+          "width": 100,
           "x": 0,
           "y": 450,
           "zOrder": 300,
@@ -50920,7 +50920,7 @@
           "angle": -90,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -50940,7 +50940,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -50960,7 +50960,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -50980,7 +50980,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -51040,7 +51040,7 @@
           "angle": -90,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -51420,7 +51420,7 @@
           "angle": 180,
           "customSize": true,
           "height": 50,
-          "layer": "LightingToggleOn1",
+          "layer": "LightingToggleOff2",
           "locked": false,
           "name": "Darkness",
           "width": 50,
@@ -51839,8 +51839,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 664,
-          "y": 305,
+          "x": 663,
+          "y": 304,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -51878,7 +51878,7 @@
           "layer": "LightingStatic",
           "locked": false,
           "name": "Darkness",
-          "width": 150,
+          "width": 100,
           "x": 0,
           "y": 500,
           "zOrder": 300,
@@ -51998,7 +51998,7 @@
           "layer": "LightingToggleOn2",
           "locked": false,
           "name": "Darkness",
-          "width": 50,
+          "width": 1,
           "x": 100,
           "y": 450,
           "zOrder": 300,
@@ -52006,26 +52006,6 @@
             {
               "name": "animation",
               "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 250,
-          "y": 300,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
             }
           ],
           "stringProperties": [],
@@ -52052,26 +52032,6 @@
           "initialVariables": []
         },
         {
-          "angle": 180,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 500,
-          "y": 450,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": -90,
           "customSize": true,
           "height": 50,
@@ -52086,26 +52046,6 @@
             {
               "name": "animation",
               "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 500,
-          "y": 400,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
             }
           ],
           "stringProperties": [],
@@ -52132,26 +52072,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 300,
-          "y": 300,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 90,
           "customSize": true,
           "height": 50,
@@ -52160,7 +52080,7 @@
           "name": "Darkness",
           "width": 50,
           "x": 350,
-          "y": 300,
+          "y": 350,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52180,26 +52100,6 @@
           "name": "Darkness",
           "width": 50,
           "x": 350,
-          "y": 250,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -90,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 300,
           "y": 250,
           "zOrder": 300,
           "numberProperties": [
@@ -52239,8 +52139,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 250,
-          "y": 650,
+          "x": 100,
+          "y": 400,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52279,8 +52179,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 250,
-          "y": 800,
+          "x": 450,
+          "y": 500,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52320,26 +52220,6 @@
           "name": "Darkness",
           "width": 50,
           "x": 250,
-          "y": 500,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -90,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 450,
           "y": 500,
           "zOrder": 300,
           "numberProperties": [
@@ -52439,8 +52319,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 250,
-          "y": 750,
+          "x": 500,
+          "y": 450,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52479,28 +52359,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 150,
-          "y": 400,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 1
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
           "x": 400,
-          "y": 300,
+          "y": 350,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52519,48 +52379,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 450,
-          "y": 350,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 100,
+          "x": 500,
           "y": 400,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 2
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 200,
-          "y": 350,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52581,26 +52401,6 @@
           "width": 50,
           "x": 350,
           "y": 650,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 200,
-          "y": 400,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52659,8 +52459,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 450,
-          "y": 400,
+          "x": 500,
+          "y": 650,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52680,7 +52480,7 @@
           "name": "Darkness",
           "width": 50,
           "x": 400,
-          "y": 350,
+          "y": 400,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52719,27 +52519,7 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 350,
-          "y": 800,
-          "zOrder": 300,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 3
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "LightingToggleOn2",
-          "locked": false,
-          "name": "Darkness",
-          "width": 50,
-          "x": 250,
+          "x": 100,
           "y": 350,
           "zOrder": 300,
           "numberProperties": [
@@ -52779,8 +52559,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 250,
-          "y": 700,
+          "x": 450,
+          "y": 400,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -52846,6 +52626,191 @@
             {
               "name": "animation",
               "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 650,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 700,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 800,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "layer": "LightingToggleOff2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 800,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 512,
+          "y": 454,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Up"
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn2",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 750,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
             }
           ],
           "stringProperties": [],
@@ -53095,43 +53060,6 @@
               ]
             },
             {
-              "disabled": true,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Toggle::HandleLayers"
-                  },
-                  "parameters": [
-                    "Toggle",
-                    "Toggle",
-                    "\"LightingToggleOff1\"",
-                    "\"LightingToggleOn1\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Toggle::HandleLayers"
-                  },
-                  "parameters": [
-                    "Toggle",
-                    "Toggle",
-                    "\"LightingToggleOff2\"",
-                    "\"LightingToggleOn2\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Link",
@@ -53193,7 +53121,7 @@
         },
         {
           "name": "LightingToggleOn2",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -53262,7 +53190,7 @@
         },
         {
           "name": "LightingToggleOff1",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
