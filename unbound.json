@@ -11566,17 +11566,17 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridB": 255,
         "gridG": 180,
-        "gridHeight": 32,
+        "gridHeight": 10,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridR": 158,
-        "gridWidth": 32,
+        "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 2.032
+        "zoomFactor": 1.384
       },
       "objectsGroups": [
         {
@@ -11586,7 +11586,10 @@
               "name": "T_Opt_Continue"
             },
             {
-              "name": "T_Opt_Settings"
+              "name": "T_Opt_Load"
+            },
+            {
+              "name": "T_Opt_Save"
             }
           ]
         }
@@ -11632,7 +11635,7 @@
           "name": "MenuPill_Inactive",
           "width": 300,
           "x": 250,
-          "y": 250,
+          "y": 220,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11647,7 +11650,7 @@
           "name": "MenuPill_Active",
           "width": 300,
           "x": 250,
-          "y": 350,
+          "y": 310,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11656,13 +11659,13 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 0,
+          "height": 50,
           "layer": "",
           "locked": false,
           "name": "T_Opt_Continue",
-          "width": 0,
-          "x": 275,
-          "y": 265,
+          "width": 300,
+          "x": 280,
+          "y": 230,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -11671,13 +11674,13 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 40,
+          "height": 50,
           "layer": "",
           "locked": false,
-          "name": "T_Opt_Settings",
-          "width": 247,
-          "x": 275,
-          "y": 365,
+          "name": "T_Opt_Load",
+          "width": 250,
+          "x": 340,
+          "y": 320,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -11709,6 +11712,36 @@
           "x": -212,
           "y": 47,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 250,
+          "y": 400,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "T_Opt_Save",
+          "width": 300,
+          "x": 340,
+          "y": 410,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11757,6 +11790,25 @@
         {
           "bold": false,
           "italic": false,
+          "name": "T_Opt_Save",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Save",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
           "name": "T_Opt_Continue",
           "smoothed": true,
           "tags": "",
@@ -11776,14 +11828,14 @@
         {
           "bold": false,
           "italic": false,
-          "name": "T_Opt_Settings",
+          "name": "T_Opt_Load",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Settings",
+          "string": "Load",
           "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 42,
           "color": {
@@ -11874,7 +11926,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11943,7 +11995,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Menu pill setup",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -12061,7 +12113,7 @@
                       "events": []
                     },
                     {
-                      "disabled": true,
+                      "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
@@ -12077,19 +12129,6 @@
                             "0",
                             "0",
                             ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreAutour"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "Options",
-                            "0",
-                            "0"
                           ],
                           "subInstructions": []
                         },
@@ -12165,57 +12204,106 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": [
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Gosh darn alignment",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
                           },
-                          "comment": "Gosh darn alignment",
-                          "comment2": ""
+                          "parameters": [
+                            "",
+                            "MenuPill_Active",
+                            "Options"
+                          ],
+                          "subInstructions": []
                         },
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreAutour"
-                              },
-                              "parameters": [
-                                "MenuPill_Inactive",
-                                "Options",
-                                "0",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreY"
-                              },
-                              "parameters": [
-                                "MenuPill_Inactive",
-                                "-",
-                                "4"
-                              ],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "MenuPill_Inactive",
+                            "Options"
                           ],
-                          "events": []
+                          "subInstructions": []
                         }
-                      ]
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "MenuPill_Inactive",
+                            "Options",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreY"
+                          },
+                          "parameters": [
+                            "MenuPill_Inactive",
+                            "-",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "MenuPill_Active",
+                            "Options",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreY"
+                          },
+                          "parameters": [
+                            "MenuPill_Active",
+                            "-",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 }
@@ -12230,7 +12318,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Manage options",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12710,6 +12798,42 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Running action: \" + srs_utils::playlistCurrent(\"MenuOptions\")",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Real actions!",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
@@ -12728,10 +12852,10 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Cache"
+                        "value": "PopScene"
                       },
                       "parameters": [
-                        "T_Opt_Continue"
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -12751,7 +12875,7 @@
                       "parameters": [
                         "srs_utils::playlistCurrent(\"MenuOptions\")",
                         "=",
-                        "T_Opt_Settings.ObjectName()"
+                        "T_Opt_Load.ObjectName()"
                       ],
                       "subInstructions": []
                     }
@@ -12760,10 +12884,127 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Cache"
+                        "value": "srs_objs::loadGame"
                       },
                       "parameters": [
-                        "T_Opt_Settings"
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LoadResult: \" + VariableString(LoadResult)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(SavedGame.LastLevel)",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "=",
+                        "T_Opt_Save.ObjectName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::saveGame"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SaveResult: \" + VariableString(SaveResult)",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -12843,10 +13084,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Binder",
           "type": "srs_ctrl::Binder"
         },
@@ -12877,6 +13114,10 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -60606,8 +60847,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "CameraTests",
-      "name": "CameraTests",
+      "mangledName": "L_95CameraTests",
+      "name": "L_CameraTests",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -62534,7 +62775,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Scene transition",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -62547,11 +62788,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyFromTextPressed"
                   },
                   "parameters": [
                     "",
-                    "Space"
+                    "\"Escape\""
                   ],
                   "subInstructions": []
                 }
@@ -62560,48 +62801,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Scene"
+                    "value": "PushScene"
                   },
                   "parameters": [
                     "",
-                    "CurrentSceneName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "Exit",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "GlobalVariableString(SceneMap[CurrentSceneName()])",
-                    ""
+                    "\"M_Pause\""
                   ],
                   "subInstructions": []
                 }
@@ -63435,6 +63639,52 @@
                     "Unbound_Val",
                     "=",
                     "ToString(Controls.Bindable::UnboundCount())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Scene transition - might move this to an \"escape reminder\"",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Escape\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"M_Pause\""
                   ],
                   "subInstructions": []
                 }
@@ -66251,7 +66501,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\nglobalThis.ssangervasi.sceneHistory = []\n\nconst sceneName = runtimeScene.getName()\nif (sceneName) {\n    globalThis.ssangervasi.sceneHistory.push(sceneName)\n}\n\nconst getLogTime = () => (new Date()).toISOString()\n\nconst getLogCtx = () => {\n    let ctx = '(Unknown)'\n    try {\n        const stack = (new Error().stack)\n        const match = stack.match(/([a-zA-Z.]+Context)/)\n        ctx = (match && match.length && match[0]) || ctx\n    } catch (e) {\n        console.error('Context failure', e)\n    }\n    return ctx\n}\n\nconst log = (...msgs) => console.log(getLogTime(), getLogCtx(), ...msgs)\nconst info = (...msgs) => console.info(getLogTime(), getLogCtx(), ...msgs)\nconst error = (...msgs) => console.error(getLogTime(), getLogCtx(), ...msgs)\n\n/**\n * @param {gdjs.RuntimeScene} aRuntimeScene \n * @return {Map<string, ssangervasi.Playlist>} Name to list mapping\n */\nconst setupPlaylists = (aRuntimeScene) => {\n    if (!runtimeScene._srs_utils) {\n        runtimeScene._srs_utils = {};\n    }\n    if (!runtimeScene._srs_utils.nameToPlaylist) {\n        runtimeScene._srs_utils.nameToPlaylist = new Map();\n    }\n\n    return runtimeScene._srs_utils.nameToPlaylist;\n}\n\nclass Playlist {\n    items = []\n    current = null\n\n    getCurrent() {\n        if (this.current === null) {\n            return null\n        }\n        return this.items[this.current]\n    }\n\n    add(item) {\n        this.items.push(item)\n        if (this.current === null) {\n            this.current = 0\n        }\n    }\n\n    next() {\n        if (this.current === null) {\n            return null;\n        }\n        this.current = (this.current + 1) % this.items.length\n        return this.items[this.current]\n    }\n\n    previous() {\n        if (this.current === null) {\n            return null;\n        }\n        this.current = this.current - 1\n        if (this.current < 0) {\n            this.current = this.items.length + this.current\n        }\n        return this.items[this.current]\n    }\n}\n\n/**\n * @memberOf window ssangervasi Horse horse\n * @property {string} [name] horse horse horse\n */\n\nObject.assign(\n    globalThis.ssangervasi,\n    {\n        log,\n        info,\n        error,\n        setupPlaylists,\n        Playlist\n    }\n)\n",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\n\nconst ssangervasi = globalThis.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        items = []\n        current = null\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        next() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = (this.current + 1) % this.items.length\n            return this.items[this.current]\n        }\n\n        previous() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.items[this.current]\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -66429,7 +66679,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const sceneName = eventsFunctionContext.getArgument(\"SceneName\")\n// const sceneName = runtimeScene.getName()\nif (!sceneName) {\n    return\n}\nglobalThis.ssangervasi.sceneHistory.push(sceneName)\nglobalThis.ssangervasi.log(\"Push scene to history\", sceneName, globalThis.ssangervasi.sceneHistory)",
+              "inlineCode": "globalThis.ssangervasi.pushScene(eventsFunctionContext)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -66480,7 +66730,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    const defaultVal = eventsFunctionContext.getArgument(\"Default\") || \"\"\n    const depth = eventsFunctionContext.getArgument(\"Depth\") || 0\n    const hist = globalThis.ssangervasi.sceneHistory\n    const index = hist.length - 1 - depth\n    if (index < 0) {\n        return defaultVal\n    }\n    return hist[index]\n})()",
+              "inlineCode": "eventsFunctionContext.returnValue = globalThis.ssangervasi.peekScene(eventsFunctionContext)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -71055,6 +71305,308 @@
               "type": "sceneName"
             }
           ],
+          "objectGroups": []
+        },
+        {
+          "description": "Save Game",
+          "fullName": "Save Game",
+          "functionType": "Action",
+          "name": "saveGame",
+          "sentence": "Save Game",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "SaveResult",
+                    "=",
+                    "\"attempt\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LoadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"user_data\"",
+                    "\"UserDataJSON\"",
+                    "",
+                    "UserDataJSON"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\n\r\nconst createSave = () => {\r\n    const timestamp = globalThis.ssangervasi.getTimestamp() \r\n\r\n    /** @type {string[]} */ \r\n    const levelHistory =\r\n        globalThis\r\n        .ssangervasi\r\n        .sceneHistory\r\n        .filter((/** @type {string} */ sceneName ) => {\r\n            return sceneName.startsWith('L_')\r\n        })\r\n    const lastLevel = levelHistory[levelHistory.length - 1]\r\n    if (!lastLevel) {\r\n        return\r\n    }\r\n    return {\r\n        timestamp,\r\n        lastLevel\r\n    }\r\n}\r\n\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        globalThis.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst newSave = createSave()\r\nif (!newSave) {\r\n     globalThis.ssangervasi.error(\"Unable to create save\")\r\n     return\r\n}\r\n\r\nconst userData = getUserData()\r\nuserData.saves.push(newSave)\r\nconst newUserdataJSON = JSON.stringify(userData)\r\n\r\nvars.get(\"UserDataJSON\").setString(newUserdataJSON)\r\nvars.get(\"SaveResult\").setString(\"success\")\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "SaveResult",
+                    "!=",
+                    "\"success\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "SaveResult",
+                    "=",
+                    "\"error\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "SaveResult",
+                    "=",
+                    "\"success\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"user_data\"",
+                    "\"UserDataJSON\"",
+                    "VariableString(UserDataJSON)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "UnloadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Load Game",
+          "fullName": "Load Game",
+          "functionType": "Action",
+          "name": "loadGame",
+          "sentence": "Load Game",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "LoadResult",
+                    "=",
+                    "\"attempt\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LoadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"user_data\"",
+                    "\"UserDataJSON\"",
+                    "",
+                    "UserDataJSON"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        globalThis.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst userData = getUserData()\r\nglobalThis.ssangervasi.info(\"Loaded user data\", userData)\r\n\r\nif (!userData.saves.length) {\r\n    globalThis.ssangervasi.error(\"Nothing to load\")\r\n    return\r\n}\r\n\r\nconst savesNewestToOldest =  userData.saves\r\nsavesNewestToOldest.sort((saveA, saveB) => saveA.timestamp > saveB.timestamp ? -1 : 1)\r\nconst newestSave = savesNewestToOldest[0]\r\n\r\nglobalThis.ssangervasi.info(\"newestSave:\", newestSave)\r\n\r\nconst savedGameVar = vars.get(\"SavedGame\")\r\nsavedGameVar.clearChildren()\r\nsavedGameVar.getChild(\"Timestamp\").setString(newestSave.timestamp)\r\nsavedGameVar.getChild(\"LastLevel\").setString(newestSave.lastLevel)\r\n\r\nvars.get(\"LoadResult\").setString(\"success\")\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "LoadResult",
+                    "!=",
+                    "\"success\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "LoadResult",
+                    "=",
+                    "\"error\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "UnloadFile"
+                  },
+                  "parameters": [
+                    "\"save\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [],
           "objectGroups": []
         }
       ],
