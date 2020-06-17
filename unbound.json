@@ -13369,7 +13369,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.192
+        "zoomFactor": 1.072
       },
       "objectsGroups": [
         {
@@ -13427,33 +13427,23 @@
           "locked": false,
           "name": "MenuPill_Inactive",
           "width": 300,
-          "x": 250,
-          "y": 220,
+          "x": 249,
+          "y": 217,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "MenuPill_Active",
-          "width": 300,
-          "x": 255,
-          "y": -109,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Continue"
+            }
+          ]
         },
         {
           "angle": 0,
           "customSize": false,
           "height": 50,
-          "layer": "",
+          "layer": "OptionText",
           "locked": false,
           "name": "T_Opt_Continue",
           "width": 300,
@@ -13468,7 +13458,7 @@
           "angle": 0,
           "customSize": false,
           "height": 50,
-          "layer": "",
+          "layer": "OptionText",
           "locked": false,
           "name": "T_Opt_Load",
           "width": 250,
@@ -13507,13 +13497,18 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Save"
+            }
+          ]
         },
         {
           "angle": 0,
           "customSize": false,
           "height": 40,
-          "layer": "",
+          "layer": "OptionText",
           "locked": false,
           "name": "T_Opt_Save",
           "width": 300,
@@ -13537,7 +13532,12 @@
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Load"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -13552,7 +13552,12 @@
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "OptionIds",
+              "value": "Continue, Load, Save"
+            }
+          ]
         }
       ],
       "objects": [
@@ -13744,30 +13749,6 @@
             "g": 0,
             "r": 0
           }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "S_ChangeSelection",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State"
-            }
-          ],
-          "string": "S_ChangeSelection",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
         }
       ],
       "events": [
@@ -13786,42 +13767,60 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "conditions": [],
+              "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "DepartScene"
+                    "value": "srs_objs::Menu::subscribeToState"
                   },
                   "parameters": [
+                    "Menu",
+                    "Menu",
+                    "S_ChooseSelection",
+                    "State",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::Menu::registerOptions"
-                      },
-                      "parameters": [
-                        "Menu",
-                        "Menu",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Menu::handleOptions"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "Menu",
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    ""
                   ],
-                  "events": []
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::MenuOption::handleActive"
+                  },
+                  "parameters": [
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    "MenuPill_Active",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
             }
           ],
           "parameters": []
@@ -13883,7 +13882,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Running action: \" + srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "\"Running action: \" + Menu.Menu::ActiveId()",
                         ""
                       ],
                       "subInstructions": []
@@ -13917,9 +13916,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "Menu.Menu::ActiveId()",
                         "=",
-                        "T_Opt_Continue.ObjectName()"
+                        "\"Continue\""
                       ],
                       "subInstructions": []
                     }
@@ -13949,9 +13948,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "Menu.Menu::ActiveId()",
                         "=",
-                        "T_Opt_Load.ObjectName()"
+                        "\"Load\""
                       ],
                       "subInstructions": []
                     }
@@ -14053,9 +14052,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
+                        "Menu.Menu::ActiveId()",
                         "=",
-                        "T_Opt_Save.ObjectName()"
+                        "\"Save\""
                       ],
                       "subInstructions": []
                     }
@@ -14098,14 +14097,14 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": true,
-          "folded": false,
+          "folded": true,
           "name": "",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14497,7 +14496,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Manage options",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -14632,7 +14631,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Change selection",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -14641,20 +14640,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::IsInitialized"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [],
                   "events": [
                     {
@@ -14683,18 +14669,6 @@
                           "parameters": [
                             "",
                             "\"MenuOptions\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_states::State::Run"
-                          },
-                          "parameters": [
-                            "S_ChangeSelection",
-                            "State",
                             ""
                           ],
                           "subInstructions": []
@@ -14731,18 +14705,6 @@
                             ""
                           ],
                           "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_states::State::Run"
-                          },
-                          "parameters": [
-                            "S_ChangeSelection",
-                            "State",
-                            ""
-                          ],
-                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -14753,20 +14715,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::IsRunning"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -14776,18 +14725,6 @@
                       "parameters": [
                         "",
                         "\"key_throttle\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Return"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
                       ],
                       "subInstructions": []
                     }
@@ -14802,18 +14739,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_states::State::HasReturned"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "Timer"
                       },
                       "parameters": [
@@ -14824,20 +14749,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Initialize"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": []
                 }
               ],
@@ -15269,6 +15181,12 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "name": "OptionText",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         }
       ],
@@ -66018,7 +65936,7 @@
       ]
     },
     {
-      "associatedLayout": "CameraTests",
+      "associatedLayout": "L_CameraTests",
       "lastChangeTimeStamp": 0,
       "name": "__effin_workaround__",
       "events": [
@@ -66027,26 +65945,6 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::isScene"
-              },
-              "parameters": [
-                "",
-                "\"M_LevelSelect\""
-              ],
-              "subInstructions": []
-            }
-          ],
           "actions": [],
           "events": []
         },
@@ -66106,6 +66004,26 @@
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::isScene"
+              },
+              "parameters": [
+                "",
+                "\"M_LevelSelect\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
           "events": []
         },
         {
@@ -69840,7 +69758,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\n\nconst ssangervasi = globalThis.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        items = []\n        current = null\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        next() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = (this.current + 1) % this.items.length\n            return this.items[this.current]\n        }\n\n        previous() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.items[this.current]\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
+              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\n\nconst ssangervasi = globalThis.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName)) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        items = []\n        current = null\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        next() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = (this.current + 1) % this.items.length\n            return this.items[this.current]\n        }\n\n        previous() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.items[this.current]\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70125,7 +70043,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\n    if (!(playlistName)) {\r\n        globalThis.ssangervasi.error('Cannot get current item in playlist', { playlistName })\r\n        return \"\"\r\n    }\r\n\r\n    const nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\n    if (!nameToPlaylist.has(playlistName)) {\r\n        return \"\"\r\n    }\r\n    const playlist = nameToPlaylist.get(playlistName)\r\n    return playlist.getCurrent() || \"\"\r\n})()",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\n    if (!(playlistName)) {\r\n        globalThis.ssangervasi.error('Cannot get current item in playlist', { playlistName })\r\n        return \"\"\r\n    }\r\n\r\n    const playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\n    return playlist.getCurrent() || \"\"\r\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70163,7 +70081,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    globalThis.ssangervasi.error('Cannot add item to playlist', { playlistName, item })\r\n    return\r\n}\r\n\r\n/**\r\n * @type {Map<string, ssangervasi.Playlist>}\r\n */\r\nconst nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\nif (!nameToPlaylist.has(playlistName)) {\r\n    nameToPlaylist.set(playlistName, new globalThis.ssangervasi.Playlist())\r\n}\r\nconst playlist = nameToPlaylist.get(playlistName)\r\nplaylist.add(item)",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    globalThis.ssangervasi.error('Cannot add item to playlist', { playlistName, item })\r\n    return\r\n}\r\n\r\n\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.add(item)\r\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70211,7 +70129,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\nconst nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\nif (!nameToPlaylist.has(playlistName)) {\r\n    return\r\n}\r\n\r\nconst playlist = nameToPlaylist.get(playlistName)\r\nplaylist.previous()",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.previous()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70249,7 +70167,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\n\r\nconst nameToPlaylist = globalThis.ssangervasi.setupPlaylists(runtimeScene)\r\nif (!nameToPlaylist.has(playlistName)) {\r\n    return\r\n}\r\n\r\nconst playlist = nameToPlaylist.get(playlistName)\r\nplaylist.next()",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\n\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.next()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -78053,11 +77971,43 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Object"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
                         "Object",
                         "ChangeStatus",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "OptionIdsStatus",
                         "=",
                         "\"initialized\""
                       ],
@@ -78092,11 +78042,11 @@
               "objectGroups": []
             },
             {
-              "description": "",
-              "fullName": "",
+              "description": "subscribeToState",
+              "fullName": "subscribeToState",
               "functionType": "Action",
-              "name": "doStepPreEvents",
-              "sentence": "",
+              "name": "subscribeToState",
+              "sentence": "_PARAM0_ subscribeToState _PARAM2_ ",
               "events": [
                 {
                   "colorB": 228,
@@ -78269,7 +78219,42 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::IsFinished"
+                              },
+                              "parameters": [
+                                "State",
+                                "StateBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::Initialize"
+                              },
+                              "parameters": [
+                                "State",
+                                "StateBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     },
                     {
                       "disabled": false,
@@ -78323,540 +78308,13 @@
                   "parameters": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_objs::Menu",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "handleOption",
-              "fullName": "handleOption",
-              "functionType": "Action",
-              "name": "handleOption",
-              "sentence": "handleOption_PARAM0_ _PARAM2_ _PARAM3_ _PARAM4_",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::playlistAdd"
-                          },
-                          "parameters": [
-                            "",
-                            "Object.ObjectName()",
-                            "Option.ObjectName()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Option",
-                            "MenuPill_Inactive",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Option",
-                            "MenuPill_Active",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Inactive",
-                            "0",
-                            "0",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "=",
-                            "5"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Option",
-                            "MenuPill_Inactive"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Active",
-                            "0",
-                            "0",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "=",
-                            "6"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Option",
-                            "MenuPill_Active"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Gosh darn alignment",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Active",
-                            "Option"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Inactive",
-                            "Option"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreAutour"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "Option",
-                            "0",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "-",
-                            "4"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreAutour"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "Option",
-                            "0",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "-",
-                            "4"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "LinkedObjects::PickObjectsLinkedTo"
-                      },
-                      "parameters": [
-                        "",
-                        "MenuPill_Active",
-                        "Option"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "LinkedObjects::PickObjectsLinkedTo"
-                      },
-                      "parameters": [
-                        "",
-                        "MenuPill_Inactive",
-                        "Option"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "StrEqual"
-                          },
-                          "parameters": [
-                            "srs_utils::playlistCurrent(Object.ObjectName())",
-                            "=",
-                            "Option.ObjectName()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Montre"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Cache"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "StrEqual"
-                          },
-                          "parameters": [
-                            "srs_utils::playlistCurrent(Object.ObjectName())",
-                            "!=",
-                            "Option.ObjectName()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Cache"
-                          },
-                          "parameters": [
-                            "MenuPill_Active"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Montre"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_objs::Menu",
-                  "type": "behavior"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Option",
-                  "longDescription": "",
-                  "name": "Option",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "objectList"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "MenuPill_Active",
-                  "longDescription": "",
-                  "name": "MenuPill_Active",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "objectList"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "MenuPill_Inactive",
-                  "longDescription": "",
-                  "name": "MenuPill_Inactive",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "objectList"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "name": "subscribeToState",
-              "sentence": "",
-              "events": [
-                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
                   "folded": false,
-                  "name": "Choose selection",
+                  "name": "Handle Choice",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
@@ -78871,8 +78329,8 @@
                             "value": "srs_states::State::IsInitialized"
                           },
                           "parameters": [
-                            "S_ChooseSelection",
                             "State",
+                            "StateBehavior",
                             ""
                           ],
                           "subInstructions": []
@@ -78924,9 +78382,22 @@
                                 "value": "srs_states::State::Run"
                               },
                               "parameters": [
-                                "S_ChooseSelection",
                                 "State",
+                                "StateBehavior",
                                 ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "ChoiceKey",
+                                "=",
+                                "LastPressedKey()"
                               ],
                               "subInstructions": []
                             }
@@ -78946,26 +78417,14 @@
                             "value": "srs_states::State::IsRunning"
                           },
                           "parameters": [
-                            "S_ChooseSelection",
+                            "State",
                             "State",
                             ""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ResetTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"key_throttle\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
+                      "actions": [],
                       "events": [
                         {
                           "disabled": false,
@@ -78980,203 +78439,7 @@
                               },
                               "parameters": [
                                 "",
-                                "\"Running action: \" + srs_utils::playlistCurrent(\"MenuOptions\")",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "Real actions!",
-                          "comment2": ""
-                        },
-                        {
-                          "disabled": true,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "StrEqual"
-                              },
-                              "parameters": [
-                                "srs_utils::playlistCurrent(\"MenuOptions\")",
-                                "=",
-                                "T_Opt_Start.ObjectName()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PopScene"
-                              },
-                              "parameters": [
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": true,
-                          "folded": true,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "StrEqual"
-                              },
-                              "parameters": [
-                                "srs_utils::playlistCurrent(\"MenuOptions\")",
-                                "=",
-                                "T_Opt_Load.ObjectName()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_objs::loadGame"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"LoadResult: \" + VariableString(LoadResult)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "VarSceneTxt"
-                                  },
-                                  "parameters": [
-                                    "LoadResult",
-                                    "=",
-                                    "\"success\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Scene"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "VariableString(SavedGame.LastLevel)",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": true,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "StrEqual"
-                              },
-                              "parameters": [
-                                "srs_utils::playlistCurrent(\"MenuOptions\")",
-                                "=",
-                                "T_Opt_Exit.ObjectName()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_objs::saveGame"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"SaveResult: \" + VariableString(SaveResult)",
+                                "\"Running action: \" + Object.Behavior::ActiveId()",
                                 ""
                               ],
                               "subInstructions": []
@@ -79197,21 +78460,9 @@
                             "value": "srs_states::State::HasReturned"
                           },
                           "parameters": [
-                            "S_ChooseSelection",
+                            "State",
                             "State",
                             ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Timer"
-                          },
-                          "parameters": [
-                            "",
-                            ".25",
-                            "\"key_throttle\""
                           ],
                           "subInstructions": []
                         }
@@ -79220,11 +78471,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_states::State::Initialize"
+                            "value": "srs_states::State::Finish"
                           },
                           "parameters": [
-                            "S_ChooseSelection",
                             "State",
+                            "StateBehavior",
                             ""
                           ],
                           "subInstructions": []
@@ -79234,14 +78485,6 @@
                     }
                   ],
                   "parameters": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
                 }
               ],
               "parameters": [
@@ -79268,9 +78511,9 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "S_ChooseSelection",
+                  "description": "State",
                   "longDescription": "",
-                  "name": "S_ChangeSelection",
+                  "name": "State",
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "objectList"
@@ -79278,9 +78521,9 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "S_ChooseSelection",
+                  "description": "StateBehavior",
                   "longDescription": "",
-                  "name": "S_ChooseSelection_State",
+                  "name": "StateBehavior",
                   "optional": false,
                   "supplementaryInformation": "srs_states::State",
                   "type": "behavior"
@@ -79289,17 +78532,39 @@
               "objectGroups": []
             },
             {
-              "description": "registerOptions",
-              "fullName": "registerOptions",
+              "description": "handleOptions",
+              "fullName": "handleOptions",
               "functionType": "Action",
-              "name": "registerOptions",
-              "sentence": "registerOptions",
+              "name": "handleOptions",
+              "sentence": "_PARAM0_ handleOptions _PARAM2_",
               "events": [
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Menu::SetOptionIds"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "Object.VariableString(OptionIds)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "MenuOptions",
+                  "object": "MenuOption",
                   "conditions": [],
                   "actions": [],
                   "events": [
@@ -79307,17 +78572,41 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "StrEqual"
+                          },
+                          "parameters": [
+                            "Object.Behavior::ActiveId()",
+                            "=",
+                            "MenuOption.MenuOptionBehavior::Id()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "srs_objs::MenuOption::IsActive"
+                          },
+                          "parameters": [
+                            "MenuOption",
+                            "MenuOptionBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::playlistAdd"
+                            "value": "srs_objs::MenuOption::SetActive"
                           },
                           "parameters": [
-                            "",
-                            "Object.ObjectName()",
-                            "MenuOptions.MenuOptionBehavior::Id()",
+                            "MenuOption",
+                            "MenuOptionBehavior",
                             ""
                           ],
                           "subInstructions": []
@@ -79329,8 +78618,46 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "StrEqual"
+                          },
+                          "parameters": [
+                            "Object.Behavior::ActiveId()",
+                            "!=",
+                            "MenuOption.MenuOptionBehavior::Id()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::MenuOption::IsActive"
+                          },
+                          "parameters": [
+                            "MenuOption",
+                            "MenuOptionBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::MenuOption::SetInactive"
+                          },
+                          "parameters": [
+                            "MenuOption",
+                            "MenuOptionBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
                       "events": []
                     }
                   ]
@@ -79362,9 +78689,9 @@
                   "defaultValue": "",
                   "description": "MenuOptions",
                   "longDescription": "",
-                  "name": "MenuOptions",
+                  "name": "MenuOption",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "objectList"
                 },
                 {
@@ -79379,6 +78706,152 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "ActiveId",
+              "fullName": "ActiveId",
+              "functionType": "StringExpression",
+              "name": "ActiveId",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "srs_utils::playlistCurrent(Object.ObjectName())"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Menu",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "SetOptionIds",
+              "fullName": "SetOptionIds",
+              "functionType": "Action",
+              "name": "SetOptionIds",
+              "sentence": "_PARAM0_ SetOptionIds to _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "OptionIdsStatus",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "OptionIdsStatus",
+                        "=",
+                        "\"set\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": "const menuObject = objects[0];\nconst playlistName = menuObject.name;\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\nif (!playlist) { return }\n\nconst rawOptionIds = eventsFunctionContext.getArgument('OptionIds').toString()\nconst optionIds = rawOptionIds.split(/\\W+/)\noptionIds.forEach((item) => {\n    playlist.add(item)  \n})\nconsole.log(\"playlist\", playlist)",
+                      "parameterObjects": "Object",
+                      "useStrict": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Menu",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "OptionIds",
+                  "longDescription": "",
+                  "name": "OptionIds",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": []
@@ -79387,7 +78860,7 @@
           "description": "",
           "fullName": "",
           "name": "MenuOption",
-          "objectType": "",
+          "objectType": "PanelSpriteObject::PanelSprite",
           "eventsFunctions": [
             {
               "description": "",
@@ -79416,42 +78889,6 @@
                     }
                   ],
                   "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Id",
-                        "=",
-                        "\"0\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Id",
-                        "=",
-                        "ToString(RandomInRange(1000, 10000))"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 }
               ],
               "parameters": [
@@ -79462,7 +78899,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "object"
                 },
                 {
@@ -79492,13 +78929,13 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
-                        "value": "srs_objs::MenuOption::IsActive"
+                        "inverted": true,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
                       },
                       "parameters": [
-                        "Object",
-                        "Behavior",
-                        ""
+                        "",
+                        "Active",
+                        "Object"
                       ],
                       "subInstructions": []
                     }
@@ -79514,11 +78951,88 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "Montre"
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Active",
+                            "0",
+                            "0",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangePlan"
                           },
                           "parameters": [
                             "Active",
-                            ""
+                            "=",
+                            "Object.ZOrder() + 1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Object",
+                            "Active"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TiledSpriteObject::Width"
+                          },
+                          "parameters": [
+                            "Active",
+                            "=",
+                            "Object.Width()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TiledSpriteObject::Height"
+                          },
+                          "parameters": [
+                            "Active",
+                            "=",
+                            "Object.Height()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutour"
+                          },
+                          "parameters": [
+                            "Active",
+                            "Object",
+                            "0",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Active",
+                            "DebugId",
+                            "=",
+                            "Object.Behavior::Id()"
                           ],
                           "subInstructions": []
                         }
@@ -79534,30 +79048,105 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "srs_objs::MenuOption::IsActive"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
                         "inverted": false,
-                        "value": "Cache"
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
                       },
                       "parameters": [
-                        "Active"
+                        "",
+                        "Active",
+                        "Object"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::MenuOption::IsActive"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Active"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Active",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "srs_objs::MenuOption::IsActive"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Active"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "Active"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ],
               "parameters": [
@@ -79568,7 +79157,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "object"
                 },
                 {
@@ -79588,62 +79177,8 @@
                   "longDescription": "",
                   "name": "Active",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "objectList"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "SetInactive",
-              "fullName": "SetInactive",
-              "functionType": "Action",
-              "name": "SetInactive",
-              "sentence": "SetInactive _PARAM0_",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Status",
-                        "=",
-                        "\"inactive\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_objs::MenuOption",
-                  "type": "behavior"
                 }
               ],
               "objectGroups": []
@@ -79686,7 +79221,61 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::MenuOption",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "SetInactive",
+              "fullName": "SetInactive",
+              "functionType": "Action",
+              "name": "SetInactive",
+              "sentence": "SetInactive _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"inactive\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "object"
                 },
                 {
@@ -79740,7 +79329,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "IsActive",
+                        "Status",
                         "=",
                         "\"active\""
                       ],
@@ -79770,7 +79359,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "object"
                 },
                 {
@@ -79821,7 +79410,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "PanelSpriteObject::PanelSprite",
                   "type": "object"
                 },
                 {
