@@ -9543,7 +9543,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.096
+        "zoomFactor": 1.168
       },
       "objectsGroups": [
         {
@@ -12906,8 +12906,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 324,
-          "y": 462,
+          "x": 355,
+          "y": 530,
           "zOrder": 215,
           "numberProperties": [],
           "stringProperties": [],
@@ -13506,7 +13506,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.714
+        "zoomFactor": 1.066
       },
       "objectsGroups": [],
       "variables": [
@@ -14570,6 +14570,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 355,
+          "y": 530,
+          "zOrder": 6017,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -15021,7 +15036,7 @@
               "type": "srs_states::StateText",
               "FullTime": 0,
               "CharactersPerSecond": 0,
-              "WordsPerMinute": 50
+              "WordsPerMinute": 60
             },
             {
               "name": "Tween",
@@ -15163,7 +15178,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "ah, “_key_”\ngood choice",
+          "string": "ah, \u201c_key_\u201d\ngood choice",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -17220,10 +17235,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -17238,6 +17249,10 @@
         {
           "name": "Exit",
           "type": "srs_objs::Exit"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
         },
         {
           "name": "Obstacle",
@@ -17262,6 +17277,10 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -17297,7 +17316,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.528
+        "zoomFactor": 1.336
       },
       "objectsGroups": [],
       "variables": [],
@@ -18068,8 +18087,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 332,
-          "y": 513,
+          "x": 355,
+          "y": 530,
           "zOrder": 210,
           "numberProperties": [],
           "stringProperties": [],
@@ -19587,8 +19606,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -20824,8 +20843,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -22027,8 +22046,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -23315,8 +23334,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -25133,8 +25152,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 514,
+          "x": 355,
+          "y": 530,
           "zOrder": 213,
           "numberProperties": [],
           "stringProperties": [],
@@ -25837,8 +25856,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -27205,8 +27224,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -28903,8 +28922,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -32951,8 +32970,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
@@ -34019,8 +34038,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 368,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 212,
           "numberProperties": [],
           "stringProperties": [],
@@ -35379,8 +35398,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 360,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 212,
           "numberProperties": [],
           "stringProperties": [],
@@ -36360,8 +36379,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 360,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 212,
           "numberProperties": [],
           "stringProperties": [],
@@ -38105,8 +38124,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -41249,8 +41268,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -45922,8 +45941,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -50684,8 +50703,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -55987,8 +56006,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 354,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -59059,8 +59078,8 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 90,
-          "x": 365,
-          "y": 520,
+          "x": 355,
+          "y": 530,
           "zOrder": 211,
           "numberProperties": [],
           "stringProperties": [],
