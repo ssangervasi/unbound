@@ -9517,34 +9517,1955 @@
     }
   ],
   "objectsGroups": [],
-  "variables": [
+  "variables": [],
+  "layouts": [
     {
-      "name": "SceneMap",
-      "children": [
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "M_95Main",
+      "name": "M_Main",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 10,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 10,
+        "snap": false,
+        "windowMask": false,
+        "zoomFactor": 1.096
+      },
+      "objectsGroups": [
         {
-          "name": "L_C1_MeetClum",
-          "value": "L_C2_LearningToForget"
+          "name": "Options",
+          "objects": [
+            {
+              "name": "T_Opt_Start"
+            },
+            {
+              "name": "T_Opt_Load"
+            },
+            {
+              "name": "T_Opt_Exit"
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 400,
+          "layer": "",
+          "locked": false,
+          "name": "MainBg",
+          "width": 600,
+          "x": 89,
+          "y": 672,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "name": "L_C2_BackAndForth",
-          "value": "L_C2_CrowdedSquare"
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "Menu",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 251,
+          "y": 330,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Start"
+            }
+          ]
         },
         {
-          "name": "L_C2_CrowdedSquare",
-          "value": "L_C3_Threedom"
+          "angle": 0,
+          "customSize": false,
+          "height": 50,
+          "layer": "Text",
+          "locked": false,
+          "name": "T_Opt_Start",
+          "width": 300,
+          "x": 327,
+          "y": 346,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "name": "L_C2_LearningToForget",
-          "value": "L_C2_BackAndForth"
+          "angle": 0,
+          "customSize": false,
+          "height": 50,
+          "layer": "Text",
+          "locked": false,
+          "name": "T_Opt_Load",
+          "width": 250,
+          "x": 340,
+          "y": 260,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "name": "L_C3_Threedom",
-          "value": "L_C3_RedHerring"
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_ChangeSelection",
+          "width": 0,
+          "x": -212,
+          "y": 83,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_ChooseSelection",
+          "width": 0,
+          "x": -212,
+          "y": 47,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "Menu",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 250,
+          "y": 415,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Exit"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 40,
+          "layer": "Text",
+          "locked": false,
+          "name": "T_Opt_Exit",
+          "width": 300,
+          "x": 335,
+          "y": 431,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 600,
+          "layer": "",
+          "locked": true,
+          "name": "Bg",
+          "width": 800,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "Menu",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 251,
+          "y": 245,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Load"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 279,
+          "layer": "Menu",
+          "locked": false,
+          "name": "Menu",
+          "width": 402,
+          "x": 200,
+          "y": 226,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "OptionIds",
+              "value": "Load, Start, Exit"
+            }
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "height": 32,
+          "name": "MainBg",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\Menu-pause.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Title2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "U n b o u n d",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 58,
+          "color": {
+            "b": 11,
+            "g": 10,
+            "r": 141
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Unbound",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 80,
+          "color": {
+            "b": 90,
+            "g": 46,
+            "r": 7
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Start",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Start",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Load",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Load",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Exit",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Exit",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "name": "Menu",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Menu",
+              "type": "srs_objs::Menu"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bottomMargin": 20,
+          "height": 70,
+          "leftMargin": 24,
+          "name": "MenuPill_Inactive",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 300,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "MenuOption",
+              "type": "srs_objs::MenuOption"
+            }
+          ]
+        },
+        {
+          "bottomMargin": 20,
+          "height": 70,
+          "leftMargin": 24,
+          "name": "MenuPill_Active",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 300,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_ChooseSelection",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ],
+          "string": "S_ChooseSelection",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_ChangeSelection",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ],
+          "string": "S_ChangeSelection",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "Bg",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Menu-main.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Setup menu",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::loadGame"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LoadResult: \" + VariableString(LoadResult)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "!=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "MenuPill_Inactive",
+                          "conditions": [],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "StrEqual"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive.MenuOption::Id()",
+                                    "=",
+                                    "\"Load\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive",
+                                    "MenuPill_Inactive"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "StrEqual"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive.MenuOption::Id()",
+                                    "=",
+                                    "\"Start\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreY"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive",
+                                    "-",
+                                    "60"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreY"
+                                  },
+                                  "parameters": [
+                                    "T_Opt_Start",
+                                    "-",
+                                    "60"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "StrEqual"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive.MenuOption::Id()",
+                                    "=",
+                                    "\"Exit\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreY"
+                                  },
+                                  "parameters": [
+                                    "MenuPill_Inactive",
+                                    "-",
+                                    "40"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreY"
+                                  },
+                                  "parameters": [
+                                    "T_Opt_Exit",
+                                    "-",
+                                    "40"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "T_Opt_Load",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Menu",
+                                "OptionIds",
+                                "=",
+                                "srs_utils::strReplace(Menu.VariableString(OptionIds), \"/Load,?/\", \"\")"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Menu::subscribeToState"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "Menu",
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Menu::handleOptions"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "Menu",
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::MenuOption::handleActive"
+                  },
+                  "parameters": [
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    "MenuPill_Active",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Choose selection",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsRunning"
+                  },
+                  "parameters": [
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::Return"
+                  },
+                  "parameters": [
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Start\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_MeetClum\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Load\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(SavedGame.LastLevel)",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "!=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "\"There is no level to load\"",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Exit\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Quit"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Menu",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Text",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "Menu",
+          "type": "srs_objs::Menu"
+        },
+        {
+          "name": "MenuOption",
+          "type": "srs_objs::MenuOption"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
-    }
-  ],
-  "layouts": [
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "M_95Pause",
+      "name": "M_Pause",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 10,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 10,
+        "snap": false,
+        "windowMask": false,
+        "zoomFactor": 1.072
+      },
+      "objectsGroups": [
+        {
+          "name": "Options",
+          "objects": [
+            {
+              "name": "T_Opt_Continue"
+            },
+            {
+              "name": "T_Opt_Load"
+            },
+            {
+              "name": "T_Opt_Save"
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 610,
+          "layer": "",
+          "locked": true,
+          "name": "PuaseBg",
+          "width": 810,
+          "x": -5,
+          "y": -5,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "T_Title",
+          "width": 360,
+          "x": 220,
+          "y": 90,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 70,
+          "layer": "",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 300,
+          "x": 255,
+          "y": 255,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Continue"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 50,
+          "layer": "OptionText",
+          "locked": false,
+          "name": "T_Opt_Continue",
+          "width": 300,
+          "x": 280,
+          "y": 269,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 50,
+          "layer": "OptionText",
+          "locked": false,
+          "name": "T_Opt_Load",
+          "width": 250,
+          "x": -261,
+          "y": 342,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_ChooseSelection",
+          "width": 0,
+          "x": -212,
+          "y": 47,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 40,
+          "layer": "OptionText",
+          "locked": false,
+          "name": "T_Opt_Save",
+          "width": 300,
+          "x": -235,
+          "y": 497,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "MenuPill_Inactive",
+          "width": 0,
+          "x": 255,
+          "y": 370,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Exit"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 282,
+          "layer": "",
+          "locked": false,
+          "name": "Menu",
+          "width": 400,
+          "x": 206,
+          "y": 201,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "OptionIds",
+              "value": "Continue, Exit"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_Opt_Exit",
+          "width": 0,
+          "x": 338,
+          "y": 384,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 32,
+          "name": "PuaseBg",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\Menu-pause.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Unbound",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 69,
+          "color": {
+            "b": 3,
+            "g": 3,
+            "r": 180
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Save",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Save",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Exit",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Exit",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Continue",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Continue",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Opt_Load",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Load",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 42,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "name": "Menu",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Menu",
+              "type": "srs_objs::Menu"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bottomMargin": 20,
+          "height": 70,
+          "leftMargin": 24,
+          "name": "MenuPill_Active",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 300,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bottomMargin": 20,
+          "height": 70,
+          "leftMargin": 24,
+          "name": "MenuPill_Inactive",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+          "tiled": false,
+          "topMargin": 20,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 300,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "MenuOption",
+              "type": "srs_objs::MenuOption"
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_ChooseSelection",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ],
+          "string": "S_ChooseSelection",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Setup menu",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Menu::subscribeToState"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "Menu",
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Menu::handleOptions"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "Menu",
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::MenuOption::handleActive"
+                  },
+                  "parameters": [
+                    "MenuPill_Inactive",
+                    "MenuOption",
+                    "MenuPill_Active",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Choose option",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::IsRunning"
+                  },
+                  "parameters": [
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::State::Return"
+                  },
+                  "parameters": [
+                    "S_ChooseSelection",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Continue\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PopScene"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Exit\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"M_Main\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": true,
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Menu.Menu::ActiveId()",
+                        "=",
+                        "\"Load\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::loadGame"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LoadResult: \" + VariableString(LoadResult)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "LoadResult",
+                            "=",
+                            "\"success\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(SavedGame.LastLevel)",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "OptionText",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "Menu",
+          "type": "srs_objs::Menu"
+        },
+        {
+          "name": "MenuOption",
+          "type": "srs_objs::MenuOption"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "ResetReminder",
+          "type": "srs_objs::ResetReminder"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -11550,1953 +13471,6 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "M_95Main",
-      "name": "M_Main",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 10,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 10,
-        "snap": false,
-        "windowMask": false,
-        "zoomFactor": 1.096
-      },
-      "objectsGroups": [
-        {
-          "name": "Options",
-          "objects": [
-            {
-              "name": "T_Opt_Start"
-            },
-            {
-              "name": "T_Opt_Load"
-            },
-            {
-              "name": "T_Opt_Exit"
-            }
-          ]
-        }
-      ],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 400,
-          "layer": "",
-          "locked": false,
-          "name": "MainBg",
-          "width": 600,
-          "x": 89,
-          "y": 672,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "Menu",
-          "locked": false,
-          "name": "MenuPill_Inactive",
-          "width": 300,
-          "x": 251,
-          "y": 330,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Start"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 50,
-          "layer": "Text",
-          "locked": false,
-          "name": "T_Opt_Start",
-          "width": 300,
-          "x": 327,
-          "y": 346,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 50,
-          "layer": "Text",
-          "locked": false,
-          "name": "T_Opt_Load",
-          "width": 250,
-          "x": 340,
-          "y": 260,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "S_ChangeSelection",
-          "width": 0,
-          "x": -212,
-          "y": 83,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "S_ChooseSelection",
-          "width": 0,
-          "x": -212,
-          "y": 47,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "Menu",
-          "locked": false,
-          "name": "MenuPill_Inactive",
-          "width": 300,
-          "x": 250,
-          "y": 415,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Exit"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 40,
-          "layer": "Text",
-          "locked": false,
-          "name": "T_Opt_Exit",
-          "width": 300,
-          "x": 335,
-          "y": 431,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 600,
-          "layer": "",
-          "locked": true,
-          "name": "Bg",
-          "width": 800,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "Menu",
-          "locked": false,
-          "name": "MenuPill_Inactive",
-          "width": 300,
-          "x": 251,
-          "y": 245,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Load"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 279,
-          "layer": "Menu",
-          "locked": false,
-          "name": "Menu",
-          "width": 402,
-          "x": 200,
-          "y": 226,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "OptionIds",
-              "value": "Load, Start, Exit"
-            }
-          ]
-        }
-      ],
-      "objects": [
-        {
-          "height": 32,
-          "name": "MainBg",
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\Menu-pause.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Title2",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "U n b o u n d",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 58,
-          "color": {
-            "b": 11,
-            "g": 10,
-            "r": 141
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Title",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 80,
-          "color": {
-            "b": 90,
-            "g": 46,
-            "r": 7
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Start",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Start",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Load",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Load",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Exit",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Exit",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "name": "Menu",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Menu",
-              "type": "srs_objs::Menu"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bottomMargin": 20,
-          "height": 70,
-          "leftMargin": 24,
-          "name": "MenuPill_Inactive",
-          "rightMargin": 24,
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
-          "tiled": false,
-          "topMargin": 20,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 300,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "MenuOption",
-              "type": "srs_objs::MenuOption"
-            }
-          ]
-        },
-        {
-          "bottomMargin": 20,
-          "height": 70,
-          "leftMargin": 24,
-          "name": "MenuPill_Active",
-          "rightMargin": 24,
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
-          "tiled": false,
-          "topMargin": 20,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 300,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "S_ChooseSelection",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State"
-            }
-          ],
-          "string": "S_ChooseSelection",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "S_ChangeSelection",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State"
-            }
-          ],
-          "string": "S_ChangeSelection",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "name": "Bg",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\Menu-main.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Setup menu",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::loadGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LoadResult: \" + VariableString(LoadResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "!=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::ForEach",
-                          "object": "MenuPill_Inactive",
-                          "conditions": [],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "StrEqual"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive.MenuOption::Id()",
-                                    "=",
-                                    "\"Load\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "Delete"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive",
-                                    "MenuPill_Inactive"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "StrEqual"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive.MenuOption::Id()",
-                                    "=",
-                                    "\"Start\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreY"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive",
-                                    "-",
-                                    "60"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreY"
-                                  },
-                                  "parameters": [
-                                    "T_Opt_Start",
-                                    "-",
-                                    "60"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "StrEqual"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive.MenuOption::Id()",
-                                    "=",
-                                    "\"Exit\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreY"
-                                  },
-                                  "parameters": [
-                                    "MenuPill_Inactive",
-                                    "-",
-                                    "40"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreY"
-                                  },
-                                  "parameters": [
-                                    "T_Opt_Exit",
-                                    "-",
-                                    "40"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "T_Opt_Load",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Menu",
-                                "OptionIds",
-                                "=",
-                                "srs_utils::strReplace(Menu.VariableString(OptionIds), \"/Load,?/\", \"\")"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Menu::subscribeToState"
-                  },
-                  "parameters": [
-                    "Menu",
-                    "Menu",
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Menu::handleOptions"
-                  },
-                  "parameters": [
-                    "Menu",
-                    "Menu",
-                    "MenuPill_Inactive",
-                    "MenuOption",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::MenuOption::handleActive"
-                  },
-                  "parameters": [
-                    "MenuPill_Inactive",
-                    "MenuOption",
-                    "MenuPill_Active",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Choose selection",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsRunning"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::Return"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Start\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::pushScene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"L_C2_MeetClum\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Load\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "VariableString(SavedGame.LastLevel)",
-                            "yes"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "!=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"There is no level to load\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Exit\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Quit"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        },
-        {
-          "name": "Menu",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "name": "Text",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Binder",
-          "type": "srs_ctrl::Binder"
-        },
-        {
-          "name": "Clum",
-          "type": "srs_objs::Clum"
-        },
-        {
-          "name": "Exit",
-          "type": "srs_objs::Exit"
-        },
-        {
-          "name": "HiddenRegion",
-          "type": "srs_objs::HiddenRegion"
-        },
-        {
-          "name": "Menu",
-          "type": "srs_objs::Menu"
-        },
-        {
-          "name": "MenuOption",
-          "type": "srs_objs::MenuOption"
-        },
-        {
-          "name": "Obstacle",
-          "type": "srs_objs::Obstacle"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
-        },
-        {
-          "name": "State",
-          "type": "srs_states::State"
-        },
-        {
-          "name": "StateText",
-          "type": "srs_states::StateText"
-        },
-        {
-          "name": "Toggle",
-          "type": "srs_objs::Toggle"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "M_95Pause",
-      "name": "M_Pause",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 10,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 10,
-        "snap": false,
-        "windowMask": false,
-        "zoomFactor": 1.072
-      },
-      "objectsGroups": [
-        {
-          "name": "Options",
-          "objects": [
-            {
-              "name": "T_Opt_Continue"
-            },
-            {
-              "name": "T_Opt_Load"
-            },
-            {
-              "name": "T_Opt_Save"
-            }
-          ]
-        }
-      ],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 610,
-          "layer": "",
-          "locked": true,
-          "name": "PuaseBg",
-          "width": 810,
-          "x": -5,
-          "y": -5,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "T_Title",
-          "width": 360,
-          "x": 220,
-          "y": 90,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 70,
-          "layer": "",
-          "locked": false,
-          "name": "MenuPill_Inactive",
-          "width": 300,
-          "x": 255,
-          "y": 255,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Continue"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 50,
-          "layer": "OptionText",
-          "locked": false,
-          "name": "T_Opt_Continue",
-          "width": 300,
-          "x": 280,
-          "y": 269,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 50,
-          "layer": "OptionText",
-          "locked": false,
-          "name": "T_Opt_Load",
-          "width": 250,
-          "x": -261,
-          "y": 342,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "S_ChooseSelection",
-          "width": 0,
-          "x": -212,
-          "y": 47,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 40,
-          "layer": "OptionText",
-          "locked": false,
-          "name": "T_Opt_Save",
-          "width": 300,
-          "x": -235,
-          "y": 497,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "MenuPill_Inactive",
-          "width": 0,
-          "x": 255,
-          "y": 370,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Exit"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 282,
-          "layer": "",
-          "locked": false,
-          "name": "Menu",
-          "width": 400,
-          "x": 206,
-          "y": 201,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "OptionIds",
-              "value": "Continue, Exit"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "T_Opt_Exit",
-          "width": 0,
-          "x": 338,
-          "y": 384,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "height": 32,
-          "name": "PuaseBg",
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\Menu-pause.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Title",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 69,
-          "color": {
-            "b": 3,
-            "g": 3,
-            "r": 180
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Save",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Save",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Exit",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Exit",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Continue",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Continue",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "T_Opt_Load",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Load",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 42,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
-        },
-        {
-          "name": "Menu",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Menu",
-              "type": "srs_objs::Menu"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "bottomMargin": 20,
-          "height": 70,
-          "leftMargin": 24,
-          "name": "MenuPill_Active",
-          "rightMargin": 24,
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
-          "tiled": false,
-          "topMargin": 20,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 300,
-          "variables": [],
-          "behaviors": []
-        },
-        {
-          "bottomMargin": 20,
-          "height": 70,
-          "leftMargin": 24,
-          "name": "MenuPill_Inactive",
-          "rightMargin": 24,
-          "tags": "",
-          "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
-          "tiled": false,
-          "topMargin": 20,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 300,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "MenuOption",
-              "type": "srs_objs::MenuOption"
-            }
-          ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "S_ChooseSelection",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "State",
-              "type": "srs_states::State"
-            }
-          ],
-          "string": "S_ChooseSelection",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        }
-      ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Setup menu",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Menu::subscribeToState"
-                  },
-                  "parameters": [
-                    "Menu",
-                    "Menu",
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Menu::handleOptions"
-                  },
-                  "parameters": [
-                    "Menu",
-                    "Menu",
-                    "MenuPill_Inactive",
-                    "MenuOption",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::MenuOption::handleActive"
-                  },
-                  "parameters": [
-                    "MenuPill_Inactive",
-                    "MenuOption",
-                    "MenuPill_Active",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Choose option",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsRunning"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::Return"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Continue\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PopScene"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Exit\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::pushScene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"M_Main\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Load\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::loadGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LoadResult: \" + VariableString(LoadResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "VariableString(SavedGame.LastLevel)",
-                            "yes"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        }
-      ],
-      "layers": [
-        {
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        },
-        {
-          "name": "OptionText",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Binder",
-          "type": "srs_ctrl::Binder"
-        },
-        {
-          "name": "Clum",
-          "type": "srs_objs::Clum"
-        },
-        {
-          "name": "Exit",
-          "type": "srs_objs::Exit"
-        },
-        {
-          "name": "HiddenRegion",
-          "type": "srs_objs::HiddenRegion"
-        },
-        {
-          "name": "Menu",
-          "type": "srs_objs::Menu"
-        },
-        {
-          "name": "MenuOption",
-          "type": "srs_objs::MenuOption"
-        },
-        {
-          "name": "Obstacle",
-          "type": "srs_objs::Obstacle"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
-        },
-        {
-          "name": "State",
-          "type": "srs_states::State"
-        },
-        {
-          "name": "StateText",
-          "type": "srs_states::StateText"
-        },
-        {
-          "name": "Toggle",
-          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -73197,32 +73171,6 @@
           ],
           "parameters": [],
           "objectGroups": []
-        },
-        {
-          "description": "",
-          "fullName": "",
-          "functionType": "Action",
-          "name": "Function",
-          "sentence": "",
-          "events": [],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "",
-              "longDescription": "",
-              "name": "",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "objectList"
-            }
-          ],
-          "objectGroups": [
-            {
-              "name": "Group",
-              "objects": []
-            }
-          ]
         }
       ],
       "eventsBasedBehaviors": [
@@ -76657,6 +76605,39 @@
                       "conditions": [
                         {
                           "type": {
+                            "inverted": true,
+                            "value": "AnyKeyPressed"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "AnyKeyReleased",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
                             "inverted": false,
                             "value": "srs_states::State::IsInitialized"
                           },
@@ -76664,6 +76645,19 @@
                             "State",
                             "StateBehavior",
                             ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "AnyKeyReleased",
+                            "=",
+                            "1"
                           ],
                           "subInstructions": []
                         }
