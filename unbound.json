@@ -11659,12 +11659,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -11674,11 +11674,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -13506,7 +13506,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.066
+        "zoomFactor": 1.354
       },
       "objectsGroups": [],
       "variables": [
@@ -13524,8 +13524,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 112,
-          "y": 122,
+          "x": 111,
+          "y": 121,
           "zOrder": 200,
           "numberProperties": [],
           "stringProperties": [],
@@ -13935,7 +13935,7 @@
           "name": "Binder",
           "width": 40,
           "x": 111,
-          "y": 119,
+          "y": 118,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -14333,9 +14333,9 @@
           "layer": "UI",
           "locked": false,
           "name": "T_GoodChoice",
-          "width": 117,
-          "x": 107,
-          "y": 51,
+          "width": 149,
+          "x": 65,
+          "y": 42,
           "zOrder": 501,
           "numberProperties": [],
           "stringProperties": [],
@@ -14375,7 +14375,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
@@ -15178,7 +15178,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "ah, \u201c_key_\u201d\ngood choice",
+          "string": "ah, good choice",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -15357,6 +15357,15 @@
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "LevelWithoutControls"
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -15546,7 +15555,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Intro",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15861,7 +15870,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Learn",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16473,7 +16482,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "PC controls",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -16481,84 +16490,11 @@
                     {
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::SubscribeToState"
-                          },
-                          "parameters": [
-                            "Controls",
-                            "Bindable",
-                            "Controls",
-                            "State",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::ControlPC"
-                          },
-                          "parameters": [
-                            "Controls",
-                            "Bindable",
-                            "Clum",
-                            "TopDownMovement",
-                            "Controls",
-                            "State",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Binder",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::HandleBinderCollision"
-                          },
-                          "parameters": [
-                            "Controls",
-                            "Bindable",
-                            "Clum",
-                            "Controls",
-                            "State",
-                            "Binder",
-                            "State",
-                            "Binder",
-                            "Binder",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::BindIndicator::SubscribeToState"
-                          },
-                          "parameters": [
-                            "BindIndicator",
-                            "BindIndicator",
-                            "Binder",
-                            "State",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
+                      "type": "BuiltinCommonInstructions::Link",
+                      "include": {
+                        "includeConfig": 0
+                      },
+                      "target": "Controls"
                     }
                   ],
                   "parameters": []
@@ -16569,14 +16505,14 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Tutorial transitions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -16659,7 +16595,7 @@
                           "comment2": ""
                         },
                         {
-                          "disabled": false,
+                          "disabled": true,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
@@ -16987,216 +16923,8 @@
                     }
                   ],
                   "parameters": []
-                },
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": false,
-                  "name": "Scene transitions",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Reset-o-button",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Space"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "CurrentSceneName()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Clum",
-                            "Exit",
-                            "",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_objs::Exit::HandleCollision"
-                          },
-                          "parameters": [
-                            "Exit",
-                            "Exit",
-                            "Clum",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ],
-                  "parameters": []
                 }
               ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Always running",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Obstacle::HandleCollision"
-                  },
-                  "parameters": [
-                    "Obstacle",
-                    "Obstacle",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Unbound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::UnboundCount())"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "Animation",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Make that boy bounce",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::Clum::AnimateMovement"
-                      },
-                      "parameters": [
-                        "Clum",
-                        "Clum",
-                        "Clum",
-                        "TopDownMovement",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
             }
           ],
           "parameters": []
@@ -17713,12 +17441,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 572,
-          "y": 23,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -17728,12 +17456,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 717,
-          "y": 25,
+          "x": 718,
+          "y": 20,
           "zOrder": 208,
           "numberProperties": [],
           "stringProperties": [],
@@ -19267,12 +18995,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -19282,11 +19010,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -20504,12 +20232,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -20519,11 +20247,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -21707,12 +21435,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -21722,11 +21450,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -22945,12 +22673,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -22960,11 +22688,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -24308,12 +24036,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -24323,11 +24051,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -25547,12 +25275,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -25562,11 +25290,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -26955,12 +26683,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -26970,11 +26698,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -28818,12 +28546,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -28837,7 +28565,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 25,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -32091,12 +31819,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -32106,11 +31834,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -33409,12 +33137,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -33424,11 +33152,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -34694,12 +34422,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -34709,11 +34437,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -36005,12 +35733,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -36020,11 +35748,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -39254,7 +38982,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 590,
+          "x": 575,
           "y": 20,
           "zOrder": 401,
           "numberProperties": [],
@@ -39269,7 +38997,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 730,
+          "x": 718,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -41898,7 +41626,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 590,
+          "x": 575,
           "y": 20,
           "zOrder": 401,
           "numberProperties": [],
@@ -41913,7 +41641,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 730,
+          "x": 718,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -46526,7 +46254,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 590,
+          "x": 575,
           "y": 20,
           "zOrder": 401,
           "numberProperties": [],
@@ -46541,7 +46269,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 730,
+          "x": 718,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -51317,7 +51045,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 590,
+          "x": 575,
           "y": 20,
           "zOrder": 401,
           "numberProperties": [],
@@ -51332,7 +51060,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 730,
+          "x": 718,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -55681,8 +55409,8 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 400,
           "numberProperties": [],
           "stringProperties": [],
@@ -55696,7 +55424,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 400,
           "numberProperties": [],
@@ -58974,12 +58702,12 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -58989,11 +58717,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -61498,8 +61226,8 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 571,
-          "y": 18,
+          "x": 575,
+          "y": 20,
           "zOrder": 207,
           "numberProperties": [],
           "stringProperties": [],
@@ -61513,7 +61241,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 716,
+          "x": 718,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -63339,6 +63067,107 @@
   ],
   "externalEvents": [
     {
+      "associatedLayout": "L_CameraTests",
+      "lastChangeTimeStamp": 0,
+      "name": "__effin_workaround__",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Egal"
+              },
+              "parameters": [
+                "0",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_utils::consoleLog"
+              },
+              "parameters": [
+                "",
+                "ToString(srs_utils::getLimitedTimerFraction(Object, \"__effin_workaround__\"))",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_utils::consoleLog"
+              },
+              "parameters": [
+                "",
+                "ToString(srs_utils::getLimitedTimerElapsed(Object, \"__effin_workaround__\"))",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_utils::consoleLog"
+              },
+              "parameters": [
+                "",
+                "ToString(srs_utils::getLimitedTimerLimit(Object, \"__effin_workaround__\"))",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::isScene"
+              },
+              "parameters": [
+                "",
+                "\"M_LevelSelect\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ]
+    },
+    {
       "associatedLayout": "L_C2_PingPong",
       "lastChangeTimeStamp": 0,
       "name": "CursorHiding",
@@ -63676,9 +63505,9 @@
       ]
     },
     {
-      "associatedLayout": "L_C2_BigA",
+      "associatedLayout": "L_C3_Dimwit",
       "lastChangeTimeStamp": 0,
-      "name": "BasicLevel",
+      "name": "LevelWithoutControls",
       "events": [
         {
           "disabled": false,
@@ -64140,7 +63969,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "name": "Controls",
           "source": "",
@@ -64261,499 +64090,44 @@
       ]
     },
     {
-      "associatedLayout": "L_CameraTests",
+      "associatedLayout": "L_C3_Dimwit",
       "lastChangeTimeStamp": 0,
-      "name": "__effin_workaround__",
+      "name": "BasicLevel",
       "events": [
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "LevelWithoutControls"
         },
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Egal"
-              },
-              "parameters": [
-                "0",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_utils::consoleLog"
-              },
-              "parameters": [
-                "",
-                "ToString(srs_utils::getLimitedTimerFraction(Object, \"__effin_workaround__\"))",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_utils::consoleLog"
-              },
-              "parameters": [
-                "",
-                "ToString(srs_utils::getLimitedTimerElapsed(Object, \"__effin_workaround__\"))",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_utils::consoleLog"
-              },
-              "parameters": [
-                "",
-                "ToString(srs_utils::getLimitedTimerLimit(Object, \"__effin_workaround__\"))",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Controls"
         },
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::isScene"
-              },
-              "parameters": [
-                "",
-                "\"M_LevelSelect\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CursorHiding"
         }
       ]
     },
     {
-      "associatedLayout": "M_Pause",
+      "associatedLayout": "L_C3_Dimwit",
       "lastChangeTimeStamp": 0,
-      "name": "MenuWithOptions",
+      "name": "Controls",
       "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "Variable Defaults",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "INACTIVE_PILL_Z",
-                        "=",
-                        "5"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "ACTIVE_PILL_Z",
-                        "=",
-                        "Variable(INACTIVE_PILL_Z) + 1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": []
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": false,
-              "name": "Menu pill setup",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Cleanup the demo ones just used for templating",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "MenuPill_Active",
-                        "MenuPill_Active"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "MenuPill_Inactive",
-                        "MenuPill_Active"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Give each option its own in/active pills",
-                  "comment2": ""
-                },
-                {
-                  "disabled": false,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "Options",
-                  "conditions": [],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Creating pills for: \" + Options.ObjectName()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::playlistAdd"
-                          },
-                          "parameters": [
-                            "",
-                            "\"MenuOptions\"",
-                            "Options.ObjectName()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Active",
-                            "0",
-                            "0",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "=",
-                            "Variable(ACTIVE_PILL_Z)"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Options",
-                            "MenuPill_Active"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Inactive",
-                            "0",
-                            "0",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangePlan"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "=",
-                            "Variable(INACTIVE_PILL_Z)"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Options",
-                            "MenuPill_Inactive"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Gosh darn alignment",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Active",
-                            "Options"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "MenuPill_Inactive",
-                            "Options"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreAutour"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "Options",
-                            "0",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "MenuPill_Inactive",
-                            "-",
-                            "4"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreAutour"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "Options",
-                            "0",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "MenuPill_Active",
-                            "-",
-                            "4"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ],
-              "parameters": []
-            }
-          ]
-        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -64761,314 +64135,84 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Manage options",
+          "name": "Controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::SubscribeToState"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Bindable::ControlPC"
+                  },
+                  "parameters": [
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "TopDownMovement",
+                    "Controls",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Options",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "MenuPill_Active",
-                    "Options"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "MenuPill_Inactive",
-                    "Options"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
-                        "=",
-                        "Options.ObjectName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "MenuPill_Active",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "MenuPill_Inctive"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
-                        "!=",
-                        "Options.ObjectName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "MenuPill_Active"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "MenuPill_Inctive",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Change selection",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsInitialized"
-                  },
-                  "parameters": [
-                    "S_ChangeSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Up\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::playlistPrevious"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MenuOptions\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Run"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Down\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::playlistNext"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MenuOptions\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Run"
-                      },
-                      "parameters": [
-                        "S_ChangeSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsRunning"
-                  },
-                  "parameters": [
-                    "S_ChangeSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "object": "Binder",
+              "conditions": [],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ResetTimer"
+                    "value": "srs_ctrl::Bindable::HandleBinderCollision"
                   },
                   "parameters": [
-                    "",
-                    "\"key_throttle\""
+                    "Controls",
+                    "Bindable",
+                    "Clum",
+                    "Controls",
+                    "State",
+                    "Binder",
+                    "State",
+                    "Binder",
+                    "Binder",
+                    ""
                   ],
                   "subInstructions": []
                 },
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_states::State::Return"
+                    "value": "srs_ctrl::Binder::SubscribeToState"
                   },
                   "parameters": [
-                    "S_ChangeSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::HasReturned"
-                  },
-                  "parameters": [
-                    "S_ChangeSelection",
+                    "Binder",
+                    "Binder",
+                    "Binder",
                     "State",
                     ""
                   ],
@@ -65077,385 +64221,13 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Timer"
+                    "value": "srs_ctrl::Binder::CreateBindText"
                   },
                   "parameters": [
-                    "",
-                    ".25",
-                    "\"key_throttle\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::Initialize"
-                  },
-                  "parameters": [
-                    "S_ChangeSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Choose selection",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsInitialized"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Return\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Space\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_states::State::Run"
-                      },
-                      "parameters": [
-                        "S_ChooseSelection",
-                        "State",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::IsRunning"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"key_throttle\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Running action: \" + srs_utils::playlistCurrent(\"MenuOptions\")",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Real actions!",
-                  "comment2": ""
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
-                        "=",
-                        "T_Opt_Start.ObjectName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PopScene"
-                      },
-                      "parameters": [
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
-                        "=",
-                        "T_Opt_Load.ObjectName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::loadGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LoadResult: \" + VariableString(LoadResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "VariableString(SavedGame.LastLevel)",
-                            "yes"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "srs_utils::playlistCurrent(\"MenuOptions\")",
-                        "=",
-                        "T_Opt_Exit.ObjectName()"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::saveGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SaveResult: \" + VariableString(SaveResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::HasReturned"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
+                    "Binder",
+                    "Binder",
+                    "BindText",
+                    "Tween",
                     ""
                   ],
                   "subInstructions": []
@@ -65463,25 +64235,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Timer"
+                    "value": "srs_ctrl::Binder::CreateBindIndicator"
                   },
                   "parameters": [
-                    "",
-                    ".25",
-                    "\"key_throttle\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::State::Initialize"
-                  },
-                  "parameters": [
-                    "S_ChooseSelection",
-                    "State",
+                    "Binder",
+                    "Binder",
+                    "BindIndicator",
                     ""
                   ],
                   "subInstructions": []
@@ -71641,41 +70400,7 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"needs creation\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "ToString(BindIndicator.X()) + \",\" + ToString(BindIndicator.Y()) ",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
+                  "events": []
                 },
                 {
                   "disabled": false,
@@ -71724,39 +70449,6 @@
                     }
                   ],
                   "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"needs destruction\"",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "ToString(BindIndicator.X()) + \",\" + ToString(BindIndicator.Y()) ",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
                     {
                       "disabled": false,
                       "folded": false,

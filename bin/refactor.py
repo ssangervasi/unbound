@@ -34,7 +34,7 @@ def position_counters(project):
                 instance["layer"] = "UI"
 
 
-OPERATIONS = [remove_bind_indicators, position_reminders]
+OPERATIONS = [remove_bind_indicators, position_reminders, position_counters]
 
 
 def main(args):
