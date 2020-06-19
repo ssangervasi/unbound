@@ -12,6 +12,17 @@ def remove_bind_indicators(project):
         layout["instances"] = new_instances
 
 
+def remove_non_global_counters(project):
+    for layout in project["layouts"]:
+        original_instances = layout["objects"]
+        new_instances = [
+            instance
+            for instance in original_instances
+            if instance["name"] not in ("Unbound_Val", "Unbound_Desc")
+        ]
+        layout["instances"] = new_instances
+
+
 def position_reminders(project):
     for layout in project["layouts"]:
         for instance in layout["instances"]:
@@ -34,7 +45,12 @@ def position_counters(project):
                 instance["layer"] = "UI"
 
 
-OPERATIONS = [remove_bind_indicators, position_reminders, position_counters]
+OPERATIONS = [
+    remove_bind_indicators,
+    position_reminders,
+    position_counters,
+    remove_non_global_counters,
+]
 
 
 def main(args):
@@ -48,7 +64,8 @@ def main(args):
 
     with open("./unbound.refactor.json", "w") as project_file:
         json.dump(
-            project, project_file,
+            project,
+            project_file,
             # sort_keys=True,
             indent=2,
         )
