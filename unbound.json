@@ -11490,7 +11490,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.288
+        "zoomFactor": 1.168
       },
       "objectsGroups": [],
       "variables": [],
@@ -11663,7 +11663,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 575,
+          "x": 551,
           "y": 20,
           "zOrder": 207,
           "numberProperties": [],
@@ -12993,7 +12993,7 @@
           "variables": [],
           "behaviors": [],
           "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 30,
           "color": {
             "b": 252,
@@ -13012,7 +13012,7 @@
           "variables": [],
           "behaviors": [],
           "string": "4",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
           "characterSize": 30,
           "color": {
             "b": 252,
@@ -13433,10 +13433,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -13471,6 +13467,10 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
