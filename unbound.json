@@ -8415,12 +8415,16 @@
       "variables": [],
       "behaviors": [
         {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
       ],
       "string": "Unbound:",
-      "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+      "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
       "characterSize": 30,
       "color": {
         "b": 252,
@@ -8439,12 +8443,16 @@
       "variables": [],
       "behaviors": [
         {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
       ],
       "string": "2",
-      "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+      "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
       "characterSize": 30,
       "color": {
         "b": 252,
@@ -13506,7 +13514,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.354
+        "zoomFactor": 2.266
       },
       "objectsGroups": [],
       "variables": [
@@ -14379,7 +14387,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 510,
           "numberProperties": [],
@@ -16985,6 +16993,10 @@
         {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
         },
         {
           "name": "ResetReminder",

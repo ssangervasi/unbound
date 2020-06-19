@@ -5,7 +5,7 @@ import fontforge
 
 def main():
     print("Opening font")
-    filename = "Basty-tiny.sfd"
+    filename = "Basty.sfd"
     font = fontforge.open(filename)
 
     # import_letters(font)
@@ -22,7 +22,7 @@ def import_letters(font):
 
 
 def import_numbers(font):
-    for n in map(str, range(0, 9)):
+    for n in map(str, range(0, 10)):
         print(f"Importing number: {n}")
         import_glyph(font, n)
 
@@ -68,12 +68,12 @@ def import_symbols(font):
         import_glyph(font, s, file_alias=alias)
 
 
-def import_glyph(font, glyph, file_alias=None):
+def import_glyph(font, glyph_name, file_alias=None):
     if file_alias is None:
-        file_alias = glyph
+        file_alias = glyph_name
 
-    glyph = font.createMappedChar(glyph)
-    glyph.importOutlines(f"letters/BastyFont ({glyph}).svg")
+    glyph = font.createMappedChar(glyph_name)
+    glyph.importOutlines(f"letters/BastyFont ({file_alias}).svg")
 
 
 if __name__ == "__main__":
