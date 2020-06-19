@@ -20,7 +20,7 @@ def remove_non_global_counters(project):
             for instance in original_instances
             if instance["name"] not in ("Unbound_Val", "Unbound_Desc")
         ]
-        layout["instances"] = new_instances
+        layout["objects"] = new_instances
 
 
 def position_reminders(project):
@@ -35,12 +35,12 @@ def position_reminders(project):
 def position_counters(project):
     for layout in project["layouts"]:
         for instance in layout["instances"]:
-            if instance["name"] == "Unbound_Val":
-                instance["x"] = 718
+            if instance["name"] == "Unbound_Desc":
+                instance["x"] = 575
                 instance["y"] = 20
                 instance["layer"] = "UI"
-            elif instance["name"] == "Unbound_Desc":
-                instance["x"] = 575
+            elif instance["name"] == "Unbound_Val":
+                instance["x"] = 745
                 instance["y"] = 20
                 instance["layer"] = "UI"
 

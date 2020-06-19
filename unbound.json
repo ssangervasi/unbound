@@ -2301,13 +2301,13 @@
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 1000,
-          "allowDiagonals": false,
-          "deceleration": 1000,
           "maxSpeed": 300,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
+          "deceleration": 1000,
           "ignoreDefaultControls": true,
-          "rotateObject": false
+          "rotateObject": false,
+          "allowDiagonals": false
         }
       ],
       "animations": [
@@ -7198,8 +7198,8 @@
         {
           "name": "State",
           "type": "srs_states::State",
-          "Name": "State0",
-          "Status": "initialized"
+          "Status": "initialized",
+          "Name": "State0"
         }
       ],
       "animations": [
@@ -8246,8 +8246,8 @@
         {
           "name": "State",
           "type": "srs_states::State",
-          "Name": "State0",
-          "Status": "initialized"
+          "Status": "initialized",
+          "Name": "State0"
         }
       ],
       "animations": [
@@ -8347,8 +8347,8 @@
         {
           "name": "State",
           "type": "srs_states::State",
-          "Name": "State1",
-          "Status": "initialized"
+          "Status": "initialized",
+          "Name": "State1"
         },
         {
           "name": "StateText",
@@ -8382,8 +8382,8 @@
         {
           "name": "State",
           "type": "srs_states::State",
-          "Name": "State0",
-          "Status": "initialized"
+          "Status": "initialized",
+          "Name": "State0"
         },
         {
           "name": "StateText",
@@ -11671,7 +11671,7 @@
           "locked": false,
           "name": "Unbound_Desc",
           "width": 0,
-          "x": 551,
+          "x": 575,
           "y": 20,
           "zOrder": 207,
           "numberProperties": [],
@@ -11686,7 +11686,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -12991,57 +12991,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "4",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -13514,7 +13476,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 2.266
+        "zoomFactor": 1.978
       },
       "objectsGroups": [],
       "variables": [
@@ -14672,8 +14634,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_Intro",
@@ -14698,8 +14660,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SRunning",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SRunning"
             }
           ],
           "string": "S_Play",
@@ -14748,8 +14710,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SPause"
             }
           ],
           "string": "S_Meany",
@@ -14774,8 +14736,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SPause"
             },
             {
               "name": "StatePause",
@@ -14805,8 +14767,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SPause"
             }
           ],
           "string": "S_Sorry",
@@ -14836,8 +14798,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "State1",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "State1"
             }
           ],
           "string": "S_HideMeany",
@@ -14862,8 +14824,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SPause",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SPause"
             }
           ],
           "string": "S_Better",
@@ -14888,8 +14850,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_Learn",
@@ -14938,8 +14900,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_FirstBind",
@@ -14964,8 +14926,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_SecondBind",
@@ -14990,8 +14952,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_RevealUnbound",
@@ -15016,8 +14978,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "SOpening",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "SOpening"
             }
           ],
           "string": "S_ThirdBind",
@@ -15042,8 +15004,8 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 0,
               "CharactersPerSecond": 0,
+              "FullTime": 0,
               "WordsPerMinute": 60
             },
             {
@@ -15073,9 +15035,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -15104,8 +15066,8 @@
             {
               "name": "State",
               "type": "srs_states::State",
-              "Name": "State1",
-              "Status": "initialized"
+              "Status": "initialized",
+              "Name": "State1"
             },
             {
               "name": "StateText",
@@ -17472,7 +17434,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -18009,57 +17971,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -18110,9 +18034,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "if you get stuck, don't worry...",
@@ -18141,9 +18065,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "just try holding the spacebar\n",
@@ -18172,9 +18096,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "or not. you got it.",
@@ -18203,8 +18127,8 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "FullTime": 0,
               "CharactersPerSecond": 0,
+              "FullTime": 0,
               "WordsPerMinute": 130
             },
             {
@@ -19026,7 +18950,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -19888,57 +19812,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -20263,7 +20149,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -21110,57 +20996,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -21466,7 +21314,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -22313,57 +22161,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -22704,7 +22514,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -23701,57 +23511,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -24067,7 +23839,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -24975,13 +24747,13 @@
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -25118,7 +24890,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.649
+        "zoomFactor": 1.577
       },
       "objectsGroups": [],
       "variables": [],
@@ -25306,7 +25078,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -26398,57 +26170,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -26714,7 +26448,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -28211,57 +27945,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -28577,7 +28273,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 25,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -30031,49 +29727,6 @@
         {
           "bold": false,
           "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "string": "2",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
           "name": "S_Narration",
           "smoothed": true,
           "tags": "",
@@ -30516,9 +30169,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "hey, your memory\nis coming back!",
@@ -30571,9 +30224,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "well done, kid\nwe're all...",
@@ -30602,9 +30255,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "well,\ni'm proud of you,\nat least",
@@ -30633,9 +30286,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 120,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 120
             }
           ],
           "string": "IT\nWON'T\nMAKE\nANY\nDIFFERENCE.",
@@ -31850,7 +31503,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -32787,57 +32440,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         }
@@ -33168,7 +32783,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -33975,57 +33590,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -34453,7 +34030,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -35360,57 +34937,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -35764,7 +35303,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -37251,57 +36790,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -39009,7 +38510,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -40017,13 +39518,13 @@
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -40136,9 +39637,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "looks like the\nlights are out\n\nlet me get that",
@@ -40167,9 +39668,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             }
           ],
           "string": "that's better",
@@ -41653,7 +41154,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -44736,13 +44237,13 @@
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -44855,9 +44356,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -46281,7 +45782,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -49691,13 +49192,13 @@
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -49810,9 +49311,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -51072,7 +50573,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 402,
           "numberProperties": [],
@@ -54806,13 +54307,13 @@
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -54925,9 +54426,9 @@
             {
               "name": "StateText",
               "type": "srs_states::StateText",
-              "WordsPerMinute": 130,
               "CharactersPerSecond": 0,
-              "FullTime": 0
+              "FullTime": 0,
+              "WordsPerMinute": 130
             },
             {
               "name": "Tween",
@@ -55436,7 +54937,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 400,
           "numberProperties": [],
@@ -58231,57 +57732,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -58733,7 +58196,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -60165,57 +59628,19 @@
           }
         },
         {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "3",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
           "name": "FontTest",
           "tags": "",
           "type": "BBText::BBText",
           "variables": [],
           "behaviors": [],
           "content": {
-            "text": "Sometext",
             "opacity": 255,
-            "fontSize": "10",
-            "visible": true,
-            "color": "#000000",
             "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
             "align": "left",
+            "visible": true,
+            "fontSize": "10",
             "wordWrap": true
           }
         },
@@ -61253,7 +60678,7 @@
           "locked": false,
           "name": "Unbound_Val",
           "width": 0,
-          "x": 718,
+          "x": 745,
           "y": 20,
           "zOrder": 208,
           "numberProperties": [],
@@ -62659,44 +62084,6 @@
           "bold": false,
           "italic": false,
           "name": "Bound_Val",
-          "smoothed": true,
-          "tags": "ui, text",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "0",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Desc",
-          "smoothed": true,
-          "tags": "ui",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Unbound:",
-          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-          "characterSize": 30,
-          "color": {
-            "b": 252,
-            "g": 198,
-            "r": 227
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "Unbound_Val",
           "smoothed": true,
           "tags": "ui, text",
           "type": "TextObject::Text",
