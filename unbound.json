@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.ssangervasi.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.refactor.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -8511,7 +8511,7 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.04,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
@@ -9283,6 +9283,137 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Transition",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Pitch",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\Darkness\\Darkness-pitch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Full",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\Darkness\\Darkness-full.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\Darkness\\Darkness-shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Debug",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\HiddenRegion\\HiddenRegion-debug.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -13076,7 +13207,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 215,
           "numberProperties": [],
@@ -13304,7 +13435,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Exit::HandleCollision"
+                    "value": "srs_objs::Exit::handleCollision"
                   },
                   "parameters": [
                     "Exit",
@@ -14711,7 +14842,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 6017,
           "numberProperties": [],
@@ -15525,57 +15656,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "disabled": true,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::StateMachine::ManageState"
-                  },
-                  "parameters": [
-                    "SM_Scene",
-                    "StateMachine",
-                    "S_Intro",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::StateMachine::ManageState"
-                  },
-                  "parameters": [
-                    "SM_Scene",
-                    "StateMachine",
-                    "S_Learn",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_states::StateMachine::ManageState"
-                  },
-                  "parameters": [
-                    "SM_Scene",
-                    "StateMachine",
-                    "S_Play",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
@@ -15637,6 +15717,26 @@
                       },
                       "parameters": [
                         "Unbound_Val"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "ResetReminder"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "PauseReminder"
                       ],
                       "subInstructions": []
                     }
@@ -17966,7 +18066,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 210,
           "numberProperties": [],
@@ -18379,7 +18479,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Tutorial: Reset button",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18422,7 +18522,37 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "ResetReminder"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "PauseReminder"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -18502,36 +18632,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"friendly: \" + srs_utils::peekScene(1,\"nope\")",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -18627,6 +18727,50 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateMachine::IsFinished"
+                      },
+                      "parameters": [
+                        "SM_FriendlyTutorial",
+                        "StateMachine",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "ResetReminder",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "PauseReminder",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ]
             },
@@ -18708,44 +18852,6 @@
               ],
               "actions": [],
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"meany: \" + srs_utils::peekScene(1,\"nope\")",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -18901,16 +19007,16 @@
           "type": "srs_objs::HiddenRegion"
         },
         {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
         {
           "name": "RescaledText",
           "type": "srs_utils::RescaledText"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -18962,7 +19068,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.549
+        "zoomFactor": 0.877
       },
       "objectsGroups": [],
       "variables": [],
@@ -19470,7 +19576,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -19956,6 +20062,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 629,
+          "layer": "Transition",
+          "locked": false,
+          "name": "Transition",
+          "width": 862,
+          "x": -37,
+          "y": -15,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -20103,6 +20224,29 @@
           "visibility": true,
           "cameras": [],
           "effects": []
+        },
+        {
+          "name": "Transition",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 0,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -20127,16 +20271,16 @@
           "type": "srs_objs::HiddenRegion"
         },
         {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
         {
           "name": "RescaledText",
           "type": "srs_utils::RescaledText"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -20153,6 +20297,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
         },
         {
           "name": "Tween",
@@ -20184,7 +20332,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.645
+        "zoomFactor": 1.621
       },
       "objectsGroups": [],
       "variables": [],
@@ -20692,7 +20840,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -21364,7 +21512,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.549
+        "zoomFactor": 1.477
       },
       "objectsGroups": [],
       "variables": [],
@@ -21872,7 +22020,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -23137,7 +23285,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -24932,7 +25080,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 213,
           "numberProperties": [],
@@ -25651,7 +25799,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -26996,7 +27144,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -28671,7 +28819,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -32691,7 +32839,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -33736,7 +33884,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 212,
           "numberProperties": [],
@@ -35073,7 +35221,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 212,
           "numberProperties": [],
@@ -36031,7 +36179,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 212,
           "numberProperties": [],
@@ -37753,7 +37901,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 400,
           "numberProperties": [],
@@ -40912,7 +41060,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 400,
           "numberProperties": [],
@@ -45600,7 +45748,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 400,
           "numberProperties": [],
@@ -50377,7 +50525,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 400,
           "numberProperties": [],
@@ -55695,7 +55843,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 400,
           "numberProperties": [],
@@ -58744,7 +58892,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 211,
           "numberProperties": [],
@@ -62351,7 +62499,7 @@
           "locked": false,
           "name": "ResetReminder",
           "width": 74,
-          "x": 363.0,
+          "x": 363,
           "y": 530,
           "zOrder": 219,
           "numberProperties": [],
@@ -63555,7 +63703,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Exit::HandleCollision"
+                    "value": "srs_objs::Exit::handleCollision"
                   },
                   "parameters": [
                     "Exit",
@@ -63655,6 +63803,29 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Exit::handleTransition"
+                  },
+                  "parameters": [
+                    "Exit",
+                    "Exit",
+                    "Transition",
+                    "Transition",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -63677,6 +63848,18 @@
                   },
                   "parameters": [
                     "PauseReminder",
+                    "HoldKeyReminder",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::HoldKeyReminder::reset"
+                  },
+                  "parameters": [
+                    "ResetReminder",
                     "HoldKeyReminder",
                     ""
                   ],
@@ -72424,6 +72607,19 @@
                         "Object.Behavior::PropertySceneName()"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -72457,7 +72653,7 @@
               "description": "HandleCollision transitions scene on collision with SceneMap",
               "fullName": "HandleCollision",
               "functionType": "Action",
-              "name": "HandleCollision",
+              "name": "handleCollision",
               "sentence": "_PARAM0_ HandleCollision _PARAM2_",
               "events": [
                 {
@@ -72478,6 +72674,19 @@
                         "yes"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [],
@@ -72486,63 +72695,18 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "StrLength(Object.VariableString(SceneName))",
-                            "<=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
+                      "conditions": [],
                       "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::nextLevel"
+                            "value": "ModVarObjetTxt"
                           },
                           "parameters": [
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "0",
-                            "<",
-                            "StrLength(Object.VariableString(SceneName))"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::pushScene"
-                          },
-                          "parameters": [
-                            "",
-                            "Object.VariableString(SceneName)",
-                            ""
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"triggered\""
                           ],
                           "subInstructions": []
                         }
@@ -72550,6 +72714,14 @@
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -72585,6 +72757,275 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "handleTransition",
+              "fullName": "handleTransition",
+              "functionType": "Action",
+              "name": "handleTransition",
+              "sentence": "_PARAM0_ handleTransition _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Transition::play"
+                      },
+                      "parameters": [
+                        "TransitionObject",
+                        "TransitionBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"transitioning\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"transitioning\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Transition::IsFinished"
+                      },
+                      "parameters": [
+                        "TransitionObject",
+                        "TransitionBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"finished\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Exit::changeScene"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Exit",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "TransitionObject",
+                  "longDescription": "",
+                  "name": "TransitionObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "TransitionBehavior",
+                  "longDescription": "",
+                  "name": "TransitionBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "changeScene",
+              "fullName": "changeScene",
+              "functionType": "Action",
+              "name": "changeScene",
+              "sentence": "changeScene",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "StrLength(Object.VariableString(SceneName))",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::nextLevel"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "0",
+                        "<",
+                        "StrLength(Object.VariableString(SceneName))"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.VariableString(SceneName)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Exit",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -72598,6 +73039,458 @@
               "name": "SceneName"
             }
           ]
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "Transition",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Transition animation",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "DepartScene"
+                          },
+                          "parameters": [
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"triggered\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetLayerEffectParameter"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\"",
+                            "\"AlphaAdjustment\"",
+                            "\"alpha\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::startLimitedTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "Object",
+                                "\"transition_timer\"",
+                                "srs_utils::ms(.2)",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Status",
+                                "=",
+                                "\"playing\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"playing\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetLayerEffectParameter"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Transition\"",
+                                "\"AlphaAdjustment\"",
+                                "\"alpha\"",
+                                "srs_utils::getLimitedTimerFraction(Object, \"transition_timer\"\n)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Egal"
+                              },
+                              "parameters": [
+                                "1",
+                                "<=",
+                                "srs_utils::getLimitedTimerFraction(Object, \"transition_timer\")"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Status",
+                                "=",
+                                "\"finished\""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "play",
+              "fullName": "play",
+              "functionType": "Action",
+              "name": "play",
+              "sentence": "play _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsFinished?",
+              "fullName": "IsFinished?",
+              "functionType": "Condition",
+              "name": "IsFinished",
+              "sentence": "_PARAM0_ IsFinished?",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"finished\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": []
         },
         {
           "description": "",
