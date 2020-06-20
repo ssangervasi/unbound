@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 from collections import namedtuple
 
@@ -7,7 +9,7 @@ WINDOW_RECT = Rect(800, 600)
 WINDOW_CENTER = Coord(WINDOW_RECT.width / 2, WINDOW_RECT.height / 2)
 
 
-OPERATIONS = []
+NAME_TO_OPERATION = {}
 
 
 def reg_op(f):
@@ -15,7 +17,7 @@ def reg_op(f):
     # @wraps(f)
     # def wrapper(project):
     #     return f(project)
-    OPERATIONS.append(f)
+    NAME_TO_OPERATION[f.__name__] = f
     return f
 
 
@@ -43,6 +45,26 @@ def remove_non_global_counters(project):
         layout["objects"] = new_objs
 
 
+def mk_obj(
+    *, name, width, height, x, y, layer,
+):
+    return {
+        "name": name,
+        "width": width,
+        "height": height,
+        "x": x,
+        "y": y,
+        "layer": layer,
+        "angle": 0,
+        "customSize": True,
+        "locked": False,
+        "zOrder": 1,
+        "numberProperties": [],
+        "stringProperties": [],
+        "initialVariables": [],
+    }
+
+
 @reg_op
 def add_pause_reminders_to_levels(project):
     for layout in project["layouts"]:
@@ -54,22 +76,56 @@ def add_pause_reminders_to_levels(project):
             continue
 
         instances.append(
-            {
-                "angle": 0,
-                "customSize": True,
-                "height": 32,
-                "layer": "UI",
-                "locked": False,
-                "name": "PauseReminder",
-                "width": 24,
-                "x": 34,
-                "y": 19,
-                "zOrder": 218,
-                "numberProperties": [],
-                "stringProperties": [],
-                "initialVariables": [],
-            }
+            mk_obj(name="PauseReminder", width=24, height=32, x=34, y=19, layer="UI")
         )
+
+
+@reg_op
+def add_transitions(project):
+    for layout in project["layouts"]:
+        if not layout["name"].startswith("L_"):
+            continue
+
+        instances = layout["instances"]
+        if not any((instance["name"] == "Transition" for instance in instances)):
+            instances.append(
+                mk_obj(
+                    name="Transition",
+                    width=810,
+                    height=610,
+                    x=-5,
+                    y=-5,
+                    layer="Transition",
+                )
+            )
+
+        layers = layout["layers"]
+        if not any((layers["name"] == "Transition" for layers in layers)):
+            layers.append(
+                {
+                    "name": "Transition",
+                    "visibility": False,
+                    "cameras": [],
+                    "effects": [
+                        {
+                            "effectType": "Adjustment",
+                            "name": "AlphaAdjustment",
+                            "doubleParameters": {
+                                "alpha": 0,
+                                "blue": 0.6,
+                                "brightness": 1,
+                                "contrast": 1,
+                                "gamma": 1,
+                                "green": 1,
+                                "red": 1,
+                                "saturation": 2,
+                            },
+                            "stringParameters": {},
+                            "booleanParameters": {},
+                        }
+                    ],
+                }
+            )
 
 
 @reg_op
@@ -112,17 +168,18 @@ def position_counters(project):
                 instance["layer"] = "UI"
 
 
-def main(args):
-    # path_in = './unbound.json'
-    path_in = './unbound.refactor.json'
-    path_out = './unbound.refactor.json'
-    operation = [op for op in OPERATIONS if op.__name__ == args.operation][0]
+def main(*, operations: "str[]"):
+    path_in = "./unbound.json"
+    # path_in = "./unbound.refactor.json"
+    path_out = "./unbound.refactor.json"
 
     project = None
     with open(path_in) as project_file:
         project = json.load(project_file)
 
-    operation(project)
+    for op_name in operations:
+        operation = NAME_TO_OPERATION[op_name]
+        operation(project)
 
     with open(path_out, "w") as project_file:
         json.dump(
@@ -138,7 +195,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "operation", choices=[op.__name__ for op in OPERATIONS],
+        "operations", choices=NAME_TO_OPERATION.keys(), nargs="+",
     )
 
-    main(parser.parse_args())
+    main(**vars(parser.parse_args()))
