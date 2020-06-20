@@ -34,13 +34,13 @@ def remove_bind_indicators(project):
 @reg_op
 def remove_non_global_counters(project):
     for layout in project["layouts"]:
-        original_instances = layout["objects"]
-        new_instances = [
-            instance
-            for instance in original_instances
-            if instance["name"] not in ("Unbound_Val", "Unbound_Desc")
+        original_objs = layout["objects"]
+        new_objs = [
+            obj
+            for obj in original_objs
+            if obj["name"] not in ("Unbound_Val", "Unbound_Desc")
         ]
-        layout["objects"] = new_instances
+        layout["objects"] = new_objs
 
 
 @reg_op
@@ -49,7 +49,7 @@ def add_pause_reminders_to_levels(project):
         if not layout["name"].startswith("L_"):
             continue
 
-        instances = layout["objects"]
+        instances = layout["instances"]
         if any((instance["name"] == "PauseReminder" for instance in instances)):
             continue
 
@@ -77,22 +77,25 @@ def position_reminders(project):
     for layout in project["layouts"]:
         for instance in layout["instances"]:
             if instance["name"] == "ResetReminder":
+                print("ResetReminder", layout["name"])
                 rect = Rect(74, 50)
                 coord = Coord(
                     WINDOW_CENTER.x - (rect.width / 2),
-                    WINDOW_RECT.height - (1.5 * rect.height),
+                    WINDOW_RECT.height - 20 - rect.height,
                 )
                 instance["width"] = rect.width
                 instance["height"] = rect.height
                 instance["x"] = coord.x
                 instance["y"] = coord.y
             elif instance["name"] == "PauseReminder":
+                print("PauseReminder", layout["name"])
                 rect = Rect(37, 50)
-                coord = Coord(2 * rect.width, 1.5 * rect.height)
+                coord = Coord(20, 20)
                 instance["width"] = rect.width
                 instance["height"] = rect.height
                 instance["x"] = coord.x
                 instance["y"] = coord.y
+                print("PauseReminder", instance)
 
 
 @reg_op
