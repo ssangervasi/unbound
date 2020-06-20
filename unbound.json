@@ -15693,7 +15693,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "LevelWithoutControls"
+          "target": "Level"
         },
         {
           "colorB": 228,
@@ -18568,7 +18568,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         },
         {
           "colorB": 228,
@@ -20316,7 +20316,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -21546,7 +21546,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -22784,7 +22784,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -24207,7 +24207,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -25529,7 +25529,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -27012,7 +27012,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -28860,7 +28860,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -31324,7 +31324,7 @@
                   "include": {
                     "includeConfig": 0
                   },
-                  "target": "BasicLevel"
+                  "target": "LevelWithControls"
                 },
                 {
                   "disabled": false,
@@ -33501,7 +33501,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -34762,7 +34762,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -36178,7 +36178,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -38114,7 +38114,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         }
       ],
       "layers": [
@@ -41031,7 +41031,7 @@
               "include": {
                 "includeConfig": 0
               },
-              "target": "BasicLevel"
+              "target": "LevelWithControls"
             },
             {
               "disabled": false,
@@ -46029,7 +46029,7 @@
                   "include": {
                     "includeConfig": 0
                   },
-                  "target": "BasicLevel"
+                  "target": "LevelWithControls"
                 }
               ]
             }
@@ -50799,7 +50799,7 @@
               "include": {
                 "includeConfig": 0
               },
-              "target": "BasicLevel"
+              "target": "LevelWithControls"
             },
             {
               "disabled": true,
@@ -56034,7 +56034,7 @@
               "include": {
                 "includeConfig": 0
               },
-              "target": "BasicLevel"
+              "target": "LevelWithControls"
             }
           ],
           "parameters": []
@@ -59356,7 +59356,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         },
         {
           "disabled": false,
@@ -61740,7 +61740,7 @@
               "include": {
                 "includeConfig": 0
               },
-              "target": "BasicLevel"
+              "target": "LevelWithControls"
             },
             {
               "disabled": false,
@@ -63815,7 +63815,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "BasicLevel"
+          "target": "LevelWithControls"
         },
         {
           "colorB": 228,
@@ -64477,7 +64477,7 @@
     {
       "associatedLayout": "L_CameraTests",
       "lastChangeTimeStamp": 0,
-      "name": "LevelWithoutControls",
+      "name": "Level",
       "events": [
         {
           "disabled": false,
@@ -65021,7 +65021,7 @@
     {
       "associatedLayout": "L_C3_Dimwit",
       "lastChangeTimeStamp": 0,
-      "name": "BasicLevel",
+      "name": "LevelWithControls",
       "events": [
         {
           "disabled": false,
@@ -65030,7 +65030,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "LevelWithoutControls"
+          "target": "Level"
         },
         {
           "disabled": false,
