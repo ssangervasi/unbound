@@ -1408,15 +1408,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/TilePattern.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\TilePattern.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Assets/Sprites/ResetReminder/ResetReminder1.png",
         "kind": "image",
         "metadata": "",
@@ -1891,20 +1882,6 @@
         "userAdded": true
       },
       {
-        "file": "Assets/Fonts/basty/BastyPixel-tiny.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Assets\\Fonts\\basty\\BastyPixel-tiny.ttf",
-        "userAdded": true
-      },
-      {
-        "file": "Assets/Fonts/basty/Basty-tiny.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Assets\\Fonts\\basty\\Basty-tiny.ttf",
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "Assets/Sprites/Toggle/Toggle1.png",
         "kind": "image",
@@ -2279,6 +2256,60 @@
         "kind": "image",
         "metadata": "",
         "name": "Assets\\Sprites\\Menu-main.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/PauseReminder/PauseReminder6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\PauseReminder\\PauseReminder6.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -8468,8 +8499,9 @@
       "variables": [],
       "behaviors": [
         {
-          "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder",
+          "KeyName": "Space"
         }
       ],
       "animations": [
@@ -10665,7 +10697,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -11450,7 +11482,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -13428,7 +13460,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -16962,7 +16994,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -18689,10 +18721,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -18709,12 +18737,20 @@
           "type": "srs_objs::Exit"
         },
         {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
         {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -18727,6 +18763,10 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -18762,7 +18802,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.645
+        "zoomFactor": 1.429
       },
       "objectsGroups": [],
       "variables": [],
@@ -19892,10 +19932,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -19912,12 +19948,20 @@
           "type": "srs_objs::Exit"
         },
         {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
         {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -19926,6 +19970,10 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -21082,7 +21130,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -22247,7 +22295,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -23597,7 +23645,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -24846,7 +24894,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -26256,7 +26304,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -28031,7 +28079,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -31202,7 +31250,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -32526,7 +32574,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -33718,7 +33766,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -35061,7 +35109,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -36928,7 +36976,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -40110,7 +40158,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -44783,7 +44831,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -49545,7 +49593,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -54698,7 +54746,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -57946,7 +57994,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -60361,7 +60409,7 @@
         },
         {
           "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
+          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -60405,7 +60453,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.165
+        "zoomFactor": 1.453
       },
       "objectsGroups": [],
       "variables": [],
@@ -61832,186 +61880,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 21,
-          "layer": "UI",
-          "locked": false,
-          "name": "Scaled20",
-          "width": 45,
-          "x": 22,
-          "y": 11,
-          "zOrder": 213,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal20",
-          "width": 0,
-          "x": 70,
-          "y": 10,
-          "zOrder": 214,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal20",
-          "width": 0,
-          "x": 71,
-          "y": 30,
-          "zOrder": 214,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal20",
-          "width": 0,
-          "x": 72,
-          "y": 50,
-          "zOrder": 214,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal20",
-          "width": 0,
-          "x": 73,
-          "y": 70,
-          "zOrder": 214,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal20",
-          "width": 0,
-          "x": 74,
-          "y": 90,
-          "zOrder": 214,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 117,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 16,
-          "x": 6,
-          "y": 11,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 9,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 270,
-          "x": 6,
-          "y": 2,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 117,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 16,
-          "x": 126,
-          "y": 10,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Scaled30",
-          "width": 0,
-          "x": 142,
-          "y": 11,
-          "zOrder": 216,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Normal30",
-          "width": 0,
-          "x": 209,
-          "y": 10,
-          "zOrder": 217,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 9,
           "layer": "",
@@ -62027,6 +61895,36 @@
               "value": 0
             }
           ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "UI",
+          "locked": false,
+          "name": "PauseReminder",
+          "width": 24,
+          "x": 34,
+          "y": 19,
+          "zOrder": 218,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "UI",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 90,
+          "x": 389,
+          "y": 509,
+          "zOrder": 219,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -62247,6 +62145,136 @@
               ]
             }
           ]
+        },
+        {
+          "name": "PauseReminder",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "HoldKeyReminder",
+              "type": "srs_objs::HoldKeyReminder",
+              "KeyName": "Escape"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\PauseReminder\\PauseReminder6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -62273,9 +62301,9 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "disabled": false,
+          "disabled": true,
           "folded": false,
-          "name": "Scene transition",
+          "name": "Pause",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -62287,16 +62315,29 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyFromTextPressed"
+                    "value": "srs_objs::HoldKeyReminder::WasHeld"
                   },
                   "parameters": [
-                    "",
-                    "\"Escape\""
+                    "PauseReminder",
+                    "HoldKeyReminder",
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::HoldKeyReminder::reset"
+                  },
+                  "parameters": [
+                    "PauseReminder",
+                    "HoldKeyReminder",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -62309,6 +62350,14 @@
                   "subInstructions": []
                 }
               ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
               "events": []
             }
           ],
@@ -62349,32 +62398,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "UI",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Font scaling",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
         }
       ],
       "layers": [
@@ -62410,10 +62433,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -62434,6 +62453,10 @@
           "type": "srs_objs::HiddenRegion"
         },
         {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
           "name": "Obstacle",
           "type": "srs_objs::Obstacle"
         },
@@ -62442,16 +62465,16 @@
           "type": "srs_utils::RescaledText"
         },
         {
-          "name": "ResetReminder",
-          "type": "srs_objs::ResetReminder"
-        },
-        {
           "name": "State",
           "type": "srs_states::State"
         },
         {
           "name": "StateText",
           "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
         },
         {
           "name": "TopDownMovement",
@@ -62904,7 +62927,7 @@
       ]
     },
     {
-      "associatedLayout": "L_C3_Dimwit",
+      "associatedLayout": "L_CameraTests",
       "lastChangeTimeStamp": 0,
       "name": "LevelWithoutControls",
       "events": [
@@ -63336,16 +63359,29 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyFromTextPressed"
+                    "value": "srs_objs::HoldKeyReminder::WasHeld"
                   },
                   "parameters": [
-                    "",
-                    "\"Escape\""
+                    "PauseReminder",
+                    "HoldKeyReminder",
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::HoldKeyReminder::reset"
+                  },
+                  "parameters": [
+                    "PauseReminder",
+                    "HoldKeyReminder",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -63359,123 +63395,34 @@
                 }
               ],
               "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": true,
-          "folded": false,
-          "name": "Controls",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+            },
             {
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_ctrl::Bindable::SubscribeToState"
+                    "value": "srs_objs::HoldKeyReminder::WasHeld"
                   },
                   "parameters": [
-                    "Controls",
-                    "Bindable",
-                    "Controls",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Bindable::ControlPC"
-                  },
-                  "parameters": [
-                    "Controls",
-                    "Bindable",
-                    "Clum",
-                    "TopDownMovement",
-                    "Controls",
-                    "State",
+                    "ResetReminder",
+                    "HoldKeyReminder",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Binder",
-              "conditions": [],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_ctrl::Bindable::HandleBinderCollision"
+                    "value": "srs_utils::pushScene"
                   },
                   "parameters": [
-                    "Controls",
-                    "Bindable",
-                    "Clum",
-                    "Controls",
-                    "State",
-                    "Binder",
-                    "State",
-                    "Binder",
-                    "Binder",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::SubscribeToState"
-                  },
-                  "parameters": [
-                    "Binder",
-                    "Binder",
-                    "Binder",
-                    "State",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::CreateBindText"
-                  },
-                  "parameters": [
-                    "Binder",
-                    "Binder",
-                    "BindText",
-                    "Tween",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::CreateBindIndicator"
-                  },
-                  "parameters": [
-                    "Binder",
-                    "Binder",
-                    "BindIndicator",
+                    "",
+                    "CurrentSceneName()",
                     ""
                   ],
                   "subInstructions": []
@@ -67084,6 +67031,28 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "TextScaleFactor",
+                            "=",
+                            "60"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "TextObject::SetPadding"
                           },
                           "parameters": [
@@ -67114,7 +67083,7 @@
                           "parameters": [
                             "Object",
                             "*",
-                            "133"
+                            "Object.Variable(TextScaleFactor)"
                           ],
                           "subInstructions": []
                         },
@@ -67126,7 +67095,7 @@
                           "parameters": [
                             "Object",
                             "*",
-                            "133"
+                            "Object.Variable(TextScaleFactor)"
                           ],
                           "subInstructions": []
                         },
@@ -67157,14 +67126,6 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
-                    },
-                    {
-                      "disabled": true,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [],
                       "events": []
                     }
                   ]
@@ -72341,7 +72302,633 @@
         {
           "description": "",
           "fullName": "",
-          "name": "ResetReminder",
+          "name": "HoldKeyReminder",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::HoldKeyReminder::reset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HoldKeyReminder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"created\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.Behavior::PropertyKeyName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"ready\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.Behavior::PropertyKeyName()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"ready\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.Behavior::PropertyKeyName()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeSprite"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlayAnimation"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": true,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "Object",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Opacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "1 * 255"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Object.Behavior::PropertyKeyName()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"ready\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": true,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PauseAnimation"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_objs::HoldKeyReminder::reset"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"finished\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HoldKeyReminder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "WasHeld?",
+              "fullName": "WasHeld?",
+              "functionType": "Condition",
+              "name": "WasHeld",
+              "sentence": "_PARAM0_ WasHeld?",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"finished\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HoldKeyReminder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "reset",
+              "fullName": "reset",
+              "functionType": "Action",
+              "name": "reset",
+              "sentence": "reset _PARAM0_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"created\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PauseAnimation"
+                      },
+                      "parameters": [
+                        "Object"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": true,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Object"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Opacity"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0.2 * 255"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::HoldKeyReminder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "Space",
+              "type": "String",
+              "label": "KeyName",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "KeyName"
+            }
+          ]
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "name": "DEPRECATED_ResetReminder",
           "objectType": "Sprite",
           "eventsFunctions": [
             {
@@ -72412,7 +72999,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "srs_objs::ResetReminder",
+                  "supplementaryInformation": "srs_objs::DEPRECATED_ResetReminder",
                   "type": "behavior"
                 }
               ],
@@ -72737,7 +73324,7 @@
                   "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "srs_objs::ResetReminder",
+                  "supplementaryInformation": "srs_objs::DEPRECATED_ResetReminder",
                   "type": "behavior"
                 }
               ],
