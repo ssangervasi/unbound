@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.ssangervasi.unbound",
-    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.refactor.json",
+    "projectFile": "C:\\Users\\Sebastian\\Projects\\Unbound\\unbound.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -8458,9 +8458,9 @@
       "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
       "characterSize": 30,
       "color": {
-        "b": 252,
+        "b": 247,
         "g": 198,
-        "r": 227
+        "r": 156
       }
     },
     {
@@ -8486,9 +8486,9 @@
       "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
       "characterSize": 30,
       "color": {
-        "b": 252,
+        "b": 247,
         "g": 198,
-        "r": 227
+        "r": 156
       }
     },
     {
@@ -11808,14 +11808,14 @@
         "grid": false,
         "gridB": 255,
         "gridG": 180,
-        "gridHeight": 4,
+        "gridHeight": 10,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridR": 158,
-        "gridWidth": 4,
+        "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.168
+        "zoomFactor": 1.672
       },
       "objectsGroups": [],
       "variables": [],
@@ -11828,8 +11828,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 85,
-          "y": 145,
+          "x": 59,
+          "y": 107,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -11848,8 +11848,8 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 85,
-          "y": 143,
+          "x": 58,
+          "y": 104,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -11873,8 +11873,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 142,
-          "y": 147,
+          "x": 163,
+          "y": 105,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -11899,7 +11899,7 @@
           "name": "Controls",
           "width": 0,
           "x": 600,
-          "y": -33,
+          "y": -44,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -11929,12 +11929,12 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Objects",
+          "layer": "",
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 80,
-          "y": 140,
+          "x": 50,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -11953,28 +11953,28 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 488,
-          "y": 145,
+          "x": 460,
+          "y": 205,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "SceneName",
-              "value": "L_C1_MeetClum"
+              "value": "L_C3"
             }
           ]
         },
         {
           "angle": 0,
           "customSize": true,
-          "height": 50,
+          "height": 250,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 70,
-          "y": 140,
+          "x": 40,
+          "y": 100,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -12018,8 +12018,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 190,
-          "y": 47,
+          "x": 264,
+          "y": 206,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -12043,8 +12043,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 296,
-          "y": 51,
+          "x": 213,
+          "y": 155,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -12068,8 +12068,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 130,
-          "y": 140,
+          "x": 100,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12088,8 +12088,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 140,
+          "x": 150,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12108,8 +12108,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 190,
+          "x": 150,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12128,8 +12128,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 80,
-          "y": 190,
+          "x": 50,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12148,8 +12148,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 80,
-          "y": 240,
+          "x": 50,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12168,8 +12168,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 240,
+          "x": 150,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12188,8 +12188,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 254,
-          "y": 486,
+          "x": 100,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12208,8 +12208,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 154,
-          "y": 536,
+          "x": 100,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12228,68 +12228,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 254,
-          "y": 536,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 130,
-          "y": 240,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 130,
-          "y": 190,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 480,
-          "y": 140,
+          "x": 450,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12307,44 +12247,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 450,
-          "x": 81,
-          "y": 130,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 434,
-          "y": 509,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 150,
-          "x": 154,
-          "y": 586,
+          "width": 470,
+          "x": 40,
+          "y": 90,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -12357,9 +12262,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 100,
-          "x": 6,
-          "y": 492,
+          "width": 470,
+          "x": 40,
+          "y": 350,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -12373,8 +12278,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 140,
+          "x": 200,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12393,8 +12298,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 190,
+          "x": 200,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12413,8 +12318,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 240,
+          "x": 200,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12433,8 +12338,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 80,
-          "y": 290,
+          "x": 50,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12453,8 +12358,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 290,
+          "x": 150,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12473,8 +12378,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 130,
-          "y": 290,
+          "x": 100,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12493,8 +12398,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 290,
+          "x": 200,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12513,8 +12418,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 140,
+          "x": 250,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12533,8 +12438,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 190,
+          "x": 250,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12553,8 +12458,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 240,
+          "x": 250,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12573,8 +12478,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 290,
+          "x": 250,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12593,8 +12498,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 140,
+          "x": 300,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12613,8 +12518,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 190,
+          "x": 300,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12633,8 +12538,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 240,
+          "x": 300,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12653,8 +12558,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 290,
+          "x": 300,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12673,8 +12578,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 140,
+          "x": 350,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12693,8 +12598,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 190,
+          "x": 350,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12713,8 +12618,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 240,
+          "x": 350,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12733,8 +12638,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 290,
+          "x": 350,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12753,8 +12658,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 430,
-          "y": 140,
+          "x": 400,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12773,8 +12678,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 430,
-          "y": 190,
+          "x": 400,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12793,8 +12698,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 430,
-          "y": 240,
+          "x": 400,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12813,8 +12718,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 430,
-          "y": 290,
+          "x": 400,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12833,8 +12738,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 480,
-          "y": 190,
+          "x": 450,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12853,8 +12758,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 480,
-          "y": 240,
+          "x": 450,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12873,8 +12778,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 480,
-          "y": 290,
+          "x": 450,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12893,8 +12798,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 80,
-          "y": 340,
+          "x": 50,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12913,8 +12818,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 340,
+          "x": 150,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12933,8 +12838,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 130,
-          "y": 340,
+          "x": 100,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12953,8 +12858,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 340,
+          "x": 200,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12973,8 +12878,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 340,
+          "x": 250,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -12993,8 +12898,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 340,
+          "x": 300,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -13013,8 +12918,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 340,
+          "x": 350,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -13033,8 +12938,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 430,
-          "y": 340,
+          "x": 400,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -13053,13 +12958,13 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 480,
-          "y": 340,
+          "x": 450,
+          "y": 300,
           "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 2
             }
           ],
           "stringProperties": [],
@@ -13068,28 +12973,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 50,
+          "height": 250,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 530,
-          "y": 140,
-          "zOrder": 203,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "Objects",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 10,
-          "x": 530,
-          "y": 190,
+          "x": 500,
+          "y": 100,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -13103,8 +12993,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 489,
-          "y": 194,
+          "x": 460,
+          "y": 105,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -13119,23 +13009,19 @@
           "angle": 0,
           "customSize": true,
           "height": 23,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "LevelName",
           "width": 248,
-          "x": 540,
-          "y": 154,
+          "x": 520,
+          "y": 220,
           "zOrder": 213,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "LevelName",
-              "value": "L_C1_MeetClum"
-            },
-            {
               "name": "DisplayName",
-              "value": "Meet Clum"
+              "value": "Expanding Brain"
             }
           ]
         },
@@ -13143,20 +13029,16 @@
           "angle": 0,
           "customSize": true,
           "height": 24,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "LevelName",
           "width": 251,
-          "x": 539,
-          "y": 207,
+          "x": 520,
+          "y": 120,
           "zOrder": 214,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
-            {
-              "name": "LevelName",
-              "value": "L_C2_LearningToForget"
-            },
             {
               "name": "DisplayName",
               "value": "Learning To Forget"
@@ -13170,8 +13052,8 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 801,
-          "x": 0,
+          "width": 820,
+          "x": -10,
           "y": -10,
           "zOrder": 203,
           "numberProperties": [],
@@ -13185,9 +13067,9 @@
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
-          "width": 801,
-          "x": 0,
-          "y": 599,
+          "width": 820,
+          "x": -10,
+          "y": 600,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -13196,12 +13078,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 611,
+          "height": 600,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": -7,
+          "x": -10,
           "y": 0,
           "zOrder": 203,
           "numberProperties": [],
@@ -13211,13 +13093,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 611,
+          "height": 600,
           "layer": "Objects",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 797,
-          "y": -5,
+          "x": 800,
+          "y": 0,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -13234,6 +13116,151 @@
           "x": 363,
           "y": 530,
           "zOrder": 215,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Exit",
+          "width": 32,
+          "x": 460,
+          "y": 305,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "SceneName",
+              "value": "L_C3_Darkening"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "UI",
+          "locked": false,
+          "name": "LevelName",
+          "width": 248,
+          "x": 520,
+          "y": 320,
+          "zOrder": 213,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "DisplayName",
+              "value": "Darkening"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "UI",
+          "locked": false,
+          "name": "PauseReminder",
+          "width": 37,
+          "x": 20,
+          "y": 20,
+          "zOrder": 218,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_Thanks",
+          "width": 0,
+          "x": 50,
+          "y": 387,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "T_Alpha",
+          "width": 0,
+          "x": 275,
+          "y": 367,
+          "zOrder": 220,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_MoreComing",
+          "width": 0,
+          "x": 50,
+          "y": 430,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_Yelling",
+          "width": 0,
+          "x": 502,
+          "y": 436,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM_Narration",
+          "width": 0,
+          "x": -153,
+          "y": 93,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "T_Yeah",
+          "width": 0,
+          "x": 50,
+          "y": 515,
+          "zOrder": 224,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13308,20 +13335,36 @@
           }
         },
         {
-          "name": "FontTest",
+          "bold": false,
+          "italic": false,
+          "name": "LevelName",
+          "smoothed": true,
           "tags": "",
-          "type": "BBText::BBText",
-          "variables": [],
-          "behaviors": [],
-          "content": {
-            "opacity": 255,
-            "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
-            "color": "#000000",
-            "text": "Sometext",
-            "align": "left",
-            "visible": true,
-            "fontSize": "10",
-            "wordWrap": true
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "LevelName",
+              "value": ""
+            },
+            {
+              "name": "DisplayName",
+              "value": ""
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText"
+            }
+          ],
+          "string": "Level Name",
+          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 247,
+            "g": 198,
+            "r": 156
           }
         },
         {
@@ -13346,14 +13389,175 @@
         {
           "bold": false,
           "italic": false,
-          "name": "NewObject",
+          "name": "T_Thanks",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "behaviors": [],
-          "string": "Text",
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "thanks for playing this first chapter",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Alpha",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 60,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "ALPHA",
+          "font": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 71,
+            "r": 196
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_MoreComing",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "ok, fine...\nwell there's gonna be more mechanics\nnow that you can remember all directions...",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Yelling",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 60,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "AND MORE\nYELLING!",
+          "font": "Assets\\Fonts\\static-age-font\\StaticAgeHorizontalHold-yLWq.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 71,
+            "r": 196
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "T_Yeah",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 130,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "yeah, what's that about...",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 170,
+            "r": 55
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SM_Narration",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine",
+              "Property": 0
+            }
+          ],
+          "string": "SM_Narration",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -13361,37 +13565,190 @@
             "g": 0,
             "r": 0
           }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "LevelName",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [
-            {
-              "name": "LevelName",
-              "value": ""
-            },
-            {
-              "name": "DisplayName",
-              "value": ""
-            }
-          ],
-          "behaviors": [],
-          "string": "Level Name",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 170,
-            "r": 55
-          }
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "LevelWithControls"
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Narration",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Narration",
+                    "StateMachine",
+                    "T_Thanks",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Narration",
+                    "StateMachine",
+                    "T_Alpha",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Narration",
+                    "StateMachine",
+                    "T_MoreComing",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Narration",
+                    "StateMachine",
+                    "T_Yelling",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateMachine::ManageState"
+                  },
+                  "parameters": [
+                    "SM_Narration",
+                    "StateMachine",
+                    "T_Yeah",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_Thanks",
+                    "StateText",
+                    "T_Thanks",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_Alpha",
+                    "StateText",
+                    "T_Alpha",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_MoreComing",
+                    "StateText",
+                    "T_MoreComing",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_Yelling",
+                    "StateText",
+                    "T_Yelling",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_states::StateText::SubscribeToState"
+                  },
+                  "parameters": [
+                    "T_Yeah",
+                    "StateText",
+                    "T_Yeah",
+                    "State",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -13433,254 +13790,6 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Clum",
-                    "Exit",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Exit::handleCollision"
-                  },
-                  "parameters": [
-                    "Exit",
-                    "Exit",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Clum::AnimateMovement"
-              },
-              "parameters": [
-                "Clum",
-                "Clum",
-                "Clum",
-                "TopDownMovement",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::SubscribeToState"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::ControlPC"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "TopDownMovement",
-                "Controls",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Binder",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Bindable::HandleBinderCollision"
-              },
-              "parameters": [
-                "Controls",
-                "Bindable",
-                "Clum",
-                "Controls",
-                "State",
-                "Binder",
-                "State",
-                "Binder",
-                "Binder",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::Binder::SubscribeToState"
-              },
-              "parameters": [
-                "Binder",
-                "Binder",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_ctrl::BindIndicator::SubscribeToState"
-              },
-              "parameters": [
-                "BindIndicator",
-                "BindIndicator",
-                "Binder",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Clum",
-                "Obstacle",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Obstacle::HandleCollision"
-              },
-              "parameters": [
-                "Obstacle",
-                "Obstacle",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "UI",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Bound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::BoundCount())"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Unbound_Val",
-                    "=",
-                    "ToString(Controls.Bindable::UnboundCount())"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
               "events": []
             }
           ],
@@ -13752,12 +13861,12 @@
           "type": "srs_utils::RescaledText"
         },
         {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
-        },
-        {
           "name": "State",
           "type": "srs_states::State"
+        },
+        {
+          "name": "StateMachine",
+          "type": "srs_states::StateMachine"
         },
         {
           "name": "StateText",
@@ -17316,10 +17425,6 @@
           "type": "srs_utils::RescaledText"
         },
         {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
-        },
-        {
           "name": "State",
           "type": "srs_states::State"
         },
@@ -19192,7 +19297,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.877
+        "zoomFactor": 1.117
       },
       "objectsGroups": [],
       "variables": [],
@@ -29008,7 +29113,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.405
+        "zoomFactor": 1.141
       },
       "objectsGroups": [],
       "variables": [],
@@ -29021,7 +29126,7 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 55,
+          "x": 65,
           "y": 126,
           "zOrder": 200,
           "numberProperties": [
@@ -29041,7 +29146,7 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 55,
+          "x": 65,
           "y": 123,
           "zOrder": 100,
           "numberProperties": [
@@ -29066,7 +29171,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 464,
+          "x": 522,
           "y": 427,
           "zOrder": 100,
           "numberProperties": [
@@ -29126,7 +29231,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29146,7 +29251,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 520,
-          "x": 40,
+          "x": 50,
           "y": 60,
           "zOrder": 203,
           "numberProperties": [],
@@ -29161,7 +29266,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 40,
+          "x": 50,
           "y": 70,
           "zOrder": 203,
           "numberProperties": [],
@@ -29176,7 +29281,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 360,
-          "x": 40,
+          "x": 50,
           "y": 220,
           "zOrder": 203,
           "numberProperties": [],
@@ -29221,7 +29326,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 464,
+          "x": 474,
           "y": 275,
           "zOrder": 100,
           "numberProperties": [
@@ -29246,7 +29351,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29266,7 +29371,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 464,
+          "x": 422,
           "y": 127,
           "zOrder": 100,
           "numberProperties": [
@@ -29306,7 +29411,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -29326,7 +29431,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -29346,7 +29451,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -29366,7 +29471,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29386,7 +29491,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29406,7 +29511,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29426,7 +29531,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -29446,7 +29551,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29466,7 +29571,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29486,7 +29591,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -29506,7 +29611,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29526,7 +29631,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29546,7 +29651,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29566,7 +29671,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -29586,7 +29691,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -29606,7 +29711,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -29626,7 +29731,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -29646,7 +29751,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -29666,7 +29771,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -29686,7 +29791,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -29706,7 +29811,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29726,7 +29831,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -29746,7 +29851,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29766,7 +29871,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29786,7 +29891,7 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 258,
+          "x": 268,
           "y": 275,
           "zOrder": 212,
           "numberProperties": [],
@@ -29801,7 +29906,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -29821,7 +29926,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -29841,7 +29946,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -29861,7 +29966,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -29881,7 +29986,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -29901,7 +30006,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29921,7 +30026,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29941,7 +30046,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29961,7 +30066,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -29981,7 +30086,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -30001,7 +30106,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -30021,7 +30126,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -30041,7 +30146,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -30061,7 +30166,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 190,
+          "x": 200,
           "y": 270,
           "zOrder": 203,
           "numberProperties": [],
@@ -30076,7 +30181,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 550,
+          "x": 560,
           "y": 70,
           "zOrder": 203,
           "numberProperties": [],
@@ -30091,7 +30196,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 370,
-          "x": 190,
+          "x": 200,
           "y": 470,
           "zOrder": 203,
           "numberProperties": [],
@@ -30106,7 +30211,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 120,
-          "x": 190,
+          "x": 200,
           "y": 260,
           "zOrder": 203,
           "numberProperties": [],
@@ -30121,7 +30226,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 150,
-          "x": 250,
+          "x": 260,
           "y": 410,
           "zOrder": 203,
           "numberProperties": [],
@@ -30136,7 +30241,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 300,
+          "x": 310,
           "y": 270,
           "zOrder": 203,
           "numberProperties": [],
@@ -30151,7 +30256,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 250,
+          "x": 260,
           "y": 330,
           "zOrder": 203,
           "numberProperties": [],
@@ -30166,7 +30271,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 390,
+          "x": 400,
           "y": 230,
           "zOrder": 203,
           "numberProperties": [],
@@ -30196,7 +30301,7 @@
           "locked": false,
           "name": "Upgrade",
           "width": 32,
-          "x": 260,
+          "x": 270,
           "y": 131,
           "zOrder": 214,
           "numberProperties": [],
@@ -30211,7 +30316,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -30231,7 +30336,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -30251,7 +30356,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -30271,7 +30376,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -30291,7 +30396,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -30311,7 +30416,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -30331,7 +30436,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -30351,7 +30456,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30371,7 +30476,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30391,7 +30496,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30411,7 +30516,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30431,7 +30536,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30451,7 +30556,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30471,7 +30576,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -30491,7 +30596,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 250,
+          "x": 260,
           "y": 320,
           "zOrder": 203,
           "numberProperties": [],
@@ -30506,7 +30611,7 @@
           "locked": false,
           "name": "T_NewMemory",
           "width": 0,
-          "x": 580,
+          "x": 590,
           "y": 123,
           "zOrder": 215,
           "numberProperties": [],
@@ -30566,7 +30671,7 @@
           "locked": false,
           "name": "T_WellProud",
           "width": 0,
-          "x": 580,
+          "x": 590,
           "y": 365,
           "zOrder": 221,
           "numberProperties": [],
@@ -30577,11 +30682,11 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
           "name": "T_WellDone",
           "width": 0,
-          "x": 580,
+          "x": 590,
           "y": 251,
           "zOrder": 222,
           "numberProperties": [],
@@ -32163,10 +32268,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -32197,10 +32298,6 @@
         {
           "name": "RescaledText",
           "type": "srs_utils::RescaledText"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -41521,7 +41618,7 @@
         "gridWidth": 50,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.624
+        "zoomFactor": 1.096
       },
       "objectsGroups": [],
       "variables": [],
@@ -59603,17 +59700,17 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridB": 255,
         "gridG": 180,
-        "gridHeight": 4,
+        "gridHeight": 50,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridR": 158,
-        "gridWidth": 4,
-        "snap": false,
+        "gridWidth": 50,
+        "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.549
+        "zoomFactor": 1.429
       },
       "objectsGroups": [],
       "variables": [],
@@ -59626,7 +59723,7 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 55,
+          "x": 65,
           "y": 126,
           "zOrder": 200,
           "numberProperties": [
@@ -59646,7 +59743,7 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 55,
+          "x": 65,
           "y": 123,
           "zOrder": 100,
           "numberProperties": [
@@ -59671,8 +59768,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 464,
-          "y": 426,
+          "x": 524,
+          "y": 425,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -59731,7 +59828,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -59751,7 +59848,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 520,
-          "x": 40,
+          "x": 50,
           "y": 60,
           "zOrder": 203,
           "numberProperties": [],
@@ -59766,7 +59863,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 40,
+          "x": 50,
           "y": 70,
           "zOrder": 203,
           "numberProperties": [],
@@ -59781,7 +59878,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 360,
-          "x": 40,
+          "x": 50,
           "y": 220,
           "zOrder": 203,
           "numberProperties": [],
@@ -59826,7 +59923,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 264,
+          "x": 274,
           "y": 126,
           "zOrder": 100,
           "numberProperties": [
@@ -59851,7 +59948,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -59871,7 +59968,7 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 164,
+          "x": 174,
           "y": 125,
           "zOrder": 100,
           "numberProperties": [
@@ -59911,7 +60008,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -59931,7 +60028,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -59951,7 +60048,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -59971,7 +60068,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -59991,7 +60088,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 50,
+          "x": 60,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60011,7 +60108,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 100,
+          "x": 110,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60031,7 +60128,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60051,7 +60148,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60071,7 +60168,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60091,7 +60188,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60111,7 +60208,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60131,7 +60228,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60151,7 +60248,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 150,
+          "x": 160,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60171,7 +60268,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -60191,7 +60288,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -60211,7 +60308,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -60231,7 +60328,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -60251,7 +60348,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -60271,7 +60368,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -60291,7 +60388,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -60311,7 +60408,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60331,7 +60428,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -60351,7 +60448,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60371,7 +60468,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60391,7 +60488,7 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 309,
+          "x": 319,
           "y": 325,
           "zOrder": 212,
           "numberProperties": [],
@@ -60406,7 +60503,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -60426,7 +60523,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -60446,7 +60543,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -60466,7 +60563,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60486,7 +60583,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -60506,7 +60603,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60526,7 +60623,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60546,7 +60643,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60566,7 +60663,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60586,7 +60683,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60606,7 +60703,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60626,7 +60723,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60646,7 +60743,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60666,7 +60763,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 190,
+          "x": 200,
           "y": 270,
           "zOrder": 203,
           "numberProperties": [],
@@ -60681,7 +60778,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 550,
+          "x": 560,
           "y": 70,
           "zOrder": 203,
           "numberProperties": [],
@@ -60696,7 +60793,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 370,
-          "x": 190,
+          "x": 200,
           "y": 470,
           "zOrder": 203,
           "numberProperties": [],
@@ -60711,7 +60808,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 170,
-          "x": 190,
+          "x": 200,
           "y": 260,
           "zOrder": 203,
           "numberProperties": [],
@@ -60726,7 +60823,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 150,
-          "x": 250,
+          "x": 260,
           "y": 410,
           "zOrder": 203,
           "numberProperties": [],
@@ -60741,7 +60838,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 70,
-          "x": 290,
+          "x": 300,
           "y": 370,
           "zOrder": 203,
           "numberProperties": [],
@@ -60756,7 +60853,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 350,
+          "x": 360,
           "y": 270,
           "zOrder": 203,
           "numberProperties": [],
@@ -60771,7 +60868,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 250,
+          "x": 260,
           "y": 330,
           "zOrder": 203,
           "numberProperties": [],
@@ -60786,7 +60883,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 390,
+          "x": 400,
           "y": 230,
           "zOrder": 203,
           "numberProperties": [],
@@ -60816,7 +60913,7 @@
           "locked": false,
           "name": "Upgrade",
           "width": 32,
-          "x": 460,
+          "x": 470,
           "y": 133,
           "zOrder": 214,
           "numberProperties": [],
@@ -60831,7 +60928,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -60851,7 +60948,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 320,
           "zOrder": 1,
           "numberProperties": [
@@ -60871,7 +60968,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 370,
           "zOrder": 1,
           "numberProperties": [
@@ -60891,7 +60988,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 170,
           "zOrder": 1,
           "numberProperties": [
@@ -60911,7 +61008,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 220,
           "zOrder": 1,
           "numberProperties": [
@@ -60931,7 +61028,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 120,
           "zOrder": 1,
           "numberProperties": [
@@ -60951,7 +61048,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 70,
           "zOrder": 1,
           "numberProperties": [
@@ -60971,7 +61068,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 400,
+          "x": 410,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -60991,7 +61088,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 350,
+          "x": 360,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61011,7 +61108,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61031,7 +61128,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 200,
+          "x": 210,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61051,7 +61148,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
+          "x": 460,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61071,7 +61168,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 500,
+          "x": 510,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61091,7 +61188,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 420,
           "zOrder": 1,
           "numberProperties": [
@@ -61111,7 +61208,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -61131,7 +61228,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 300,
+          "x": 310,
           "y": 270,
           "zOrder": 1,
           "numberProperties": [
@@ -61151,7 +61248,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 50,
-          "x": 250,
+          "x": 260,
           "y": 320,
           "zOrder": 203,
           "numberProperties": [],
@@ -61166,24 +61263,9 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 290,
+          "x": 300,
           "y": 330,
           "zOrder": 215,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "UI",
-          "locked": false,
-          "name": "PauseReminder",
-          "width": 37,
-          "x": 20,
-          "y": 20,
-          "zOrder": 218,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -61200,6 +61282,1306 @@
           "y": -5,
           "zOrder": 1,
           "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "UI",
+          "locked": false,
+          "name": "PauseReminder",
+          "width": 37,
+          "x": 20,
+          "y": 20,
+          "zOrder": 216,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1000,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1000,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1000,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1000,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 900,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 900,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 150,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 900,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 950,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 950,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 950,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 950,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 900,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 150,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -61691,25 +63073,6 @@
               ]
             }
           ]
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "PauseReminder",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Esc",
-          "font": "Assets\\Fonts\\basty\\BastyPixel.ttf",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
         }
       ],
       "events": [
@@ -61964,6 +63327,12 @@
         },
         {
           "name": "Objects",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "LightingStatic",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -64997,21 +66366,89 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_utils::pushScene"
-                  },
-                  "parameters": [
-                    "",
-                    "CurrentSceneName()",
-                    ""
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "srs_objs::Transition::IsPlaying"
+                      },
+                      "parameters": [
+                        "Transition",
+                        "Transition",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "srs_objs::Transition::IsFinished"
+                      },
+                      "parameters": [
+                        "Transition",
+                        "Transition",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Transition::play"
+                      },
+                      "parameters": [
+                        "Transition",
+                        "Transition",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Transition::IsFinished"
+                      },
+                      "parameters": [
+                        "Transition",
+                        "Transition",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::pushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "CurrentSceneName()",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -73896,32 +75333,22 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"transitioning\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Status",
-                            "=",
-                            "\"transitioning\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
+                  "events": []
                 },
                 {
                   "disabled": false,
@@ -74226,44 +75653,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "DepartScene"
-                          },
-                          "parameters": [
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "HideLayer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Transition\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
                             "value": "VarObjetTxt"
                           },
                           "parameters": [
                             "Object",
                             "Status",
                             "=",
-                            "\"triggered\""
+                            "\"initialized\""
                           ],
                           "subInstructions": []
                         }
@@ -74290,7 +75686,71 @@
                             "\"Transition\"",
                             "\"AlphaAdjustment\"",
                             "\"alpha\"",
-                            "0"
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::startLimitedTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "Object",
+                            "\"revealing\"",
+                            "srs_utils::ms(.5)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"revealing\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"revealing\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetLayerEffectParameter"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\"",
+                            "\"AlphaAdjustment\"",
+                            "\"alpha\"",
+                            "1 - srs_utils::getLimitedTimerFraction(Object, \"revealing\"\n)"
                           ],
                           "subInstructions": []
                         }
@@ -74300,22 +75760,21 @@
                           "disabled": false,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
+                          "conditions": [
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_utils::startLimitedTimer"
+                                "value": "Egal"
                               },
                               "parameters": [
-                                "",
-                                "Object",
-                                "\"transition_timer\"",
-                                "srs_utils::ms(.2)",
-                                ""
+                                "1",
+                                "<=",
+                                "srs_utils::getLimitedTimerFraction(Object, \"revealing\")"
                               ],
                               "subInstructions": []
-                            },
+                            }
+                          ],
+                          "actions": [
                             {
                               "type": {
                                 "inverted": false,
@@ -74325,7 +75784,7 @@
                                 "Object",
                                 "Status",
                                 "=",
-                                "\"playing\""
+                                "\"revealed\""
                               ],
                               "subInstructions": []
                             }
@@ -74348,36 +75807,92 @@
                             "Object",
                             "Status",
                             "=",
+                            "\"triggered\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetLayerEffectParameter"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\"",
+                            "\"AlphaAdjustment\"",
+                            "\"alpha\"",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::startLimitedTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "Object",
+                            "\"transition\"",
+                            "srs_utils::ms(.3)",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
                             "\"playing\""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "actions": [],
-                      "events": [
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
                         {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "SetLayerEffectParameter"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Transition\"",
-                                "\"AlphaAdjustment\"",
-                                "\"alpha\"",
-                                "srs_utils::getLimitedTimerFraction(Object, \"transition_timer\"\n)"
-                              ],
-                              "subInstructions": []
-                            }
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Status",
+                            "=",
+                            "\"playing\""
                           ],
-                          "events": []
-                        },
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetLayerEffectParameter"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Transition\"",
+                            "\"AlphaAdjustment\"",
+                            "\"alpha\"",
+                            "srs_utils::getLimitedTimerFraction(Object, \"transition\"\n)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
                         {
                           "disabled": false,
                           "folded": false,
@@ -74391,7 +75906,7 @@
                               "parameters": [
                                 "1",
                                 "<=",
-                                "srs_utils::getLimitedTimerFraction(Object, \"transition_timer\")"
+                                "srs_utils::getLimitedTimerFraction(Object, \"transition\")"
                               ],
                               "subInstructions": []
                             }
@@ -74417,14 +75932,6 @@
                     }
                   ],
                   "parameters": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [],
-                  "events": []
                 }
               ],
               "parameters": [
@@ -74474,6 +75981,123 @@
                         "Status",
                         "=",
                         "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Transition",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsPlaying?",
+              "fullName": "IsPlaying?",
+              "functionType": "Condition",
+              "name": "IsPlaying",
+              "sentence": "_PARAM0_ IsPlaying?",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"playing\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
                       ],
                       "subInstructions": []
                     }
