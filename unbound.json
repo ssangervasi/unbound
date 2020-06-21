@@ -8310,58 +8310,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Exit\\finish_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 58.1818,
-                        "y": 44.5455
-                      },
-                      {
-                        "x": 63.6364,
-                        "y": 59.0909
-                      },
-                      {
-                        "x": 51.8182,
-                        "y": 71.8182
-                      },
-                      {
-                        "x": 36.3636,
-                        "y": 60.2273
-                      },
-                      {
-                        "x": 42.7273,
-                        "y": 45
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -11815,7 +11763,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.672
+        "zoomFactor": 1.408
       },
       "objectsGroups": [],
       "variables": [],
@@ -13264,6 +13212,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 644,
+          "layer": "Transition",
+          "locked": false,
+          "name": "Transition",
+          "width": 857,
+          "x": -31,
+          "y": -22,
+          "zOrder": 225,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -13825,6 +13788,29 @@
           "visibility": true,
           "cameras": [],
           "effects": []
+        },
+        {
+          "name": "Transition",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -31588,20 +31574,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_utils::consoleLog"
-                  },
-                  "parameters": [
-                    "",
-                    "SM_Narration.StateMachine::CurrentStateName()",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
                 {
                   "disabled": false,
@@ -32179,18 +32152,6 @@
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"returned\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -41618,7 +41579,7 @@
         "gridWidth": 50,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.096
+        "zoomFactor": 1.312
       },
       "objectsGroups": [],
       "variables": [],
@@ -42363,7 +42324,7 @@
           "width": 32,
           "x": 560,
           "y": 405,
-          "zOrder": 213,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -46206,7 +46167,7 @@
         },
         {
           "name": "LightingToggleOff",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -46259,10 +46220,6 @@
       ],
       "behaviorsSharedData": [
         {
-          "name": "BindIndicator",
-          "type": "srs_ctrl::BindIndicator"
-        },
-        {
           "name": "Bindable",
           "type": "srs_ctrl::Bindable"
         },
@@ -46293,10 +46250,6 @@
         {
           "name": "RescaledText",
           "type": "srs_utils::RescaledText"
-        },
-        {
-          "name": "ResetReminder",
-          "type": "srs_objs::DEPRECATED_ResetReminder"
         },
         {
           "name": "State",
@@ -47096,7 +47049,7 @@
           "width": 32,
           "x": 107,
           "y": 355,
-          "zOrder": 213,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -65975,6 +65928,25 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "ClumEyes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
@@ -65999,11 +65971,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "LayerVisible"
+                            "value": "AnimationName"
                           },
                           "parameters": [
-                            "Darkness.Layer()",
-                            "Darkness.Layer()"
+                            "Darkness",
+                            "\"Pitch\""
                           ],
                           "subInstructions": []
                         }
@@ -66017,43 +65989,12 @@
                           "conditions": [
                             {
                               "type": {
-                                "inverted": true,
-                                "value": "AnimationName"
-                              },
-                              "parameters": [
-                                "Darkness",
-                                "\"Pitch\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
                                 "inverted": false,
-                                "value": "Cache"
+                                "value": "LayerVisible"
                               },
                               "parameters": [
-                                "ClumEyes"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "AnimationName"
-                              },
-                              "parameters": [
-                                "Darkness",
-                                "\"Pitch\""
+                                "Darkness.Layer()",
+                                "Darkness.Layer()"
                               ],
                               "subInstructions": []
                             }
@@ -66089,40 +66030,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Clum",
-                        "Darkness",
-                        "",
-                        "",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "ClumEyes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
                 }
               ],
               "parameters": []
@@ -78499,39 +78406,6 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"LayerWhenOff: \" + GetArgumentAsString(\"LayerWhenOff\")",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"LayerWhenOn: \" + GetArgumentAsString(\"LayerWhenOn\")",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
                                 "value": "ShowLayer"
                               },
                               "parameters": [
@@ -78603,27 +78477,6 @@
                           "disabled": false,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Layer timer: \" + Object.VariableString(LayerTimer)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
@@ -78682,27 +78535,6 @@
                                   "parameters": [
                                     "",
                                     "GetArgumentAsString(\"LayerWhenOn\")"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Layer timer: \" + Object.VariableString(LayerTimer)",
-                                    ""
                                   ],
                                   "subInstructions": []
                                 }
