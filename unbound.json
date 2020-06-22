@@ -9985,13 +9985,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 279,
+          "height": 240,
           "layer": "Menu",
           "locked": false,
           "name": "Menu",
-          "width": 402,
-          "x": 200,
-          "y": 226,
+          "width": 299,
+          "x": 250,
+          "y": 245,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -10277,6 +10277,15 @@
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CursorHiding"
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -10842,6 +10851,14 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
         }
       ],
       "layers": [
@@ -11119,13 +11136,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 282,
+          "height": 188,
           "layer": "",
           "locked": false,
           "name": "Menu",
-          "width": 400,
-          "x": 206,
-          "y": 201,
+          "width": 298,
+          "x": 255,
+          "y": 253,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -11363,6 +11380,15 @@
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CursorHiding"
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -65571,13 +65597,50 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SourisBouton"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisX"
+                      },
+                      "parameters": [
+                        "",
+                        "!=",
+                        "Variable(CursorLastX)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisY"
+                      },
+                      "parameters": [
+                        "",
+                        "!=",
+                        "Variable(CursorLastY)",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
@@ -69115,7 +69178,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\n\nconst ssangervasi = globalThis.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        items = []\n        current = null\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        next() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = (this.current + 1) % this.items.length\n            return this.items[this.current]\n        }\n\n        previous() {\n            if (this.current === null) {\n                return null;\n            }\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.items[this.current]\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\n\nconst ssangervasi = global.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        constructor() {\n            this.items = []\n            this.current = null\n        }\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        skipTo(targetItem) {\n            const foundIndex = this.items.findIndex(item => item === targetItem)\n            if (foundIndex === -1) { return null }\n\n            this.current = foundIndex\n            return this.getCurrent()\n        }\n\n        next() {\n            if (this.current === null) { return null }\n\n            this.current = (this.current + 1) % this.items.length\n            return this.getCurrent()\n        }\n\n        previous() {\n            if (this.current === null) { return null }\n\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.getCurrent()\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69134,7 +69197,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "globalThis.ssangervasi.log(\n    eventsFunctionContext.getArgument('Message')\n)\n",
+              "inlineCode": "global.ssangervasi.log(\n    eventsFunctionContext.getArgument('Message')\n)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69293,7 +69356,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "globalThis.ssangervasi.pushScene(eventsFunctionContext)\n",
+              "inlineCode": "global.ssangervasi.pushScene(eventsFunctionContext)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -69344,7 +69407,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = globalThis.ssangervasi.peekScene(eventsFunctionContext)\n",
+              "inlineCode": "eventsFunctionContext.returnValue = global.ssangervasi.peekScene(eventsFunctionContext)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -69400,7 +69463,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\n    if (!(playlistName)) {\r\n        globalThis.ssangervasi.error('Cannot get current item in playlist', { playlistName })\r\n        return \"\"\r\n    }\r\n\r\n    const playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\n    return playlist.getCurrent() || \"\"\r\n})()",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\n    if (!(playlistName)) {\r\n        global.ssangervasi.error('Cannot get current item in playlist', { playlistName })\r\n        return \"\"\r\n    }\r\n\r\n    const playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\n    return playlist.getCurrent() || \"\"\r\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69438,7 +69501,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    globalThis.ssangervasi.error('Cannot add item to playlist', { playlistName, item })\r\n    return\r\n}\r\n\r\n\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.add(item)\r\n",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    global.ssangervasi.error('Cannot add item to playlist', { playlistName, item })\r\n    return\r\n}\r\n\r\n\r\nconst playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.add(item)\r\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69486,7 +69549,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.previous()",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    global.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\nconst playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.previous()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69524,7 +69587,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    globalThis.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\n\r\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.next()",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nif (!playlistName) {\r\n    global.ssangervasi.error('Cannot skip to next item in playlist', { playlistName })\r\n    return\r\n}\r\n\r\nconst playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nplaylist.next()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -69536,6 +69599,54 @@
               "description": "PlaylistName",
               "longDescription": "",
               "name": "PlaylistName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Skip to item",
+          "fullName": "Skip to item",
+          "functionType": "Action",
+          "name": "playlistSkipTo",
+          "sentence": "Skip to item _PARAM2_ in playlist _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const playlistName = eventsFunctionContext.getArgument('PlaylistName')\r\nconst item = eventsFunctionContext.getArgument('Item')\r\nif (!(playlistName && item)) {\r\n    global.ssangervasi.error('Cannot add skip to playlist item', { playlistName, item })\r\n    return\r\n}\r\n\r\nconst playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName)\r\nconst result = playlist.skipTo(item)\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "PlaylistName",
+              "longDescription": "",
+              "name": "PlaylistName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Item",
+              "longDescription": "",
+              "name": "Item",
               "optional": false,
               "supplementaryInformation": "",
               "type": "string"
@@ -70116,7 +70227,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!globalThis.ssangervasi) { globalThis.ssangervasi = {} }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nObject.assign(globalThis.ssangervasi, {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n})\r\n",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\r\n\r\nconst within = (min, mid, max) => ( min <= mid && mid <= max)\r\n\r\n// stupdily fancy :D\r\nconst charWithin = (chars, charCode) => {\r\n    const min = chars[0]\r\n    const max = chars[1]\r\n    return within(min.charCodeAt(0), charCode, max.charCodeAt(max.length - 1))\r\n}\r\n\r\nconst isBindable = (keyCode) =>  (\r\n    // yr normy alnums\r\n    charWithin`A ${keyCode} Z` ||\r\n    // them wacky arrows\r\n    charWithin`% ${keyCode} (` ||\r\n    // just any dang fancy character \r\n    within(161, keyCode, 255)\r\n)\r\n\r\nconst lastKeyCode = (runtimeScene) => {\r\n    const game = runtimeScene.getGame()\r\n    const inputManager = game.getInputManager()\r\n    return inputManager.getLastPressedKey()\r\n}\r\n\r\nObject.assign(global.ssangervasi, {\r\n    within,\r\n    charWithin,\r\n    isBindable,\r\n    lastKeyCode\r\n})\r\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70153,7 +70264,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "// console.log('bindable check', runtimeScene)\nconst lastKeyCode = globalThis.ssangervasi.lastKeyCode(runtimeScene)\neventsFunctionContext.returnValue = globalThis.ssangervasi.isBindable(lastKeyCode)\n",
+                  "inlineCode": "// console.log('bindable check', runtimeScene)\nconst lastKeyCode = global.ssangervasi.lastKeyCode(runtimeScene)\neventsFunctionContext.returnValue = global.ssangervasi.isBindable(lastKeyCode)\n",
                   "parameterObjects": "",
                   "useStrict": true
                 },
@@ -70190,7 +70301,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = globalThis.ssangervasi.lastKeyCode(runtimeScene)\r\n",
+              "inlineCode": "eventsFunctionContext.returnValue = global.ssangervasi.lastKeyCode(runtimeScene)\r\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -70209,7 +70320,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const keyCode = eventsFunctionContext.getArgument('KeyCode') \neventsFunctionContext.returnValue = globalThis.ssangervasi.isBindable(keyCode)\n",
+              "inlineCode": "const keyCode = eventsFunctionContext.getArgument('KeyCode') \neventsFunctionContext.returnValue = global.ssangervasi.isBindable(keyCode)\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -73849,7 +73960,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    let i = 0; \n    const game = runtimeScene.getGame()\n    const sceneName = eventsFunctionContext.getArgument('SceneName')\n    if (!sceneName) {\n        globalThis.ssangervasi.error('Attempted to check isScene but no SceneName was passed.')\n        return false\n    }\n    if (!game.hasScene(sceneName)) {\n        globalThis.ssangervasi.error(`Attempted to check isScene but \"${sceneName}\" is not the name of a scene.`)\n        return false\n    }\n    return runtimeScene.getName() === sceneName\n})()",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    let i = 0; \n    const game = runtimeScene.getGame()\n    const sceneName = eventsFunctionContext.getArgument('SceneName')\n    if (!sceneName) {\n        global.ssangervasi.error('Attempted to check isScene but no SceneName was passed.')\n        return false\n    }\n    if (!game.hasScene(sceneName)) {\n        global.ssangervasi.error(`Attempted to check isScene but \"${sceneName}\" is not the name of a scene.`)\n        return false\n    }\n    return runtimeScene.getName() === sceneName\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -73941,7 +74052,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const vars = runtimeScene.getVariables()\r\n\r\nconst createSave = () => {\r\n    const timestamp = globalThis.ssangervasi.getTimestamp() \r\n\r\n    /** @type {string[]} */ \r\n    const levelHistory =\r\n        globalThis\r\n        .ssangervasi\r\n        .sceneHistory\r\n        .filter((/** @type {string} */ sceneName ) => {\r\n            return sceneName.startsWith('L_')\r\n        })\r\n    const lastLevel = levelHistory[levelHistory.length - 1]\r\n    if (!lastLevel) {\r\n        return\r\n    }\r\n    return {\r\n        timestamp,\r\n        lastLevel\r\n    }\r\n}\r\n\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        globalThis.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst newSave = createSave()\r\nif (!newSave) {\r\n     globalThis.ssangervasi.error(\"Unable to create save\")\r\n     return\r\n}\r\n\r\nconst userData = getUserData()\r\nuserData.saves.push(newSave)\r\nconst newUserdataJSON = JSON.stringify(userData)\r\n\r\nvars.get(\"UserDataJSON\").setString(newUserdataJSON)\r\nvars.get(\"SaveResult\").setString(\"success\")\r\n",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\n\r\nconst createSave = () => {\r\n    const timestamp = global.ssangervasi.getTimestamp() \r\n\r\n    /** @type {string[]} */ \r\n    const levelHistory =\r\n        global\r\n        .ssangervasi\r\n        .sceneHistory\r\n        .filter((/** @type {string} */ sceneName ) => {\r\n            return sceneName.startsWith('L_')\r\n        })\r\n    const lastLevel = levelHistory[levelHistory.length - 1]\r\n    if (!lastLevel) {\r\n        return\r\n    }\r\n    return {\r\n        timestamp,\r\n        lastLevel\r\n    }\r\n}\r\n\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        global.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst newSave = createSave()\r\nif (!newSave) {\r\n     global.ssangervasi.error(\"Unable to create save\")\r\n     return\r\n}\r\n\r\nconst userData = getUserData()\r\nuserData.saves.push(newSave)\r\nconst newUserdataJSON = JSON.stringify(userData)\r\n\r\nvars.get(\"UserDataJSON\").setString(newUserdataJSON)\r\nvars.get(\"SaveResult\").setString(\"success\")\r\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -74109,7 +74220,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        globalThis.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst userData = getUserData()\r\nglobalThis.ssangervasi.info(\"Loaded user data\", userData)\r\n\r\nif (!userData.saves.length) {\r\n    globalThis.ssangervasi.error(\"Nothing to load\")\r\n    return\r\n}\r\n\r\nconst savesNewestToOldest =  userData.saves\r\nsavesNewestToOldest.sort((saveA, saveB) => saveA.timestamp > saveB.timestamp ? -1 : 1)\r\nconst newestSave = savesNewestToOldest[0]\r\n\r\nglobalThis.ssangervasi.info(\"newestSave:\", newestSave)\r\n\r\nconst savedGameVar = vars.get(\"SavedGame\")\r\nsavedGameVar.clearChildren()\r\nsavedGameVar.getChild(\"Timestamp\").setString(newestSave.timestamp)\r\nsavedGameVar.getChild(\"LastLevel\").setString(newestSave.lastLevel)\r\n\r\nvars.get(\"LoadResult\").setString(\"success\")\r\n",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst getUserData = () => {\r\n    let userData = {\r\n        saves: []\r\n    }\r\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\r\n    let parsedUserData\r\n    try {\r\n        parsedUserData = JSON.parse(userDataJSON)\r\n    } catch (e) {\r\n        global.ssangervasi.info(\"Invalid user data:\", userDataJSON)\r\n    }\r\n    if (\r\n        typeof parsedUserData === \"object\" &&\r\n        Array.isArray(parsedUserData.saves)\r\n    ) {\r\n        userData = parsedUserData\r\n    }\r\n    return userData\r\n}\r\n\r\nconst userData = getUserData()\r\nglobal.ssangervasi.info(\"Loaded user data\", userData)\r\n\r\nif (!userData.saves.length) {\r\n    global.ssangervasi.error(\"Nothing to load\")\r\n    return\r\n}\r\n\r\nconst savesNewestToOldest =  userData.saves\r\nsavesNewestToOldest.sort((saveA, saveB) => saveA.timestamp > saveB.timestamp ? -1 : 1)\r\nconst newestSave = savesNewestToOldest[0]\r\n\r\nglobal.ssangervasi.info(\"newestSave:\", newestSave)\r\n\r\nconst savedGameVar = vars.get(\"SavedGame\")\r\nsavedGameVar.clearChildren()\r\nsavedGameVar.getChild(\"Timestamp\").setString(newestSave.timestamp)\r\nsavedGameVar.getChild(\"LastLevel\").setString(newestSave.lastLevel)\r\n\r\nvars.get(\"LoadResult\").setString(\"success\")\r\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -79175,6 +79286,52 @@
                             }
                           ],
                           "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "",
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MouseButtonReleased"
+                              },
+                              "parameters": [
+                                "",
+                                "Left"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_states::State::Run"
+                              },
+                              "parameters": [
+                                "State",
+                                "StateBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
                         }
                       ]
                     },
@@ -79314,7 +79471,16 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
                   "actions": [
                     {
                       "type": {
@@ -79340,6 +79506,54 @@
                   "conditions": [],
                   "actions": [],
                   "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "MenuOption",
+                            "",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "StrEqual"
+                          },
+                          "parameters": [
+                            "Object.Behavior::ActiveId()",
+                            "!=",
+                            "MenuOption.MenuOptionBehavior::Id()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Menu::SetActiveId"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "MenuOption.MenuOptionBehavior::Id()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
                     {
                       "disabled": false,
                       "folded": false,
@@ -79531,6 +79745,70 @@
               "objectGroups": []
             },
             {
+              "description": "SetActiveId",
+              "fullName": "SetActiveId",
+              "functionType": "Action",
+              "name": "SetActiveId",
+              "sentence": "_PARAM0_  SetActiveId _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::playlistSkipTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.ObjectName()",
+                        "GetArgumentAsString(\"ActiveId\")",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Menu",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "ActiveId",
+                  "longDescription": "",
+                  "name": "ActiveId",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "SetOptionIds",
               "fullName": "SetOptionIds",
               "functionType": "Action",
@@ -79584,7 +79862,7 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::JsCode",
-                      "inlineCode": "const menuObject = objects[0];\nconst playlistName = menuObject.name;\nconst playlist = globalThis.ssangervasi.getPlaylist(runtimeScene, playlistName, true)\nif (!playlist) { return }\n\nconst rawOptionIds = eventsFunctionContext.getArgument('OptionIds').toString()\nconst optionIds = rawOptionIds.split(/\\W+/)\noptionIds.forEach((item) => {\n    if (item && item.length) {\n        playlist.add(item) \n    } \n})\nconsole.log(\"playlist\", playlist)",
+                      "inlineCode": "const menuObject = objects[0];\nconst playlistName = menuObject.name;\nconst playlist = global.ssangervasi.getPlaylist(runtimeScene, playlistName, true)\nif (!playlist) { return }\n\nconst rawOptionIds = eventsFunctionContext.getArgument('OptionIds').toString()\nconst optionIds = rawOptionIds.split(/\\W+/)\noptionIds.forEach((item) => {\n    if (item && item.length) {\n        playlist.add(item) \n    } \n})\nconsole.log(\"playlist\", playlist)",
                       "parameterObjects": "Object",
                       "useStrict": true
                     }
