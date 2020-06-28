@@ -16015,7 +16015,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -17038,12 +17038,13 @@
                         },
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "srs_ctrl::Bindable::IsEnabled"
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::HasDirection"
                           },
                           "parameters": [
                             "Controls",
                             "Bindable",
+                            "\"Right\"",
                             ""
                           ],
                           "subInstructions": []
@@ -19399,7 +19400,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.165
+        "zoomFactor": 1.069
       },
       "objectsGroups": [],
       "variables": [],
@@ -76562,13 +76563,13 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_ctrl::Bindable::handleBinder"
+                    "value": "srs_ctrl::Binder::handleBindable"
                   },
                   "parameters": [
+                    "Binder",
+                    "Binder",
                     "Controls",
                     "Bindable",
-                    "Binder",
-                    "Binder",
                     ""
                   ],
                   "subInstructions": []
@@ -80442,19 +80443,6 @@
                         "\"enabled\""
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "BindStatus",
-                        "=",
-                        "\"initialized\""
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -80487,756 +80475,6 @@
                   "name": "Behavior",
                   "optional": false,
                   "supplementaryInformation": "srs_ctrl::Bindable",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "name": "doStepPreEvents",
-              "sentence": "",
-              "events": [
-                {
-                  "colorB": 228,
-                  "colorG": 176,
-                  "colorR": 74,
-                  "creationTime": 0,
-                  "disabled": false,
-                  "folded": false,
-                  "name": "",
-                  "source": "",
-                  "type": "BuiltinCommonInstructions::Group",
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Ensure a key is released before grabbing the next key for binding",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"initialized\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::enableControls"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "AnyKeyPressed"
-                              },
-                              "parameters": [
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "BindStatus",
-                                "=",
-                                "\"ready\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": true,
-                      "folded": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AnyKeyPressed"
-                          },
-                          "parameters": [
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"loggy \" + Object.VariableString(BindStatus)",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "BindStatus",
-                                "=",
-                                "\"triggered\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"triggy\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_ctrl::bindableKeyPressed"
-                              },
-                              "parameters": [
-                                "",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"bindy\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Egal"
-                              },
-                              "parameters": [
-                                "0",
-                                "<",
-                                "Object.Behavior::UnboundCount()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"unboundy\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "If there are bindings available",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"triggered\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::bindableKeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "0",
-                            "<",
-                            "Object.Behavior::UnboundCount()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::disableControls"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "LastBoundKey",
-                                "=",
-                                "LastPressedKey()"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_ctrl::Bindable::bind"
-                              },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "Object.VariableString(LastBoundKey)",
-                                "Object.VariableString(Direction)",
-                                ""
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "BindStatus",
-                                "=",
-                                "\"bound\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "If all bindings have been used",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"triggered\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::bindableKeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "Object.Behavior::UnboundCount()",
-                            "<=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::disableControls"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "Have to wait for a previously bound key to be pressed",
-                          "comment2": ""
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ObjectVariableChildExists"
-                              },
-                              "parameters": [
-                                "Object",
-                                "KeyToDir",
-                                "LastPressedKey()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "LastBoundKey",
-                                    "=",
-                                    "LastPressedKey()"
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_ctrl::Bindable::bind"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "Object.VariableString(LastBoundKey)",
-                                    "Object.VariableString(Direction)",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                },
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "ModVarObjetTxt"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "BindStatus",
-                                    "=",
-                                    "\"bound\""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "parameters": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_ctrl::Bindable",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "description": "handleBinder",
-              "fullName": "handleBinder",
-              "functionType": "Action",
-              "name": "handleBinder",
-              "sentence": "_PARAM0_ handleBinder _PARAM2_",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_ctrl::Binder::IsTriggered"
-                      },
-                      "parameters": [
-                        "BinderObject",
-                        "BinderBehavior",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"ready\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Direction",
-                            "=",
-                            "BinderObject.BinderBehavior::Direction()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"triggered\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "BindStatus",
-                            "=",
-                            "\"bound\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "BinderObject",
-                                "BoundKey",
-                                "=",
-                                "Object.VariableString(LastBoundKey)"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "BindStatus",
-                                "=",
-                                "\"initialized\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_ctrl::Binder::finish"
-                              },
-                              "parameters": [
-                                "BinderObject",
-                                "BinderBehavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_ctrl::Bindable",
-                  "type": "behavior"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "BinderObject",
-                  "longDescription": "",
-                  "name": "BinderObject",
-                  "optional": false,
-                  "supplementaryInformation": "Sprite",
-                  "type": "objectList"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "BinderBehavior",
-                  "longDescription": "",
-                  "name": "BinderBehavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_ctrl::Binder",
                   "type": "behavior"
                 }
               ],
@@ -81288,12 +80526,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ObjectVariableChildExists"
+                            "value": "srs_ctrl::Bindable::HasBinding"
                           },
                           "parameters": [
                             "Object",
-                            "KeyToDir",
-                            "LastPressedKey()"
+                            "Behavior",
+                            "LastPressedKey()",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -81580,6 +80819,90 @@
                         "ControlsStatus",
                         "=",
                         "\"disabled\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsEnabled?",
+              "fullName": "IsEnabled?",
+              "functionType": "Condition",
+              "name": "IsEnabled",
+              "sentence": "_PARAM0_ IsEnabled?",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ControlsStatus",
+                        "=",
+                        "\"enabled\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -81937,11 +81260,11 @@
               "objectGroups": []
             },
             {
-              "description": "IsEnabled?",
-              "fullName": "IsEnabled?",
+              "description": "HasDirection",
+              "fullName": "HasDirection",
               "functionType": "Condition",
-              "name": "IsEnabled",
-              "sentence": "_PARAM0_ IsEnabled?",
+              "name": "HasDirection",
+              "sentence": "_PARAM0_ HasDirection_PARAM2_",
               "events": [
                 {
                   "disabled": false,
@@ -81970,13 +81293,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "VarObjetTxt"
+                        "value": "ObjectVariableChildExists"
                       },
                       "parameters": [
                         "Object",
-                        "ControlsStatus",
-                        "=",
-                        "\"enabled\""
+                        "KeyToDir",
+                        "GetArgumentAsString(\"Direction\")"
                       ],
                       "subInstructions": []
                     }
@@ -82016,6 +81338,109 @@
                   "optional": false,
                   "supplementaryInformation": "srs_ctrl::Bindable",
                   "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Direction",
+                  "longDescription": "",
+                  "name": "Direction",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "HasBinding",
+              "fullName": "HasBinding",
+              "functionType": "Condition",
+              "name": "HasBinding",
+              "sentence": "_PARAM0_ HasBinding _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableChildExists"
+                      },
+                      "parameters": [
+                        "Object",
+                        "DirToKey",
+                        "GetArgumentAsString(\"Key\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Key",
+                  "longDescription": "",
+                  "name": "Key",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
                 }
               ],
               "objectGroups": []
@@ -82074,7 +81499,7 @@
                         "Object",
                         "BindTextStatus",
                         "=",
-                        "\"\""
+                        "\"initialized\""
                       ],
                       "subInstructions": []
                     },
@@ -82103,6 +81528,19 @@
                         "\"initialized\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyStatus",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -82127,6 +81565,447 @@
                   "name": "Behavior",
                   "optional": false,
                   "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "handleBindable",
+              "fullName": "handleBindable",
+              "functionType": "Action",
+              "name": "handleBindable",
+              "sentence": "_PARAM0_ handleBindable  _PARAM2_",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Binder::IsTriggered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::disableControls"
+                          },
+                          "parameters": [
+                            "BindableObject",
+                            "BindableBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Ensure a key is released before grabbing the next key for binding",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "srs_ctrl::Binder::KeyIsReady"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Binder::readyKey"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Binder::KeyIsReady"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::bindableKeyPressed"
+                              },
+                              "parameters": [
+                                "",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "If there are bindings available",
+                              "comment2": ""
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Egal"
+                                  },
+                                  "parameters": [
+                                    "0",
+                                    "<",
+                                    "BindableObject.BindableBehavior::UnboundCount()"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "srs_ctrl::Bindable::bind"
+                                      },
+                                      "parameters": [
+                                        "BindableObject",
+                                        "BindableBehavior",
+                                        "LastPressedKey()",
+                                        "Object.Behavior::Direction()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "srs_ctrl::Binder::bind"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "If all bindings have been used",
+                              "comment2": ""
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Egal"
+                                  },
+                                  "parameters": [
+                                    "BindableObject.BindableBehavior::UnboundCount()",
+                                    "<=",
+                                    "0"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Have to wait for a previously bound key to be pressed",
+                                  "comment2": ""
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "srs_ctrl::Bindable::HasBinding"
+                                      },
+                                      "parameters": [
+                                        "BindableObject",
+                                        "BindableBehavior",
+                                        "LastPressedKey()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "disabled": false,
+                                      "folded": false,
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "srs_ctrl::Bindable::bind"
+                                          },
+                                          "parameters": [
+                                            "BindableObject",
+                                            "BindableBehavior",
+                                            "LastPressedKey()",
+                                            "Object.Behavior::Direction()",
+                                            ""
+                                          ],
+                                          "subInstructions": []
+                                        },
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "srs_ctrl::Binder::bind"
+                                          },
+                                          "parameters": [
+                                            "Object",
+                                            "Behavior",
+                                            ""
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ],
+                                      "events": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Binder::IsBound"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Bindable::enableControls"
+                              },
+                              "parameters": [
+                                "BindableObject",
+                                "BindableBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Binder::finish"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "BindableObject",
+                  "longDescription": "",
+                  "name": "BindableObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "BindableBehavior",
+                  "longDescription": "",
+                  "name": "BindableBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
                   "type": "behavior"
                 }
               ],
@@ -82169,13 +82048,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarObjetTxt"
+                            "value": "srs_ctrl::Binder::IsInitialized"
                           },
                           "parameters": [
                             "Object",
-                            "BindStatus",
-                            "=",
-                            "\"initialized\""
+                            "Behavior",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -82184,13 +82062,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ModVarObjetTxt"
+                            "value": "srs_ctrl::Binder::trigger"
                           },
                           "parameters": [
                             "Object",
-                            "BindStatus",
-                            "=",
-                            "\"triggered\""
+                            "Behavior",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -82298,9 +82175,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "BoundKey",
-                        "!=",
-                        "\"\""
+                        "BindTextStatus",
+                        "=",
+                        "\"initialized\""
                       ],
                       "subInstructions": []
                     },
@@ -82311,8 +82188,8 @@
                       },
                       "parameters": [
                         "Object",
-                        "BindTextStatus",
-                        "=",
+                        "BoundKey",
+                        "!=",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -82801,13 +82678,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "VarObjetTxt"
+                        "value": "srs_ctrl::Binder::IsBound"
                       },
                       "parameters": [
                         "Object",
-                        "BindStatus",
-                        "=",
-                        "\"finished\""
+                        "Behavior",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -82934,6 +82810,127 @@
               "objectGroups": []
             },
             {
+              "description": "trigger",
+              "fullName": "trigger",
+              "functionType": "Action",
+              "name": "trigger",
+              "sentence": "_PARAM0_ trigger",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindStatus",
+                        "=",
+                        "\"triggered\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "bind",
+              "fullName": "bind",
+              "functionType": "Action",
+              "name": "bind",
+              "sentence": "_PARAM0_ bind",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindStatus",
+                        "=",
+                        "\"bound\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BoundKey",
+                        "=",
+                        "LastPressedKey()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "finish",
               "fullName": "finish",
               "functionType": "Action",
@@ -82977,6 +82974,90 @@
                         "Object",
                         "=",
                         "30"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsInitialized",
+              "fullName": "IsInitialized",
+              "functionType": "Condition",
+              "name": "IsInitialized",
+              "sentence": "_PARAM0_ IsInitialized",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindStatus",
+                        "=",
+                        "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -83093,6 +83174,174 @@
               "objectGroups": []
             },
             {
+              "description": "IsBound",
+              "fullName": "IsBound",
+              "functionType": "Condition",
+              "name": "IsBound",
+              "sentence": "_PARAM0_ IsBound",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindStatus",
+                        "=",
+                        "\"bound\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsFinished",
+              "fullName": "IsFinished",
+              "functionType": "Condition",
+              "name": "IsFinished",
+              "sentence": "_PARAM0_ IsFinished",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "BindStatus",
+                        "=",
+                        "\"finished\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "Direction",
               "fullName": "Direction",
               "functionType": "StringExpression",
@@ -83158,6 +83407,144 @@
                       },
                       "parameters": [
                         "Object.VariableString(Direction)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "readyKey",
+              "fullName": "readyKey",
+              "functionType": "Action",
+              "name": "readyKey",
+              "sentence": "_PARAM0_ readyKey",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyStatus",
+                        "=",
+                        "\"ready\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "KeyIsReady",
+              "fullName": "KeyIsReady",
+              "functionType": "Condition",
+              "name": "KeyIsReady",
+              "sentence": "_PARAM0_ KeyIsReady",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyStatus",
+                        "=",
+                        "\"ready\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
                       ],
                       "subInstructions": []
                     }
