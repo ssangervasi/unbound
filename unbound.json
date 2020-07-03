@@ -2396,78 +2396,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door7.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/Door/Door8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\Door\\Door8.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Assets/Sprites/Key/Key-grey.png",
         "kind": "image",
         "metadata": "",
@@ -2477,73 +2405,640 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey1.png",
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey4.png",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey5.png",
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey5.png",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey7.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey6.png",
+        "file": "Assets/Sprites/Door/Door-grey/Door-grey8.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey6.png",
+        "name": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey7.png",
+        "file": "Assets/Sprites/Door/Door-green/Door-green1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey7.png",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-green/Door-green7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green7.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Sprites/BindIndicator/BindIndicator-Key-Grey/BindIndicator-Key-Grey8.png",
+        "file": "Assets/Sprites/Door/Door-green/Door-green8.png",
         "kind": "image",
         "metadata": "",
-        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey8.png",
+        "name": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Door/Door-pink/Door-pink8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key-green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key-green.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-green/Key_Dropping-green7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key-pink.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key-pink.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-pink/Key_Dropping-pink7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Key/Key_Dropping-grey/Key_Dropping-grey7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-grey/BindIndicator_Key-grey8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-green/BindIndicator_Key-green8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/BindIndicator/BindIndicator_Key-pink/BindIndicator_Key-pink8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink8.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -8104,10 +8599,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 9
                   },
                   "customCollisionMask": [
                     [
@@ -8129,173 +8624,6 @@
                       }
                     ]
                   ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "KeyIndicator",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "BindIndicatorWidth",
-          "value": "32"
-        },
-        {
-          "name": "BindIndicatorHeight",
-          "value": "32"
-        }
-      ],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Key_Grey",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.12,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey8.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
                 }
               ]
             }
@@ -9042,6 +9370,450 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Lapse\\BindIndicator-Lapse8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Key_Grey",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-grey\\BindIndicator_Key-grey8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Key_Green",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-green\\BindIndicator_Key-green8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Key_Pink",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\BindIndicator\\BindIndicator_Key-pink\\BindIndicator_Key-pink8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -73857,7 +74629,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 2.101
+        "zoomFactor": 3.229
       },
       "objectsGroups": [],
       "variables": [],
@@ -74054,7 +74826,7 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 260,
+          "width": 420,
           "x": 120,
           "y": 230,
           "zOrder": 203,
@@ -74084,7 +74856,7 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 190,
+          "width": 200,
           "x": 120,
           "y": 290,
           "zOrder": 203,
@@ -74195,24 +74967,9 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 310,
+          "x": 320,
           "y": 400,
           "zOrder": 209,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 10,
-          "layer": "",
-          "locked": false,
-          "name": "Obstacle",
-          "width": 60,
-          "x": 470,
-          "y": 440,
-          "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -74245,7 +75002,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 420,
+          "x": 430,
           "y": 390,
           "zOrder": 1,
           "numberProperties": [
@@ -74305,7 +75062,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 370,
+          "x": 380,
           "y": 390,
           "zOrder": 1,
           "numberProperties": [
@@ -74325,8 +75082,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 320,
-          "y": 290,
+          "x": 480,
+          "y": 240,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -74460,7 +75217,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 470,
+          "x": 480,
           "y": 390,
           "zOrder": 1,
           "numberProperties": [
@@ -74494,7 +75251,7 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 157,
+          "width": 220,
           "x": 320,
           "y": 440,
           "zOrder": 203,
@@ -74505,13 +75262,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 150,
+          "height": 100,
           "layer": "",
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 370,
-          "y": 240,
+          "x": 380,
+          "y": 290,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -74670,7 +75427,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 170,
+          "x": 180,
           "y": 340,
           "zOrder": 1,
           "numberProperties": [
@@ -75130,8 +75887,8 @@
           "locked": false,
           "name": "Lapse",
           "width": 32,
-          "x": 221,
-          "y": 497,
+          "x": 420,
+          "y": 250,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -75150,7 +75907,7 @@
           "locked": false,
           "name": "Door",
           "width": 50,
-          "x": 220,
+          "x": 230,
           "y": 340,
           "zOrder": 220,
           "numberProperties": [],
@@ -75158,7 +75915,11 @@
           "initialVariables": [
             {
               "name": "KeyId",
-              "value": "Key_Green"
+              "value": "Key_Grey"
+            },
+            {
+              "name": "Color",
+              "value": "Grey"
             }
           ]
         },
@@ -75180,25 +75941,33 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 16,
+          "height": 32,
           "layer": "Objects",
           "locked": false,
           "name": "Key",
           "width": 32,
-          "x": 330,
-          "y": 260,
+          "x": 340,
+          "y": 250,
           "zOrder": 110,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 4
             }
           ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "Id",
-              "value": "Key_Grey"
+              "value": "Key_Pink"
+            },
+            {
+              "name": "Direction",
+              "value": "Key_Pink"
+            },
+            {
+              "name": "Color",
+              "value": "Pink"
             }
           ]
         },
@@ -75210,7 +75979,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 157,
-          "x": 380,
+          "x": 390,
           "y": 380,
           "zOrder": 203,
           "numberProperties": [],
@@ -75225,7 +75994,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 320,
+          "x": 330,
           "y": 340,
           "zOrder": 1,
           "numberProperties": [
@@ -75245,7 +76014,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 320,
+          "x": 330,
           "y": 390,
           "zOrder": 1,
           "numberProperties": [
@@ -75265,8 +76034,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 310,
-          "y": 290,
+          "x": 530,
+          "y": 240,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -75280,7 +76049,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 160,
-          "x": 160,
+          "x": 170,
           "y": 390,
           "zOrder": 203,
           "numberProperties": [],
@@ -75295,7 +76064,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 160,
+          "x": 170,
           "y": 340,
           "zOrder": 209,
           "numberProperties": [],
@@ -75309,8 +76078,8 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 157,
-          "x": 160,
+          "width": 160,
+          "x": 170,
           "y": 330,
           "zOrder": 203,
           "numberProperties": [],
@@ -75345,7 +76114,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 270,
+          "x": 280,
           "y": 340,
           "zOrder": 1,
           "numberProperties": [
@@ -75365,7 +76134,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 220,
+          "x": 230,
           "y": 340,
           "zOrder": 1,
           "numberProperties": [
@@ -75385,15 +76154,180 @@
           "locked": false,
           "name": "Door",
           "width": 50,
-          "x": 420,
+          "x": 430,
           "y": 390,
           "zOrder": 220,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
           "stringProperties": [],
           "initialVariables": [
             {
               "name": "KeyId",
+              "value": "Key_Green"
+            },
+            {
+              "name": "Color",
+              "value": "Green"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Key",
+          "width": 32,
+          "x": 180,
+          "y": 350,
+          "zOrder": 110,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "Key_Green"
+            },
+            {
+              "name": "Direction",
+              "value": "Key_Green"
+            },
+            {
+              "name": "Color",
+              "value": "Green"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 160,
+          "x": 380,
+          "y": 290,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 320,
+          "y": 290,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 330,
+          "y": 290,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 380,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 430,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Key",
+          "width": 32,
+          "x": 480,
+          "y": 250,
+          "zOrder": 110,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
               "value": "Key_Grey"
+            },
+            {
+              "name": "Direction",
+              "value": "Key_Grey"
+            },
+            {
+              "name": "Color",
+              "value": "Grey"
             }
           ]
         }
@@ -75562,7 +76496,7 @@
             {
               "name": "Binder",
               "type": "srs_ctrl::Binder",
-              "Direction": "Right"
+              "Direction": "Lapse"
             }
           ],
           "animations": [
@@ -75606,12 +76540,13 @@
           "behaviors": [
             {
               "name": "Door",
-              "type": "srs_objs::Door"
+              "type": "srs_objs::Door",
+              "KeyId": "Grey"
             }
           ],
           "animations": [
             {
-              "name": "Closed",
+              "name": "Grey_Closed",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -75620,7 +76555,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door1.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75659,7 +76594,7 @@
               ]
             },
             {
-              "name": "Opening",
+              "name": "Grey_Opening",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -75668,7 +76603,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door1.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75704,7 +76639,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door2.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75740,7 +76675,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door3.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75776,7 +76711,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door4.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75812,7 +76747,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door5.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75848,7 +76783,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door6.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75884,7 +76819,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door7.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey7.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75920,7 +76855,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door8.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -75959,7 +76894,7 @@
               ]
             },
             {
-              "name": "Open",
+              "name": "Grey_Open",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -75968,7 +76903,799 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door8.png",
+                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green_Closed",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green_Opening",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green_Open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pink_Closed",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pink_Opening",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pink_Open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76018,17 +77745,18 @@
             {
               "name": "Binder",
               "type": "srs_ctrl::Binder",
-              "Direction": "Key_Grey"
+              "Direction": "Key_Green/Grey"
             },
             {
               "name": "Item",
               "type": "srs_ctrl::Item",
-              "Id": "Key_Grey"
+              "Id": "Key_Green/Grey",
+              "Color": "Green/Grey"
             }
           ],
           "animations": [
             {
-              "name": "Key_Grey",
+              "name": "Grey_Loose",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -76053,32 +77781,32 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
@@ -76088,7 +77816,7 @@
               ]
             },
             {
-              "name": "Key_Grey_Dropping",
+              "name": "Grey_Dropping",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -76097,7 +77825,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey1.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76113,39 +77841,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey2.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76161,39 +77889,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey3.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76209,39 +77937,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey4.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76257,39 +77985,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey5.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76305,39 +78033,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey6.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76353,39 +78081,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey7.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey7.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76401,39 +78129,159 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green_Loose",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key-green.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Green_Dropping",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey8.png",
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -76449,32 +78297,680 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14.7,
-                            "y": 6.3
+                            "x": 15.2028,
+                            "y": 9.10714
                           },
                           {
-                            "x": 12.7,
-                            "y": 7.7
+                            "x": 12.3456,
+                            "y": 11.4881
                           },
                           {
-                            "x": 2.1,
-                            "y": 7.6
+                            "x": 2.70275,
+                            "y": 11.9643
                           },
                           {
-                            "x": 1.3,
-                            "y": 3
+                            "x": 1.51228,
+                            "y": 6.84524
                           },
                           {
-                            "x": 8.7,
-                            "y": 1.4
+                            "x": 8.0599,
+                            "y": 4.94048
                           },
                           {
-                            "x": 13.4,
-                            "y": 1.3
+                            "x": 12.2266,
+                            "y": 4.10714
                           },
                           {
-                            "x": 15.3,
-                            "y": 3.6
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pink_Loose",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key-pink.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pink_Dropping",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15.2028,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 12.3456,
+                            "y": 11.4881
+                          },
+                          {
+                            "x": 2.70275,
+                            "y": 11.9643
+                          },
+                          {
+                            "x": 1.51228,
+                            "y": 6.84524
+                          },
+                          {
+                            "x": 8.0599,
+                            "y": 4.94048
+                          },
+                          {
+                            "x": 12.2266,
+                            "y": 4.10714
+                          },
+                          {
+                            "x": 14.9647,
+                            "y": 6.13095
                           }
                         ]
                       ]
@@ -76589,56 +79085,57 @@
                   "parameters": [
                     "Key",
                     "Binder",
-                    "KeyIndicator",
+                    "BindIndicator",
                     ""
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Bindable::controlItem"
-                  },
-                  "parameters": [
-                    "Controls",
-                    "Bindable",
-                    "Clum",
-                    "Key",
-                    "Item",
-                    ""
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Bindable::controlItem"
+                      },
+                      "parameters": [
+                        "Controls",
+                        "Bindable",
+                        "Clum",
+                        "Key",
+                        "Item",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Item::handleDrop"
+                      },
+                      "parameters": [
+                        "Key",
+                        "Item",
+                        "Clum",
+                        "Clum",
+                        "Obstacle",
+                        "Key",
+                        "Binder",
+                        "Door",
+                        "Door",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Item::handleDrop"
-                  },
-                  "parameters": [
-                    "Key",
-                    "Item",
-                    "Clum",
-                    "Clum",
-                    "Obstacle",
-                    "Key",
-                    "Binder",
-                    "Door",
-                    "Door",
-                    ""
-                  ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -81820,6 +84317,88 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "startAnimation",
+          "fullName": "startAnimation",
+          "functionType": "Action",
+          "name": "startAnimation",
+          "sentence": "_PARAM1_ startAnimation _PARAM2_ ",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Sprite",
+                    "GetArgumentAsString(\"AnimationName\")"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Sprite",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayAnimation"
+                  },
+                  "parameters": [
+                    "Sprite"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Sprite",
+              "longDescription": "",
+              "name": "Sprite",
+              "optional": false,
+              "supplementaryInformation": "Sprite",
+              "type": "objectList"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "AnimationName",
+              "longDescription": "",
+              "name": "AnimationName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsBasedBehaviors": [
@@ -85197,7 +87776,20 @@
                         "Object",
                         "PCY",
                         "=",
-                        "PC.Y()"
+                        "PC.PointY(\"Origin\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "PCX",
+                        "=",
+                        "PC.PointX(\"Center\")"
                       ],
                       "subInstructions": []
                     }
@@ -85233,7 +87825,7 @@
                   "longDescription": "",
                   "name": "PC",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "objectList"
                 }
               ],
@@ -85644,7 +88236,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -85683,7 +88275,7 @@
                       "parameters": [
                         "",
                         "BindIndicator",
-                        "(Object.X() + Object.Width()/2)",
+                        "Object.Variable(PCX)",
                         "Object.Variable(PCY)",
                         "\"UI\""
                       ],
@@ -85700,64 +88292,105 @@
                         "BindIndicator"
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeWidth"
-                      },
-                      "parameters": [
-                        "BindIndicator",
-                        "=",
-                        "BindIndicator.Variable(BindIndicatorWidth)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeHeight"
-                      },
-                      "parameters": [
-                        "BindIndicator",
-                        "=",
-                        "BindIndicator.Variable(BindIndicatorHeight)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "BindIndicator",
-                        "-",
-                        "BindIndicator.Width() * .5",
-                        "-",
-                        "BindIndicator.Height() - 10"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "BindIndicator",
-                        "Object.Behavior::Direction()"
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "Object.Behavior::Direction()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeWidth"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "=",
+                            "BindIndicator.Variable(BindIndicatorWidth)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeHeight"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "=",
+                            "BindIndicator.Variable(BindIndicatorHeight)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreAutourPos"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "Object.Variable(PCX)",
+                            "Object.Variable(PCY)",
+                            "10 + (1/2) * BindIndicator.Height()",
+                            "265"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
                     {
                       "disabled": true,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "BindIndicator",
+                            "-",
+                            "BindIndicator.Width() * .5",
+                            "-",
+                            "BindIndicator.Height() - 10"
+                          ],
+                          "subInstructions": []
+                        },
                         {
                           "type": {
                             "inverted": false,
@@ -87211,6 +89844,21 @@
                     {
                       "disabled": false,
                       "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Prevent dropping through obstacles by raycasting in the direction of bearing",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -87223,7 +89871,7 @@
                             "ClumObject.PointX(\"Center\")",
                             "ClumObject.PointY(\"Center\")",
                             "Object.Variable(DropAngle)",
-                            "(1/2) * ClumObject.Width() + Object.Width() + 1",
+                            "(1/2) * ClumObject.Width() + Object.Width()",
                             "ObstacleX",
                             "ObstacleY",
                             ""
@@ -87257,6 +89905,21 @@
                         {
                           "disabled": false,
                           "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Position the key in the drop spot, then check if it collides with anything before saying the angle is fine. The position will get if its invalid as a result of getting \"picked up\" later.",
+                          "comment2": ""
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
                           "actions": [
@@ -87268,35 +89931,12 @@
                               "parameters": [
                                 "Object",
                                 "ClumObject",
-                                "(1/2) * ClumObject.Width() + Object.Width() + 1",
+                                "(1/2) * (ClumObject.Width() + Object.Width()) + 1",
                                 "Object.Variable(DropAngle)"
                               ],
                               "subInstructions": []
                             }
                           ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "CollisionNP"
-                              },
-                              "parameters": [
-                                "Object",
-                                "Obstacle",
-                                "",
-                                "",
-                                "yes"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
                           "events": []
                         },
                         {
@@ -87321,88 +89961,6 @@
                           ],
                           "actions": [],
                           "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "DoorObject",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "srs_objs::Door::AcceptsKey"
-                                      },
-                                      "parameters": [
-                                        "DoorObject",
-                                        "DoorBehavior",
-                                        "Object.Behavior::Id()",
-                                        ""
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "ModVarObjetTxt"
-                                      },
-                                      "parameters": [
-                                        "Object",
-                                        "IsAngleFound",
-                                        "=",
-                                        "\"true\""
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                },
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "inverted": true,
-                                        "value": "srs_objs::Door::AcceptsKey"
-                                      },
-                                      "parameters": [
-                                        "DoorObject",
-                                        "DoorBehavior",
-                                        "Object.Behavior::Id()",
-                                        ""
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "actions": [],
-                                  "events": []
-                                }
-                              ]
-                            },
                             {
                               "disabled": false,
                               "folded": false,
@@ -87439,6 +89997,87 @@
                                 }
                               ],
                               "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "DoorObject",
+                                    "",
+                                    "",
+                                    "yes"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "BuiltinCommonInstructions::Or"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "srs_objs::Door::AcceptsKey"
+                                          },
+                                          "parameters": [
+                                            "DoorObject",
+                                            "DoorBehavior",
+                                            "Object.Behavior::Id()",
+                                            ""
+                                          ],
+                                          "subInstructions": []
+                                        },
+                                        {
+                                          "type": {
+                                            "inverted": false,
+                                            "value": "srs_objs::Door::IsOpen"
+                                          },
+                                          "parameters": [
+                                            "DoorObject",
+                                            "DoorBehavior",
+                                            "Object.Behavior::Id()"
+                                          ],
+                                          "subInstructions": []
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "IsAngleFound",
+                                        "=",
+                                        "\"true\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -87474,33 +90113,13 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "SetAnimationName"
+                                "value": "srs_utils::startAnimation"
                               },
                               "parameters": [
+                                "",
                                 "Object",
-                                "Object.Behavior::DroppingAnimationName()"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ChangeSprite"
-                              },
-                              "parameters": [
-                                "Object",
-                                "=",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PlayAnimation"
-                              },
-                              "parameters": [
-                                "Object"
+                                "Object.Behavior::DroppingAnimationName()",
+                                ""
                               ],
                               "subInstructions": []
                             }
@@ -87651,11 +90270,13 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "SetAnimationName"
+                            "value": "srs_utils::startAnimation"
                           },
                           "parameters": [
+                            "",
                             "Object",
-                            "Object.Behavior::Id()"
+                            "Object.Behavior::LooseAnimationName()",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -87679,59 +90300,104 @@
                                 "yes"
                               ],
                               "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_objs::Door::AcceptsKey"
-                              },
-                              "parameters": [
-                                "DoorObject",
-                                "DoorBehavior",
-                                "Object.Behavior::Id()",
-                                ""
-                              ],
-                              "subInstructions": []
                             }
                           ],
-                          "actions": [
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"key opening door: \" + DoorObject.DoorBehavior::KeyId()",
-                                ""
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_objs::Door::AcceptsKey"
+                                  },
+                                  "parameters": [
+                                    "DoorObject",
+                                    "DoorBehavior",
+                                    "Object.Behavior::Id()",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
                               ],
-                              "subInstructions": []
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_utils::consoleLog"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"key opening door: \" + DoorObject.DoorBehavior::KeyId()",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_objs::Door::open"
+                                  },
+                                  "parameters": [
+                                    "DoorObject",
+                                    "DoorBehavior",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             },
                             {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_objs::Door::open"
-                              },
-                              "parameters": [
-                                "DoorObject",
-                                "DoorBehavior",
-                                ""
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "srs_objs::Door::AcceptsKey"
+                                  },
+                                  "parameters": [
+                                    "DoorObject",
+                                    "DoorBehavior",
+                                    "Object.Behavior::Id()",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
                               ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Object",
-                                ""
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_utils::consoleLog"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "DoorObject.DoorBehavior::KeyId() + \" door does not accept key \" + Object.Behavior::Id()",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
                               ],
-                              "subInstructions": []
+                              "events": []
                             }
-                          ],
-                          "events": []
+                          ]
                         }
                       ]
                     }
@@ -87983,6 +90649,93 @@
                         "Status",
                         "=",
                         "\"dropping\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Color",
+              "fullName": "Color",
+              "functionType": "StringExpression",
+              "name": "Color",
+              "sentence": "_PARAM0_ Id",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Color",
+                        "=",
+                        "\"0\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Color",
+                        "=",
+                        "Object.Behavior::PropertyColor()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(Color)"
                       ],
                       "subInstructions": []
                     }
@@ -88469,7 +91222,58 @@
               "objectGroups": []
             },
             {
-              "description": "_PARAM0_ DroppingAnimationName",
+              "description": "_PARAM0_ LooseAnimationName (Color)",
+              "fullName": "LooseAnimationName",
+              "functionType": "StringExpression",
+              "name": "LooseAnimationName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::Color() + \"_Loose\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "_PARAM0_ DroppingAnimationName (Id_Color_Dropping)",
               "fullName": "DroppingAnimationName",
               "functionType": "StringExpression",
               "name": "DroppingAnimationName",
@@ -88487,7 +91291,7 @@
                         "value": "SetReturnString"
                       },
                       "parameters": [
-                        "Object.Behavior::Id() + \"_Dropping\""
+                        "Object.Behavior::Color() + \"_Dropping\""
                       ],
                       "subInstructions": []
                     }
@@ -88522,13 +91326,22 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "",
+              "value": "Item",
               "type": "String",
-              "label": "Item id",
+              "label": "Id: set instance variable to override",
               "description": "",
               "extraInformation": [],
               "hidden": false,
               "name": "Id"
+            },
+            {
+              "value": "",
+              "type": "String",
+              "label": "Color: set instance variable to override",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "Color"
             }
           ]
         }
@@ -96429,33 +99242,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "srs_utils::startAnimation"
                       },
                       "parameters": [
+                        "",
                         "Object",
-                        "\"Opening\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeSprite"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PlayAnimation"
-                      },
-                      "parameters": [
-                        "Object"
+                        "Object.Behavior::OpeningAnimationName()",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -96525,11 +99318,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "srs_utils::startAnimation"
                       },
                       "parameters": [
+                        "",
                         "Object",
-                        "\"Closed\""
+                        "Object.Behavior::ClosedAnimationName()",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -96599,11 +99394,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "srs_utils::startAnimation"
                       },
                       "parameters": [
+                        "",
                         "Object",
-                        "\"Open\""
+                        "Object.Behavior::OpenAnimationName()",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -96888,10 +99685,10 @@
               "objectGroups": []
             },
             {
-              "description": "KeyId",
-              "fullName": "KeyId",
+              "description": "ClosedAnimationName",
+              "fullName": "ClosedAnimationName",
               "functionType": "StringExpression",
-              "name": "KeyId",
+              "name": "ClosedAnimationName",
               "sentence": "",
               "events": [
                 {
@@ -96906,13 +99703,234 @@
                         "value": "SetReturnString"
                       },
                       "parameters": [
-                        "Object.Behavior::PropertyKeyId()"
+                        "Object.Behavior::Color() + \"_Closed\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "OpeningAnimationName",
+              "fullName": "OpeningAnimationName",
+              "functionType": "StringExpression",
+              "name": "OpeningAnimationName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::Color() + \"_Opening\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "OpenAnimationName",
+              "fullName": "OpenAnimationName",
+              "functionType": "StringExpression",
+              "name": "OpenAnimationName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::Color() + \"_Open\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Color",
+              "fullName": "Color",
+              "functionType": "StringExpression",
+              "name": "Color",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Color",
+                        "=",
+                        "\"0\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Color",
+                        "=",
+                        "Object.Behavior::PropertyColor()"
                       ],
                       "subInstructions": []
                     }
                   ],
                   "events": []
                 },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(Color)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "KeyId",
+              "fullName": "KeyId",
+              "functionType": "StringExpression",
+              "name": "KeyId",
+              "sentence": "",
+              "events": [
                 {
                   "disabled": false,
                   "folded": false,
@@ -96926,12 +99944,78 @@
                       "parameters": [
                         "Object",
                         "KeyId",
-                        "!=",
+                        "=",
                         "\"0\""
                       ],
                       "subInstructions": []
                     }
                   ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "KeyId",
+                            "=",
+                            "Object.Behavior::PropertyKeyId()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "StrEqual"
+                          },
+                          "parameters": [
+                            "Object.Behavior::PropertyKeyId()",
+                            "=",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Object",
+                            "KeyId",
+                            "=",
+                            "\"Key_\" + Object.Behavior::Color()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -97099,9 +100183,18 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "Key_Rainbow",
+              "value": "Grey",
               "type": "String",
-              "label": "KeyId: set an instance variable on the object to override",
+              "label": "Color: set an instance variable on the object to override",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "Color"
+            },
+            {
+              "value": "Key_Grey",
+              "type": "String",
+              "label": "KeyId: set instance variable to override",
               "description": "",
               "extraInformation": [],
               "hidden": false,
