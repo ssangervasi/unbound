@@ -8328,6 +8328,51 @@
       ]
     },
     {
+      "name": "Lapse",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder",
+          "Direction": "Lapse"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\Lapse\\Lapse.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Binder",
       "tags": "",
       "type": "Sprite",
@@ -9857,6 +9902,2456 @@
         "g": 71,
         "r": 196
       }
+    },
+    {
+      "name": "Door",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Door",
+          "type": "srs_objs::Door",
+          "KeyId": "Grey"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Grey_Closed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grey_Opening",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grey_Open",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Green_Closed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Green_Opening",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Green_Open",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pink_Closed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pink_Opening",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pink_Open",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 26,
+                        "y": 32
+                      },
+                      {
+                        "x": 6,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Key",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder",
+          "Direction": "Key_Green/Grey"
+        },
+        {
+          "name": "Item",
+          "type": "srs_ctrl::Item",
+          "Id": "Key_Green/Grey",
+          "Color": "Green/Grey"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Grey_Loose",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key-grey.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grey_Dropping",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Green_Loose",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key-green.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Green_Dropping",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pink_Loose",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key-pink.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pink_Dropping",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.2028,
+                        "y": 9.10714
+                      },
+                      {
+                        "x": 12.3456,
+                        "y": 11.4881
+                      },
+                      {
+                        "x": 2.70275,
+                        "y": 11.9643
+                      },
+                      {
+                        "x": 1.51228,
+                        "y": 6.84524
+                      },
+                      {
+                        "x": 8.0599,
+                        "y": 4.94048
+                      },
+                      {
+                        "x": 12.2266,
+                        "y": 4.10714
+                      },
+                      {
+                        "x": 14.9647,
+                        "y": 6.13095
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "height": 10,
@@ -74629,7 +77124,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 3.229
+        "zoomFactor": 2.437
       },
       "objectsGroups": [],
       "variables": [],
@@ -76485,2501 +78980,6 @@
             "g": 196,
             "r": 202
           }
-        },
-        {
-          "name": "Lapse",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Binder",
-              "type": "srs_ctrl::Binder",
-              "Direction": "Lapse"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\Lapse\\Lapse.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Door",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Door",
-              "type": "srs_objs::Door",
-              "KeyId": "Grey"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Grey_Closed",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Grey_Opening",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Grey_Open",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-grey\\Door-grey8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green_Closed",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green_Opening",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green_Open",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-green\\Door-green8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Pink_Closed",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Pink_Opening",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Pink_Open",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Door\\Door-pink\\Door-pink8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 0
-                          },
-                          {
-                            "x": 26,
-                            "y": 32
-                          },
-                          {
-                            "x": 6,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Key",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Binder",
-              "type": "srs_ctrl::Binder",
-              "Direction": "Key_Green/Grey"
-            },
-            {
-              "name": "Item",
-              "type": "srs_ctrl::Item",
-              "Id": "Key_Green/Grey",
-              "Color": "Green/Grey"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Grey_Loose",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key-grey.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Grey_Dropping",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-grey\\Key_Dropping-grey7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green_Loose",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key-green.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Green_Dropping",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-green\\Key_Dropping-green7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Pink_Loose",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key-pink.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Pink_Dropping",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Assets\\Sprites\\Key\\Key_Dropping-pink\\Key_Dropping-pink7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 15.2028,
-                            "y": 9.10714
-                          },
-                          {
-                            "x": 12.3456,
-                            "y": 11.4881
-                          },
-                          {
-                            "x": 2.70275,
-                            "y": 11.9643
-                          },
-                          {
-                            "x": 1.51228,
-                            "y": 6.84524
-                          },
-                          {
-                            "x": 8.0599,
-                            "y": 4.94048
-                          },
-                          {
-                            "x": 12.2266,
-                            "y": 4.10714
-                          },
-                          {
-                            "x": 14.9647,
-                            "y": 6.13095
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -79011,283 +79011,13 @@
           "target": "LevelWithControls"
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Door Key Bind",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "Key",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::handleBindable"
-                  },
-                  "parameters": [
-                    "Key",
-                    "Binder",
-                    "Controls",
-                    "Bindable",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::handleCollision"
-                  },
-                  "parameters": [
-                    "Key",
-                    "Binder",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::createBindText"
-                  },
-                  "parameters": [
-                    "Key",
-                    "Binder",
-                    "BindText",
-                    "Tween",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Binder::createBindIndicator"
-                  },
-                  "parameters": [
-                    "Key",
-                    "Binder",
-                    "BindIndicator",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_ctrl::Bindable::controlItem"
-                      },
-                      "parameters": [
-                        "Controls",
-                        "Bindable",
-                        "Clum",
-                        "Key",
-                        "Item",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_ctrl::Item::handleDrop"
-                      },
-                      "parameters": [
-                        "Key",
-                        "Item",
-                        "Clum",
-                        "Clum",
-                        "Obstacle",
-                        "Key",
-                        "Binder",
-                        "Door",
-                        "Door",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "Door",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Door::handleCollision"
-                  },
-                  "parameters": [
-                    "Door",
-                    "Door",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Door::handleKey"
-                  },
-                  "parameters": [
-                    "Door",
-                    "Door",
-                    "Key",
-                    "Item",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"d\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Door::open"
-                  },
-                  "parameters": [
-                    "Door",
-                    "Door",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"s\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Door::forceOpen"
-                  },
-                  "parameters": [
-                    "Door",
-                    "Door",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"a\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::Door::forceClosed"
-                  },
-                  "parameters": [
-                    "Door",
-                    "Door",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Doors"
         },
         {
           "colorB": 228,
@@ -80925,6 +80655,201 @@
                 }
               ],
               "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "L_CameraTests",
+      "lastChangeTimeStamp": 0,
+      "name": "Doors",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Door",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Door::handleCollision"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Door",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Door::handleKey"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Door",
+                    "Key",
+                    "Item",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Door Key Bind",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Key",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::handleBindable"
+                  },
+                  "parameters": [
+                    "Key",
+                    "Binder",
+                    "Controls",
+                    "Bindable",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::handleCollision"
+                  },
+                  "parameters": [
+                    "Key",
+                    "Binder",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::createBindText"
+                  },
+                  "parameters": [
+                    "Key",
+                    "Binder",
+                    "BindText",
+                    "Tween",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::createBindIndicator"
+                  },
+                  "parameters": [
+                    "Key",
+                    "Binder",
+                    "BindIndicator",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Bindable::controlItem"
+                      },
+                      "parameters": [
+                        "Controls",
+                        "Bindable",
+                        "Clum",
+                        "Key",
+                        "Item",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Item::handleDrop"
+                      },
+                      "parameters": [
+                        "Key",
+                        "Item",
+                        "Clum",
+                        "Clum",
+                        "Obstacle",
+                        "Key",
+                        "Binder",
+                        "Door",
+                        "Door",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ],
           "parameters": []
