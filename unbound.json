@@ -46746,7 +46746,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Toggle::HandleCollision"
+                    "value": "srs_objs::Toggle::handleCollision"
                   },
                   "parameters": [
                     "Toggle",
@@ -51646,7 +51646,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Toggle::HandleCollision"
+                    "value": "srs_objs::Toggle::handleCollision"
                   },
                   "parameters": [
                     "Toggle",
@@ -56784,7 +56784,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Toggle::HandleCollision"
+                    "value": "srs_objs::Toggle::handleCollision"
                   },
                   "parameters": [
                     "Toggle",
@@ -60174,7 +60174,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "srs_objs::Toggle::HandleCollision"
+                "value": "srs_objs::Toggle::handleCollision"
               },
               "parameters": [
                 "Toggle",
@@ -73405,7 +73405,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Toggle::HandleCollision"
+                    "value": "srs_objs::Toggle::handleCollision"
                   },
                   "parameters": [
                     "Toggle",
@@ -73857,7 +73857,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.909
+        "zoomFactor": 2.101
       },
       "objectsGroups": [],
       "variables": [],
@@ -74054,7 +74054,7 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 310,
+          "width": 260,
           "x": 120,
           "y": 230,
           "zOrder": 203,
@@ -74145,8 +74145,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 310,
-          "y": 442,
+          "x": 260,
+          "y": 450,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -74170,8 +74170,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 240,
-          "y": 250,
+          "x": 250,
+          "y": 240,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -74196,7 +74196,7 @@
           "name": "Obstacle",
           "width": 10,
           "x": 310,
-          "y": 290,
+          "y": 400,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -74210,8 +74210,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 60,
-          "x": 320,
-          "y": 130,
+          "x": 470,
+          "y": 440,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -74245,8 +74245,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 240,
+          "x": 420,
+          "y": 390,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -74305,8 +74305,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 320,
-          "y": 340,
+          "x": 370,
+          "y": 390,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -74460,8 +74460,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 583,
-          "y": 232,
+          "x": 470,
+          "y": 390,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -74495,8 +74495,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 157,
-          "x": 260,
-          "y": 390,
+          "x": 320,
+          "y": 440,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -74670,7 +74670,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 270,
+          "x": 170,
           "y": 340,
           "zOrder": 1,
           "numberProperties": [
@@ -74840,8 +74840,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 180,
-          "y": 250,
+          "x": 190,
+          "y": 240,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -75146,12 +75146,12 @@
           "angle": 0,
           "customSize": true,
           "height": 50,
-          "layer": "Objects",
+          "layer": "",
           "locked": false,
           "name": "Door",
           "width": 50,
-          "x": 460,
-          "y": 240,
+          "x": 220,
+          "y": 340,
           "zOrder": 220,
           "numberProperties": [],
           "stringProperties": [],
@@ -75176,13 +75176,13 @@
           "angle": 0,
           "customSize": true,
           "height": 16,
-          "layer": "",
+          "layer": "Objects",
           "locked": false,
           "name": "Key",
           "width": 32,
           "x": 330,
           "y": 260,
-          "zOrder": 221,
+          "zOrder": 110,
           "numberProperties": [
             {
               "name": "animation",
@@ -75205,9 +75205,184 @@
           "locked": false,
           "name": "Obstacle",
           "width": 157,
+          "x": 380,
+          "y": 380,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 320,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 320,
+          "y": 390,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 310,
+          "y": 290,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 160,
+          "x": 160,
+          "y": 390,
+          "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 160,
+          "y": 340,
+          "zOrder": 209,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 157,
           "x": 160,
           "y": 330,
           "zOrder": 203,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 330,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 270,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 220,
+          "y": 340,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Door",
+          "width": 50,
+          "x": 420,
+          "y": 390,
+          "zOrder": 220,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -75434,7 +75609,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door1.png",
                       "points": [],
                       "originPoint": {
@@ -75448,7 +75623,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -75463,7 +75657,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door1.png",
                       "points": [],
                       "originPoint": {
@@ -75477,10 +75671,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door2.png",
                       "points": [],
                       "originPoint": {
@@ -75494,10 +75707,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door3.png",
                       "points": [],
                       "originPoint": {
@@ -75511,10 +75743,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door4.png",
                       "points": [],
                       "originPoint": {
@@ -75528,10 +75779,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door5.png",
                       "points": [],
                       "originPoint": {
@@ -75545,10 +75815,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door6.png",
                       "points": [],
                       "originPoint": {
@@ -75562,10 +75851,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door7.png",
                       "points": [],
                       "originPoint": {
@@ -75579,10 +75887,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door8.png",
                       "points": [],
                       "originPoint": {
@@ -75596,7 +75923,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -75611,7 +75957,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Door\\Door8.png",
                       "points": [],
                       "originPoint": {
@@ -75625,7 +75971,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 32
+                          },
+                          {
+                            "x": 6,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -75653,7 +76018,7 @@
           ],
           "animations": [
             {
-              "name": "Grey",
+              "name": "Key_Grey",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -75661,7 +76026,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Assets\\Sprites\\Key\\Key-grey.png",
                       "points": [],
                       "originPoint": {
@@ -75675,7 +76040,434 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Key_Grey_Dropping",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Assets\\Sprites\\BindIndicator\\BindIndicator-Key-Grey\\BindIndicator-Key-Grey8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14.7,
+                            "y": 6.3
+                          },
+                          {
+                            "x": 12.7,
+                            "y": 7.7
+                          },
+                          {
+                            "x": 2.1,
+                            "y": 7.6
+                          },
+                          {
+                            "x": 1.3,
+                            "y": 3
+                          },
+                          {
+                            "x": 8.7,
+                            "y": 1.4
+                          },
+                          {
+                            "x": 13.4,
+                            "y": 1.3
+                          },
+                          {
+                            "x": 15.3,
+                            "y": 3.6
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -75825,8 +76617,12 @@
                     "Key",
                     "Item",
                     "Clum",
-                    "Tile",
+                    "Clum",
                     "Obstacle",
+                    "Key",
+                    "Binder",
+                    "Door",
+                    "Door",
                     ""
                   ],
                   "subInstructions": []
@@ -75848,6 +76644,42 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Door::handleCollision"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Door",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Door::handleKey"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Door",
+                    "Key",
+                    "Item",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
             {
               "disabled": false,
               "folded": false,
@@ -75940,6 +76772,53 @@
                   "parameters": [
                     "Door",
                     "Door",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Alert shake",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Clum::alert"
+                  },
+                  "parameters": [
+                    "Clum",
+                    "Clum",
                     ""
                   ],
                   "subInstructions": []
@@ -76858,7 +77737,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Obstacle::HandleCollision"
+                    "value": "srs_objs::Obstacle::handleCollision"
                   },
                   "parameters": [
                     "Obstacle",
@@ -80546,6 +81425,17 @@
                     "GetArgumentAsString(\"TimerName\")"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "UnPauseObjectTimer"
+                  },
+                  "parameters": [
+                    "Object",
+                    "GetArgumentAsString(\"TimerName\")"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -81525,6 +82415,19 @@
                         ""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Bindable::HasDirection"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "ItemObject.ItemBehavior::Id()",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [],
@@ -81537,23 +82440,45 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_ctrl::bindableKeyPressed"
+                            "value": "srs_ctrl::Item::IsLoose"
                           },
                           "parameters": [
-                            "",
+                            "ItemObject",
+                            "ItemBehavior",
                             ""
                           ],
                           "subInstructions": []
-                        },
+                        }
+                      ],
+                      "actions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_ctrl::Bindable::HasBinding"
+                            "value": "srs_ctrl::Item::pickUp"
                           },
                           "parameters": [
-                            "Object",
-                            "Behavior",
-                            "LastPressedKey()",
+                            "ItemObject",
+                            "ItemBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Item::IsPickedUp"
+                          },
+                          "parameters": [
+                            "ItemObject",
+                            "ItemBehavior",
                             ""
                           ],
                           "subInstructions": []
@@ -81570,13 +82495,13 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "ModVarObjetTxt"
+                                "value": "MettreAutour"
                               },
                               "parameters": [
+                                "ItemObject",
                                 "Object",
-                                "PressedDirection",
-                                "=",
-                                "Object.VariableString(KeyToDir[LastPressedKey()])"
+                                "0",
+                                "0"
                               ],
                               "subInstructions": []
                             }
@@ -81591,122 +82516,10 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "StrEqual"
-                              },
-                              "parameters": [
-                                "Object.VariableString(PressedDirection)",
-                                "=",
-                                "ItemObject.ItemBehavior::Id()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
+                                "value": "srs_ctrl::bindableKeyPressed"
                               },
                               "parameters": [
                                 "",
-                                "\"Controls bound \" + ItemObject.ItemBehavior::Id()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_ctrl::Bindable::HasDirection"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "ItemObject.ItemBehavior::Id()",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Has direction!\"",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 109,
-                            "g": 230,
-                            "r": 255,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "Matching on direction = id, which yeah blah",
-                          "comment2": ""
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "StrEqual"
-                              },
-                              "parameters": [
-                                "Object.VariableString(PressedDirection)",
-                                "=",
-                                "ItemObject.ItemBehavior::Id()"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_ctrl::Item::IsPickedUp"
-                              },
-                              "parameters": [
-                                "ItemObject",
-                                "ItemBehavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_ctrl::Item::drop"
-                              },
-                              "parameters": [
-                                "ItemObject",
-                                "ItemBehavior",
                                 ""
                               ],
                               "subInstructions": []
@@ -81714,7 +82527,7 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_ctrl::Bindable::unbind"
+                                "value": "srs_ctrl::Bindable::HasBinding"
                               },
                               "parameters": [
                                 "Object",
@@ -81725,6 +82538,7 @@
                               "subInstructions": []
                             }
                           ],
+                          "actions": [],
                           "events": [
                             {
                               "disabled": false,
@@ -81735,101 +82549,55 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "srs_utils::consoleLog"
+                                    "value": "ModVarObjetTxt"
                                   },
                                   "parameters": [
-                                    "",
-                                    "\"Controls dropping item\"",
-                                    ""
+                                    "Object",
+                                    "PressedDirection",
+                                    "=",
+                                    "Object.VariableString(KeyToDir[LastPressedKey()])"
                                   ],
                                   "subInstructions": []
                                 }
                               ],
                               "events": []
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "If it got bound without getting picked up, pick it up.",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_ctrl::Bindable::HasDirection"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            "ItemObject.ItemBehavior::Id()",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
+                            },
                             {
-                              "type": {
-                                "inverted": true,
-                                "value": "srs_ctrl::Item::IsPickedUp"
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
                               },
-                              "parameters": [
-                                "ItemObject",
-                                "ItemBehavior",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Controls picking up item\"",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": [
+                              "comment": "Matching on direction = id, which yeah blah",
+                              "comment2": ""
+                            },
                             {
                               "disabled": false,
                               "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
+                              "conditions": [
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "srs_ctrl::Item::pickUp"
+                                    "value": "StrEqual"
+                                  },
+                                  "parameters": [
+                                    "Object.VariableString(PressedDirection)",
+                                    "=",
+                                    "ItemObject.ItemBehavior::Id()"
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_ctrl::Item::IsPickedUp"
                                   },
                                   "parameters": [
                                     "ItemObject",
@@ -81839,11 +82607,94 @@
                                   "subInstructions": []
                                 }
                               ],
-                              "events": []
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_ctrl::Item::drop"
+                                  },
+                                  "parameters": [
+                                    "ItemObject",
+                                    "ItemBehavior",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "srs_utils::consoleLog"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Controls dropping item\"",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                }
+                              ]
                             }
                           ]
                         }
                       ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Item::IsDropped"
+                          },
+                          "parameters": [
+                            "ItemObject",
+                            "ItemBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Bindable::unbind"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "LastPressedKey()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Item::letLoose"
+                          },
+                          "parameters": [
+                            "ItemObject",
+                            "ItemBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 }
@@ -81886,7 +82737,7 @@
                   "longDescription": "",
                   "name": "ItemObject",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "objectList"
                 },
                 {
@@ -83038,6 +83889,59 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "srs_ctrl::Binder::initialize"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "initialize",
+              "fullName": "initialize",
+              "functionType": "Action",
+              "name": "initialize",
+              "sentence": "_PARAM0_ initialize",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
@@ -83097,6 +84001,27 @@
                         "KeyStatus",
                         "=",
                         "\"initialized\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Opacity"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "255"
                       ],
                       "subInstructions": []
                     }
@@ -85832,7 +86757,7 @@
           "description": "",
           "fullName": "",
           "name": "Item",
-          "objectType": "",
+          "objectType": "Sprite",
           "eventsFunctions": [
             {
               "description": "",
@@ -85850,13 +86775,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ModVarObjetTxt"
+                        "value": "srs_ctrl::Item::letLoose"
                       },
                       "parameters": [
                         "Object",
-                        "Status",
-                        "=",
-                        "\"dropped\""
+                        "Behavior",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -85872,7 +86796,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -85926,7 +86850,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -85947,7 +86871,7 @@
               "fullName": "handleDrop",
               "functionType": "Action",
               "name": "handleDrop",
-              "sentence": "_PARAM0_ handleDrop _PARAM2_ _PARAM3_ _PARAM4_",
+              "sentence": "_PARAM0_ handleDrop _PARAM2_ _PARAM3_ _PARAM4_ _PARAM5_ _PARAM6_ _PARAM7_",
               "events": [
                 {
                   "disabled": false,
@@ -85967,87 +86891,22 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Dropping\"",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Status",
-                            "=",
-                            "\"dropped\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Floor",
-                            "PC",
-                            "",
-                            "",
-                            "yes"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "srs_utils::consoleLog"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Floors in collision: \" + ToString(Count(Floor))",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Sweep in a 30 degree cone, 15 degrees on either side of bearing, in 5 degree increments",
+                      "comment2": ""
                     },
                     {
                       "disabled": false,
@@ -86064,7 +86923,7 @@
                             "Object",
                             "DropAngle",
                             "=",
-                            "-45"
+                            "ClumObject.ClumBehavior::Bearing() - 15"
                           ],
                           "subInstructions": []
                         },
@@ -86099,7 +86958,7 @@
                             "Object",
                             "DropAngle",
                             "<",
-                            "360"
+                            "ClumObject.ClumBehavior::Bearing() + 15"
                           ],
                           "subInstructions": []
                         },
@@ -86128,7 +86987,7 @@
                             "Object",
                             "DropAngle",
                             "+",
-                            "45"
+                            "1"
                           ],
                           "subInstructions": []
                         },
@@ -86170,10 +87029,10 @@
                               },
                               "parameters": [
                                 "Obstacle",
-                                "PC.PointX(\"Center\")",
-                                "PC.PointY(\"Center\")",
+                                "ClumObject.PointX(\"Center\")",
+                                "ClumObject.PointY(\"Center\")",
                                 "Object.Variable(DropAngle)",
-                                "PC.Width() + 2 * Object.Width()",
+                                "(1/2) * ClumObject.Width() + Object.Width() + 1",
                                 "ObstacleX",
                                 "ObstacleY",
                                 ""
@@ -86182,41 +87041,6 @@
                             }
                           ],
                           "actions": [],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ObstacleX",
-                                "=",
-                                "-1"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjetTxt"
-                              },
-                              "parameters": [
-                                "Object",
-                                "IsAngleFound",
-                                "=",
-                                "\"true\""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
                           "events": [
                             {
                               "disabled": false,
@@ -86238,7 +87062,29 @@
                                 }
                               ],
                               "events": []
-                            },
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "ObstacleX",
+                                "=",
+                                "-1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
                             {
                               "disabled": false,
                               "folded": false,
@@ -86253,6 +87099,101 @@
                                   "parameters": [
                                     "",
                                     "\"Found angle: \" + ToString(Object.Variable(DropAngle))",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreAutour"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "ClumObject",
+                                    "(1/2) * ClumObject.Width() + Object.Width() + 1",
+                                    "Object.Variable(DropAngle)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Obstacle",
+                                    "",
+                                    "",
+                                    "yes"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "IsAngleFound",
+                                    "=",
+                                    "\"true\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Obstacle",
+                                    "",
+                                    "",
+                                    "yes"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_utils::consoleLog"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"collision\"",
                                     ""
                                   ],
                                   "subInstructions": []
@@ -86289,40 +87230,137 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "MettreAutour"
+                            "value": "VarObjetTxt"
                           },
                           "parameters": [
                             "Object",
-                            "PC",
-                            "PC.Width() + 1.5 * Object.Width()",
-                            "Object.Variable(DropAngle)"
+                            "IsAngleFound",
+                            "=",
+                            "\"true\""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": true,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreAutour"
+                              },
+                              "parameters": [
+                                "Object",
+                                "ClumObject",
+                                "(1/2) * ClumObject.Width() + Object.Width() + 1",
+                                "Object.Variable(DropAngle)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Object.Behavior::DroppingAnimationName()"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "Object",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PlayAnimation"
+                              },
+                              "parameters": [
+                                "Object"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Item::forceDropped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Binder::initialize"
+                              },
+                              "parameters": [
+                                "BinderObject",
+                                "BinderBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     },
                     {
-                      "disabled": true,
+                      "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "CollisionNP"
+                            "inverted": false,
+                            "value": "VarObjetTxt"
                           },
                           "parameters": [
-                            "Floor",
-                            "PC",
-                            "",
-                            "",
-                            "yes"
+                            "Object",
+                            "IsAngleFound",
+                            "=",
+                            "\"false\""
                           ],
                           "subInstructions": []
                         }
@@ -86338,125 +87376,95 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "srs_utils::consoleLog"
+                                "value": "srs_objs::Clum::alert"
                               },
                               "parameters": [
-                                "",
-                                "\"Floors not in collision: \" + ToString(Count(Floor))",
+                                "ClumObject",
+                                "ClumBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_ctrl::Item::pickUp"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
                                 ""
                               ],
                               "subInstructions": []
                             }
                           ],
                           "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "RaycastToPosition"
-                              },
-                              "parameters": [
-                                "Obstacle",
-                                "PC.PointX(\"Center\")",
-                                "PC.PointY(\"Center\")",
-                                "Floor.X()",
-                                "Floor.Y()",
-                                "ObstacleX",
-                                "ObstacleY",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Obstacles in the way: \" + ToString(Count(Obstacle))",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PickNearest"
-                              },
-                              "parameters": [
-                                "Floor",
-                                "PC.X()",
-                                "PC.Y()",
-                                ""
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreAutour"
-                              },
-                              "parameters": [
-                                "Object",
-                                "Floor",
-                                "0",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Floors nearest: \" + ToString(Count(Floor))",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Item::IsLoose"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnimationName"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::DroppingAnimationName()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Object"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::Id()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 }
@@ -86469,7 +87477,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -86485,9 +87493,9 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Object that is the origin of the drop",
+                  "description": "Clum is the origin of the drop",
                   "longDescription": "",
-                  "name": "PC",
+                  "name": "ClumObject",
                   "optional": false,
                   "supplementaryInformation": "Sprite",
                   "type": "objectList"
@@ -86495,12 +87503,12 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Floor the item will drop onto",
+                  "description": "ClumBehavior",
                   "longDescription": "",
-                  "name": "Floor",
+                  "name": "ClumBehavior",
                   "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "objectList"
+                  "supplementaryInformation": "srs_objs::Clum",
+                  "type": "behavior"
                 },
                 {
                   "codeOnly": false,
@@ -86511,6 +87519,154 @@
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "BinderObject",
+                  "longDescription": "",
+                  "name": "BinderObject",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "BinderBehavior",
+                  "longDescription": "",
+                  "name": "BinderBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "DoorObject",
+                  "longDescription": "",
+                  "name": "DoorObject",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "DoorBehavior",
+                  "longDescription": "",
+                  "name": "DoorBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "forceDropped",
+              "fullName": "forceDropped",
+              "functionType": "Action",
+              "name": "forceDropped",
+              "sentence": "_PARAM0_ forceDropped",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"dropped\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "letLoose",
+              "fullName": "letLoose",
+              "functionType": "Action",
+              "name": "letLoose",
+              "sentence": "_PARAM0_ letLoose",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"loose\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
                 }
               ],
               "objectGroups": []
@@ -86539,16 +87695,7 @@
                         ""
                       ],
                       "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                    },
                     {
                       "type": {
                         "inverted": false,
@@ -86574,7 +87721,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -86661,7 +87808,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -86745,7 +87892,7 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -86829,7 +87976,91 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsLoose",
+              "fullName": "IsLoose",
+              "functionType": "Condition",
+              "name": "IsLoose",
+              "sentence": "_PARAM0_ IsLoose",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Status",
+                        "=",
+                        "\"loose\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -86913,7 +88144,89 @@
                   "longDescription": "",
                   "name": "Object",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "handleBinder",
+              "sentence": "",
+              "events": [],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "_PARAM0_ DroppingAnimationName",
+              "fullName": "DroppingAnimationName",
+              "functionType": "StringExpression",
+              "name": "DroppingAnimationName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::Id() + \"_Dropping\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
                   "type": "object"
                 },
                 {
@@ -88361,7 +89674,7 @@
               "description": "HandleCollision",
               "fullName": "HandleCollision",
               "functionType": "Action",
-              "name": "HandleCollision",
+              "name": "handleCollision",
               "sentence": "_PARAM0_ handles collision with _PARAM2_",
               "events": [
                 {
@@ -88448,99 +89761,321 @@
               "description": "",
               "fullName": "",
               "functionType": "Action",
-              "name": "doStepPreEvents",
+              "name": "onCreated",
               "sentence": "",
               "events": [
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Arret"
-                      },
-                      "parameters": [
-                        "Object"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "ModVarObjetTxt"
                       },
                       "parameters": [
                         "Object",
-                        "\"Idle\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "no"
+                        "AlertStatus",
+                        "=",
+                        "\"initialized\""
                       ],
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "disabled": false,
+                  "folded": false,
+                  "name": "Shake on alert",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
+                      "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::consoleLog"
+                            "value": "srs_objs::Clum::IsAlerting"
                           },
                           "parameters": [
-                            "",
-                            "\"Stopped\"",
+                            "Object",
+                            "Behavior",
                             ""
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "ShakeFraction",
+                                "=",
+                                "srs_utils::getLimitedTimerFraction(Object, \"alert\")"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Egal"
+                              },
+                              "parameters": [
+                                "Object.Variable(ShakeFraction)",
+                                "<",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Egal"
+                                  },
+                                  "parameters": [
+                                    "mod(round(10 * Object.Variable(ShakeFraction)), 2)",
+                                    "=",
+                                    "0"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "=",
+                                    "Object.Variable(ShakeOrigin) + 1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "Egal"
+                                  },
+                                  "parameters": [
+                                    "mod(round(10 * Object.Variable(ShakeFraction)), 2)",
+                                    "=",
+                                    "1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "=",
+                                    "Object.Variable(ShakeOrigin) - 1"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Egal"
+                              },
+                              "parameters": [
+                                "1",
+                                "<=",
+                                "Object.Variable(ShakeFraction)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "AlertStatus",
+                                    "=",
+                                    "\"initialized\""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "MettreX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "=",
+                                    "Object.Variable(ShakeOrigin)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
                 },
                 {
-                  "disabled": true,
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "alert",
+              "fullName": "alert",
+              "functionType": "Action",
+              "name": "alert",
+              "sentence": "_PARAM0_ alert",
+              "events": [
+                {
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
-                        "value": "AngleOfDisplacement"
+                        "inverted": true,
+                        "value": "srs_objs::Clum::IsAlerting"
                       },
                       "parameters": [
                         "Object",
-                        "0",
-                        "90"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Vitesse"
-                      },
-                      "parameters": [
-                        "Object",
-                        ">",
-                        "0"
+                        "Behavior",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -88549,11 +90084,90 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::consoleLog"
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "AlertStatus",
+                        "=",
+                        "\"alerting\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::startLimitedTimer"
                       },
                       "parameters": [
                         "",
-                        "\"Movin:\" + ToString(Object.ForceLength())",
+                        "Object",
+                        "\"alert\"",
+                        "srs_utils::ms(0.3)",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ShakeOrigin",
+                        "=",
+                        "Object.X()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IsAlerting",
+              "fullName": "IsAlerting",
+              "functionType": "Condition",
+              "name": "IsAlerting",
+              "sentence": "_PARAM0_ IsAlerting",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
                         ""
                       ],
                       "subInstructions": []
@@ -88562,19 +90176,20 @@
                   "events": []
                 },
                 {
-                  "disabled": true,
+                  "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "AngleOfDisplacement"
+                        "value": "VarObjetTxt"
                       },
                       "parameters": [
                         "Object",
-                        "0",
-                        "45"
+                        "AlertStatus",
+                        "=",
+                        "\"alerting\""
                       ],
                       "subInstructions": []
                     }
@@ -88583,188 +90198,10 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SetAnimationName"
+                        "value": "SetReturnBoolean"
                       },
                       "parameters": [
-                        "Object",
-                        "\"Move\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AngleOfDisplacement"
-                      },
-                      "parameters": [
-                        "Object",
-                        "90",
-                        "45"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"ScootDown\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AngleOfDisplacement"
-                      },
-                      "parameters": [
-                        "Object",
-                        "180",
-                        "45"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"Move\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "yes"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AngleOfDisplacement"
-                      },
-                      "parameters": [
-                        "Object",
-                        "270",
-                        "45"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"ScootUp\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "no"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Egal"
-                      },
-                      "parameters": [
-                        "Object.ForceAngle()",
-                        ">",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Angle: \" + ToString(Object.ForceAngle())",
-                        ""
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -88801,7 +90238,7 @@
               "fullName": "Animate Movement",
               "functionType": "Action",
               "name": "AnimateMovement",
-              "sentence": "Animate Movement",
+              "sentence": "_PARAM0_ Animate Movement _PARAM2_",
               "events": [
                 {
                   "disabled": false,
@@ -88831,17 +90268,6 @@
                         "\"Idle\""
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "FlipX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "no"
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -88869,39 +90295,40 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Clum::SetBearing"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "TDMObject.TDMBehavior::Angle()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "BuiltinCommonInstructions::Or"
+                            "value": "Egal"
                           },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Egal"
-                              },
-                              "parameters": [
-                                "(7/8) * 360",
-                                "<=",
-                                "TDMObject.TDMBehavior::Angle()"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "Egal"
-                              },
-                              "parameters": [
-                                "TDMObject.TDMBehavior::Angle()",
-                                "<=",
-                                "(1/8) * 360"
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
+                          "parameters": [
+                            "Object.Behavior::Bearing()",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "actions": [
@@ -88941,21 +90368,9 @@
                             "value": "Egal"
                           },
                           "parameters": [
-                            "(1/8) * 360",
-                            "<",
-                            "TDMObject.TDMBehavior::Angle()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "TDMObject.TDMBehavior::Angle()",
-                            "<=",
-                            "(3/8) * 360"
+                            "Object.Behavior::Bearing()",
+                            "=",
+                            "(1/4) * 360"
                           ],
                           "subInstructions": []
                         }
@@ -88969,17 +90384,6 @@
                           "parameters": [
                             "Object",
                             "\"ScootDown\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "FlipX"
-                          },
-                          "parameters": [
-                            "Object",
-                            "no"
                           ],
                           "subInstructions": []
                         }
@@ -88997,21 +90401,9 @@
                             "value": "Egal"
                           },
                           "parameters": [
-                            "(3/8) * 360",
-                            "<",
-                            "TDMObject.TDMBehavior::Angle()"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "TDMObject.TDMBehavior::Angle()",
-                            "<=",
-                            "(5/8) * 360"
+                            "Object.Behavior::Bearing()",
+                            "=",
+                            "(2/4) * 360"
                           ],
                           "subInstructions": []
                         }
@@ -89053,21 +90445,9 @@
                             "value": "Egal"
                           },
                           "parameters": [
-                            "TDMObject.TDMBehavior::Angle()",
-                            "<=",
-                            "(5/8) * 360"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Egal"
-                          },
-                          "parameters": [
-                            "(7/8) * 360",
-                            "<",
-                            "TDMObject.TDMBehavior::Angle()"
+                            "Object.Behavior::Bearing()",
+                            "=",
+                            "(3/4) * 360"
                           ],
                           "subInstructions": []
                         }
@@ -89081,17 +90461,6 @@
                           "parameters": [
                             "Object",
                             "\"ScootUp\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "FlipX"
-                          },
-                          "parameters": [
-                            "Object",
-                            "no"
                           ],
                           "subInstructions": []
                         }
@@ -89140,6 +90509,296 @@
                   "name": "TDMBehavior",
                   "optional": false,
                   "supplementaryInformation": "TopDownMovementBehavior::TopDownMovementBehavior",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "SetBearing",
+              "fullName": "SetBearing",
+              "functionType": "Action",
+              "name": "SetBearing",
+              "sentence": "_PARAM0_ SetBearing to _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "(7/8) * 360",
+                            "<=",
+                            "GetArgumentAsNumber(\"Bearing\")"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "GetArgumentAsNumber(\"Bearing\")",
+                            "<=",
+                            "(1/8) * 360"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Bearing",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "(1/8) * 360",
+                        "<",
+                        "GetArgumentAsNumber(\"Bearing\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"Bearing\")",
+                        "<=",
+                        "(3/8) * 360"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Bearing",
+                        "=",
+                        "(1/4) * 360"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "(3/8) * 360",
+                        "<",
+                        "GetArgumentAsNumber(\"Bearing\")"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"Bearing\")",
+                        "<=",
+                        "(5/8) * 360"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Bearing",
+                        "=",
+                        "(2/4) * 360"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"Bearing\")",
+                        "<=",
+                        "(5/8) * 360"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "(7/8) * 360",
+                        "<",
+                        "GetArgumentAsNumber(\"Bearing\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Bearing",
+                        "=",
+                        "(3/4) * 360"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Bearing: 0, 90, 180, 720",
+                  "longDescription": "",
+                  "name": "Bearing",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Bearing",
+              "fullName": "Bearing",
+              "functionType": "Expression",
+              "name": "Bearing",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Variable(Bearing)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
                   "type": "behavior"
                 }
               ],
@@ -91565,7 +93224,7 @@
               "description": "HandleCollision to toggle on/off",
               "fullName": "HandleCollision",
               "functionType": "Action",
-              "name": "HandleCollision",
+              "name": "handleCollision",
               "sentence": "_PARAM0_ HandleCollision _PARAM2_",
               "events": [
                 {
@@ -94234,6 +95893,228 @@
               "objectGroups": []
             },
             {
+              "description": "handleKey",
+              "fullName": "handleKey",
+              "functionType": "Action",
+              "name": "handleKey",
+              "sentence": "_PARAM0_ handleKey _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Door::IsClosed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Item::IsDropped"
+                      },
+                      "parameters": [
+                        "KeyObject",
+                        "ItemBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyObject",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "StrEqual"
+                          },
+                          "parameters": [
+                            "Object.Behavior::KeyId()",
+                            "=",
+                            "KeyObject.ItemBehavior::Id()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Door::open"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_ctrl::Item::pickUp"
+                          },
+                          "parameters": [
+                            "KeyObject",
+                            "ItemBehavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "KeyObject",
+                  "longDescription": "",
+                  "name": "KeyObject",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "ItemBehavior",
+                  "longDescription": "",
+                  "name": "ItemBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "handleCollision",
+              "fullName": "handleCollision",
+              "functionType": "Action",
+              "name": "handleCollision",
+              "sentence": "_PARAM0_ handleCollision _PARAM2_",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Door::IsClosed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SeparateFromObjects"
+                      },
+                      "parameters": [
+                        "PC",
+                        "Object",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "PC",
+                  "longDescription": "",
+                  "name": "PC",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "open",
               "fullName": "open",
               "functionType": "Action",
@@ -94728,9 +96609,103 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "KeyId",
+              "fullName": "KeyId",
+              "functionType": "StringExpression",
+              "name": "KeyId",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyKeyId()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "KeyId",
+                        "!=",
+                        "\"0\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(KeyId)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
             }
           ],
-          "propertyDescriptors": []
+          "propertyDescriptors": [
+            {
+              "value": "Key_Rainbow",
+              "type": "String",
+              "label": "KeyId: set an instance variable on the object to override",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "KeyId"
+            }
+          ]
         }
       ]
     }
