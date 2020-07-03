@@ -75155,7 +75155,12 @@
           "zOrder": 220,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "KeyId",
+              "value": "Key_Green"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -75385,7 +75390,12 @@
           "zOrder": 220,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "KeyId",
+              "value": "Key_Grey"
+            }
+          ]
         }
       ],
       "objects": [
@@ -76916,6 +76926,115 @@
         {
           "name": "Item",
           "type": "srs_ctrl::Item"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        },
+        {
+          "name": "Upgrade",
+          "type": "srs_ctrl::Upgrade"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "New_32scene",
+      "name": "New scene",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
         },
         {
           "name": "Obstacle",
@@ -81973,11 +82092,148 @@
           "objectGroups": []
         },
         {
-          "description": "Was a bindable key pressed?",
-          "fullName": "Was a bindable key pressed?",
+          "description": "bindableKeyReleased",
+          "fullName": "bindableKeyReleased",
+          "functionType": "Condition",
+          "name": "bindableKeyReleased",
+          "sentence": "bindableKeyReleased",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::bindableKeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "LastPressedBindableKey",
+                    "=",
+                    "LastPressedKey()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "srs_ctrl::bindableKeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "LastPressedBindableKey",
+                    "=",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(LastPressedBindableKey)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "A bindable key is pressed",
+          "fullName": "bindableKeyPressed",
           "functionType": "Condition",
           "name": "bindableKeyPressed",
-          "sentence": "A bindable key was pressed",
+          "sentence": "A bindable key is pressed",
           "events": [
             {
               "disabled": false,
@@ -85847,7 +86103,7 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "30"
+                        "(0.3) * 255"
                       ],
                       "subInstructions": []
                     }
@@ -86896,21 +87152,6 @@
                     {
                       "disabled": false,
                       "folded": false,
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Sweep in a 30 degree cone, 15 degrees on either side of bearing, in 5 degree increments",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
@@ -86923,7 +87164,7 @@
                             "Object",
                             "DropAngle",
                             "=",
-                            "ClumObject.ClumBehavior::Bearing() - 15"
+                            "ClumObject.ClumBehavior::Bearing()"
                           ],
                           "subInstructions": []
                         },
@@ -86937,57 +87178,6 @@
                             "IsAngleFound",
                             "=",
                             "\"false\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "infiniteLoopWarning": true,
-                      "type": "BuiltinCommonInstructions::While",
-                      "whileConditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Object",
-                            "DropAngle",
-                            "<",
-                            "ClumObject.ClumBehavior::Bearing() + 15"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "IsAngleFound",
-                            "=",
-                            "\"false\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "Object",
-                            "DropAngle",
-                            "+",
-                            "1"
                           ],
                           "subInstructions": []
                         },
@@ -87016,54 +87206,75 @@
                           "subInstructions": []
                         }
                       ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Raycast"
+                          },
+                          "parameters": [
+                            "Obstacle",
+                            "ClumObject.PointX(\"Center\")",
+                            "ClumObject.PointY(\"Center\")",
+                            "Object.Variable(DropAngle)",
+                            "(1/2) * ClumObject.Width() + Object.Width() + 1",
+                            "ObstacleX",
+                            "ObstacleY",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ObstacleX",
+                            "=",
+                            "-1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
                       "events": [
                         {
                           "disabled": false,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
+                          "conditions": [],
+                          "actions": [
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "Raycast"
+                                "value": "MettreAutour"
                               },
                               "parameters": [
-                                "Obstacle",
-                                "ClumObject.PointX(\"Center\")",
-                                "ClumObject.PointY(\"Center\")",
-                                "Object.Variable(DropAngle)",
+                                "Object",
+                                "ClumObject",
                                 "(1/2) * ClumObject.Width() + Object.Width() + 1",
-                                "ObstacleX",
-                                "ObstacleY",
-                                ""
+                                "Object.Variable(DropAngle)"
                               ],
                               "subInstructions": []
                             }
                           ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Obstacles in the way: \" + ToString(Count(Obstacle))",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            }
-                          ]
+                          "events": []
                         },
                         {
                           "disabled": false,
@@ -87073,12 +87284,37 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "VarScene"
+                                "value": "CollisionNP"
                               },
                               "parameters": [
-                                "ObstacleX",
-                                "=",
-                                "-1"
+                                "Object",
+                                "Obstacle",
+                                "",
+                                "",
+                                "yes"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Obstacle",
+                                "",
+                                "",
+                                "yes"
                               ],
                               "subInstructions": []
                             }
@@ -87089,44 +87325,83 @@
                               "disabled": false,
                               "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
+                              "conditions": [
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Found angle: \" + ToString(Object.Variable(DropAngle))",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "MettreAutour"
+                                    "value": "CollisionNP"
                                   },
                                   "parameters": [
                                     "Object",
-                                    "ClumObject",
-                                    "(1/2) * ClumObject.Width() + Object.Width() + 1",
-                                    "Object.Variable(DropAngle)"
+                                    "DoorObject",
+                                    "",
+                                    "",
+                                    "yes"
                                   ],
                                   "subInstructions": []
                                 }
                               ],
-                              "events": []
+                              "actions": [],
+                              "events": [
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "srs_objs::Door::AcceptsKey"
+                                      },
+                                      "parameters": [
+                                        "DoorObject",
+                                        "DoorBehavior",
+                                        "Object.Behavior::Id()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "IsAngleFound",
+                                        "=",
+                                        "\"true\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "srs_objs::Door::AcceptsKey"
+                                      },
+                                      "parameters": [
+                                        "DoorObject",
+                                        "DoorBehavior",
+                                        "Object.Behavior::Id()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": []
+                                }
+                              ]
                             },
                             {
                               "disabled": false,
@@ -87140,7 +87415,7 @@
                                   },
                                   "parameters": [
                                     "Object",
-                                    "Obstacle",
+                                    "DoorObject",
                                     "",
                                     "",
                                     "yes"
@@ -87164,67 +87439,10 @@
                                 }
                               ],
                               "events": []
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Obstacle",
-                                    "",
-                                    "",
-                                    "yes"
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "inverted": false,
-                                    "value": "srs_utils::consoleLog"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"collision\"",
-                                    ""
-                                  ],
-                                  "subInstructions": []
-                                }
-                              ],
-                              "events": []
                             }
                           ]
                         }
                       ]
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_utils::consoleLog"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Using angle: \" + ToString(Object.Variable(DropAngle))",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
                     },
                     {
                       "disabled": false,
@@ -87247,28 +87465,6 @@
                       ],
                       "actions": [],
                       "events": [
-                        {
-                          "disabled": true,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "MettreAutour"
-                              },
-                              "parameters": [
-                                "Object",
-                                "ClumObject",
-                                "(1/2) * ClumObject.Width() + Object.Width() + 1",
-                                "Object.Variable(DropAngle)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
                         {
                           "disabled": false,
                           "folded": false,
@@ -87464,9 +87660,90 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Object",
+                                "DoorObject",
+                                "",
+                                "",
+                                "yes"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_objs::Door::AcceptsKey"
+                              },
+                              "parameters": [
+                                "DoorObject",
+                                "DoorBehavior",
+                                "Object.Behavior::Id()",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_utils::consoleLog"
+                              },
+                              "parameters": [
+                                "",
+                                "\"key opening door: \" + DoorObject.DoorBehavior::KeyId()",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_objs::Door::open"
+                              },
+                              "parameters": [
+                                "DoorObject",
+                                "DoorBehavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Object",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -96690,6 +96967,131 @@
                   "optional": false,
                   "supplementaryInformation": "srs_objs::Door",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "AcceptsKey",
+              "fullName": "AcceptsKey",
+              "functionType": "Condition",
+              "name": "AcceptsKey",
+              "sentence": "_PARAM0_ AcceptsKey _PARAM2_ ",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "Object.Behavior::KeyId()",
+                        "=",
+                        "GetArgumentAsString(\"KeyId\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "\"Key_Rainbow\"",
+                        "=",
+                        "GetArgumentAsString(\"KeyId\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Door",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "KeyId",
+                  "longDescription": "",
+                  "name": "KeyId",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
                 }
               ],
               "objectGroups": []
