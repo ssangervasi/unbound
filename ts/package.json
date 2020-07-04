@@ -1,0 +1,48 @@
+{
+	"name": "unbound-ts",
+	"version": "0.0.1",
+	"description": "unbound-ts",
+	"main": "dist/main.js",
+	"bin": {
+		"unbound-ts": "dist/cli.js"
+	},
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"cli": "ts-node --files ./src/cli.ts",
+		"install-self": "npm run build && npm unlink && npm link",
+		"lint": "eslint --fix --cache './src/**'",
+		"ndb": "ndb ./dist/cli.js",
+		"shell": "ts-node",
+		"test": "jest",
+		"test-watch": "jest --watch",
+		"watch": "tsc-watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ssangervasi/unbound.git"
+	},
+	"author": "Sebastian Sangervasi",
+	"license": "MIT",
+	"dependencies": {
+		"commander": "^4.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.9",
+		"@types/node": "^12.12",
+		"@typescript-eslint/eslint-plugin": "^2.34",
+		"@typescript-eslint/parser": "^2.34",
+		"acorn": "^7",
+		"acorn-jsx": "^5",
+		"eslint": "^6.7",
+		"jest": "^26.1",
+		"ndb": "^1.1",
+		"rimraf": "^2.7",
+		"ts-jest": "^26.1",
+		"ts-loader": "^6.2",
+		"ts-node": "^8.10.2",
+		"tsc-watch": "^2.4.0",
+		"tsconfig-paths": "^3.9.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.9"
+	}
+}
