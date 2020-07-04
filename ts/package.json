@@ -10,7 +10,7 @@
 		"build": "rimraf dist && tsc",
 		"cli": "ts-node --files ./src/cli.ts",
 		"install-self": "npm run build && npm unlink && npm link",
-		"lint": "eslint --fix --cache './src/**'",
+		"lint": "eslint --fix --cache 'src/**/*'",
 		"ndb": "ndb ./dist/cli.js",
 		"shell": "ts-node",
 		"test": "jest",
@@ -24,7 +24,8 @@
 	"author": "Sebastian Sangervasi",
 	"license": "MIT",
 	"dependencies": {
-		"commander": "^4.1"
+		"commander": "^4.1",
+		"immer": "^7.0.5"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.9",

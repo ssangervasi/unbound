@@ -26,6 +26,20 @@ module.exports = {
 			'error',
 			'tab'
 		],
+		'max-len': [
+			'error',
+			{
+				'code': 100,
+			}
+		],
+		'function-paren-newline': [
+			'warn',
+			{
+				"rules": {
+					"function-paren-newline": ["error", { "minItems": 3 }]
+				}
+			}
+		],
 		'linebreak-style': [
 			'error',
 			'unix'
@@ -34,10 +48,6 @@ module.exports = {
 			'error',
 			'single',
 			{ 'avoidEscape': true }
-		],
-		'semi': [
-			'error',
-			'never'
 		],
 		'no-unused-vars': [
 			'error',
@@ -48,6 +58,21 @@ module.exports = {
 				// Ignore function args to ignore constructor parameter properties.
 				'args': 'none'
 			}
-		]
+		],
+		"semi": "off",
+		"@typescript-eslint/semi": ["error", 'never'],
+		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+		'@typescript-eslint/member-delimiter-style': [
+			'error',
+			{
+				"multiline": {
+					"delimiter": "none",
+					"requireLast": true
+				},
+				"singleline": {
+					"delimiter": "semi",
+					"requireLast": false
+				}
+			}],
 	}
 }

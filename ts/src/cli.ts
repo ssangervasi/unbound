@@ -1,24 +1,33 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
 
-import { refactor } from './refactor'
+import { refactor, transformInstances } from './refactor'
 
 const main = () => {
 	const program = new Command()
 	program
-		.arguments('<SHOOP>')
 		.description('Woop')
 		.option(
-			'-d --doop',
-			'Doop',
-			false
+			'-p --path',
+			'Project path',
+			'./unbound.json'
 		)
-		.action(action)
+
+	program
+		.command('move-indicators')
+		.action(moveIndicators)
+		
 	program.parse(process.argv)
 }
 
-const action = (shoop: string, cmd: Command): void => {
-	console.log(refactor(shoop, cmd.doop))
+const moveIndicators = (cmd: Command) => {
+	refactor(cmd.opts().path, gdProject => {
+		transformInstances(gdProject, (gdInst) => {
+			console.log(gdInst)
+			return gdInst
+		}, /BindIndicator/)
+		return gdProject
+	})
 }
 
 main()
