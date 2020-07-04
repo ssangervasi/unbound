@@ -16,7 +16,7 @@ export const refactor = (
 	const projectPath = path.resolve(inPath)
 	const backupPath = path.join(
 		path.dirname(projectPath),
-		`backup-${Date.now()}.${path.basename(projectPath, 'json')}` 
+		`backup-${Date.now()}.${path.basename(projectPath)}` 
 	)
 	
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
