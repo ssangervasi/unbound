@@ -12588,7 +12588,9 @@
         {
           "name": "StateText",
           "type": "srs_states::StateText",
-          "FullTime": 8
+          "FullTime": 0,
+          "WordsPerMinute": 60,
+          "CharactersPerSecond": 0
         },
         {
           "name": "Tween",
@@ -18203,7 +18205,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.258
+        "zoomFactor": 1.162
       },
       "objectsGroups": [],
       "variables": [
@@ -21747,6 +21749,10 @@
           "type": "srs_objs::Clum"
         },
         {
+          "name": "Door",
+          "type": "srs_objs::Door"
+        },
+        {
           "name": "Exit",
           "type": "srs_objs::Exit"
         },
@@ -21757,6 +21763,10 @@
         {
           "name": "HoldKeyReminder",
           "type": "srs_objs::HoldKeyReminder"
+        },
+        {
+          "name": "Item",
+          "type": "srs_ctrl::Item"
         },
         {
           "name": "Obstacle",
@@ -27377,7 +27387,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 10,
@@ -27385,7 +27395,7 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 10,
-        "snap": false,
+        "snap": true,
         "windowMask": false,
         "zoomFactor": 1.237
       },
@@ -28675,8 +28685,8 @@
           "locked": false,
           "name": "HiddenRegion",
           "width": 50,
-          "x": 135,
-          "y": 71,
+          "x": 170,
+          "y": 60,
           "zOrder": 219,
           "numberProperties": [],
           "stringProperties": [],
@@ -28715,8 +28725,8 @@
           "locked": false,
           "name": "Haiku",
           "width": 0,
-          "x": 437,
-          "y": 236,
+          "x": 430,
+          "y": 240,
           "zOrder": 150,
           "numberProperties": [],
           "stringProperties": [],
@@ -80981,6 +80991,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM",
+          "width": 0,
+          "x": -111,
+          "y": 172,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Pause",
+          "width": 0,
+          "x": -140,
+          "y": 210,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -81062,9 +81102,20 @@
               "name": "RescaledText",
               "type": "srs_utils::RescaledText",
               "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 60,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
             }
           ],
-          "string": "Memory, like the\n\nSlipping grip of a child's hand,\n\nCoxes my patience.",
+          "string": "Memory, like the\n\nSlipping grip of a child's hand,\n\nCoaxes my patience.",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 25,
           "color": {
@@ -81087,9 +81138,20 @@
               "name": "RescaledText",
               "type": "srs_utils::RescaledText",
               "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 0,
+              "CharactersPerSecond": 0,
+              "FullTime": 1
             }
           ],
-          "string": "- M",
+          "string": "- G",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 20,
           "color": {
@@ -81097,9 +81159,284 @@
             "g": 64,
             "r": 10
           }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SM",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine",
+              "Property": 0
+            }
+          ],
+          "string": "SM",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Pause",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StatePause",
+              "type": "srs_states::StatePause",
+              "Time": 2
+            }
+          ],
+          "string": "S_Pause",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::State::Run"
+              },
+              "parameters": [
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "Signature",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "S_Pause",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateText::SubscribeToState"
+              },
+              "parameters": [
+                "Verse",
+                "StateText",
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateText::SubscribeToState"
+              },
+              "parameters": [
+                "Signature",
+                "StateText",
+                "Signature",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StatePause::SubscribeToState"
+              },
+              "parameters": [
+                "S_Pause",
+                "StatePause",
+                "S_Pause",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::IsFinished"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::IsRevealed"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::hide"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::IsHidden"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PopScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
       "layers": [
         {
           "name": "",
@@ -81188,6 +81525,14 @@
         {
           "name": "State",
           "type": "srs_states::State"
+        },
+        {
+          "name": "StateMachine",
+          "type": "srs_states::StateMachine"
+        },
+        {
+          "name": "StatePause",
+          "type": "srs_states::StatePause"
         },
         {
           "name": "StateText",
@@ -81286,35 +81631,49 @@
               "subInstructions": []
             }
           ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::isScene"
-              },
-              "parameters": [
-                "",
-                "\"M_LevelSelect\""
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::isScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"M_LevelSelect\""
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::HasCollectable"
+                  },
+                  "parameters": [
+                    "",
+                    "\"eff\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
             }
-          ],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
+          ]
         }
       ]
     },
@@ -84519,6 +84878,19 @@
                         "0"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::PropertyWordsPerMinute"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
@@ -84551,6 +84923,19 @@
                       "parameters": [
                         "Object.Behavior::PropertyFullTime()",
                         "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_states::StateText::PropertyCharactersPerSecond"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">",
                         "0"
                       ],
                       "subInstructions": []
@@ -85359,7 +85744,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\n\n// SetupScene history\n(() => {\n    const pushScene = (efc) => {\n        const sceneName = efc.getArgument(\"SceneName\")\n        // const sceneName = runtimeScene.getName()\n        if (!sceneName) {\n            return\n        }\n        ssangervasi.sceneHistory.push(sceneName)\n    }\n\n    const peekScene = (efc) => {\n        const defaultVal = efc.getArgument(\"Default\") || \"\"\n        const depth = efc.getArgument(\"Depth\") || 0\n        const hist = ssangervasi.sceneHistory\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        return hist[index]\n    }\n\n    const sceneHistory = []\n    const sceneName = runtimeScene.getName()\n    if (sceneName) {\n        sceneHistory.push(sceneName)\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            sceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srs_utils) {\n            runtimeScene._srs_utils = {};\n        }\n        if (!runtimeScene._srs_utils.nameToPlaylist) {\n            runtimeScene._srs_utils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srs_utils.nameToPlaylist;\n    }\n\n    class Playlist {\n        constructor() {\n            this.items = []\n            this.current = null\n        }\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        skipTo(targetItem) {\n            const foundIndex = this.items.findIndex(item => item === targetItem)\n            if (foundIndex === -1) { return null }\n\n            this.current = foundIndex\n            return this.getCurrent()\n        }\n\n        next() {\n            if (this.current === null) { return null }\n\n            this.current = (this.current + 1) % this.items.length\n            return this.getCurrent()\n        }\n\n        previous() {\n            if (this.current === null) { return null }\n\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.getCurrent()\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )\n        \n})();\n",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\n\n// SetupScene history\n(() => {\n    /**\n     * @typedef SceneHistoryItem\n     * @property {string} sceneName \n     * @property {number} [startedAt]\n     */\n\n    /** @param {string} sceneName*/\n    const pushScene = (sceneName) => {\n        if (!sceneName) {\n            return\n        }\n        const newItem = {\n            sceneName,\n            startedAt: Date.now()\n        }\n        getSceneHistory().push(newItem)\n\n        return newItem\n    }\n\n    /**\n     * @param {string} defaultVal\n     * @param {number} depth\n     * @returns {string} Scene name\n     */\n    const peekScene = (defaultVal, depth) => {\n        defaultVal = defaultVal || \"\"\n        depth = depth || 0\n\n        const hist = getSceneHistory()\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        const item = hist[index]\n        return item.sceneName\n    }\n\n    /** @returns {SceneHistoryItem[]} */\n    const getSceneHistory = () => {\n        if (!ssangervasi.sceneHistory) {\n            ssangervasi.sceneHistory = []\n            pushScene(runtimeScene.getName())\n        }\n        return ssangervasi.sceneHistory\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getSceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srsUtils) {\n            runtimeScene._srsUtils = {};\n        }\n        if (!runtimeScene._srsUtils.nameToPlaylist) {\n            runtimeScene._srsUtils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srsUtils.nameToPlaylist;\n    }\n\n    class Playlist {\n        constructor() {\n            this.items = []\n            this.current = null\n        }\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        skipTo(targetItem) {\n            const foundIndex = this.items.findIndex(item => item === targetItem)\n            if (foundIndex === -1) { return null }\n\n            this.current = foundIndex\n            return this.getCurrent()\n        }\n\n        next() {\n            if (this.current === null) { return null }\n\n            this.current = (this.current + 1) % this.items.length\n            return this.getCurrent()\n        }\n\n        previous() {\n            if (this.current === null) { return null }\n\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.getCurrent()\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )       \n})();\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -85457,7 +85842,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const patternArg = eventsFunctionContext.getArgument('Pattern')\nlet pattern = patternArg\nconst reMatch = patternArg.match(new RegExp('^/(.*)/.*$'))\n\nconsole.log({patternArg, pattern, reMatch})\n\nif (reMatch) {\n    pattern = new RegExp(reMatch[1], reMatch[2])\n}\n\nconst strToRepl = eventsFunctionContext.getArgument('StrToRepl')\nconst replacement = eventsFunctionContext.getArgument('Replacement')\nconst result = strToRepl.replace(pattern, replacement)\n\nconsole.log({patternArg, pattern, reMatch, strToRepl, replacement, result})\n\neventsFunctionContext.returnValue = result\n",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    const patternArg = eventsFunctionContext.getArgument('Pattern')\n    let pattern = patternArg\n    const reMatch = patternArg.match(new RegExp('^/(.*)/.*$'))\n\n    if (reMatch) {\n        pattern = new RegExp(reMatch[1], reMatch[2])\n    }\n\n    const strToRepl = eventsFunctionContext.getArgument('StrToRepl')\n    const replacement = eventsFunctionContext.getArgument('Replacement')\n    return strToRepl.replace(pattern, replacement)\n})()\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -85537,7 +85922,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "global.ssangervasi.pushScene(eventsFunctionContext)\n",
+              "inlineCode": "global.ssangervasi.pushScene(\n    eventsFunctionContext.getArgument(\"SceneName\")\n)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -85588,7 +85973,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = global.ssangervasi.peekScene(eventsFunctionContext)\n",
+              "inlineCode": "eventsFunctionContext.returnValue = global.ssangervasi.peekScene(\n    eventsFunctionContext.getArgument(\"Default\"),\n    eventsFunctionContext.getArgument(\"Depth\")\n)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -93214,7 +93599,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nif (!ssangervasi.srsObjs) { ssangervasi.srsObjs = {} }\nconst srsObjs = ssangervasi.srsObjs;\n\n/**\n * @typedef UserData\n * @property {SavedGame[]} saves\n */\n\n/**\n * @typedef SavedGame\n * @property {LevelHistoryItem[]} levelHistory \n * @property {Collectable[]} collectables\n * @property {number} createdAt\n * @property {number} updatedAt\n */\n\n/**\n * @typedef LevelHistoryItem\n * @property {string} sceneName \n * @property {number} [startedAt]\n */\n\n/**\n * @typedef Collectable\n * @property {string} id \n * @property {number} collectedAt\n */\n\n// Save & load game\n(() => {\n\n/**\n * @returns {SavedGame}\n */\nconst createSave = () => {\n    const createdAt = Date.now() \n    return {\n        createdAt,\n        updatedAt: createdAt,\n        levelHistory: getLevelHistory(),\n        collectables: []\n    }\n}\n\n/**\n * @param {SavedGame} previousSave\n * @returns {SavedGame}\n */\nconst updateSave = (previousSave) => {\n    previousSave.updatedAt = Date.now() \n    previousSave.levelHistory = previousSave.levelHistory.concat(getLevelHistory())\n    previousSave.collectables = getCollectables()\n    return previousSave\n}\n\n/**\n * TODO: Update scene history to include timestamps\n * @returns {LevelHistoryItem[]}\n */ \nconst getLevelHistory = () => {\n    return ssangervasi\n        .sceneHistory\n        .filter((/** @type {string} */ sceneName ) => {\n            return sceneName.startsWith('L_')\n        })\n        .map(sceneName => ({\n            sceneName,\n        }))\n}\n\n/** @returns {Collectable[]} */\nconst getCollectables = () => {\n    return srsObjs.collectables || []\n}\n\n/**\n * @param {string} targetId\n * @returns {boolean }\n */\nconst hasCollectable = (targetId) => {\n    return getCollectables().some(({ id }) => id === targetId)\n}\n\n/**\n * @param {string} id\n * @returns {Collectable[]}\n */\nconst pushCollectable = (id) => {\n    if (hasCollectable(id)) {\n        return null\n    }\n\n    const newCollectable = {\n        id,\n        collectedAt: Date.now()\n    }\n    getCollectables().push()\n\n    return newCollectable\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {UserData}\n */\nconst getUserData = (vars) => {\n    /** @type {UserData} */\n    let userData = { saves: [] }\n\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\n    let parsedUserData\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.error(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        typeof parsedUserData === \"object\" &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n    return userData\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {SavedGame}\n */ \nconst saveGame = (vars) => {\n    vars.get(\"SaveResult\").setString(\"attempt\")\n\n    try {\n        let newSave = null\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        const previousSave = maxBy(userData.saves, save => save.createdAt)\n        if (previousSave) {\n            newSave = updateSave(previousSave)\n        } else {\n            newSave = createSave()\n            userData.saves.push(newSave)\n        }\n\n        setSceneVars(vars, newSave)\n        vars.get(\"UserDataJSON\").setString(JSON.stringify(userData))\n        vars.get(\"SaveResult\").setString(\"success\")\n        return newSave\n    } catch (e) {\n        ssangervasi.error(\"saveGame error:\", e)\n        vars.get(\"SaveResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @callback maxByCallback\n * @param {any} entry\n * @param {number} index\n * @returns {any} candidate\n */\n\n/**\n * @param {Array} collection\n * @param {maxByCallback} callback\n * @returns {?any}\n */\nconst maxBy = (collection, callback) => {\n    let maxEntry = null;\n    let maxCandidate;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index)\n        if (maxEntry === null || maxCandidate < candidate) {\n            maxEntry = entry\n            maxCandidate = candidate\n        }\n    })\n    return maxEntry\n} \n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {?SavedGame}\n */ \nconst loadGame = (vars) => {\n    vars.get(\"LoadResult\").setString(\"attempt\")\n\n    try {\n        const userData = getUserData(vars)\n        if (!userData.saves.length) {\n            throw new Error('No saved games')\n        }\n\n        /** @type SavedGame */\n        const newestSave = maxBy(userData.saves, save => save.createdAt)\n        setSceneVars(vars, newestSave)\n\n        vars.get(\"LoadResult\").setString(\"success\")\n        return newestSave\n    } catch (e) {\n        ssangervasi.error(\"loadGame error:\", e)\n        vars.get(\"LoadResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @param {SavedGame} newestSave\n */\nconst setSceneVars = (vars, newestSave) => {\n    /** @type LevelHistoryItem */\n    const newestLevel = maxBy(newestSave.levelHistory, level => level.startedAt)\n\n    const savedGameVar = vars.get(\"SavedGame\")\n    savedGameVar.clearChildren()\n    \n    savedGameVar.getChild(\"UpdatedAt\").setNumber(newestSave.updatedAt)\n    savedGameVar.getChild(\"CreatedAt\").setNumber(newestSave.createdAt)\n    savedGameVar.getChild(\"LastLevel\").setString(newestLevel.sceneName)\n}\n\nObject.assign(\n    srsObjs,\n    {\n        saveGame,\n        loadGame,\n        hasCollectable,\n        pushCollectable,\n        getCollectables\n    }\n)\n})()",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nif (!ssangervasi.srsObjs) { ssangervasi.srsObjs = {} }\nconst srsObjs = ssangervasi.srsObjs;\n\n/**\n * @typedef UserData\n * @property {SavedGame[]} saves\n */\n\n/**\n * @typedef SavedGame\n * @property {LevelHistoryItem[]} levelHistory \n * @property {Collectable[]} collectables\n * @property {number} createdAt\n * @property {number} updatedAt\n */\n\n/**\n * @typedef LevelHistoryItem\n * @property {string} sceneName \n * @property {number} [startedAt]\n */\n\n/**\n * @typedef Collectable\n * @property {string} id \n * @property {number} collectedAt\n */\n\n// Save & load game\n(() => {\n\n/**\n * @returns {SavedGame}\n */\nconst createSave = () => {\n    const createdAt = Date.now() \n    return {\n        createdAt,\n        updatedAt: createdAt,\n        levelHistory: getLevelHistory(),\n        collectables: []\n    }\n}\n\n/**\n * @param {SavedGame} previousSave\n * @returns {SavedGame}\n */\nconst updateSave = (previousSave) => {\n    previousSave.updatedAt = Date.now() \n    previousSave.levelHistory = previousSave.levelHistory.concat(getLevelHistory())\n    previousSave.collectables = getCollectables()\n    return previousSave\n}\n\n/**\n * @returns {LevelHistoryItem[]}\n */ \nconst getLevelHistory = () => {\n    return ssangervasi\n        .getSceneHistory()\n        .filter((/** @type {LevelHistoryItem} */ item) => {\n            return item.sceneName.startsWith('L_')\n        })\n}\n\n/** @returns {Collectable[]} */\nconst getCollectables = () => {\n    srsObjs.collectables = srsObjs.collectables || []\n    return srsObjs.collectables\n}\n\n/**\n * @param {string} targetId\n * @returns {boolean }\n */\nconst hasCollectable = (targetId) => {\n    return getCollectables().some(({ id }) => id === targetId)\n}\n\n/**\n * @param {string} id\n * @returns {Collectable[]}\n */\nconst pushCollectable = (id) => {\n    if (hasCollectable(id)) {\n        return null\n    }\n\n    const newCollectable = {\n        id,\n        collectedAt: Date.now()\n    }\n    getCollectables().push()\n\n    return newCollectable\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {UserData}\n */\nconst getUserData = (vars) => {\n    /** @type {UserData} */\n    let userData = { saves: [] }\n\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\n    let parsedUserData\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.error(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        typeof parsedUserData === \"object\" &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n    return userData\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {SavedGame}\n */ \nconst saveGame = (vars) => {\n    vars.get(\"SaveResult\").setString(\"attempt\")\n\n    try {\n        let newSave = null\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        const previousSave = maxBy(userData.saves, save => save.createdAt)\n        if (previousSave) {\n            newSave = updateSave(previousSave)\n        } else {\n            newSave = createSave()\n            userData.saves.push(newSave)\n        }\n\n        setSceneVars(vars, newSave)\n        vars.get(\"UserDataJSON\").setString(JSON.stringify(userData))\n        vars.get(\"SaveResult\").setString(\"success\")\n        return newSave\n    } catch (e) {\n        ssangervasi.error(\"saveGame error:\", e)\n        vars.get(\"SaveResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @callback maxByCallback\n * @param {any} entry\n * @param {number} index\n * @returns {any} candidate\n */\n\n/**\n * @param {Array} collection\n * @param {maxByCallback} callback\n * @returns {?any}\n */\nconst maxBy = (collection, callback) => {\n    let maxEntry = null;\n    let maxCandidate;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index)\n        if (maxEntry === null || maxCandidate < candidate) {\n            maxEntry = entry\n            maxCandidate = candidate\n        }\n    })\n    return maxEntry\n} \n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {?SavedGame}\n */ \nconst loadGame = (vars) => {\n    vars.get(\"LoadResult\").setString(\"attempt\")\n\n    try {\n        const userData = getUserData(vars)\n        if (!userData.saves.length) {\n            throw new Error('No saved games')\n        }\n\n        /** @type SavedGame */\n        const newestSave = maxBy(userData.saves, save => save.createdAt)\n        setSceneVars(vars, newestSave)\n\n        vars.get(\"LoadResult\").setString(\"success\")\n        return newestSave\n    } catch (e) {\n        ssangervasi.error(\"loadGame error:\", e)\n        vars.get(\"LoadResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @param {SavedGame} newestSave\n */\nconst setSceneVars = (vars, newestSave) => {\n    /** @type LevelHistoryItem */\n    const newestLevel = maxBy(newestSave.levelHistory, level => level.startedAt)\n\n    const savedGameVar = vars.get(\"SavedGame\")\n    savedGameVar.clearChildren()\n    \n    savedGameVar.getChild(\"UpdatedAt\").setNumber(newestSave.updatedAt)\n    savedGameVar.getChild(\"CreatedAt\").setNumber(newestSave.createdAt)\n    savedGameVar.getChild(\"LastLevel\").setString(newestLevel.sceneName)\n}\n\nObject.assign(\n    srsObjs,\n    {\n        saveGame,\n        loadGame,\n        hasCollectable,\n        pushCollectable,\n        getCollectables\n    }\n)\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -94324,6 +94709,39 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "\"user data json\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(UserDataJSON)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -94348,6 +94766,18 @@
                     "\"user_data\"",
                     "\"UserDataJSON\"",
                     "VariableString(UserDataJSON)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Success\"",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -94384,27 +94814,6 @@
           "name": "loadGame",
           "sentence": "Load Game",
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarSceneTxt"
-                  },
-                  "parameters": [
-                    "LoadResult",
-                    "=",
-                    "\"attempt\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -94475,6 +94884,56 @@
             }
           ],
           "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "HasCollectable",
+          "fullName": "HasCollectable",
+          "functionType": "Condition",
+          "name": "HasCollectable",
+          "sentence": "HasCollectable _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::loadGame"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const vars = runtimeScene.getVariables()\r\n    const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\n    if (!collectableId) {\r\n        global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n        return false\r\n    }\r\n    console.log('collectables', global.ssangervasi.srsObjs.getCollectables())\r\n    return global.ssangervasi.srsObjs.hasCollectable(collectableId)\r\n})()",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "CollectableId",
+              "longDescription": "",
+              "name": "CollectableId",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
           "objectGroups": []
         },
         {
@@ -96257,6 +96716,102 @@
               "objectGroups": []
             },
             {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Haiku::IsLoose"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::HasCollectable"
+                          },
+                          "parameters": [
+                            "",
+                            "Object.Behavior::Id()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Haiku::forceCollected"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Haiku",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
               "description": "handleCollision",
               "fullName": "handleCollision",
               "functionType": "Action",
@@ -96315,11 +96870,73 @@
                             ""
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PCX",
+                            "=",
+                            "PC.X()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PCY",
+                            "=",
+                            "PC.Y()"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Haiku::IsCollecting"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "PC",
+                        "=",
+                        "Object.Variable(PCX)",
+                        "=",
+                        "Object.Variable(PCY)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -96435,33 +97052,42 @@
                           "subInstructions": []
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_objs::Haiku::forceCollected"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            ""
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_objs::Haiku::forceCollected"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "srs_objs::Haiku::changeScene"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
                           ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "srs_objs::Exit::changeScene"
-                          },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            ""
-                          ],
-                          "subInstructions": []
+                          "events": []
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -96646,6 +97272,27 @@
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_utils::consoleLog"
+                      },
+                      "parameters": [
+                        "",
+                        "\"collection done\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -96745,27 +97392,6 @@
               "name": "changeScene",
               "sentence": "_PARAM0_ changeScene",
               "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Changin to haiku scene: \" + Object.Behavior::SceneName()",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
                 {
                   "disabled": false,
                   "folded": false,
