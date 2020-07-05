@@ -1,78 +1,60 @@
 // https://eslint.org/docs/user-guide/configuring
 module.exports = {
-	'env': {
-		'browser': false,
-		'node': true,
-		'es6': true
+	env: {
+		browser: false,
+		node: true,
+		es6: true,
 	},
-	'extends': [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/eslint-recommended'
+	extends: [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
 	],
-	'globals': {
-		'Atomics': 'readonly',
-		'SharedArrayBuffer': 'readonly'
+	globals: {
+		Atomics: "readonly",
+		SharedArrayBuffer: "readonly",
 	},
-	'parser': '@typescript-eslint/parser',
-	'parserOptions': {
-		'ecmaVersion': 2018,
-		'sourceType': 'module'
+	parser: "@typescript-eslint/parser",
+	parserOptions: {
+		ecmaVersion: 2018,
+		sourceType: "module",
 	},
-	'plugins': [
-		'@typescript-eslint'
-	],
-	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'max-len': [
-			'error',
+	plugins: ["@typescript-eslint"],
+	rules: {
+		indent: ["error", "tab"],
+		"max-len": [
+			"error",
 			{
-				'code': 100,
-			}
+				code: 100,
+			},
 		],
-		'function-paren-newline': [
-			'warn',
-			{
-				"rules": {
-					"function-paren-newline": ["error", { "minItems": 3 }]
-				}
-			}
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single',
-			{ 'avoidEscape': true }
-		],
-		'no-unused-vars': [
-			'error',
+		"function-paren-newline": ["error", { minItems: 3 }],
+		"linebreak-style": ["error", "unix"],
+		quotes: ["error", "single", { avoidEscape: true }],
+		"no-unused-vars": [
+			"error",
 			// False positive cases:
 			{
 				// Ignore vars starting with init cap to ignore imported types and interfaces.
-				'varsIgnorePattern': '^[A-Z]',
+				varsIgnorePattern: "^[A-Z]",
 				// Ignore function args to ignore constructor parameter properties.
-				'args': 'none'
-			}
+				args: "none",
+			},
 		],
-		"semi": "off",
-		"@typescript-eslint/semi": ["error", 'never'],
-		'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
-		'@typescript-eslint/member-delimiter-style': [
-			'error',
+		semi: "off",
+		"@typescript-eslint/semi": ["error", "never"],
+		"@typescript-eslint/array-type": ["error", { default: "array-simple" }],
+		"@typescript-eslint/member-delimiter-style": [
+			"error",
 			{
-				"multiline": {
-					"delimiter": "none",
-					"requireLast": true
+				multiline: {
+					delimiter: "none",
+					requireLast: true,
 				},
-				"singleline": {
-					"delimiter": "semi",
-					"requireLast": false
-				}
-			}],
-	}
-}
+				singleline: {
+					delimiter: "semi",
+					requireLast: false,
+				},
+			},
+		],
+	},
+};

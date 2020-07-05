@@ -22,10 +22,12 @@ const main = () => {
 
 const moveIndicators = (cmd: Command) => {
 	const result = refactor(cmd.opts().path, gdProject => {
-		transformInstances(gdProject, (gdInst) => {
-			console.log(gdInst)
-			return gdInst
-		}, /BindIndicator/)
+		transformInstances(
+			gdProject, (gdInst) => {
+				console.log(gdInst)
+				return gdInst
+			}, /BindIndicator/
+		)
 		return gdProject
 	})
 	console.log(result)

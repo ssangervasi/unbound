@@ -9922,6 +9922,217 @@
       }
     },
     {
+      "name": "Toggle",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "__effin_workaround__",
+          "type": "srs_utils::__effin_workaround__"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Toggle\\Toggle1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 5
+                      },
+                      {
+                        "x": 15,
+                        "y": 5
+                      },
+                      {
+                        "x": 11,
+                        "y": 14
+                      },
+                      {
+                        "x": 5,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Toggle\\Toggle2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 5
+                      },
+                      {
+                        "x": 15,
+                        "y": 5
+                      },
+                      {
+                        "x": 11,
+                        "y": 14
+                      },
+                      {
+                        "x": 5,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Toggle\\Toggle3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 5
+                      },
+                      {
+                        "x": 15,
+                        "y": 5
+                      },
+                      {
+                        "x": 11,
+                        "y": 14
+                      },
+                      {
+                        "x": 5,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Toggle\\Toggle4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 5
+                      },
+                      {
+                        "x": 15,
+                        "y": 5
+                      },
+                      {
+                        "x": 11,
+                        "y": 14
+                      },
+                      {
+                        "x": 5,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Sprites\\Toggle\\Toggle5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 5
+                      },
+                      {
+                        "x": 15,
+                        "y": 5
+                      },
+                      {
+                        "x": 11,
+                        "y": 14
+                      },
+                      {
+                        "x": 5,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Door",
       "tags": "",
       "type": "Sprite",
@@ -12372,6 +12583,52 @@
       ]
     },
     {
+      "name": "Haiku",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku",
+          "SceneName": "H_01",
+          "Id": "H_01"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Static",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Sprites\\Haiku\\Haiku.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "height": 10,
       "name": "Obstacle",
       "tags": "",
@@ -13251,217 +13508,6 @@
       ]
     },
     {
-      "name": "Toggle",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "Toggle",
-          "type": "srs_objs::Toggle"
-        },
-        {
-          "name": "__effin_workaround__",
-          "type": "srs_utils::__effin_workaround__"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.2,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Sprites\\Toggle\\Toggle1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 5
-                      },
-                      {
-                        "x": 15,
-                        "y": 5
-                      },
-                      {
-                        "x": 11,
-                        "y": 14
-                      },
-                      {
-                        "x": 5,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Sprites\\Toggle\\Toggle2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 5
-                      },
-                      {
-                        "x": 15,
-                        "y": 5
-                      },
-                      {
-                        "x": 11,
-                        "y": 14
-                      },
-                      {
-                        "x": 5,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Sprites\\Toggle\\Toggle3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 5
-                      },
-                      {
-                        "x": 15,
-                        "y": 5
-                      },
-                      {
-                        "x": 11,
-                        "y": 14
-                      },
-                      {
-                        "x": 5,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Sprites\\Toggle\\Toggle4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 5
-                      },
-                      {
-                        "x": 15,
-                        "y": 5
-                      },
-                      {
-                        "x": 11,
-                        "y": 14
-                      },
-                      {
-                        "x": 5,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Assets\\Sprites\\Toggle\\Toggle5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 5
-                      },
-                      {
-                        "x": 15,
-                        "y": 5
-                      },
-                      {
-                        "x": 11,
-                        "y": 14
-                      },
-                      {
-                        "x": 5,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Transition",
       "tags": "",
       "type": "Sprite",
@@ -14140,21 +14186,6 @@
           "x": 340,
           "y": 260,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "S_ChangeSelection",
-          "width": 0,
-          "x": -212,
-          "y": 83,
-          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15254,7 +15285,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.072
+        "zoomFactor": 1.024
       },
       "objectsGroups": [
         {
@@ -15833,110 +15864,6 @@
                     }
                   ],
                   "events": []
-                },
-                {
-                  "disabled": true,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "StrEqual"
-                      },
-                      "parameters": [
-                        "Menu.Menu::ActiveId()",
-                        "=",
-                        "\"Load\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_objs::loadGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"LoadResult: \" + VariableString(LoadResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
-                          },
-                          "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "VariableString(SavedGame.LastLevel)",
-                            "yes"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
                 }
               ]
             }
@@ -29025,7 +28952,16 @@
           "zOrder": 150,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "H_01"
+            },
+            {
+              "name": "SceneName",
+              "value": "H_01"
+            }
+          ]
         }
       ],
       "objects": [
@@ -29112,52 +29048,6 @@
             "fontSize": "10",
             "wordWrap": true
           }
-        },
-        {
-          "name": "Haiku",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [
-            {
-              "name": "Haiku",
-              "type": "srs_objs::Haiku",
-              "SceneName": "H_One",
-              "Id": "H_One"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Static",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Sprites\\Haiku\\Haiku.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -29169,42 +29059,6 @@
             "includeConfig": 0
           },
           "target": "LevelWithControls"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Haiku::handleCollision"
-              },
-              "parameters": [
-                "Haiku",
-                "Haiku",
-                "Clum",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Haiku::handleTransition"
-              },
-              "parameters": [
-                "Haiku",
-                "Haiku",
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "layers": [
@@ -81186,8 +81040,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "H_950",
-      "name": "H_0",
+      "mangledName": "H_9500",
+      "name": "H_00",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -81514,214 +81368,11 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::State::Run"
-              },
-              "parameters": [
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "Signature",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "S_Pause",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateText::SubscribeToState"
-              },
-              "parameters": [
-                "Verse",
-                "StateText",
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateText::SubscribeToState"
-              },
-              "parameters": [
-                "Signature",
-                "StateText",
-                "Signature",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StatePause::SubscribeToState"
-              },
-              "parameters": [
-                "S_Pause",
-                "StatePause",
-                "S_Pause",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::IsFinished"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::IsRevealed"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::hide"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::IsHidden"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PopScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "HaikuView"
         },
         {
           "disabled": false,
@@ -81798,6 +81449,10 @@
           "type": "srs_objs::Exit"
         },
         {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku"
+        },
+        {
           "name": "HiddenRegion",
           "type": "srs_objs::HiddenRegion"
         },
@@ -81858,8 +81513,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "H_951",
-      "name": "H_1",
+      "mangledName": "H_9501",
+      "name": "H_01",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -82186,214 +81841,11 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::State::Run"
-              },
-              "parameters": [
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "Signature",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::ManageState"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                "S_Pause",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateText::SubscribeToState"
-              },
-              "parameters": [
-                "Verse",
-                "StateText",
-                "Verse",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateText::SubscribeToState"
-              },
-              "parameters": [
-                "Signature",
-                "StateText",
-                "Signature",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StatePause::SubscribeToState"
-              },
-              "parameters": [
-                "S_Pause",
-                "StatePause",
-                "S_Pause",
-                "State",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_states::StateMachine::IsFinished"
-              },
-              "parameters": [
-                "SM",
-                "StateMachine",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::IsRevealed"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::hide"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "srs_objs::Transition::IsHidden"
-              },
-              "parameters": [
-                "Transition",
-                "Transition",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PopScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "HaikuView"
         },
         {
           "disabled": false,
@@ -83107,7 +82559,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Animation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -83301,28 +82753,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::Exit::handleCollision"
-                  },
-                  "parameters": [
-                    "Exit",
-                    "Exit",
-                    "Clum",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "srs_objs::Obstacle::handleCollision"
                   },
                   "parameters": [
@@ -83346,6 +82776,56 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
+          "name": "Collectables",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Haiku::handleCollision"
+                  },
+                  "parameters": [
+                    "Haiku",
+                    "Haiku",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Haiku::handleTransition"
+                  },
+                  "parameters": [
+                    "Haiku",
+                    "Haiku",
+                    "Transition",
+                    "Transition",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
           "name": "UI",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -83392,8 +82872,8 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "name": "Scene transition - might move this to an \"escape reminder\"",
+          "folded": true,
+          "name": "Scene transitions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -83403,6 +82883,19 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::Exit::handleCollision"
+                  },
+                  "parameters": [
+                    "Exit",
+                    "Exit",
+                    "Clum",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -83421,81 +82914,15 @@
               "events": []
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::HoldKeyReminder::WasHeld"
-                  },
-                  "parameters": [
-                    "PauseReminder",
-                    "HoldKeyReminder",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::HoldKeyReminder::reset"
-                  },
-                  "parameters": [
-                    "PauseReminder",
-                    "HoldKeyReminder",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::HoldKeyReminder::reset"
-                  },
-                  "parameters": [
-                    "ResetReminder",
-                    "HoldKeyReminder",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PushScene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"M_Pause\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::HoldKeyReminder::WasHeld"
-                  },
-                  "parameters": [
-                    "ResetReminder",
-                    "HoldKeyReminder",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
+              "name": "Might move this to the reminder behavior:",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "disabled": false,
@@ -83504,24 +82931,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "srs_objs::Transition::IsHiding"
+                        "inverted": false,
+                        "value": "srs_objs::HoldKeyReminder::WasHeld"
                       },
                       "parameters": [
-                        "Transition",
-                        "Transition",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "srs_objs::Transition::IsHidden"
-                      },
-                      "parameters": [
-                        "Transition",
-                        "Transition",
+                        "PauseReminder",
+                        "HoldKeyReminder",
                         ""
                       ],
                       "subInstructions": []
@@ -83531,12 +82946,35 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::Transition::hide"
+                        "value": "srs_objs::HoldKeyReminder::reset"
                       },
                       "parameters": [
-                        "Transition",
-                        "Transition",
+                        "PauseReminder",
+                        "HoldKeyReminder",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::HoldKeyReminder::reset"
+                      },
+                      "parameters": [
+                        "ResetReminder",
+                        "HoldKeyReminder",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"M_Pause\""
                       ],
                       "subInstructions": []
                     }
@@ -83551,33 +82989,102 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::Transition::IsHidden"
+                        "value": "srs_objs::HoldKeyReminder::WasHeld"
                       },
                       "parameters": [
-                        "Transition",
-                        "Transition",
+                        "ResetReminder",
+                        "HoldKeyReminder",
                         ""
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::pushScene"
-                      },
-                      "parameters": [
-                        "",
-                        "CurrentSceneName()",
-                        ""
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "srs_objs::Transition::IsHiding"
+                          },
+                          "parameters": [
+                            "Transition",
+                            "Transition",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "srs_objs::Transition::IsHidden"
+                          },
+                          "parameters": [
+                            "Transition",
+                            "Transition",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Transition::hide"
+                          },
+                          "parameters": [
+                            "Transition",
+                            "Transition",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_objs::Transition::IsHidden"
+                          },
+                          "parameters": [
+                            "Transition",
+                            "Transition",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::pushScene"
+                          },
+                          "parameters": [
+                            "",
+                            "CurrentSceneName()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -84093,6 +83600,233 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "H_1",
+      "lastChangeTimeStamp": 0,
+      "name": "HaikuView",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::State::Run"
+              },
+              "parameters": [
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "Signature",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::ManageState"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                "S_Pause",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateText::SubscribeToState"
+              },
+              "parameters": [
+                "Verse",
+                "StateText",
+                "Verse",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateText::SubscribeToState"
+              },
+              "parameters": [
+                "Signature",
+                "StateText",
+                "Signature",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StatePause::SubscribeToState"
+              },
+              "parameters": [
+                "S_Pause",
+                "StatePause",
+                "S_Pause",
+                "State",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_states::StateMachine::IsFinished"
+              },
+              "parameters": [
+                "SM",
+                "StateMachine",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::IsRevealed"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::hide"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Transition::IsHidden"
+              },
+              "parameters": [
+                "Transition",
+                "Transition",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PopScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -94566,7 +94300,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nif (!ssangervasi.srsObjs) { ssangervasi.srsObjs = {} }\nconst srsObjs = ssangervasi.srsObjs;\n\n/**\n * @typedef UserData\n * @property {SavedGame[]} saves\n */\n\n/**\n * @typedef SavedGame\n * @property {LevelHistoryItem[]} levelHistory \n * @property {Collectable[]} collectables\n * @property {number} createdAt\n * @property {number} updatedAt\n */\n\n/**\n * @typedef LevelHistoryItem\n * @property {string} sceneName \n * @property {number} [startedAt]\n */\n\n/**\n * @typedef Collectable\n * @property {string} id \n * @property {number} collectedAt\n */\n\n// Save & load game\n(() => {\n\n/**\n * @returns {SavedGame}\n */\nconst createSave = () => {\n    const createdAt = Date.now() \n    return {\n        createdAt,\n        updatedAt: createdAt,\n        levelHistory: getLevelHistory(),\n        collectables: []\n    }\n}\n\n/**\n * @param {SavedGame} previousSave\n * @returns {SavedGame}\n */\nconst updateSave = (previousSave) => {\n    previousSave.updatedAt = Date.now() \n    previousSave.levelHistory = previousSave.levelHistory.concat(getLevelHistory())\n    previousSave.collectables = getCollectables()\n    return previousSave\n}\n\n/**\n * @returns {LevelHistoryItem[]}\n */ \nconst getLevelHistory = () => {\n    return ssangervasi\n        .getSceneHistory()\n        .filter((/** @type {LevelHistoryItem} */ item) => {\n            return item.sceneName.startsWith('L_')\n        })\n}\n\n/** @returns {Collectable[]} */\nconst getCollectables = () => {\n    srsObjs.collectables = srsObjs.collectables || []\n    return srsObjs.collectables\n}\n\n/**\n * @param {string} targetId\n * @returns {boolean }\n */\nconst hasCollectable = (targetId) => {\n    return getCollectables().some(({ id }) => id === targetId)\n}\n\n/**\n * @param {string} id\n * @returns {Collectable[]}\n */\nconst pushCollectable = (id) => {\n    if (hasCollectable(id)) {\n        return null\n    }\n\n    const newCollectable = {\n        id,\n        collectedAt: Date.now()\n    }\n    getCollectables().push()\n\n    return newCollectable\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {UserData}\n */\nconst getUserData = (vars) => {\n    /** @type {UserData} */\n    let userData = { saves: [] }\n\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\n    let parsedUserData\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.error(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        typeof parsedUserData === \"object\" &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n    return userData\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {SavedGame}\n */ \nconst saveGame = (vars) => {\n    vars.get(\"SaveResult\").setString(\"attempt\")\n\n    try {\n        let newSave = null\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        const previousSave = maxBy(userData.saves, save => save.createdAt)\n        if (previousSave) {\n            newSave = updateSave(previousSave)\n        } else {\n            newSave = createSave()\n            userData.saves.push(newSave)\n        }\n\n        setSceneVars(vars, newSave)\n        vars.get(\"UserDataJSON\").setString(JSON.stringify(userData))\n        vars.get(\"SaveResult\").setString(\"success\")\n        return newSave\n    } catch (e) {\n        ssangervasi.error(\"saveGame error:\", e)\n        vars.get(\"SaveResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @callback maxByCallback\n * @param {any} entry\n * @param {number} index\n * @returns {any} candidate\n */\n\n/**\n * @param {Array} collection\n * @param {maxByCallback} callback\n * @returns {?any}\n */\nconst maxBy = (collection, callback) => {\n    let maxEntry = null;\n    let maxCandidate;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index)\n        if (maxEntry === null || maxCandidate < candidate) {\n            maxEntry = entry\n            maxCandidate = candidate\n        }\n    })\n    return maxEntry\n} \n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {?SavedGame}\n */ \nconst loadGame = (vars) => {\n    vars.get(\"LoadResult\").setString(\"attempt\")\n\n    try {\n        const userData = getUserData(vars)\n        if (!userData.saves.length) {\n            throw new Error('No saved games')\n        }\n\n        /** @type SavedGame */\n        const newestSave = maxBy(userData.saves, save => save.createdAt)\n        setSceneVars(vars, newestSave)\n\n        vars.get(\"LoadResult\").setString(\"success\")\n        return newestSave\n    } catch (e) {\n        ssangervasi.error(\"loadGame error:\", e)\n        vars.get(\"LoadResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @param {SavedGame} newestSave\n */\nconst setSceneVars = (vars, newestSave) => {\n    /** @type LevelHistoryItem */\n    const newestLevel = maxBy(newestSave.levelHistory, level => level.startedAt)\n\n    const savedGameVar = vars.get(\"SavedGame\")\n    savedGameVar.clearChildren()\n    \n    savedGameVar.getChild(\"UpdatedAt\").setNumber(newestSave.updatedAt)\n    savedGameVar.getChild(\"CreatedAt\").setNumber(newestSave.createdAt)\n    savedGameVar.getChild(\"LastLevel\").setString(newestLevel.sceneName)\n}\n\nObject.assign(\n    srsObjs,\n    {\n        saveGame,\n        loadGame,\n        hasCollectable,\n        pushCollectable,\n        getCollectables\n    }\n)\n})()",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nif (!ssangervasi.srsObjs) { ssangervasi.srsObjs = {} }\nconst srsObjs = ssangervasi.srsObjs;\n\n/**\n * @typedef UserData\n * @property {SavedGame[]} saves\n */\n\n/**\n * @typedef SavedGame\n * @property {LevelHistoryItem[]} levelHistory \n * @property {Collectable[]} collectables\n * @property {number} createdAt\n * @property {number} updatedAt\n */\n\n/**\n * @typedef LevelHistoryItem\n * @property {string} sceneName \n * @property {number} [startedAt]\n */\n\n/**\n * @typedef Collectable\n * @property {string} id \n * @property {number} collectedAt\n */\n\n// Save & load game\n(() => {\n\n/**\n * @returns {SavedGame}\n */\nconst createSave = () => {\n    const createdAt = Date.now() \n    return {\n        createdAt,\n        updatedAt: createdAt,\n        levelHistory: getLevelHistory(),\n        collectables: []\n    }\n}\n\n/**\n * @param {SavedGame} previousSave\n * @returns {SavedGame}\n */\nconst updateSave = (previousSave) => {\n    previousSave.updatedAt = Date.now() \n    previousSave.levelHistory = previousSave.levelHistory.concat(getLevelHistory())\n    previousSave.collectables = getCollectables()\n    return previousSave\n}\n\n/**\n * @returns {LevelHistoryItem[]}\n */ \nconst getLevelHistory = () => {\n    return ssangervasi\n        .getSceneHistory()\n        .filter((/** @type {LevelHistoryItem} */ item) => {\n            return item.sceneName.startsWith('L_')\n        })\n}\n\n/** @returns {Collectable[]} */\nconst getCollectables = () => {\n    srsObjs.collectables = srsObjs.collectables || []\n    return srsObjs.collectables\n}\n\n/**\n * @param {string} targetId\n * @returns {boolean }\n */\nconst hasCollectable = (targetId) => {\n    return getCollectables().some(({ id }) => id === targetId)\n}\n\n/**\n * @param {string} id\n * @returns {Collectable[]}\n */\nconst pushCollectable = (id) => {\n    if (hasCollectable(id)) {\n        return null\n    }\n\n    const newCollectable = {\n        id,\n        collectedAt: Date.now()\n    }\n    getCollectables().push()\n\n    return newCollectable\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {UserData}\n */\nconst getUserData = (vars) => {\n    /** @type {UserData} */\n    let userData = { saves: [] }\n\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\n    let parsedUserData\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.error(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        typeof parsedUserData === \"object\" &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n    return userData\n}\n\n\n/**\n * @param {string} [userDataJSON]\n * @returns {(UserData|null)}\n */\nconst validateUserData = (userDataJSON) => {\n    let userData = null\n    let parsedUserData = null\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.info(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        \"saves\" in parsedUserData &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n}\n\nconst getCurrentSave = () => {\n\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {SavedGame}\n */ \nconst saveGame = (vars) => {\n    vars.get(\"SaveResult\").setString(\"attempt\")\n\n    try {\n        let newSave = null\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        const previousSave = maxBy(userData.saves, save => save.createdAt)\n        if (previousSave) {\n            newSave = updateSave(previousSave)\n        } else {\n            newSave = createSave()\n            userData.saves.push(newSave)\n        }\n\n        setSceneVars(vars, newSave)\n        vars.get(\"UserDataJSON\").setString(JSON.stringify(userData))\n        vars.get(\"SaveResult\").setString(\"success\")\n        return newSave\n    } catch (e) {\n        ssangervasi.error(\"saveGame error:\", e)\n        vars.get(\"SaveResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @callback maxByCallback\n * @param {any} entry\n * @param {number} index\n * @returns {any} candidate\n */\n\n/**\n * @param {Array} collection\n * @param {maxByCallback} callback\n * @returns {?any}\n */\nconst maxBy = (collection, callback) => {\n    let maxEntry = null;\n    let maxCandidate;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index)\n        if (maxEntry === null || maxCandidate < candidate) {\n            maxEntry = entry\n            maxCandidate = candidate\n        }\n    })\n    return maxEntry\n} \n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {?SavedGame}\n */ \nconst loadGame = (vars) => {\n    vars.get(\"LoadResult\").setString(\"attempt\")\n\n    try {\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        let newestSave\n        if (userData.saves.length) {\n            newestSave = maxBy(userData.saves, save => save.createdAt)\n        } else {\n            newestSave = createSave()\n        }\n\n\n        setSceneVars(vars, newestSave)\n        vars.get(\"LoadResult\").setString(\"success\")\n        return newestSave\n    } catch (e) {\n        ssangervasi.error(\"loadGame error:\", e)\n        vars.get(\"LoadResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @param {SavedGame} newestSave\n */\nconst setSceneVars = (vars, newestSave) => {\n    /** @type LevelHistoryItem */\n    const newestLevel = maxBy(newestSave.levelHistory, level => level.startedAt)\n\n    const savedGameVar = vars.get(\"SavedGame\")\n    savedGameVar.clearChildren()\n    \n    savedGameVar.getChild(\"UpdatedAt\").setNumber(newestSave.updatedAt)\n    savedGameVar.getChild(\"CreatedAt\").setNumber(newestSave.createdAt)\n    savedGameVar.getChild(\"LastLevel\").setString(newestLevel.sceneName)\n}\n\nObject.assign(\n    srsObjs,\n    {\n        saveGame,\n        loadGame,\n        hasCollectable,\n        pushCollectable,\n        getCollectables\n    }\n)\n})()",
               "parameterObjects": "",
               "useStrict": true
             }

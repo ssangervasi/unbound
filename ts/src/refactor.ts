@@ -9,15 +9,11 @@ export interface RefactorResult {
 	backupPath: string
 }
 
-export const refactor = (
-	inPath: string,
-	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null,
-): RefactorResult | null => {
+export const refactor = (inPath: string,
+	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null,): RefactorResult | null => {
 	const projectPath = path.resolve(inPath)
-	const backupPath = path.join(
-		path.dirname(projectPath),
-		`backup-${Date.now()}.${path.basename(projectPath)}` 
-	)
+	const backupPath = path.join(path.dirname(projectPath),
+		`backup-${Date.now()}.${path.basename(projectPath)}`)
 	
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
 	const result = produce(project, callback)
@@ -26,7 +22,9 @@ export const refactor = (
 	}
 
 	fs.copyFileSync(projectPath, backupPath)
-	fs.writeFileSync(projectPath, JSON.stringify(result, null, 2))
+	fs.writeFileSync(projectPath, JSON.stringify(
+		result, null, 2
+	))
 
 	return {
 		projectPath,
@@ -56,5 +54,5 @@ export const transformInstances = (
 		})
 
 		gdLayout.instances = transforms
-	});
+	})
 }
