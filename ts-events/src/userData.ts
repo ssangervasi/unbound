@@ -105,3 +105,21 @@ export const completeLevel = ({ session: { level } }: UserData): LevelSession | 
 	level.completedAt = Date.now()
 	return level
 }
+
+export const exportUserData = {
+	createFromJSON,
+	isStoredData,
+	createDefault,
+	pushLevel,
+	peekLevelName,
+	completeLevel,
+}
+
+declare var global: {
+	exports: {}
+	ssangervasi?: {
+		userData?: typeof exportUserData
+	}
+}
+global.ssangervasi = global.ssangervasi || {}
+global.ssangervasi.userData = exportUserData

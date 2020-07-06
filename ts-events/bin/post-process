@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for jspath in $(ls ./dist/*.js); do
+	sed -i '1s/^/exports = {};\n/' "$jspath"
+done  
