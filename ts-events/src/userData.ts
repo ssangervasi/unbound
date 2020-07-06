@@ -6,7 +6,7 @@ export interface UserData {
 export type StoredUserData = Pick<UserData, 'savedGames'>
 
 export interface Session {
-	savedGame: SavedGame
+	savedGame?: SavedGame
 	levels: LevelSession[]
 	level?: LevelSession
 }
@@ -57,21 +57,70 @@ export const isStoredData = (maybeData: any): maybeData is StoredUserData =>
 		].every((key) => key in savedGame)
 	))
 
-export const createDefault = (): UserData => {
+export const createDefault = (): UserData => ({
+	savedGames: [],
+	session: {
+		levels: [],
+		level: undefined,
+		savedGame: undefined,
+	},
+})
+
+export const newGame = (userData: UserData): SavedGame => {
 	const now = Date.now()
-	return {
-		savedGames: [],
-		session: {
-			levels: [],
-			level: undefined,
-			savedGame: {
-				levels: [],
-				collectables: [],
-				createdAt: now,
-				updatedAt: now,
-			},
-		},
+	const savedGame = {
+		levels: [],
+		collectables: [],
+		createdAt: now,
+		updatedAt: now,
 	}
+	if (userData.session.savedGame) {
+		saveGame(userData, userData.session.savedGame)
+	}
+	userData.session.savedGame = savedGame
+	return savedGame
+}
+
+export const resumeGame = (userData: UserData, createdAt?: number): SavedGame | null => {
+	if (userData.session.savedGame) {
+		saveGame(userData, userData.session.savedGame)
+	}
+	const previousSave =
+		createdAt
+			? userData.savedGames.find(s => s.createdAt == createdAt)
+			: maxBy(userData.savedGames, (s) => s.updatedAt)
+	if (!previousSave) {
+		return null
+	}
+	userData.session.savedGame = previousSave
+	return previousSave
+}
+
+export const saveGame = (userData: UserData, savedGame: SavedGame): SavedGame => {
+	savedGame.updatedAt = Date.now()
+	const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt)
+	if (index === -1) {
+		userData.savedGames.push(savedGame)
+	} else {
+		userData.savedGames[index] = savedGame
+	}
+	return savedGame
+}
+
+export const maxBy = <T, V>(
+	collection: T[],
+	callback: (entry: T, index: number) => V
+): T | undefined => {
+	let maxEntry: T | undefined = undefined
+	let maxCandidate: V | undefined = undefined
+	collection.forEach((entry, index) => {
+		const candidate = callback(entry, index)
+		if (maxCandidate === undefined || maxCandidate < candidate) {
+			maxEntry = entry
+			maxCandidate = candidate
+		}
+	})
+	return maxEntry
 }
 
 export const pushLevel = ({ session }: UserData, sceneName: string): LevelSession => {
@@ -107,12 +156,15 @@ export const completeLevel = ({ session: { level } }: UserData): LevelSession | 
 }
 
 export const exportUserData = {
+	completeLevel,
+	createDefault,
 	createFromJSON,
 	isStoredData,
-	createDefault,
-	pushLevel,
+	newGame,
 	peekLevelName,
-	completeLevel,
+	pushLevel,
+	resumeGame,
+	saveGame
 }
 
 declare var global: {
@@ -122,4 +174,4 @@ declare var global: {
 	}
 }
 global.ssangervasi = global.ssangervasi || {}
-global.ssangervasi.userData = exportUserData
+global.ssangervasi.userData = global.ssangervasi.userData || exportUserData

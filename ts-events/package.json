@@ -4,7 +4,7 @@
 	"description": "unbound-ts-events",
 	"main": "dist/main.js",
 	"scripts": {
-		"build": "rimraf dist && tsc && ./bin/post-process",
+		"build": "rimraf dist && tsc && bash ./bin/post-process",
 		"lint": "eslint --fix --cache src/**",
 		"ndb": "ndb ./dist/cli.js",
 		"shell": "ts-node",

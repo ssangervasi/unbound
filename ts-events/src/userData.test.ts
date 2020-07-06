@@ -44,6 +44,15 @@ const mockSavedGames = (): userData.SavedGame[] => (
 	]
 )
 
+const blankSaveMatcher = (resultSave: userData.SavedGame) => (
+	{
+		levels: [],
+		collectables: [],
+		createdAt: expect.any(Number),
+		updatedAt: resultSave.createdAt,
+	}
+)
+
 const mockSession = (): userData.Session => (
 	{
 		savedGame: mockSavedGames()[1],
@@ -63,12 +72,7 @@ describe('createDefault', () => {
 		expect(result.session).toMatchObject<userData.Session>({
 			levels: [],
 			level: undefined,
-			savedGame: expect.objectContaining({
-				levels: [],
-				collectables: [],
-				createdAt: expect.any(Number),
-				updatedAt: expect.any(Number),
-			})
+			savedGame: undefined
 		})
 	})
 })
@@ -77,7 +81,7 @@ describe('createFromJSON', () => {
 	it('handles invalid json', () => {
 		const result = userData.createFromJSON('horx;ma-dorks')
 		expect(result.savedGames).toEqual([])
-		expect(result.session.savedGame.levels).toEqual([])
+		expect(result.session.levels).toEqual([])
 	})
 
 	it('loads the saved games from valid JSON', () => {
@@ -86,7 +90,72 @@ describe('createFromJSON', () => {
 		}
 		const result = userData.createFromJSON(JSON.stringify(validStored))
 		expect(result.savedGames).toEqual(validStored.savedGames)
-		expect(result.session.savedGame.levels).toEqual([])
+		expect(result.session.levels).toEqual([])
+	})
+})
+
+describe('newGame', () => {
+	it('with default data populates the session', () => {
+		const defaultData = userData.createDefault()
+		const resultSave = userData.newGame(defaultData)
+		expect(defaultData.session.savedGame).toBe(resultSave)
+		expect(resultSave).toMatchObject(blankSaveMatcher(resultSave))
+		expect(defaultData.savedGames).toEqual([])
+	})
+
+	it('with existing data pushes the existing save', () => {
+		const originalGames = mockSavedGames()
+		const existingData: userData.UserData = {
+			savedGames: [originalGames[0]],
+			session: {
+				savedGame: originalGames[1],
+				levels: []
+			}
+		}
+		const resultSave = userData.newGame(existingData)
+		expect(existingData.session.savedGame).toBe(resultSave)
+		expect(resultSave).toMatchObject(blankSaveMatcher(resultSave))
+		expect(existingData.savedGames).toEqual(originalGames)
+	})
+})
+
+describe('resumeGame', () => {
+	it('finds the most recent save', () => {
+		const mostRecentSave = {
+			createdAt: 1,
+			updatedAt: 30,
+			levels: mockLevels(),
+			collectables: []
+		}
+		const existingData: userData.UserData = {
+			savedGames: [
+				{
+					createdAt: 1,
+					updatedAt: 20,
+					levels: mockLevels(),
+					collectables: []
+				},
+				mostRecentSave,
+				{
+					createdAt: 1,
+					updatedAt: 10,
+					levels: mockLevels(),
+					collectables: []
+				},
+				{
+					createdAt: 1,
+					updatedAt: 1,
+					levels: mockLevels(),
+					collectables: []
+				},
+			],
+			session: {
+				levels: []
+			}
+		}
+		const resultSave = userData.resumeGame(existingData)
+		expect(existingData.session.savedGame).toBe(resultSave)
+		expect(resultSave).toBe(mostRecentSave)
 	})
 })
 
