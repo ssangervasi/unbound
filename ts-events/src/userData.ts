@@ -7,7 +7,7 @@ export type StoredUserData = Pick<UserData, 'savedGames'>
 
 export interface Session {
 	savedGame: SavedGame
-	scenes: SceneSession[]
+	levels: LevelSession[]
 	level?: LevelSession
 }
 
@@ -18,13 +18,10 @@ export interface SavedGame {
 	updatedAt: number
 }
 
-export interface SceneSession {
+export interface LevelSession {
 	sceneName: string
-	startedAt?: number
+	startedAt: number
 	completedAt?: number
-}
-
-export interface LevelSession extends SceneSession {
 	collectables: Collectable[]
 }
 
@@ -65,7 +62,7 @@ export const createDefault = (): UserData => {
 	return {
 		savedGames: [],
 		session: {
-			scenes: [],
+			levels: [],
 			level: undefined,
 			savedGame: {
 				levels: [],
@@ -75,4 +72,36 @@ export const createDefault = (): UserData => {
 			},
 		},
 	}
+}
+
+export const pushLevel = ({ session }: UserData, sceneName: string): LevelSession => {
+	if (session.level) {
+		session.levels.push(session.level)
+	}
+	session.level = {
+		sceneName,
+		startedAt: Date.now(),
+		collectables: []
+	}
+	return session.level
+}
+
+export const peekLevelName = (
+	{ session: { levels } }: UserData,
+	defaultName = '',
+	depth = 0
+): string => {
+	const index = levels.length - 1 - depth
+	if (index < 0) {
+		return defaultName
+	}
+	return levels[index].sceneName
+}
+
+export const completeLevel = ({ session: { level } }: UserData): LevelSession | null => {
+	if (!level) {
+		return null
+	}
+	level.completedAt = Date.now()
+	return level
 }
