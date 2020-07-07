@@ -33,13 +33,11 @@ const mockSavedGames = (): userData.SavedGame[] => (
 			createdAt: 2,
 			updatedAt: 20,
 			levels: [mockLevels()[0]],
-			collectables: []
 		},
 		{
 			createdAt: 100,
 			updatedAt: 200,
 			levels: mockLevels(),
-			collectables: [mockCollectables()[0]]
 		},
 	]
 )
@@ -47,7 +45,6 @@ const mockSavedGames = (): userData.SavedGame[] => (
 const blankSaveMatcher = (resultSave: userData.SavedGame) => (
 	{
 		levels: [],
-		collectables: [],
 		createdAt: expect.any(Number),
 		updatedAt: resultSave.createdAt,
 	}
@@ -159,6 +156,103 @@ describe('resumeGame', () => {
 	})
 })
 
+describe('saveGame', () => {
+	it('adds the session levels to the save', () => {
+		const data: userData.UserData = {
+			savedGames: [],
+			session: {
+				savedGame: {
+					createdAt: 1,
+					updatedAt: 5,
+					levels: [
+						{
+							sceneName: 'L_1',
+							startedAt: 1,
+							completedAt: 2,
+							collectables: []
+						},
+					]
+				},
+				levels: [
+					{
+						sceneName: 'L_1',
+						startedAt: 1,
+						completedAt: 2,
+						collectables: []
+					},
+					{
+						sceneName: 'L_2',
+						startedAt: 3,
+						completedAt: 4,
+						collectables: []
+					},
+					{
+						sceneName: 'L_3',
+						startedAt: 5,
+						collectables: []
+					}
+				],
+			}
+		}
+		const savedGame = userData.saveGame(data)
+		expect(savedGame).toBeTruthy()
+		expect(data.savedGames[0]).toEqual({
+			createdAt: 1,
+			updatedAt: expect.any(Number),
+			levels: [
+				{
+					sceneName: 'L_1',
+					startedAt: 1,
+					completedAt: 2,
+					collectables: []
+				},
+				{
+					sceneName: 'L_2',
+					startedAt: 3,
+					completedAt: 4,
+					collectables: []
+				},
+				{
+					sceneName: 'L_3',
+					startedAt: 5,
+					collectables: []
+				}
+			]
+		})
+		expect(data.session).toEqual({
+			level: undefined,
+			levels: savedGame?.levels,
+			savedGame,
+		})
+	})
+})
+
+describe('lastPlayedLevel', () => {
+	it('returns undefined if no levels were played', () => {
+		const lastPlayedName = userData.lastPlayedLevelName({
+			...mockSavedGames()[0],
+			levels: []
+		})
+		expect(lastPlayedName).toBeUndefined()
+	})
+
+	it('finds the most recently started level', () => {
+		const lastPlayedName = userData.lastPlayedLevelName({
+			...mockSavedGames()[0],
+			levels: [
+				...mockLevels(),
+				{
+					sceneName: 'L_last_played',
+					startedAt: 10000,
+					collectables: [],
+				},
+				...mockLevels(),
+			],
+		})
+		expect(lastPlayedName).toEqual('L_last_played')
+	})
+})
+
 describe('pushLevel', () => {
 	it('handles no active level', () => {
 		const dataNoLevel = {
@@ -167,6 +261,7 @@ describe('pushLevel', () => {
 		}
 		const newLevel = userData.pushLevel(dataNoLevel, 'some-scene')
 		expect(dataNoLevel.session.level).toBe(newLevel)
+		expect(dataNoLevel.session.levels[0]).toBe(newLevel)
 		expect(newLevel).toMatchObject<userData.LevelSession>({
 			sceneName: 'some-scene',
 			startedAt: expect.any(Number),
@@ -183,7 +278,7 @@ describe('pushLevel', () => {
 		const dataWithLevel = {
 			savedGames: mockSavedGames(),
 			session: {
-				...mockSession(),
+				levels: [startingLevel],
 				level: startingLevel
 			}
 		}
@@ -194,7 +289,8 @@ describe('pushLevel', () => {
 			startedAt: expect.any(Number),
 			collectables: []
 		})
-		expect(dataWithLevel.session.levels.slice(-1)[0]).toBe(startingLevel)
+		expect(dataWithLevel.session.levels[0]).toBe(startingLevel)
+		expect(dataWithLevel.session.levels[1]).toBe(newLevel)
 	})
 })
 

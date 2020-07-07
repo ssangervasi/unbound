@@ -14105,7 +14105,7 @@
         "gridWidth": 10,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.168
+        "zoomFactor": 1.096
       },
       "objectsGroups": [
         {
@@ -14622,46 +14622,11 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::loadGame"
-                      },
-                      "parameters": [
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "srs_utils::consoleLog"
                       },
                       "parameters": [
                         "",
-                        "\"LoadResult: \" + VariableString(LoadResult)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedLastLevel: \" + VariableString(SavedGame.LastLevel)",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "srs_utils::consoleLog"
-                      },
-                      "parameters": [
-                        "",
-                        "\"SavedTimestamp: \" + VariableString(SavedGame.Timestamp)",
+                        "\"Saved CreatedAt: \" + VariableString(SavedGame.CreatedAt)",
                         ""
                       ],
                       "subInstructions": []
@@ -14676,12 +14641,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarSceneTxt"
+                            "value": "VariableChildExists"
                           },
                           "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
+                            "SavedGame",
+                            "\"LastLevel\""
                           ],
                           "subInstructions": []
                         }
@@ -14696,13 +14660,12 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
+                            "inverted": true,
+                            "value": "VariableChildExists"
                           },
                           "parameters": [
-                            "LoadResult",
-                            "!=",
-                            "\"success\""
+                            "SavedGame",
+                            "\"LastLevel\""
                           ],
                           "subInstructions": []
                         }
@@ -15051,12 +15014,11 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "VarSceneTxt"
+                            "value": "VariableChildExists"
                           },
                           "parameters": [
-                            "LoadResult",
-                            "=",
-                            "\"success\""
+                            "SavedGame",
+                            "\"LastLevel\""
                           ],
                           "subInstructions": []
                         }
@@ -15084,13 +15046,12 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
-                            "value": "VarSceneTxt"
+                            "inverted": true,
+                            "value": "VariableChildExists"
                           },
                           "parameters": [
-                            "LoadResult",
-                            "!=",
-                            "\"success\""
+                            "SavedGame",
+                            "\"LastLevel\""
                           ],
                           "subInstructions": []
                         }
@@ -23348,7 +23309,7 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_utils::peekScene(1, \"\")",
+                        "srs_objs::peekLevel(1, \"\")",
                         "=",
                         "CurrentSceneName()"
                       ],
@@ -23396,7 +23357,7 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_utils::peekScene(1, \"\")",
+                        "srs_objs::peekLevel(1, \"\")",
                         "!=",
                         "CurrentSceneName()"
                       ],
@@ -82075,6 +82036,37 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::importSsangervasiUserData"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::loadUserData"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -82084,6 +82076,18 @@
                   "parameters": [
                     "",
                     "\"eff\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::isLevel"
+                  },
+                  "parameters": [
+                    "",
+                    "\"\"",
                     ""
                   ],
                   "subInstructions": []
@@ -86525,6 +86529,36 @@
           "objectGroups": []
         },
         {
+          "description": "Counts the number of words in a string.",
+          "fullName": "Word Count",
+          "functionType": "Expression",
+          "name": "wordCount",
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const stringToCount = eventsFunctionContext.getArgument('StringToCount')\r\nif (!stringToCount) {\r\n    return 0\r\n}\r\n\r\nconst words = stringToCount.match(/\\w+|\\.{3}/g)\r\n// console.log({\r\n//     stringToCount,\r\n//     words,\r\n// })\r\neventsFunctionContext.returnValue = words.length",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "StringToCount",
+              "longDescription": "",
+              "name": "StringToCount",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
           "description": "StrToRepl, Pattern, Replacement",
           "fullName": "String replace",
           "functionType": "StringExpression",
@@ -86575,135 +86609,6 @@
               "description": "Replacement string",
               "longDescription": "",
               "name": "Replacement",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "Counts the number of words in a string.",
-          "fullName": "Word Count",
-          "functionType": "Expression",
-          "name": "wordCount",
-          "sentence": "",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const stringToCount = eventsFunctionContext.getArgument('StringToCount')\r\nif (!stringToCount) {\r\n    return 0\r\n}\r\n\r\nconst words = stringToCount.match(/\\w+|\\.{3}/g)\r\n// console.log({\r\n//     stringToCount,\r\n//     words,\r\n// })\r\neventsFunctionContext.returnValue = words.length",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "StringToCount",
-              "longDescription": "",
-              "name": "StringToCount",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "Change scene and record the history",
-          "fullName": "Push Scene",
-          "functionType": "Action",
-          "name": "pushScene",
-          "sentence": "Change to scene _PARAM1_ and push the previous scene to the history",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "global.ssangervasi.pushScene(\n    eventsFunctionContext.getArgument(\"SceneName\")\n)\n",
-              "parameterObjects": "",
-              "useStrict": true
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "GetArgumentAsString(\"SceneName\")",
-                    "yes"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "SceneName",
-              "longDescription": "",
-              "name": "SceneName",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "sceneName"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "See what the _PARAM1_ ago scene was",
-          "fullName": "Peek scene",
-          "functionType": "StringExpression",
-          "name": "peekScene",
-          "sentence": "",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = global.ssangervasi.peekScene(\n    eventsFunctionContext.getArgument(\"Default\"),\n    eventsFunctionContext.getArgument(\"Depth\")\n)\n",
-              "parameterObjects": "",
-              "useStrict": true
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "Depth",
-              "longDescription": "",
-              "name": "Depth",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "expression"
-            },
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "Default to return if nothing found at Depth (Default is empty string)",
-              "longDescription": "",
-              "name": "Default",
               "optional": false,
               "supplementaryInformation": "",
               "type": "string"
@@ -94299,10 +94204,349 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::importSsangervasiUserData"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::loadUserData"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::resumeGame"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::isLevel"
+                  },
+                  "parameters": [
+                    "",
+                    "CurrentSceneName()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::pushLevel"
+                  },
+                  "parameters": [
+                    "",
+                    "CurrentSceneName()",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "importSsangervasiUserData",
+          "fullName": "importSsangervasiUserData",
+          "functionType": "Action",
+          "name": "importSsangervasiUserData",
+          "sentence": "importSsangervasiUserData",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": "var exports = exports || {};\n\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.isLevel = exports.completeLevel = exports.peekLevelName = exports.pushLevel = exports.maxBy = exports.lastPlayedLevelName = exports.saveGame = exports.resumeGame = exports.newGame = exports.createDefault = exports.isStoredData = exports.createFromJSON = void 0;\nexports.createFromJSON = (userDataJSON) => {\n    const userData = exports.createDefault();\n    let parsed;\n    try {\n        parsed = JSON.parse(userDataJSON);\n    }\n    catch (e) {\n        console.log('createFromJSON parse error:', { userDataJSON });\n    }\n    if (exports.isStoredData(parsed)) {\n        userData.savedGames = parsed.savedGames;\n    }\n    return userData;\n};\nexports.isStoredData = (maybeData) => (maybeData != null)\n    && 'savedGames' in maybeData\n    && Array.isArray(maybeData.savedGames)\n    && maybeData.savedGames.every((savedGame) => ([\n        'levels',\n        'createdAt',\n        'updatedAt',\n    ].every((key) => key in savedGame)));\nexports.createDefault = () => ({\n    savedGames: [],\n    session: {\n        levels: [],\n        level: undefined,\n        savedGame: undefined,\n    },\n});\nexports.newGame = (userData) => {\n    const now = Date.now();\n    const savedGame = {\n        levels: [],\n        createdAt: now,\n        updatedAt: now,\n    };\n    exports.saveGame(userData);\n    userData.session.savedGame = savedGame;\n    return savedGame;\n};\nexports.resumeGame = (userData, createdAt) => {\n    exports.saveGame(userData);\n    const previousSave = createdAt\n        ? userData.savedGames.find(s => s.createdAt == createdAt)\n        : exports.maxBy(userData.savedGames, (s) => s.updatedAt);\n    if (!previousSave) {\n        return null;\n    }\n    userData.session.savedGame = previousSave;\n    userData.session.levels = [...previousSave.levels];\n    return previousSave;\n};\nexports.saveGame = (userData) => {\n    const savedGame = userData.session.savedGame;\n    if (!savedGame) {\n        return null;\n    }\n    savedGame.updatedAt = Date.now();\n    savedGame.levels = [...userData.session.levels];\n    const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt);\n    if (index === -1) {\n        userData.savedGames.push(savedGame);\n    }\n    else {\n        userData.savedGames[index] = savedGame;\n    }\n    return savedGame;\n};\nexports.lastPlayedLevelName = (savedGame) => { var _a; return (_a = exports.maxBy(savedGame.levels, s => s.startedAt)) === null || _a === void 0 ? void 0 : _a.sceneName; };\nexports.maxBy = (collection, callback) => {\n    let maxEntry = undefined;\n    let maxCandidate = undefined;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index);\n        if (maxCandidate === undefined || maxCandidate < candidate) {\n            maxEntry = entry;\n            maxCandidate = candidate;\n        }\n    });\n    return maxEntry;\n};\nexports.pushLevel = ({ session }, sceneName) => {\n    session.level = {\n        sceneName,\n        startedAt: Date.now(),\n        collectables: []\n    };\n    session.levels.push(session.level);\n    return session.level;\n};\nexports.peekLevelName = ({ session: { levels } }, defaultName = '', depth = 0) => {\n    const index = levels.length - 1 - depth;\n    if (index < 0) {\n        return defaultName;\n    }\n    return levels[index].sceneName;\n};\nexports.completeLevel = ({ session }) => {\n    const { level } = session;\n    if (!level) {\n        return null;\n    }\n    level.completedAt = Date.now();\n    session.level = undefined;\n    return level;\n};\nexports.isLevel = (sceneName) => sceneName.startsWith('L_');\nglobal.ssangervasi = global.ssangervasi || {};\nglobal.ssangervasi.userData = global.ssangervasi.userData || exports;\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlckRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvdXNlckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBK0JhLFFBQUEsY0FBYyxHQUFHLENBQUMsWUFBb0IsRUFBWSxFQUFFO0lBQ2hFLE1BQU0sUUFBUSxHQUFHLHFCQUFhLEVBQUUsQ0FBQTtJQUNoQyxJQUFJLE1BQVcsQ0FBQTtJQUNmLElBQUk7UUFDSCxNQUFNLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxZQUFZLENBQUMsQ0FBQTtLQUNqQztJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1gsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBNkIsRUFBRSxFQUFFLFlBQVksRUFBRSxDQUFDLENBQUE7S0FDNUQ7SUFDRCxJQUFJLG9CQUFZLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDekIsUUFBUSxDQUFDLFVBQVUsR0FBRyxNQUFNLENBQUMsVUFBVSxDQUFBO0tBQ3ZDO0lBQ0QsT0FBTyxRQUFRLENBQUE7QUFDaEIsQ0FBQyxDQUFBO0FBRVksUUFBQSxZQUFZLEdBQUcsQ0FBQyxTQUFjLEVBQStCLEVBQUUsQ0FDM0UsQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDO09BQ2hCLFlBQVksSUFBSSxTQUFTO09BQ3pCLEtBQUssQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQztPQUNuQyxTQUFTLENBQUMsVUFBVSxDQUFDLEtBQUssQ0FBQyxDQUFDLFNBQWMsRUFBRSxFQUFFLENBQUMsQ0FDakQ7UUFDQyxRQUFRO1FBQ1IsV0FBVztRQUNYLFdBQVc7S0FDWCxDQUFDLEtBQUssQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFLENBQUMsR0FBRyxJQUFJLFNBQVMsQ0FBQyxDQUNsQyxDQUFDLENBQUE7QUFFVSxRQUFBLGFBQWEsR0FBRyxHQUFhLEVBQUUsQ0FBQyxDQUFDO0lBQzdDLFVBQVUsRUFBRSxFQUFFO0lBQ2QsT0FBTyxFQUFFO1FBQ1IsTUFBTSxFQUFFLEVBQUU7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LElBQUksQ0FBQyxHQUFHLEVBQUUsQ0FBQTtJQUM5QixPQUFPLENBQUMsS0FBSyxHQUFHLFNBQVMsQ0FBQTtJQUN6QixPQUFPLEtBQUssQ0FBQTtBQUNiLENBQUMsQ0FBQTtBQUVZLFFBQUEsT0FBTyxHQUFHLENBQUMsU0FBaUIsRUFBVyxFQUFFLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsQ0FBQTtBQVFqRixNQUFNLENBQUMsV0FBVyxHQUFHLE1BQU0sQ0FBQyxXQUFXLElBQUksRUFBRSxDQUFBO0FBQzdDLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxHQUFHLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxJQUFJLE9BQU8sQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgVXNlckRhdGEge1xuXHRzYXZlZEdhbWVzOiBTYXZlZEdhbWVbXVxuXHRzZXNzaW9uOiBTZXNzaW9uXG59XG5cbmV4cG9ydCB0eXBlIFN0b3JlZFVzZXJEYXRhID0gUGljazxVc2VyRGF0YSwgJ3NhdmVkR2FtZXMnPlxuXG5leHBvcnQgaW50ZXJmYWNlIFNlc3Npb24ge1xuXHRzYXZlZEdhbWU/OiBTYXZlZEdhbWVcblx0bGV2ZWxzOiBMZXZlbFNlc3Npb25bXVxuXHRsZXZlbD86IExldmVsU2Vzc2lvblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNhdmVkR2FtZSB7XG5cdGxldmVsczogTGV2ZWxTZXNzaW9uW11cblx0Y3JlYXRlZEF0OiBudW1iZXJcblx0dXBkYXRlZEF0OiBudW1iZXJcbn1cblxuZXhwb3J0IGludGVyZmFjZSBMZXZlbFNlc3Npb24ge1xuXHRzY2VuZU5hbWU6IHN0cmluZ1xuXHRzdGFydGVkQXQ6IG51bWJlclxuXHRjb21wbGV0ZWRBdD86IG51bWJlclxuXHRjb2xsZWN0YWJsZXM6IENvbGxlY3RhYmxlW11cbn1cblxuZXhwb3J0IGludGVyZmFjZSBDb2xsZWN0YWJsZSB7XG5cdGlkOiBzdHJpbmdcblx0Y29sbGVjdGVkQXQ6IG51bWJlclxufVxuXG5leHBvcnQgY29uc3QgY3JlYXRlRnJvbUpTT04gPSAodXNlckRhdGFKU09OOiBzdHJpbmcpOiBVc2VyRGF0YSA9PiB7XG5cdGNvbnN0IHVzZXJEYXRhID0gY3JlYXRlRGVmYXVsdCgpXG5cdGxldCBwYXJzZWQ6IGFueVxuXHR0cnkge1xuXHRcdHBhcnNlZCA9IEpTT04ucGFyc2UodXNlckRhdGFKU09OKVxuXHR9IGNhdGNoIChlKSB7XG5cdFx0Y29uc29sZS5sb2coJ2NyZWF0ZUZyb21KU09OIHBhcnNlIGVycm9yOicsIHsgdXNlckRhdGFKU09OIH0pXG5cdH1cblx0aWYgKGlzU3RvcmVkRGF0YShwYXJzZWQpKSB7XG5cdFx0dXNlckRhdGEuc2F2ZWRHYW1lcyA9IHBhcnNlZC5zYXZlZEdhbWVzXG5cdH1cblx0cmV0dXJuIHVzZXJEYXRhXG59XG5cbmV4cG9ydCBjb25zdCBpc1N0b3JlZERhdGEgPSAobWF5YmVEYXRhOiBhbnkpOiBtYXliZURhdGEgaXMgU3RvcmVkVXNlckRhdGEgPT5cblx0KG1heWJlRGF0YSAhPSBudWxsKVxuXHQmJiAnc2F2ZWRHYW1lcycgaW4gbWF5YmVEYXRhXG5cdCYmIEFycmF5LmlzQXJyYXkobWF5YmVEYXRhLnNhdmVkR2FtZXMpXG5cdCYmIG1heWJlRGF0YS5zYXZlZEdhbWVzLmV2ZXJ5KChzYXZlZEdhbWU6IGFueSkgPT4gKFxuXHRcdFtcblx0XHRcdCdsZXZlbHMnLFxuXHRcdFx0J2NyZWF0ZWRBdCcsXG5cdFx0XHQndXBkYXRlZEF0Jyxcblx0XHRdLmV2ZXJ5KChrZXkpID0+IGtleSBpbiBzYXZlZEdhbWUpXG5cdCkpXG5cbmV4cG9ydCBjb25zdCBjcmVhdGVEZWZhdWx0ID0gKCk6IFVzZXJEYXRhID0+ICh7XG5cdHNhdmVkR2FtZXM6IFtdLFxuXHRzZXNzaW9uOiB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRsZXZlbDogdW5kZWZpbmVkLFxuXHRcdHNhdmVkR2FtZTogdW5kZWZpbmVkLFxuXHR9LFxufSlcblxuZXhwb3J0IGNvbnN0IG5ld0dhbWUgPSAodXNlckRhdGE6IFVzZXJEYXRhKTogU2F2ZWRHYW1lID0+IHtcblx0Y29uc3Qgbm93ID0gRGF0ZS5ub3coKVxuXHRjb25zdCBzYXZlZEdhbWUgPSB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRjcmVhdGVkQXQ6IG5vdyxcblx0XHR1cGRhdGVkQXQ6IG5vdyxcblx0fVxuXG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHR1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSA9IHNhdmVkR2FtZVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCByZXN1bWVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSwgY3JlYXRlZEF0PzogbnVtYmVyKTogU2F2ZWRHYW1lIHwgbnVsbCA9PiB7XG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHRjb25zdCBwcmV2aW91c1NhdmUgPVxuXHRcdGNyZWF0ZWRBdFxuXHRcdFx0PyB1c2VyRGF0YS5zYXZlZEdhbWVzLmZpbmQocyA9PiBzLmNyZWF0ZWRBdCA9PSBjcmVhdGVkQXQpXG5cdFx0XHQ6IG1heEJ5KHVzZXJEYXRhLnNhdmVkR2FtZXMsIChzKSA9PiBzLnVwZGF0ZWRBdClcblx0aWYgKCFwcmV2aW91c1NhdmUpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cdHVzZXJEYXRhLnNlc3Npb24uc2F2ZWRHYW1lID0gcHJldmlvdXNTYXZlXG5cdHVzZXJEYXRhLnNlc3Npb24ubGV2ZWxzID0gWy4uLnByZXZpb3VzU2F2ZS5sZXZlbHNdXG5cdHJldHVybiBwcmV2aW91c1NhdmVcbn1cblxuZXhwb3J0IGNvbnN0IHNhdmVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSk6IFNhdmVkR2FtZSB8IG51bGwgPT4ge1xuXHRjb25zdCBzYXZlZEdhbWUgPSB1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZVxuXHRpZiAoIXNhdmVkR2FtZSkge1xuXHRcdHJldHVybiBudWxsXG5cdH1cblxuXHRzYXZlZEdhbWUudXBkYXRlZEF0ID0gRGF0ZS5ub3coKVxuXHRzYXZlZEdhbWUubGV2ZWxzID0gWy4uLnVzZXJEYXRhLnNlc3Npb24ubGV2ZWxzXVxuXG5cdGNvbnN0IGluZGV4ID0gdXNlckRhdGEuc2F2ZWRHYW1lcy5maW5kSW5kZXgocyA9PiBzLmNyZWF0ZWRBdCA9PT0gc2F2ZWRHYW1lLmNyZWF0ZWRBdClcblx0aWYgKGluZGV4ID09PSAtMSkge1xuXHRcdHVzZXJEYXRhLnNhdmVkR2FtZXMucHVzaChzYXZlZEdhbWUpXG5cdH0gZWxzZSB7XG5cdFx0dXNlckRhdGEuc2F2ZWRHYW1lc1tpbmRleF0gPSBzYXZlZEdhbWVcblx0fVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCBsYXN0UGxheWVkTGV2ZWxOYW1lID0gKHNhdmVkR2FtZTogU2F2ZWRHYW1lKSA9PlxuXHRtYXhCeShzYXZlZEdhbWUubGV2ZWxzLCBzID0+IHMuc3RhcnRlZEF0KT8uc2NlbmVOYW1lXG5cbmV4cG9ydCBjb25zdCBtYXhCeSA9IDxULCBWPihcblx0Y29sbGVjdGlvbjogVFtdLFxuXHRjYWxsYmFjazogKGVudHJ5OiBULCBpbmRleDogbnVtYmVyKSA9PiBWXG4pOiBUIHwgdW5kZWZpbmVkID0+IHtcblx0bGV0IG1heEVudHJ5OiBUIHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkXG5cdGxldCBtYXhDYW5kaWRhdGU6IFYgfCB1bmRlZmluZWQgPSB1bmRlZmluZWRcblx0Y29sbGVjdGlvbi5mb3JFYWNoKChlbnRyeSwgaW5kZXgpID0+IHtcblx0XHRjb25zdCBjYW5kaWRhdGUgPSBjYWxsYmFjayhlbnRyeSwgaW5kZXgpXG5cdFx0aWYgKG1heENhbmRpZGF0ZSA9PT0gdW5kZWZpbmVkIHx8IG1heENhbmRpZGF0ZSA8IGNhbmRpZGF0ZSkge1xuXHRcdFx0bWF4RW50cnkgPSBlbnRyeVxuXHRcdFx0bWF4Q2FuZGlkYXRlID0gY2FuZGlkYXRlXG5cdFx0fVxuXHR9KVxuXHRyZXR1cm4gbWF4RW50cnlcbn1cblxuZXhwb3J0IGNvbnN0IHB1c2hMZXZlbCA9ICh7IHNlc3Npb24gfTogVXNlckRhdGEsIHNjZW5lTmFtZTogc3RyaW5nKTogTGV2ZWxTZXNzaW9uID0+IHtcblx0c2Vzc2lvbi5sZXZlbCA9IHtcblx0XHRzY2VuZU5hbWUsXG5cdFx0c3RhcnRlZEF0OiBEYXRlLm5vdygpLFxuXHRcdGNvbGxlY3RhYmxlczogW11cblx0fVxuXHRzZXNzaW9uLmxldmVscy5wdXNoKHNlc3Npb24ubGV2ZWwpXG5cdHJldHVybiBzZXNzaW9uLmxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBwZWVrTGV2ZWxOYW1lID0gKFxuXHR7IHNlc3Npb246IHsgbGV2ZWxzIH0gfTogVXNlckRhdGEsXG5cdGRlZmF1bHROYW1lID0gJycsXG5cdGRlcHRoID0gMFxuKTogc3RyaW5nID0+IHtcblx0Y29uc3QgaW5kZXggPSBsZXZlbHMubGVuZ3RoIC0gMSAtIGRlcHRoXG5cdGlmIChpbmRleCA8IDApIHtcblx0XHRyZXR1cm4gZGVmYXVsdE5hbWVcblx0fVxuXHRyZXR1cm4gbGV2ZWxzW2luZGV4XS5zY2VuZU5hbWVcbn1cblxuZXhwb3J0IGNvbnN0IGNvbXBsZXRlTGV2ZWwgPSAoeyBzZXNzaW9uIH06IFVzZXJEYXRhKTogTGV2ZWxTZXNzaW9uIHwgbnVsbCA9PiB7XG5cdGNvbnN0IHsgbGV2ZWwgfSA9IHNlc3Npb25cblx0aWYgKCFsZXZlbCkge1xuXHRcdHJldHVybiBudWxsXG5cdH1cblx0bGV2ZWwuY29tcGxldGVkQXQgPSBEYXRlLm5vdygpXG5cdHNlc3Npb24ubGV2ZWwgPSB1bmRlZmluZWRcblx0cmV0dXJuIGxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBpc0xldmVsID0gKHNjZW5lTmFtZTogc3RyaW5nKTogYm9vbGVhbiA9PiBzY2VuZU5hbWUuc3RhcnRzV2l0aCgnTF8nKVxuXG5kZWNsYXJlIHZhciBnbG9iYWw6IHtcblx0ZXhwb3J0czoge31cblx0c3NhbmdlcnZhc2k/OiB7XG5cdFx0dXNlckRhdGE/OiB7fVxuXHR9XG59XG5nbG9iYWwuc3NhbmdlcnZhc2kgPSBnbG9iYWwuc3NhbmdlcnZhc2kgfHwge31cbmdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSA9IGdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSB8fCBleHBvcnRzXG4iXX0=",
+                  "parameterObjects": "",
+                  "useStrict": true
+                }
+              ]
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "loadUserData",
+          "fullName": "loadUserData",
+          "functionType": "Action",
+          "name": "loadUserData",
+          "sentence": "loadUserData",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LoadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"user_data\"",
+                    "\"UserDataJSON\"",
+                    "",
+                    "UserDataJSON"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "UnloadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nif (!ssangervasi.srsObjs) { ssangervasi.srsObjs = {} }\nconst srsObjs = ssangervasi.srsObjs;\n\n/**\n * @typedef UserData\n * @property {SavedGame[]} saves\n */\n\n/**\n * @typedef SavedGame\n * @property {LevelHistoryItem[]} levelHistory \n * @property {Collectable[]} collectables\n * @property {number} createdAt\n * @property {number} updatedAt\n */\n\n/**\n * @typedef LevelHistoryItem\n * @property {string} sceneName \n * @property {number} [startedAt]\n */\n\n/**\n * @typedef Collectable\n * @property {string} id \n * @property {number} collectedAt\n */\n\n// Save & load game\n(() => {\n\n/**\n * @returns {SavedGame}\n */\nconst createSave = () => {\n    const createdAt = Date.now() \n    return {\n        createdAt,\n        updatedAt: createdAt,\n        levelHistory: getLevelHistory(),\n        collectables: []\n    }\n}\n\n/**\n * @param {SavedGame} previousSave\n * @returns {SavedGame}\n */\nconst updateSave = (previousSave) => {\n    previousSave.updatedAt = Date.now() \n    previousSave.levelHistory = previousSave.levelHistory.concat(getLevelHistory())\n    previousSave.collectables = getCollectables()\n    return previousSave\n}\n\n/**\n * @returns {LevelHistoryItem[]}\n */ \nconst getLevelHistory = () => {\n    return ssangervasi\n        .getSceneHistory()\n        .filter((/** @type {LevelHistoryItem} */ item) => {\n            return item.sceneName.startsWith('L_')\n        })\n}\n\n/** @returns {Collectable[]} */\nconst getCollectables = () => {\n    srsObjs.collectables = srsObjs.collectables || []\n    return srsObjs.collectables\n}\n\n/**\n * @param {string} targetId\n * @returns {boolean }\n */\nconst hasCollectable = (targetId) => {\n    return getCollectables().some(({ id }) => id === targetId)\n}\n\n/**\n * @param {string} id\n * @returns {Collectable[]}\n */\nconst pushCollectable = (id) => {\n    if (hasCollectable(id)) {\n        return null\n    }\n\n    const newCollectable = {\n        id,\n        collectedAt: Date.now()\n    }\n    getCollectables().push()\n\n    return newCollectable\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {UserData}\n */\nconst getUserData = (vars) => {\n    /** @type {UserData} */\n    let userData = { saves: [] }\n\n    const userDataJSON = vars.get(\"UserDataJSON\").getAsString()\n    let parsedUserData\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.error(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        typeof parsedUserData === \"object\" &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n    return userData\n}\n\n\n/**\n * @param {string} [userDataJSON]\n * @returns {(UserData|null)}\n */\nconst validateUserData = (userDataJSON) => {\n    let userData = null\n    let parsedUserData = null\n    try {\n        parsedUserData = JSON.parse(userDataJSON)\n    } catch (e) {\n        ssangervasi.info(\"Invalid user data:\", userDataJSON)\n    }\n    if (\n        \"saves\" in parsedUserData &&\n        Array.isArray(parsedUserData.saves)\n    ) {\n        userData = parsedUserData\n    }\n}\n\nconst getCurrentSave = () => {\n\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {SavedGame}\n */ \nconst saveGame = (vars) => {\n    vars.get(\"SaveResult\").setString(\"attempt\")\n\n    try {\n        let newSave = null\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        const previousSave = maxBy(userData.saves, save => save.createdAt)\n        if (previousSave) {\n            newSave = updateSave(previousSave)\n        } else {\n            newSave = createSave()\n            userData.saves.push(newSave)\n        }\n\n        setSceneVars(vars, newSave)\n        vars.get(\"UserDataJSON\").setString(JSON.stringify(userData))\n        vars.get(\"SaveResult\").setString(\"success\")\n        return newSave\n    } catch (e) {\n        ssangervasi.error(\"saveGame error:\", e)\n        vars.get(\"SaveResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @callback maxByCallback\n * @param {any} entry\n * @param {number} index\n * @returns {any} candidate\n */\n\n/**\n * @param {Array} collection\n * @param {maxByCallback} callback\n * @returns {?any}\n */\nconst maxBy = (collection, callback) => {\n    let maxEntry = null;\n    let maxCandidate;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index)\n        if (maxEntry === null || maxCandidate < candidate) {\n            maxEntry = entry\n            maxCandidate = candidate\n        }\n    })\n    return maxEntry\n} \n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @returns {?SavedGame}\n */ \nconst loadGame = (vars) => {\n    vars.get(\"LoadResult\").setString(\"attempt\")\n\n    try {\n        const userData = getUserData(vars)\n        /** @type SavedGame */\n        let newestSave\n        if (userData.saves.length) {\n            newestSave = maxBy(userData.saves, save => save.createdAt)\n        } else {\n            newestSave = createSave()\n        }\n\n\n        setSceneVars(vars, newestSave)\n        vars.get(\"LoadResult\").setString(\"success\")\n        return newestSave\n    } catch (e) {\n        ssangervasi.error(\"loadGame error:\", e)\n        vars.get(\"LoadResult\").setString(\"error\")\n        return null\n    }\n}\n\n/**\n * @param {gdjs.VariablesContainer} vars\n * @param {SavedGame} newestSave\n */\nconst setSceneVars = (vars, newestSave) => {\n    /** @type LevelHistoryItem */\n    const newestLevel = maxBy(newestSave.levelHistory, level => level.startedAt)\n\n    const savedGameVar = vars.get(\"SavedGame\")\n    savedGameVar.clearChildren()\n    \n    savedGameVar.getChild(\"UpdatedAt\").setNumber(newestSave.updatedAt)\n    savedGameVar.getChild(\"CreatedAt\").setNumber(newestSave.createdAt)\n    savedGameVar.getChild(\"LastLevel\").setString(newestLevel.sceneName)\n}\n\nObject.assign(\n    srsObjs,\n    {\n        saveGame,\n        loadGame,\n        hasCollectable,\n        pushCollectable,\n        getCollectables\n    }\n)\n})()",
+              "inlineCode": "const UD = global.ssangervasi.userData\r\nconst vars = runtimeScene.getVariables()\r\n\r\nconst userDataJSONVar = vars.get(\"UserDataJSON\")\r\nconst userDataJSON = userDataJSONVar.getAsString()\r\nconst userData = UD.createFromJSON(userDataJSON)\r\nglobal.ssangervasi.userDataInstance = userData",
               "parameterObjects": "",
               "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "resumeGame",
+          "fullName": "resumeGame",
+          "functionType": "Action",
+          "name": "resumeGame",
+          "sentence": "resumeGame",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst savedGameVar = vars.get(\"SavedGame\")\r\nsavedGameVar.clearChildren()\r\n\r\nconst UD = global.ssangervasi.userData\r\nconst userData = global.ssangervasi.userDataInstance\r\nlet savedGame = UD.resumeGame(userData)\r\nif (!savedGame) {\r\n  savedGame = UD.newGame(userData)\r\n}\r\n\r\nconst lastLevelName = UD.lastPlayedLevelName(savedGame)\r\nif (lastLevelName) {\r\n  savedGameVar.getChild(\"LastLevel\").setString(lastLevelName)\r\n}\r\nsavedGameVar.getChild(\"UpdatedAt\").setNumber(savedGame.updatedAt)\r\nsavedGameVar.getChild(\"CreatedAt\").setNumber(savedGame.createdAt)\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Save Game",
+          "fullName": "Save Game",
+          "functionType": "Action",
+          "name": "saveGame",
+          "sentence": "Save Game",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst saveResultVar = vars.get(\"SaveResult\")\r\nsaveResultVar.setString(\"attempt\")\r\nconst savedGameVar = vars.get(\"SavedGame\")\r\nsavedGameVar.clearChildren()\r\n\r\nconst UD = global.ssangervasi.userData\r\nconst userData = global.ssangervasi.userDataInstance\r\n\r\nconst savedGame = UD.saveGame(userData)\r\nif (!savedGame) {\r\n  ssangervasi.error(\"saveGame error: no saved game in session\")\r\n  saveResultVar.setString(\"error\")\r\n  return\r\n}\r\nconst userDataJSONVar = vars.get(\"UserDataJSON\")\r\nuserDataJSONVar.setString(JSON.stringify(userData))\r\n\r\nconst lastLevelName = UD.lastPlayedLevelName(savedGame)\r\nif (lastLevelName) {\r\n  savedGameVar.getChild(\"LastLevel\").setString(lastLevelName)\r\n}\r\nsavedGameVar.getChild(\"UpdatedAt\").setNumber(savedGame.updatedAt)\r\nsavedGameVar.getChild(\"CreatedAt\").setNumber(savedGame.createdAt)\r\nsaveResultVar.setString(\"success\")\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "\"user data json\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(UserDataJSON)",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LoadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "SaveResult",
+                    "=",
+                    "\"success\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"user_data\"",
+                    "\"UserDataJSON\"",
+                    "VariableString(UserDataJSON)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_utils::consoleLog"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Success\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "UnloadFile"
+                  },
+                  "parameters": [
+                    "\"user_data\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": [],
@@ -94550,6 +94794,27 @@
               "comment2": ""
             },
             {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "NextLevel",
+                    "=",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
@@ -94569,12 +94834,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"M_LevelSelect\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"M_LevelSelect\""
                       ],
                       "subInstructions": []
                     }
@@ -94617,12 +94882,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_LearningToForget\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_LearningToForget\""
                       ],
                       "subInstructions": []
                     }
@@ -94651,12 +94916,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_PayRespects1\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_PayRespects1\""
                       ],
                       "subInstructions": []
                     }
@@ -94699,12 +94964,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_PayRespects2\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_PayRespects2\""
                       ],
                       "subInstructions": []
                     }
@@ -94733,12 +94998,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_PayRespects3\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_PayRespects3\""
                       ],
                       "subInstructions": []
                     }
@@ -94767,12 +95032,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_PingPong\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_PingPong\""
                       ],
                       "subInstructions": []
                     }
@@ -94801,12 +95066,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_CrowdedSquare\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_CrowdedSquare\""
                       ],
                       "subInstructions": []
                     }
@@ -94835,12 +95100,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_BigA\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_BigA\""
                       ],
                       "subInstructions": []
                     }
@@ -94869,12 +95134,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C2_BigB\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_BigB\""
                       ],
                       "subInstructions": []
                     }
@@ -94903,12 +95168,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3\""
                       ],
                       "subInstructions": []
                     }
@@ -94951,12 +95216,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3_BackAndForth\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3_BackAndForth\""
                       ],
                       "subInstructions": []
                     }
@@ -94985,12 +95250,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3_Threedom\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3_Threedom\""
                       ],
                       "subInstructions": []
                     }
@@ -95019,12 +95284,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3_RedHerring\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3_RedHerring\""
                       ],
                       "subInstructions": []
                     }
@@ -95053,12 +95318,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3_Cells\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3_Cells\""
                       ],
                       "subInstructions": []
                     }
@@ -95087,12 +95352,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "ModVarSceneTxt"
                       },
                       "parameters": [
-                        "",
-                        "\"L_C3_Darkening\"",
-                        ""
+                        "NextLevel",
+                        "=",
+                        "\"L_C3_Darkening\""
                       ],
                       "subInstructions": []
                     }
@@ -95132,12 +95397,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::pushScene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"L_C3_Oggle\"",
-                            ""
+                            "NextLevel",
+                            "=",
+                            "\"L_C3_Oggle\""
                           ],
                           "subInstructions": []
                         }
@@ -95166,12 +95431,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::pushScene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"L_C3_Spiralis\"",
-                            ""
+                            "NextLevel",
+                            "=",
+                            "\"L_C3_Spiralis\""
                           ],
                           "subInstructions": []
                         }
@@ -95200,12 +95465,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::pushScene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"L_C3_Dudle\"",
-                            ""
+                            "NextLevel",
+                            "=",
+                            "\"L_C3_Dudle\""
                           ],
                           "subInstructions": []
                         }
@@ -95234,12 +95499,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::pushScene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"L_C3_Dimwit\"",
-                            ""
+                            "NextLevel",
+                            "=",
+                            "\"L_C3_Dimwit\""
                           ],
                           "subInstructions": []
                         }
@@ -95268,12 +95533,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_utils::pushScene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"L_C4\"",
-                            ""
+                            "NextLevel",
+                            "=",
+                            "\"L_C4\""
                           ],
                           "subInstructions": []
                         }
@@ -95307,6 +95572,52 @@
                 }
               ],
               "parameters": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "NextLevel",
+                    "!=",
+                    "\"\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::pushLevel"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(NextLevel)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(NextLevel)",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
           "parameters": [],
@@ -95345,64 +95656,23 @@
               "name": "SceneName",
               "optional": false,
               "supplementaryInformation": "",
-              "type": "sceneName"
+              "type": "string"
             }
           ],
           "objectGroups": []
         },
         {
-          "description": "Save Game",
-          "fullName": "Save Game",
-          "functionType": "Action",
-          "name": "saveGame",
-          "sentence": "Save Game",
+          "description": "peekLevel depth: _PARAM1_",
+          "fullName": "peekLevel",
+          "functionType": "StringExpression",
+          "name": "peekLevel",
+          "sentence": "",
           "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LoadFile"
-                  },
-                  "parameters": [
-                    "\"user_data\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LireFichierTxt"
-                  },
-                  "parameters": [
-                    "\"user_data\"",
-                    "\"UserDataJSON\"",
-                    "",
-                    "UserDataJSON"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const vars = runtimeScene.getVariables()\r\nglobal.ssangervasi.srsObjs.saveGame(vars)\r\n",
+              "inlineCode": "const UD = global.ssangervasi.userData\nconst userData = global.ssangervasi.userDataInstance\n\neventsFunctionContext.returnValue = UD.peekLevelName(\n    userData,\n    eventsFunctionContext.getArgument(\"Default\"),\n    eventsFunctionContext.getArgument(\"Depth\")\n)\n",
               "parameterObjects": "",
               "useStrict": true
             },
@@ -95411,180 +95681,62 @@
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_utils::consoleLog"
-                  },
-                  "parameters": [
-                    "",
-                    "\"user data json\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_utils::consoleLog"
-                  },
-                  "parameters": [
-                    "",
-                    "VariableString(UserDataJSON)",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarSceneTxt"
-                  },
-                  "parameters": [
-                    "SaveResult",
-                    "=",
-                    "\"success\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "EcrireFichierTxt"
-                  },
-                  "parameters": [
-                    "\"user_data\"",
-                    "\"UserDataJSON\"",
-                    "VariableString(UserDataJSON)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_utils::consoleLog"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Success\"",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "UnloadFile"
-                  },
-                  "parameters": [
-                    "\"user_data\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             }
           ],
-          "parameters": [],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Depth",
+              "longDescription": "",
+              "name": "Depth",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Default to return if nothing found at Depth (Default is empty string)",
+              "longDescription": "",
+              "name": "Default",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
           "objectGroups": []
         },
         {
-          "description": "Load Game",
-          "fullName": "Load Game",
+          "description": "pushLevel",
+          "fullName": "pushLevel",
           "functionType": "Action",
-          "name": "loadGame",
-          "sentence": "Load Game",
+          "name": "pushLevel",
+          "sentence": "pushLevel _PARAM1_ ",
           "events": [
             {
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LoadFile"
-                  },
-                  "parameters": [
-                    "\"user_data\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LireFichierTxt"
-                  },
-                  "parameters": [
-                    "\"user_data\"",
-                    "\"UserDataJSON\"",
-                    "",
-                    "UserDataJSON"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const vars = runtimeScene.getVariables()\r\nglobal.ssangervasi.srsObjs.loadGame(vars)\r\n",
+              "inlineCode": "const UD = global.ssangervasi.userData\nconst userData = global.ssangervasi.userDataInstance\n\neventsFunctionContext.returnValue = UD.pushLevel(\n    userData,\n    eventsFunctionContext.getArgument(\"SceneName\")\n)\n",
               "parameterObjects": "",
               "useStrict": true
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "UnloadFile"
-                  },
-                  "parameters": [
-                    "\"save\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
             }
           ],
-          "parameters": [],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "SceneName",
+              "longDescription": "",
+              "name": "SceneName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
           "objectGroups": []
         },
         {
@@ -95603,7 +95755,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::loadGame"
+                    "value": "srs_objs::resumeGame"
                   },
                   "parameters": [
                     "",
@@ -95653,7 +95805,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::loadGame"
+                    "value": "srs_objs::resumeGame"
                   },
                   "parameters": [
                     "",
@@ -95708,11 +95860,11 @@
           "objectGroups": []
         },
         {
-          "description": "userData",
-          "fullName": "userData",
-          "functionType": "Action",
-          "name": "Function",
-          "sentence": "userData",
+          "description": "isLevel",
+          "fullName": "isLevel",
+          "functionType": "Condition",
+          "name": "isLevel",
+          "sentence": "isLevel _PARAM1_",
           "events": [
             {
               "disabled": false,
@@ -95726,12 +95878,23 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "var exports = exports || {};\n\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.exportUserData = exports.completeLevel = exports.peekLevelName = exports.pushLevel = exports.maxBy = exports.saveGame = exports.resumeGame = exports.newGame = exports.createDefault = exports.isStoredData = exports.createFromJSON = void 0;\nexports.createFromJSON = (userDataJSON) => {\n    const userData = exports.createDefault();\n    let parsed;\n    try {\n        parsed = JSON.parse(userDataJSON);\n    }\n    catch (e) {\n        console.log('createFromJSON parse error:', { userDataJSON });\n    }\n    if (exports.isStoredData(parsed)) {\n        userData.savedGames = parsed.savedGames;\n    }\n    return userData;\n};\nexports.isStoredData = (maybeData) => (maybeData != null)\n    && 'savedGames' in maybeData\n    && Array.isArray(maybeData.savedGames)\n    && maybeData.savedGames.every((savedGame) => ([\n        'levels',\n        'collectables',\n        'createdAt',\n        'updatedAt',\n    ].every((key) => key in savedGame)));\nexports.createDefault = () => ({\n    savedGames: [],\n    session: {\n        levels: [],\n        level: undefined,\n        savedGame: undefined,\n    },\n});\nexports.newGame = (userData) => {\n    const now = Date.now();\n    const savedGame = {\n        levels: [],\n        collectables: [],\n        createdAt: now,\n        updatedAt: now,\n    };\n    if (userData.session.savedGame) {\n        exports.saveGame(userData, userData.session.savedGame);\n    }\n    userData.session.savedGame = savedGame;\n    return savedGame;\n};\nexports.resumeGame = (userData, createdAt) => {\n    if (userData.session.savedGame) {\n        exports.saveGame(userData, userData.session.savedGame);\n    }\n    const previousSave = createdAt\n        ? userData.savedGames.find(s => s.createdAt == createdAt)\n        : exports.maxBy(userData.savedGames, (s) => s.updatedAt);\n    if (!previousSave) {\n        return null;\n    }\n    userData.session.savedGame = previousSave;\n    return previousSave;\n};\nexports.saveGame = (userData, savedGame) => {\n    savedGame.updatedAt = Date.now();\n    const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt);\n    if (index === -1) {\n        userData.savedGames.push(savedGame);\n    }\n    else {\n        userData.savedGames[index] = savedGame;\n    }\n    return savedGame;\n};\nexports.maxBy = (collection, callback) => {\n    let maxEntry = undefined;\n    let maxCandidate = undefined;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index);\n        if (maxCandidate === undefined || maxCandidate < candidate) {\n            maxEntry = entry;\n            maxCandidate = candidate;\n        }\n    });\n    return maxEntry;\n};\nexports.pushLevel = ({ session }, sceneName) => {\n    if (session.level) {\n        session.levels.push(session.level);\n    }\n    session.level = {\n        sceneName,\n        startedAt: Date.now(),\n        collectables: []\n    };\n    return session.level;\n};\nexports.peekLevelName = ({ session: { levels } }, defaultName = '', depth = 0) => {\n    const index = levels.length - 1 - depth;\n    if (index < 0) {\n        return defaultName;\n    }\n    return levels[index].sceneName;\n};\nexports.completeLevel = ({ session: { level } }) => {\n    if (!level) {\n        return null;\n    }\n    level.completedAt = Date.now();\n    return level;\n};\nexports.exportUserData = {\n    completeLevel: exports.completeLevel,\n    createDefault: exports.createDefault,\n    createFromJSON: exports.createFromJSON,\n    isStoredData: exports.isStoredData,\n    newGame: exports.newGame,\n    peekLevelName: exports.peekLevelName,\n    pushLevel: exports.pushLevel,\n    resumeGame: exports.resumeGame,\n    saveGame: exports.saveGame\n};\nglobal.ssangervasi = global.ssangervasi || {}\nglobal.ssangervasi.userData = global.ssangervasi.userData || exportUserData\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlckRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvdXNlckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBZ0NhLFFBQUEsY0FBYyxHQUFHLENBQUMsWUFBb0IsRUFBWSxFQUFFO0lBQ2hFLE1BQU0sUUFBUSxHQUFHLHFCQUFhLEVBQUUsQ0FBQTtJQUNoQyxJQUFJLE1BQVcsQ0FBQTtJQUNmLElBQUk7UUFDSCxNQUFNLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxZQUFZLENBQUMsQ0FBQTtLQUNqQztJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1gsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBNkIsRUFBRSxFQUFFLFlBQVksRUFBRSxDQUFDLENBQUE7S0FDNUQ7SUFDRCxJQUFJLG9CQUFZLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDekIsUUFBUSxDQUFDLFVBQVUsR0FBRyxNQUFNLENBQUMsVUFBVSxDQUFBO0tBQ3ZDO0lBQ0QsT0FBTyxRQUFRLENBQUE7QUFDaEIsQ0FBQyxDQUFBO0FBRVksUUFBQSxZQUFZLEdBQUcsQ0FBQyxTQUFjLEVBQStCLEVBQUUsQ0FDM0UsQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDO09BQ2hCLFlBQVksSUFBSSxTQUFTO09BQ3pCLEtBQUssQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQztPQUNuQyxTQUFTLENBQUMsVUFBVSxDQUFDLEtBQUssQ0FBQyxDQUFDLFNBQWMsRUFBRSxFQUFFLENBQUMsQ0FDakQ7UUFDQyxRQUFRO1FBQ1IsY0FBYztRQUNkLFdBQVc7UUFDWCxXQUFXO0tBQ1gsQ0FBQyxLQUFLLENBQUMsQ0FBQyxHQUFHLEVBQUUsRUFBRSxDQUFDLEdBQUcsSUFBSSxTQUFTLENBQUMsQ0FDbEMsQ0FBQyxDQUFBO0FBRVUsUUFBQSxhQUFhLEdBQUcsR0FBYSxFQUFFLENBQUMsQ0FBQztJQUM3QyxVQUFVLEVBQUUsRUFBRTtJQUNkLE9BQU8sRUFBRTtRQUNSLE1BQU0s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RUFBUCxlQUFPO0lBQ1AsYUFBYSxFQUFiLHFCQUFhO0lBQ2IsU0FBUyxFQUFULGlCQUFTO0lBQ1QsVUFBVSxFQUFWLGtCQUFVO0lBQ1YsUUFBUSxFQUFSLGdCQUFRO0NBQ1IsQ0FBQTtBQVFELE1BQU0sQ0FBQyxXQUFXLEdBQUcsTUFBTSxDQUFDLFdBQVcsSUFBSSxFQUFFLENBQUE7QUFDN0MsTUFBTSxDQUFDLFdBQVcsQ0FBQyxRQUFRLEdBQUcsc0JBQWMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgVXNlckRhdGEge1xuXHRzYXZlZEdhbWVzOiBTYXZlZEdhbWVbXVxuXHRzZXNzaW9uOiBTZXNzaW9uXG59XG5cbmV4cG9ydCB0eXBlIFN0b3JlZFVzZXJEYXRhID0gUGljazxVc2VyRGF0YSwgJ3NhdmVkR2FtZXMnPlxuXG5leHBvcnQgaW50ZXJmYWNlIFNlc3Npb24ge1xuXHRzYXZlZEdhbWU/OiBTYXZlZEdhbWVcblx0bGV2ZWxzOiBMZXZlbFNlc3Npb25bXVxuXHRsZXZlbD86IExldmVsU2Vzc2lvblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNhdmVkR2FtZSB7XG5cdGxldmVsczogTGV2ZWxTZXNzaW9uW11cblx0Y29sbGVjdGFibGVzOiBDb2xsZWN0YWJsZVtdXG5cdGNyZWF0ZWRBdDogbnVtYmVyXG5cdHVwZGF0ZWRBdDogbnVtYmVyXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgTGV2ZWxTZXNzaW9uIHtcblx0c2NlbmVOYW1lOiBzdHJpbmdcblx0c3RhcnRlZEF0OiBudW1iZXJcblx0Y29tcGxldGVkQXQ/OiBudW1iZXJcblx0Y29sbGVjdGFibGVzOiBDb2xsZWN0YWJsZVtdXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgQ29sbGVjdGFibGUge1xuXHRpZDogc3RyaW5nXG5cdGNvbGxlY3RlZEF0OiBudW1iZXJcbn1cblxuZXhwb3J0IGNvbnN0IGNyZWF0ZUZyb21KU09OID0gKHVzZXJEYXRhSlNPTjogc3RyaW5nKTogVXNlckRhdGEgPT4ge1xuXHRjb25zdCB1c2VyRGF0YSA9IGNyZWF0ZURlZmF1bHQoKVxuXHRsZXQgcGFyc2VkOiBhbnlcblx0dHJ5IHtcblx0XHRwYXJzZWQgPSBKU09OLnBhcnNlKHVzZXJEYXRhSlNPTilcblx0fSBjYXRjaCAoZSkge1xuXHRcdGNvbnNvbGUubG9nKCdjcmVhdGVGcm9tSlNPTiBwYXJzZSBlcnJvcjonLCB7IHVzZXJEYXRhSlNPTiB9KVxuXHR9XG5cdGlmIChpc1N0b3JlZERhdGEocGFyc2VkKSkge1xuXHRcdHVzZXJEYXRhLnNhdmVkR2FtZXMgPSBwYXJzZWQuc2F2ZWRHYW1lc1xuXHR9XG5cdHJldHVybiB1c2VyRGF0YVxufVxuXG5leHBvcnQgY29uc3QgaXNTdG9yZWREYXRhID0gKG1heWJlRGF0YTogYW55KTogbWF5YmVEYXRhIGlzIFN0b3JlZFVzZXJEYXRhID0+XG5cdChtYXliZURhdGEgIT0gbnVsbClcblx0JiYgJ3NhdmVkR2FtZXMnIGluIG1heWJlRGF0YVxuXHQmJiBBcnJheS5pc0FycmF5KG1heWJlRGF0YS5zYXZlZEdhbWVzKVxuXHQmJiBtYXliZURhdGEuc2F2ZWRHYW1lcy5ldmVyeSgoc2F2ZWRHYW1lOiBhbnkpID0+IChcblx0XHRbXG5cdFx0XHQnbGV2ZWxzJyxcblx0XHRcdCdjb2xsZWN0YWJsZXMnLFxuXHRcdFx0J2NyZWF0ZWRBdCcsXG5cdFx0XHQndXBkYXRlZEF0Jyxcblx0XHRdLmV2ZXJ5KChrZXkpID0+IGtleSBpbiBzYXZlZEdhbWUpXG5cdCkpXG5cbmV4cG9ydCBjb25zdCBjcmVhdGVEZWZhdWx0ID0gKCk6IFVzZXJEYXRhID0+ICh7XG5cdHNhdmVkR2FtZXM6IFtdLFxuXHRzZXNzaW9uOiB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRsZXZlbDogdW5kZWZpbmVkLFxuXHRcdHNhdmVkR2FtZTogdW5kZWZpbmVkLFxuXHR9LFxufSlcblxuZXhwb3J0IGNvbnN0IG5ld0dhbWUgPSAodXNlckRhdGE6IFVzZXJEYXRhKTogU2F2ZWRHYW1lID0+IHtcblx0Y29uc3Qgbm93ID0gRGF0ZS5ub3coKVxuXHRjb25zdCBzYXZlZEdhbWUgPSB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRjb2xsZWN0YWJsZXM6IFtdLFxuXHRcdGNyZWF0ZWRBdDogbm93LFxuXHRcdHVwZGF0ZWRBdDogbm93LFxuXHR9XG5cdGlmICh1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSkge1xuXHRcdHNhdmVHYW1lKHVzZXJEYXRhLCB1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSlcblx0fVxuXHR1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSA9IHNhdmVkR2FtZVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCByZXN1bWVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSwgY3JlYXRlZEF0PzogbnVtYmVyKTogU2F2ZWRHYW1lIHwgbnVsbCA9PiB7XG5cdGlmICh1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSkge1xuXHRcdHNhdmVHYW1lKHVzZXJEYXRhLCB1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSlcblx0fVxuXHRjb25zdCBwcmV2aW91c1NhdmUgPVxuXHRcdGNyZWF0ZWRBdFxuXHRcdFx0PyB1c2VyRGF0YS5zYXZlZEdhbWVzLmZpbmQocyA9PiBzLmNyZWF0ZWRBdCA9PSBjcmVhdGVkQXQpXG5cdFx0XHQ6IG1heEJ5KHVzZXJEYXRhLnNhdmVkR2FtZXMsIChzKSA9PiBzLnVwZGF0ZWRBdClcblx0aWYgKCFwcmV2aW91c1NhdmUpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cdHVzZXJEYXRhLnNlc3Npb24uc2F2ZWRHYW1lID0gcHJldmlvdXNTYXZlXG5cdHJldHVybiBwcmV2aW91c1NhdmVcbn1cblxuZXhwb3J0IGNvbnN0IHNhdmVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSwgc2F2ZWRHYW1lOiBTYXZlZEdhbWUpOiBTYXZlZEdhbWUgPT4ge1xuXHRzYXZlZEdhbWUudXBkYXRlZEF0ID0gRGF0ZS5ub3coKVxuXHRjb25zdCBpbmRleCA9IHVzZXJEYXRhLnNhdmVkR2FtZXMuZmluZEluZGV4KHMgPT4gcy5jcmVhdGVkQXQgPT09IHNhdmVkR2FtZS5jcmVhdGVkQXQpXG5cdGlmIChpbmRleCA9PT0gLTEpIHtcblx0XHR1c2VyRGF0YS5zYXZlZEdhbWVzLnB1c2goc2F2ZWRHYW1lKVxuXHR9IGVsc2Uge1xuXHRcdHVzZXJEYXRhLnNhdmVkR2FtZXNbaW5kZXhdID0gc2F2ZWRHYW1lXG5cdH1cblx0cmV0dXJuIHNhdmVkR2FtZVxufVxuXG5leHBvcnQgY29uc3QgbWF4QnkgPSA8VCwgVj4oXG5cdGNvbGxlY3Rpb246IFRbXSxcblx0Y2FsbGJhY2s6IChlbnRyeTogVCwgaW5kZXg6IG51bWJlcikgPT4gVlxuKTogVCB8IHVuZGVmaW5lZCA9PiB7XG5cdGxldCBtYXhFbnRyeTogVCB8IHVuZGVmaW5lZCA9IHVuZGVmaW5lZFxuXHRsZXQgbWF4Q2FuZGlkYXRlOiBWIHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkXG5cdGNvbGxlY3Rpb24uZm9yRWFjaCgoZW50cnksIGluZGV4KSA9PiB7XG5cdFx0Y29uc3QgY2FuZGlkYXRlID0gY2FsbGJhY2soZW50cnksIGluZGV4KVxuXHRcdGlmIChtYXhDYW5kaWRhdGUgPT09IHVuZGVmaW5lZCB8fCBtYXhDYW5kaWRhdGUgPCBjYW5kaWRhdGUpIHtcblx0XHRcdG1heEVudHJ5ID0gZW50cnlcblx0XHRcdG1heENhbmRpZGF0ZSA9IGNhbmRpZGF0ZVxuXHRcdH1cblx0fSlcblx0cmV0dXJuIG1heEVudHJ5XG59XG5cbmV4cG9ydCBjb25zdCBwdXNoTGV2ZWwgPSAoeyBzZXNzaW9uIH06IFVzZXJEYXRhLCBzY2VuZU5hbWU6IHN0cmluZyk6IExldmVsU2Vzc2lvbiA9PiB7XG5cdGlmIChzZXNzaW9uLmxldmVsKSB7XG5cdFx0c2Vzc2lvbi5sZXZlbHMucHVzaChzZXNzaW9uLmxldmVsKVxuXHR9XG5cdHNlc3Npb24ubGV2ZWwgPSB7XG5cdFx0c2NlbmVOYW1lLFxuXHRcdHN0YXJ0ZWRBdDogRGF0ZS5ub3coKSxcblx0XHRjb2xsZWN0YWJsZXM6IFtdXG5cdH1cblx0cmV0dXJuIHNlc3Npb24ubGV2ZWxcbn1cblxuZXhwb3J0IGNvbnN0IHBlZWtMZXZlbE5hbWUgPSAoXG5cdHsgc2Vzc2lvbjogeyBsZXZlbHMgfSB9OiBVc2VyRGF0YSxcblx0ZGVmYXVsdE5hbWUgPSAnJyxcblx0ZGVwdGggPSAwXG4pOiBzdHJpbmcgPT4ge1xuXHRjb25zdCBpbmRleCA9IGxldmVscy5sZW5ndGggLSAxIC0gZGVwdGhcblx0aWYgKGluZGV4IDwgMCkge1xuXHRcdHJldHVybiBkZWZhdWx0TmFtZVxuXHR9XG5cdHJldHVybiBsZXZlbHNbaW5kZXhdLnNjZW5lTmFtZVxufVxuXG5leHBvcnQgY29uc3QgY29tcGxldGVMZXZlbCA9ICh7IHNlc3Npb246IHsgbGV2ZWwgfSB9OiBVc2VyRGF0YSk6IExldmVsU2Vzc2lvbiB8IG51bGwgPT4ge1xuXHRpZiAoIWxldmVsKSB7XG5cdFx0cmV0dXJuIG51bGxcblx0fVxuXHRsZXZlbC5jb21wbGV0ZWRBdCA9IERhdGUubm93KClcblx0cmV0dXJuIGxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBleHBvcnRVc2VyRGF0YSA9IHtcblx0Y29tcGxldGVMZXZlbCxcblx0Y3JlYXRlRGVmYXVsdCxcblx0Y3JlYXRlRnJvbUpTT04sXG5cdGlzU3RvcmVkRGF0YSxcblx0bmV3R2FtZSxcblx0cGVla0xldmVsTmFtZSxcblx0cHVzaExldmVsLFxuXHRyZXN1bWVHYW1lLFxuXHRzYXZlR2FtZVxufVxuXG5kZWNsYXJlIHZhciBnbG9iYWw6IHtcblx0ZXhwb3J0czoge31cblx0c3NhbmdlcnZhc2k/OiB7XG5cdFx0dXNlckRhdGE/OiB0eXBlb2YgZXhwb3J0VXNlckRhdGFcblx0fVxufVxuZ2xvYmFsLnNzYW5nZXJ2YXNpID0gZ2xvYmFsLnNzYW5nZXJ2YXNpIHx8IHt9XG5nbG9iYWwuc3NhbmdlcnZhc2kudXNlckRhdGEgPSBleHBvcnRVc2VyRGF0YVxuIl19",
+              "inlineCode": "const UD = global.ssangervasi.userData\neventsFunctionContext.returnValue = UD.isLevel(\n    eventsFunctionContext.getArgument('SceneName')\n)",
               "parameterObjects": "",
               "useStrict": true
             }
           ],
-          "parameters": [],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "SceneName",
+              "longDescription": "",
+              "name": "SceneName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
           "objectGroups": []
         }
       ],
@@ -97334,12 +97497,24 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_utils::pushScene"
+                        "value": "srs_objs::pushLevel"
                       },
                       "parameters": [
                         "",
                         "Object.VariableString(SceneName)",
                         ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "Object.VariableString(SceneName)",
+                        "yes"
                       ],
                       "subInstructions": []
                     }
