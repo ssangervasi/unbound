@@ -75,8 +75,14 @@ describe('createDefault', () => {
 })
 
 describe('createFromJSON', () => {
-	it('handles invalid json', () => {
+	it('handles invalid JSON', () => {
 		const result = userData.createFromJSON('horx;ma-dorks')
+		expect(result.savedGames).toEqual([])
+		expect(result.session.levels).toEqual([])
+	})
+
+	it('handles valid JSON with invalid structure', () => {
+		const result = userData.createFromJSON('0')
 		expect(result.savedGames).toEqual([])
 		expect(result.session.levels).toEqual([])
 	})

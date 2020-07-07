@@ -45,6 +45,7 @@ export const createFromJSON = (userDataJSON: string): UserData => {
 
 export const isStoredData = (maybeData: any): maybeData is StoredUserData =>
 	(maybeData != null)
+	&& typeof maybeData === 'object'
 	&& 'savedGames' in maybeData
 	&& Array.isArray(maybeData.savedGames)
 	&& maybeData.savedGames.every((savedGame: any) => (
@@ -52,7 +53,7 @@ export const isStoredData = (maybeData: any): maybeData is StoredUserData =>
 			'levels',
 			'createdAt',
 			'updatedAt',
-		].every((key) => key in savedGame)
+		].every((key) => typeof savedGame === 'object' && key in savedGame)
 	))
 
 export const createDefault = (): UserData => ({
