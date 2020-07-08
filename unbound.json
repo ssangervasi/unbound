@@ -3059,6 +3059,33 @@
         "name": "Assets\\Sprites\\Haiku\\HaikuBackground.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Wall/Wall-no-lines.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Wall\\Wall-no-lines.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Wall/Wall-horizontal-lines.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Wall\\Wall-horizontal-lines.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Sprites/Wall/Wall-vertical-lines.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Sprites\\Wall\\Wall-vertical-lines.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -23309,7 +23336,7 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_objs::peekLevel(1, \"\")",
+                        "srs_objs::PeekLevel(1, \"\")",
                         "=",
                         "CurrentSceneName()"
                       ],
@@ -23357,7 +23384,7 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "srs_objs::peekLevel(1, \"\")",
+                        "srs_objs::PeekLevel(1, \"\")",
                         "!=",
                         "CurrentSceneName()"
                       ],
@@ -24847,6 +24874,30 @@
             {
               "name": "Direction",
               "value": "Left"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Haiku",
+          "width": 0,
+          "x": 477,
+          "y": 436,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Id",
+              "value": "H_00"
+            },
+            {
+              "name": "SceneName",
+              "value": "H_00"
             }
           ]
         }
@@ -27580,7 +27631,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.693
+        "zoomFactor": 1.933
       },
       "objectsGroups": [],
       "variables": [],
@@ -28909,7 +28960,7 @@
           "name": "Haiku",
           "width": 0,
           "x": 236,
-          "y": 137,
+          "y": 138,
           "zOrder": 150,
           "numberProperties": [],
           "stringProperties": [],
@@ -30602,7 +30653,7 @@
         "gridWidth": 4,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.477
+        "zoomFactor": 2.053
       },
       "objectsGroups": [],
       "variables": [],
@@ -78920,7 +78971,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridB": 255,
         "gridG": 180,
         "gridHeight": 10,
@@ -78928,11 +78979,16 @@
         "gridOffsetY": 0,
         "gridR": 158,
         "gridWidth": 10,
-        "snap": true,
+        "snap": false,
         "windowMask": false,
-        "zoomFactor": 1.309
+        "zoomFactor": 1.525
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Group",
+          "objects": []
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -78963,8 +79019,8 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 135,
-          "y": 243,
+          "x": 90,
+          "y": 120,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -78988,8 +79044,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 960,
-          "y": 450,
+          "x": 680,
+          "y": 480,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79013,8 +79069,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 350,
-          "y": 700,
+          "x": 340,
+          "y": 430,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79073,8 +79129,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 130,
-          "y": 240,
+          "x": 80,
+          "y": 120,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79093,8 +79149,8 @@
           "locked": false,
           "name": "Exit",
           "width": 32,
-          "x": 200,
-          "y": 700,
+          "x": 190,
+          "y": 430,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -79108,8 +79164,8 @@
           "locked": false,
           "name": "Tile",
           "width": 40,
-          "x": 200,
-          "y": 700,
+          "x": 190,
+          "y": 430,
           "zOrder": 201,
           "numberProperties": [
             {
@@ -79128,8 +79184,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 420,
-          "x": 120,
-          "y": 230,
+          "x": 70,
+          "y": 110,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79143,8 +79199,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 120,
-          "y": 240,
+          "x": 70,
+          "y": 120,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79158,8 +79214,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 200,
-          "x": 120,
-          "y": 290,
+          "x": 70,
+          "y": 170,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79173,8 +79229,8 @@
           "locked": false,
           "name": "Curve",
           "width": 29,
-          "x": 252,
-          "y": 245,
+          "x": 200,
+          "y": 120,
           "zOrder": 206,
           "numberProperties": [],
           "stringProperties": [],
@@ -79218,8 +79274,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 680,
-          "y": 450,
+          "x": 610,
+          "y": 370,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79243,8 +79299,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 250,
-          "y": 240,
+          "x": 200,
+          "y": 120,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79268,8 +79324,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 320,
-          "y": 400,
+          "x": 270,
+          "y": 280,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79283,8 +79339,88 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
+          "x": 130,
+          "y": 120,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 380,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 230,
+          "y": 120,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
           "x": 180,
-          "y": 240,
+          "y": 120,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 330,
+          "y": 270,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79304,12 +79440,12 @@
           "name": "Tile",
           "width": 50,
           "x": 430,
-          "y": 390,
+          "y": 120,
           "zOrder": 1,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 2
+              "value": 0
             }
           ],
           "stringProperties": [],
@@ -79323,8 +79459,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 240,
+          "x": 330,
+          "y": 470,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79344,7 +79480,7 @@
           "name": "Tile",
           "width": 50,
           "x": 230,
-          "y": 240,
+          "y": 470,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79364,7 +79500,7 @@
           "name": "Tile",
           "width": 50,
           "x": 380,
-          "y": 390,
+          "y": 420,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79383,88 +79519,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 480,
-          "y": 240,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 340,
-          "y": 740,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 240,
-          "y": 740,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 390,
-          "y": 690,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 440,
-          "y": 690,
+          "x": 430,
+          "y": 420,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79483,8 +79539,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 330,
-          "y": 690,
+          "x": 320,
+          "y": 420,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79498,8 +79554,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 490,
-          "y": 690,
+          "x": 480,
+          "y": 420,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79519,7 +79575,7 @@
           "name": "Tile",
           "width": 50,
           "x": 480,
-          "y": 390,
+          "y": 370,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79538,8 +79594,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 540,
-          "y": 690,
+          "x": 720,
+          "y": 380,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79552,9 +79608,9 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 220,
-          "x": 320,
-          "y": 440,
+          "width": 210,
+          "x": 270,
+          "y": 320,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79568,8 +79624,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 380,
-          "y": 290,
+          "x": 330,
+          "y": 170,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79583,8 +79639,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 380,
-          "y": 130,
+          "x": 330,
+          "y": 370,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79603,8 +79659,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 683,
-          "y": 232,
+          "x": 430,
+          "y": 370,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79623,8 +79679,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 340,
-          "y": 690,
+          "x": 330,
+          "y": 420,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79643,8 +79699,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 220,
-          "x": 180,
-          "y": 790,
+          "x": 170,
+          "y": 520,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79658,8 +79714,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 290,
-          "y": 740,
+          "x": 280,
+          "y": 470,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79678,8 +79734,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 190,
-          "y": 740,
+          "x": 180,
+          "y": 470,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79698,8 +79754,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 390,
-          "y": 740,
+          "x": 380,
+          "y": 470,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79713,8 +79769,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 80,
-          "x": 250,
-          "y": 730,
+          "x": 240,
+          "y": 460,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79728,8 +79784,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 180,
-          "y": 340,
+          "x": 130,
+          "y": 220,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79748,8 +79804,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 180,
-          "y": 690,
+          "x": 170,
+          "y": 420,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79763,8 +79819,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 190,
-          "y": 690,
+          "x": 180,
+          "y": 420,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79783,8 +79839,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 70,
-          "x": 180,
-          "y": 680,
+          "x": 170,
+          "y": 410,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79798,8 +79854,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 240,
-          "y": 690,
+          "x": 230,
+          "y": 420,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -79813,8 +79869,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 683,
-          "y": 237,
+          "x": 490,
+          "y": 380,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79838,8 +79894,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 150,
-          "x": 400,
-          "y": 740,
+          "x": 390,
+          "y": 470,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -79853,8 +79909,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 450,
-          "y": 130,
+          "x": 380,
+          "y": 370,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -79898,8 +79954,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 190,
-          "y": 240,
+          "x": 140,
+          "y": 120,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79923,8 +79979,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 150,
-          "y": 480,
+          "x": 640,
+          "y": 320,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -79975,7 +80031,7 @@
           "customSize": true,
           "height": 600,
           "layer": "",
-          "locked": false,
+          "locked": true,
           "name": "Tile",
           "width": 800,
           "x": 800,
@@ -79995,7 +80051,7 @@
           "customSize": true,
           "height": 600,
           "layer": "",
-          "locked": false,
+          "locked": true,
           "name": "Tile",
           "width": 800,
           "x": 0,
@@ -80015,7 +80071,7 @@
           "customSize": true,
           "height": 600,
           "layer": "",
-          "locked": false,
+          "locked": true,
           "name": "Tile",
           "width": 800,
           "x": 800,
@@ -80188,8 +80244,8 @@
           "locked": false,
           "name": "Lapse",
           "width": 32,
-          "x": 420,
-          "y": 250,
+          "x": 370,
+          "y": 130,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -80208,8 +80264,8 @@
           "locked": false,
           "name": "Door",
           "width": 50,
-          "x": 230,
-          "y": 340,
+          "x": 180,
+          "y": 220,
           "zOrder": 220,
           "numberProperties": [],
           "stringProperties": [],
@@ -80247,8 +80303,8 @@
           "locked": false,
           "name": "Key",
           "width": 32,
-          "x": 340,
-          "y": 250,
+          "x": 290,
+          "y": 130,
           "zOrder": 110,
           "numberProperties": [
             {
@@ -80279,9 +80335,9 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 157,
-          "x": 390,
-          "y": 380,
+          "width": 200,
+          "x": 340,
+          "y": 260,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -80295,8 +80351,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 340,
+          "x": 280,
+          "y": 220,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80315,8 +80371,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 390,
+          "x": 280,
+          "y": 270,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80335,8 +80391,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 530,
-          "y": 240,
+          "x": 480,
+          "y": 120,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -80350,8 +80406,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 160,
-          "x": 170,
-          "y": 390,
+          "x": 120,
+          "y": 270,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -80365,8 +80421,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 170,
-          "y": 340,
+          "x": 120,
+          "y": 220,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -80380,8 +80436,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 160,
-          "x": 170,
-          "y": 330,
+          "x": 120,
+          "y": 210,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -80395,8 +80451,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 330,
-          "y": 240,
+          "x": 280,
+          "y": 120,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80415,8 +80471,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 280,
-          "y": 340,
+          "x": 230,
+          "y": 220,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80435,8 +80491,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 230,
-          "y": 340,
+          "x": 180,
+          "y": 220,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80455,8 +80511,8 @@
           "locked": false,
           "name": "Door",
           "width": 50,
-          "x": 430,
-          "y": 390,
+          "x": 380,
+          "y": 270,
           "zOrder": 220,
           "numberProperties": [
             {
@@ -80484,8 +80540,8 @@
           "locked": false,
           "name": "Key",
           "width": 32,
-          "x": 180,
-          "y": 350,
+          "x": 130,
+          "y": 230,
           "zOrder": 110,
           "numberProperties": [
             {
@@ -80517,8 +80573,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 160,
-          "x": 380,
-          "y": 290,
+          "x": 330,
+          "y": 170,
           "zOrder": 203,
           "numberProperties": [],
           "stringProperties": [],
@@ -80532,8 +80588,8 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 320,
-          "y": 290,
+          "x": 270,
+          "y": 170,
           "zOrder": 209,
           "numberProperties": [],
           "stringProperties": [],
@@ -80547,8 +80603,28 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
+          "x": 280,
+          "y": 170,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
           "x": 330,
-          "y": 290,
+          "y": 120,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80568,27 +80644,7 @@
           "name": "Tile",
           "width": 50,
           "x": 380,
-          "y": 240,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 430,
-          "y": 240,
+          "y": 120,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -80607,8 +80663,8 @@
           "locked": false,
           "name": "Key",
           "width": 32,
-          "x": 480,
-          "y": 250,
+          "x": 430,
+          "y": 130,
           "zOrder": 110,
           "numberProperties": [
             {
@@ -80631,6 +80687,706 @@
               "value": "Grey"
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 220,
+          "x": 170,
+          "y": 520,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 210,
+          "x": 270,
+          "y": 320,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 420,
+          "x": 70,
+          "y": 110,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 470,
+          "y": 330,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 160,
+          "x": 120,
+          "y": 210,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 200,
+          "x": 330,
+          "y": 260,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 160,
+          "x": 330,
+          "y": 170,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 160,
+          "x": 120,
+          "y": 270,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 210,
+          "x": 70,
+          "y": 170,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 70,
+          "y": 120,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 480,
+          "y": 120,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 120,
+          "y": 220,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 270,
+          "y": 180,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 270,
+          "y": 280,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 430,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 330,
+          "y": 180,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 480,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 480,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 580,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 160,
+          "x": 320,
+          "y": 360,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 160,
+          "x": 380,
+          "y": 470,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 90,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 10,
+          "x": 530,
+          "y": 380,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 70,
+          "x": 170,
+          "y": 410,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 100,
+          "x": 230,
+          "y": 460,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 10,
+          "x": 170,
+          "y": 420,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 10,
+          "x": 230,
+          "y": 420,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 10,
+          "x": 380,
+          "y": 480,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 90,
+          "layer": "",
+          "locked": false,
+          "name": "WallNoLines",
+          "width": 10,
+          "x": 320,
+          "y": 370,
+          "zOrder": 221,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "WallHorizontalLines",
+          "width": 10,
+          "x": 530,
+          "y": 260,
+          "zOrder": 222,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 580,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 530,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 480,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 630,
+          "y": 320,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 580,
+          "y": 370,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 630,
+          "y": 370,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 630,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 10,
+          "x": 680,
+          "y": 270,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 10,
+          "x": 570,
+          "y": 270,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 50,
+          "x": 530,
+          "y": 370,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 10,
+          "x": 570,
+          "y": 380,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 120,
+          "x": 570,
+          "y": 420,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 50,
+          "x": 530,
+          "y": 310,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "WallVerticalLines",
+          "width": 120,
+          "x": 570,
+          "y": 260,
+          "zOrder": 223,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -80786,6 +81542,36 @@
             "g": 196,
             "r": 202
           }
+        },
+        {
+          "height": 10,
+          "name": "WallHorizontalLines",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Wall\\Wall-horizontal-lines.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 10,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 10,
+          "name": "WallVerticalLines",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Wall\\Wall-vertical-lines.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 10,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 10,
+          "name": "WallNoLines",
+          "tags": "",
+          "texture": "Assets\\Sprites\\Wall\\Wall-no-lines.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 10,
+          "variables": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -80899,7 +81685,7 @@
         },
         {
           "name": "UI",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
@@ -80947,6 +81733,10 @@
         {
           "name": "Exit",
           "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku"
         },
         {
           "name": "HiddenRegion",
@@ -81189,7 +81979,7 @@
               "ScaleFactor": 10
             }
           ],
-          "string": "One",
+          "string": "Zero",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 60,
           "color": {
@@ -81225,7 +82015,7 @@
               "FullTime": 0
             }
           ],
-          "string": "Memory, like the\n\nSlipping grip of a child's hand,\n\nCoaxes my patience.",
+          "string": "The illusive lure\n\nOf an unknown reward keeps\n\nMy eyes open wide",
           "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
           "characterSize": 25,
           "color": {
@@ -82020,7 +82810,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::isScene"
+                    "value": "srs_objs::IsScene"
                   },
                   "parameters": [
                     "",
@@ -82083,7 +82873,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::isLevel"
+                    "value": "srs_objs::IsLevel"
                   },
                   "parameters": [
                     "",
@@ -86461,7 +87251,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\n\n// SetupScene history\n(() => {\n    /**\n     * @typedef SceneHistoryItem\n     * @property {string} sceneName \n     * @property {number} [startedAt]\n     */\n\n    /** @param {string} sceneName*/\n    const pushScene = (sceneName) => {\n        if (!sceneName) {\n            return\n        }\n        const newItem = {\n            sceneName,\n            startedAt: Date.now()\n        }\n        getSceneHistory().push(newItem)\n\n        return newItem\n    }\n\n    /**\n     * @param {string} defaultVal\n     * @param {number} depth\n     * @returns {string} Scene name\n     */\n    const peekScene = (defaultVal, depth) => {\n        defaultVal = defaultVal || \"\"\n        depth = depth || 0\n\n        const hist = getSceneHistory()\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        const item = hist[index]\n        return item.sceneName\n    }\n\n    /** @returns {SceneHistoryItem[]} */\n    const getSceneHistory = () => {\n        if (!ssangervasi.sceneHistory) {\n            ssangervasi.sceneHistory = []\n            pushScene(runtimeScene.getName())\n        }\n        return ssangervasi.sceneHistory\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getSceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srsUtils) {\n            runtimeScene._srsUtils = {};\n        }\n        if (!runtimeScene._srsUtils.nameToPlaylist) {\n            runtimeScene._srsUtils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srsUtils.nameToPlaylist;\n    }\n\n    class Playlist {\n        constructor() {\n            this.items = []\n            this.current = null\n        }\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        skipTo(targetItem) {\n            const foundIndex = this.items.findIndex(item => item === targetItem)\n            if (foundIndex === -1) { return null }\n\n            this.current = foundIndex\n            return this.getCurrent()\n        }\n\n        next() {\n            if (this.current === null) { return null }\n\n            this.current = (this.current + 1) % this.items.length\n            return this.getCurrent()\n        }\n\n        previous() {\n            if (this.current === null) { return null }\n\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.getCurrent()\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )       \n})();\n",
+              "inlineCode": "if (!global.ssangervasi) { global.ssangervasi = {} }\nconst ssangervasi = global.ssangervasi;\nssangervasi.isDebuggingEnabled = false\ntry { \n    ssangervasi.isDebuggingEnabled = runtimeScene.getGame().isPreview()\n} catch {}\n\n\n// SetupScene history\n(() => {\n    /**\n     * @typedef SceneHistoryItem\n     * @property {string} sceneName \n     * @property {number} [startedAt]\n     */\n\n    /** @param {string} sceneName*/\n    const pushScene = (sceneName) => {\n        if (!sceneName) {\n            return\n        }\n        const newItem = {\n            sceneName,\n            startedAt: Date.now()\n        }\n        getSceneHistory().push(newItem)\n\n        return newItem\n    }\n\n    /**\n     * @param {string} defaultVal\n     * @param {number} depth\n     * @returns {string} Scene name\n     */\n    const peekScene = (defaultVal, depth) => {\n        defaultVal = defaultVal || \"\"\n        depth = depth || 0\n\n        const hist = getSceneHistory()\n        const index = hist.length - 1 - depth\n        if (index < 0) {\n            return defaultVal\n        }\n        const item = hist[index]\n        return item.sceneName\n    }\n\n    /** @returns {SceneHistoryItem[]} */\n    const getSceneHistory = () => {\n        if (!ssangervasi.sceneHistory) {\n            ssangervasi.sceneHistory = []\n            pushScene(runtimeScene.getName())\n        }\n        return ssangervasi.sceneHistory\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getSceneHistory,\n            pushScene,\n            peekScene \n        }\n    )\n})();\n\n(() => {\n    const getTimestamp = () => (new Date()).toISOString()\n    const parseTimestamp = (timestamp, defaultVal) => {\n        const d = new Date(timestamp)\n        if (isNaN(d)) { return defaultVal || 0; }\n        return d.valueOf()\n    }\n\n    const getLogCtx = () => {\n        let ctx = '(Unknown)'\n        try {\n            const stack = (new Error().stack)\n            const match = stack.match(/([a-zA-Z.]+Context)/)\n            ctx = (match && match.length && match[0]) || ctx\n        } catch (e) {\n            console.error('Context failure', e)\n        }\n        return ctx\n    }\n\n    const log = (...msgs) => ssangervasi.isDebuggingEnabled && console.log(getTimestamp(), getLogCtx(), ...msgs)\n    const info = (...msgs) => ssangervasi.isDebuggingEnabled && console.info(getTimestamp(), getLogCtx(), ...msgs)\n    const error = (...msgs) => ssangervasi.isDebuggingEnabled && console.error(getTimestamp(), getLogCtx(), ...msgs)\n\n    Object.assign(\n        ssangervasi,\n        {\n            getTimestamp,\n            log,\n            info,\n            error,\n        }\n    )\n})();\n\n(() => {\n    const getPlaylist = (aRuntimeScene, playlistName, fresh) => {\n        if (!(aRuntimeScene && playlistName)) {\n            ssangervasi.error(\"Cannot getPlaylist\", { playlistName })\n            return\n        }\n        const nameToPlaylist = ssangervasi.setupPlaylists(runtimeScene)\n        if (!nameToPlaylist.has(playlistName) || fresh) {\n            nameToPlaylist.set(playlistName, new ssangervasi.Playlist())\n        }\n        return nameToPlaylist.get(playlistName)\n    }\n\n    const setupPlaylists = (aRuntimeScene) => {\n        if (!runtimeScene._srsUtils) {\n            runtimeScene._srsUtils = {};\n        }\n        if (!runtimeScene._srsUtils.nameToPlaylist) {\n            runtimeScene._srsUtils.nameToPlaylist = new Map();\n        }\n\n        return runtimeScene._srsUtils.nameToPlaylist;\n    }\n\n    class Playlist {\n        constructor() {\n            this.items = []\n            this.current = null\n        }\n\n        getCurrent() {\n            if (this.current === null) {\n                return null\n            }\n            return this.items[this.current]\n        }\n\n        add(item) {\n            this.items.push(item)\n            if (this.current === null) {\n                this.current = 0\n            }\n        }\n\n        skipTo(targetItem) {\n            const foundIndex = this.items.findIndex(item => item === targetItem)\n            if (foundIndex === -1) { return null }\n\n            this.current = foundIndex\n            return this.getCurrent()\n        }\n\n        next() {\n            if (this.current === null) { return null }\n\n            this.current = (this.current + 1) % this.items.length\n            return this.getCurrent()\n        }\n\n        previous() {\n            if (this.current === null) { return null }\n\n            this.current = this.current - 1\n            if (this.current < 0) {\n                this.current = this.items.length + this.current\n            }\n            return this.getCurrent()\n        }\n    }\n\n    Object.assign(\n        ssangervasi,\n        {\n            getPlaylist,\n            setupPlaylists,\n            Playlist\n        }\n    )       \n})();\n",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -94263,7 +95053,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_objs::isLevel"
+                    "value": "srs_objs::IsLevel"
                   },
                   "parameters": [
                     "",
@@ -94320,7 +95110,7 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::JsCode",
-                  "inlineCode": "var exports = exports || {};\n\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.isLevel = exports.completeLevel = exports.peekLevelName = exports.pushLevel = exports.maxBy = exports.lastPlayedLevelName = exports.saveGame = exports.resumeGame = exports.newGame = exports.createDefault = exports.isStoredData = exports.createFromJSON = void 0;\nexports.createFromJSON = (userDataJSON) => {\n    const userData = exports.createDefault();\n    let parsed;\n    try {\n        parsed = JSON.parse(userDataJSON);\n    }\n    catch (e) {\n        console.log('createFromJSON parse error:', { userDataJSON });\n    }\n    if (exports.isStoredData(parsed)) {\n        userData.savedGames = parsed.savedGames;\n    }\n    return userData;\n};\nexports.isStoredData = (maybeData) => (maybeData != null)\n    && typeof maybeData === 'object'\n    && 'savedGames' in maybeData\n    && Array.isArray(maybeData.savedGames)\n    && maybeData.savedGames.every((savedGame) => ([\n        'levels',\n        'createdAt',\n        'updatedAt',\n    ].every((key) => typeof savedGame === 'object' && key in savedGame)));\nexports.createDefault = () => ({\n    savedGames: [],\n    session: {\n        levels: [],\n        level: undefined,\n        savedGame: undefined,\n    },\n});\nexports.newGame = (userData) => {\n    const now = Date.now();\n    const savedGame = {\n        levels: [],\n        createdAt: now,\n        updatedAt: now,\n    };\n    exports.saveGame(userData);\n    userData.session.savedGame = savedGame;\n    return savedGame;\n};\nexports.resumeGame = (userData, createdAt) => {\n    exports.saveGame(userData);\n    const previousSave = createdAt\n        ? userData.savedGames.find(s => s.createdAt == createdAt)\n        : exports.maxBy(userData.savedGames, (s) => s.updatedAt);\n    if (!previousSave) {\n        return null;\n    }\n    userData.session.savedGame = previousSave;\n    userData.session.levels = [...previousSave.levels];\n    return previousSave;\n};\nexports.saveGame = (userData) => {\n    const savedGame = userData.session.savedGame;\n    if (!savedGame) {\n        return null;\n    }\n    savedGame.updatedAt = Date.now();\n    savedGame.levels = [...userData.session.levels];\n    const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt);\n    if (index === -1) {\n        userData.savedGames.push(savedGame);\n    }\n    else {\n        userData.savedGames[index] = savedGame;\n    }\n    return savedGame;\n};\nexports.lastPlayedLevelName = (savedGame) => { var _a; return (_a = exports.maxBy(savedGame.levels, s => s.startedAt)) === null || _a === void 0 ? void 0 : _a.sceneName; };\nexports.maxBy = (collection, callback) => {\n    let maxEntry = undefined;\n    let maxCandidate = undefined;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index);\n        if (maxCandidate === undefined || maxCandidate < candidate) {\n            maxEntry = entry;\n            maxCandidate = candidate;\n        }\n    });\n    return maxEntry;\n};\nexports.pushLevel = ({ session }, sceneName) => {\n    session.level = {\n        sceneName,\n        startedAt: Date.now(),\n        collectables: []\n    };\n    session.levels.push(session.level);\n    return session.level;\n};\nexports.peekLevelName = ({ session: { levels } }, defaultName = '', depth = 0) => {\n    const index = levels.length - 1 - depth;\n    if (index < 0) {\n        return defaultName;\n    }\n    return levels[index].sceneName;\n};\nexports.completeLevel = ({ session }) => {\n    const { level } = session;\n    if (!level) {\n        return null;\n    }\n    level.completedAt = Date.now();\n    session.level = undefined;\n    return level;\n};\nexports.isLevel = (sceneName) => sceneName.startsWith('L_');\nglobal.ssangervasi = global.ssangervasi || {};\nglobal.ssangervasi.userData = global.ssangervasi.userData || exports;\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlckRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvdXNlckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBK0JhLFFBQUEsY0FBYyxHQUFHLENBQUMsWUFBb0IsRUFBWSxFQUFFO0lBQ2hFLE1BQU0sUUFBUSxHQUFHLHFCQUFhLEVBQUUsQ0FBQTtJQUNoQyxJQUFJLE1BQVcsQ0FBQTtJQUNmLElBQUk7UUFDSCxNQUFNLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxZQUFZLENBQUMsQ0FBQTtLQUNqQztJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1gsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBNkIsRUFBRSxFQUFFLFlBQVksRUFBRSxDQUFDLENBQUE7S0FDNUQ7SUFDRCxJQUFJLG9CQUFZLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDekIsUUFBUSxDQUFDLFVBQVUsR0FBRyxNQUFNLENBQUMsVUFBVSxDQUFBO0tBQ3ZDO0lBQ0QsT0FBTyxRQUFRLENBQUE7QUFDaEIsQ0FBQyxDQUFBO0FBRVksUUFBQSxZQUFZLEdBQUcsQ0FBQyxTQUFjLEVBQStCLEVBQUUsQ0FDM0UsQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDO09BQ2hCLE9BQU8sU0FBUyxLQUFLLFFBQVE7T0FDN0IsWUFBWSxJQUFJLFNBQVM7T0FDekIsS0FBSyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDO09BQ25DLFNBQVMsQ0FBQyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUMsU0FBYyxFQUFFLEVBQUUsQ0FBQyxDQUNqRDtRQUNDLFFBQVE7UUFDUixXQUFXO1FBQ1gsV0FBVztLQUNYLENBQUMsS0FBSyxDQUFDLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxPQUFPLFNBQVMsS0FBSyxRQUFRLElBQUksR0FBRyxJQUFJLFNBQVMsQ0FBQyxDQUNuRSxDQUFDLENBQUE7QUFFVSxRQUFBLGFBQWEsR0FBRyxHQUFhLEVBQUUsQ0FBQyxDQUFDO0lBQzdD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RTtRQUNYLE9BQU8sSUFBSSxDQUFBO0tBQ1g7SUFDRCxLQUFLLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQyxHQUFHLEVBQUUsQ0FBQTtJQUM5QixPQUFPLENBQUMsS0FBSyxHQUFHLFNBQVMsQ0FBQTtJQUN6QixPQUFPLEtBQUssQ0FBQTtBQUNiLENBQUMsQ0FBQTtBQUVZLFFBQUEsT0FBTyxHQUFHLENBQUMsU0FBaUIsRUFBVyxFQUFFLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsQ0FBQTtBQVFqRixNQUFNLENBQUMsV0FBVyxHQUFHLE1BQU0sQ0FBQyxXQUFXLElBQUksRUFBRSxDQUFBO0FBQzdDLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxHQUFHLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxJQUFJLE9BQU8sQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgVXNlckRhdGEge1xuXHRzYXZlZEdhbWVzOiBTYXZlZEdhbWVbXVxuXHRzZXNzaW9uOiBTZXNzaW9uXG59XG5cbmV4cG9ydCB0eXBlIFN0b3JlZFVzZXJEYXRhID0gUGljazxVc2VyRGF0YSwgJ3NhdmVkR2FtZXMnPlxuXG5leHBvcnQgaW50ZXJmYWNlIFNlc3Npb24ge1xuXHRzYXZlZEdhbWU/OiBTYXZlZEdhbWVcblx0bGV2ZWxzOiBMZXZlbFNlc3Npb25bXVxuXHRsZXZlbD86IExldmVsU2Vzc2lvblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNhdmVkR2FtZSB7XG5cdGxldmVsczogTGV2ZWxTZXNzaW9uW11cblx0Y3JlYXRlZEF0OiBudW1iZXJcblx0dXBkYXRlZEF0OiBudW1iZXJcbn1cblxuZXhwb3J0IGludGVyZmFjZSBMZXZlbFNlc3Npb24ge1xuXHRzY2VuZU5hbWU6IHN0cmluZ1xuXHRzdGFydGVkQXQ6IG51bWJlclxuXHRjb21wbGV0ZWRBdD86IG51bWJlclxuXHRjb2xsZWN0YWJsZXM6IENvbGxlY3RhYmxlW11cbn1cblxuZXhwb3J0IGludGVyZmFjZSBDb2xsZWN0YWJsZSB7XG5cdGlkOiBzdHJpbmdcblx0Y29sbGVjdGVkQXQ6IG51bWJlclxufVxuXG5leHBvcnQgY29uc3QgY3JlYXRlRnJvbUpTT04gPSAodXNlckRhdGFKU09OOiBzdHJpbmcpOiBVc2VyRGF0YSA9PiB7XG5cdGNvbnN0IHVzZXJEYXRhID0gY3JlYXRlRGVmYXVsdCgpXG5cdGxldCBwYXJzZWQ6IGFueVxuXHR0cnkge1xuXHRcdHBhcnNlZCA9IEpTT04ucGFyc2UodXNlckRhdGFKU09OKVxuXHR9IGNhdGNoIChlKSB7XG5cdFx0Y29uc29sZS5sb2coJ2NyZWF0ZUZyb21KU09OIHBhcnNlIGVycm9yOicsIHsgdXNlckRhdGFKU09OIH0pXG5cdH1cblx0aWYgKGlzU3RvcmVkRGF0YShwYXJzZWQpKSB7XG5cdFx0dXNlckRhdGEuc2F2ZWRHYW1lcyA9IHBhcnNlZC5zYXZlZEdhbWVzXG5cdH1cblx0cmV0dXJuIHVzZXJEYXRhXG59XG5cbmV4cG9ydCBjb25zdCBpc1N0b3JlZERhdGEgPSAobWF5YmVEYXRhOiBhbnkpOiBtYXliZURhdGEgaXMgU3RvcmVkVXNlckRhdGEgPT5cblx0KG1heWJlRGF0YSAhPSBudWxsKVxuXHQmJiB0eXBlb2YgbWF5YmVEYXRhID09PSAnb2JqZWN0J1xuXHQmJiAnc2F2ZWRHYW1lcycgaW4gbWF5YmVEYXRhXG5cdCYmIEFycmF5LmlzQXJyYXkobWF5YmVEYXRhLnNhdmVkR2FtZXMpXG5cdCYmIG1heWJlRGF0YS5zYXZlZEdhbWVzLmV2ZXJ5KChzYXZlZEdhbWU6IGFueSkgPT4gKFxuXHRcdFtcblx0XHRcdCdsZXZlbHMnLFxuXHRcdFx0J2NyZWF0ZWRBdCcsXG5cdFx0XHQndXBkYXRlZEF0Jyxcblx0XHRdLmV2ZXJ5KChrZXkpID0+IHR5cGVvZiBzYXZlZEdhbWUgPT09ICdvYmplY3QnICYmIGtleSBpbiBzYXZlZEdhbWUpXG5cdCkpXG5cbmV4cG9ydCBjb25zdCBjcmVhdGVEZWZhdWx0ID0gKCk6IFVzZXJEYXRhID0+ICh7XG5cdHNhdmVkR2FtZXM6IFtdLFxuXHRzZXNzaW9uOiB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRsZXZlbDogdW5kZWZpbmVkLFxuXHRcdHNhdmVkR2FtZTogdW5kZWZpbmVkLFxuXHR9LFxufSlcblxuZXhwb3J0IGNvbnN0IG5ld0dhbWUgPSAodXNlckRhdGE6IFVzZXJEYXRhKTogU2F2ZWRHYW1lID0+IHtcblx0Y29uc3Qgbm93ID0gRGF0ZS5ub3coKVxuXHRjb25zdCBzYXZlZEdhbWUgPSB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRjcmVhdGVkQXQ6IG5vdyxcblx0XHR1cGRhdGVkQXQ6IG5vdyxcblx0fVxuXG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHR1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSA9IHNhdmVkR2FtZVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCByZXN1bWVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSwgY3JlYXRlZEF0PzogbnVtYmVyKTogU2F2ZWRHYW1lIHwgbnVsbCA9PiB7XG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHRjb25zdCBwcmV2aW91c1NhdmUgPVxuXHRcdGNyZWF0ZWRBdFxuXHRcdFx0PyB1c2VyRGF0YS5zYXZlZEdhbWVzLmZpbmQocyA9PiBzLmNyZWF0ZWRBdCA9PSBjcmVhdGVkQXQpXG5cdFx0XHQ6IG1heEJ5KHVzZXJEYXRhLnNhdmVkR2FtZXMsIChzKSA9PiBzLnVwZGF0ZWRBdClcblx0aWYgKCFwcmV2aW91c1NhdmUpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cdHVzZXJEYXRhLnNlc3Npb24uc2F2ZWRHYW1lID0gcHJldmlvdXNTYXZlXG5cdHVzZXJEYXRhLnNlc3Npb24ubGV2ZWxzID0gWy4uLnByZXZpb3VzU2F2ZS5sZXZlbHNdXG5cdHJldHVybiBwcmV2aW91c1NhdmVcbn1cblxuZXhwb3J0IGNvbnN0IHNhdmVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSk6IFNhdmVkR2FtZSB8IG51bGwgPT4ge1xuXHRjb25zdCBzYXZlZEdhbWUgPSB1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZVxuXHRpZiAoIXNhdmVkR2FtZSkge1xuXHRcdHJldHVybiBudWxsXG5cdH1cblxuXHRzYXZlZEdhbWUudXBkYXRlZEF0ID0gRGF0ZS5ub3coKVxuXHRzYXZlZEdhbWUubGV2ZWxzID0gWy4uLnVzZXJEYXRhLnNlc3Npb24ubGV2ZWxzXVxuXG5cdGNvbnN0IGluZGV4ID0gdXNlckRhdGEuc2F2ZWRHYW1lcy5maW5kSW5kZXgocyA9PiBzLmNyZWF0ZWRBdCA9PT0gc2F2ZWRHYW1lLmNyZWF0ZWRBdClcblx0aWYgKGluZGV4ID09PSAtMSkge1xuXHRcdHVzZXJEYXRhLnNhdmVkR2FtZXMucHVzaChzYXZlZEdhbWUpXG5cdH0gZWxzZSB7XG5cdFx0dXNlckRhdGEuc2F2ZWRHYW1lc1tpbmRleF0gPSBzYXZlZEdhbWVcblx0fVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCBsYXN0UGxheWVkTGV2ZWxOYW1lID0gKHNhdmVkR2FtZTogU2F2ZWRHYW1lKSA9PlxuXHRtYXhCeShzYXZlZEdhbWUubGV2ZWxzLCBzID0+IHMuc3RhcnRlZEF0KT8uc2NlbmVOYW1lXG5cbmV4cG9ydCBjb25zdCBtYXhCeSA9IDxULCBWPihcblx0Y29sbGVjdGlvbjogVFtdLFxuXHRjYWxsYmFjazogKGVudHJ5OiBULCBpbmRleDogbnVtYmVyKSA9PiBWXG4pOiBUIHwgdW5kZWZpbmVkID0+IHtcblx0bGV0IG1heEVudHJ5OiBUIHwgdW5kZWZpbmVkID0gdW5kZWZpbmVkXG5cdGxldCBtYXhDYW5kaWRhdGU6IFYgfCB1bmRlZmluZWQgPSB1bmRlZmluZWRcblx0Y29sbGVjdGlvbi5mb3JFYWNoKChlbnRyeSwgaW5kZXgpID0+IHtcblx0XHRjb25zdCBjYW5kaWRhdGUgPSBjYWxsYmFjayhlbnRyeSwgaW5kZXgpXG5cdFx0aWYgKG1heENhbmRpZGF0ZSA9PT0gdW5kZWZpbmVkIHx8IG1heENhbmRpZGF0ZSA8IGNhbmRpZGF0ZSkge1xuXHRcdFx0bWF4RW50cnkgPSBlbnRyeVxuXHRcdFx0bWF4Q2FuZGlkYXRlID0gY2FuZGlkYXRlXG5cdFx0fVxuXHR9KVxuXHRyZXR1cm4gbWF4RW50cnlcbn1cblxuZXhwb3J0IGNvbnN0IHB1c2hMZXZlbCA9ICh7IHNlc3Npb24gfTogVXNlckRhdGEsIHNjZW5lTmFtZTogc3RyaW5nKTogTGV2ZWxTZXNzaW9uID0+IHtcblx0c2Vzc2lvbi5sZXZlbCA9IHtcblx0XHRzY2VuZU5hbWUsXG5cdFx0c3RhcnRlZEF0OiBEYXRlLm5vdygpLFxuXHRcdGNvbGxlY3RhYmxlczogW11cblx0fVxuXHRzZXNzaW9uLmxldmVscy5wdXNoKHNlc3Npb24ubGV2ZWwpXG5cdHJldHVybiBzZXNzaW9uLmxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBwZWVrTGV2ZWxOYW1lID0gKFxuXHR7IHNlc3Npb246IHsgbGV2ZWxzIH0gfTogVXNlckRhdGEsXG5cdGRlZmF1bHROYW1lID0gJycsXG5cdGRlcHRoID0gMFxuKTogc3RyaW5nID0+IHtcblx0Y29uc3QgaW5kZXggPSBsZXZlbHMubGVuZ3RoIC0gMSAtIGRlcHRoXG5cdGlmIChpbmRleCA8IDApIHtcblx0XHRyZXR1cm4gZGVmYXVsdE5hbWVcblx0fVxuXHRyZXR1cm4gbGV2ZWxzW2luZGV4XS5zY2VuZU5hbWVcbn1cblxuZXhwb3J0IGNvbnN0IGNvbXBsZXRlTGV2ZWwgPSAoeyBzZXNzaW9uIH06IFVzZXJEYXRhKTogTGV2ZWxTZXNzaW9uIHwgbnVsbCA9PiB7XG5cdGNvbnN0IHsgbGV2ZWwgfSA9IHNlc3Npb25cblx0aWYgKCFsZXZlbCkge1xuXHRcdHJldHVybiBudWxsXG5cdH1cblx0bGV2ZWwuY29tcGxldGVkQXQgPSBEYXRlLm5vdygpXG5cdHNlc3Npb24ubGV2ZWwgPSB1bmRlZmluZWRcblx0cmV0dXJuIGxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBpc0xldmVsID0gKHNjZW5lTmFtZTogc3RyaW5nKTogYm9vbGVhbiA9PiBzY2VuZU5hbWUuc3RhcnRzV2l0aCgnTF8nKVxuXG5kZWNsYXJlIHZhciBnbG9iYWw6IHtcblx0ZXhwb3J0czoge31cblx0c3NhbmdlcnZhc2k/OiB7XG5cdFx0dXNlckRhdGE/OiB7fVxuXHR9XG59XG5nbG9iYWwuc3NhbmdlcnZhc2kgPSBnbG9iYWwuc3NhbmdlcnZhc2kgfHwge31cbmdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSA9IGdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSB8fCBleHBvcnRzXG4iXX0=",
+                  "inlineCode": "var exports = exports || {};\n\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.findCollectable = exports.collect = exports.isLevel = exports.completeLevel = exports.peekLevelName = exports.pushLevel = exports.maxBy = exports.lastPlayedLevelName = exports.saveGame = exports.resumeGame = exports.newGame = exports.createDefault = exports.isStoredData = exports.createFromJSON = void 0;\nexports.createFromJSON = (userDataJSON) => {\n    const userData = exports.createDefault();\n    let parsed;\n    try {\n        parsed = JSON.parse(userDataJSON);\n    }\n    catch (e) {\n        console.log('createFromJSON parse error:', { userDataJSON });\n    }\n    if (exports.isStoredData(parsed)) {\n        userData.savedGames = parsed.savedGames;\n    }\n    return userData;\n};\nexports.isStoredData = (maybeData) => (maybeData != null)\n    && typeof maybeData === 'object'\n    && 'savedGames' in maybeData\n    && Array.isArray(maybeData.savedGames)\n    && maybeData.savedGames.every((savedGame) => ([\n        'levels',\n        'createdAt',\n        'updatedAt',\n    ].every((key) => typeof savedGame === 'object' && key in savedGame)));\nexports.createDefault = () => ({\n    savedGames: [],\n    session: {\n        levels: [],\n        level: undefined,\n        savedGame: undefined,\n    },\n});\nexports.newGame = (userData) => {\n    const now = Date.now();\n    const savedGame = {\n        levels: [],\n        createdAt: now,\n        updatedAt: now,\n    };\n    exports.saveGame(userData);\n    userData.session.savedGame = savedGame;\n    return savedGame;\n};\nexports.resumeGame = (userData, createdAt) => {\n    exports.saveGame(userData);\n    const previousSave = createdAt\n        ? userData.savedGames.find(s => s.createdAt === createdAt)\n        : exports.maxBy(userData.savedGames, (s) => s.updatedAt);\n    if (!previousSave) {\n        return null;\n    }\n    userData.session.savedGame = previousSave;\n    userData.session.levels = [...previousSave.levels];\n    return previousSave;\n};\nexports.saveGame = (userData) => {\n    const savedGame = userData.session.savedGame;\n    if (!savedGame) {\n        return null;\n    }\n    savedGame.updatedAt = Date.now();\n    savedGame.levels = [...userData.session.levels];\n    const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt);\n    if (index === -1) {\n        userData.savedGames.push(savedGame);\n    }\n    else {\n        userData.savedGames[index] = savedGame;\n    }\n    return savedGame;\n};\nexports.lastPlayedLevelName = (savedGame) => { var _a; return (_a = exports.maxBy(savedGame.levels, s => s.startedAt)) === null || _a === void 0 ? void 0 : _a.sceneName; };\nexports.maxBy = (collection, callback) => {\n    let maxEntry = undefined;\n    let maxCandidate = undefined;\n    collection.forEach((entry, index) => {\n        const candidate = callback(entry, index);\n        if (maxCandidate === undefined || maxCandidate < candidate) {\n            maxEntry = entry;\n            maxCandidate = candidate;\n        }\n    });\n    return maxEntry;\n};\nexports.pushLevel = ({ session }, sceneName) => {\n    session.level = {\n        sceneName,\n        startedAt: Date.now(),\n        collectables: [],\n    };\n    session.levels.push(session.level);\n    return session.level;\n};\nexports.peekLevelName = ({ session: { levels } }, defaultName = '', depth = 0) => {\n    const index = levels.length - 1 - depth;\n    if (index < 0) {\n        return defaultName;\n    }\n    return levels[index].sceneName;\n};\nexports.completeLevel = ({ session }) => {\n    const { level } = session;\n    if (!level) {\n        return null;\n    }\n    level.completedAt = Date.now();\n    session.level = undefined;\n    return level;\n};\nexports.isLevel = (sceneName) => sceneName.startsWith('L_');\nexports.collect = (userData, collectableId) => {\n    const { session: { level } } = userData;\n    if (!level) {\n        return null;\n    }\n    const existingCollectable = exports.findCollectable(userData, collectableId);\n    if (existingCollectable) {\n        return existingCollectable;\n    }\n    const newCollectable = {\n        id: collectableId,\n        collectedAt: Date.now(),\n    };\n    level.collectables.push(newCollectable);\n    return newCollectable;\n};\nexports.findCollectable = ({ session }, collectableId) => {\n    const existingCollectables = session.levels.filter(l => Boolean(l.completedAt)).map(l => l.collectables.find(c => c.id === collectableId)).filter((c) => c !== undefined);\n    return existingCollectables[0];\n};\nglobal.ssangervasi = global.ssangervasi || {};\nglobal.ssangervasi.userData = global.ssangervasi.userData || exports;\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlckRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvdXNlckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBK0JhLFFBQUEsY0FBYyxHQUFHLENBQUMsWUFBb0IsRUFBWSxFQUFFO0lBQ2hFLE1BQU0sUUFBUSxHQUFHLHFCQUFhLEVBQUUsQ0FBQTtJQUNoQyxJQUFJLE1BQVcsQ0FBQTtJQUNmLElBQUk7UUFDSCxNQUFNLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxZQUFZLENBQUMsQ0FBQTtLQUNqQztJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1gsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBNkIsRUFBRSxFQUFFLFlBQVksRUFBRSxDQUFDLENBQUE7S0FDNUQ7SUFDRCxJQUFJLG9CQUFZLENBQUMsTUFBTSxDQUFDLEVBQUU7UUFDekIsUUFBUSxDQUFDLFVBQVUsR0FBRyxNQUFNLENBQUMsVUFBVSxDQUFBO0tBQ3ZDO0lBQ0QsT0FBTyxRQUFRLENBQUE7QUFDaEIsQ0FBQyxDQUFBO0FBRVksUUFBQSxZQUFZLEdBQUcsQ0FBQyxTQUFjLEVBQStCLEVBQUUsQ0FDM0UsQ0FBQyxTQUFTLElBQUksSUFBSSxDQUFDO09BQ2hCLE9BQU8sU0FBUyxLQUFLLFFBQVE7T0FDN0IsWUFBWSxJQUFJLFNBQVM7T0FDekIsS0FBSyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDO09BQ25DLFNBQVMsQ0FBQyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUMsU0FBYyxFQUFFLEVBQUUsQ0FBQyxDQUNqRDtRQUNDLFFBQVE7UUFDUixXQUFXO1FBQ1gsV0FBVztLQUNYLENBQUMsS0FBSyxDQUFDLENBQUMsR0FBRyxFQUFFLEVBQUUsQ0FBQyxPQUFPLFNBQVMsS0FBSyxRQUFRLElBQUksR0FBRyxJQUFJLFNBQVMsQ0FBQyxDQUNuRSxDQUFDLENBQUE7QUFFVSxRQUFBLGFBQWEsR0FBRyxHQUFhLEVBQUUsQ0FBQyxDQUFDO0lBQzdD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LFlBQVksQ0FBQyxJQUFJLENBQ3ZCLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDLEVBQUUsS0FBSyxhQUFhLENBQzNCLENBQ0QsQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLEVBQW9CLEVBQUUsQ0FBQyxDQUFDLEtBQUssU0FBUyxDQUFDLENBQUE7SUFDbkQsT0FBTyxvQkFBb0IsQ0FBQyxDQUFDLENBQUMsQ0FBQTtBQUMvQixDQUFDLENBQUE7QUFRRCxNQUFNLENBQUMsV0FBVyxHQUFHLE1BQU0sQ0FBQyxXQUFXLElBQUksRUFBRSxDQUFBO0FBQzdDLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxHQUFHLE1BQU0sQ0FBQyxXQUFXLENBQUMsUUFBUSxJQUFJLE9BQU8sQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBpbnRlcmZhY2UgVXNlckRhdGEge1xuXHRzYXZlZEdhbWVzOiBTYXZlZEdhbWVbXVxuXHRzZXNzaW9uOiBTZXNzaW9uXG59XG5cbmV4cG9ydCB0eXBlIFN0b3JlZFVzZXJEYXRhID0gUGljazxVc2VyRGF0YSwgJ3NhdmVkR2FtZXMnPlxuXG5leHBvcnQgaW50ZXJmYWNlIFNlc3Npb24ge1xuXHRzYXZlZEdhbWU/OiBTYXZlZEdhbWVcblx0bGV2ZWxzOiBMZXZlbFNlc3Npb25bXVxuXHRsZXZlbD86IExldmVsU2Vzc2lvblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNhdmVkR2FtZSB7XG5cdGxldmVsczogTGV2ZWxTZXNzaW9uW11cblx0Y3JlYXRlZEF0OiBudW1iZXJcblx0dXBkYXRlZEF0OiBudW1iZXJcbn1cblxuZXhwb3J0IGludGVyZmFjZSBMZXZlbFNlc3Npb24ge1xuXHRzY2VuZU5hbWU6IHN0cmluZ1xuXHRzdGFydGVkQXQ6IG51bWJlclxuXHRjb21wbGV0ZWRBdD86IG51bWJlclxuXHRjb2xsZWN0YWJsZXM6IENvbGxlY3RhYmxlW11cbn1cblxuZXhwb3J0IGludGVyZmFjZSBDb2xsZWN0YWJsZSB7XG5cdGlkOiBzdHJpbmdcblx0Y29sbGVjdGVkQXQ6IG51bWJlclxufVxuXG5leHBvcnQgY29uc3QgY3JlYXRlRnJvbUpTT04gPSAodXNlckRhdGFKU09OOiBzdHJpbmcpOiBVc2VyRGF0YSA9PiB7XG5cdGNvbnN0IHVzZXJEYXRhID0gY3JlYXRlRGVmYXVsdCgpXG5cdGxldCBwYXJzZWQ6IGFueVxuXHR0cnkge1xuXHRcdHBhcnNlZCA9IEpTT04ucGFyc2UodXNlckRhdGFKU09OKVxuXHR9IGNhdGNoIChlKSB7XG5cdFx0Y29uc29sZS5sb2coJ2NyZWF0ZUZyb21KU09OIHBhcnNlIGVycm9yOicsIHsgdXNlckRhdGFKU09OIH0pXG5cdH1cblx0aWYgKGlzU3RvcmVkRGF0YShwYXJzZWQpKSB7XG5cdFx0dXNlckRhdGEuc2F2ZWRHYW1lcyA9IHBhcnNlZC5zYXZlZEdhbWVzXG5cdH1cblx0cmV0dXJuIHVzZXJEYXRhXG59XG5cbmV4cG9ydCBjb25zdCBpc1N0b3JlZERhdGEgPSAobWF5YmVEYXRhOiBhbnkpOiBtYXliZURhdGEgaXMgU3RvcmVkVXNlckRhdGEgPT5cblx0KG1heWJlRGF0YSAhPSBudWxsKVxuXHQmJiB0eXBlb2YgbWF5YmVEYXRhID09PSAnb2JqZWN0J1xuXHQmJiAnc2F2ZWRHYW1lcycgaW4gbWF5YmVEYXRhXG5cdCYmIEFycmF5LmlzQXJyYXkobWF5YmVEYXRhLnNhdmVkR2FtZXMpXG5cdCYmIG1heWJlRGF0YS5zYXZlZEdhbWVzLmV2ZXJ5KChzYXZlZEdhbWU6IGFueSkgPT4gKFxuXHRcdFtcblx0XHRcdCdsZXZlbHMnLFxuXHRcdFx0J2NyZWF0ZWRBdCcsXG5cdFx0XHQndXBkYXRlZEF0Jyxcblx0XHRdLmV2ZXJ5KChrZXkpID0+IHR5cGVvZiBzYXZlZEdhbWUgPT09ICdvYmplY3QnICYmIGtleSBpbiBzYXZlZEdhbWUpXG5cdCkpXG5cbmV4cG9ydCBjb25zdCBjcmVhdGVEZWZhdWx0ID0gKCk6IFVzZXJEYXRhID0+ICh7XG5cdHNhdmVkR2FtZXM6IFtdLFxuXHRzZXNzaW9uOiB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRsZXZlbDogdW5kZWZpbmVkLFxuXHRcdHNhdmVkR2FtZTogdW5kZWZpbmVkLFxuXHR9LFxufSlcblxuZXhwb3J0IGNvbnN0IG5ld0dhbWUgPSAodXNlckRhdGE6IFVzZXJEYXRhKTogU2F2ZWRHYW1lID0+IHtcblx0Y29uc3Qgbm93ID0gRGF0ZS5ub3coKVxuXHRjb25zdCBzYXZlZEdhbWUgPSB7XG5cdFx0bGV2ZWxzOiBbXSxcblx0XHRjcmVhdGVkQXQ6IG5vdyxcblx0XHR1cGRhdGVkQXQ6IG5vdyxcblx0fVxuXG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHR1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSA9IHNhdmVkR2FtZVxuXHRyZXR1cm4gc2F2ZWRHYW1lXG59XG5cbmV4cG9ydCBjb25zdCByZXN1bWVHYW1lID0gKHVzZXJEYXRhOiBVc2VyRGF0YSwgY3JlYXRlZEF0PzogbnVtYmVyKTogU2F2ZWRHYW1lIHwgbnVsbCA9PiB7XG5cdHNhdmVHYW1lKHVzZXJEYXRhKVxuXHRjb25zdCBwcmV2aW91c1NhdmUgPVxuXHRcdGNyZWF0ZWRBdFxuXHRcdFx0PyB1c2VyRGF0YS5zYXZlZEdhbWVzLmZpbmQocyA9PiBzLmNyZWF0ZWRBdCA9PT0gY3JlYXRlZEF0KVxuXHRcdFx0OiBtYXhCeSh1c2VyRGF0YS5zYXZlZEdhbWVzLCAocykgPT4gcy51cGRhdGVkQXQpXG5cdGlmICghcHJldmlvdXNTYXZlKSB7XG5cdFx0cmV0dXJuIG51bGxcblx0fVxuXHR1c2VyRGF0YS5zZXNzaW9uLnNhdmVkR2FtZSA9IHByZXZpb3VzU2F2ZVxuXHR1c2VyRGF0YS5zZXNzaW9uLmxldmVscyA9IFsuLi5wcmV2aW91c1NhdmUubGV2ZWxzXVxuXHRyZXR1cm4gcHJldmlvdXNTYXZlXG59XG5cbmV4cG9ydCBjb25zdCBzYXZlR2FtZSA9ICh1c2VyRGF0YTogVXNlckRhdGEpOiBTYXZlZEdhbWUgfCBudWxsID0+IHtcblx0Y29uc3Qgc2F2ZWRHYW1lID0gdXNlckRhdGEuc2Vzc2lvbi5zYXZlZEdhbWVcblx0aWYgKCFzYXZlZEdhbWUpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cblx0c2F2ZWRHYW1lLnVwZGF0ZWRBdCA9IERhdGUubm93KClcblx0c2F2ZWRHYW1lLmxldmVscyA9IFsuLi51c2VyRGF0YS5zZXNzaW9uLmxldmVsc11cblxuXHRjb25zdCBpbmRleCA9IHVzZXJEYXRhLnNhdmVkR2FtZXMuZmluZEluZGV4KHMgPT4gcy5jcmVhdGVkQXQgPT09IHNhdmVkR2FtZS5jcmVhdGVkQXQpXG5cdGlmIChpbmRleCA9PT0gLTEpIHtcblx0XHR1c2VyRGF0YS5zYXZlZEdhbWVzLnB1c2goc2F2ZWRHYW1lKVxuXHR9IGVsc2Uge1xuXHRcdHVzZXJEYXRhLnNhdmVkR2FtZXNbaW5kZXhdID0gc2F2ZWRHYW1lXG5cdH1cblx0cmV0dXJuIHNhdmVkR2FtZVxufVxuXG5leHBvcnQgY29uc3QgbGFzdFBsYXllZExldmVsTmFtZSA9IChzYXZlZEdhbWU6IFNhdmVkR2FtZSkgPT5cblx0bWF4Qnkoc2F2ZWRHYW1lLmxldmVscywgcyA9PiBzLnN0YXJ0ZWRBdCk/LnNjZW5lTmFtZVxuXG5leHBvcnQgY29uc3QgbWF4QnkgPSA8VCwgVj4oXG5cdGNvbGxlY3Rpb246IFRbXSxcblx0Y2FsbGJhY2s6IChlbnRyeTogVCwgaW5kZXg6IG51bWJlcikgPT4gVixcbik6IFQgfCB1bmRlZmluZWQgPT4ge1xuXHRsZXQgbWF4RW50cnk6IFQgfCB1bmRlZmluZWQgPSB1bmRlZmluZWRcblx0bGV0IG1heENhbmRpZGF0ZTogViB8IHVuZGVmaW5lZCA9IHVuZGVmaW5lZFxuXHRjb2xsZWN0aW9uLmZvckVhY2goKGVudHJ5LCBpbmRleCkgPT4ge1xuXHRcdGNvbnN0IGNhbmRpZGF0ZSA9IGNhbGxiYWNrKGVudHJ5LCBpbmRleClcblx0XHRpZiAobWF4Q2FuZGlkYXRlID09PSB1bmRlZmluZWQgfHwgbWF4Q2FuZGlkYXRlIDwgY2FuZGlkYXRlKSB7XG5cdFx0XHRtYXhFbnRyeSA9IGVudHJ5XG5cdFx0XHRtYXhDYW5kaWRhdGUgPSBjYW5kaWRhdGVcblx0XHR9XG5cdH0pXG5cdHJldHVybiBtYXhFbnRyeVxufVxuXG5leHBvcnQgY29uc3QgcHVzaExldmVsID0gKHsgc2Vzc2lvbiB9OiBVc2VyRGF0YSwgc2NlbmVOYW1lOiBzdHJpbmcpOiBMZXZlbFNlc3Npb24gPT4ge1xuXHRzZXNzaW9uLmxldmVsID0ge1xuXHRcdHNjZW5lTmFtZSxcblx0XHRzdGFydGVkQXQ6IERhdGUubm93KCksXG5cdFx0Y29sbGVjdGFibGVzOiBbXSxcblx0fVxuXHRzZXNzaW9uLmxldmVscy5wdXNoKHNlc3Npb24ubGV2ZWwpXG5cdHJldHVybiBzZXNzaW9uLmxldmVsXG59XG5cbmV4cG9ydCBjb25zdCBwZWVrTGV2ZWxOYW1lID0gKFxuXHR7IHNlc3Npb246IHsgbGV2ZWxzIH0gfTogVXNlckRhdGEsXG5cdGRlZmF1bHROYW1lID0gJycsXG5cdGRlcHRoID0gMCxcbik6IHN0cmluZyA9PiB7XG5cdGNvbnN0IGluZGV4ID0gbGV2ZWxzLmxlbmd0aCAtIDEgLSBkZXB0aFxuXHRpZiAoaW5kZXggPCAwKSB7XG5cdFx0cmV0dXJuIGRlZmF1bHROYW1lXG5cdH1cblx0cmV0dXJuIGxldmVsc1tpbmRleF0uc2NlbmVOYW1lXG59XG5cbmV4cG9ydCBjb25zdCBjb21wbGV0ZUxldmVsID0gKHsgc2Vzc2lvbiB9OiBVc2VyRGF0YSk6IExldmVsU2Vzc2lvbiB8IG51bGwgPT4ge1xuXHRjb25zdCB7IGxldmVsIH0gPSBzZXNzaW9uXG5cdGlmICghbGV2ZWwpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cdGxldmVsLmNvbXBsZXRlZEF0ID0gRGF0ZS5ub3coKVxuXHRzZXNzaW9uLmxldmVsID0gdW5kZWZpbmVkXG5cdHJldHVybiBsZXZlbFxufVxuXG5leHBvcnQgY29uc3QgaXNMZXZlbCA9IChzY2VuZU5hbWU6IHN0cmluZyk6IGJvb2xlYW4gPT4gc2NlbmVOYW1lLnN0YXJ0c1dpdGgoJ0xfJylcblxuZXhwb3J0IGNvbnN0IGNvbGxlY3QgPSAoXG5cdHVzZXJEYXRhOiBVc2VyRGF0YSxcblx0Y29sbGVjdGFibGVJZDogc3RyaW5nLFxuKTogQ29sbGVjdGFibGUgfCBudWxsID0+IHtcblx0Y29uc3QgeyBzZXNzaW9uOiB7IGxldmVsIH0gfSA9IHVzZXJEYXRhXG5cdGlmICghbGV2ZWwpIHtcblx0XHRyZXR1cm4gbnVsbFxuXHR9XG5cdGNvbnN0IGV4aXN0aW5nQ29sbGVjdGFibGUgPSBmaW5kQ29sbGVjdGFibGUodXNlckRhdGEsIGNvbGxlY3RhYmxlSWQpXG5cdGlmIChleGlzdGluZ0NvbGxlY3RhYmxlKSB7XG5cdFx0cmV0dXJuIGV4aXN0aW5nQ29sbGVjdGFibGVcblx0fVxuXHRjb25zdCBuZXdDb2xsZWN0YWJsZSA9IHtcblx0XHRpZDogY29sbGVjdGFibGVJZCxcblx0XHRjb2xsZWN0ZWRBdDogRGF0ZS5ub3coKSxcblx0fVxuXHRsZXZlbC5jb2xsZWN0YWJsZXMucHVzaChuZXdDb2xsZWN0YWJsZSlcblx0cmV0dXJuIG5ld0NvbGxlY3RhYmxlXG59XG5cbmV4cG9ydCBjb25zdCBmaW5kQ29sbGVjdGFibGUgPSAoXG5cdHsgc2Vzc2lvbiB9OiBVc2VyRGF0YSxcblx0Y29sbGVjdGFibGVJZDogc3RyaW5nLFxuKTogQ29sbGVjdGFibGUgfCB1bmRlZmluZWQgPT4ge1xuXHRjb25zdCBleGlzdGluZ0NvbGxlY3RhYmxlcyA9XG5cdFx0c2Vzc2lvbi5sZXZlbHMuZmlsdGVyKFxuXHRcdFx0bCA9PiBCb29sZWFuKGwuY29tcGxldGVkQXQpLFxuXHRcdCkubWFwKFxuXHRcdFx0bCA9PiBsLmNvbGxlY3RhYmxlcy5maW5kKFxuXHRcdFx0XHRjID0+IGMuaWQgPT09IGNvbGxlY3RhYmxlSWQsXG5cdFx0XHQpLFxuXHRcdCkuZmlsdGVyKChjKTogYyBpcyBDb2xsZWN0YWJsZSA9PiBjICE9PSB1bmRlZmluZWQpXG5cdHJldHVybiBleGlzdGluZ0NvbGxlY3RhYmxlc1swXVxufVxuXG5kZWNsYXJlIHZhciBnbG9iYWw6IHtcblx0ZXhwb3J0czoge31cblx0c3NhbmdlcnZhc2k/OiB7XG5cdFx0dXNlckRhdGE/OiB7fVxuXHR9XG59XG5nbG9iYWwuc3NhbmdlcnZhc2kgPSBnbG9iYWwuc3NhbmdlcnZhc2kgfHwge31cbmdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSA9IGdsb2JhbC5zc2FuZ2VydmFzaS51c2VyRGF0YSB8fCBleHBvcnRzXG4iXX0=",
                   "parameterObjects": "",
                   "useStrict": true
                 }
@@ -94880,7 +95670,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -94914,7 +95704,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -94962,7 +95752,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -94996,7 +95786,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95030,11 +95820,45 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
                         "\"L_C2_PayRespects3\"",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "NextLevel",
+                        "=",
+                        "\"L_C2_OpeningUp\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::IsScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"L_C2_OpeningUp\"",
                         ""
                       ],
                       "subInstructions": []
@@ -95064,7 +95888,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95098,7 +95922,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95132,7 +95956,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95166,7 +95990,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95214,7 +96038,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95248,7 +96072,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95282,7 +96106,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95316,7 +96140,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95350,7 +96174,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "srs_objs::isScene"
+                        "value": "srs_objs::IsScene"
                       },
                       "parameters": [
                         "",
@@ -95395,7 +96219,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::isScene"
+                            "value": "srs_objs::IsScene"
                           },
                           "parameters": [
                             "",
@@ -95429,7 +96253,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::isScene"
+                            "value": "srs_objs::IsScene"
                           },
                           "parameters": [
                             "",
@@ -95463,7 +96287,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::isScene"
+                            "value": "srs_objs::IsScene"
                           },
                           "parameters": [
                             "",
@@ -95497,7 +96321,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::isScene"
+                            "value": "srs_objs::IsScene"
                           },
                           "parameters": [
                             "",
@@ -95531,7 +96355,7 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "srs_objs::isScene"
+                            "value": "srs_objs::IsScene"
                           },
                           "parameters": [
                             "",
@@ -95636,11 +96460,130 @@
           "objectGroups": []
         },
         {
-          "description": "Is current scene?",
-          "fullName": "Is current scene?",
+          "description": "pushLevel",
+          "fullName": "pushLevel",
+          "functionType": "Action",
+          "name": "pushLevel",
+          "sentence": "pushLevel _PARAM1_ ",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const UD = global.ssangervasi.userData\nconst userData = global.ssangervasi.userDataInstance\n\neventsFunctionContext.returnValue = UD.pushLevel(\n    userData,\n    eventsFunctionContext.getArgument(\"SceneName\")\n)\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "SceneName",
+              "longDescription": "",
+              "name": "SceneName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "completeLevel",
+          "fullName": "completeLevel",
+          "functionType": "Action",
+          "name": "completeLevel",
+          "sentence": "completeLevel",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const UD = global.ssangervasi.userData\nconst userData = global.ssangervasi.userDataInstance\n\nconst level = UD.completeLevel(userData)\nconsole.info('Completed level', { level })\n",
+              "parameterObjects": "",
+              "useStrict": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "collect: collect an item and autosave",
+          "fullName": "collect",
+          "functionType": "Action",
+          "name": "collect",
+          "sentence": "collect _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::resumeGame"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\nif (!collectableId) {\r\n    global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n    return \r\n}\r\n\r\nconst UD = global.ssangervasi.userData\r\nconst userData = global.ssangervasi.userDataInstance\r\nconst collectable = UD.collect(userData, collectableId)\r\nglobal.ssangervasi.info('Collected', collectable)\r\n",
+              "parameterObjects": "",
+              "useStrict": true
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_objs::saveGame"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "CollectableId",
+              "longDescription": "",
+              "name": "CollectableId",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "isLevel",
+          "fullName": "isLevel",
           "functionType": "Condition",
-          "name": "isScene",
-          "sentence": "Is current scene _PARAM1_",
+          "name": "IsLevel",
+          "sentence": "isLevel _PARAM1_",
           "events": [
             {
               "disabled": false,
@@ -95654,7 +96597,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    let i = 0; \n    const game = runtimeScene.getGame()\n    const sceneName = eventsFunctionContext.getArgument('SceneName')\n    if (!sceneName) {\n        global.ssangervasi.error('Attempted to check isScene but no SceneName was passed.')\n        return false\n    }\n    if (!game.hasScene(sceneName)) {\n        global.ssangervasi.error(`Attempted to check isScene but \"${sceneName}\" is not the name of a scene.`)\n        return false\n    }\n    return runtimeScene.getName() === sceneName\n})()",
+              "inlineCode": "const UD = global.ssangervasi.userData\neventsFunctionContext.returnValue = UD.isLevel(\n    eventsFunctionContext.getArgument('SceneName')\n)",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -95677,7 +96620,7 @@
           "description": "peekLevel depth: _PARAM1_",
           "fullName": "peekLevel",
           "functionType": "StringExpression",
-          "name": "peekLevel",
+          "name": "PeekLevel",
           "sentence": "",
           "events": [
             {
@@ -95722,36 +96665,6 @@
           "objectGroups": []
         },
         {
-          "description": "pushLevel",
-          "fullName": "pushLevel",
-          "functionType": "Action",
-          "name": "pushLevel",
-          "sentence": "pushLevel _PARAM1_ ",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const UD = global.ssangervasi.userData\nconst userData = global.ssangervasi.userDataInstance\n\neventsFunctionContext.returnValue = UD.pushLevel(\n    userData,\n    eventsFunctionContext.getArgument(\"SceneName\")\n)\n",
-              "parameterObjects": "",
-              "useStrict": true
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "SceneName",
-              "longDescription": "",
-              "name": "SceneName",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
           "description": "HasCollectable",
           "fullName": "HasCollectable",
           "functionType": "Condition",
@@ -95782,7 +96695,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const vars = runtimeScene.getVariables()\r\n    const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\n    if (!collectableId) {\r\n        global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n        return false\r\n    }\r\n    console.log('collectables', global.ssangervasi.srsObjs.getCollectables())\r\n    return global.ssangervasi.srsObjs.hasCollectable(collectableId)\r\n})()",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\r\n    const UD = global.ssangervasi.userData\r\n    const userData = global.ssangervasi.userDataInstance\r\n\r\n    const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\n    if (!collectableId) {\r\n        global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n        return false\r\n    }\r\n    const collectable = UD.findCollectable(userData, collectableId)\r\n    return Boolean(collectable)\r\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -95802,81 +96715,11 @@
           "objectGroups": []
         },
         {
-          "description": "collect: collect an item and autosave",
-          "fullName": "collect",
-          "functionType": "Action",
-          "name": "collect",
-          "sentence": "collect _PARAM1_",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::resumeGame"
-                  },
-                  "parameters": [
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\nif (!collectableId) {\r\n    global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n    return \r\n}\r\n\r\nconst UD = global.ssangervasi.userData\r\nconst userData = global.ssangervasi.userDataInstance\r\n",
-              "parameterObjects": "",
-              "useStrict": true
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_objs::saveGame"
-                  },
-                  "parameters": [
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "CollectableId",
-              "longDescription": "",
-              "name": "CollectableId",
-              "optional": false,
-              "supplementaryInformation": "",
-              "type": "string"
-            }
-          ],
-          "objectGroups": []
-        },
-        {
-          "description": "isLevel",
-          "fullName": "isLevel",
+          "description": "Is current scene?",
+          "fullName": "Is current scene?",
           "functionType": "Condition",
-          "name": "isLevel",
-          "sentence": "isLevel _PARAM1_",
+          "name": "IsScene",
+          "sentence": "Is current scene _PARAM1_",
           "events": [
             {
               "disabled": false,
@@ -95890,7 +96733,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const UD = global.ssangervasi.userData\neventsFunctionContext.returnValue = UD.isLevel(\n    eventsFunctionContext.getArgument('SceneName')\n)",
+              "inlineCode": "eventsFunctionContext.returnValue = (() => {\n    let i = 0; \n    const game = runtimeScene.getGame()\n    const sceneName = eventsFunctionContext.getArgument('SceneName')\n    if (!sceneName) {\n        global.ssangervasi.error('Attempted to check isScene but no SceneName was passed.')\n        return false\n    }\n    if (!game.hasScene(sceneName)) {\n        global.ssangervasi.error(`Attempted to check isScene but \"${sceneName}\" is not the name of a scene.`)\n        return false\n    }\n    return runtimeScene.getName() === sceneName\n})()",
               "parameterObjects": "",
               "useStrict": true
             }
@@ -97454,6 +98297,26 @@
               "name": "changeScene",
               "sentence": "_PARAM0_ changeScene",
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::completeLevel"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
