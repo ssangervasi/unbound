@@ -1,6 +1,6 @@
-import * as userData from './userData'
+import * as UD from './userData'
 
-const mockCollectables = (): userData.Collectable[] => ([
+const mockCollectables = (): UD.Collectable[] => ([
 	{
 		id: 'horse-tail',
 		collectedAt: 105,
@@ -8,26 +8,26 @@ const mockCollectables = (): userData.Collectable[] => ([
 	{
 		id: 'cow-foot',
 		collectedAt: 115,
-	}
+	},
 ])
 
-const mockLevels = (): userData.LevelSession[] => (
+const mockLevels = (): UD.LevelSession[] => (
 	[
 		{
 			sceneName: 'L_some_level',
 			startedAt: 100,
 			completedAt: 110,
-			collectables: [mockCollectables()[0]]
+			collectables: [mockCollectables()[0]],
 		},
 		{
 			sceneName: 'L_another_level',
 			startedAt: 110,
 			completedAt: undefined,
-			collectables: [mockCollectables()[1]]
+			collectables: [mockCollectables()[1]],
 		},
 	]
 )
-const mockSavedGames = (): userData.SavedGame[] => (
+const mockSavedGames = (): UD.SavedGame[] => (
 	[
 		{
 			createdAt: 2,
@@ -42,7 +42,7 @@ const mockSavedGames = (): userData.SavedGame[] => (
 	]
 )
 
-const blankSaveMatcher = (resultSave: userData.SavedGame) => (
+const blankSaveMatcher = (resultSave: UD.SavedGame) => (
 	{
 		levels: [],
 		createdAt: expect.any(Number),
@@ -50,7 +50,7 @@ const blankSaveMatcher = (resultSave: userData.SavedGame) => (
 	}
 )
 
-const mockSession = (): userData.Session => (
+const mockSession = (): UD.Session => (
 	{
 		savedGame: mockSavedGames()[1],
 		levels: [],
@@ -59,39 +59,39 @@ const mockSession = (): userData.Session => (
 )
 
 describe('createDefault', () => {
-	const result = userData.createDefault()
+	const result = UD.createDefault()
 
 	it('has no saved games', () => {
 		expect(result.savedGames).toEqual([])
 	})
 
 	it('has a blank session', () => {
-		expect(result.session).toMatchObject<userData.Session>({
+		expect(result.session).toMatchObject<UD.Session>({
 			levels: [],
 			level: undefined,
-			savedGame: undefined
+			savedGame: undefined,
 		})
 	})
 })
 
 describe('createFromJSON', () => {
 	it('handles invalid JSON', () => {
-		const result = userData.createFromJSON('horx;ma-dorks')
+		const result = UD.createFromJSON('horx;ma-dorks')
 		expect(result.savedGames).toEqual([])
 		expect(result.session.levels).toEqual([])
 	})
 
 	it('handles valid JSON with invalid structure', () => {
-		const result = userData.createFromJSON('0')
+		const result = UD.createFromJSON('0')
 		expect(result.savedGames).toEqual([])
 		expect(result.session.levels).toEqual([])
 	})
 
 	it('loads the saved games from valid JSON', () => {
-		const validStored: userData.StoredUserData = {
-			savedGames: mockSavedGames()
+		const validStored: UD.StoredUserData = {
+			savedGames: mockSavedGames(),
 		}
-		const result = userData.createFromJSON(JSON.stringify(validStored))
+		const result = UD.createFromJSON(JSON.stringify(validStored))
 		expect(result.savedGames).toEqual(validStored.savedGames)
 		expect(result.session.levels).toEqual([])
 	})
@@ -99,8 +99,8 @@ describe('createFromJSON', () => {
 
 describe('newGame', () => {
 	it('with default data populates the session', () => {
-		const defaultData = userData.createDefault()
-		const resultSave = userData.newGame(defaultData)
+		const defaultData = UD.createDefault()
+		const resultSave = UD.newGame(defaultData)
 		expect(defaultData.session.savedGame).toBe(resultSave)
 		expect(resultSave).toMatchObject(blankSaveMatcher(resultSave))
 		expect(defaultData.savedGames).toEqual([])
@@ -108,14 +108,14 @@ describe('newGame', () => {
 
 	it('with existing data pushes the existing save', () => {
 		const originalGames = mockSavedGames()
-		const existingData: userData.UserData = {
+		const existingData: UD.UserData = {
 			savedGames: [originalGames[0]],
 			session: {
 				savedGame: originalGames[1],
-				levels: []
-			}
+				levels: [],
+			},
 		}
-		const resultSave = userData.newGame(existingData)
+		const resultSave = UD.newGame(existingData)
 		expect(existingData.session.savedGame).toBe(resultSave)
 		expect(resultSave).toMatchObject(blankSaveMatcher(resultSave))
 		expect(existingData.savedGames).toEqual(originalGames)
@@ -128,35 +128,35 @@ describe('resumeGame', () => {
 			createdAt: 1,
 			updatedAt: 30,
 			levels: mockLevels(),
-			collectables: []
+			collectables: [],
 		}
-		const existingData: userData.UserData = {
+		const existingData: UD.UserData = {
 			savedGames: [
 				{
 					createdAt: 1,
 					updatedAt: 20,
 					levels: mockLevels(),
-					collectables: []
+					collectables: [],
 				},
 				mostRecentSave,
 				{
 					createdAt: 1,
 					updatedAt: 10,
 					levels: mockLevels(),
-					collectables: []
+					collectables: [],
 				},
 				{
 					createdAt: 1,
 					updatedAt: 1,
 					levels: mockLevels(),
-					collectables: []
+					collectables: [],
 				},
 			],
 			session: {
-				levels: []
-			}
+				levels: [],
+			},
 		}
-		const resultSave = userData.resumeGame(existingData)
+		const resultSave = UD.resumeGame(existingData)
 		expect(existingData.session.savedGame).toBe(resultSave)
 		expect(resultSave).toBe(mostRecentSave)
 	})
@@ -164,7 +164,7 @@ describe('resumeGame', () => {
 
 describe('saveGame', () => {
 	it('adds the session levels to the save', () => {
-		const data: userData.UserData = {
+		const data: UD.UserData = {
 			savedGames: [],
 			session: {
 				savedGame: {
@@ -175,32 +175,32 @@ describe('saveGame', () => {
 							sceneName: 'L_1',
 							startedAt: 1,
 							completedAt: 2,
-							collectables: []
+							collectables: [],
 						},
-					]
+					],
 				},
 				levels: [
 					{
 						sceneName: 'L_1',
 						startedAt: 1,
 						completedAt: 2,
-						collectables: []
+						collectables: [],
 					},
 					{
 						sceneName: 'L_2',
 						startedAt: 3,
 						completedAt: 4,
-						collectables: []
+						collectables: [],
 					},
 					{
 						sceneName: 'L_3',
 						startedAt: 5,
-						collectables: []
-					}
+						collectables: [],
+					},
 				],
-			}
+			},
 		}
-		const savedGame = userData.saveGame(data)
+		const savedGame = UD.saveGame(data)
 		expect(savedGame).toBeTruthy()
 		expect(data.savedGames[0]).toEqual({
 			createdAt: 1,
@@ -210,20 +210,20 @@ describe('saveGame', () => {
 					sceneName: 'L_1',
 					startedAt: 1,
 					completedAt: 2,
-					collectables: []
+					collectables: [],
 				},
 				{
 					sceneName: 'L_2',
 					startedAt: 3,
 					completedAt: 4,
-					collectables: []
+					collectables: [],
 				},
 				{
 					sceneName: 'L_3',
 					startedAt: 5,
-					collectables: []
-				}
-			]
+					collectables: [],
+				},
+			],
 		})
 		expect(data.session).toEqual({
 			level: undefined,
@@ -235,15 +235,15 @@ describe('saveGame', () => {
 
 describe('lastPlayedLevel', () => {
 	it('returns undefined if no levels were played', () => {
-		const lastPlayedName = userData.lastPlayedLevelName({
+		const lastPlayedName = UD.lastPlayedLevelName({
 			...mockSavedGames()[0],
-			levels: []
+			levels: [],
 		})
 		expect(lastPlayedName).toBeUndefined()
 	})
 
 	it('finds the most recently started level', () => {
-		const lastPlayedName = userData.lastPlayedLevelName({
+		const lastPlayedName = UD.lastPlayedLevelName({
 			...mockSavedGames()[0],
 			levels: [
 				...mockLevels(),
@@ -263,37 +263,37 @@ describe('pushLevel', () => {
 	it('handles no active level', () => {
 		const dataNoLevel = {
 			savedGames: mockSavedGames(),
-			session: mockSession()
+			session: mockSession(),
 		}
-		const newLevel = userData.pushLevel(dataNoLevel, 'some-scene')
+		const newLevel = UD.pushLevel(dataNoLevel, 'some-scene')
 		expect(dataNoLevel.session.level).toBe(newLevel)
 		expect(dataNoLevel.session.levels[0]).toBe(newLevel)
-		expect(newLevel).toMatchObject<userData.LevelSession>({
+		expect(newLevel).toMatchObject<UD.LevelSession>({
 			sceneName: 'some-scene',
 			startedAt: expect.any(Number),
-			collectables: []
+			collectables: [],
 		})
 	})
 
 	it('stores the active scene and creates the new one', () => {
-		const startingLevel: userData.LevelSession = {
+		const startingLevel: UD.LevelSession = {
 			sceneName: 'starting-scene',
 			startedAt: 314,
-			collectables: mockCollectables()
+			collectables: mockCollectables(),
 		}
 		const dataWithLevel = {
 			savedGames: mockSavedGames(),
 			session: {
 				levels: [startingLevel],
-				level: startingLevel
-			}
+				level: startingLevel,
+			},
 		}
-		const newLevel = userData.pushLevel(dataWithLevel, 'some-scene')
+		const newLevel = UD.pushLevel(dataWithLevel, 'some-scene')
 		expect(dataWithLevel.session.level).toBe(newLevel)
-		expect(newLevel).toMatchObject<userData.LevelSession>({
+		expect(newLevel).toMatchObject<UD.LevelSession>({
 			sceneName: 'some-scene',
 			startedAt: expect.any(Number),
-			collectables: []
+			collectables: [],
 		})
 		expect(dataWithLevel.session.levels[0]).toBe(startingLevel)
 		expect(dataWithLevel.session.levels[1]).toBe(newLevel)
@@ -302,49 +302,127 @@ describe('pushLevel', () => {
 
 describe('peekLevelName', () => {
 	it('handles empty list with defaults', () => {
-		const dataNoLevels: userData.UserData = {
+		const dataNoLevels: UD.UserData = {
 			savedGames: [],
 			session: {
 				levels: [],
 				level: undefined,
-				savedGame: mockSavedGames()[0]
-			}
+				savedGame: mockSavedGames()[0],
+			},
 		}
-		expect(userData.peekLevelName(dataNoLevels)).toEqual('')
-		expect(userData.peekLevelName(dataNoLevels, 'the-default')).toEqual('the-default')
-		expect(userData.peekLevelName(
-			dataNoLevels, 'the-default', 99
+		expect(UD.peekLevelName(dataNoLevels)).toEqual('')
+		expect(UD.peekLevelName(dataNoLevels, 'the-default')).toEqual('the-default')
+		expect(UD.peekLevelName(
+			dataNoLevels, 'the-default', 99,
 		)).toEqual('the-default')
 	})
 
 	it('returns the entry at the right depth', () => {
-		const dataWithLevel: userData.UserData = {
+		const dataWithLevel: UD.UserData = {
 			savedGames: [],
 			session: {
 				levels: [
 					{
 						sceneName: 'the-first-level',
 						startedAt: 101,
-						collectables: []
+						collectables: [],
 					},
 					{
 						sceneName: 'the-last-level',
 						startedAt: 271,
-						collectables: []
-					}
+						collectables: [],
+					},
 				],
 				level: undefined,
-				savedGame: mockSavedGames()[0]
-			}
+				savedGame: mockSavedGames()[0],
+			},
 		}
-		expect(userData.peekLevelName(dataWithLevel)).toEqual('the-last-level')
-		expect(userData.peekLevelName(dataWithLevel, 'the-default')).toEqual('the-last-level')
-		expect(userData.peekLevelName(
-			dataWithLevel, 'the-default', 1
+		expect(UD.peekLevelName(dataWithLevel)).toEqual('the-last-level')
+		expect(UD.peekLevelName(dataWithLevel, 'the-default')).toEqual('the-last-level')
+		expect(UD.peekLevelName(
+			dataWithLevel, 'the-default', 1,
 		)).toEqual('the-first-level')
-		expect(userData.peekLevelName(
-			dataWithLevel, 'the-default', 99
+		expect(UD.peekLevelName(
+			dataWithLevel, 'the-default', 99,
 		)).toEqual('the-default')
 	})
 })
 
+describe('collect', () => {
+	it('adds the collectable to the level session', () => {
+		const levelWithoutCollectable: UD.LevelSession = {
+			collectables: [],
+			sceneName: 'L_collecty',
+			startedAt: 1,
+		}
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [levelWithoutCollectable],
+				level: levelWithoutCollectable,
+			},
+		}
+		const collectable = UD.collect(data, 'tasty-cheese')
+		expect(collectable).toEqual({
+			id: 'tasty-cheese',
+			collectedAt: expect.any(Number),
+		})
+	})
+
+	it('returns the an already collecte item from the level', () => {
+		const theCheese = {
+			id: 'tasty-cheese',
+			collectedAt: 420,
+		}
+		const levelWithCollectable: UD.LevelSession = {
+			collectables: [theCheese],
+			sceneName: 'L_collecty',
+			startedAt: 1,
+			completedAt: 500,
+		}
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [
+					...mockLevels(),
+					levelWithCollectable,
+				],
+				level: levelWithCollectable,
+			},
+		}
+		const collectable = UD.collect(data, 'tasty-cheese')
+		expect(collectable).toEqual(theCheese)
+	})
+
+	it('ignores items for incomplete levels', () => {
+		const theCheese = {
+			id: 'tasty-cheese',
+			collectedAt: 420,
+		}
+		const levelWithCollectable: UD.LevelSession = {
+			collectables: [
+				...mockCollectables(),
+				theCheese,
+			],
+			sceneName: 'L_collecty',
+			startedAt: 1,
+		}
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [levelWithCollectable],
+				level: {
+					sceneName: 'L_collecty',
+					collectables: [],
+					startedAt: 1337,
+				},
+			},
+		}
+		const collectable = UD.collect(data, 'tasty-cheese')
+		expect(collectable).toEqual({
+			id: 'tasty-cheese',
+			collectedAt: expect.any(Number),
+		})
+		expect(collectable?.collectedAt).not.toEqual(theCheese.collectedAt)
+	})
+})

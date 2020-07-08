@@ -23545,7 +23545,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.477
+        "zoomFactor": 1.597
       },
       "objectsGroups": [],
       "variables": [],
@@ -27580,7 +27580,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.741
+        "zoomFactor": 1.693
       },
       "objectsGroups": [],
       "variables": [],
@@ -95832,7 +95832,7 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "const vars = runtimeScene.getVariables()\r\nconst collectableId = eventsFunctionContext.getArgument('CollectableId')\r\nif (!collectableId) {\r\n    global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n    return \r\n}\r\nglobal.ssangervasi.srsObjs.pushCollectable(vars)\r\n",
+              "inlineCode": "const collectableId = eventsFunctionContext.getArgument('CollectableId')\r\nif (!collectableId) {\r\n    global.ssangervasi.error('Invalid collectable id', { collectableId })\r\n    return \r\n}\r\n\r\nconst UD = global.ssangervasi.userData\r\nconst userData = global.ssangervasi.userDataInstance\r\n",
               "parameterObjects": "",
               "useStrict": true
             },

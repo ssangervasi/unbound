@@ -82,7 +82,7 @@ export const resumeGame = (userData: UserData, createdAt?: number): SavedGame | 
 	saveGame(userData)
 	const previousSave =
 		createdAt
-			? userData.savedGames.find(s => s.createdAt == createdAt)
+			? userData.savedGames.find(s => s.createdAt === createdAt)
 			: maxBy(userData.savedGames, (s) => s.updatedAt)
 	if (!previousSave) {
 		return null
@@ -115,7 +115,7 @@ export const lastPlayedLevelName = (savedGame: SavedGame) =>
 
 export const maxBy = <T, V>(
 	collection: T[],
-	callback: (entry: T, index: number) => V
+	callback: (entry: T, index: number) => V,
 ): T | undefined => {
 	let maxEntry: T | undefined = undefined
 	let maxCandidate: V | undefined = undefined
@@ -133,7 +133,7 @@ export const pushLevel = ({ session }: UserData, sceneName: string): LevelSessio
 	session.level = {
 		sceneName,
 		startedAt: Date.now(),
-		collectables: []
+		collectables: [],
 	}
 	session.levels.push(session.level)
 	return session.level
@@ -142,7 +142,7 @@ export const pushLevel = ({ session }: UserData, sceneName: string): LevelSessio
 export const peekLevelName = (
 	{ session: { levels } }: UserData,
 	defaultName = '',
-	depth = 0
+	depth = 0,
 ): string => {
 	const index = levels.length - 1 - depth
 	if (index < 0) {
@@ -162,6 +162,41 @@ export const completeLevel = ({ session }: UserData): LevelSession | null => {
 }
 
 export const isLevel = (sceneName: string): boolean => sceneName.startsWith('L_')
+
+export const collect = (
+	userData: UserData,
+	collectableId: string,
+): Collectable | null => {
+	const { session: { level } } = userData
+	if (!level) {
+		return null
+	}
+	const existingCollectable = findCollectable(userData, collectableId)
+	if (existingCollectable) {
+		return existingCollectable
+	}
+	const newCollectable = {
+		id: collectableId,
+		collectedAt: Date.now(),
+	}
+	level.collectables.push(newCollectable)
+	return newCollectable
+}
+
+export const findCollectable = (
+	{ session }: UserData,
+	collectableId: string,
+): Collectable | undefined => {
+	const existingCollectables =
+		session.levels.filter(
+			l => Boolean(l.completedAt),
+		).map(
+			l => l.collectables.find(
+				c => c.id === collectableId,
+			),
+		).filter((c): c is Collectable => c !== undefined)
+	return existingCollectables[0]
+}
 
 declare var global: {
 	exports: {}
