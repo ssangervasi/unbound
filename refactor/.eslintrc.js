@@ -20,6 +20,7 @@ module.exports = {
 	},
 	plugins: ["@typescript-eslint"],
 	rules: {
+		"comma-dangle": ["error", "always-multiline"],
 		indent: ["error", "tab"],
 		"max-len": [
 			"error",
@@ -27,7 +28,7 @@ module.exports = {
 				code: 100,
 			},
 		],
-		"function-paren-newline": ["error", { minItems: 3 }],
+		"function-paren-newline": ["error", "consistent"],
 		"linebreak-style": ["error", "unix"],
 		quotes: ["error", "single", { avoidEscape: true }],
 		"no-unused-vars": [
@@ -40,6 +41,7 @@ module.exports = {
 				args: "none",
 			},
 		],
+		eqeqeq: ["error", "smart"],
 		semi: "off",
 		"@typescript-eslint/semi": ["error", "never"],
 		"@typescript-eslint/array-type": ["error", { default: "array-simple" }],

@@ -10,11 +10,11 @@ export interface RefactorResult {
 }
 
 export const refactor = (inPath: string,
-	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null,): RefactorResult | null => {
+	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null): RefactorResult | null => {
 	const projectPath = path.resolve(inPath)
 	const backupPath = path.join(path.dirname(projectPath),
 		`backup-${Date.now()}.${path.basename(projectPath)}`)
-	
+
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
 	const result = produce(project, callback)
 	if (result === null) {
@@ -23,18 +23,18 @@ export const refactor = (inPath: string,
 
 	fs.copyFileSync(projectPath, backupPath)
 	fs.writeFileSync(projectPath, JSON.stringify(
-		result, null, 2
+		result, null, 2,
 	))
 
 	return {
 		projectPath,
-		backupPath
+		backupPath,
 	}
 }
 
 export const transformInstances = (
 	project: Gd.GdProject,
-	callback: (gdInst: Gd.GdInstance) => Gd.GdInstance | null,
+	callback: (gdInst: Gd.GdInstance) => Gd.GdInstance | null | void,
 	namePattern?: RegExp,
 ) => {
 	project.layouts.forEach(gdLayout => {
@@ -48,9 +48,11 @@ export const transformInstances = (
 			}
 
 			const result = produce(gdInst, callback)
-			if (result !== null) {
-				transforms.push(result)
+			// returning null removes the object.
+			if (result === null) {
+				return
 			}
+			transforms.push(result)
 		})
 
 		gdLayout.instances = transforms
