@@ -37749,7 +37749,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.649
+        "zoomFactor": 2.033
       },
       "objectsGroups": [],
       "variables": [],
@@ -37762,8 +37762,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 214,
-          "y": 404,
+          "x": 560,
+          "y": 460,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -37957,8 +37957,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 410,
-          "y": 50,
+          "x": 560,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -37977,67 +37977,7 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 460,
-          "y": 50,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 460,
-          "y": 100,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 690,
-          "y": 390,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 510,
+          "x": 360,
           "y": 100,
           "zOrder": 1,
           "numberProperties": [
@@ -38058,7 +37998,67 @@
           "name": "Tile",
           "width": 50,
           "x": 310,
-          "y": 50,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 610,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 260,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 610,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -38097,8 +38097,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 373,
-          "y": 404,
+          "x": 323,
+          "y": 405,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -38137,8 +38137,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 520,
-          "y": 270,
+          "x": 570,
+          "y": 400,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -38162,7 +38162,27 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 310,
+          "x": 610,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 610,
           "y": 150,
           "zOrder": 1,
           "numberProperties": [
@@ -38182,28 +38202,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 310,
-          "y": 100,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 370,
-          "y": 280,
+          "x": 560,
+          "y": 200,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -38307,8 +38307,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 510,
-          "y": 200,
+          "x": 610,
+          "y": 250,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -38402,7 +38402,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 560,
+          "x": 690,
           "y": 100,
           "zOrder": 100,
           "numberProperties": [],
@@ -38567,7 +38567,7 @@
           "locked": false,
           "name": "Obstacle",
           "width": 10,
-          "x": 610,
+          "x": 660,
           "y": 300,
           "zOrder": 100,
           "numberProperties": [],
@@ -38708,47 +38708,47 @@
           "name": "Tile",
           "width": 50,
           "x": 210,
-          "y": 190,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 260,
-          "y": 150,
-          "zOrder": 1,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 50,
-          "layer": "",
-          "locked": false,
-          "name": "Tile",
-          "width": 50,
-          "x": 260,
           "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 610,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 460,
+          "y": 150,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -38807,8 +38807,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 210,
-          "y": 280,
+          "x": 410,
+          "y": 100,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -38867,8 +38867,8 @@
           "locked": false,
           "name": "Tile",
           "width": 50,
-          "x": 720,
-          "y": 520,
+          "x": 610,
+          "y": 400,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -39141,7 +39141,7 @@
           "layer": "",
           "locked": false,
           "name": "Obstacle",
-          "width": 170,
+          "width": 220,
           "x": 450,
           "y": 500,
           "zOrder": 100,
@@ -39337,6 +39337,106 @@
           "locked": false,
           "name": "Lapse",
           "width": 32,
+          "x": 390,
+          "y": 220,
+          "zOrder": 219,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 570,
+          "y": 160,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Up"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 510,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 560,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 460,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
           "x": 519,
           "y": 414,
           "zOrder": 219,
@@ -39368,6 +39468,186 @@
               "value": "Up"
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 460,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 460,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 510,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 560,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 610,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 260,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 310,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 360,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 410,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -91073,20 +91353,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "srs_ctrl::Binder::handleBindable"
-                  },
-                  "parameters": [
-                    "Binder",
-                    "Binder",
-                    "Controls",
-                    "Bindable",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "srs_ctrl::Binder::handleCollision"
                   },
                   "parameters": [
@@ -91094,6 +91360,20 @@
                     "Binder",
                     "Clum",
                     "TopDownMovement",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "srs_ctrl::Binder::handleBindable"
+                  },
+                  "parameters": [
+                    "Binder",
+                    "Binder",
+                    "Controls",
+                    "Bindable",
                     ""
                   ],
                   "subInstructions": []
@@ -98540,6 +98820,67 @@
                                 "PC.TDMBehavior::Deceleration()"
                               ],
                               "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PCAccel",
+                                "=",
+                                "PC.TDMBehavior::Acceleration()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PrevX",
+                                "=",
+                                "PC.X()"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PrevY",
+                                "=",
+                                "PC.Y()"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PrevDist",
+                                "=",
+                                "PC.Distance(Object)"
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "events": []
@@ -98572,6 +98913,132 @@
                       "disabled": false,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "Object.Variable(PrevDist)",
+                            "<",
+                            "PC.Distance(Object)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "PC",
+                            "=",
+                            "Object.Variable(PrevX)",
+                            "=",
+                            "Object.Variable(PrevY)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PrevX",
+                            "=",
+                            "PC.X()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PrevY",
+                            "=",
+                            "PC.Y()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Object",
+                            "PrevDist",
+                            "=",
+                            "PC.Distance(Object)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "ToString(TimeFromStart()) + \", \" + ToString(PC.Distance(Object))",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": true,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "srs_utils::consoleLog"
+                          },
+                          "parameters": [
+                            "",
+                            "\"PC X Y: \" + ToString(PC.X()) + \", \" + ToString(PC.Y())",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
                         {
@@ -98584,6 +99051,19 @@
                             "TDMBehavior",
                             "=",
                             "100000"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::Acceleration"
+                          },
+                          "parameters": [
+                            "PC",
+                            "TDMBehavior",
+                            "=",
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -98656,6 +99136,19 @@
                         "TDMBehavior",
                         "=",
                         "Object.Variable(PCDecel)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::Acceleration"
+                      },
+                      "parameters": [
+                        "PC",
+                        "TDMBehavior",
+                        "=",
+                        "Object.Variable(PCAccel)"
                       ],
                       "subInstructions": []
                     }
