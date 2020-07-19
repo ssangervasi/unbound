@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 import * as Gd from 'gdevelop-js'
-import { produce } from 'immer'
+import * as immer from 'immer'
 
 export interface RefactorResult {
 	projectPath: string
@@ -16,7 +16,7 @@ export const refactor = (inPath: string,
 		`backup-${Date.now()}.${path.basename(projectPath)}`)
 
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
-	const result = produce(project, callback)
+	const result = immer.produce(project, callback)
 	if (result === null) {
 		return null
 	}
@@ -32,12 +32,17 @@ export const refactor = (inPath: string,
 	}
 }
 
+/**
+ * @param callback Mutate the object provided, or return null to delete it.
+ * @param namePattern If present, filters the instances to transform.
+ */
 export const transformInstances = (
 	project: Gd.GdProject,
-	callback: (gdInst: Gd.GdInstance) => Gd.GdInstance | null | void,
+	callback: (gdInst: Gd.GdInstance, gdLayout: Gd.GdLayout) => Gd.GdInstance | null | void,
 	namePattern?: RegExp,
 ) => {
 	project.layouts.forEach(gdLayout => {
+		const imLayout = immer.createDraft(gdLayout)
 		const originals = gdLayout.instances
 		const transforms: Gd.GdInstance[] = []
 		originals.forEach(gdInst => {
@@ -47,7 +52,10 @@ export const transformInstances = (
 				return
 			}
 
-			const result = produce(gdInst, callback)
+			const result = immer.produce(
+				gdInst,
+				(imInst: Gd.GdInstance) => callback(imInst, imLayout),
+			)
 			// returning null removes the object.
 			if (result === null) {
 				return

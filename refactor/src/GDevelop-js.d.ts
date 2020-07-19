@@ -21,14 +21,27 @@ declare module 'gdevelop-js' {
 		x: number
 		y: number
 		zOrder: number
-		numberProperties: any[]
-		stringProperties: any[]
-		initialVariables: any[]
+		numberProperties: Array<{
+			name: string
+			value: number
+		}>
+		stringProperties: Array<{
+			name: string
+			value: string
+		}>
+		initialVariables: Array<{
+			name: string
+			value: string
+		}>
 	}
 
 	export interface GdLayer {
-
+		name: string
+		visibility: boolean
+		cameras: GdCamera
 	}
+
+	export interface GdCamera { }
 
 	export type GdObjectType = 'Sprite' | 'TextObject::Text' | 'TiledSpriteObject::TiledSprite'
 

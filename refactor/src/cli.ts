@@ -16,6 +16,11 @@ const main = () => {
 			.command('motbl')
 			.action(moveObstaclesToBaseLayer),
 	)
+	commonOptions(
+		program
+			.command('haiku')
+			.action(checkHaikus),
+	)
 	program.parse(process.argv)
 }
 
@@ -58,6 +63,25 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 		},
 	)
 	console.log(result)
+}
+
+const checkHaikus = (cmd: Command) => {
+	refactor(
+		cmd.opts().path,
+		gdProject => {
+			transformInstances(
+				gdProject, (gdInst, gdLayout) => {
+					const idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
+					if (idVar) {
+						console.log('Has id var', idVar.value)
+					} else {
+						console.log('No id var', gdLayout.name)
+					}
+				}, /^Haiku$/,
+			)
+			return gdProject
+		},
+	)
 }
 
 main()
