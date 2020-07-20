@@ -4,20 +4,26 @@ import * as path from 'path'
 import * as Gd from 'gdevelop-js'
 import * as immer from 'immer'
 
+export interface RefactorOptions {
+	inPath: string
+	readOnly: boolean
+}
 export interface RefactorResult {
 	projectPath: string
 	backupPath: string
 }
 
-export const refactor = (inPath: string,
-	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null): RefactorResult | null => {
-	const projectPath = path.resolve(inPath)
+export const refactor = (
+	callback: (gdProject: Gd.GdProject) => Gd.GdProject | void | null,
+	options: RefactorOptions,
+): RefactorResult | null => {
+	const projectPath = path.resolve(options.inPath)
 	const backupPath = path.join(path.dirname(projectPath),
 		`backup-${Date.now()}.${path.basename(projectPath)}`)
 
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
 	const result = immer.produce(project, callback)
-	if (result === null) {
+	if (result === null || options.readOnly) {
 		return null
 	}
 
@@ -30,28 +36,6 @@ export const refactor = (inPath: string,
 		projectPath,
 		backupPath,
 	}
-}
-
-/**
- * @param callback Called with each instance.
- * @param namePattern If present, filters the instances to transform.
- */
-export const traverseInstances = (
-	project: Gd.GdProject,
-	callback: (gdInst: Gd.GdInstance, gdLayout: Gd.GdLayout) => void,
-	namePattern?: RegExp,
-): void => {
-	project.layouts.forEach(gdLayout => {
-		const imLayout = immer.createDraft(gdLayout)
-		gdLayout.instances.forEach(gdInst => {
-			const isMatch = (!namePattern) || namePattern.test(gdInst.name)
-			if (!isMatch) {
-				return
-			}
-			const imInst = immer.createDraft(gdInst)
-			callback(imInst, imLayout)
-		})
-	})
 }
 
 /**

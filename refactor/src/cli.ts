@@ -30,12 +30,15 @@ const commonOptions = (cmd: Command) => {
 		'Project path',
 		'./unbound.json',
 	)
+	cmd.option(
+		'-r --readonly',
+		'Read only - no edit or backup',
+	)
 	return cmd
 }
 
 const moveIndicators = (cmd: Command) => {
 	const result = refactor(
-		cmd.opts().path,
 		gdProject => {
 			transformInstances(
 				gdProject, (gdInst) => {
@@ -44,13 +47,16 @@ const moveIndicators = (cmd: Command) => {
 			)
 			return gdProject
 		},
+		{
+			inPath: cmd.opts().path,
+			readOnly: cmd.opts().readonly,
+		},
 	)
 	console.log(result)
 }
 
 const moveObstaclesToBaseLayer = (cmd: Command) => {
 	const result = refactor(
-		cmd.opts().path,
 		gdProject => {
 			transformInstances(
 				gdProject, (gdInst) => {
@@ -61,13 +67,16 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 			)
 			return gdProject
 		},
+		{
+			inPath: cmd.opts().path,
+			readOnly: cmd.opts().readonly,
+		},
 	)
 	console.log(result)
 }
 
 const checkHaikus = (cmd: Command) => {
 	refactor(
-		cmd.opts().path,
 		gdProject => {
 			const results: string[][] = []
 			transformInstances(
@@ -81,6 +90,10 @@ const checkHaikus = (cmd: Command) => {
 				}, /^Haiku$/,
 			)
 			console.log(results)
+		},
+		{
+			inPath: cmd.opts().path,
+			readOnly: true,
 		},
 	)
 }
