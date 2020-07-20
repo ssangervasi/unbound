@@ -1,10 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import * as immer from 'immer'
 
 import * as Gd from 'gdevelop-js'
-
-immer.enablePatches()
+import * as immer from 'immer'
 
 export interface RefactorResult {
 	projectPath: string
@@ -12,17 +10,14 @@ export interface RefactorResult {
 }
 
 export const refactor = (inPath: string,
-	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null | void): RefactorResult | null => {
+	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null): RefactorResult | null => {
 	const projectPath = path.resolve(inPath)
 	const backupPath = path.join(path.dirname(projectPath),
 		`backup-${Date.now()}.${path.basename(projectPath)}`)
 
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
-
-	const [result, patches] = immer.produceWithPatches(project, callback)
-	// Only write a new file and backup if the project has ben modified.
-	console.log('patches', patches)
-	if (result === null || (patches.length < 1)) {
+	const result = immer.produce(project, callback)
+	if (result === null) {
 		return null
 	}
 
@@ -38,6 +33,28 @@ export const refactor = (inPath: string,
 }
 
 /**
+ * @param callback Called with each instance.
+ * @param namePattern If present, filters the instances to transform.
+ */
+export const traverseInstances = (
+	project: Gd.GdProject,
+	callback: (gdInst: Gd.GdInstance, gdLayout: Gd.GdLayout) => void,
+	namePattern?: RegExp,
+): void => {
+	project.layouts.forEach(gdLayout => {
+		const imLayout = immer.createDraft(gdLayout)
+		gdLayout.instances.forEach(gdInst => {
+			const isMatch = (!namePattern) || namePattern.test(gdInst.name)
+			if (!isMatch) {
+				return
+			}
+			const imInst = immer.createDraft(gdInst)
+			callback(imInst, imLayout)
+		})
+	})
+}
+
+/**
  * @param callback Mutate the object provided, or return null to delete it.
  * @param namePattern If present, filters the instances to transform.
  */
@@ -46,6 +63,7 @@ export const transformInstances = (
 	callback: (gdInst: Gd.GdInstance, gdLayout: Gd.GdLayout) => Gd.GdInstance | null | void,
 	namePattern?: RegExp,
 ) => {
+
 	project.layouts.forEach(gdLayout => {
 		const imLayout = immer.createDraft(gdLayout)
 		const originals = gdLayout.instances
