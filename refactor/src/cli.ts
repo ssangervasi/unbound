@@ -69,17 +69,18 @@ const checkHaikus = (cmd: Command) => {
 	refactor(
 		cmd.opts().path,
 		gdProject => {
+			const results: string[][] = []
 			transformInstances(
 				gdProject, (gdInst, gdLayout) => {
 					const idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
 					if (idVar) {
-						console.log('Has id var', idVar.value)
+						results.push([gdLayout.name, idVar.value])
 					} else {
-						console.log('No id var', gdLayout.name)
+						results.push([gdLayout.name, 'None'])
 					}
 				}, /^Haiku$/,
 			)
-			return gdProject
+			console.log(results)
 		},
 	)
 }

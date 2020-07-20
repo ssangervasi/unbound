@@ -1,8 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import * as immer from 'immer'
 
 import * as Gd from 'gdevelop-js'
-import * as immer from 'immer'
+
+immer.enablePatches()
 
 export interface RefactorResult {
 	projectPath: string
@@ -10,14 +12,17 @@ export interface RefactorResult {
 }
 
 export const refactor = (inPath: string,
-	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null): RefactorResult | null => {
+	callback: (gdProject: Gd.GdProject) => Gd.GdProject | null | void): RefactorResult | null => {
 	const projectPath = path.resolve(inPath)
 	const backupPath = path.join(path.dirname(projectPath),
 		`backup-${Date.now()}.${path.basename(projectPath)}`)
 
 	const project: Gd.GdProject = JSON.parse(fs.readFileSync(projectPath).toString())
-	const result = immer.produce(project, callback)
-	if (result === null) {
+
+	const [result, patches] = immer.produceWithPatches(project, callback)
+	// Only write a new file and backup if the project has ben modified.
+	console.log('patches', patches)
+	if (result === null || (patches.length < 1)) {
 		return null
 	}
 
