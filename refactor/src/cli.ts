@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
 
-import { refactor, transformInstances } from './refactor'
+import { refactor, transformInstances, RefactorOptions } from './refactor'
 
 const main = () => {
 	const program = new Command()
@@ -37,6 +37,11 @@ const commonOptions = (cmd: Command) => {
 	return cmd
 }
 
+const getCommonOptions = (cmd: Command): RefactorOptions => ({
+	inPath: cmd.opts().path,
+	readOnly: cmd.opts().readonly,
+})
+
 const moveIndicators = (cmd: Command) => {
 	const result = refactor(
 		gdProject => {
@@ -47,10 +52,7 @@ const moveIndicators = (cmd: Command) => {
 			)
 			return gdProject
 		},
-		{
-			inPath: cmd.opts().path,
-			readOnly: cmd.opts().readonly,
-		},
+		getCommonOptions(cmd),
 	)
 	console.log(result)
 }
@@ -67,10 +69,7 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 			)
 			return gdProject
 		},
-		{
-			inPath: cmd.opts().path,
-			readOnly: cmd.opts().readonly,
-		},
+		getCommonOptions(cmd),
 	)
 	console.log(result)
 }
@@ -78,23 +77,24 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 const checkHaikus = (cmd: Command) => {
 	refactor(
 		gdProject => {
-			const results: string[][] = []
+			const before: string[][] = []
+			const after: string[][] = []
+			let haikuIndex = 0
 			transformInstances(
 				gdProject, (gdInst, gdLayout) => {
-					const idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
-					if (idVar) {
-						results.push([gdLayout.name, idVar.value])
-					} else {
-						results.push([gdLayout.name, 'None'])
+					let idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
+					if (!idVar) {
+						idVar = { name: 'Id', value: '' }
 					}
+					before.push([gdLayout.name, idVar.value])
+					idVar.value = `H_${haikuIndex.toString().padStart(2, '0')}`
+					haikuIndex += 1
 				}, /^Haiku$/,
 			)
-			console.log(results)
+			console.log('before', before)
+			console.log('after', after)
 		},
-		{
-			inPath: cmd.opts().path,
-			readOnly: true,
-		},
+		getCommonOptions(cmd),
 	)
 }
 
