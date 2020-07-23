@@ -18,8 +18,8 @@ const main = () => {
 	)
 	commonOptions(
 		program
-			.command('haiku')
-			.action(checkHaikus),
+			.command('haikus')
+			.action(assignHaikus),
 	)
 	program.parse(process.argv)
 }
@@ -74,7 +74,7 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 	console.log(result)
 }
 
-const checkHaikus = (cmd: Command) => {
+const assignHaikus = (cmd: Command) => {
 	refactor(
 		gdProject => {
 			const before: string[][] = []
@@ -85,10 +85,12 @@ const checkHaikus = (cmd: Command) => {
 					let idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
 					if (!idVar) {
 						idVar = { name: 'Id', value: '' }
+						gdInst.initialVariables.push(idVar)
 					}
 					before.push([gdLayout.name, idVar.value])
 					idVar.value = `H_${haikuIndex.toString().padStart(2, '0')}`
 					haikuIndex += 1
+					after.push([gdLayout.name, idVar.value])
 				}, /^Haiku$/,
 			)
 			console.log('before', before)
