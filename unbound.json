@@ -85495,8 +85495,8 @@
     {
       "b": 47,
       "disableInputWhenNotFocused": true,
-      "mangledName": "L_95C3_95Dimwit2",
-      "name": "L_C3_Dimwit2",
+      "mangledName": "L_95C3_95BlindSwordsman",
+      "name": "L_C3_BlindSwordsman",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -85516,7 +85516,7 @@
         "gridWidth": 5,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 2.08
+        "zoomFactor": 1.576
       },
       "objectsGroups": [],
       "variables": [],
@@ -85529,8 +85529,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 150,
-          "y": 410,
+          "x": 155,
+          "y": 405,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -85549,8 +85549,8 @@
           "locked": false,
           "name": "Binder",
           "width": 40,
-          "x": 150,
-          "y": 400,
+          "x": 155,
+          "y": 403,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -86694,8 +86694,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 150,
-          "y": 800,
+          "x": 945,
+          "y": 205,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -86714,8 +86714,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 150,
-          "y": 750,
+          "x": 945,
+          "y": 155,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -86974,8 +86974,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 150,
-          "y": 700,
+          "x": 945,
+          "y": 105,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -86994,8 +86994,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 200,
-          "y": 700,
+          "x": 995,
+          "y": 105,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87034,8 +87034,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 100,
-          "y": 650,
+          "x": 895,
+          "y": 55,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87094,8 +87094,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 200,
-          "y": 650,
+          "x": 995,
+          "y": 55,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87194,8 +87194,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 100,
-          "y": 750,
+          "x": 895,
+          "y": 155,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87214,8 +87214,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 100,
-          "y": 700,
+          "x": 895,
+          "y": 105,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87354,8 +87354,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 200,
-          "x": 930,
-          "y": 700,
+          "x": 985,
+          "y": 510,
           "zOrder": 300,
           "numberProperties": [],
           "stringProperties": [],
@@ -87369,8 +87369,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": -70,
-          "y": 400,
+          "x": 885,
+          "y": 465,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87414,8 +87414,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 100,
-          "y": 800,
+          "x": 895,
+          "y": 205,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87434,8 +87434,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 150,
-          "y": 650,
+          "x": 945,
+          "y": 55,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87594,8 +87594,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 450,
-          "y": 700,
+          "x": 1245,
+          "y": 105,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -87619,8 +87619,8 @@
           "locked": false,
           "name": "Darkness",
           "width": 50,
-          "x": 450,
-          "y": 650,
+          "x": 1245,
+          "y": 55,
           "zOrder": 300,
           "numberProperties": [
             {
@@ -88378,8 +88378,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": -60,
-          "y": 250,
+          "x": 390,
+          "y": -70,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -88863,8 +88863,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": -100,
-          "y": 100,
+          "x": 340,
+          "y": -70,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -89418,7 +89418,4480 @@
         },
         {
           "name": "LightingStatic",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "Effect",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "name": "LightingToggleOn",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "name": "LightingToggleOff",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Transition",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 0,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Bindable",
+          "type": "srs_ctrl::Bindable"
+        },
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Door",
+          "type": "srs_objs::Door"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "HiddenTiledSprite",
+          "type": "srs_objs::HiddenTiledSprite"
+        },
+        {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
+          "name": "Item",
+          "type": "srs_ctrl::Item"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        },
+        {
+          "name": "Upgrade",
+          "type": "srs_ctrl::Upgrade"
+        },
+        {
+          "name": "__effin_workaround__",
+          "type": "srs_utils::__effin_workaround__"
+        }
+      ]
+    },
+    {
+      "b": 47,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "L_95C3_95DarkChoice",
+      "name": "L_C3_DarkChoice",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 51,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 47,
+      "uiSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 5,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 5,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1.384
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Clum",
+          "width": 40,
+          "x": 352,
+          "y": 105,
+          "zOrder": 200,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 40,
+          "x": 352,
+          "y": 103,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Right"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 200,
+          "y": -100,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Down"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Controls",
+          "width": 0,
+          "x": 600,
+          "y": -33,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 610,
+          "layer": "",
+          "locked": true,
+          "name": "Tile",
+          "width": 810,
+          "x": -5,
+          "y": -5,
+          "zOrder": 0,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 370,
+          "x": 340,
+          "y": 90,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Unbound_Desc",
+          "width": 0,
+          "x": 575,
+          "y": 20,
+          "zOrder": 400,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Unbound_Val",
+          "width": 0,
+          "x": 745,
+          "y": 20,
+          "zOrder": 400,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 415,
+          "y": 455,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Up"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 150,
+          "y": -100,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Left"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 600,
+          "y": 300,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 550,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 500,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 350,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 90,
+          "y": 100,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "UI",
+          "locked": false,
+          "name": "ResetReminder",
+          "width": 74,
+          "x": 363,
+          "y": 530,
+          "zOrder": 400,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 550,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 37,
+          "layer": "",
+          "locked": false,
+          "name": "Curve",
+          "width": 29,
+          "x": 580,
+          "y": 200,
+          "zOrder": 206,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 650,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 550,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 350,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 500,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 300,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 350,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 200,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 700,
+          "y": 100,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 590,
+          "y": 160,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 320,
+          "x": 140,
+          "y": 500,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 215,
+          "y": 455,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Right"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Exit",
+          "width": 32,
+          "x": 260,
+          "y": 155,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 180,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 200,
+          "y": 210,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 200,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Toggle",
+          "width": 40,
+          "x": 655,
+          "y": 105,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 500,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 750,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -300,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -300,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 200,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 250,
+          "y": 400,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 300,
+          "y": 450,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -300,
+          "y": -50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -250,
+          "y": -50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -350,
+          "y": -100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 500,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 0,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -250,
+          "y": -100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -350,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -350,
+          "y": -50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 800,
+          "x": 0,
+          "y": 550,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -350,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -300,
+          "y": -100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1200,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "ClumEyes",
+          "width": 0,
+          "x": 596,
+          "y": -58,
+          "zOrder": 401,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "UI",
+          "locked": false,
+          "name": "PauseReminder",
+          "width": 37,
+          "x": 20,
+          "y": 20,
+          "zOrder": 218,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 610,
+          "layer": "Transition",
+          "locked": false,
+          "name": "Transition",
+          "width": 810,
+          "x": -5,
+          "y": -5,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
+          "x": 410,
+          "y": 360,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 400,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 650,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 500,
+          "y": 300,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 200,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 450,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
+          "x": 110,
+          "y": 160,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 650,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 500,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 650,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 615,
+          "y": 105,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Down"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingStatic",
+          "locked": false,
+          "name": "Darkness",
+          "width": 800,
+          "x": 0,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 665,
+          "y": 155,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Left"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 200,
+          "x": 200,
+          "y": 390,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1000,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1100,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 150,
+          "x": 50,
+          "y": 0,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 200,
+          "y": 140,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 140,
+          "y": 460,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 390,
+          "y": 350,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 440,
+          "y": 300,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 260,
+          "x": 340,
+          "y": 150,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 390,
+          "y": 340,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 440,
+          "y": 290,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 200,
+          "y": 200,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 450,
+          "y": 450,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 90,
+          "y": 450,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 550,
+          "y": 350,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 600,
+          "y": 310,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 550,
+          "y": 360,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 500,
+          "y": 410,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 110,
+          "x": 490,
+          "y": 240,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 490,
+          "y": 250,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 200,
+          "y": 100,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 340,
+          "y": 100,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 600,
+          "y": 100,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 600,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 600,
+          "y": 200,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 600,
+          "y": 250,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
+          "x": 360,
+          "y": 460,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
+          "x": 560,
+          "y": 310,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 100,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Tile",
+          "width": 50,
+          "x": 150,
+          "y": 150,
+          "zOrder": 1,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 450,
+          "y": 460,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 60,
+          "x": 500,
+          "y": 400,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 120,
+          "x": 90,
+          "y": 90,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "",
+          "locked": false,
+          "name": "Obstacle",
+          "width": 10,
+          "x": 300,
+          "y": 150,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -100,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 50,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": -100,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 100,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 300,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 500,
+          "x": 250,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 150,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ToggleName",
+              "value": "toggle"
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 150,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 200,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 250,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 300,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOff",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 500,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 300,
+          "x": 50,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 950,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 100,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -90,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 400,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 1150,
+          "y": 50,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 250,
+          "x": 500,
+          "y": 500,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 450,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 500,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 550,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 150,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 200,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 350,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 250,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 650,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 600,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 50,
+          "x": 700,
+          "y": 300,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 100,
+          "x": 650,
+          "y": 350,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 150,
+          "x": 600,
+          "y": 400,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 50,
+          "layer": "LightingToggleOn",
+          "locked": false,
+          "name": "Darkness",
+          "width": 200,
+          "x": 550,
+          "y": 450,
+          "zOrder": 300,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 40,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Binder",
+          "width": 25,
+          "x": 250,
+          "y": -100,
+          "zOrder": 100,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 3
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "Direction",
+              "value": "Up"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Objects",
+          "locked": false,
+          "name": "Lapse",
+          "width": 32,
+          "x": 160,
+          "y": 260,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Controls",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Bindable",
+              "type": "srs_ctrl::Bindable",
+              "BindLimit": 3
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            }
+          ],
+          "string": "Controls",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Desc",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bound:",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Bound_Val",
+          "smoothed": true,
+          "tags": "ui, text",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 30,
+          "color": {
+            "b": 252,
+            "g": 198,
+            "r": 227
+          }
+        },
+        {
+          "name": "FontTest",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "behaviors": [],
+          "content": {
+            "opacity": 255,
+            "fontFamily": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+            "color": "#000000",
+            "text": "Sometext",
+            "align": "left",
+            "visible": true,
+            "fontSize": "10",
+            "wordWrap": true
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "TODO",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "TODO: Add a secret here ^^",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "LevelWithControls"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Toggle::handleCollision"
+              },
+              "parameters": [
+                "Toggle",
+                "Toggle",
+                "Clum",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "srs_objs::Toggle::handleLayers"
+              },
+              "parameters": [
+                "Toggle",
+                "Toggle",
+                "\"LightingToggleOff\"",
+                "\"LightingToggleOn\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Objects",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "LightingStatic",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -108840,6 +113313,960 @@
       "disableInputWhenNotFocused": true,
       "mangledName": "H_9506",
       "name": "H_06",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1.12
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 600,
+          "layer": "",
+          "locked": false,
+          "name": "HaikuBackground",
+          "width": 800,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 642,
+          "layer": "Transition",
+          "locked": false,
+          "name": "Transition",
+          "width": 918,
+          "x": -61,
+          "y": -15,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Title",
+          "width": 0,
+          "x": 260,
+          "y": 115,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Verse",
+          "width": 0,
+          "x": 260,
+          "y": 230,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Signature",
+          "width": 0,
+          "x": 520,
+          "y": 445,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM",
+          "width": 0,
+          "x": -111,
+          "y": 172,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Pause",
+          "width": 0,
+          "x": -140,
+          "y": 210,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "HaikuBackground",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Haiku\\HaikuBackground.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            }
+          ],
+          "string": "Two",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Verse",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 60,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "a e i o u\n\ni o u, a e, u o\n\no e o e o",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Signature",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 0,
+              "CharactersPerSecond": 0,
+              "FullTime": 1
+            }
+          ],
+          "string": "- G",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SM",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine",
+              "Property": 0
+            }
+          ],
+          "string": "SM",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Pause",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StatePause",
+              "type": "srs_states::StatePause",
+              "Time": 2
+            }
+          ],
+          "string": "S_Pause",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "HaikuView"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Text",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Transition",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Door",
+          "type": "srs_objs::Door"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "HiddenTiledSprite",
+          "type": "srs_objs::HiddenTiledSprite"
+        },
+        {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
+          "name": "Item",
+          "type": "srs_ctrl::Item"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateMachine",
+          "type": "srs_states::StateMachine"
+        },
+        {
+          "name": "StatePause",
+          "type": "srs_states::StatePause"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        },
+        {
+          "name": "Upgrade",
+          "type": "srs_ctrl::Upgrade"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "H_9507",
+      "name": "H_07",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 1.12
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 600,
+          "layer": "",
+          "locked": false,
+          "name": "HaikuBackground",
+          "width": 800,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 642,
+          "layer": "Transition",
+          "locked": false,
+          "name": "Transition",
+          "width": 918,
+          "x": -61,
+          "y": -15,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Title",
+          "width": 0,
+          "x": 260,
+          "y": 115,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Verse",
+          "width": 0,
+          "x": 260,
+          "y": 230,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Signature",
+          "width": 0,
+          "x": 520,
+          "y": 445,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SM",
+          "width": 0,
+          "x": -111,
+          "y": 172,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "S_Pause",
+          "width": 0,
+          "x": -140,
+          "y": 210,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "HaikuBackground",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets\\Sprites\\Haiku\\HaikuBackground.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            }
+          ],
+          "string": "Two",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 60,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Verse",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 60,
+              "CharactersPerSecond": 0,
+              "FullTime": 0
+            }
+          ],
+          "string": "a e i o u\n\ni o u, a e, u o\n\no e o e o",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 25,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Signature",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "RescaledText",
+              "type": "srs_utils::RescaledText",
+              "ScaleFactor": 10
+            },
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StateText",
+              "type": "srs_states::StateText",
+              "WordsPerMinute": 0,
+              "CharactersPerSecond": 0,
+              "FullTime": 1
+            }
+          ],
+          "string": "- G",
+          "font": "Assets\\Fonts\\pixel-font\\Pixel-y14Y.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 128,
+            "g": 64,
+            "r": 10
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SM",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "StateMachine",
+              "type": "srs_states::StateMachine",
+              "Property": 0
+            }
+          ],
+          "string": "SM",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "S_Pause",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "State",
+              "type": "srs_states::State"
+            },
+            {
+              "name": "StatePause",
+              "type": "srs_states::StatePause",
+              "Time": 2
+            }
+          ],
+          "string": "S_Pause",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "HaikuView"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Text",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Transition",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Adjustment",
+              "name": "AlphaAdjustment",
+              "doubleParameters": {
+                "alpha": 1,
+                "blue": 0.6,
+                "brightness": 1,
+                "contrast": 1,
+                "gamma": 1,
+                "green": 1,
+                "red": 1,
+                "saturation": 2
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Binder",
+          "type": "srs_ctrl::Binder"
+        },
+        {
+          "name": "Clum",
+          "type": "srs_objs::Clum"
+        },
+        {
+          "name": "Door",
+          "type": "srs_objs::Door"
+        },
+        {
+          "name": "Exit",
+          "type": "srs_objs::Exit"
+        },
+        {
+          "name": "Haiku",
+          "type": "srs_objs::Haiku"
+        },
+        {
+          "name": "HiddenRegion",
+          "type": "srs_objs::HiddenRegion"
+        },
+        {
+          "name": "HiddenTiledSprite",
+          "type": "srs_objs::HiddenTiledSprite"
+        },
+        {
+          "name": "HoldKeyReminder",
+          "type": "srs_objs::HoldKeyReminder"
+        },
+        {
+          "name": "Item",
+          "type": "srs_ctrl::Item"
+        },
+        {
+          "name": "Obstacle",
+          "type": "srs_objs::Obstacle"
+        },
+        {
+          "name": "RescaledText",
+          "type": "srs_utils::RescaledText"
+        },
+        {
+          "name": "State",
+          "type": "srs_states::State"
+        },
+        {
+          "name": "StateMachine",
+          "type": "srs_states::StateMachine"
+        },
+        {
+          "name": "StatePause",
+          "type": "srs_states::StatePause"
+        },
+        {
+          "name": "StateText",
+          "type": "srs_states::StateText"
+        },
+        {
+          "name": "Toggle",
+          "type": "srs_objs::Toggle"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Transition",
+          "type": "srs_objs::Transition"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        },
+        {
+          "name": "Upgrade",
+          "type": "srs_ctrl::Upgrade"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "H_9508",
+      "name": "H_08",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
