@@ -11441,13 +11441,13 @@
         {
           "name": "Binder",
           "type": "srs_ctrl::Binder",
-          "Direction": "Key_Green/Grey"
+          "Direction": ""
         },
         {
           "name": "Item",
           "type": "srs_ctrl::Item",
           "Id": "Key_Green/Grey",
-          "Color": "Green/Grey"
+          "Color": ""
         }
       ],
       "animations": [
@@ -112003,8 +112003,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "L_95C4_95Eavesdrop2",
-      "name": "L_C4_Eavesdrop2",
+      "mangledName": "L_95C4_95Adoorbs",
+      "name": "L_C4_Adoorbs",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -112024,7 +112024,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.521
+        "zoomFactor": 1.185
       },
       "objectsGroups": [
         {
@@ -112103,8 +112103,8 @@
           "locked": false,
           "name": "Binder",
           "width": 25,
-          "x": 270,
-          "y": 150,
+          "x": 213,
+          "y": 555,
           "zOrder": 100,
           "numberProperties": [
             {
@@ -116969,7 +116969,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Objects",
+          "layer": "LightingStatic",
           "locked": false,
           "name": "CameraAnchor",
           "width": 0,
@@ -118213,8 +118213,8 @@
           "locked": false,
           "name": "Key",
           "width": 32,
-          "x": 410,
-          "y": 960,
+          "x": 260,
+          "y": 260,
           "zOrder": 110,
           "numberProperties": [
             {
@@ -118224,14 +118224,6 @@
           ],
           "stringProperties": [],
           "initialVariables": [
-            {
-              "name": "Id",
-              "value": "Key_Grey"
-            },
-            {
-              "name": "Direction",
-              "value": "Key_Grey"
-            },
             {
               "name": "Color",
               "value": "Grey"
@@ -118241,33 +118233,25 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 40,
           "layer": "Objects",
           "locked": false,
-          "name": "Key",
-          "width": 32,
-          "x": 1010,
-          "y": 210,
-          "zOrder": 110,
+          "name": "Binder",
+          "width": 25,
+          "x": 270,
+          "y": 150,
+          "zOrder": 100,
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 1
             }
           ],
           "stringProperties": [],
           "initialVariables": [
             {
-              "name": "Id",
-              "value": "Key_Grey"
-            },
-            {
               "name": "Direction",
-              "value": "Key_Grey"
-            },
-            {
-              "name": "Color",
-              "value": "Grey"
+              "value": "Down"
             }
           ]
         }
@@ -118673,7 +118657,7 @@
         },
         {
           "name": "UI",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -118808,7 +118792,7 @@
         "gridWidth": 10,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.621
+        "zoomFactor": 1.477
       },
       "objectsGroups": [
         {
@@ -118826,8 +118810,8 @@
           "locked": false,
           "name": "Clum",
           "width": 40,
-          "x": 580,
-          "y": 450,
+          "x": 80,
+          "y": 120,
           "zOrder": 200,
           "numberProperties": [
             {
@@ -121518,7 +121502,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "name": "Alert shake",
           "source": "",
@@ -121595,7 +121579,7 @@
         },
         {
           "name": "UI",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -127287,30 +127271,7 @@
                     "Bindable",
                     "Clum",
                     "TopDownMovement",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "srs_ctrl::Upgrade::handleCollision1"
-                  },
-                  "parameters": [
-                    "Upgrade",
-                    "Upgrade",
                     "Clum",
-                    "Controls",
-                    "Bindable",
                     ""
                   ],
                   "subInstructions": []
@@ -131971,21 +131932,11 @@
           "objectGroups": []
         },
         {
-          "description": "don't use",
-          "fullName": "don't use",
-          "functionType": "Action",
-          "name": "recycling",
-          "sentence": "don't use",
-          "events": [],
-          "parameters": [],
-          "objectGroups": []
-        },
-        {
           "description": "isItem",
           "fullName": "isItem",
           "functionType": "Condition",
           "name": "isItem",
-          "sentence": "isItem",
+          "sentence": "isItem _PARAM1_",
           "events": [
             {
               "disabled": false,
@@ -132024,9 +131975,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "GetArgumentAsString(\"Direction\")",
+                        "SubStr(GetArgumentAsString(\"Direction\"), 0, 4)",
                         "=",
-                        "\"Key_Grey\""
+                        "\"Key_\""
                       ],
                       "subInstructions": []
                     }
@@ -132459,21 +132410,6 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "Matching on direction = id, which yeah blah",
-                              "comment2": ""
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -132515,29 +132451,7 @@
                                   "subInstructions": []
                                 }
                               ],
-                              "events": [
-                                {
-                                  "disabled": false,
-                                  "folded": false,
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "inverted": false,
-                                        "value": "srs_utils::consoleLog"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "\"Controls dropping item\"",
-                                        ""
-                                      ],
-                                      "subInstructions": []
-                                    }
-                                  ],
-                                  "events": []
-                                }
-                              ]
+                              "events": []
                             }
                           ]
                         }
@@ -132754,7 +132668,7 @@
                               },
                               "parameters": [
                                 "PC",
-                                "PCBehavior",
+                                "TDMBehavior",
                                 "Object.VariableString(PressedDirection)"
                               ],
                               "subInstructions": []
@@ -132765,6 +132679,54 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "AlertPC",
+                        "=",
+                        "\"true\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_objs::Clum::alert"
+                      },
+                      "parameters": [
+                        "PC",
+                        "PCBehavior",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "AlertPC",
+                        "=",
+                        "\"false\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -132795,7 +132757,7 @@
                   "longDescription": "",
                   "name": "PC",
                   "optional": false,
-                  "supplementaryInformation": "",
+                  "supplementaryInformation": "Sprite",
                   "type": "objectList"
                 },
                 {
@@ -132803,9 +132765,19 @@
                   "defaultValue": "",
                   "description": "Top-down movement",
                   "longDescription": "",
-                  "name": "PCBehavior",
+                  "name": "TDMBehavior",
                   "optional": false,
                   "supplementaryInformation": "TopDownMovementBehavior::TopDownMovementBehavior",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "PCBehavior",
+                  "longDescription": "",
+                  "name": "PCBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_objs::Clum",
                   "type": "behavior"
                 }
               ],
@@ -133747,6 +133719,67 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "DirectionFor",
+              "fullName": "DirectionFor",
+              "functionType": "StringExpression",
+              "name": "DirectionFor",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(KeyToDir[GetArgumentAsString(\"Key\")])"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Bindable",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Key",
+                  "longDescription": "",
+                  "name": "Key",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -134422,17 +134455,24 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "If there are bindings available",
-                              "comment2": ""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "IsKeyValid",
+                                    "=",
+                                    "\"false\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             },
                             {
                               "disabled": false,
@@ -134442,12 +134482,13 @@
                                 {
                                   "type": {
                                     "inverted": false,
-                                    "value": "Egal"
+                                    "value": "srs_ctrl::Bindable::HasBinding"
                                   },
                                   "parameters": [
-                                    "0",
-                                    "<",
-                                    "BindableObject.BindableBehavior::UnboundCount()"
+                                    "BindableObject",
+                                    "BindableBehavior",
+                                    "LastPressedKey()",
+                                    ""
                                   ],
                                   "subInstructions": []
                                 }
@@ -134458,18 +134499,15 @@
                                   "disabled": false,
                                   "folded": false,
                                   "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
-                                  "actions": [
+                                  "conditions": [
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "srs_ctrl::Bindable::bind"
+                                        "value": "srs_ctrl::isTopDownDirection"
                                       },
                                       "parameters": [
-                                        "BindableObject",
-                                        "BindableBehavior",
-                                        "LastPressedKey()",
-                                        "Object.Behavior::Direction()",
+                                        "",
+                                        "BindableObject.BindableBehavior::DirectionFor(LastPressedKey())",
                                         ""
                                       ],
                                       "subInstructions": []
@@ -134477,12 +134515,27 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "srs_ctrl::Binder::bind"
+                                        "value": "srs_ctrl::isTopDownDirection"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Object.Behavior::Direction()",
+                                        ""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
                                       },
                                       "parameters": [
                                         "Object",
-                                        "Behavior",
-                                        ""
+                                        "IsKeyValid",
+                                        "=",
+                                        "\"true\""
                                       ],
                                       "subInstructions": []
                                     }
@@ -134494,37 +134547,37 @@
                             {
                               "disabled": false,
                               "folded": false,
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "If all bindings have been used",
-                              "comment2": ""
-                            },
-                            {
-                              "disabled": false,
-                              "folded": false,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
                                   "type": {
-                                    "inverted": false,
-                                    "value": "Egal"
+                                    "inverted": true,
+                                    "value": "srs_ctrl::Bindable::HasBinding"
                                   },
                                   "parameters": [
-                                    "BindableObject.BindableBehavior::UnboundCount()",
-                                    "<=",
-                                    "0"
+                                    "BindableObject",
+                                    "BindableBehavior",
+                                    "LastPressedKey()",
+                                    ""
                                   ],
                                   "subInstructions": []
                                 }
                               ],
-                              "actions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "IsKeyValid",
+                                    "=",
+                                    "\"true\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
                               "events": [
                                 {
                                   "disabled": false,
@@ -134538,7 +134591,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "Have to wait for a previously bound key to be pressed",
+                                  "comment": "If there are bindings available",
                                   "comment2": ""
                                 },
                                 {
@@ -134549,57 +134602,170 @@
                                     {
                                       "type": {
                                         "inverted": false,
-                                        "value": "srs_ctrl::Bindable::HasBinding"
+                                        "value": "Egal"
                                       },
                                       "parameters": [
-                                        "BindableObject",
-                                        "BindableBehavior",
-                                        "LastPressedKey()",
-                                        ""
+                                        "0",
+                                        "<",
+                                        "BindableObject.BindableBehavior::UnboundCount()"
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "ModVarObjetTxt"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "IsKeyValid",
+                                        "=",
+                                        "\"true\""
+                                      ],
+                                      "subInstructions": []
+                                    }
+                                  ],
+                                  "events": []
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "If all bindings have been used, have to wait for a previously bound key to be pressed",
+                                  "comment2": ""
+                                },
+                                {
+                                  "disabled": false,
+                                  "folded": false,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": false,
+                                        "value": "Egal"
+                                      },
+                                      "parameters": [
+                                        "BindableObject.BindableBehavior::UnboundCount()",
+                                        "<=",
+                                        "0"
                                       ],
                                       "subInstructions": []
                                     }
                                   ],
                                   "actions": [],
-                                  "events": [
-                                    {
-                                      "disabled": false,
-                                      "folded": false,
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "inverted": false,
-                                            "value": "srs_ctrl::Bindable::bind"
-                                          },
-                                          "parameters": [
-                                            "BindableObject",
-                                            "BindableBehavior",
-                                            "LastPressedKey()",
-                                            "Object.Behavior::Direction()",
-                                            ""
-                                          ],
-                                          "subInstructions": []
-                                        },
-                                        {
-                                          "type": {
-                                            "inverted": false,
-                                            "value": "srs_ctrl::Binder::bind"
-                                          },
-                                          "parameters": [
-                                            "Object",
-                                            "Behavior",
-                                            ""
-                                          ],
-                                          "subInstructions": []
-                                        }
-                                      ],
-                                      "events": []
-                                    }
-                                  ]
+                                  "events": []
                                 }
                               ]
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "IsKeyValid",
+                                    "=",
+                                    "\"true\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_ctrl::Bindable::bind"
+                                  },
+                                  "parameters": [
+                                    "BindableObject",
+                                    "BindableBehavior",
+                                    "LastPressedKey()",
+                                    "Object.Behavior::Direction()",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                },
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "srs_ctrl::Binder::bind"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    ""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "This won't work because the pc is locked in place and can't shake",
+                              "comment2": ""
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "IsKeyValid",
+                                    "=",
+                                    "\"false\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "BindableObject",
+                                    "AlertPC",
+                                    "=",
+                                    "\"true\""
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
                             }
                           ]
                         }
@@ -135585,7 +135751,7 @@
                           },
                           "parameters": [
                             "BindIndicator",
-                            "Object.Behavior::Direction()"
+                            "Object.Behavior::IndicatorAnimationName()"
                           ],
                           "subInstructions": []
                         }
@@ -136315,6 +136481,93 @@
                       },
                       "parameters": [
                         "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Binder",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "IndicatorAnimationName",
+              "fullName": "IndicatorAnimationName",
+              "functionType": "StringExpression",
+              "name": "IndicatorAnimationName",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "IndicatorAnimationName",
+                        "=",
+                        "\"0\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "IndicatorAnimationName",
+                        "=",
+                        "Object.Behavior::Direction()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "Object.VariableString(IndicatorAnimationName)"
                       ],
                       "subInstructions": []
                     }
@@ -137396,6 +137649,105 @@
                     }
                   ],
                   "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Binder integration",
+                  "comment2": ""
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Direction",
+                        "=",
+                        "Object.Behavior::Id()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Object",
+                        "IndicatorAnimationName",
+                        "=",
+                        "\"Key_\" + Object.Behavior::Color()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
                 }
               ],
               "parameters": [
@@ -138052,7 +138404,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "\"key opening door: \" + DoorObject.DoorBehavior::KeyId()",
+                                    "\"key opening door: \" + DoorObject.DoorBehavior::KeyMatcher()",
                                     ""
                                   ],
                                   "subInstructions": []
@@ -138110,7 +138462,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "DoorObject.DoorBehavior::KeyId() + \" door does not accept key \" + Object.Behavior::Id()",
+                                    "DoorObject.DoorBehavior::KeyMatcher() + \" door does not accept key \" + Object.Behavior::Id()",
                                     ""
                                   ],
                                   "subInstructions": []
@@ -138552,7 +138904,20 @@
                         "Object",
                         "Id",
                         "=",
-                        "Object.Behavior::PropertyId()"
+                        "\"Key_\" + ToString(Object.Behavior::PropertyIdCounter())"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "srs_ctrl::Item::SetPropertyIdCounter"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "+",
+                        "1"
                       ],
                       "subInstructions": []
                     }
@@ -139044,15 +139409,6 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "Item",
-              "type": "String",
-              "label": "Id: set instance variable to override",
-              "description": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "Id"
-            },
-            {
               "value": "",
               "type": "String",
               "label": "Color: set instance variable to override",
@@ -139060,6 +139416,15 @@
               "extraInformation": [],
               "hidden": false,
               "name": "Color"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "IdCounter"
             }
           ]
         }
@@ -150058,7 +150423,7 @@
                             "value": "StrEqual"
                           },
                           "parameters": [
-                            "Object.Behavior::KeyId()",
+                            "Object.Behavior::KeyMatcher()",
                             "=",
                             "KeyObject.ItemBehavior::Id()"
                           ],
@@ -150937,137 +151302,6 @@
               "objectGroups": []
             },
             {
-              "description": "KeyId",
-              "fullName": "KeyId",
-              "functionType": "StringExpression",
-              "name": "KeyId",
-              "sentence": "",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "Object",
-                        "KeyId",
-                        "=",
-                        "\"0\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "KeyId",
-                            "=",
-                            "Object.Behavior::PropertyKeyId()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "StrEqual"
-                          },
-                          "parameters": [
-                            "Object.Behavior::PropertyKeyId()",
-                            "=",
-                            "\"\""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjetTxt"
-                          },
-                          "parameters": [
-                            "Object",
-                            "KeyId",
-                            "=",
-                            "\"Key_\" + Object.Behavior::Color()"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SetReturnString"
-                      },
-                      "parameters": [
-                        "Object.VariableString(KeyId)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "Sprite",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "srs_objs::Door",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
               "description": "AcceptsKey",
               "fullName": "AcceptsKey",
               "functionType": "Condition",
@@ -151104,9 +151338,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "Object.Behavior::KeyId()",
+                        "KeyObject.ItemBehavior::Color()",
                         "=",
-                        "GetArgumentAsString(\"KeyId\")"
+                        "Object.Behavior::Color()"
                       ],
                       "subInstructions": []
                     }
@@ -151136,9 +151370,9 @@
                         "value": "StrEqual"
                       },
                       "parameters": [
-                        "\"Key_Rainbow\"",
+                        "KeyObject.ItemBehavior::Color()",
                         "=",
-                        "GetArgumentAsString(\"KeyId\")"
+                        "\"Rainbow\""
                       ],
                       "subInstructions": []
                     }
@@ -151182,12 +151416,22 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "KeyId",
+                  "description": "KeyObject",
                   "longDescription": "",
-                  "name": "KeyId",
+                  "name": "KeyObject",
                   "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "string"
+                  "supplementaryInformation": "Sprite",
+                  "type": "objectList"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "ItemBehavior",
+                  "longDescription": "",
+                  "name": "ItemBehavior",
+                  "optional": false,
+                  "supplementaryInformation": "srs_ctrl::Item",
+                  "type": "behavior"
                 }
               ],
               "objectGroups": []
@@ -151202,15 +151446,6 @@
               "extraInformation": [],
               "hidden": false,
               "name": "Color"
-            },
-            {
-              "value": "",
-              "type": "String",
-              "label": "KeyId: set instance variable to override. Defaults to \"Key_{Color}\"",
-              "description": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "KeyId"
             }
           ]
         }
