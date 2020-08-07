@@ -1,4 +1,4 @@
-import { dedent, dd } from './utils'
+import { dedent, dd, numToWord } from './utils'
 
 describe('dedent', () => {
 	it('should remove leading spaces', () => {
@@ -52,4 +52,12 @@ last line`,
 last line`,
 		)
 	})
+})
+
+
+describe('numToWord', () => {
+	expect(numToWord(0)).toEqual('zero')
+	expect(numToWord(12)).toEqual('twelve')
+	expect(numToWord(20)).toEqual('twenty')
+	expect(numToWord(21)).not.toEqual("I'm a lazy boy")
 })

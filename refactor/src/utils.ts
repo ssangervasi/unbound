@@ -34,3 +34,35 @@ export const dedent = (multilineStr: string): string => {
 export const dd = (...args: Parameters<(typeof String)['raw']>) => {
 	return dedent(String.raw(...args))
 }
+
+/**
+ * A very incomplete impl
+ */
+export const numToWord = (n: number) => (
+	NUM_WORDS[n + 1]
+)
+const NUM_WORDS = `
+	zero
+	one
+	two
+	three
+	four
+	five
+	six
+	seven
+	eight
+	nine
+
+	ten
+	eleven
+	twelve
+	thirteen
+	fourteen
+	fifteen
+	sixteen
+	seventeen
+	eighteen
+	nineteen
+	
+	twenty
+`.split(/\s+/)

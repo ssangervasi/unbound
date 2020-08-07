@@ -2,6 +2,7 @@
 import { Command } from 'commander'
 
 import { refactor, transformInstances, RefactorOptions } from './refactor'
+import { log } from './log'
 
 const main = () => {
 	const program = new Command()
@@ -47,14 +48,14 @@ const moveIndicators = (cmd: Command) => {
 		gdProject => {
 			transformInstances(
 				gdProject, (gdInst) => {
-					console.log(gdInst.name)
+					log(gdInst.name)
 				}, /BindIndicator/,
 			)
 			return gdProject
 		},
 		getCommonOptions(cmd),
 	)
-	console.log(result)
+	log(result)
 }
 
 const moveObstaclesToBaseLayer = (cmd: Command) => {
@@ -62,7 +63,7 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 		gdProject => {
 			transformInstances(
 				gdProject, (gdInst) => {
-					console.log(gdInst.name, gdInst.layer)
+					log(gdInst.name, gdInst.layer)
 					gdInst.layer = ''
 					gdInst.zOrder = 100
 				}, /Obstacle/,
@@ -71,7 +72,7 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 		},
 		getCommonOptions(cmd),
 	)
-	console.log(result)
+	log(result)
 }
 
 const assignHaikus = (cmd: Command) => {
@@ -80,6 +81,8 @@ const assignHaikus = (cmd: Command) => {
 			const before: string[][] = []
 			const after: string[][] = []
 			let haikuIndex = 0
+
+
 			transformInstances(
 				gdProject, (gdInst, gdLayout) => {
 					let idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
@@ -93,8 +96,8 @@ const assignHaikus = (cmd: Command) => {
 					after.push([gdLayout.name, idVar.value])
 				}, /^Haiku$/,
 			)
-			console.log('before', before)
-			console.log('after', after)
+			log('before', before)
+			log('after', after)
 		},
 		getCommonOptions(cmd),
 	)
