@@ -198,6 +198,22 @@ export const findCollectable = (
 	return existingCollectables[0]
 }
 
+export const findCollectables = (
+	{ session }: UserData,
+	idPattern: RegExp,
+): Collectable[] => {
+	const results: Collectable[] = []
+	session.levels.filter(
+		l => Boolean(l.completedAt),
+	).forEach(
+		l =>
+			l.collectables
+				.filter(c => idPattern.test(c.id))
+				.forEach(id => results.push(id)),
+	)
+	return results
+}
+
 declare var global: {
 	exports: {}
 	ssangervasi?: {

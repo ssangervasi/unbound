@@ -369,7 +369,7 @@ describe('collect', () => {
 		})
 	})
 
-	it('returns the an already collecte item from the level', () => {
+	it('returns the an already collected item from the level', () => {
 		const theCheese = {
 			id: 'tasty-cheese',
 			collectedAt: 420,
@@ -424,5 +424,50 @@ describe('collect', () => {
 			collectedAt: expect.any(Number),
 		})
 		expect(collectable?.collectedAt).not.toEqual(theCheese.collectedAt)
+	})
+})
+
+describe('findCollectables', () => {
+	it('gets em', () => {
+		const levelWithCollectable: UD.LevelSession = {
+			collectables: [
+				{
+					id: 'cheese_tasty',
+					collectedAt: 420,
+				},
+				{
+					id: 'poison_pill',
+					collectedAt: 314,
+				},
+				{
+					id: 'cheese_spicy',
+					collectedAt: 217,
+				},
+			],
+			sceneName: 'L_collecty',
+			startedAt: 1,
+			completedAt: 200,
+		}
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [
+					...mockLevels(),
+					levelWithCollectable,
+				],
+				level: levelWithCollectable,
+			},
+		}
+		const collectable = UD.findCollectables(data, /^cheese_/)
+		expect(collectable).toEqual([
+			{
+				id: 'cheese_tasty',
+				collectedAt: 420,
+			},
+			{
+				id: 'cheese_spicy',
+				collectedAt: 217,
+			},
+		])
 	})
 })
