@@ -46,15 +46,18 @@ export const transformInstances = (
 	project: Gd.GdProject,
 	callback: (gdInst: Gd.GdInstance, gdLayout: Gd.GdLayout) => Gd.GdInstance | null | void,
 	namePattern?: RegExp,
+	layoutPattern?: RegExp,
 ) => {
-
 	project.layouts.forEach(gdLayout => {
+		if (layoutPattern && !layoutPattern.test(gdLayout.name)) {
+			return
+		}
+
 		const imLayout = immer.createDraft(gdLayout)
 		const originals = gdLayout.instances
 		const transforms: Gd.GdInstance[] = []
 		originals.forEach(gdInst => {
-			const isMatch = (!namePattern) || namePattern.test(gdInst.name)
-			if (!isMatch) {
+			if (namePattern && !namePattern.test(gdInst.name)) {
 				transforms.push(gdInst)
 				return
 			}

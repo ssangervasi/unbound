@@ -2,7 +2,7 @@
 import { Command } from 'commander'
 
 import { refactor, transformInstances, RefactorOptions } from './refactor'
-import { log } from './log'
+import { log } from './utils'
 
 const main = () => {
 	const program = new Command()
@@ -82,7 +82,6 @@ const assignHaikus = (cmd: Command) => {
 			const after: string[][] = []
 			let haikuIndex = 0
 
-
 			transformInstances(
 				gdProject, (gdInst, gdLayout) => {
 					let idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
@@ -94,7 +93,9 @@ const assignHaikus = (cmd: Command) => {
 					idVar.value = `H_${haikuIndex.toString().padStart(2, '0')}`
 					haikuIndex += 1
 					after.push([gdLayout.name, idVar.value])
-				}, /^Haiku$/,
+				},
+				/^Haiku$/,
+				/^L_.+$/,
 			)
 			log('before', before)
 			log('after', after)
