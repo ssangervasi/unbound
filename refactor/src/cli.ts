@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
+import * as immer from 'immer'
 
-import { refactor, transformInstances, RefactorOptions } from './refactor'
+import * as Gd from 'gdevelop-js'
+import { refactor, transformInstances, RefactorOptions, transformLayouts } from './refactor'
 import { log } from './utils'
 
 const main = () => {
@@ -21,6 +23,11 @@ const main = () => {
 		program
 			.command('haikus')
 			.action(assignHaikus),
+	)
+	commonOptions(
+		program
+			.command('copy-layers <sourceScene> <destScene> <layerNames...>')
+			.action(copyLayers),
 	)
 	program.parse(process.argv)
 }
@@ -104,4 +111,49 @@ const assignHaikus = (cmd: Command) => {
 	)
 }
 
+const copyLayers = (sourceScene: string, destScene: string, layerNames: string[], cmd: Command) => {
+	refactor(
+		gdProject => {
+			const sourceLayers: Gd.GdLayer[] = []
+
+			transformLayouts(
+				gdProject,
+				gdLayout => {
+					console.debug('found source', gdLayout.name)
+					gdLayout
+						.layers
+						.filter(gdLayer => layerNames.includes(gdLayer.name))
+						.forEach(gdLayer => {
+							sourceLayers.push(Object.cloneDeep(gdLayer))
+						})
+				},
+				new RegExp(`^${sourceScene}$`),
+			)
+
+			console.debug('sourceLayers', JSON.stringify(sourceLayers))
+
+
+			transformLayouts(
+				gdProject,
+				gdLayout => {
+					console.debug('found dest', gdLayout.name)
+
+					sourceLayers.forEach(sourceLayer => {
+						const exists = gdLayout.layers.find(
+							layoutLayer => layoutLayer.name === sourceLayer.name,
+						)
+						if (exists) {
+							log(`Layer "${sourceLayer.name}" already exists in scene "${destScene}"`)
+							return
+						}
+
+						gdLayout.layers.push(sourceLayer)
+					})
+				},
+				new RegExp(`^${destScene}$`),
+			)
+		},
+		getCommonOptions(cmd),
+	)
+}
 main()

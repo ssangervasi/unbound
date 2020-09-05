@@ -76,3 +76,23 @@ export const transformInstances = (
 		gdLayout.instances = transforms
 	})
 }
+
+/**
+ * @param callback Mutate the object provided
+ */
+export const transformLayouts = (
+	project: Gd.GdProject,
+	callback: (gdLayout: Gd.GdLayout) => Gd.GdLayout | null | void,
+	layoutPattern?: RegExp,
+) => {
+	project.layouts.forEach(gdLayout => {
+		if (layoutPattern && !layoutPattern.test(gdLayout.name)) {
+			return
+		}
+		const result = immer.produce(gdLayout, callback)
+
+		if (result !== null) {
+			Object.assign(gdLayout, result)
+		}
+	})
+}
