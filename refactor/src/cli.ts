@@ -124,7 +124,7 @@ const copyLayers = (sourceScene: string, destScene: string, layerNames: string[]
 						.layers
 						.filter(gdLayer => layerNames.includes(gdLayer.name))
 						.forEach(gdLayer => {
-							sourceLayers.push(Object.cloneDeep(gdLayer))
+							sourceLayers.push(immer.current(gdLayer))
 						})
 				},
 				new RegExp(`^${sourceScene}$`),
