@@ -33,11 +33,13 @@ const mockSavedGames = (): UD.SavedGame[] => (
 			createdAt: 2,
 			updatedAt: 20,
 			levels: [mockLevels()[0]],
+			keyCounts: {},
 		},
 		{
 			createdAt: 100,
 			updatedAt: 200,
 			levels: mockLevels(),
+			keyCounts: {},
 		},
 	]
 )
@@ -128,7 +130,7 @@ describe('resumeGame', () => {
 			createdAt: 1,
 			updatedAt: 30,
 			levels: mockLevels(),
-			collectables: [],
+			keyCounts: {},
 		}
 		const existingData: UD.UserData = {
 			savedGames: [
@@ -136,20 +138,20 @@ describe('resumeGame', () => {
 					createdAt: 1,
 					updatedAt: 20,
 					levels: mockLevels(),
-					collectables: [],
+					keyCounts: {},
 				},
 				mostRecentSave,
 				{
 					createdAt: 1,
 					updatedAt: 10,
 					levels: mockLevels(),
-					collectables: [],
+					keyCounts: {},
 				},
 				{
 					createdAt: 1,
 					updatedAt: 1,
 					levels: mockLevels(),
-					collectables: [],
+					keyCounts: {},
 				},
 			],
 			session: {
@@ -178,6 +180,7 @@ describe('saveGame', () => {
 							collectables: [],
 						},
 					],
+					keyCounts: {},
 				},
 				levels: [
 					{
@@ -469,5 +472,17 @@ describe('findCollectables', () => {
 				collectedAt: 217,
 			},
 		])
+	})
+})
+
+
+describe('updateKeyCounts', () => {
+	it('defaults to zero', () => {
+		const data: UD.UserData = {
+			savedGames: [],
+			session: mockSession(),
+		}
+
+		UD.updateKeyCounts(data, { 'a': 1, 'b': 0, 'Lef'})
 	})
 })

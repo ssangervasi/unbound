@@ -13,9 +13,12 @@ export interface Session {
 
 export interface SavedGame {
 	levels: LevelSession[]
+	keyCounts: KeyCounts
 	createdAt: number
 	updatedAt: number
 }
+
+export type KeyCounts = Record<string, number>
 
 export interface LevelSession {
 	sceneName: string
@@ -35,7 +38,7 @@ export const createFromJSON = (userDataJSON: string): UserData => {
 	try {
 		parsed = JSON.parse(userDataJSON)
 	} catch (e) {
-		console.log('createFromJSON parse error:', { userDataJSON })
+		console.warn('createFromJSON parse error:', { userDataJSON })
 	}
 	if (isStoredData(parsed)) {
 		userData.savedGames = parsed.savedGames
@@ -69,6 +72,7 @@ export const newGame = (userData: UserData): SavedGame => {
 	const now = Date.now()
 	const savedGame = {
 		levels: [],
+		keyCounts: {},
 		createdAt: now,
 		updatedAt: now,
 	}
@@ -212,6 +216,19 @@ export const findCollectables = (
 				.forEach(id => results.push(id)),
 	)
 	return results
+}
+
+export const updateKeyCounts = (
+	{ session: { savedGame } }: UserData,
+	newCounts: KeyCounts,
+) => {
+	if (!savedGame) {
+		console.warn('Cannot udpate key counts without saved game.')
+		return
+	}
+	Object.entries(newCounts).forEach(([key, count]) => {
+		savedGame.keyCounts[key] = (savedGame.keyCounts[key] || 0) + count
+	})
 }
 
 declare var global: {
