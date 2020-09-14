@@ -56,7 +56,6 @@ const mockSession = (): UD.Session => (
 	{
 		savedGame: mockSavedGames()[1],
 		levels: [],
-		level: undefined,
 	}
 )
 
@@ -227,12 +226,35 @@ describe('saveGame', () => {
 					collectables: [],
 				},
 			],
+			keyCounts: {},
 		})
 		expect(data.session).toEqual({
 			level: undefined,
 			levels: savedGame?.levels,
 			savedGame,
 		})
+	})
+
+	it('adds the key counts to the save', () => {
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				keyCounts: {
+					'a': 1,
+					':': 12,
+				},
+				savedGame: {
+					createdAt: 1,
+					updatedAt: 5,
+					levels: [],
+					keyCounts: {},
+				},
+				levels: [],
+			},
+		}
+		const savedGame = UD.saveGame(data)
+		expect(savedGame).toBeTruthy()
+		expect(data.savedGames[0].keyCounts).toEqual({ 'a': 1, ':': 12 })
 	})
 })
 
@@ -475,14 +497,86 @@ describe('findCollectables', () => {
 	})
 })
 
-
-describe('updateKeyCounts', () => {
+describe('incrementKeyCount', () => {
 	it('defaults to zero', () => {
 		const data: UD.UserData = {
 			savedGames: [],
 			session: mockSession(),
 		}
 
-		UD.updateKeyCounts(data, { 'a': 1, 'b': 0, 'Lef'})
+		UD.incrementKeyCount(data, 'Left')
+
+		UD.incrementKeyCount(data, 'Right')
+		UD.incrementKeyCount(data, 'Right')
+
+		UD.incrementKeyCount(data, 'a')
+		UD.incrementKeyCount(data, 'a')
+		UD.incrementKeyCount(data, 'a')
+
+		UD.incrementKeyCount(data, 'z')
+		UD.incrementKeyCount(data, 'z')
+		UD.incrementKeyCount(data, 'z')
+		UD.incrementKeyCount(data, 'z')
+
+		expect(data.session.keyCounts).toEqual({
+			'Left': 1,
+			'Right': 2,
+			'a': 3,
+			'z': 4,
+		})
+	})
+
+	it('picks up previous values', () => {
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [],
+				keyCounts: {
+					'a': 9,
+					'Left': 100,
+					'?': 1,
+				},
+			},
+		}
+
+		UD.incrementKeyCount(data, 'Left')
+		UD.incrementKeyCount(data, 'a')
+		UD.incrementKeyCount(data, '?')
+
+		expect(data.session.keyCounts).toEqual({
+			'a': 10,
+			'Left': 101,
+			'?': 2,
+		})
+	})
+})
+
+describe('getTopKeys', () => {
+	it('returns keys in descending count order', () => {
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				levels: [],
+				keyCounts: {
+					'a': 9,
+					'Left': 100,
+					'?': 1,
+					'b': 2,
+					'c': 3,
+					'd': 4,
+					'Right': 50,
+				},
+			},
+		}
+
+		expect(UD.getTopKeys(data)).toEqual([
+			'Left',
+			'Right',
+			'a',
+			'd',
+			'c',
+			'b',
+			'?',
+		])
 	})
 })

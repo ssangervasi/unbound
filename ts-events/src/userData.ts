@@ -9,6 +9,7 @@ export interface Session {
 	savedGame?: SavedGame
 	levels: LevelSession[]
 	level?: LevelSession
+	keyCounts?: KeyCounts
 }
 
 export interface SavedGame {
@@ -104,6 +105,7 @@ export const saveGame = (userData: UserData): SavedGame | null => {
 
 	savedGame.updatedAt = Date.now()
 	savedGame.levels = [...userData.session.levels]
+	savedGame.keyCounts = { ...userData.session.keyCounts }
 
 	const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt)
 	if (index === -1) {
@@ -218,17 +220,24 @@ export const findCollectables = (
 	return results
 }
 
-export const updateKeyCounts = (
-	{ session: { savedGame } }: UserData,
-	newCounts: KeyCounts,
-) => {
-	if (!savedGame) {
-		console.warn('Cannot udpate key counts without saved game.')
-		return
+export const incrementKeyCount = (
+	{ session }: UserData,
+	key: string,
+): number | null => {
+	session.keyCounts = session.keyCounts || {}
+	session.keyCounts[key] = (session.keyCounts[key] || 0) + 1
+	return session.keyCounts[key]
+}
+
+export const getTopKeys = (
+	{ session: { keyCounts } }: UserData,
+): string[] => {
+	if (!keyCounts) {
+		return []
 	}
-	Object.entries(newCounts).forEach(([key, count]) => {
-		savedGame.keyCounts[key] = (savedGame.keyCounts[key] || 0) + count
-	})
+	const descendingEntries = Object.entries(keyCounts)
+		.sort(([_1, c1], [_2, c2]) => c2 - c1)
+	return descendingEntries.map(([k, _]) => k)
 }
 
 declare var global: {
