@@ -240,8 +240,8 @@ describe('saveGame', () => {
 			savedGames: [],
 			session: {
 				keyCounts: {
-					'a': 1,
-					':': 12,
+					69: 1,
+					420: 12,
 				},
 				savedGame: {
 					createdAt: 1,
@@ -254,7 +254,7 @@ describe('saveGame', () => {
 		}
 		const savedGame = UD.saveGame(data)
 		expect(savedGame).toBeTruthy()
-		expect(data.savedGames[0].keyCounts).toEqual({ 'a': 1, ':': 12 })
+		expect(data.savedGames[0].keyCounts).toEqual({ 69: 1, 420: 12 })
 	})
 })
 
@@ -504,25 +504,25 @@ describe('incrementKeyCount', () => {
 			session: mockSession(),
 		}
 
-		UD.incrementKeyCount(data, 'Left')
+		UD.incrementKeyCount(data, 70)
 
-		UD.incrementKeyCount(data, 'Right')
-		UD.incrementKeyCount(data, 'Right')
+		UD.incrementKeyCount(data, 71)
+		UD.incrementKeyCount(data, 71)
 
-		UD.incrementKeyCount(data, 'a')
-		UD.incrementKeyCount(data, 'a')
-		UD.incrementKeyCount(data, 'a')
+		UD.incrementKeyCount(data, 72)
+		UD.incrementKeyCount(data, 72)
+		UD.incrementKeyCount(data, 72)
 
-		UD.incrementKeyCount(data, 'z')
-		UD.incrementKeyCount(data, 'z')
-		UD.incrementKeyCount(data, 'z')
-		UD.incrementKeyCount(data, 'z')
+		UD.incrementKeyCount(data, 100)
+		UD.incrementKeyCount(data, 100)
+		UD.incrementKeyCount(data, 100)
+		UD.incrementKeyCount(data, 100)
 
 		expect(data.session.keyCounts).toEqual({
-			'Left': 1,
-			'Right': 2,
-			'a': 3,
-			'z': 4,
+			70: 1,
+			71: 2,
+			72: 3,
+			100: 4,
 		})
 	})
 
@@ -532,21 +532,21 @@ describe('incrementKeyCount', () => {
 			session: {
 				levels: [],
 				keyCounts: {
-					'a': 9,
-					'Left': 100,
-					'?': 1,
+					69: 9,
+					420: 100,
+					1: 1,
 				},
 			},
 		}
 
-		UD.incrementKeyCount(data, 'Left')
-		UD.incrementKeyCount(data, 'a')
-		UD.incrementKeyCount(data, '?')
+		UD.incrementKeyCount(data, 69)
+		UD.incrementKeyCount(data, 420)
+		UD.incrementKeyCount(data, 1)
 
 		expect(data.session.keyCounts).toEqual({
-			'a': 10,
-			'Left': 101,
-			'?': 2,
+			69: 10,
+			420: 101,
+			1: 2,
 		})
 	})
 })
@@ -558,25 +558,25 @@ describe('getTopKeys', () => {
 			session: {
 				levels: [],
 				keyCounts: {
-					'a': 9,
-					'Left': 100,
-					'?': 1,
-					'b': 2,
-					'c': 3,
-					'd': 4,
-					'Right': 50,
+					3: 9,
+					1: 100,
+					7: 1,
+					6: 2,
+					5: 3,
+					4: 4,
+					2: 50,
 				},
 			},
 		}
 
 		expect(UD.getTopKeys(data)).toEqual([
-			'Left',
-			'Right',
-			'a',
-			'd',
-			'c',
-			'b',
-			'?',
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
 		])
 	})
 })

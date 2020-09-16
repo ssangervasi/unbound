@@ -19,7 +19,7 @@ export interface SavedGame {
 	updatedAt: number
 }
 
-export type KeyCounts = Record<string, number>
+export type KeyCounts = Record<number, number>
 
 export interface LevelSession {
 	sceneName: string
@@ -222,22 +222,22 @@ export const findCollectables = (
 
 export const incrementKeyCount = (
 	{ session }: UserData,
-	key: string,
+	keyCode: number,
 ): number | null => {
 	session.keyCounts = session.keyCounts || {}
-	session.keyCounts[key] = (session.keyCounts[key] || 0) + 1
-	return session.keyCounts[key]
+	session.keyCounts[keyCode] = (session.keyCounts[keyCode] || 0) + 1
+	return session.keyCounts[keyCode]
 }
 
 export const getTopKeys = (
 	{ session: { keyCounts } }: UserData,
-): string[] => {
+): number[] => {
 	if (!keyCounts) {
 		return []
 	}
 	const descendingEntries = Object.entries(keyCounts)
 		.sort(([_1, c1], [_2, c2]) => c2 - c1)
-	return descendingEntries.map(([k, _]) => k)
+	return descendingEntries.map(([k, _]) => Number.parseInt(k, 10))
 }
 
 declare var global: {
