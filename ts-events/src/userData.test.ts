@@ -34,12 +34,14 @@ const mockSavedGames = (): UD.SavedGame[] => (
 			updatedAt: 20,
 			levels: [mockLevels()[0]],
 			keyCounts: {},
+			disabledKeys: [],
 		},
 		{
 			createdAt: 100,
 			updatedAt: 200,
 			levels: mockLevels(),
 			keyCounts: {},
+			disabledKeys: [],
 		},
 	]
 )
@@ -130,6 +132,7 @@ describe('resumeGame', () => {
 			updatedAt: 30,
 			levels: mockLevels(),
 			keyCounts: {},
+			disabledKeys: [],
 		}
 		const existingData: UD.UserData = {
 			savedGames: [
@@ -138,6 +141,7 @@ describe('resumeGame', () => {
 					updatedAt: 20,
 					levels: mockLevels(),
 					keyCounts: {},
+					disabledKeys: [],
 				},
 				mostRecentSave,
 				{
@@ -145,12 +149,14 @@ describe('resumeGame', () => {
 					updatedAt: 10,
 					levels: mockLevels(),
 					keyCounts: {},
+					disabledKeys: [],
 				},
 				{
 					createdAt: 1,
 					updatedAt: 1,
 					levels: mockLevels(),
 					keyCounts: {},
+					disabledKeys: [],
 				},
 			],
 			session: {
@@ -180,6 +186,7 @@ describe('saveGame', () => {
 						},
 					],
 					keyCounts: {},
+					disabledKeys: [],
 				},
 				levels: [
 					{
@@ -227,6 +234,7 @@ describe('saveGame', () => {
 				},
 			],
 			keyCounts: {},
+			disabledKeys: [],
 		})
 		expect(data.session).toEqual({
 			level: undefined,
@@ -248,6 +256,7 @@ describe('saveGame', () => {
 					updatedAt: 5,
 					levels: [],
 					keyCounts: {},
+					disabledKeys: [],
 				},
 				levels: [],
 			},
@@ -255,6 +264,27 @@ describe('saveGame', () => {
 		const savedGame = UD.saveGame(data)
 		expect(savedGame).toBeTruthy()
 		expect(data.savedGames[0].keyCounts).toEqual({ 69: 1, 420: 12 })
+	})
+
+	it('adds disabled keys to the save', () => {
+		const data: UD.UserData = {
+			savedGames: [],
+			session: {
+				disabledKeys: [420, 69],
+				savedGame: {
+					createdAt: 1,
+					updatedAt: 5,
+					levels: [],
+					keyCounts: {},
+					disabledKeys: [],
+				},
+				levels: [],
+				keyCounts: {},
+			},
+		}
+		const savedGame = UD.saveGame(data)
+		expect(savedGame).toBeTruthy()
+		expect(data.savedGames[0].disabledKeys).toEqual([420, 69])
 	})
 })
 

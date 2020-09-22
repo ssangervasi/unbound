@@ -10,11 +10,13 @@ export interface Session {
 	levels: LevelSession[]
 	level?: LevelSession
 	keyCounts?: KeyCounts
+	disabledKeys?: number[]
 }
 
 export interface SavedGame {
 	levels: LevelSession[]
 	keyCounts: KeyCounts
+	disabledKeys: number[]
 	createdAt: number
 	updatedAt: number
 }
@@ -74,6 +76,7 @@ export const newGame = (userData: UserData): SavedGame => {
 	const savedGame = {
 		levels: [],
 		keyCounts: {},
+		disabledKeys: [],
 		createdAt: now,
 		updatedAt: now,
 	}
@@ -106,6 +109,7 @@ export const saveGame = (userData: UserData): SavedGame | null => {
 	savedGame.updatedAt = Date.now()
 	savedGame.levels = [...userData.session.levels]
 	savedGame.keyCounts = { ...userData.session.keyCounts }
+	savedGame.disabledKeys = [...(userData.session.disabledKeys || [])]
 
 	const index = userData.savedGames.findIndex(s => s.createdAt === savedGame.createdAt)
 	if (index === -1) {
