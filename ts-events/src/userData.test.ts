@@ -40,8 +40,10 @@ const mockSavedGames = (): UD.SavedGame[] => (
 			createdAt: 100,
 			updatedAt: 200,
 			levels: mockLevels(),
-			keyCounts: {},
-			disabledKeys: [],
+			keyCounts: {
+				420: 200,
+			},
+			disabledKeys: [420],
 		},
 	]
 )

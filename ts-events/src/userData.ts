@@ -59,6 +59,8 @@ export const isStoredData = (maybeData: any): maybeData is StoredUserData =>
 			'levels',
 			'createdAt',
 			'updatedAt',
+			'keyCounts',
+			'disabledKeys',
 		].every((key) => typeof savedGame === 'object' && key in savedGame)
 	))
 
