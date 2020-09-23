@@ -95,8 +95,13 @@ export const resumeGame = (userData: UserData, createdAt?: number): SavedGame | 
 	if (!previousSave) {
 		return null
 	}
-	userData.session.savedGame = previousSave
-	userData.session.levels = [...previousSave.levels]
+
+	userData.session = {
+		savedGame: previousSave,
+		levels: [...previousSave.levels],
+		keyCounts: { ...previousSave.keyCounts },
+		disabledKeys: [...previousSave.disabledKeys],
+	}
 	return previousSave
 }
 
@@ -243,6 +248,31 @@ export const getTopKeys = (
 		.sort(([_1, c1], [_2, c2]) => c2 - c1)
 	return descendingEntries.map(([k, _]) => Number.parseInt(k, 10))
 }
+
+export const isDisabled = (
+	{ session: { disabledKeys } }: UserData,
+	key: number,
+): boolean => {
+	if (!disabledKeys) {
+		return false
+	}
+	return disabledKeys.includes(key)
+}
+
+export const disable = (
+	{ session }: UserData,
+	key: number,
+): number[] => {
+	if (!session.disabledKeys) {
+		session.disabledKeys = []
+	}
+	if (!session.disabledKeys.includes(key)) {
+		session.disabledKeys.push(key)
+	}
+	return session.disabledKeys
+}
+
+
 
 declare var global: {
 	exports: {}

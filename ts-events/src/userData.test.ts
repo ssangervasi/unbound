@@ -167,6 +167,43 @@ describe('resumeGame', () => {
 		expect(existingData.session.savedGame).toBe(resultSave)
 		expect(resultSave).toBe(mostRecentSave)
 	})
+
+	it('populates the session with save data', () => {
+		const savedGame = {
+			levels: mockLevels(),
+			keyCounts: {
+				420: 1,
+				69: 69,
+			},
+			disabledKeys: [
+				666,
+				42,
+			],
+			createdAt: 1,
+			updatedAt: 30,
+		}
+		const existingData: UD.UserData = {
+			savedGames: [savedGame],
+			session: {
+				levels: [],
+			},
+		}
+
+		UD.resumeGame(existingData)
+
+		expect(existingData.session).toEqual({
+			savedGame,
+			levels: savedGame.levels,
+			keyCounts: {
+				420: 1,
+				69: 69,
+			},
+			disabledKeys: [
+				666,
+				42,
+			],
+		})
+	})
 })
 
 describe('saveGame', () => {
@@ -608,5 +645,50 @@ describe('getTopKeys', () => {
 			6,
 			7,
 		])
+	})
+})
+
+describe('isDisabled', () => {
+	const data: UD.UserData = {
+		session: {
+			...mockSession(),
+			disabledKeys: [42, 666],
+		},
+		savedGames: [],
+	}
+
+	it('is true for a disabled key', () => {
+		expect(UD.isDisabled(data, 666)).toBe(true)
+	})
+
+	it('is false for a not-disabled key', () => {
+		expect(UD.isDisabled(data, 420)).toBe(false)
+	})
+})
+
+describe('disable', () => {
+	it('modifies the session', () => {
+		const data: UD.UserData = {
+			session: {
+				levels: mockLevels(),
+			},
+			savedGames: [],
+		}
+		UD.disable(data, 69)
+		expect(data.session.disabledKeys).toContain(69)
+	})
+
+	it('does not add duplicates', () => {
+		const data: UD.UserData = {
+			session: {
+				...mockSession(),
+				disabledKeys: [42, 666],
+			},
+			savedGames: [],
+		}
+
+		UD.disable(data, 666)
+		UD.disable(data, 42)
+		expect(data.session.disabledKeys).toEqual([42, 666])
 	})
 })
