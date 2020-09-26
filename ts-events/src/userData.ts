@@ -84,7 +84,7 @@ export const newGame = (userData: UserData): SavedGame => {
 	}
 
 	saveGame(userData)
-	userData.session.savedGame = savedGame
+	writeSession(userData, savedGame)
 	return savedGame
 }
 
@@ -98,13 +98,18 @@ export const resumeGame = (userData: UserData, createdAt?: number): SavedGame | 
 		return null
 	}
 
+	writeSession(userData, previousSave)
+	return previousSave
+}
+
+const writeSession = (userData: UserData, previousSave: SavedGame): Session => {
 	userData.session = {
 		savedGame: previousSave,
 		levels: [...previousSave.levels],
 		keyCounts: { ...previousSave.keyCounts },
 		disabledKeys: [...previousSave.disabledKeys],
 	}
-	return previousSave
+	return userData.session
 }
 
 export const saveGame = (userData: UserData): SavedGame | null => {

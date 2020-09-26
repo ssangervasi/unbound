@@ -48,11 +48,11 @@ const mockSavedGames = (): UD.SavedGame[] => (
 	]
 )
 
-const blankSaveMatcher = (resultSave: UD.SavedGame) => (
+const blankSaveMatcher = (resultSave?: UD.SavedGame) => (
 	{
 		levels: [],
 		createdAt: expect.any(Number),
-		updatedAt: resultSave.createdAt,
+		updatedAt: resultSave?.createdAt,
 	}
 )
 
@@ -204,6 +204,46 @@ describe('resumeGame', () => {
 				666,
 				42,
 			],
+		})
+	})
+})
+
+describe('newGame', () => {
+	it('populates the session with save data', () => {
+		const previousSave = {
+			levels: mockLevels(),
+			keyCounts: {
+				420: 1,
+				69: 69,
+			},
+			disabledKeys: [
+				666,
+				42,
+			],
+			createdAt: 1,
+			updatedAt: 30,
+		}
+		const existingData: UD.UserData = {
+			savedGames: [],
+			session: {
+				savedGame: previousSave,
+				levels: mockLevels(),
+				level: mockLevels()[0],
+				keyCounts: {
+					2: 4,
+					8: 16,
+				},
+				disabledKeys: [420, 69],
+			},
+		}
+
+		UD.newGame(existingData)
+
+		expect(existingData.session).toMatchObject({
+			savedGame: blankSaveMatcher(existingData.session.savedGame),
+			levels: [],
+			keyCounts: {},
+			disabledKeys: [],
 		})
 	})
 })
