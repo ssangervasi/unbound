@@ -275,6 +275,7 @@ export const disable = (
 	}
 	if (!session.disabledKeys.includes(key)) {
 		session.disabledKeys.push(key)
+		session.keyCounts = {}
 	}
 	return session.disabledKeys
 }

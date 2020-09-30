@@ -733,4 +733,18 @@ describe('disable', () => {
 		UD.disable(data, 42)
 		expect(data.session.disabledKeys).toEqual([42, 666])
 	})
+
+	it('resets the key counts', () => {
+		const data: UD.UserData = {
+			session: {
+				levels: mockLevels(),
+				keyCounts: {
+					69: 420,
+				},
+			},
+			savedGames: [],
+		}
+		UD.disable(data, 69)
+		expect(data.session.keyCounts).toEqual({})
+	})
 })
