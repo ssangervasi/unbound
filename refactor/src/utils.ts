@@ -66,3 +66,16 @@ const NUM_WORDS = `
 	
 	twenty
 `.split(/\s+/)
+
+export function pick<OI, K extends keyof OI>(obj: OI, ...paths: K[]): Pick<OI, K> {
+	const result = {} as Pick<OI, K>
+	const pathSet = new Set(paths)
+	Object.entries(obj).forEach(([path, value]) => {
+		const typedPath = path as K
+		if (pathSet.has(typedPath)) {
+			result[typedPath] = value
+		}
+		return result
+	})
+	return result
+}

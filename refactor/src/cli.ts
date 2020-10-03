@@ -4,7 +4,7 @@ import * as immer from 'immer'
 
 import * as Gd from 'gdevelop-js'
 import { refactor, transformInstances, RefactorOptions, transformLayouts } from './refactor'
-import { log } from './utils'
+import { log, pick } from './utils'
 
 const main = () => {
 	const program = new Command()
@@ -18,6 +18,11 @@ const main = () => {
 		program
 			.command('motbl')
 			.action(moveObstaclesToBaseLayer),
+	)
+	commonOptions(
+		program
+			.command('z-tidy')
+			.action(zTidy),
 	)
 	commonOptions(
 		program
@@ -36,7 +41,7 @@ const commonOptions = (cmd: Command) => {
 	cmd.option(
 		'-p --path <string>',
 		'Project path',
-		'./unbound.json',
+		'../unbound.json',
 	)
 	cmd.option(
 		'-r --readonly',
@@ -81,6 +86,26 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 	)
 	log(result)
 }
+
+const zTidy = (cmd: Command) => {
+	const result = refactor(
+		gdProject => {
+			transformInstances(
+				gdProject, (gdInst, gdLayout) => {
+					log(
+						gdLayout.name,
+						pick(gdInst, 'name', 'zOrder', 'layer'),
+					)
+					gdInst.zOrder = 100
+					gdInst.layer = 'Objects'
+				}, /Exit/,
+			)
+		},
+		getCommonOptions(cmd),
+	)
+	log(result)
+}
+
 
 const assignHaikus = (cmd: Command) => {
 	refactor(
