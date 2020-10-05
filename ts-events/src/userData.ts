@@ -280,6 +280,15 @@ export const disable = (
 	return session.disabledKeys
 }
 
+export const disabledCount = (
+	{ session: { disabledKeys } }: UserData,
+): number => {
+	if (!disabledKeys) {
+		return 0
+	}
+	return disabledKeys.length
+}
+
 
 
 declare var global: {
