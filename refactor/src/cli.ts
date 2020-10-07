@@ -131,6 +131,31 @@ const assignHaikus = (cmd: Command) => {
 			)
 			log('before', before)
 			log('after', after)
+
+			transformInstances(
+				gdProject, (gdInst) => {
+					const [levelName, idValue] = after.pop() || [undefined, undefined]
+					if (!(levelName && idValue)) {
+						return
+					}
+
+					let idVar = gdInst.initialVariables.find(({ name }) => name === 'Id')
+					if (!idVar) {
+						idVar = { name: 'Id', value: '' }
+						gdInst.initialVariables.push(idVar)
+					}
+					idVar.value = idValue
+
+					let levelVar = gdInst.initialVariables.find(({ name }) => name === 'SourceLevel')
+					if (!levelVar) {
+						levelVar = { name: 'SourceLevel', value: '' }
+						gdInst.initialVariables.push(levelVar)
+					}
+					levelVar.value = levelName
+				},
+				/^Haiku$/,
+				/^M_VictoryRoom$/,
+			)
 		},
 		getCommonOptions(cmd),
 	)
