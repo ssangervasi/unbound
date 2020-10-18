@@ -22,6 +22,7 @@ main() {
 build() {
   cd "$1" || exit "No build directory: $1" 
   cp "$BUILD_DIR"/patched.main.js ./main.js
+  cp "$BUILD_DIR"/icon.png ./icon.png
   electron-builder
 }
 
