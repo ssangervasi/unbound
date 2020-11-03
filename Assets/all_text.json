@@ -1,0 +1,855 @@
+[
+  {
+    "layer": "M_Main",
+    "texts": [
+      {
+        "name": "T_Title2",
+        "text": "U n b o u n d"
+      },
+      {
+        "name": "T_Title",
+        "text": "Unbound"
+      },
+      {
+        "name": "T_Opt_Start",
+        "text": "Start"
+      },
+      {
+        "name": "T_Opt_Load",
+        "text": "Load"
+      },
+      {
+        "name": "T_Opt_Exit",
+        "text": "Exit"
+      }
+    ]
+  },
+  {
+    "layer": "M_Pause",
+    "texts": [
+      {
+        "name": "T_Title",
+        "text": "Unbound"
+      },
+      {
+        "name": "T_Opt_Continue",
+        "text": "Continue"
+      },
+      {
+        "name": "T_Opt_Exit",
+        "text": "Exit"
+      },
+      {
+        "name": "T_Opt_Save",
+        "text": "Save"
+      },
+      {
+        "name": "T_Opt_Load",
+        "text": "Load"
+      }
+    ]
+  },
+  {
+    "layer": "M_VictoryRoom",
+    "texts": [
+      {
+        "name": "T_FriendInterrupt_01",
+        "text": "i knew you would not listen...\n\nfine by me, as long as you are staying..."
+      },
+      {
+        "name": "T_Friend_01",
+        "text": "i see you want to leave me..."
+      },
+      {
+        "name": "T_Friend_02",
+        "text": "i knew you would...\n\nTHIS WHOLE TIME\n\ni knew this would happen"
+      },
+      {
+        "name": "T_Friend_03",
+        "text": "you didn't come here to listen to me...\n\noh you'll listen enough steal a thing or two...\n\nbut that's not listening...\n\nlistening is the one thing i can't teach you"
+      },
+      {
+        "name": "T_Friend_04",
+        "text": "so i suppose i have to let you go...\n\nAFTER I GIVE IT ONE MORE TRY!"
+      },
+      {
+        "name": "T_Friend_Rant",
+        "text": "so listen up because this is the last thing you have to do... you need to listen to me... and i mean listen, really listen, like you care... because maybe if you pretend to care enough you will start to TRULY care... and if you don't listen, well, i'll have to keep talking until you have no choice... nothing left to do but listen to me... stay with me... no other choice, except, i guess, reading the notes that HE left lying around... "
+      },
+      {
+        "name": "T_Meany_01",
+        "text": "HEY. This is my space."
+      },
+      {
+        "name": "T_Meany_02",
+        "text": "This is where I come to work on\nthose poems you like so much."
+      },
+      {
+        "name": "T_Meany_03",
+        "text": "You don't have to be shy\nabout it. You went searching\nfor all of them.\n"
+      },
+      {
+        "name": "T_Meany_04",
+        "text": "That's why I let you in here. To let\nyou see where the MAGIC happens."
+      },
+      {
+        "name": "T_Meany_05",
+        "text": "Yeah, I'm a pretty sensitive\nguy, really. I just gave you a\nhard time to toughen you up."
+      },
+      {
+        "name": "T_Meany_06",
+        "text": "It means a LOT to me that you\nstayed to enjoy my poetry when\nyou could have just walked out\nthe final exit."
+      },
+      {
+        "name": "T_Meany_07",
+        "text": "Wait, what?"
+      },
+      {
+        "name": "T_Meany_08",
+        "text": "They locked the door on you?"
+      },
+      {
+        "name": "T_Meany_09",
+        "text": "Ah, well, some people bind themselves to worthless things."
+      },
+      {
+        "name": "T_Meany_10",
+        "text": "No offense."
+      },
+      {
+        "name": "T_Meany_11",
+        "text": "But YOU'RE NOT POETRY, are you?"
+      },
+      {
+        "name": "T_Meany_12",
+        "text": "Anyway"
+      },
+      {
+        "name": "T_Meany_13",
+        "text": "OFF YOU GO"
+      },
+      {
+        "name": "T_Meany_14",
+        "text": "Goodbye, you little fool.\nTry not to forget anything."
+      }
+    ]
+  },
+  {
+    "layer": "M_LevelSelect",
+    "texts": [
+      {
+        "name": "T_Thanks",
+        "text": "thanks for playing this first chapter"
+      },
+      {
+        "name": "T_Alpha",
+        "text": "ALPHA"
+      },
+      {
+        "name": "T_MoreComing",
+        "text": "ok, fine...\nwell there's gonna be more mechanics\nnow that you can remember all directions..."
+      },
+      {
+        "name": "T_Yelling",
+        "text": "AND MORE\nYELLING!"
+      },
+      {
+        "name": "T_Yeah",
+        "text": "yeah, what's that about..."
+      }
+    ]
+  },
+  {
+    "layer": "S_Into",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_MeetClum",
+    "texts": [
+      {
+        "name": "T_Meany",
+        "text": "WOW.\nHAVE YOU\nFORGOTTEN\nALREADY?"
+      },
+      {
+        "name": "T_Sorry",
+        "text": "oh\nsorry about him\njust... try to ignore it"
+      },
+      {
+        "name": "T_Better",
+        "text": "that's better..."
+      },
+      {
+        "name": "T_PickAKey",
+        "text": "now,\npick a key to go right..."
+      },
+      {
+        "name": "T_GoodChoice",
+        "text": "ah, good choice"
+      },
+      {
+        "name": "T_Huh",
+        "text": "huh,\nlooks like your\nmemory is a bit...\nlimited..."
+      },
+      {
+        "name": "T_Here",
+        "text": "here, this should help:"
+      },
+      {
+        "name": "T_LooksLike",
+        "text": "you'll have to\nforget something..."
+      }
+    ]
+  },
+  {
+    "layer": "L_C2_LearningToForget",
+    "texts": [
+      {
+        "name": "T_FriendlyIfYou",
+        "text": "if you get stuck, don't worry..."
+      },
+      {
+        "name": "T_FriendlyHoldSpace",
+        "text": "just try holding the spacebar\n"
+      },
+      {
+        "name": "T_FriendlyYouGotIt",
+        "text": "or not. you got it."
+      },
+      {
+        "name": "T_MeanyReminder",
+        "text": "YOU HAD TO\nUSE SPACE,\nDIDN'T YOU?"
+      }
+    ]
+  },
+  {
+    "layer": "L_C2_PayRespects1",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_PayRespects2",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_PayRespects3",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_AnotherBinder",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_OpeningUp",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_PingPong",
+    "texts": [
+      {
+        "name": "T_FriendWelcome",
+        "text": "you are welcome to take\nas much time as you need"
+      },
+      {
+        "name": "T_MeanyDoubt",
+        "text": "UNTIL YOU UNDERSTAND\nWHAT IS NECESSARY"
+      }
+    ]
+  },
+  {
+    "layer": "L_C2_CrowdedSquare",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_BigA",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_BigB",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_ThoughtDrop",
+    "texts": [
+      {
+        "name": "T_Oops",
+        "text": "OOPS."
+      },
+      {
+        "name": "T_Someone",
+        "text": "SOMEONE"
+      },
+      {
+        "name": "T_Left",
+        "text": "LEFT A"
+      },
+      {
+        "name": "T_Memory",
+        "text": "MEMORY"
+      },
+      {
+        "name": "T_Lapse",
+        "text": "LAPSE"
+      },
+      {
+        "name": "T_Your",
+        "text": "IN YOUR"
+      },
+      {
+        "name": "T_Way",
+        "text": "WAY."
+      }
+    ]
+  },
+  {
+    "layer": "L_C2_NoSlipping",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_Sweep",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_Weave",
+    "texts": []
+  },
+  {
+    "layer": "L_C2_HardChoices",
+    "texts": []
+  },
+  {
+    "layer": "L_C3",
+    "texts": [
+      {
+        "name": "T_NewMemory",
+        "text": "hey, your memory\nis coming back!"
+      },
+      {
+        "name": "T_WellDone",
+        "text": "well done, kid\nwe're all..."
+      },
+      {
+        "name": "T_WellProud",
+        "text": "well,\ni'm proud of you,\nat least"
+      },
+      {
+        "name": "T_MeanyDoubt",
+        "text": "IT\nWON'T\nMAKE\nANY\nDIFFERENCE."
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_UseIt",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_BackAndForth",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_Threedom",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_RedHerring",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_D1",
+    "texts": [
+      {
+        "name": "T_Like",
+        "text": "looks like the key"
+      },
+      {
+        "name": "T_Favorite",
+        "text": "is your favorite"
+      },
+      {
+        "name": "T_MeanyDistraction",
+        "text": "IT IS\nA\nDISTRACTION"
+      },
+      {
+        "name": "T_Well",
+        "text": "yes, unfortunately i must agree"
+      },
+      {
+        "name": "T_MeanyReally",
+        "text": "Huh? Really?"
+      },
+      {
+        "name": "T_Yep",
+        "text": "indeed. i have removed it."
+      },
+      {
+        "name": "T_MeanyOk",
+        "text": "Ok. Cool."
+      },
+      {
+        "name": "T_Habit",
+        "text": "you do not need that\nfilthy litle habit, now,\ndo you? i hope not."
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_Cells",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_LoopBack",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_WittleDip",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_MysteryIsland",
+    "texts": [
+      {
+        "name": "T_FriendNo",
+        "text": "no no no\nnot this way"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_Darkening",
+    "texts": [
+      {
+        "name": "T_FriendlyDarkness",
+        "text": "looks like the\nlights are out\n\nlet me get that"
+      },
+      {
+        "name": "T_FriendlyRevealed",
+        "text": "that's better"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_Oggle",
+    "texts": [
+      {
+        "name": "T_Meany",
+        "text": "TURN ON YOUR OWN DANG LIGHT"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_Spiralis",
+    "texts": [
+      {
+        "name": "T_Meany",
+        "text": "TURN ON YOUR OWN DANG LIGHT"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_Dudle",
+    "texts": []
+  },
+  {
+    "layer": "L_C3_Dimwit",
+    "texts": [
+      {
+        "name": "T_FriendWelcome",
+        "text": "getting stuck is\na natural part of\nthe process"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_BlindSwordsman",
+    "texts": [
+      {
+        "name": "T_MeanyWaste",
+        "text": "EVERY MOMENT YOU\nWASTE HURTS US BOTH"
+      }
+    ]
+  },
+  {
+    "layer": "L_C3_DarkChoice",
+    "texts": []
+  },
+  {
+    "layer": "L_C4",
+    "texts": [
+      {
+        "name": "T_Friendly",
+        "text": "oh cool you\ncan remember\nfour things"
+      },
+      {
+        "name": "T_Meany",
+        "text": "SHOULD\nBE EASY\nNOW,\nRIGHT?"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_NotTooEasy",
+    "texts": []
+  },
+  {
+    "layer": "L_C4_Eavesdrop",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "I told you I could make them do better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_SpaceMaze",
+    "texts": [
+      {
+        "name": "T_FriendClinging",
+        "text": "i made these hallways\njust for you to enjoy\n  \nyou rushed through\nthem a bit, huh?\n  \nthat is okay"
+      },
+      {
+        "name": "T_MeanyBlank",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_D2",
+    "texts": [
+      {
+        "name": "T_FriendNew",
+        "text": "it appears you have formed a new habit: "
+      },
+      {
+        "name": "T_MeanyPositive",
+        "text": "FORMING POSITIVE\nHABITS CAN BE\nUSEFUL IN THE\nACQUISITION OF\nSKILLS"
+      },
+      {
+        "name": "T_FriendPerhaps",
+        "text": "perhaps, for the average subject..."
+      },
+      {
+        "name": "T_FriendExtraordinary",
+        "text": "but our friend here is EXTRAORDINARY"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_FixThis",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "It's good to see them doing better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_KeyedIn",
+    "texts": [
+      {
+        "name": "T_FriendDoor",
+        "text": "behind this locked door lies...\nanother door"
+      },
+      {
+        "name": "T_MeanyKey",
+        "text": "I BET YOU\nCAN'T\nREMEMBER\nHOW TO\nUSE A KEY."
+      },
+      {
+        "name": "T_MeanyLikeWhat",
+        "text": "LIKE, WHAT\nEVEN IS\nA KEY?"
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_Annex",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "It's good to see them doing better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_Adoorbs",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "It's good to see them doing better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_LongHaul",
+    "texts": [
+      {
+        "name": "T_FriendSoGood",
+        "text": "you're doing sooooooooooooooooooooooo goooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+      },
+      {
+        "name": "T_FriendKeyTease",
+        "text": "oh i suppose you can't reach this"
+      },
+      {
+        "name": "T_FriendHallway",
+        "text": "nice moves getting into this hallway though"
+      },
+      {
+        "name": "T_FriendStillGoing",
+        "text": "still looking great... so great"
+      },
+      {
+        "name": "T_MeanyConvoPoint",
+        "text": "Uh, what are we supposed to get out of this?"
+      },
+      {
+        "name": "T_FriendConvoConfidence",
+        "text": "i provide positive reinforcement, yes?"
+      },
+      {
+        "name": "T_MeanyConvoThink",
+        "text": "Sure, but not like... this."
+      },
+      {
+        "name": "T_FriendChallenge",
+        "text": "ah, so what about this challenge?\ndo you remember where the key was?\nhmmmmmmmmmmmmmmmmmmmmmmmmmm?"
+      },
+      {
+        "name": "T_MeanyGetIt",
+        "text": "No. This is cruel. I'm just going to open it."
+      },
+      {
+        "name": "T_FriendAngry",
+        "text": "i am just trying to do things YOUR WAY"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_ChainOfKeys",
+    "texts": [
+      {
+        "name": "T_FriendMyself",
+        "text": "I JUST WANT TO BE MYSELF"
+      },
+      {
+        "name": "T_MeanyPlease",
+        "text": "But we've tried that so many of times before."
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_Encroaching",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "It's good to see them doing better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_SneakySwitch",
+    "texts": [
+      {
+        "name": "T_MeanyGood",
+        "text": "It's good to see them doing better."
+      },
+      {
+        "name": "T_FriendDoubt",
+        "text": "yeah, i had my doubts but-"
+      },
+      {
+        "name": "T_MeanyAssure",
+        "text": "But my approach is working."
+      },
+      {
+        "name": "T_FriendAppear",
+        "text": "it appears to maybe be working a bit"
+      },
+      {
+        "name": "T_MeanyShame",
+        "text": "Wow. You can't even admit-"
+      },
+      {
+        "name": "T_MeanyCaught",
+        "text": ". . . YOU'RE HERE\n. . . ALREADY\nGO, UH, FASTER"
+      }
+    ]
+  },
+  {
+    "layer": "L_C4_D3",
+    "texts": [
+      {
+        "name": "T_FriendCracked",
+        "text": "HAVE YOU CRACKED UNDER THE STRAIN YET?"
+      },
+      {
+        "name": "T_FriendFriend",
+        "text": "OR HAS YOUR FRIEND"
+      },
+      {
+        "name": "T_FriendBurden",
+        "text": "CARRIED THE BURDEN FOR YOU?"
+      },
+      {
+        "name": "T_MeanyNotLikeThis",
+        "text": "I didn't think it would turn out like this."
+      }
+    ]
+  },
+  {
+    "layer": "L_CameraTests",
+    "texts": []
+  },
+  {
+    "layer": "H_00",
+    "texts": []
+  },
+  {
+    "layer": "H_01",
+    "texts": []
+  },
+  {
+    "layer": "H_02",
+    "texts": []
+  },
+  {
+    "layer": "H_03",
+    "texts": []
+  },
+  {
+    "layer": "H_04",
+    "texts": []
+  },
+  {
+    "layer": "H_05",
+    "texts": []
+  },
+  {
+    "layer": "H_06",
+    "texts": []
+  },
+  {
+    "layer": "H_07",
+    "texts": []
+  },
+  {
+    "layer": "H_08",
+    "texts": []
+  },
+  {
+    "layer": "H_09",
+    "texts": []
+  },
+  {
+    "layer": "H_10",
+    "texts": []
+  }
+]
