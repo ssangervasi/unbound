@@ -77,6 +77,9 @@ declare module 'gdevelop-js' {
 	export interface GdObjectText extends GdObjectBase {
 		type: 'TextObject::Text'
 		color: GdColor
+		string: string
+		font: string
+		characterSize: number
 	}
 
 	export type GdObject = GdObjectSprite | GdObjectText

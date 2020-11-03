@@ -31,6 +31,11 @@ const main = () => {
 	)
 	commonOptions(
 		program
+			.command('all-text')
+			.action(allText),
+	)
+	commonOptions(
+		program
 			.command('copy-layers <sourceScene> <destScene> <layerNames...>')
 			.action(copyLayers),
 	)
@@ -104,6 +109,26 @@ const zTidy = (cmd: Command) => {
 		getCommonOptions(cmd),
 	)
 	log(result)
+}
+
+const allText = (cmd: Command) => {
+	refactor(
+		gdProject => {
+			transformLayouts(
+				gdProject, (gdLayout) => {
+					log(`Layout: ${gdLayout.name}`)
+					gdLayout.objects.forEach((gdObj) => {
+						if (gdObj.type !== 'TextObject::Text') { return }
+						if (!gdObj.name.startsWith('T_')) { return }
+						log(
+							`Name: ${gdObj.name}\nText:\n${gdObj.string}\n`,
+						)
+					})
+				},
+			)
+		},
+		{...getCommonOptions(cmd), readOnly: true},
+	)
 }
 
 
