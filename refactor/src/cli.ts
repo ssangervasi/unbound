@@ -112,23 +112,38 @@ const zTidy = (cmd: Command) => {
 }
 
 const allText = (cmd: Command) => {
+	const results: Array<{
+		layer: string
+		texts: Array<{
+			name: string
+			text: string
+		}>
+	}> = []
+
 	refactor(
 		gdProject => {
 			transformLayouts(
 				gdProject, (gdLayout) => {
-					log(`Layout: ${gdLayout.name}`)
+					const result: typeof results[0] = {
+						layer: gdLayout.name,
+						texts: [],
+					} 
 					gdLayout.objects.forEach((gdObj) => {
 						if (gdObj.type !== 'TextObject::Text') { return }
 						if (!gdObj.name.startsWith('T_')) { return }
-						log(
-							`Name: ${gdObj.name}\nText:\n${gdObj.string}\n`,
-						)
+						result.texts.push({
+							name: gdObj.name,
+							text: gdObj.string,
+						})
 					})
+					results.push(result)
 				},
 			)
 		},
-		{...getCommonOptions(cmd), readOnly: true},
+		{ ...getCommonOptions(cmd), readOnly: true },
 	)
+
+	log(JSON.stringify(results, null, 2))
 }
 
 
