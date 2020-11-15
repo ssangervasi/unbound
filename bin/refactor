@@ -2,4 +2,4 @@
 cd $(dirname $BASH_SOURCE)/../refactor
 c="$1"
 shift
-npm run cli -- "$c" --project ../unbound.json "$@"
+npm run cli -- "$c" --path ../unbound.json "$@"
