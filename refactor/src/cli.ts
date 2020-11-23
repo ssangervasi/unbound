@@ -36,6 +36,11 @@ const main = () => {
 	)
 	commonOptions(
 		program
+			.command('panel-sprite-stats')
+			.action(panelSpriteStats),
+	)
+	commonOptions(
+		program
 			.command('copy-layers <sourceScene> <destScene> <layerNames...>')
 			.action(copyLayers),
 	)
@@ -113,7 +118,7 @@ const zTidy = (cmd: Command) => {
 
 const allText = (cmd: Command) => {
 	const results: Array<{
-		layer: string
+		layout: string
 		texts: Array<{
 			name: string
 			text: string
@@ -125,9 +130,9 @@ const allText = (cmd: Command) => {
 			transformLayouts(
 				gdProject, (gdLayout) => {
 					const result: typeof results[0] = {
-						layer: gdLayout.name,
+						layout: gdLayout.name,
 						texts: [],
-					} 
+					}
 					gdLayout.objects.forEach((gdObj) => {
 						if (gdObj.type !== 'TextObject::Text') { return }
 						if (!gdObj.name.startsWith('T_')) { return }
@@ -137,6 +142,75 @@ const allText = (cmd: Command) => {
 						})
 					})
 					results.push(result)
+				},
+			)
+		},
+		{ ...getCommonOptions(cmd), readOnly: true },
+	)
+
+	log(JSON.stringify(results, null, 2))
+}
+
+const panelSpriteStats = (cmd: Command) => {
+	const results: Array<{
+		layout: string
+		instances: any
+		panelSprites: Array<{
+			name: string
+			bottomMargin: number
+			height: number
+			leftMargin: number
+			rightMargin: number
+			texture: string
+			tiled: boolean
+			topMargin: number
+			width: number
+		}>
+	}> = []
+
+	refactor(
+		gdProject => {
+			transformLayouts(
+				gdProject, (gdLayout) => {
+					const result: typeof results[0] = {
+						layout: gdLayout.name,
+						instances: [],
+						panelSprites: [],
+					}
+					gdLayout.instances.forEach((gdObj) => {
+						if (gdObj.name !== 'MenuPill_Inactive') { return }
+						result.instances.push(
+							pick(gdObj as any, 'name',
+								'bottomMargin',
+								'height',
+								'leftMargin',
+								'rightMargin',
+								'texture',
+								'tiled',
+								'topMargin',
+								'width'),
+						)
+					})
+					gdLayout.objects.forEach((gdObj) => {
+						if (gdObj.type !== 'PanelSpriteObject::PanelSprite') { return }
+						result.panelSprites.push(
+							pick(
+								gdObj,
+								'name',
+								'bottomMargin',
+								'height',
+								'leftMargin',
+								'rightMargin',
+								'texture',
+								'tiled',
+								'topMargin',
+								'width',
+							),
+						)
+					})
+					if (result.panelSprites.length) {
+						results.push(result)
+					}
 				},
 			)
 		},

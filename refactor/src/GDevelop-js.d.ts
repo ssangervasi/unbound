@@ -43,7 +43,7 @@ declare module 'gdevelop-js' {
 
 	export interface GdCamera { }
 
-	export type GdObjectType = 'Sprite' | 'TextObject::Text' | 'TiledSpriteObject::TiledSprite'
+	export type GdObjectType = 'Sprite' | 'TextObject::Text' | 'TiledSpriteObject::TiledSprite' | 'PanelSpriteObject::PanelSprite'
 
 	export interface GdObjectBase {
 		height: number
@@ -68,6 +68,18 @@ declare module 'gdevelop-js' {
 		}>
 	}
 
+	export interface GdObjectPanelSprite extends GdObjectBase {
+		type: 'PanelSpriteObject::PanelSprite'
+		bottomMargin: number
+		height: number
+		leftMargin: number
+		rightMargin: number
+		texture: string
+		tiled: boolean
+		topMargin: number
+		width: number
+	}
+
 	export interface GdColor {
 		r: number
 		g: number
@@ -82,5 +94,5 @@ declare module 'gdevelop-js' {
 		characterSize: number
 	}
 
-	export type GdObject = GdObjectSprite | GdObjectText
+	export type GdObject = GdObjectSprite | GdObjectPanelSprite | GdObjectText
 }

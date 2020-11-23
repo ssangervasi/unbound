@@ -1,0 +1,166 @@
+
+> unbound-refactor@0.0.1 cli C:\Users\Sebastian\Projects\Unbound\refactor
+> ts-node --files ./src/cli.ts "panel-sprite-stats" "--path" "../unbound.json"
+
+[
+  {
+    "layout": "S_Splash",
+    "instances": [],
+    "panelSprites": [
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Inactive",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      },
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Active",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      }
+    ]
+  },
+  {
+    "layout": "M_Main",
+    "instances": [
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      },
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      },
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      }
+    ],
+    "panelSprites": [
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Inactive",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      },
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Active",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      }
+    ]
+  },
+  {
+    "layout": "M_Pause",
+    "instances": [
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      },
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      },
+      {
+        "height": 70,
+        "name": "MenuPill_Inactive",
+        "width": 300
+      }
+    ],
+    "panelSprites": [
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Active",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      },
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Inactive",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      }
+    ]
+  },
+  {
+    "layout": "M_Options",
+    "instances": [
+      {
+        "height": 65,
+        "name": "MenuPill_Inactive",
+        "width": 115
+      },
+      {
+        "height": 65,
+        "name": "MenuPill_Inactive",
+        "width": 210
+      },
+      {
+        "height": 65,
+        "name": "MenuPill_Inactive",
+        "width": 210
+      }
+    ],
+    "panelSprites": [
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Active",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-active.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      },
+      {
+        "bottomMargin": 20,
+        "height": 70,
+        "leftMargin": 24,
+        "name": "MenuPill_Inactive",
+        "rightMargin": 24,
+        "texture": "Assets\\Sprites\\Menu\\MenuPill-inactive.png",
+        "tiled": false,
+        "topMargin": 20,
+        "width": 300
+      }
+    ]
+  }
+]
