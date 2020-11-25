@@ -31,6 +31,11 @@ const main = () => {
 	)
 	commonOptions(
 		program
+			.command('hint-containers')
+			.action(populateHintContainers),
+	)
+	commonOptions(
+		program
 			.command('all-text')
 			.action(allText),
 	)
@@ -95,6 +100,42 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 		getCommonOptions(cmd),
 	)
 	log(result)
+}
+
+const populateHintContainers = (cmd: Command) => {
+	refactor(
+		gdProject => {
+			transformLayouts(
+				gdProject, (gdLayout) => {
+					log(gdLayout.name)
+					const existing = gdLayout.instances.find((gdInst) => gdInst.name === 'BindHintsContainer')
+					if (existing) { 
+						log('already had hints')
+						return
+					}
+					
+					log('needed them')
+					gdLayout.instances.push({
+						angle: 0,
+						customSize: true,
+						height: 50,
+						initialVariables: [],
+						layer: 'UI',
+						locked: false,
+						name: 'BindHintsContainer',
+						numberProperties: [],
+						stringProperties: [],
+						width: 80,
+						x: 690,
+						y: 60,
+						zOrder: 225,
+					})
+				}, /^L_.+$/,
+			)
+			return gdProject
+		},
+		getCommonOptions(cmd),
+	)
 }
 
 const zTidy = (cmd: Command) => {
