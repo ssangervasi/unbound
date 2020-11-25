@@ -63,6 +63,13 @@ const mockSession = (): UD.Session => (
 	}
 )
 
+const mockOptions = (): UD.Options => ({
+	fullscreen: 'off',
+	bindHints: 'on',
+	musicVolume: 69,
+	effectsVolume: 1,
+})
+
 describe('createDefault', () => {
 	const result = UD.createDefault()
 
@@ -77,28 +84,38 @@ describe('createDefault', () => {
 			savedGame: undefined,
 		})
 	})
+
+	it('has the default options', () => {
+		expect(result.options).toMatchObject<UD.Options>({
+			fullscreen: 'on',
+			bindHints: 'off',
+			musicVolume: 75,
+			effectsVolume: 75,
+		})
+	})
 })
 
 describe('createFromJSON', () => {
 	it('handles invalid JSON', () => {
 		const result = UD.createFromJSON('horx;ma-dorks')
-		expect(result.savedGames).toEqual([])
-		expect(result.session.levels).toEqual([])
+		expect(result).toEqual(UD.createDefault())
 	})
 
 	it('handles valid JSON with invalid structure', () => {
 		const result = UD.createFromJSON('0')
-		expect(result.savedGames).toEqual([])
-		expect(result.session.levels).toEqual([])
+		expect(result).toEqual(UD.createDefault())
 	})
 
 	it('loads the saved games from valid JSON', () => {
 		const validStored: UD.StoredUserData = {
 			savedGames: mockSavedGames(),
+			options: mockOptions(),
 		}
 		const result = UD.createFromJSON(JSON.stringify(validStored))
+		expect(result).not.toEqual(UD.createDefault())
 		expect(result.savedGames).toEqual(validStored.savedGames)
 		expect(result.session.levels).toEqual([])
+		expect(result.options).toEqual(mockOptions())
 	})
 })
 
@@ -114,6 +131,7 @@ describe('newGame', () => {
 	it('with existing data pushes the existing save', () => {
 		const originalGames = mockSavedGames()
 		const existingData: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [originalGames[0]],
 			session: {
 				savedGame: originalGames[1],
@@ -137,6 +155,7 @@ describe('resumeGame', () => {
 			disabledKeys: [],
 		}
 		const existingData: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [
 				{
 					createdAt: 1,
@@ -185,6 +204,7 @@ describe('resumeGame', () => {
 			updatedAt: 30,
 		}
 		const existingData: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [savedGame],
 			session: {
 				levels: [],
@@ -224,6 +244,7 @@ describe('newGame', () => {
 			updatedAt: 30,
 		}
 		const existingData: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				savedGame: previousSave,
@@ -251,6 +272,7 @@ describe('newGame', () => {
 describe('saveGame', () => {
 	it('adds the session levels to the save', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				savedGame: {
@@ -324,6 +346,7 @@ describe('saveGame', () => {
 
 	it('adds the key counts to the save', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				keyCounts: {
@@ -347,6 +370,7 @@ describe('saveGame', () => {
 
 	it('adds disabled keys to the save', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				disabledKeys: [420, 69],
@@ -396,6 +420,7 @@ describe('lastPlayedLevel', () => {
 describe('pushLevel', () => {
 	it('handles no active level', () => {
 		const dataNoLevel = {
+			options: mockOptions(),
 			savedGames: mockSavedGames(),
 			session: mockSession(),
 		}
@@ -416,6 +441,7 @@ describe('pushLevel', () => {
 			collectables: mockCollectables(),
 		}
 		const dataWithLevel = {
+			options: mockOptions(),
 			savedGames: mockSavedGames(),
 			session: {
 				levels: [startingLevel],
@@ -437,6 +463,7 @@ describe('pushLevel', () => {
 describe('peekLevelName', () => {
 	it('handles empty list with defaults', () => {
 		const dataNoLevels: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [],
@@ -453,6 +480,7 @@ describe('peekLevelName', () => {
 
 	it('returns the entry at the right depth', () => {
 		const dataWithLevel: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [
@@ -490,6 +518,7 @@ describe('collect', () => {
 			startedAt: 1,
 		}
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [levelWithoutCollectable],
@@ -515,6 +544,7 @@ describe('collect', () => {
 			completedAt: 500,
 		}
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [
@@ -542,6 +572,7 @@ describe('collect', () => {
 			startedAt: 1,
 		}
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [levelWithCollectable],
@@ -583,6 +614,7 @@ describe('findCollectables', () => {
 			completedAt: 200,
 		}
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [
@@ -609,6 +641,7 @@ describe('findCollectables', () => {
 describe('incrementKeyCount', () => {
 	it('defaults to zero', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: mockSession(),
 		}
@@ -637,6 +670,7 @@ describe('incrementKeyCount', () => {
 
 	it('picks up previous values', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [],
@@ -663,6 +697,7 @@ describe('incrementKeyCount', () => {
 describe('getTopKeys', () => {
 	it('returns keys in descending count order', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			savedGames: [],
 			session: {
 				levels: [],
@@ -692,6 +727,7 @@ describe('getTopKeys', () => {
 
 describe('isDisabled', () => {
 	const data: UD.UserData = {
+		options: mockOptions(),
 		session: {
 			...mockSession(),
 			disabledKeys: [42, 666],
@@ -711,6 +747,7 @@ describe('isDisabled', () => {
 describe('disable', () => {
 	it('modifies the session', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			session: {
 				levels: mockLevels(),
 			},
@@ -722,6 +759,7 @@ describe('disable', () => {
 
 	it('does not add duplicates', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			session: {
 				...mockSession(),
 				disabledKeys: [42, 666],
@@ -736,6 +774,7 @@ describe('disable', () => {
 
 	it('resets the key counts', () => {
 		const data: UD.UserData = {
+			options: mockOptions(),
 			session: {
 				levels: mockLevels(),
 				keyCounts: {

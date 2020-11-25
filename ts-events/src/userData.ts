@@ -1,9 +1,17 @@
 export interface UserData {
 	savedGames: SavedGame[]
 	session: Session
+	options: Options
 }
 
-export type StoredUserData = Pick<UserData, 'savedGames'>
+export interface Options {
+	fullscreen: 'off' | 'on'
+	bindHints: 'off' | 'on'
+	musicVolume: number
+	effectsVolume: number
+}
+
+export type StoredUserData = Pick<UserData, 'savedGames' | 'options'>
 
 export interface Session {
 	savedGame?: SavedGame
@@ -45,6 +53,12 @@ export const createFromJSON = (userDataJSON: string): UserData => {
 	}
 	if (isStoredData(parsed)) {
 		userData.savedGames = parsed.savedGames
+		if ('options' in parsed && typeof parsed.options === 'object') {
+			userData.options = {
+				...userData.options,
+				...parsed.options,
+			}
+		}
 	}
 	return userData
 }
@@ -70,6 +84,12 @@ export const createDefault = (): UserData => ({
 		levels: [],
 		level: undefined,
 		savedGame: undefined,
+	},
+	options: {
+		fullscreen: 'on',
+		bindHints: 'off',
+		musicVolume: 75,
+		effectsVolume: 75,
 	},
 })
 
