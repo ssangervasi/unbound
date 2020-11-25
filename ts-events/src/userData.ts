@@ -88,8 +88,8 @@ export const createDefault = (): UserData => ({
 	options: {
 		fullscreen: 'on',
 		bindHints: 'off',
-		musicVolume: 75,
-		effectsVolume: 75,
+		musicVolume: 100,
+		effectsVolume: 100,
 	},
 })
 

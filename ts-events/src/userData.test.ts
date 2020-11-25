@@ -89,8 +89,8 @@ describe('createDefault', () => {
 		expect(result.options).toMatchObject<UD.Options>({
 			fullscreen: 'on',
 			bindHints: 'off',
-			musicVolume: 75,
-			effectsVolume: 75,
+			musicVolume: 100,
+			effectsVolume: 100,
 		})
 	})
 })
