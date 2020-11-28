@@ -8,6 +8,8 @@ main() {
   cmd="$1"
   shift
 
+  pushd "$BUILD_DIR"
+
   if [[ "$cmd" == "build" ]]; then
     build "$@"
   elif [[ "$cmd" == "push" ]]; then
@@ -20,20 +22,20 @@ main() {
 }
 
 build() {
-  cd "$1" || exit "No build directory: $1" 
-  cp "$BUILD_DIR"/patched.main.js ./main.js
-  cp "$BUILD_DIR"/icon.png ./icon.png
+  pushd "$1" || exit "No build directory: $1" 
+  cp ../patched.main.js ./main.js
+  cp ../icon.png ./icon.png
   electron-builder
 }
 
 push() {
-  cd "$1" || exit "No build directory: $1" 
+  pushd "$1" || exit "No build directory: $1" 
   bundle="./dist/win-unpacked"
   if [[ ! -d "$bundle" ]]; then
     exit "No bundle directory: $bundle"
   fi
   
-  butler_target=$(cat "$BUILD_DIR"/win/BUTLER_TARGET.txt)
+  butler_target=$(cat win/BUTLER_TARGET.txt)
   if [[ ! "$butler_target" =~ 'unbound' ]]; then
     exit "Invalid butler target: $butler_target"
   fi
@@ -43,7 +45,7 @@ push() {
 }
 
 status() {
-  butler_target=$(cat "$BUILD_DIR"/win/BUTLER_TARGET.txt)
+  butler_target=$(cat win/BUTLER_TARGET.txt)
   if [[ ! "$butler_target" =~ 'unbound' ]]; then
     exit "Invalid butler target: $butler_target"
   fi
