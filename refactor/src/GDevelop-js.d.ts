@@ -56,6 +56,7 @@ declare module 'gdevelop-js' {
 		behaviors: Array<{
 			name: string
 			type: string
+			[key: string]: string | number
 		}>
 	}
 

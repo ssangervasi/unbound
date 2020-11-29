@@ -78,6 +78,45 @@ export const transformInstances = (
 }
 
 /**
+ * @param callback Mutate the object provided, or return null to delete it.
+ * @param namePattern If present, filters the objects to transform.
+ */
+export const transformObjects = (
+	project: Gd.GdProject,
+	callback: (gdObj: Gd.GdObject, gdLayout: Gd.GdLayout) => Gd.GdObject | null | void,
+	namePattern?: RegExp,
+	layoutPattern?: RegExp,
+) => {
+	project.layouts.forEach(gdLayout => {
+		if (layoutPattern && !layoutPattern.test(gdLayout.name)) {
+			return
+		}
+
+		const imLayout = immer.createDraft(gdLayout)
+		const originals = gdLayout.objects
+		const transforms: Gd.GdObject[] = []
+		originals.forEach(gdObj => {
+			if (namePattern && !namePattern.test(gdObj.name)) {
+				transforms.push(gdObj)
+				return
+			}
+
+			const result = immer.produce(
+				gdObj,
+				(imObj: Gd.GdObject) => callback(imObj, imLayout),
+			)
+			// returning null removes the object.
+			if (result === null) {
+				return
+			}
+			transforms.push(result)
+		})
+
+		gdLayout.objects = transforms
+	})
+}
+
+/**
  * @param callback Mutate the object provided
  */
 export const transformLayouts = (

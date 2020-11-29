@@ -3,7 +3,7 @@ import { Command } from 'commander'
 import * as immer from 'immer'
 
 import * as Gd from 'gdevelop-js'
-import { refactor, transformInstances, RefactorOptions, transformLayouts } from './refactor'
+import { refactor, transformInstances, RefactorOptions, transformLayouts, transformObjects } from './refactor'
 import { log, pick } from './utils'
 
 const main = () => {
@@ -38,6 +38,11 @@ const main = () => {
 		program
 			.command('all-text')
 			.action(allText),
+	)
+	commonOptions(
+		program
+			.command('talk-text')
+			.action(talkText),
 	)
 	commonOptions(
 		program
@@ -261,6 +266,44 @@ const panelSpriteStats = (cmd: Command) => {
 	log(JSON.stringify(results, null, 2))
 }
 
+
+const talkText = (cmd: Command) => {
+	refactor(
+		gdProject => {
+			transformObjects(
+				gdProject, (gdObj, gdLayout) => {
+					if (gdObj.type !== 'TextObject::Text') {
+						return
+					}
+					let voice = ''
+					if (gdObj.font.endsWith('Pixel-y14Y.ttf')) {
+						voice = 'friend'
+					} else if (gdObj.font.endsWith('StaticAgeHorizontalHold-yLWq.ttf')) {
+						voice = 'meany'
+					}
+					if (voice === '') {
+						return
+					}
+
+					const existingBehavior = gdObj.behaviors.find((b) => b.type === 'srs_jukebox::TalkText')
+					if (existingBehavior) {
+						log(`${gdLayout.name}.${gdObj.name} already has TalkText`)
+						return
+					}
+					const newBehavior = {
+						'name': 'TalkText',
+						'type': 'srs_jukebox::TalkText',
+						'Voice': voice,
+					}
+					gdObj.behaviors.push(newBehavior)
+					log(`${gdLayout.name}.${gdObj.name} added ${newBehavior.Voice}`)
+				},
+				/^T_/,
+			)
+		},
+		getCommonOptions(cmd),
+	)
+}
 
 const assignHaikus = (cmd: Command) => {
 	refactor(
