@@ -114,11 +114,11 @@ const populateHintContainers = (cmd: Command) => {
 				gdProject, (gdLayout) => {
 					log(gdLayout.name)
 					const existing = gdLayout.instances.find((gdInst) => gdInst.name === 'BindHintsContainer')
-					if (existing) { 
+					if (existing) {
 						log('already had hints')
 						return
 					}
-					
+
 					log('needed them')
 					gdLayout.instances.push({
 						angle: 0,
@@ -168,8 +168,19 @@ const allText = (cmd: Command) => {
 		texts: Array<{
 			name: string
 			text: string
+			rates?: object
 		}>
 	}> = []
+
+	const aggregates = {
+		chars: 0,
+		words: 0,
+		wpm: 0,
+		wpmd: 0,
+		cps: 0,
+		cpsd: 0,
+		ft: 0,
+	}
 
 	refactor(
 		gdProject => {
@@ -182,10 +193,36 @@ const allText = (cmd: Command) => {
 					gdLayout.objects.forEach((gdObj) => {
 						if (gdObj.type !== 'TextObject::Text') { return }
 						if (!gdObj.name.startsWith('T_')) { return }
+
+						const stateText = gdObj.behaviors.find(b => b.type === 'srs_states::StateText')
+						const rates = stateText ? {
+							chars: gdObj.string.length,
+							...pick(
+								stateText,
+								'WordsPerMinute',
+								'CharactersPerSecond',
+								'FullTime',
+								'SkipRate',
+							),
+						} : undefined
+
 						result.texts.push({
 							name: gdObj.name,
 							text: gdObj.string,
+							rates: rates,
 						})
+
+						aggregates.words += gdObj.string.match(/\w+|\.{3}/g)?.length || 0
+						aggregates.chars += gdObj.string.length
+						if (rates?.WordsPerMinute) {
+							aggregates.wpm += Number(rates?.WordsPerMinute)
+							aggregates.wpmd += 1
+						} else if (rates?.CharactersPerSecond) {
+							aggregates.cps += Number(rates?.CharactersPerSecond)
+							aggregates.cpsd += 1
+						} else if (rates?.FullTime) {
+							aggregates.ft += Number(rates?.FullTime)
+						}
 					})
 					results.push(result)
 				},
@@ -194,7 +231,14 @@ const allText = (cmd: Command) => {
 		{ ...getCommonOptions(cmd), readOnly: true },
 	)
 
-	log(JSON.stringify(results, null, 2))
+	log(JSON.stringify({
+		results,
+		aggregates,
+		averages: {
+			wpm: aggregates.wpm / aggregates.wpmd,
+			cps: aggregates.cps / aggregates.cpsd,
+		},
+	}, null, 2))
 }
 
 const panelSpriteStats = (cmd: Command) => {
@@ -275,7 +319,8 @@ const talkText = (cmd: Command) => {
 					if (gdObj.type !== 'TextObject::Text') {
 						return
 					}
-					let voice = ''
+
+					let voice: '' | 'meany' | 'friend' = ''
 					if (gdObj.font.endsWith('Pixel-y14Y.ttf')) {
 						voice = 'friend'
 					} else if (gdObj.font.endsWith('StaticAgeHorizontalHold-yLWq.ttf')) {
@@ -297,7 +342,20 @@ const talkText = (cmd: Command) => {
 					} else {
 						gdObj.behaviors[existingIndex] = newBehavior
 					}
-					log(`${gdLayout.name}.${gdObj.name} added ${newBehavior.Voice}`)
+					log(`${gdLayout.name}.${gdObj.name} set ${newBehavior.Voice}`)
+
+
+					const stateText = gdObj.behaviors.find(b => b.type === 'srs_states::StateText')
+					if (!stateText) {
+						return
+					}
+					stateText.FullTime = 0
+					stateText.CharactersPerSecond = 0
+					if (voice === 'meany') {
+						stateText.WordsPerMinute = 110
+					} else if (voice === 'friend') {
+						stateText.WordsPerMinute = 140
+					}
 				},
 				/^T_/,
 			)
