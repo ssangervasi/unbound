@@ -282,20 +282,21 @@ const talkText = (cmd: Command) => {
 						voice = 'meany'
 					}
 					if (voice === '') {
+						log('No voice for font', gdObj.font)
 						return
 					}
 
-					const existingBehavior = gdObj.behaviors.find((b) => b.type === 'srs_jukebox::TalkText')
-					if (existingBehavior) {
-						log(`${gdLayout.name}.${gdObj.name} already has TalkText`)
-						return
-					}
+					const existingIndex = gdObj.behaviors.findIndex((b) => b.type === 'srs_jukebox::TalkText')
 					const newBehavior = {
 						'name': 'TalkText',
 						'type': 'srs_jukebox::TalkText',
 						'Voice': voice,
 					}
-					gdObj.behaviors.push(newBehavior)
+					if (existingIndex === -1) {
+						gdObj.behaviors.push(newBehavior)
+					} else {
+						gdObj.behaviors[existingIndex] = newBehavior
+					}
 					log(`${gdLayout.name}.${gdObj.name} added ${newBehavior.Voice}`)
 				},
 				/^T_/,
