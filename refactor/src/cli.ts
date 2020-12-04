@@ -31,6 +31,11 @@ const main = () => {
 	)
 	commonOptions(
 		program
+			.command('haiku-texts')
+			.action(haikuTexts),
+	)
+	commonOptions(
+		program
 			.command('hint-containers')
 			.action(populateHintContainers),
 	)
@@ -415,6 +420,30 @@ const assignHaikus = (cmd: Command) => {
 			)
 		},
 		getCommonOptions(cmd),
+	)
+}
+
+const haikuTexts = (cmd: Command) => {
+	refactor(
+		gdProject => {
+			const results: object[] =[]
+
+			transformObjects(
+				gdProject, (gdObj, gdLayout) => {
+					if (gdObj.type !== 'TextObject::Text') {
+						return
+					}
+					results.push({
+						layout: gdLayout.name,
+						text: gdObj.string,
+					})
+				},
+				/^Verse$/,
+				/^H_.+$/,
+			)
+			log(JSON.stringify(results, null, 2))
+		},
+		{ ...getCommonOptions(cmd), readOnly: true },
 	)
 }
 
