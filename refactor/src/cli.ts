@@ -26,8 +26,8 @@ const main = () => {
 	)
 	commonOptions(
 		program
-			.command('haikus')
-			.action(assignHaikus),
+			.command('haiku-assign')
+			.action(haikuAssign),
 	)
 	commonOptions(
 		program
@@ -369,7 +369,7 @@ const talkText = (cmd: Command) => {
 	)
 }
 
-const assignHaikus = (cmd: Command) => {
+const haikuAssign = (cmd: Command) => {
 	refactor(
 		gdProject => {
 			const before: string[][] = []
@@ -389,14 +389,14 @@ const assignHaikus = (cmd: Command) => {
 					after.push([gdLayout.name, idVar.value])
 				},
 				/^Haiku$/,
-				/^L_.+$/,
+				/^L_C.+$/,
 			)
 			log('before', before)
-			log('after', after)
+			log('after', after, after.length)
 
 			transformInstances(
 				gdProject, (gdInst) => {
-					const [levelName, idValue] = after.pop() || [undefined, undefined]
+					const [levelName, idValue] = after.shift() || [undefined, undefined]
 					if (!(levelName && idValue)) {
 						return
 					}
@@ -416,8 +416,9 @@ const assignHaikus = (cmd: Command) => {
 					levelVar.value = levelName
 				},
 				/^Haiku$/,
-				/^M_VictoryRoom$/,
+				/^L_VictoryRoom$/,
 			)
+			log('remaining', after)
 		},
 		getCommonOptions(cmd),
 	)
