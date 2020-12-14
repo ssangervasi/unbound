@@ -5,7 +5,7 @@
 [
   {
     "layout": "H_00",
-    "text": "The illusive lure\n\nOf an unknown reward keeps\n\nMy eyes open wide"
+    "text": "The illusive lure\n\nOf an unknown reward keeps\n\nMy eyes open wide."
   },
   {
     "layout": "H_01",
@@ -29,7 +29,7 @@
   },
   {
     "layout": "H_06",
-    "text": "a e i o u\n\ni o u, a e, u o\n\no e o e o"
+    "text": "A meager ember\n\nThe last of a candle's wick\n\nDim, sunken, smoked, seen."
   },
   {
     "layout": "H_07",
@@ -48,3 +48,34 @@
     "text": "Anger at the game\n\nTeaches the player to feel\n\nIt's snowing on Mount Fuji"
   }
 ]
+
+> unbound-refactor@0.0.1 cli C:\Users\Sebastian\Projects\Unbound\refactor
+> ts-node --files ./src/cli.ts "haiku-assign" "--path" "../unbound.json" "--readonly"
+
+before [
+  [ 'L_C2_PayRespects1', 'H_00' ],
+  [ 'L_C2_OpeningUp', 'H_01' ],
+  [ 'L_C2_Weave', 'H_02' ],
+  [ 'L_C3_Threedom', 'H_03' ],
+  [ 'L_C3_RedHerring', 'H_04' ],
+  [ 'L_C3_MysteryIsland', 'H_05' ],
+  [ 'L_C3_BlindSwordsman', 'H_06' ],
+  [ 'L_C4_NotTooEasy', 'H_07' ],
+  [ 'L_C4_Adoorbs', 'H_08' ],
+  [ 'L_C4_Encroaching', 'H_09' ],
+  [ 'L_C4_Encroaching', 'H_10' ]
+]
+after [
+  [ 'L_C2_PayRespects1', 'H_00' ],
+  [ 'L_C2_OpeningUp', 'H_01' ],
+  [ 'L_C2_Weave', 'H_02' ],
+  [ 'L_C3_Threedom', 'H_03' ],
+  [ 'L_C3_RedHerring', 'H_04' ],
+  [ 'L_C3_MysteryIsland', 'H_05' ],
+  [ 'L_C3_BlindSwordsman', 'H_06' ],
+  [ 'L_C4_NotTooEasy', 'H_07' ],
+  [ 'L_C4_Adoorbs', 'H_08' ],
+  [ 'L_C4_Encroaching', 'H_09' ],
+  [ 'L_C4_Encroaching', 'H_10' ]
+] 11
+remaining []
