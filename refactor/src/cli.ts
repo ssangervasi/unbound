@@ -438,13 +438,22 @@ const haikuTexts = (cmd: Command) => {
 						layout: gdLayout.name,
 						text: gdObj.string,
 					})
+
+					const stateText = gdObj.behaviors.find(b => b.type === 'srs_states::StateText')
+					if (!stateText) {
+						log(`${gdLayout.name} did not have StateText`)
+						return
+					}
+					stateText.FullTime = 0
+					stateText.CharactersPerSecond = 0
+					stateText.WordsPerMinute = 80
 				},
 				/^Verse$/,
 				/^H_.+$/,
 			)
 			log(JSON.stringify(results, null, 2))
 		},
-		{ ...getCommonOptions(cmd), readOnly: true },
+		getCommonOptions(cmd),
 	)
 }
 
