@@ -118,14 +118,7 @@ const populateHintContainers = (cmd: Command) => {
 			transformLayouts(
 				gdProject, (gdLayout) => {
 					log(gdLayout.name)
-					const existing = gdLayout.instances.find((gdInst) => gdInst.name === 'BindHintsContainer')
-					if (existing) {
-						log('already had hints')
-						return
-					}
-
-					log('needed them')
-					gdLayout.instances.push({
+					const newIndicator = {
 						angle: 0,
 						customSize: true,
 						height: 50,
@@ -135,11 +128,20 @@ const populateHintContainers = (cmd: Command) => {
 						name: 'BindHintsContainer',
 						numberProperties: [],
 						stringProperties: [],
-						width: 80,
-						x: 690,
+						width: 50,
+						x: 705,
 						y: 60,
 						zOrder: 225,
-					})
+					}
+
+					const existing = gdLayout.instances.find((gdInst) => gdInst.name === 'BindHintsContainer')
+					if (existing) {
+						log('already had hints')
+						Object.assign(existing, newIndicator)
+					} else {
+						log('needed them')
+						gdLayout.instances.push(newIndicator)
+					}
 				}, /^L_.+$/,
 			)
 			return gdProject
