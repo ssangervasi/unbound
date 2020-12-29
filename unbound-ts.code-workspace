@@ -10,11 +10,21 @@
 			"path": "bin"
 		},
 		{
-			"path": "build"
+			"path": "build",
+			""
 		},
 		{
 			"path": "Assets"
 		},
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/*.dll": true,
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true
+		}
+	}
 }
