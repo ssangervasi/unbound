@@ -1,4 +1,57 @@
 
+> unbound-refactor@0.0.1 cli C:\Users\Sebastian\Projects\Unbound\refactor
+> ts-node --files ./src/cli.ts "haiku-texts" "--path" "../unbound.json"
+
+[
+  {
+    "layout": "H_00",
+    "text": "The illusive lure\n\nOf an unknown reward keeps\n\nMy eyes open wide."
+  },
+  {
+    "layout": "H_01",
+    "text": "Memory, like the\n\nSlipping grip of a child's hand,\n\nCoaxes my patience."
+  },
+  {
+    "layout": "H_02",
+    "text": "Is \"lost\" when the way\n\nForward is unkown, or when\n\nIt is the way back?"
+  },
+  {
+    "layout": "H_03",
+    "text": "A cave's shadow shows\n\nDarkness lying in darkness,\n\nLight confessing light."
+  },
+  {
+    "layout": "H_04",
+    "text": "Unnecessary:\n\nPlay, forget, regret, repeat.\n\nOr just give up first."
+  },
+  {
+    "layout": "H_05",
+    "text": "I follow no one.\n\nMy impulses scream, unheard.\n\nI bite down harder."
+  },
+  {
+    "layout": "H_06",
+    "text": "A meager ember\n\nThe last of a candle's wick\n\nDim, sunken, smoked, seen."
+  },
+  {
+    "layout": "H_07",
+    "text": "Speak to the time of\n\nPulsing, seething, lashing rage\n\nAnd I hear you bleed."
+  },
+  {
+    "layout": "H_08",
+    "text": "A key on a board\n\nOpens a digital door\n\nBut you must walk through"
+  },
+  {
+    "layout": "H_09",
+    "text": "Anger at the game\n\nTeaches the player to feel\n\nIt's snowing on Mount Fuji"
+  },
+  {
+    "layout": "H_10",
+    "text": "Anger at the game\n\nTeaches the player to feel\n\nIt's snowing on Mount Fuji"
+  }
+]
+
+> unbound-refactor@0.0.1 cli C:\Users\Sebastian\Projects\Unbound\refactor
+> ts-node --files ./src/cli.ts "haiku-assign" "--path" "../unbound.json"
+
 before [
   [ 'L_C2_PayRespects1', 'H_00' ],
   [ 'L_C2_OpeningUp', 'H_01' ],
@@ -26,54 +79,3 @@ after [
   [ 'L_C4_Encroaching', 'H_10' ]
 ] 11
 remaining []
-
-
-> unbound-refactor@0.0.1 cli C:\Users\Sebastian\Projects\Unbound\refactor
-> ts-node --files ./src/cli.ts "haiku-texts" "--path" "../unbound.json"
-
-[
-  {
-    "layout": "H_00",
-    "text": "The illusive lure\n\nOf an unknown reward keeps\n\nMy eyes open wide."
-  },
-  {
-    "layout": "H_01",
-    "text": "Memory, like the\n\nSlipping grip of a child's hand,\n\nCoaxes my patience."
-  },
-  {
-    "layout": "H_02",
-    "text": "Is \"lost\" when the way\n\nForward is unkown, or when\n\nIt is the way back?"
-  },
-  {
-    "layout": "H_03",
-    "text": "a e i o u\n\ni o u, a e, u o\n\no e o e o"
-  },
-  {
-    "layout": "H_04",
-    "text": "a e i o u\n\ni o u, a e, u o\n\no e o e o"
-  },
-  {
-    "layout": "H_05",
-    "text": "a e i o u\n\ni o u, a e, u o\n\no e o e o"
-  },
-  {
-    "layout": "H_06",
-    "text": "A meager ember\n\nThe last of a candle's wick\n\nDim, sunken, smoked, seen."
-  },
-  {
-    "layout": "H_07",
-    "text": "a e i o u\n\ni o u, a e, u o\n\no e o e o"
-  },
-  {
-    "layout": "H_08",
-    "text": "A key on a board\n\nOpens a digital door\n\nBut you must walk through"
-  },
-  {
-    "layout": "H_09",
-    "text": "Anger at the game\n\nTeaches the player to feel\n\nIt's snowing on Mount Fuji"
-  },
-  {
-    "layout": "H_10",
-    "text": "Anger at the game\n\nTeaches the player to feel\n\nIt's snowing on Mount Fuji"
-  }
-]
