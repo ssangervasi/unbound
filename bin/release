@@ -24,7 +24,18 @@ use_dir() {
     exit_error "Gimme a build dir" 
   fi
 
-  pushd "$1" || exit_error "No build directory: $1" 
+  pushd "$1" || exit_error "No build directory: $1"
+
+  PLAT=""
+  if [[ "$PWD" =~ /win/ ]]; then
+    PLAT="win"
+  elif [[ "$PWD" =~ /mac/ ]]; then
+    PLAT="mac"
+  elif [[ "$PWD" =~ /linux/ ]]; then
+    PLAT="linux"
+  else
+    exit_error "Couldn't figure out which platform to build."
+  fi
 }
 
 build() {
@@ -37,12 +48,16 @@ build() {
 push() {
   use_dir "$1"
 
-  bundle="./dist/win-unpacked"
+  bundle="./dist/$PLAT"
+  if [[ "$PLAT" == 'win' ]]; then
+    bundle="./dist/win-unpacked"
+  fi
+
   if [[ ! -d "$bundle" ]]; then
     exit_error "No bundle directory: $bundle"
   fi
   
-  butler_target=$(cat "$BUILD_DIR"/win/BUTLER_TARGET.txt)
+  butler_target=$(cat "$BUILD_DIR"/$PLAT/BUTLER_TARGET.txt)
   if [[ ! "$butler_target" =~ 'unbound' ]]; then
     exit_error "Invalid butler target: $butler_target"
   fi
@@ -52,7 +67,7 @@ push() {
 }
 
 status() {
-  butler_target=$(cat "$BUILD_DIR"/win/BUTLER_TARGET.txt)
+  butler_target=$(cat "$BUILD_DIR"/$PLAT/BUTLER_TARGET.txt)
   if [[ ! "$butler_target" =~ 'unbound' ]]; then
     exit_error "Invalid butler target: $butler_target"
   fi
