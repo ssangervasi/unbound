@@ -55,9 +55,9 @@ double music glitch?
  - zombie track
 clicks not working on pause screen
  - something to do with touch device vs mouse?
-second level pause doesn't work
-crowded square wrong tiles for start & exit
-memory lapse narration happens on retry
+✅ second level pause doesn't work
+✅ crowded square wrong tiles for start & exit
+✅ memory lapse narration happens on retry
 character movement after crossing exit looks weird
 ✅ cursor appears at start of scene
 
