@@ -2,7 +2,7 @@
  - Windows
 
 fullscreen option alignment
-screen flash on opening
+✅ screen flash on opening
 quick through th etutorial
 using mouse to chart a course
 ✅ **tempted to click reset indicator**
