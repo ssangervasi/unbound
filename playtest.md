@@ -130,7 +130,7 @@ Stuck
 Final feedback
  - Could use more specific first description
  - Lapse, light, were intuitive
- 
+
 
 ## Mech ideas
 change the color of the text for the key that is forgotten
@@ -141,9 +141,9 @@ Music skipping
  - on level reset?
 Cursor not hiding
 Apple app window title is "index.html"
-Inconsistent mouse on pause menu
-I don't think indicators should  be hidden behind darkness
-Binder Z- index on first dark binder
+✅ Inconsistent mouse on pause menu
+✅ I don't think indicators should  be hidden behind darkness
+✅ Binder Z- index on first dark binder
 Sounds on the "go faster" when nothing is typed
   - And that narration replays
 
