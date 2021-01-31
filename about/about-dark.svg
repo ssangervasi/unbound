@@ -8,12 +8,15 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="65.160004"
+   inkscape:export-xdpi="65.160004"
+   inkscape:export-filename="C:\Users\Sebastian\Projects\Unbound\about\about-dark.png"
    width="297mm"
    height="210mm"
    viewBox="0 0 297 210"
    version="1.1"
    id="svg8"
-   sodipodi:docname="help.svg"
+   sodipodi:docname="about-dark.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <defs
      id="defs2">
@@ -45,36 +48,6 @@
          style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
          d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
          id="path2564" />
-    </marker>
-    <marker
-       inkscape:collect="always"
-       inkscape:stockid="TriangleOutS"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="marker2408"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path2406"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         transform="scale(0.2)" />
-    </marker>
-    <marker
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="TriangleOutS"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="TriangleOutS">
-      <path
-         transform="scale(0.2)"
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path1008" />
     </marker>
     <marker
        inkscape:isstock="true"
@@ -317,11 +290,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.1697091"
-     inkscape:cx="434.12946"
-     inkscape:cy="615.01741"
+     inkscape:zoom="0.79242728"
+     inkscape:cx="658.36674"
+     inkscape:cy="480.15826"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="2560"
@@ -348,7 +321,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="BG"
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline">
@@ -372,106 +345,66 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2"
+     inkscape:label="Level"
      style="display:inline">
     <image
-       sodipodi:absref="C:\Users\Sebastian\Projects\Unbound\about\simple_level.png"
-       xlink:href="simple_level.png"
-       style="display:inline"
-       y="38.760448"
-       x="46.4417"
-       width="183.14143"
-       height="136.35112"
+       sodipodi:absref="C:\Users\Sebastian\Projects\Unbound\about\dark.png"
+       xlink:href="dark.png"
+       y="32.624123"
+       x="15.685728"
+       width="136.25418"
+       height="99.321236"
        preserveAspectRatio="none"
-       id="image20"
-       clip-path="url(#clipPath1646)"
-       transform="translate(15.025038,-3.0050076)" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Limited">
-    <text
-       id="text33"
-       y="30.884804"
-       x="128.54755"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         y="30.884804"
-         x="128.54755"
-         id="tspan31"
-         sodipodi:role="line">Limited resources</tspan></text>
-    <path
-       sodipodi:nodetypes="ccc"
-       id="path858"
-       d="m 224.97527,28.814143 h 8.86431 l 0.14531,8.640954"
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#TriangleOutS);paint-order:normal" />
-  </g>
-  <g
-     inkscape:label="Little"
-     id="g2404"
-     inkscape:groupmode="layer">
-    <text
-       transform="translate(16.694487,-1.335559)"
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:35.0181;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="234.72449"
-       y="89.649399"
-       id="text2400"><tspan
-         x="234.72449"
-         y="89.649399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Little </tspan></tspan><tspan
-         x="234.72449"
-         y="102.87852"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Dude</tspan></tspan></text>
-    <path
-       sodipodi:nodetypes="ccc"
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#marker2408);paint-order:normal"
-       d="m 246.76157,89.999438 -73.43951,0.166945 -0.1051,-9.806451"
-       id="path2402" />
+       id="image1025" />
+    <image
+       sodipodi:absref="C:\Users\Sebastian\Projects\Unbound\about\sass.png"
+       xlink:href="sass.png"
+       y="89.603134"
+       x="142.36047"
+       width="135.2571"
+       height="102.42256"
+       preserveAspectRatio="none"
+       id="image1243"
+       style="display:inline" />
   </g>
   <g
      inkscape:label="Contr"
      id="layer4"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     style="display:inline">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:50.377;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:116.821;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="234.72449"
        y="89.649399"
        id="text2558"
-       transform="translate(-220.1222,-23.314996)"><tspan
+       transform="translate(-55.848449,-6.9543992)"><tspan
          x="234.72449"
-         y="89.649399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Custom </tspan></tspan><tspan
-         x="234.72449"
-         y="102.87852"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Controls</tspan></tspan></text>
+         y="89.649399"><tspan>Get sassed!</tspan></tspan></text>
     <path
        sodipodi:nodetypes="cc"
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#marker2566);paint-order:normal"
+       style="display:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#marker2566);paint-order:normal"
        d="m 60.29442,69.657924 54.31893,-0.123645"
        id="path2560" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="g2893"
-     inkscape:label="Doors, I guess?">
+     inkscape:label="Doors, I guess?"
+     style="display:inline">
     <text
-       transform="translate(-113.27748,96.21753)"
+       transform="translate(-212.10885,-64.717324)"
        id="text2889"
        y="89.649399"
        x="234.72449"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:170.243;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:170.243;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          x="234.72449"
-         y="89.649399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Pixel;-inkscape-font-specification:'Pixel, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">Doors, I guess?</tspan></tspan></text>
+         y="89.649399"><tspan>Turn on light switches!</tspan></tspan></text>
     <path
        id="path2891"
        d="m 118.73279,181.51199 -14.03801,0.0212 -0.0981,-56.74011"
-       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#marker2897);paint-order:normal"
+       style="display:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.3;stroke-dasharray:none;stroke-dashoffset:0.2;stroke-opacity:1;marker-end:url(#marker2897);paint-order:normal"
        sodipodi:nodetypes="ccc" />
   </g>
 </svg>
