@@ -1,24 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "ts-events"
-		},
-		{
-			"path": "refactor"
-		},
-		{
-			"path": "bin"
-		},
-		{
-			"path": "build",
-			""
-		},
-		{
-			"path": "Assets"
+			"path": "."
 		},
 	],
 	"settings": {
 		"files.exclude": {
+			"build/*": true,
 			"**/*.dll": true,
 			"**/.git": true,
 			"**/.svn": true,
