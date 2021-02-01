@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"files.exclude": {
-			"build/*": true,
+			"build/**/Unbound*/": true,
 			"**/*.dll": true,
 			"**/.git": true,
 			"**/.svn": true,

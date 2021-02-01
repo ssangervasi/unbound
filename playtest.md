@@ -55,12 +55,12 @@ Ended after Dudle
 double music glitch?
  - if the loop would enqueue at the same time as the previous track ended?
  - zombie track
-clicks not working on pause screen
+✅ clicks not working on pause screen
  - something to do with touch device vs mouse?
 ✅ second level pause doesn't work
 ✅ crowded square wrong tiles for start & exit
 ✅ memory lapse narration happens on retry
-character movement after crossing exit looks weird
+✅ character movement after crossing exit looks weird
 ✅ cursor appears at start of scene
 
 ## Mechanic ideas
@@ -140,7 +140,7 @@ Music skipping
  - after changing options
  - on level reset?
 Cursor not hiding
-Apple app window title is "index.html"
+🤞 Apple app window title is "index.html"
 ✅ Inconsistent mouse on pause menu
 ✅ I don't think indicators should  be hidden behind darkness
 ✅ Binder Z- index on first dark binder

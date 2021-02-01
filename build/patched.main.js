@@ -45,6 +45,11 @@ function createWindow() {
 
   // https://www.electronjs.org/docs/api/browser-window#winsetmenumenu-linux-windows
   mainWindow.setMenu(null)
+
+  // https://github.com/electron/electron/issues/2543#issuecomment-420668746
+  mainWindow.on('page-title-updated', function(e) {
+    e.preventDefault()
+  });
 }
 
 // Should be set to true, which will be the default value in future Electron
