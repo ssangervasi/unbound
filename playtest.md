@@ -52,7 +52,7 @@ Ended after Dudle
 
 
 ## Bugs
-double music glitch?
+🤞 double music glitch?
  - if the loop would enqueue at the same time as the previous track ended?
  - zombie track
 ✅ clicks not working on pause screen
@@ -136,15 +136,15 @@ Final feedback
 change the color of the text for the key that is forgotten
 
 ## Bugs
-Music skipping
+🤞 Music skipping
  - after changing options
  - on level reset?
-Cursor not hiding
+✅Cursor not hiding
 🤞 Apple app window title is "index.html"
 ✅ Inconsistent mouse on pause menu
 ✅ I don't think indicators should  be hidden behind darkness
 ✅ Binder Z- index on first dark binder
-Sounds on the "go faster" when nothing is typed
-  - And that narration replays
+✅Sounds on the "go faster" when nothing is typed
+  -  And that narration replays
 
 
