@@ -21,6 +21,11 @@ const main = () => {
 	)
 	commonOptions(
 		program
+			.command('theme-tiles')
+			.action(themeTiles),
+	)
+	commonOptions(
+		program
 			.command('z-tidy')
 			.action(zTidy),
 	)
@@ -111,6 +116,37 @@ const moveObstaclesToBaseLayer = (cmd: Command) => {
 	)
 	log(result)
 }
+
+const themeTiles = (cmd: Command) => {
+	let results = 0
+	refactor(
+		gdProject => {
+			transformInstances(
+				gdProject, (gdInst, gdLayout) => {
+					let anim = gdInst.numberProperties.find(({ name }) => name === 'animation')
+					if (!anim) {
+						anim = {
+							name: "animation",
+							value: 0
+						}
+						gdInst.numberProperties.push(anim)
+					}
+
+					if ([0, 2].includes(anim.value)) {
+						if (gdLayout.name.startsWith('L_C4')) {
+							anim.value = 6
+							results += 1
+						}
+					}
+				}, /Tile/,
+			)
+			return gdProject
+		},
+		getCommonOptions(cmd),
+	)
+	log(results)
+}
+
 
 const populateHintContainers = (cmd: Command) => {
 	refactor(
@@ -429,7 +465,7 @@ const haikuAssign = (cmd: Command) => {
 const haikuTexts = (cmd: Command) => {
 	refactor(
 		gdProject => {
-			const results: object[] =[]
+			const results: object[] = []
 
 			transformObjects(
 				gdProject, (gdObj, gdLayout) => {
