@@ -133,7 +133,10 @@ const themeTiles = (cmd: Command) => {
 					}
 
 					if ([0, 2].includes(anim.value)) {
-						if (gdLayout.name.startsWith('L_C4')) {
+						if (gdLayout.name.startsWith('L_C3')) {
+							anim.value = 13
+							results += 1
+						} else if (gdLayout.name.startsWith('L_C4')) {
 							anim.value = 6
 							results += 1
 						}
