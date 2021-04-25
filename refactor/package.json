@@ -25,25 +25,25 @@
 	"license": "MIT",
 	"dependencies": {
 		"commander": "^4.1",
-		"immer": "^7.0.5"
+		"immer": "^9.0.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.9",
-		"@types/node": "^12.12",
+		"@types/node": "^12.20.10",
 		"@typescript-eslint/eslint-plugin": "^2.34",
 		"@typescript-eslint/parser": "^2.34",
-		"acorn": "^7",
-		"acorn-jsx": "^5",
+		"acorn": "^7.4.1",
+		"acorn-jsx": "^5.3.1",
 		"eslint": "^6.7",
-		"jest": "^26.1",
+		"jest": "^26.6.3",
 		"ndb": "^1.1",
 		"rimraf": "^2.7",
-		"ts-jest": "^26.1",
+		"ts-jest": "^26.5.5",
 		"ts-loader": "^6.2",
 		"ts-node": "^8.10.2",
 		"tsc-watch": "^2.4.0",
 		"tsconfig-paths": "^3.9.0",
 		"tslint": "^5.20.1",
-		"typescript": "^3.9"
+		"typescript": "^3.9.9"
 	}
 }
