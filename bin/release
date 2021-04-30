@@ -52,10 +52,10 @@ push() {
   if [[ "$PLAT" == 'win' ]]; then
     bundle="./dist/win-unpacked"
   elif [[ "$PLAT" == 'linux' ]]; then
-    bundle="./dist/linux-unpacked"
+    bundle="./dist/Unbound-0.1.0.AppImage"
   fi
 
-  if [[ ! -d "$bundle" ]]; then
+  if [[ ! -e "$bundle" ]]; then
     exit_error "No bundle directory: $bundle"
   fi
   
