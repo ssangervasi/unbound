@@ -51,6 +51,8 @@ push() {
   bundle="./dist/$PLAT"
   if [[ "$PLAT" == 'win' ]]; then
     bundle="./dist/win-unpacked"
+  elif [[ "$PLAT" == 'linux' ]]; then
+    bundle="./dist/linux-unpacked"
   fi
 
   if [[ ! -d "$bundle" ]]; then
